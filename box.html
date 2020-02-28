@@ -1,0 +1,306 @@
+﻿<html>
+<head>
+<script lang="javascript">
+function getQueryVariable(variable)
+{
+	var query = window.location.search.substring(1);
+	var vars = query.split("&");
+	for (var i = 0; i < vars.length; i++)
+	{
+		var pair = vars[i].split("=");
+		if (pair[0] == variable)
+			return pair[1];
+	}
+	return "Re";
+};
+
+_Re =  1;	// Red
+_Bl =  2;	// Blue
+_Ye =  3;	// Yellow
+_Go =  4;	// Gold
+_Si =  5;	// Silver
+_Cr =  6;	// Crystal
+_Ru =  7;	// Ruby
+_Sa =  8;	// Sapphire
+_Em =  9;	// Emerald
+_FR = 10;	// FireRed
+_LG = 11;	// LeafGreen
+_Di = 12;	// Diamond
+_Pe = 13;	// Pearl
+_Pl = 14;	// Platinum
+_HG = 15;	// HeartGold
+_SS = 16;	// SoulSilver
+_Bk = 17;	// Black
+_Wh = 18;	// White
+_B2 = 19;	// Black2
+_W2 = 20;	// White2
+_X_ = 21;	// X
+_Y_ = 22;	// Y
+_oR = 23;	// OmegaRuby
+_aS = 24;	// AlphaSapphire
+_Su = 25;	// Sun
+_Mo = 26;	// Moon
+_US = 27;	// Ultra Sun
+_UM = 28;	// Ultra Moon
+_LP = 29;	// Let's Go, Pikachu!
+_LE = 30;	// Let's Go, Eevee!
+_Sw = 31;	// Sword
+_Sh = 32;	// Shield
+_Gen1 = _Re;
+_Gen1Max = 151;
+_Gen2 = _Go;
+_Gen2Max = 251;
+_Gen3 = _Ru;
+_Gen3Max = 386;
+_Gen4 = _Di;
+_Gen4Max = 493;
+_Gen5 = _Bk;
+_Gen5Max = 649;
+_Gen6 = _X_;
+_Gen6Max = 721;
+_Gen7 = _Su;
+_Gen7Max = 809;
+_Gen8 = _Sw
+_Gen8Max = 890;
+_MaxDex = _Gen7Max + 1;
+
+function inArray(haystack, needle)
+{
+	var len = haystack.length;
+	for (var i=0; i<len; i++) {
+		if (haystack[i]==needle) {
+			return i;
+		}
+	}
+	//console.log("needle:" + needle + " haystack:" + haystack);
+	return -1
+};
+</script>
+<script lang="javascript" src="box-names.js"></script>
+<script lang="javascript" src="icon/g08/box-g08-sw-sh.js"></script>
+<script lang="javascript" src="box-national.js"></script>
+<script lang="javascript" src="box-evolution.js"></script>
+</head>
+<body>
+<script lang="javascript">
+boxCntr = 1;
+boxIdx = 1;
+boxHead = "";
+boxBody = "";
+gameName = getQueryVariable("game");
+/*if      (gameName == "Re") */game = _Re;/*
+else */if (gameName == "Bl") game = _Bl;
+else if (gameName == "Ye") game = _Ye;
+else if (gameName == "Go") game = _Go;
+else if (gameName == "Si") game = _Si;
+else if (gameName == "Cr") game = _Cr;
+else if (gameName == "Ru") game = _Ru;
+else if (gameName == "Sa") game = _Sa;
+else if (gameName == "Em") game = _Em;
+else if (gameName == "FR") game = _FR;
+else if (gameName == "LG") game = _LG;
+else if (gameName == "Di") game = _Di;
+else if (gameName == "Pe") game = _Pe;
+else if (gameName == "Pl") game = _Pl;
+else if (gameName == "HG") game = _HG;
+else if (gameName == "SS") game = _SS;
+else if (gameName == "Bk") game = _Bk;
+else if (gameName == "Wh") game = _Wh;
+else if (gameName == "B2") game = _B2;
+else if (gameName == "W2") game = _W2;
+else if (gameName == "X" ) game = _X_;
+else if (gameName == "Y" ) game = _Y_;
+else if (gameName == "oR") game = _oR;
+else if (gameName == "aS") game = _aS;
+else if (gameName == "Su") game = _Su;
+else if (gameName == "Mo") game = _Mo;
+else if (gameName == "US") game = _US;
+else if (gameName == "UM") game = _UM;
+else if (gameName == "LP") game = _LP;
+else if (gameName == "LE") game = _LE;
+else if (gameName == "Sw") game = _Sw;
+else if (gameName == "Sh") game = _Sh;
+else
+{
+	document.writeln("Unknown game: ", gameName);
+	die();
+}
+
+version = getQueryVariable("ver");
+if (version != "r")	// National Dex
+{
+	_Ndex = [];
+	iconPath = "";
+	if (game == _Sw || game == _Sh)
+	{
+		if (game == _Sw)
+			CaughtColor = "blue";
+		else //if (game == _Sh)
+			CaughtColor = "red";
+		_Ndex = _Ndex_08;
+		if (version == "e")	// Evolution Dex
+		{
+			_Ndex = _Ndex_evo_08;
+		}
+		iconPath = "icon/home";
+	}
+
+	maxBox = 30;
+	divBox = 6;
+
+	_MaxDex = _Ndex.length;
+
+	boxCntr = 1;
+	boxIdx = 1;
+	key = 0;
+	idxStr = "0000";
+	for (i = 0; i < _MaxDex; ++i)
+	{
+		rdex = _Ndex[i];
+		//console.log(rdex);
+		if (rdex.substring(0, 4) != idxStr)
+		{
+			++key;
+			idxStr = rdex.substring(0, 4);
+		}
+		//console.log(rdex + " - " + key + " - " + rdex.substring(0, 3) + " ?= " + idxStr);
+		if (boxCntr == 1)
+		{
+			boxHead = "<table style='border:1px solid gray; font-family:consolas; text-align:center;' cellspacing=0><tr><th colspan=6 style='border:1px solid gray;'>";
+			if (version == "e")
+			{
+				boxHead += gameName + " EvolutionDex " + ("0" + boxIdx.toString(10)).substr(-2);
+			}
+			else
+			{
+				boxHead += gameName + " " + ("0" + boxIdx.toString(10)).substr(-2) + " Dex " + ("0000" + key.toString(10)).substr(-4);
+			}
+			++boxIdx;
+		}
+
+		if (version == "e")
+		{
+			boxBody += "<td style='border:1px solid gray; width:50px; vertical-align:top;'><span title='" + rdex.substr(0, 4) + " " + _Names[rdex] + "'><img src='" + iconPath + "/" + rdex + ".png' alt='" + rdex + "' width='64px'></span><br/><span style='font-size:10px;'>#" + rdex.substr(0, 4) + "</span></td>";
+		}
+		else
+		{
+			boxBody += "<td style='border:1px solid gray; width:50px; vertical-align:top;'><span title='" + ("0000" + key.toString(10)).substr(-4) + " " + _Names[rdex] + "'><img src='" + iconPath + "/" + rdex + ".png' alt='" + rdex + "' width='64px'></span><br/><span style='font-size:10px;'>#" + ("0000" + key.toString(10)).substr(-4) + "</span></td>";
+		}
+
+		if (boxCntr == maxBox)
+		{
+			if (version == "e")
+			{
+				boxHead += "</th></tr><tr>";
+			}
+			else
+			{
+				boxHead += "-" + ("0000" + key.toString(10)).substr(-4) + "</th></tr><tr>";
+			}
+			document.write(boxHead);
+			document.write(boxBody);
+			document.write("</tr></table><br/>");
+			boxCntr = 0;
+			boxHead = "";
+			boxBody = "";
+		}
+
+		if (boxCntr % divBox == 0)
+			boxBody += "</tr><tr>";
+
+		boxCntr++;
+	}
+	// filler
+	while (boxCntr <= maxBox)
+	{
+		boxBody += "<td style='border:1px solid gray; width:50px;'><img src='" + iconPath + "/0000-none.png' width='64px'><br/><span style='font-size:10px;'>&nbsp;</span></td>";
+		if (boxCntr % divBox == 0)
+			boxBody += "</tr><tr>";
+		boxCntr++;
+	}
+	if (version = "e")
+	{
+		boxHead += "</th></tr><tr>";
+	}
+	else
+	{
+		boxHead += "-" + ("0000" + key.toString(10)).substr(-4) + "</th></tr><tr>";
+	}
+	document.write(boxHead);
+	document.write(boxBody);
+	document.write("</tr></table>");
+}
+else //if (version == "r") // Regional Dex
+{
+	_Rdex = [];
+	if (game == _Sw || game == _Sh)
+	{		
+		_Rdex = _Rdex_Galar;
+		if (game == _Sw)
+			CaughtColor = "blue";
+		else //if (game == _Sh)
+			CaughtColor = "red";
+	}
+
+	maxBox = 30;
+	divBox = 6;
+
+	_MaxDex = _Rdex.length;
+
+	iconPath = "icon/g08/sw-sh";
+	boxCntr = 1;
+	boxIdx = 1;
+	key = 0;
+	idxStr = "0000";
+	for (i = 0; i < _MaxDex; ++i)
+	{
+		rdex = _Rdex[i];
+		//console.log(rdex);
+		if (rdex.substring(0, 4) != idxStr)
+		{
+			++key;
+			idxStr = rdex.substring(0, 4);
+		}
+		//console.log(rdex + " - " + key + " - " + rdex.substring(0, 4) + " ?= " + idxStr);
+		if (boxCntr == 1)
+		{
+			boxHead = "<table style='border:1px solid gray; font-family:consolas; text-align:center;' cellspacing=0><tr><th colspan=6 style='border:1px solid gray;'>";
+			boxHead += gameName + " " + ("0" + boxIdx.toString(10)).substr(-2) + " Dex " + ("0000" + key.toString(10)).substr(-4);
+			++boxIdx;
+		}
+
+		boxBody += "<td style='border:1px solid gray; width:50px; vertical-align:top;'><span title='" + ("0000" + key.toString(10)).substr(-4) + " " + _Names[rdex] + "'><img src='" + iconPath + "/" + rdex + ".png' alt='" + rdex + "'></span><br/><span style='font-size:10px;'>#" + ("0000" + key.toString(10)).substr(-4) + "</span></td>";
+
+		if (boxCntr == maxBox)
+		{
+			boxHead += "-" + ("0000" + key.toString(10)).substr(-4) + "</th></tr><tr>";
+			document.write(boxHead);
+			document.write(boxBody);
+			document.write("</tr></table><br/>");
+			boxCntr = 0;
+			boxHead = "";
+			boxBody = "";
+		}
+
+		if (boxCntr % divBox == 0)
+			boxBody += "</tr><tr>";
+
+		boxCntr++;
+	}
+	// filler
+	while (boxCntr <= maxBox)
+	{
+		boxBody += "<td style='border:1px solid gray; width:50px;'><img src='" + iconPath + "/0000-none.png'><br/><span style='font-size:10px;'>&nbsp;</span></td>";
+		if (boxCntr % divBox == 0)
+			boxBody += "</tr><tr>";
+		boxCntr++;
+	}
+	boxHead += "-" + ("0000" + key.toString(10)).substr(-4) + "</th></tr><tr>";
+	document.write(boxHead);
+	document.write(boxBody);
+	document.write("</tr></table>");
+}
+</script>
+
+</body>
+</html>
