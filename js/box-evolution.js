@@ -2144,5 +2144,4 @@ _Ndex_evo_08 = [
 	// Eternatus
 	"0890",			// Eternatus (uknown gender)
 //	"0890emax",		// Eternamax (uknown gender)
-*/
 ];
