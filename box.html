@@ -1,4 +1,4 @@
-<html>
+﻿<html>
 <head>
 <script lang="javascript">
 function getQueryVariable(variable)
@@ -77,9 +77,9 @@ function inArray(haystack, needle)
 };
 </script>
 <script lang="javascript" src="js/box-names.js"></script>
+<script lang="javascript" src="icon/g08/box-g08-sw-sh.js"></script>
 <script lang="javascript" src="js/box-national.js"></script>
 <script lang="javascript" src="js/box-evolution.js"></script>
-<script lang="javascript" src="poke_icon/g08/box-g08-sw-sh.js"></script>
 </head>
 <body>
 <script lang="javascript">
@@ -142,7 +142,7 @@ if (version != "r")	// National Dex
 		{
 			_Ndex = _Ndex_evo_08;
 		}
-		iconPath = "poke_icon/home";
+		iconPath = "icon/home";
 	}
 
 	maxBox = 30;
@@ -234,7 +234,7 @@ else //if (version == "r") // Regional Dex
 {
 	_Rdex = [];
 	if (game == _Sw || game == _Sh)
-	{		
+	{
 		_Rdex = _Rdex_Galar;
 		if (game == _Sw)
 			CaughtColor = "blue";
@@ -247,7 +247,7 @@ else //if (version == "r") // Regional Dex
 
 	_MaxDex = _Rdex.length;
 
-	iconPath = "poke_icon/g08/sw-sh";
+	iconPath = "icon/g08/sw-sh";
 	boxCntr = 1;
 	boxIdx = 1;
 	key = 0;
