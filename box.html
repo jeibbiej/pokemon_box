@@ -11,7 +11,7 @@ function getQueryVariable(variable)
 		if (pair[0] == variable)
 			return pair[1];
 	}
-	return "Re";
+	return "";
 };
 
 _Re =  1;	// Red
@@ -88,8 +88,8 @@ boxIdx = 1;
 boxHead = "";
 boxBody = "";
 gameName = getQueryVariable("game");
-/*if      (gameName == "Re") */game = _Re;/*
-else */if (gameName == "Bl") game = _Bl;
+if      (gameName == "Re") game = _Re;
+else if (gameName == "Bl") game = _Bl;
 else if (gameName == "Ye") game = _Ye;
 else if (gameName == "Go") game = _Go;
 else if (gameName == "Si") game = _Si;
@@ -184,7 +184,7 @@ if (version != "r")	// National Dex
 		}
 		else
 		{
-			boxBody += "<td style='border:1px solid gray; width:50px; vertical-align:top;'><span title='" + ("0000" + key.toString(10)).substr(-4) + " " + _Names[rdex] + "'><img src='" + iconPath + "/" + rdex + ".png' alt='" + rdex + "' width='64px'></span><br/><span style='font-size:10px;'>#" + ("0000" + key.toString(10)).substr(-4) + "</span></td>";
+			boxBody += "<td style='border:1px solid gray; width:50px; vertical-align:top;'><span title='" + ("0000" + key.toString(10)).substr(-4) + " " + _Names[rdex] + "'><img src='" + iconPath + "/" + rdex + ".png' alt='" + rdex + "' width='64px'></span><br/><span style='font-size:10px;'>#" + ("0000" + key.toString(10)).substr(-4) + "<br/>" + _Names[rdex] + "</span></td>";
 		}
 
 		if (boxCntr == maxBox)
@@ -269,7 +269,7 @@ else //if (version == "r") // Regional Dex
 			++boxIdx;
 		}
 
-		boxBody += "<td style='border:1px solid gray; width:50px; vertical-align:top;'><span title='" + ("0000" + key.toString(10)).substr(-4) + " " + _Names[rdex] + "'><img src='" + iconPath + "/" + rdex + ".png' alt='" + rdex + "'></span><br/><span style='font-size:10px;'>#" + ("0000" + key.toString(10)).substr(-4) + "</span></td>";
+		boxBody += "<td style='border:1px solid gray; width:50px; vertical-align:top;'><span title='" + ("0000" + key.toString(10)).substr(-4) + " " + _Names[rdex] + "'><img src='" + iconPath + "/" + rdex + ".png' alt='" + rdex + "'></span><br/><span style='font-size:10px;'>#" + ("0000" + key.toString(10)).substr(-4) + "<br/>" + _Names[rdex] + "</span></td>";
 
 		if (boxCntr == maxBox)
 		{
