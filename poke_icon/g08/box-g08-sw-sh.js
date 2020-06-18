@@ -236,7 +236,7 @@ var _Rdex_Galar = /* regional dex */
 	"0337",
 	"0338",
 	"0439", "0122-galar", "0122", "0866",
-	"0554-galar", "0554", "0555-standard-galar", "0555-standard", "0555-zen-galar", "0555-zen",
+	"0554-galar", "0554", "0555-standard-galar", "0555-standard",
 	"0874",
 	"0875-ice",
 	"0884", "0884-gmax",
