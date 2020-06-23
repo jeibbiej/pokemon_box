@@ -46,19 +46,19 @@
 	"0025"									: "Pikachu",
 	"0025-m"								: "Pikachu♂",
 	"0025-f"								: "Pikachu♀",
-	"0025-f-cosplay"						: "Cosplay Pikachu", // female only
-	"0025-f-rock-star"						: "Pikachu Rock Star", // female only
-	"0025-f-belle"							: "Pikachu Belle", // female only
-	"0025-f-popstar"						: "Pikachu Pop Star", // female only
-	"0025-f-phd"							: "Pikachu, Ph. D", // female only
-	"0025-f-libre"							: "Pikachu Libre", // female only
-	"0025-m-original-cap"					: "Original Cap Pikachu", // male only
-	"0025-m-hoenn-cap"						: "Hoenn Cap Pikachu", // male only
-	"0025-m-sinnoh-cap"						: "Sinnoh Cap Pikachu", // male only
-	"0025-m-unova-cap"						: "Unova Cap Pikachu", // male only
-	"0025-m-kalos-cap"						: "Kalos Cap Pikachu", // male only
-	"0025-m-alola-cap"						: "Alola Cap Pikachu", // male only
-	"0025-m-partner-cap"					: "Partner Cap Pikachu", // male only
+	"0025-cosplay"							: "Cosplay Pikachu", // female only
+	"0025-rock-star"						: "Pikachu Rock Star", // female only
+	"0025-belle"							: "Pikachu Belle", // female only
+	"0025-popstar"							: "Pikachu Pop Star", // female only
+	"0025-phd"								: "Pikachu, Ph. D", // female only
+	"0025-libre"							: "Pikachu Libre", // female only
+	"0025-original-cap"						: "Original Cap Pikachu", // male only
+	"0025-hoenn-cap"						: "Hoenn Cap Pikachu", // male only
+	"0025-sinnoh-cap"						: "Sinnoh Cap Pikachu", // male only
+	"0025-unova-cap"						: "Unova Cap Pikachu", // male only
+	"0025-kalos-cap"						: "Kalos Cap Pikachu", // male only
+	"0025-alola-cap"						: "Alola Cap Pikachu", // male only
+	"0025-partner-cap"						: "Partner Cap Pikachu", // male only
 	"0025-m-letsgo"							: "Parter Pikachu♂",
 	"0025-f-letsgo"							: "Parter Pikachu♀",
 	"0025-gmax"								: "Gigantamax Pikachu",
@@ -725,8 +725,8 @@
 	"0419-f"								: "Floatzel♀",
 	"0420"									: "Cherubi",
 	"0421"									: "Cherrim",
-	"0421-o"								: "Overcast Cherrim",
-	"0421-s"								: "Sunshine Cherrim",
+	"0421-overcast"							: "Overcast Cherrim",
+	"0421-sunshine"							: "Sunshine Cherrim",
 	"0422"									: "Shellos",
 	"0422-west"								: "West Sea Shellos",
 	"0422-east"								: "East Sea Shellos",
@@ -835,8 +835,12 @@
 	"0479-phone"							: "Phone Rotom", // uknown gender// unofficial
 	"0479-rotomi"							: "Rotomi", // uknown gender// unofficial
 	"0479-drone"							: "Drone Rotom", // uknown gender// unofficial
-	"0479-bike"								: "Rotom Bike", // uknown gender// unofficial
+	"0479-bike"								: "Rotom Bike, Land Mode", // uknown gender// unofficial
 	"0479-water-bike"						: "Rotom Bike, Water Mode", // uknown gender// unofficial
+	"0479-white-bike"						: "Sparkling White Rotom Bike, Land Mode", // uknown gender// unofficial
+	"0479-white-water-bike"					: "Sparkling White Rotom Bike, Water Mode", // uknown gender// unofficial
+	"0479-black-bike"						: "Glistening Black Rotom Bike, Land Mode", // uknown gender// unofficial
+	"0479-black-water-bike"					: "Glistening Black Rotom Bike, Water Mode", // uknown gender// unofficial
 	"0480"									: "Uxie", // uknown gender
 	"0481"									: "Mesprit", // uknown gender
 	"0482"									: "Azelf", // uknown gender
@@ -1593,11 +1597,12 @@
 	"0982-single-gmax"						: "Gigantamax Single Strike Style Urshifu",
 	"0982-rapid"							: "Rapid Strike Style Urshifu",
 	"0982-rapid-gmax"						: "Gigantamax Rapid Strike Style Urshifu",
+	"0893"									: "Zarude",
 	// TEMPORARY NUMBERING
-	"0893"			: "Regieleki",
-	"0894"			: "Regidrago",
-	"0895"			: "Calyrex",
-	"XXXX"			: "MissingNo."
+	"0894"									: "Regieleki",
+	"0895"									: "Regidrago",
+	"0896"									: "Calyrex",
+	"XXXX"									: "MissingNo."
 };
 /*
 Pokemon Home icon file name
