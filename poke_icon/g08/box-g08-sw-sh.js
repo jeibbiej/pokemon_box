@@ -1676,8 +1676,10 @@ var _Ndex_G08 =
 	"0788",									// "Tapu Fini" // uknown gender
 	"0789",									// "Cosmog" // uknown gender
 	"0790",									// "Cosmoen" // uknown gender
-	"0791",									// "Solgaleo" // uknown gender
-	"0792",									// "Lunala" // uknown gender
+	"0791",									// "Solgaleo", // uknown gender
+//	"0791-radiant-sun",						// "Radiant Sun Solgaleo", // unknown gender
+	"0792",									// "Lunala", // uknown gender
+//	"0792-full-moon",						// "Full Monn Lunala", // uknown gender
 	"0793",									// "Nihilego" // uknown gender
 	"0794",									// "Buzzwole" // uknown gender
 	"0795",									// "Pheromosa" // uknown gender
@@ -2828,32 +2830,32 @@ var _Evodex_G08 =
 	"0485",									// "Heatran"
 //	"0487",									// "Giratina" // uknown gender
 	"0487-altered",							// "Giratina Altered Forme" // uknown gender
-	"0487-origin",							// "Giratina Origin Forme" // uknown gender
+//	"0487-origin",							// "Giratina Origin Forme" // uknown gender
 	"0488",									// "Cresselia" // female only
 	"0489",									// "Phione" // uknown gender
 	"0490",									// "Manaphy" // uknown gender
 	"0491",									// "Darkrai" // uknown gender
 //	"0492",									// "Shaymin" // uknown gender
 	"0492-land",							// "Shaymin Land Forme" // uknown gender
-	"0492-sky",								// "Shaymin Sky Forme" // uknown gender
+//	"0492-sky",								// "Shaymin Sky Forme" // uknown gender
 	"0493",									// "Arceus" // uknown gender
-	"0493-fighting",						// "Fighting Arceus" // uknown gender
-	"0493-flying",							// "Flying Arceus" // uknown gender
-	"0493-poison",							// "Poison Arceus" // uknown gender
-	"0493-ground",							// "Ground Arceus" // uknown gender
-	"0493-rock",							// "Rock Arceus" // uknown gender
-	"0493-bug",								// "Bug Arceus" // uknown gender
-	"0493-ghost",							// "Ghost Arceus" // uknown gender
-	"0493-steel",							// "Steel Arceus" // uknown gender
-	"0493-fire",							// "Fire Arceus" // uknown gender
-	"0493-water",							// "Water Arceus" // uknown gender
-	"0493-grass",							// "Grass Arceus" // uknown gender
-	"0493-electric",						// "Electric Arceus" // uknown gender
-	"0493-psychic",							// "Psychic Arceus" // uknown gender
-	"0493-ice",								// "Ice Arceus" // uknown gender
-	"0493-dragon",							// "Dragon Arceus" // uknown gender
-	"0493-dark",							// "Dark Arceus" // uknown gender
-	"0493-fairy",							// "Fairy Arceus" // uknown gender
+//	"0493-fighting",						// "Fighting Arceus" // uknown gender
+//	"0493-flying",							// "Flying Arceus" // uknown gender
+//	"0493-poison",							// "Poison Arceus" // uknown gender
+//	"0493-ground",							// "Ground Arceus" // uknown gender
+//	"0493-rock",							// "Rock Arceus" // uknown gender
+//	"0493-bug",								// "Bug Arceus" // uknown gender
+//	"0493-ghost",							// "Ghost Arceus" // uknown gender
+//	"0493-steel",							// "Steel Arceus" // uknown gender
+//	"0493-fire",							// "Fire Arceus" // uknown gender
+//	"0493-water",							// "Water Arceus" // uknown gender
+//	"0493-grass",							// "Grass Arceus" // uknown gender
+//	"0493-electric",						// "Electric Arceus" // uknown gender
+//	"0493-psychic",							// "Psychic Arceus" // uknown gender
+//	"0493-ice",								// "Ice Arceus" // uknown gender
+//	"0493-dragon",							// "Dragon Arceus" // uknown gender
+//	"0493-dark",							// "Dark Arceus" // uknown gender
+//	"0493-fairy",							// "Fairy Arceus" // uknown gender
 	"0494",									// "Victini" // uknown gender
 	"0495",									// "Snivy"
 	"0496",									// "Servine"
@@ -3036,8 +3038,8 @@ var _Evodex_G08 =
 	"0643",									// "Reshiram" // uknown gender
 	"0644",									// "Zekrom" // uknown gender
 	"0646",									// "Kyurem" // uknown gender
-	"0646-white",							// "White Kyurem" // uknown gender
-	"0646-black",							// "Black Kyurem" // uknown gender
+//	"0646-white",							// "White Kyurem" // uknown gender
+//	"0646-black",							// "Black Kyurem" // uknown gender
 //	"0647",									// "Keldeo" // uknown gender
 	"0647-ordinary",						// "Ordinary Form Keldeo" // uknown gender
 	"0647-resolute",						// "Resolute Form Keldeo" // uknown gender
@@ -3045,10 +3047,10 @@ var _Evodex_G08 =
 	"0648-aria",							// "Aria Forme Meloetta" // uknown gender
 	"0648-pirouette",						// "Pirouette Forme Meloetta" // uknown gender
 	"0649",									// "Genesect" // uknown gender
-	"0649-douse",							// "Douse Drive Genesect" // uknown gender
-	"0649-shock",							// "Shock Drive Genesect" // uknown gender
-	"0649-burn",							// "Burn Drive Genesect" // uknown gender
-	"0649-chill",							// "Chill Drive Genesect" // uknown gender
+//	"0649-douse",							// "Douse Drive Genesect" // uknown gender
+//	"0649-shock",							// "Shock Drive Genesect" // uknown gender
+//	"0649-burn",							// "Burn Drive Genesect" // uknown gender
+//	"0649-chill",							// "Chill Drive Genesect" // uknown gender
 	"0650",									// "Chespin"
 	"0651",									// "Quilladin"
 	"0652",									// "Chesnaught"
@@ -3115,15 +3117,15 @@ var _Evodex_G08 =
 	"0674",									// "Pancham"
 	"0675",									// "Pangoro"
 	"0676",									// "Furfrou"
-	"0676-heart",							// "Heart Trim Furfrou"
-	"0676-star",							// "Star Trim Furfrou"
-	"0676-diamond",							// "Diamond Trim Furfrou"
-	"0676-debutante",						// "Debutante Trim Furfrou"
-	"0676-matron",							// "Matron Trim Furfrou"
-	"0676-dandy",							// "Dandy Trim Furfrou"
-	"0676-le-reine",						// "Le Reine Trim Furfrou"
-	"0676-kabuki",							// "Kabuki Trim Furfrou"
-	"0676-pharaoh",							// "Pharaoh Trim Furfrou"
+//	"0676-heart",							// "Heart Trim Furfrou"
+//	"0676-star",							// "Star Trim Furfrou"
+//	"0676-diamond",							// "Diamond Trim Furfrou"
+//	"0676-debutante",						// "Debutante Trim Furfrou"
+//	"0676-matron",							// "Matron Trim Furfrou"
+//	"0676-dandy",							// "Dandy Trim Furfrou"
+//	"0676-le-reine",						// "Le Reine Trim Furfrou"
+//	"0676-kabuki",							// "Kabuki Trim Furfrou"
+//	"0676-pharaoh",							// "Pharaoh Trim Furfrou"
 	"0677",									// "Espurr"
 //	"0678",									// "Meowstic"
 	"0678-m",								// "Meowstic♂" // male only
@@ -3247,23 +3249,23 @@ var _Evodex_G08 =
 	"0771",									// "Pyukumuku"
 	"0772",									// "Type: Null" // uknown gender
 	"0773",									// "Silvally" // uknown gender
-	"0773-fighting",						// "Silvally Type: Fighting" // uknown gender
-	"0773-flying",							// "Silvally Type: Flying" // uknown gender
-	"0773-poison",							// "Silvally Type: Poison" // uknown gender
-	"0773-ground",							// "Silvally Type: Ground" // uknown gender
-	"0773-rock",							// "Silvally Type: Rock" // uknown gender
-	"0773-bug",								// "Silvally Type: Bug" // uknown gender
-	"0773-ghost",							// "Silvally Type: Ghost" // uknown gender
-	"0773-steel",							// "Silvally Type: Steel" // uknown gender
-	"0773-fire",							// "Silvally Type: Fire" // uknown gender
-	"0773-water",							// "Silvally Type: Water" // uknown gender
-	"0773-grass",							// "Silvally Type: Grass" // uknown gender
-	"0773-electric",						// "Silvally Type: Electric" // uknown gender
-	"0773-psychic",							// "Silvally Type: Psychic" // uknown gender
-	"0773-ice",								// "Silvally Type: Ice" // uknown gender
-	"0773-dragon",							// "Silvally Type: Dragon" // uknown gender
-	"0773-dark",							// "Silvally Type: Dark" // uknown gender
-	"0773-fairy",							// "Silvally Type: Fairy" // uknown gender
+//	"0773-fighting",						// "Silvally Type: Fighting" // uknown gender
+//	"0773-flying",							// "Silvally Type: Flying" // uknown gender
+//	"0773-poison",							// "Silvally Type: Poison" // uknown gender
+//	"0773-ground",							// "Silvally Type: Ground" // uknown gender
+//	"0773-rock",							// "Silvally Type: Rock" // uknown gender
+//	"0773-bug",								// "Silvally Type: Bug" // uknown gender
+//	"0773-ghost",							// "Silvally Type: Ghost" // uknown gender
+//	"0773-steel",							// "Silvally Type: Steel" // uknown gender
+//	"0773-fire",							// "Silvally Type: Fire" // uknown gender
+//	"0773-water",							// "Silvally Type: Water" // uknown gender
+//	"0773-grass",							// "Silvally Type: Grass" // uknown gender
+//	"0773-electric",						// "Silvally Type: Electric" // uknown gender
+//	"0773-psychic",							// "Silvally Type: Psychic" // uknown gender
+//	"0773-ice",								// "Silvally Type: Ice" // uknown gender
+//	"0773-dragon",							// "Silvally Type: Dragon" // uknown gender
+//	"0773-dark",							// "Silvally Type: Dark" // uknown gender
+//	"0773-fairy",							// "Silvally Type: Fairy" // uknown gender
 //	"0774",									// "Minior" // uknown gender
 //	"0774-meteor",							// "Meteor Minior" // uknown gender
 	"0774-red",								// "Red Core Minior" // uknown gender
@@ -3291,11 +3293,13 @@ var _Evodex_G08 =
 	"0788",									// "Tapu Fini" // uknown gender
 	"0789",									// "Cosmog" // uknown gender
 	"0790",									// "Cosmoen" // uknown gender
-	"0791",									// "Solgaleo" // uknown gender
-	"0792",									// "Lunala" // uknown gender
+	"0791",									// "Solgaleo", // uknown gender
+//	"0791-radiant-sun",						// "Radiant Sun Solgaleo", // unknown gender
+	"0792",									// "Lunala", // uknown gender
+//	"0792-full-moon",						// "Full Monn Lunala", // uknown gender
 	"0800",									// "Necrozma" // uknown gender
-	"0800-dusk-mane",						// "Dusk Mane Necrozma" // uknown gender
-	"0800-dawn-wings",						// "Dawn Wings Necrozma" // uknown gender
+//	"0800-dusk-mane",						// "Dusk Mane Necrozma" // uknown gender
+//	"0800-dawn-wings",						// "Dawn Wings Necrozma" // uknown gender
 //	"0800-ultra",							// "Ultra Necrozma" // uknown gender
 	"0793",									// "Nihilego" // uknown gender
 	"0794",									// "Buzzwole" // uknown gender

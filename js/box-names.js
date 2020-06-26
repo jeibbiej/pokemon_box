@@ -1322,7 +1322,9 @@
 	"0789"									: "Cosmog", // uknown gender
 	"0790"									: "Cosmoen", // uknown gender
 	"0791"									: "Solgaleo", // uknown gender
+	"0791-radiant-sun"						: "Radiant Sun Solgaleo", // unknown gender
 	"0792"									: "Lunala", // uknown gender
+	"0792-full-moon"						: "Full Monn Lunala", // uknown gender
 	"0793"									: "Nihilego", // uknown gender
 	"0794"									: "Buzzwole", // uknown gender
 	"0795"									: "Pheromosa", // uknown gender
