@@ -1598,7 +1598,7 @@
 	"0982-rapid"							: "Rapid Strike Style Urshifu",
 	"0982-rapid-gmax"						: "Gigantamax Rapid Strike Style Urshifu",
 	"0893"									: "Zarude",
-	// TEMPORARY NUMBERING
+//	 TEMPORARY NUMBERING
 	"0894"									: "Regieleki",
 	"0895"									: "Regidrago",
 	"0896"									: "Calyrex",

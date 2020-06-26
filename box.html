@@ -129,9 +129,19 @@ else
 version = getQueryVariable("ver");
 if (version != "r")	// National Dex
 {
+	maxBox = 30;
+	divBox = 6;
+
 	_Ndex = [];
 	iconPath = "";
-	if (game == _Sw || game == _Sh)
+	if (game = _Re || game == _Bl)
+	{
+		_nDex = _Rdex_ReBl;
+		iconPath = _IcoPath_ReBl;
+		maxBox = 20;
+		divBox = 5;
+	}
+	else if (game == _Sw || game == _Sh)
 	{
 		if (game == _Sw)
 			CaughtColor = "blue";
@@ -145,90 +155,93 @@ if (version != "r")	// National Dex
 		iconPath = "poke_icon/home";
 	}
 
-	maxBox = 30;
-	divBox = 6;
-
 	_MaxDex = _Ndex.length;
 
 	boxCntr = 1;
 	boxIdx = 1;
-	key = 0;
-	idxStr = "0000";
-	for (i = 0; i < _MaxDex; ++i)
+	if (game < _Ru)	// Gen 1 & 2
 	{
-		rdex = _Ndex[i];
-		//console.log(rdex);
-		if (rdex.substring(0, 4) != idxStr)
+	}
+	else //if (game > _Cr) // Gen 3 above
+	{
+		key = 0;
+		idxStr = "0000";
+		for (i = 0; i < _MaxDex; ++i)
 		{
-			++key;
-			idxStr = rdex.substring(0, 4);
-		}
-		//console.log(rdex + " - " + key + " - " + rdex.substring(0, 3) + " ?= " + idxStr);
-		if (boxCntr == 1)
-		{
-			boxHead = "<table style='border:1px solid gray; font-family:consolas; text-align:center;' cellspacing=0><tr><th colspan=6 style='border:1px solid gray;'>";
+			rdex = _Ndex[i];
+			//console.log(rdex);
+			if (rdex.substring(0, 4) != idxStr)
+			{
+				++key;
+				idxStr = rdex.substring(0, 4);
+			}
+			//console.log(rdex + " - " + key + " - " + rdex.substring(0, 3) + " ?= " + idxStr);
+			if (boxCntr == 1)
+			{
+				boxHead = "<table style='border:1px solid gray; font-family:consolas; text-align:center;' cellspacing=0><tr><th colspan=6 style='border:1px solid gray;'>";
+				if (version == "e")
+				{
+					boxHead += gameName + " EvolutionDex " + ("0" + boxIdx.toString(10)).substr(-2);
+				}
+				else
+				{
+					boxHead += gameName + " " + ("0" + boxIdx.toString(10)).substr(-2) + " Dex " + ("0000" + key.toString(10)).substr(-4);
+				}
+				++boxIdx;
+			}
+
 			if (version == "e")
 			{
-				boxHead += gameName + " EvolutionDex " + ("0" + boxIdx.toString(10)).substr(-2);
+				boxBody += "<td style='border:1px solid gray; width:50px; vertical-align:top;'><span title='" + rdex.substr(0, 4) + " " + _Names[rdex] + "'><img src='" + iconPath + "/" + rdex + ".png' alt='" + rdex + "' width='64px'></span><br/><span style='font-size:10px;'>#" + rdex.substr(0, 4) + "<br/>" + _Names[rdex] + "</span></td>";
 			}
 			else
 			{
-				boxHead += gameName + " " + ("0" + boxIdx.toString(10)).substr(-2) + " Dex " + ("0000" + key.toString(10)).substr(-4);
+				boxBody += "<td style='border:1px solid gray; width:50px; vertical-align:top;'><span title='" + ("0000" + key.toString(10)).substr(-4) + " " + _Names[rdex] + "'><img src='" + iconPath + "/" + rdex + ".png' alt='" + rdex + "' width='64px'></span><br/><span style='font-size:10px;'>#" + ("0000" + key.toString(10)).substr(-4) + "<br/>" + _Names[rdex] + "</span></td>";
 			}
-			++boxIdx;
-		}
 
-		if (version == "e")
+			if (boxCntr == maxBox)
+			{
+				if (version == "e")
+				{
+					boxHead += "</th></tr><tr>";
+				}
+				else
+				{
+					boxHead += "-" + ("0000" + key.toString(10)).substr(-4) + "</th></tr><tr>";
+				}
+				document.write(boxHead);
+				document.write(boxBody);
+				document.write("</tr></table><br/>");
+				boxCntr = 0;
+				boxHead = "";
+				boxBody = "";
+			}
+
+			if (boxCntr % divBox == 0)
+				boxBody += "</tr><tr>";
+
+			boxCntr++;
+		}
+		// filler
+		while (boxCntr <= maxBox)
 		{
-			boxBody += "<td style='border:1px solid gray; width:50px; vertical-align:top;'><span title='" + rdex.substr(0, 4) + " " + _Names[rdex] + "'><img src='" + iconPath + "/" + rdex + ".png' alt='" + rdex + "' width='64px'></span><br/><span style='font-size:10px;'>#" + rdex.substr(0, 4) + "<br/>" + _Names[rdex] + "</span></td>";
+			boxBody += "<td style='border:1px solid gray; width:50px;'><img src='" + iconPath + "/0000-none.png' width='64px'><br/><span style='font-size:10px;'>&nbsp;</span></td>";
+			if (boxCntr % divBox == 0)
+				boxBody += "</tr><tr>";
+			boxCntr++;
+		}
+		if (version = "e")
+		{
+			boxHead += "</th></tr><tr>";
 		}
 		else
 		{
-			boxBody += "<td style='border:1px solid gray; width:50px; vertical-align:top;'><span title='" + ("0000" + key.toString(10)).substr(-4) + " " + _Names[rdex] + "'><img src='" + iconPath + "/" + rdex + ".png' alt='" + rdex + "' width='64px'></span><br/><span style='font-size:10px;'>#" + ("0000" + key.toString(10)).substr(-4) + "<br/>" + _Names[rdex] + "</span></td>";
+			boxHead += "-" + ("0000" + key.toString(10)).substr(-4) + "</th></tr><tr>";
 		}
-
-		if (boxCntr == maxBox)
-		{
-			if (version == "e")
-			{
-				boxHead += "</th></tr><tr>";
-			}
-			else
-			{
-				boxHead += "-" + ("0000" + key.toString(10)).substr(-4) + "</th></tr><tr>";
-			}
-			document.write(boxHead);
-			document.write(boxBody);
-			document.write("</tr></table><br/>");
-			boxCntr = 0;
-			boxHead = "";
-			boxBody = "";
-		}
-
-		if (boxCntr % divBox == 0)
-			boxBody += "</tr><tr>";
-
-		boxCntr++;
+		document.write(boxHead);
+		document.write(boxBody);
+		document.write("</tr></table>");
 	}
-	// filler
-	while (boxCntr <= maxBox)
-	{
-		boxBody += "<td style='border:1px solid gray; width:50px;'><img src='" + iconPath + "/0000-none.png' width='64px'><br/><span style='font-size:10px;'>&nbsp;</span></td>";
-		if (boxCntr % divBox == 0)
-			boxBody += "</tr><tr>";
-		boxCntr++;
-	}
-	if (version = "e")
-	{
-		boxHead += "</th></tr><tr>";
-	}
-	else
-	{
-		boxHead += "-" + ("0000" + key.toString(10)).substr(-4) + "</th></tr><tr>";
-	}
-	document.write(boxHead);
-	document.write(boxBody);
-	document.write("</tr></table>");
 }
 else //if (version == "r") // Regional Dex
 {

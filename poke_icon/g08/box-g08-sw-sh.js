@@ -1,5 +1,5 @@
-﻿var _IcoPath = "icon/g08/sw-sh/";
-var _Rdex_Galar = /* regional dex */
+﻿var _IcoPath_SwSh = "icon/g08/sw-sh/";
+var _Rdex_SwSh = /* regional dex */
 [
 	"0810", "0811", "0812", "0812-gmax",
 	"0813", "0814", "0815", "0815-gmax",
@@ -255,7 +255,7 @@ var _Rdex_Galar = /* regional dex */
 	"0888-hero",
 	"0889-hero",
 	"0890",
-	// Isle of Armor Dex exclusive
+//	 Isle of Armor Dex exclusive
 	"0079-galar", "0079", "0080-galar", "0080", "0199-galar", "0199",
 	"0427", "0428",
 	"0440", "0113", "0242",
@@ -309,7 +309,7 @@ var _Rdex_Galar = /* regional dex */
 	"0102", "0103", "0103-alola",
 	"0137", "0233", "0474",
 	"0893",
-	// non-Galar Dex
+//	 non-Galar Dex
 	"0150",
 	"0151",
 	"0251",
@@ -331,11 +331,11 @@ var _Rdex_Galar = /* regional dex */
 	"0808", "0809", "0809-gmax",
 ];
 
-_Ndex_08 =
+var _Ndex_G08 =
 [
-	//==============
-	// Generation 1
-	//==============
+//	==============
+//	 Generation 1
+//	==============
 	"0001",									// "Bulbasaur"
 	"0002",									// "Ivysaur"
 //	"0003",									// "Venusaur"
@@ -608,9 +608,9 @@ _Ndex_08 =
 //	"0150-mega-x",							// "Mega Mewtwo X" // uknown gender
 //	"0150-mega-y",							// "Mega Mewtwo Y" // uknown gender
 	"0151",									// "Mew" // uknown gender
-	//==============
-	// Generation 2
-	//==============
+//	==============
+//	 Generation 2
+//	==============
 	"0152",									// "Chikorita"
 	"0153",									// "Bayleef"
 //	"0154",									// "Meganium"
@@ -793,9 +793,9 @@ _Ndex_08 =
 	"0249",									// "Lugia" // uknown gender
 	"0250",									// "Ho-Oh" // uknown gender
 	"0251",									// "Celebi" // uknown gender
-	//==============
-	// Generation 3
-	//==============
+//	==============
+//	 Generation 3
+//	==============
 	"0252",									// "Treecko"
 	"0253",									// "Grovyle"
 	"0254",									// "Sceptile"
@@ -997,9 +997,9 @@ _Ndex_08 =
 	"0386-attack",							// "Attack Deoxys" // uknown gender
 	"0386-defense",							// "Defense Deoxys" // uknown gender
 	"0386-speed",							// "Speed Deoxys" // uknown gender
-	//==============
-	// Generation 4
-	//==============
+//	==============
+//	 Generation 4
+//	==============
 	"0387",									// "Turtwig"
 	"0388",									// "Grotle"
 	"0389",									// "Torterra"
@@ -1222,9 +1222,9 @@ _Ndex_08 =
 	"0493-dragon",							// "Dragon Arceus" // uknown gender
 	"0493-dark",							// "Dark Arceus" // uknown gender
 	"0493-fairy",							// "Fairy Arceus" // uknown gender
-	//==============
-	// Generation 5
-	//==============
+//	==============
+//	 Generation 5
+//	==============
 	"0494",									// "Victini" // uknown gender
 	"0495",									// "Snivy"
 	"0496",									// "Servine"
@@ -1423,9 +1423,9 @@ _Ndex_08 =
 	"0649-shock",							// "Shock Drive Genesect" // uknown gender
 	"0649-burn",							// "Burn Drive Genesect" // uknown gender
 	"0649-chill",							// "Chill Drive Genesect" // uknown gender
-	//==============
-	// Generation 6
-	//==============
+//	==============
+//	 Generation 6
+//	==============
 	"0650",									// "Chespin"
 	"0651",									// "Quilladin"
 	"0652",									// "Chesnaught"
@@ -1568,9 +1568,9 @@ _Ndex_08 =
 	"0720-confined",						// "Hoopa Confined" // uknown gender
 	"0720-unbound",							// "Hoopa Unbound" // uknown gender
 	"0721",									// "Volcanion" // uknown gender
-	//==============
-	// Generation 7
-	//==============
+//	==============
+//	 Generation 7
+//	==============
 	"0722",									// "Rowlet"
 	"0723",									// "Dartrix"
 	"0724",									// "Decidueye"
@@ -1701,9 +1701,9 @@ _Ndex_08 =
 	"0808",									// "Meltan" // uknown gender
 	"0809",									// "Melmetal" // uknown gender
 	"0809-gmax",							// "Gigantamax Melmetal" // uknown gender
-	//==============
-	// Generation 8
-	//==============
+//	==============
+//	 Generation 8
+//	==============
 	"0810",									// "Grookey"
 	"0811",									// "Thwackey"
 	"0812",									// "Rillaboom"
@@ -1957,44 +1957,44 @@ _Ndex_08 =
 	"0982-rapid-gmax",						// "Gigantamax Rapid Strike Style Urshifu"
 ];
 
-_Evodex_08 =
+var _Evodex_G08 =
 [
 	"0001",									// "Bulbasaur"
 	"0002",									// "Ivysaur"
-	//"0003",								// "Venusaur"
+//	"0003",									// "Venusaur"
 	"0003-m",								// "Venusaur♂"
 	"0003-f",								// "Venusaur♀"
-	//"0003-mega",							// "Mega Venusaur"
+//	"0003-mega",							// "Mega Venusaur"
 	"0003-gmax",							// "Gigantamax Venusaur"
 	"0004",									// "Charmander"
 	"0005",									// "Charmeleon"
 	"0006",									// "Charizard"
-	//"0006-mega-x",						// "Mega Charizard X"
-	//"0006-mega-y",						// "Mega Charizard Y"
+//	"0006-mega-x",							// "Mega Charizard X"
+//	"0006-mega-y",							// "Mega Charizard Y"
 	"0006-gmax",							// "Gigantamax Charizard"
 	"0007",									// "Squirtle"
 	"0008",									// "Wartortle"
 	"0009",									// "Blastoise"
-	//"0009-mega",							// "Mega Blastoise"
+//	"0009-mega",							// "Mega Blastoise"
 	"0009-gmax",							// "Gigantamax Blastoise"
 	"0010",									// "Caterpie"
 	"0011",									// "Metapod"
-	//"0012",								// "Butterfree"
+//	"0012",									// "Butterfree"
 	"0012-m",								// "Butterfree♂"
 	"0012-f",								// "Butterfree♀"
 	"0012-gmax",							// "Gigantamax Butterfree"
 	"0013",									// "Weedle"
 	"0014",									// "Kakuna"
 	"0015",									// "Beedrill"
-	//"0015-mega",							// "Mega Beedrill"
+//	"0015-mega",							// "Mega Beedrill"
 	"0016",									// "Pidgey"
 	"0017",									// "Pidgeotto"
 	"0018",									// "Pidgeot"
-	//"0018-mega",							// "Mega Pidgeot"
-	//"0019",								// "Rattata"
+//	"0018-mega",							// "Mega Pidgeot"
+//	"0019",									// "Rattata"
 	"0019-m",								// "Rattata♂"
 	"0019-f",								// "Rattata♀"
-	//"0020",								// "Raticate"
+//	"0020",									// "Raticate"
 	"0020-m",								// "Raticate♂"
 	"0020-f",								// "Raticate♀"
 	"0019-alola",							// "Alolan Rattata"
@@ -2004,16 +2004,16 @@ _Evodex_08 =
 	"0023",									// "Ekans"
 	"0024",									// "Arbok"
 	"0172",									// "Pichu"
-	"0172-spiky-eared",						// "Spiky-eared Pichu" // female only
-	//"0025",								// "Pikachu"
+//	"0172-spiky-eared",						// "Spiky-eared Pichu" // female only
+//	"0025",									// "Pikachu"
 	"0025-m",								// "Pikachu♂"
 	"0025-f",								// "Pikachu♀"
-	//"0025-cosplay",						// "Cosplay Pikachu" // female only
-	//"0025-rock-star",						// "Pikachu Rock Star" // female only
-	//"0025-belle",							// "Pikachu Belle" // female only
-	//"0025-popstar",						// "Pikachu Pop Star" // female only
-	//"0025-phd",							// "Pikachu, Ph. D" // female only
-	//"0025-libre",							// "Pikachu Libre" // female only
+//	"0025-cosplay",							// "Cosplay Pikachu" // female only
+//	"0025-rock-star",						// "Pikachu Rock Star" // female only
+//	"0025-belle",							// "Pikachu Belle" // female only
+//	"0025-popstar",							// "Pikachu Pop Star" // female only
+//	"0025-phd",								// "Pikachu, Ph. D" // female only
+//	"0025-libre",							// "Pikachu Libre" // female only
 	"0025-original-cap",					// "Original Cap Pikachu" // male only
 	"0025-hoenn-cap",						// "Hoenn Cap Pikachu" // male only
 	"0025-sinnoh-cap",						// "Sinnoh Cap Pikachu" // male only
@@ -2021,10 +2021,10 @@ _Evodex_08 =
 	"0025-kalos-cap",						// "Kalos Cap Pikachu" // male only
 	"0025-alola-cap",						// "Alola Cap Pikachu" // male only
 	"0025-partner-cap",						// "Partner Cap Pikachu" // male only
-	//"0025-m-letsgo",						// "Parter Pikachu♂"
-	//"0025-f-letsgo",						// "Parter Pikachu♀"
+//	"0025-m-letsgo",						// "Parter Pikachu♂"
+//	"0025-f-letsgo",						// "Parter Pikachu♀"
 	"0025-gmax",							// "Gigantamax Pikachu"
-	//"0026",								// "Raichu"
+//	"0026",									// "Raichu"
 	"0026-m",								// "Raichu♂"
 	"0026-f",								// "Raichu♀"
 	"0026-alola",							// "Alolan Raichu"
@@ -2032,8 +2032,8 @@ _Evodex_08 =
 	"0028",									// "Sandslash"
 	"0027-alola",							// "Alolan Sandshrew"
 	"0028-alola",							// "Alolan Sandslash"
-	//"0029",								// "Nidoran"
-	//"0032",								// "Nidoran"
+//	"0029",									// "Nidoran"
+//	"0032",									// "Nidoran"
 	"0032-m",								// "Nidoran♂"
 	"0029-f",								// "Nidoran♀"
 	"0030",									// "Nidorina"
@@ -2050,17 +2050,17 @@ _Evodex_08 =
 	"0174",									// "Igglybuff"
 	"0039",									// "Jigglypuff"
 	"0040",									// "Wigglytuff"
-	//"0041",								// "Zubat"
+//	"0041",									// "Zubat"
 	"0041-m",								// "Zubat♂"
 	"0041-f",								// "Zubat♀"
-	//"0042",								// "Golbat"
+//	"0042",									// "Golbat"
 	"0042-m",								// "Golbat♂"
 	"0042-f",								// "Golbat♀"
 	"0043",									// "Oddish"
-	//"0044",								// "Gloom"
+//	"0044",									// "Gloom"
 	"0044-m",								// "Gloom♂"
 	"0044-f",								// "Gloom♀"
-	//"0045",								// "Vileplume"
+//	"0045",									// "Vileplume"
 	"0045-m",								// "Vileplume♂"
 	"0045-f",								// "Vileplume♀"
 	"0182",									// "Bellossom"
@@ -2088,17 +2088,17 @@ _Evodex_08 =
 	"0060",									// "Poliwag"
 	"0061",									// "Poliwhirl"
 	"0062",									// "Poliwrath"
-	//"0186",								// "Politoed"
+//	"0186",									// "Politoed"
 	"0186-m",								// "Politoed♂"
 	"0186-f",								// "Politoed♀"
 	"0063",									// "Abra"
-	//"0064",								// "Kadabra"
+//	"0064",									// "Kadabra"
 	"0064-m",								// "Kadabra♂"
 	"0064-f",								// "Kadabra♀"
-	//"0065",								// "Alakazam"
+//	"0065",									// "Alakazam"
 	"0065-m",								// "Alakazam♂"
 	"0065-f",								// "Alakazam♀"
-	//"0065-mega",							// "Mega Alakazam"
+//	"0065-mega",							// "Mega Alakazam"
 	"0066",									// "Machop"
 	"0067",									// "Machoke"
 	"0068",									// "Machamp"
@@ -2120,7 +2120,7 @@ _Evodex_08 =
 	"0078-galar",							// "Galarian Rapidash"
 	"0079",									// "Slowpoke"
 	"0080",									// "Slowbro"
-	//"0080-mega",							// "Mega Slowbro"
+//	"0080-mega",							// "Mega Slowbro"
 	"0199",									// "Slowking"
 	"0079-galar",							// "Galarian Slowpoke"
 	"0080-galar",							// "Galarian Slowbro"
@@ -2131,10 +2131,10 @@ _Evodex_08 =
 	"0083",									// "Farfetch'd"
 	"0083-galar",							// "Galarian Farfetch'd"
 	"0865",									// "Sirfetch'd"
-	//"0084",								// "Doduo"
+//	"0084",									// "Doduo"
 	"0084-m",								// "Doduo♂"
 	"0084-f",								// "Doduo♀"
-	//"0085",								// "Dodrio"
+//	"0085",									// "Dodrio"
 	"0085-m",								// "Dodrio♂"
 	"0085-f",								// "Dodrio♀"
 	"0086",									// "Seel"
@@ -2148,15 +2148,15 @@ _Evodex_08 =
 	"0092",									// "Gastly"
 	"0093",									// "Haunter"
 	"0094",									// "Gengar"
-	//"0094-mega",							// "Mega Gengar"
+//	"0094-mega",							// "Mega Gengar"
 	"0094-gmax",							// "Gigantamax Gengar"
 	"0095",									// "Onix"
-	//"0208",								// "Steelix"
+//	"0208",									// "Steelix"
 	"0208-m",								// "Steelix♂"
 	"0208-f",								// "Steelix♀"
-	//"0208-mega",							// "Mega Steelix"
+//	"0208-mega",							// "Mega Steelix"
 	"0096",									// "Drowzee"
-	//"0097",								// "Hypno"
+//	"0097",									// "Hypno"
 	"0097-m",								// "Hypno♂"
 	"0097-f",								// "Hypno♀"
 	"0098",									// "Krabby"
@@ -2179,30 +2179,30 @@ _Evodex_08 =
 	"0109",									// "Koffing"
 	"0110",									// "Weezing"
 	"0110-galar",							// "Galarian Weezing"
-	//"0111",								// "Rhyhorn"
+//	"0111",									// "Rhyhorn"
 	"0111-m",								// "Rhyhorn♂"
 	"0111-f",								// "Rhyhorn♀"
-	//"0112",								// "Rhydon"
+//	"0112",									// "Rhydon"
 	"0112-m",								// "Rhydon♂"
 	"0112-f",								// "Rhydon♀"
-	//"0464",								// "Rhyperior"
+//	"0464",									// "Rhyperior"
 	"0464-m",								// "Rhyperior♂"
 	"0464-f",								// "Rhyperior♀"
 	"0440",									// "Happiny" // female only
 	"0113",									// "Chansey" // female only
 	"0242",									// "Blissey" // female only
 	"0114",									// "Tangela"
-	//"0465",								// "Tangrowth"
+//	"0465",									// "Tangrowth"
 	"0465-m",								// "Tangrowth♂"
 	"0465-f",								// "Tangrowth♀"
 	"0115",									// "Kangaskhan" // female only
-	//"0115-mega",							// "Mega Kangaskhan" // female only
+//	"0115-mega",							// "Mega Kangaskhan" // female only
 	"0116",									// "Horsea"
 	"0117",									// "Seadra"
-	//"0118",								// "Goldeen"
+//	"0118",									// "Goldeen"
 	"0118-m",								// "Goldeen♂"
 	"0118-f",								// "Goldeen♀"
-	//"0119",								// "Seaking"
+//	"0119",									// "Seaking"
 	"0119-m",								// "Seaking♂"
 	"0119-f",								// "Seaking♀"
  	"0120",									// "Staryu" // uknown gender
@@ -2211,13 +2211,13 @@ _Evodex_08 =
 	"0122",									// "Mr. Mime"
 	"0122-galar",							// "Galarian Mr. Mime"
 	"0866",									// "Mr. Rime"
-	//"0123",								// "Scyther"
+//	"0123",									// "Scyther"
 	"0123-m",								// "Scyther♂"
 	"0123-f",								// "Scyther♀"
-	//"0212",								// "Scizor"
+//	"0212",									// "Scizor"
 	"0212-m",								// "Scizor♂"
 	"0212-f",								// "Scizor♀"
-	//"0212-mega",							// "Mega Scizor"
+//	"0212-mega",							// "Mega Scizor"
 	"0238",									// "Smoochum" // female only
 	"0124",									// "Jynx" // female only
 	"0239",									// "Elekid"
@@ -2227,23 +2227,23 @@ _Evodex_08 =
 	"0126",									// "Magmar"
 	"0467",									// "Magmortar"
 	"0127",									// "Pinsir"
-	//"0127-mega",							// "Mega Pinsir"
+//	"0127-mega",							// "Mega Pinsir"
 	"0128",									// "Tauros" // male only
-	//"0129",								// "Magikarp"
+//	"0129",									// "Magikarp"
 	"0129-m",								// "Magikarp♂"
 	"0129-f",								// "Magikarp♀"
-	//"0130",								// "Gyarados"
+//	"0130",									// "Gyarados"
 	"0130-m",								// "Gyarados♂"
 	"0130-f",								// "Gyarados♀"
-	//"0130-mega",							// "Mega Gyarados"
+//	"0130-mega",							// "Mega Gyarados"
 	"0131",									// "Lapras"
 	"0131-gmax",							// "Gigantamax Lapras"
 	"0132",									// "Ditto" // uknown gender
-	//"0133",								// "Eevee"
+//	"0133",									// "Eevee"
 	"0133-m",								// "Eevee♂"
 	"0133-f",								// "Eevee♀"
-	//"0133-m-letsgo",						// "Partner Eevee♂"
-	//"0133-f-letsgo",						// "Partner Eevee♀"
+//	"0133-m-letsgo",						// "Partner Eevee♂"
+//	"0133-f-letsgo",						// "Partner Eevee♀"
 	"0133-gmax",							// "Gigantamax Eevee"
 	"0134",									// "Vaporeon"
 	"0135",									// "Jolteon"
@@ -2261,7 +2261,7 @@ _Evodex_08 =
 	"0140",									// "Kabuto"
 	"0141",									// "Kabutops"
 	"0142",									// "Aerodactyl"
-	//"0142-mega",							// "Mega Aerodactyl"
+//	"0142-mega",							// "Mega Aerodactyl"
 	"0345",									// "Lileep"
 	"0346",									// "Cradily"
 	"0347",									// "Anorith"
@@ -2295,12 +2295,12 @@ _Evodex_08 =
 	"0148",									// "Dragonair"
 	"0149",									// "Dragonite"
 	"0150",									// "Mewtwo" // uknown gender
-	//"0150-mega-x",						// "Mega Mewtwo X" // uknown gender
-	//"0150-mega-y",						// "Mega Mewtwo Y" // uknown gender
+//	"0150-mega-x",							// "Mega Mewtwo X" // uknown gender
+//	"0150-mega-y",							// "Mega Mewtwo Y" // uknown gender
 	"0151",									// "Mew" // uknown gender
 	"0152",									// "Chikorita"
 	"0153",									// "Bayleef"
-	//"0154",								// "Meganium"
+//	"0154",									// "Meganium"
 	"0154-m",								// "Meganium♂"
 	"0154-f",								// "Meganium♀"
 	"0155",									// "Cyndaquil"
@@ -2313,8 +2313,8 @@ _Evodex_08 =
 	"0162",									// "Furret"
 	"0163",									// "Hoothoot"
 	"0164",									// "Noctowl"
-	//"0165",								// "Ledyba"
-	//"0166",								// "Ledian"
+//	"0165",									// "Ledyba"
+//	"0166",									// "Ledian"
 	"0165-m",								// "Ledyba♂"
 	"0166-m",								// "Ledian♂"
 	"0165-f",								// "Ledyba♀"
@@ -2328,47 +2328,47 @@ _Evodex_08 =
 	"0176",									// "Togetic"
 	"0468",									// "Togekiss"
 	"0177",									// "Natu"
-	//"0178",								// "Xatu"
+//	"0178",									// "Xatu"
 	"0178-m",								// "Xatu♂"
 	"0178-f",								// "Xatu♀"
 	"0179",									// "Mareep"
 	"0180",									// "Flaaffy"
 	"0181",									// "Ampharos"
-	//"0181-mega",							// "Mega Ampharos"
+//	"0181-mega",							// "Mega Ampharos"
 	"0298",									// "Azurill"
 	"0183",									// "Marill"
 	"0184",									// "Azumarill"
 	"0438",									// "Bonsly"
-	//"0185",								// "Sudowoodo"
+//	"0185",									// "Sudowoodo"
 	"0185-m",								// "Sudowoodo♂"
 	"0185-f",								// "Sudowoodo♀"
 	"0187",									// "Hoppip"
 	"0188",									// "Skiploom"
 	"0189",									// "Jumpluff"
-	//"0190",								// "Aipom"
+//	"0190",									// "Aipom"
 	"0190-m",								// "Aipom♂"
 	"0190-f",								// "Aipom♀"
-	//"0424",								// "Ambipom"
+//	"0424",									// "Ambipom"
 	"0424-m",								// "Ambipom♂"
 	"0424-f",								// "Ambipom♀"
 	"0191",									// "Sunkern"
 	"0192",									// "Sunflora"
 	"0193",									// "Yanma"
 	"0469",									// "Yanmega"
-	//"0194",								// "Wooper"
+//	"0194",									// "Wooper"
 	"0194-m",								// "Wooper♂"
 	"0194-f",								// "Wooper♀"
-	//"0195",								// "Quagsire"
+//	"0195",									// "Quagsire"
 	"0195-m",								// "Quagsire♂"
 	"0195-f",								// "Quagsire♀"
-	//"0198",								// "Murkrow"
+//	"0198",									// "Murkrow"
 	"0198-m",								// "Murkrow♂"
 	"0198-f",								// "Murkrow♀"
 	"0430",									// "Honchkrow"
 	"0200",									// "Misdreavus"
 	"0429",									// "Mismagius"
-	//"0201",								// "Unown" // uknown gender
-	//"0201-angry",							// "Unown Angry" // uknown gender
+//	"0201",									// "Unown" // uknown gender
+//	"0201-angry",							// "Unown Angry" // uknown gender
 	"0201-anger",							// "Unown Anger" // uknown gender
 	"0201-bear",							// "Unown Bear" // uknown gender
 	"0201-chase",							// "Unown Chase" // uknown gender
@@ -2397,16 +2397,16 @@ _Evodex_08 =
 	"0201-zoom",							// "Unown Zoom" // uknown gender
 	"0201-exclamation",						// "Unown !!!!!" // uknown gender
 	"0201-question",						// "Unown ?????" // uknown gender
-	//"0202",								// "Wobbuffet"
+//	"0202",									// "Wobbuffet"
 	"0202-m",								// "Wobbuffet♂"
 	"0202-f",								// "Wobbuffet♀"
-	//"0203",								// "Girafarig"
+//	"0203",									// "Girafarig"
 	"0203-m",								// "Girafarig♂"
 	"0203-f",								// "Girafarig♀"
 	"0204",									// "Pineco"
 	"0205",									// "Forretress"
 	"0206",									// "Dunsparce"
-	//"0207",								// "Gligar"
+//	"0207",									// "Gligar"
 	"0207-m",								// "Gligar♂"
 	"0207-f",								// "Gligar♀"
 	"0472",									// "Gliscor"
@@ -2414,34 +2414,34 @@ _Evodex_08 =
 	"0210",									// "Granbull"
 	"0211",									// "Qwilfish"
 	"0213",									// "Shuckle"
-	//"0214",								// "Heracross"
+//	"0214",									// "Heracross"
 	"0214-m",								// "Heracross♂"
 	"0214-f",								// "Heracross♀"
-	//"0214-mega",							// "Mega Heracross"
-	//"0215",								// "Sneasel"
+//	"0214-mega",							// "Mega Heracross"
+//	"0215",									// "Sneasel"
 	"0215-m",								// "Sneasel♂"
 	"0215-f",								// "Sneasel♀"
-	//"0461",								// "Weavile"
+//	"0461",									// "Weavile"
 	"0461-m",								// "Weavile♂"
 	"0461-f",								// "Weavile♀"
 	"0216",									// "Teddiursa"
-	//"0217",								// "Ursaring"
+//	"0217",									// "Ursaring"
 	"0217-m",								// "Ursaring♂"
 	"0217-f",								// "Ursaring♀"
 	"0218",									// "Slugma"
 	"0219",									// "Magcargo"
 	"0220",									// "Swinub"
-	//"0221",								// "Piloswine"
+//	"0221",									// "Piloswine"
 	"0221-m",								// "Piloswine♂"
 	"0221-f",								// "Piloswine♀"
-	//"0473",								// "Mamoswine"
+//	"0473",									// "Mamoswine"
 	"0473-m",								// "Mamoswine♂"
 	"0473-f",								// "Mamoswine♀"
 	"0222",									// "Corsola"
 	"0222-galar",							// "Galarian Corsola"
 	"0864",									// "Cursola"
 	"0223",									// "Remoraid"
-	//"0224",								// "Octillery"
+//	"0224",									// "Octillery"
 	"0224-m",								// "Octillery♂"
 	"0224-f",								// "Octillery♀"
 	"0225",									// "Delibird"
@@ -2449,13 +2449,13 @@ _Evodex_08 =
 	"0226",									// "Mantine"
 	"0227",									// "Skarmory"
 	"0228",									// "Houndour"
-	//"0229",								// "Houndoom"
+//	"0229",									// "Houndoom"
 	"0229-m",								// "Houndoom♂"
 	"0229-f",								// "Houndoom♀"
-	//"0229-mega",							// "Mega Houndoom"
+//	"0229-mega",							// "Mega Houndoom"
 	"0230",									// "Kingdra"
 	"0231",									// "Phanpy"
-	//"0232",								// "Donphan"
+//	"0232",									// "Donphan"
 	"0232-m",								// "Donphan♂"
 	"0232-f",								// "Donphan♀"
 	"0234",									// "Stantler"
@@ -2467,28 +2467,28 @@ _Evodex_08 =
 	"0246",									// "Larvitar"
 	"0247",									// "Pupitar"
 	"0248",									// "Tyranitar"
-	//"0248-mega",							// "Mega Tyranitar"
+//	"0248-mega",							// "Mega Tyranitar"
 	"0249",									// "Lugia" // uknown gender
 	"0250",									// "Ho-Oh" // uknown gender
 	"0251",									// "Celebi" // uknown gender
 	"0252",									// "Treecko"
 	"0253",									// "Grovyle"
 	"0254",									// "Sceptile"
-	//"0254-mega",							// "Mega Sceptile"
-	//"0255",								// "Torchic"
+//	"0254-mega",							// "Mega Sceptile"
+//	"0255",									// "Torchic"
 	"0255-m",								// "Torchic♂"
 	"0255-f",								// "Torchic♀"
-	//"0256",								// "Combusken"
+//	"0256",									// "Combusken"
 	"0256-m",								// "Combusken♂"
 	"0256-f",								// "Combusken♀"
-	//"0257",								// "Blaziken"
+//	"0257",									// "Blaziken"
 	"0257-m",								// "Blaziken♂"
 	"0257-f",								// "Blaziken♀"
-	//"0257-mega",							// "Mega Blaziken"
+//	"0257-mega",							// "Mega Blaziken"
 	"0258",									// "Mudkip"
 	"0259",									// "Marshtomp"
 	"0260",									// "Swampert"
-	//"0260-mega",							// "Mega Swampert"
+//	"0260-mega",							// "Mega Swampert"
 	"0261",									// "Poochyena"
 	"0262",									// "Mightyena"
 	"0263",									// "Zigzagoon"
@@ -2498,23 +2498,23 @@ _Evodex_08 =
 	"0862",									// "Obstagoon"
 	"0265",									// "Wurmple"
 	"0266",									// "Silcoon"
-	//"0267",								// "Beautifly"
+//	"0267",									// "Beautifly"
 	"0267-m",								// "Beautifly♂"
 	"0267-f",								// "Beautifly♀"
 	"0268",									// "Cascoon"
-	//"0269",								// "Dustox"
+//	"0269",									// "Dustox"
 	"0269-m",								// "Dustox♂"
 	"0269-f",								// "Dustox♀"
 	"0270",									// "Lotad"
 	"0271",									// "Lombre"
-	//"0272",								// "Ludicolo"
+//	"0272",									// "Ludicolo"
 	"0272-m",								// "Ludicolo♂"
 	"0272-f",								// "Ludicolo♀"
 	"0273",									// "Seedot"
-	//"0274",								// "Nuzleaf"
+//	"0274",									// "Nuzleaf"
 	"0274-m",								// "Nuzleaf♂"
 	"0274-f",								// "Nuzleaf♀"
-	//"0275",								// "Shiftry"
+//	"0275",									// "Shiftry"
 	"0275-m",								// "Shiftry♂"
 	"0275-f",								// "Shiftry♀"
 	"0276",									// "Taillow"
@@ -2524,9 +2524,9 @@ _Evodex_08 =
 	"0280",									// "Ralts"
 	"0281",									// "Kirlia"
 	"0282",									// "Gardevoir"
-	//"0282-mega",							// "Mega Gardevoir"
+//	"0282-mega",							// "Mega Gardevoir"
 	"0475",									// "Gallade" // male only
-	//"0475-mega",							// "Mega Gallade" // male only
+//	"0475-mega",							// "Mega Gallade" // male only
 	"0283",									// "Surskit"
 	"0284",									// "Masquerain"
 	"0285",									// "Shroomish"
@@ -2547,52 +2547,52 @@ _Evodex_08 =
 	"0300",									// "Skitty"
 	"0301",									// "Delcatty"
 	"0302",									// "Sableye"
-	//"0302-mega",							// "Mega Sableye"
+//	"0302-mega",							// "Mega Sableye"
 	"0303",									// "Mawile"
-	//"0303-mega",							// "Mega Mawile"
+//	"0303-mega",							// "Mega Mawile"
 	"0304",									// "Aron"
 	"0305",									// "Lairon"
 	"0306",									// "Aggron"
-	//"0306-mega",							// "Mega Aggron"
-	//"0307",								// "Meditite"
+//	"0306-mega",							// "Mega Aggron"
+//	"0307",									// "Meditite"
 	"0307-m",								// "Meditite♂"
 	"0307-f",								// "Meditite♀"
-	//"0308",								// "Medicham"
+//	"0308",									// "Medicham"
 	"0308-m",								// "Medicham♂"
 	"0308-f",								// "Medicham♀"
-	//"0308-mega",							// "Mega Medicham"
+//	"0308-mega",							// "Mega Medicham"
 	"0309",									// "Electrike"
 	"0310",									// "Manectric"
-	//"0310-mega",							// "Mega Manectric"
+//	"0310-mega",							// "Mega Manectric"
 	"0311",									// "Plusle"
 	"0312",									// "Minun"
 	"0313",									// "Volbeat" // male only
 	"0314",									// "Illumise" // female only
 	"0406",									// "Budew"
-	//"0315",								// "Roselia"
+//	"0315",									// "Roselia"
 	"0315-m",								// "Roselia♂"
 	"0315-f",								// "Roselia♀"
-	//"0407",								// "Roserade"
+//	"0407",									// "Roserade"
 	"0407-m",								// "Roserade♂"
 	"0407-f",								// "Roserade♀"
-	//"0316",								// "Gulpin"
+//	"0316",									// "Gulpin"
 	"0316-m",								// "Gulpin♂"
 	"0316-f",								// "Gulpin♀"
-	//"0317",								// "Swalot"
+//	"0317",									// "Swalot"
 	"0317-m",								// "Swalot♂"
 	"0317-f",								// "Swalot♀"
 	"0318",									// "Carvanha"
 	"0319",									// "Sharpedo"
-	//"0319-mega",							// "Mega Sharpedo"
+//	"0319-mega",							// "Mega Sharpedo"
 	"0320",									// "Wailmer"
 	"0321",									// "Wailord"
-	//"0322",								// "Numel"
+//	"0322",									// "Numel"
 	"0322-m",								// "Numel♂"
 	"0322-f",								// "Numel♀"
-	//"0323",								// "Camerupt"
+//	"0323",									// "Camerupt"
 	"0323-m",								// "Camerupt♂"
 	"0323-f",								// "Camerupt♀"
-	//"0323-mega",							// "Mega Camerupt"
+//	"0323-mega",							// "Mega Camerupt"
 	"0324",									// "Torkoal"
 	"0325",									// "Spoink"
 	"0326",									// "Grumpig"
@@ -2601,12 +2601,12 @@ _Evodex_08 =
 	"0329",									// "Vibrava"
 	"0330",									// "Flygon"
 	"0331",									// "Cacnea"
-	//"0332",								// "Cacturne"
+//	"0332",									// "Cacturne"
 	"0332-m",								// "Cacturne♂"
 	"0332-f",								// "Cacturne♀"
 	"0333",									// "Swablu"
 	"0334",									// "Altaria"
-	//"0334-mega",							// "Mega Altaria"
+//	"0334-mega",							// "Mega Altaria"
 	"0335",									// "Zangoose"
 	"0336",									// "Seviper"
 	"0337",									// "Lunatone" // uknown gender
@@ -2618,7 +2618,7 @@ _Evodex_08 =
 	"0343",									// "Baltoy" // uknown gender
 	"0344",									// "Claydol" // uknown gender
 	"0349",									// "Feebas"
-	//"0350",								// "Milotic"
+//	"0350",									// "Milotic"
 	"0350-m",								// "Milotic♂"
 	"0350-f",								// "Milotic♀"
 	"0351",									// "Castform"
@@ -2628,7 +2628,7 @@ _Evodex_08 =
 	"0352",									// "Kecleon"
 	"0353",									// "Shuppet"
 	"0354",									// "Banette"
-	//"0354-mega",							// "Mega Banette"
+//	"0354-mega",							// "Mega Banette"
 	"0355",									// "Duskull"
 	"0356",									// "Dusclops"
 	"0477",									// "Dusknoir"
@@ -2636,11 +2636,11 @@ _Evodex_08 =
 	"0433",									// "Chingling"
 	"0358",									// "Chimecho"
 	"0359",									// "Absol"
-	//"0359-mega",							// "Mega Absol"
+//	"0359-mega",							// "Mega Absol"
 	"0360",									// "Wynaut"
 	"0361",									// "Snorunt"
 	"0362",									// "Glalie"
-	//"0362-mega",							// "Mega Glalie"
+//	"0362-mega",							// "Mega Glalie"
 	"0478",									// "Froslass" // female only
 	"0363",									// "Spheal"
 	"0364",									// "Sealeo"
@@ -2648,32 +2648,32 @@ _Evodex_08 =
 	"0366",									// "Clamperl"
 	"0367",									// "Huntail"
 	"0368",									// "Gorebyss"
-	//"0369",								// "Relicanth"
+//	"0369",									// "Relicanth"
 	"0369-m",								// "Relicanth♂"
 	"0369-f",								// "Relicanth♀"
 	"0370",									// "Luvdisc"
 	"0371",									// "Bagon"
 	"0372",									// "Shelgon"
 	"0373",									// "Salamence"
-	//"0373-mega",							// "Mega Salamence"
+//	"0373-mega",							// "Mega Salamence"
 	"0374",									// "Beldum" // uknown gender
 	"0375",									// "Metang" // uknown gender
 	"0376",									// "Metagross" // uknown gender
-	//"0376-mega",							// "Mega Metagross" // uknown gender
+//	"0376-mega",							// "Mega Metagross" // uknown gender
 	"0377",									// "Regirock" // uknown gender
 	"0378",									// "Regice" // uknown gender
 	"0379",									// "Registeel" // uknown gender
 	"0486",									// "Regigigas" // uknown gender
 	"0380",									// "Latias" // female only
-	//"0380-mega",							// "Mega Latias" // female only
+//	"0380-mega",							// "Mega Latias" // female only
 	"0381",									// "Latios" // male only
-	//"0381-mega",							// "Mega Latios" // male only
+//	"0381-mega",							// "Mega Latios" // male only
 	"0382",									// "Kyogre" // uknown gender
-	//"0382-primal",						// "Primal Kyogre" // uknown gender
+//	"0382-primal",							// "Primal Kyogre" // uknown gender
 	"0383",									// "Groudon" // uknown gender
-	//"0383-primal",						// "Primal Groudon" // uknown gender
+//	"0383-primal",							// "Primal Groudon" // uknown gender
 	"0384",									// "Rayquaza" // uknown gender
-	//"0384-mega",							// "Mega Rayquaza" // uknown gender
+//	"0384-mega",							// "Mega Rayquaza" // uknown gender
 	"0385",									// "Jirachi" // uknown gender
 	"0386",									// "Deoxys" // uknown gender
 	"0386-attack",							// "Attack Deoxys" // uknown gender
@@ -2688,38 +2688,38 @@ _Evodex_08 =
 	"0393",									// "Piplup"
 	"0394",									// "Prinplup"
 	"0395",									// "Empoleon"
-	//"0396",								// "Starly"
+//	"0396",									// "Starly"
 	"0396-m",								// "Starly♂"
 	"0396-f",								// "Starly♀"
-	//"0397",								// "Staravia"
+//	"0397",									// "Staravia"
 	"0397-m",								// "Staravia♂"
 	"0397-f",								// "Staravia♀"
-	//"0398",								// "Staraptor"
+//	"0398",									// "Staraptor"
 	"0398-m",								// "Staraptor♂"
 	"0398-f",								// "Staraptor♀"
-	//"0399",								// "Bidoof"
+//	"0399",									// "Bidoof"
 	"0399-m",								// "Bidoof♂"
 	"0399-f",								// "Bidoof♀"
-	//"0400",								// "Bibarel"
+//	"0400",									// "Bibarel"
 	"0400-m",								// "Bibarel♂"
 	"0400-f",								// "Bibarel♀"
-	//"0401",								// "Kricketot"
+//	"0401",									// "Kricketot"
 	"0401-m",								// "Kricketot♂"
 	"0401-f",								// "Kricketot♀"
-	//"0402",								// "Kricketune"
+//	"0402",									// "Kricketune"
 	"0402-m",								// "Kricketune♂"
 	"0402-f",								// "Kricketune♀"
-	//"0403",								// "Shinx"
+//	"0403",									// "Shinx"
 	"0403-m",								// "Shinx♂"
 	"0403-f",								// "Shinx♀"
-	//"0404",								// "Luxio"
+//	"0404",									// "Luxio"
 	"0404-m",								// "Luxio♂"
 	"0404-f",								// "Luxio♀"
-	//"0405",								// "Luxray"
+//	"0405",									// "Luxray"
 	"0405-m",								// "Luxray♂"
 	"0405-f",								// "Luxray♀"
-	//"0412",								// "Burmy"
-	//"0413",								// "Wormadam" // female only
+//	"0412",									// "Burmy"
+//	"0413",									// "Wormadam" // female only
 	"0412-plant",							// "Burmy Plant Cloak"
 	"0413-plant",							// "Wormadam Plant Cloak" // female only
 	"0412-sandy",							// "Burmy Sandy Cloak"
@@ -2727,25 +2727,25 @@ _Evodex_08 =
 	"0412-trash",							// "Burmy Trash Cloak"
 	"0413-trash",							// "Wormadam Trash Cloak" // female only
 	"0414",									// "Mothim" // male only
-	//"0415",								// "Combee"
+//	"0415",									// "Combee"
 	"0415-m",								// "Combee♂"
 	"0415-f",								// "Combee♀"
 	"0416",									// "Vespiquen" // female only
-	//"0417",								// "Pachirisu"
+//	"0417",									// "Pachirisu"
 	"0417-m",								// "Pachirisu♂"
 	"0417-f",								// "Pachirisu♀"
-	//"0418",								// "Buizel"
+//	"0418",									// "Buizel"
 	"0418-m",								// "Buizel♂"
 	"0418-f",								// "Buizel♀"
-	//"0419",								// "Floatzel"
+//	"0419",									// "Floatzel"
 	"0419-m",								// "Floatzel♂"
 	"0419-f",								// "Floatzel♀"
 	"0420",									// "Cherubi"
-	//"0421",								// "Cherrim"
+//	"0421",									// "Cherrim"
 	"0421-overcast",						// "Overcast Cherrim"
-	//"0421-sunshine",						// "Sunshine Cherrim"
-	//"0422",								// "Shellos"
-	//"0423",								// "Gastrodon"
+//	"0421-sunshine",						// "Sunshine Cherrim"
+//	"0422",									// "Shellos"
+//	"0423",									// "Gastrodon"
 	"0422-west",							// "West Sea Shellos"
 	"0423-west",							// "West Sea Gastrodon"
 	"0422-east",							// "East Sea Shellos"
@@ -2754,7 +2754,7 @@ _Evodex_08 =
 	"0426",									// "Drifblim"
 	"0427",									// "Buneary"
 	"0428",									// "Lopunny"
-	//"0428-mega",							// "Mega Lopunny"
+//	"0428-mega",							// "Mega Lopunny"
 	"0431",									// "Glameow"
 	"0432",									// "Purugly"
 	"0434",									// "Stunky"
@@ -2763,77 +2763,77 @@ _Evodex_08 =
 	"0437",									// "Bronzong" // uknown gender
 	"0441",									// "Chatot"
 	"0442",									// "Spiritomb"
-	//"0443",								// "Gible"
+//	"0443",									// "Gible"
 	"0443-m",								// "Gible♂"
 	"0443-f",								// "Gible♀"
-	//"0444",								// "Gabite"
+//	"0444",									// "Gabite"
 	"0444-m",								// "Gabite♂"
 	"0444-f",								// "Gabite♀"
-	//"0445",								// "Garchomp"
+//	"0445",									// "Garchomp"
 	"0445-m",								// "Garchomp♂"
 	"0445-f",								// "Garchomp♀"
-	//"0445-mega",							// "Mega Garchomp"
+//	"0445-mega",							// "Mega Garchomp"
 	"0447",									// "Riolu"
 	"0448",									// "Lucario"
-	//"0448-mega",							// "Mega Lucario"
-	//"0449",								// "Hippopotas"
+//	"0448-mega",							// "Mega Lucario"
+//	"0449",									// "Hippopotas"
 	"0449-m",								// "Hippopotas♂"
 	"0449-f",								// "Hippopotas♀"
-	//"0450",								// "Hippowdon"
+//	"0450",									// "Hippowdon"
 	"0450-m",								// "Hippowdon♂"
 	"0450-f",								// "Hippowdon♀"
 	"0451",									// "Skorupi"
 	"0452",									// "Drapion"
-	//"0453",								// "Croagunk"
+//	"0453",									// "Croagunk"
 	"0453-m",								// "Croagunk♂"
 	"0453-f",								// "Croagunk♀"
-	//"0454",								// "Toxicroak"
+//	"0454",									// "Toxicroak"
 	"0454-m",								// "Toxicroak♂"
 	"0454-f",								// "Toxicroak♀"
 	"0455",									// "Carnivine"
-	//"0456",								// "Finneon"
+//	"0456",									// "Finneon"
 	"0456-m",								// "Finneon♂"
 	"0456-f",								// "Finneon♀"
-	//"0457",								// "Lumineon"
+//	"0457",									// "Lumineon"
 	"0457-m",								// "Lumineon♂"
 	"0457-f",								// "Lumineon♀"
-	//"0459",								// "Snover"
+//	"0459",									// "Snover"
 	"0459-m",								// "Snover♂"
 	"0459-f",								// "Snover♀"
-	//"0460",								// "Abomasnow"
+//	"0460",									// "Abomasnow"
 	"0460-m",								// "Abomasnow♂"
 	"0460-f",								// "Abomasnow♀"
-	//"0460-mega",							// "Mega Abomasnow"
+//	"0460-mega",							// "Mega Abomasnow"
 	"0479",									// "Rotom" // uknown gender
 	"0479-heat",							// "Heat Rotom" // uknown gender
 	"0479-wash",							// "Wash Rotom" // uknown gender
 	"0479-frost",							// "Frost Rotom" // uknown gender
 	"0479-fan",								// "Fan Rotom" // uknown gender
 	"0479-mow",								// "Mow Rotom" // uknown gender
-	//"0479-dex",							// "Pokédex Rotom" // uknown gender// unofficial
-	//"0479-phone",							// "Phone Rotom" // uknown gender// unofficial
-	//"0479-rotomi",						// "Rotomi" // uknown gender// unofficial
-	//"0479-drone",							// "Drone Rotom" // uknown gender// unofficial
-	//"0479-bike",							// "Rotom Bike, Land Mode" // uknown gender// unofficial
-	//"0479-water-bike",					// "Rotom Bike, Water Mode" // uknown gender// unofficial
-	//"0479-white-bike",					// "Sparkling White Rotom Bike, Land Mode" // uknown gender// unofficial
-	//"0479-white-water-bike",				// "Sparkling White Rotom Bike, Water Mode" // uknown gender// unofficial
-	//"0479-black-bike",					// "Glistening Black Rotom Bike, Land Mode" // uknown gender// unofficial
-	//"0479-black-water-bike",				// "Glistening Black Rotom Bike, Water Mode" // uknown gender// unofficial
+//	"0479-dex",								// "Pokédex Rotom" // uknown gender// unofficial
+//	"0479-phone",							// "Phone Rotom" // uknown gender// unofficial
+//	"0479-rotomi",							// "Rotomi" // uknown gender// unofficial
+//	"0479-drone",							// "Drone Rotom" // uknown gender// unofficial
+//	"0479-bike",							// "Rotom Bike, Land Mode" // uknown gender// unofficial
+//	"0479-water-bike",						// "Rotom Bike, Water Mode" // uknown gender// unofficial
+//	"0479-white-bike",						// "Sparkling White Rotom Bike, Land Mode" // uknown gender// unofficial
+//	"0479-white-water-bike",				// "Sparkling White Rotom Bike, Water Mode" // uknown gender// unofficial
+//	"0479-black-bike",						// "Glistening Black Rotom Bike, Land Mode" // uknown gender// unofficial
+//	"0479-black-water-bike",				// "Glistening Black Rotom Bike, Water Mode" // uknown gender// unofficial
 	"0480",									// "Uxie" // uknown gender
 	"0481",									// "Mesprit" // uknown gender
 	"0482",									// "Azelf" // uknown gender
 	"0483",									// "Dialga" // uknown gender
 	"0484",									// "Palkia" // uknown gender
 	"0485",									// "Heatran"
-	//"0487",								// "Giratina" // uknown gender
+//	"0487",									// "Giratina" // uknown gender
 	"0487-altered",							// "Giratina Altered Forme" // uknown gender
 	"0487-origin",							// "Giratina Origin Forme" // uknown gender
 	"0488",									// "Cresselia" // female only
 	"0489",									// "Phione" // uknown gender
 	"0490",									// "Manaphy" // uknown gender
 	"0491",									// "Darkrai" // uknown gender
-	//"0492",								// "Shaymin" // uknown gender
+//	"0492",									// "Shaymin" // uknown gender
 	"0492-land",							// "Shaymin Land Forme" // uknown gender
 	"0492-sky",								// "Shaymin Sky Forme" // uknown gender
 	"0493",									// "Arceus" // uknown gender
@@ -2881,7 +2881,7 @@ _Evodex_08 =
 	"0518",									// "Musharna"
 	"0519",									// "Pidove"
 	"0520",									// "Tranquill"
-	//"0521",								// "Unfezant"
+//	"0521",									// "Unfezant"
 	"0521-m",								// "Unfezant♂"
 	"0521-f",								// "Unfezan♀"
 	"0522",									// "Blitzle"
@@ -2894,7 +2894,7 @@ _Evodex_08 =
 	"0529",									// "Drilbur"
 	"0530",									// "Excadrill"
 	"0531",									// "Audino"
-	//"0531-mega",							// "Mega Audino"
+//	"0531-mega",							// "Mega Audino"
 	"0532",									// "Timburr"
 	"0533",									// "Gurdurr"
 	"0534",									// "Conkeldurr"
@@ -2913,20 +2913,20 @@ _Evodex_08 =
 	"0547",									// "Whimsicott"
 	"0548",									// "Petilil" // female only
 	"0549",									// "Lilligant" // female only
-	//"0550",								// "Basculin"
+//	"0550",									// "Basculin"
 	"0550-red",								// "Red-striped Basculin"
 	"0550-blue",							// "Blue-striped Basculin"
 	"0551",									// "Sandile"
 	"0552",									// "Krokorok"
 	"0553",									// "Krookodile"
 	"0554",									// "Darumaka"
-	//"0555",								// "Darmanitan"
+//	"0555",									// "Darmanitan"
 	"0555-standard",						// "Darmanitan Standard Mode"
-	//"0555-zen",							// "Darmanitan Zen Mode"
+//	"0555-zen",								// "Darmanitan Zen Mode"
 	"0554-galar",							// "Galarian Darumaka"
-	//"0555-galar",							// "Galarian Darmanitan"
+//	"0555-galar",							// "Galarian Darmanitan"
 	"0555-standard-galar",					// "Galarian Darmanitan Standard Mode"
-	//"0555-zen-galar",						// "Galarian Darmanitan Zen Mode"
+//	"0555-zen-galar",						// "Galarian Darmanitan Zen Mode"
 	"0556",									// "Maractus"
 	"0557",									// "Dwebble"
 	"0558",									// "Crustle"
