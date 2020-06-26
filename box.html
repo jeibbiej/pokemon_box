@@ -77,6 +77,7 @@ function inArray(haystack, needle)
 };
 </script>
 <script lang="javascript" src="js/box-names.js"></script>
+<script lang="javascript" src="poke_icon/g08/box-g01-re-bl.js"></script>
 <script lang="javascript" src="poke_icon/g08/box-g08-sw-sh.js"></script>
 <script lang="javascript" src="js/box-national.js"></script>
 <script lang="javascript" src="js/box-evolution.js"></script>
@@ -134,7 +135,7 @@ if (version != "r")	// National Dex
 
 	_Ndex = [];
 	iconPath = "";
-	if (game = _Re || game == _Bl)
+	if (game == _Re || game == _Bl)
 	{
 		_nDex = _Rdex_ReBl;
 		iconPath = _IcoPath_ReBl;
