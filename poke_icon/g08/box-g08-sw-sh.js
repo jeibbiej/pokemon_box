@@ -1679,7 +1679,7 @@ var _Ndex_G08 =
 	"0791",									// "Solgaleo", // uknown gender
 //	"0791-radiant-sun",						// "Radiant Sun Solgaleo", // unknown gender
 	"0792",									// "Lunala", // uknown gender
-//	"0792-full-moon",						// "Full Monn Lunala", // uknown gender
+//	"0792-full-moon"						// "Full Monn Lunala", // uknown gender
 	"0793",									// "Nihilego" // uknown gender
 	"0794",									// "Buzzwole" // uknown gender
 	"0795",									// "Pheromosa" // uknown gender
@@ -3111,7 +3111,7 @@ var _Evodex_G08 =
 	"0669-white",							// "White Flower Flabébé" // female only
 	"0670-white",							// "White Flower Floette" // female only
 	"0671-white",							// "White Flower Florges" // female only
-	"0670-eternal",							// "Eternal Flower Floette" // female only
+//	"0670-eternal",							// "Eternal Flower Floette" // female only
 	"0672",									// "Skiddo"
 	"0673",									// "Gogoat"
 	"0674",									// "Pancham"
