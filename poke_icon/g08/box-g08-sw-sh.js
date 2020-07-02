@@ -918,26 +918,54 @@ var _Rdex_SwSh = /* regional dex */
 	"0137",									// "Porygon" // uknown gender
 	"0233",									// "Porygon2" // uknown gender
 	"0474",									// "Porygon-Z" // uknown gender
-	"0893",
+	"0893",									// "Zarude" // uknown gender
+//	"0893-dada"								// "Dada Zarude" // uknown gender
+//================
 //	 non-Galar Dex
-	"0150",
-	"0151",
-	"0251",
-	"0385",
-	"0638",
-	"0639",
-	"0640",
-	"0643",
-	"0644",
-	"0646", "0646-black", "0646-white",
-	"0647", "0647-resolute",
-	"0722", "0723", "0724",
-	"0725", "0726", "0727",
-	"0728", "0729", "0730",
-	"0789", "0790", "0791", "0792",
-	"0800", "0800-dusk-mane", "0800-dawn-wing",
-	"0802",
-	"0807",
-	"0808", "0809", "0809-gmax",
-	"0893",									// "Zarude"
+//================
+	"0150",									// "Mewtwo" // uknown gender
+//	"0150-mega-x",							// "Mega Mewtwo X" // uknown gender
+//	"0150-mega-y",							// "Mega Mewtwo Y" // uknown gender
+	"0151",									// "Mew" // uknown gender
+	"0251",									// "Celebi" // uknown gender
+	"0386",									// "Deoxys" // uknown gender
+	"0386-attack",							// "Attack Deoxys" // uknown gender
+	"0386-defense",							// "Defense Deoxys" // uknown gender
+	"0386-speed",							// "Speed Deoxys" // uknown gender
+	"0638",									// "Cobalion" // uknown gender
+	"0639",									// "Terrakion" // uknown gender
+	"0640",									// "Virizion" // uknown gender
+	"0643",									// "Reshiram" // uknown gender
+	"0644",									// "Zekrom" // uknown gender
+	"0646",									// "Kyurem" // uknown gender
+//	"0646-white",							// "White Kyurem" // uknown gender
+//	"0646-black",							// "Black Kyurem" // uknown gender
+//	"0647",									// "Keldeo" // uknown gender
+	"0647-ordinary",						// "Ordinary Form Keldeo" // uknown gender
+//	"0647-resolute",						// "Resolute Form Keldeo" // uknown gender
+	"0722",									// "Rowlet"
+	"0723",									// "Dartrix"
+	"0724",									// "Decidueye"
+	"0725",									// "Litten"
+	"0726",									// "Torracat"
+	"0727",									// "Incineroar"
+	"0728",									// "Popplio"
+	"0729",									// "Brionne"
+	"0730",									// "Primarina"
+	"0789",									// "Cosmog" // uknown gender
+	"0790",									// "Cosmoen" // uknown gender
+	"0791",									// "Solgaleo" // uknown gender
+//	"0791-radiant-sun",						// "Radiant Sun Solgaleo" // unknown gender
+	"0792",									// "Lunala" // uknown gender
+//	"0792-full-moon",						// "Full Monn Lunala" // uknown gender
+	"0800",									// "Necrozma" // uknown gender
+//	"0800-dusk-mane",						// "Dusk Mane Necrozma" // uknown gender
+//	"0800-dawn-wings",						// "Dawn Wings Necrozma" // uknown gender
+//	"0800-ultra",							// "Ultra Necrozma" // uknown gender
+	"0802",									// "Marshadow" // uknown gender
+//	"0802-zenith",							// "Zenith Marshadow" // uknown gender
+	"0807",									// "Zeraora" // uknown gender
+	"0808",									// "Meltan" // uknown gender
+	"0809",									// "Melmetal" // uknown gender
+	"0809-gmax",							// "Gigantamax Melmetal" // uknown gender
 ];

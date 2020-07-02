@@ -1458,20 +1458,20 @@
 	"0868"									: "Milcery", // female only
 	"0869"									: "Alcremie", // female only
 	"0869-gmax"								: "Gigantamax Alcremie", // female only
-	"0869=-vanilla-cream-strawberry"		: "Strawberry Sweet Vanilla Cream Alcremie", // female only
-	"0869=-vanilla-cream-strawberry-gmax"	: "Gigantamax Strawberry Sweet Vanilla Cream Alcremie", // female only
-	"0869=-vanilla-cream-berry"				: "Berry Sweet Vanilla Cream Alcremie", // female only
-	"0869=-vanilla-cream-berry-gmax"		: "Gigantamax Berry Sweet Vanilla Cream Alcremie", // female only
-	"0869=-vanilla-cream-love"				: "Love Sweet Vanilla Cream Alcremie", // female only
-	"0869=-vanilla-cream-love-gmax"			: "Gigantamax Love Sweet Vanilla Cream Alcremie", // female only
-	"0869=-vanilla-cream-star"				: "Star Sweet Vanilla Cream Alcremie", // female only
-	"0869=-vanilla-cream-star-gmax"			: "Gigantamax Star Sweet Vanilla Cream Alcremie", // female only
-	"0869=-vanilla-cream-clover"			: "Clover Sweet Vanilla Cream Alcremie", // female only
-	"0869=-vanilla-cream-clover-gmax"		: "Gigantamax Clover Sweet Vanilla Cream Alcremie", // female only
-	"0869=-vanilla-cream-flower"			: "Flower Sweet Vanilla Cream Alcremie", // female only
-	"0869=-vanilla-cream-flower-gmax"		: "Gigantamax Flower Sweet Vanilla Cream Alcremie", // female only
-	"0869=-vanilla-cream-ribbon"			: "Ribbon Sweet Vanilla Cream Alcremie", // female only
-	"0869=-vanilla-cream-ribbon-gmax"		: "Gigantamax Ribbon Sweet Vanilla Cream Alcremie", // female only
+	"0869-vanilla-cream-strawberry"			: "Strawberry Sweet Vanilla Cream Alcremie", // female only
+	"0869-vanilla-cream-strawberry-gmax"	: "Gigantamax Strawberry Sweet Vanilla Cream Alcremie", // female only
+	"0869-vanilla-cream-berry"				: "Berry Sweet Vanilla Cream Alcremie", // female only
+	"0869-vanilla-cream-berry-gmax"			: "Gigantamax Berry Sweet Vanilla Cream Alcremie", // female only
+	"0869-vanilla-cream-love"				: "Love Sweet Vanilla Cream Alcremie", // female only
+	"0869-vanilla-cream-love-gmax"			: "Gigantamax Love Sweet Vanilla Cream Alcremie", // female only
+	"0869-vanilla-cream-star"				: "Star Sweet Vanilla Cream Alcremie", // female only
+	"0869-vanilla-cream-star-gmax"			: "Gigantamax Star Sweet Vanilla Cream Alcremie", // female only
+	"0869-vanilla-cream-clover"				: "Clover Sweet Vanilla Cream Alcremie", // female only
+	"0869-vanilla-cream-clover-gmax"		: "Gigantamax Clover Sweet Vanilla Cream Alcremie", // female only
+	"0869-vanilla-cream-flower"				: "Flower Sweet Vanilla Cream Alcremie", // female only
+	"0869-vanilla-cream-flower-gmax"		: "Gigantamax Flower Sweet Vanilla Cream Alcremie", // female only
+	"0869-vanilla-cream-ribbon"				: "Ribbon Sweet Vanilla Cream Alcremie", // female only
+	"0869-vanilla-cream-ribbon-gmax"		: "Gigantamax Ribbon Sweet Vanilla Cream Alcremie", // female only
 	"0869-ruby-cream-strawberry"			: "Strawberry Sweet Ruby Cream Alcremie", // female only
 	"0869-ruby-cream-strawberry-gmax"		: "Gigantamax Strawberry Sweet Ruby Cream Alcremie", // female only
 	"0869-ruby-cream-berry"					: "Berry Sweet Ruby Cream Alcremie", // female only
@@ -1621,11 +1621,11 @@
 	"0891"									: "Kubfu",
 	"0892"									: "Urshifu",
 	"0982-sigle"							: "Single Strike Style Urshifu",
-	"0982-single-gmax"						: "Gigantamax Single Strike Style Urshifu",
-	"0982-rapid"							: "Rapid Strike Style Urshifu",
-	"0982-rapid-gmax"						: "Gigantamax Rapid Strike Style Urshifu",
-	"0983"									: "Zarude",
-	"0983-dada"								: "Dada Zarude",
+	"0892-single-gmax"						: "Gigantamax Single Strike Style Urshifu",
+	"0892-rapid"							: "Rapid Strike Style Urshifu",
+	"0892-rapid-gmax"						: "Gigantamax Rapid Strike Style Urshifu",
+	"0893"									: "Zarude",// unknown gender
+	"0893-dada"								: "Dada Zarude",// unknown gender
 //	 TEMPORARY NUMBERING
 	"0894"									: "Regieleki",
 	"0895"									: "Regidrago",
