@@ -1,6 +1,6 @@
 var _IcoPath_ReBl = "icon/g01/re-bl/";
 var _Rdex_ReBl = /* regional dex */
-[
+{
 	"0001"		: "01", // "Bulbasaur",
 	"0002"		: "01", // "Ivysaur",
 	"0003"		: "01", // "Venusaur",
@@ -29,8 +29,8 @@ var _Rdex_ReBl = /* regional dex */
 	"0026"		: "08", // "Raichu",
 	"0027"		: "02", // "Sandshrew",
 	"0028"		: "02", // "Sandslash",
-	"0029-f"	: "02", // "Nidoran♀", SPOT
-	"0030"		: "02", // "Nidorina", TERRY
+	"0029-f"	: "02", // "Nidoran♀", SPOT (in-game trade)
+	"0030"		: "02", // "Nidorina", TERRY (in-game trade)
 	"0031"		: "02", // "Nidoqueen",
 	"0032-m"	: "02", // "Nidoran♂",
 	"0033"		: "02", // "Nidorino",
@@ -83,10 +83,10 @@ var _Rdex_ReBl = /* regional dex */
 	"0080"		: "02", // "Slowbro",
 	"0081"		: "09", // "Magnemite",
 	"0082"		: "09", // "Magneton",
-	"0083"		: "05", // "Farfetch'd", DUX
+	"0083"		: "05", // "Farfetch'd", DUX (in-game trade)
 	"0084"		: "05", // "Doduo",
 	"0085"		: "05", // "Dodrio",
-	"0086"		: "03", // "Seel", SAILOR
+	"0086"		: "03", // "Seel", SAILOR (in-game trade)
 	"0087"		: "03", // "Dewgong",
 	"0088"		: "02", // "Grimer",
 	"0089"		: "02", // "Muk",
@@ -101,7 +101,7 @@ var _Rdex_ReBl = /* regional dex */
 	"0098"		: "03", // "Krabby",
 	"0099"		: "03", // "Kingler",
 	"0100"		: "09", // "Voltorb", // uknown gender
-	"0101"		: "09", // "Electrode", // uknown gender DORIS
+	"0101"		: "09", // "Electrode", // uknown gender DORIS (in-game trade)
 	"0102"		: "01", // "Exeggcute",
 	"0103"		: "01", // "Exeggutor",
 	//-----------------------------
@@ -109,13 +109,13 @@ var _Rdex_ReBl = /* regional dex */
 	"0105"		: "00", // "Marowak",
 	"0106"		: "00", // "Hitmonlee", // male only
 	"0107"		: "00", // "Hitmonchan", // male only
-	"0108"		: "00", // "Lickitung", MARC
+	"0108"		: "00", // "Lickitung", MARC (in-game trade)
 	"0109"		: "00", // "Koffing",
 	"0110"		: "00", // "Weezing",
 	"0111"		: "00", // "Rhyhorn",
 	"0112"		: "00", // "Rhydon",
 	"0113"		: "00", // "Chansey", // female only
-	"0114"		: "00", // "Tangela", CRINKLES
+	"0114"		: "00", // "Tangela", CRINKLES (in-game trade)
 	"0115"		: "00", // "Kangaskhan", // female only
 	"0116"		: "00", // "Horsea",
 	"0117"		: "00", // "Seadra",
@@ -123,9 +123,9 @@ var _Rdex_ReBl = /* regional dex */
 	"0119"		: "00", // "Seaking",
  	"0120"		: "00", // "Staryu", // uknown gender
 	"0121"		: "00", // "Starmie", // uknown gender
-	"0122"		: "00", // "Mr. Mime", MARCEL
+	"0122"		: "00", // "Mr. Mime", MARCEL (in-game trade)
 	"0123"		: "00", // "Scyther",
-	"0124"		: "00", // "Jynx", // female only LOLA
+	"0124"		: "00", // "Jynx", // female only LOLA (in-game trade)
 	"0125"		: "00", // "Electabuzz",
 	"0126"		: "00", // "Magmar",
 	"0127"		: "00", // "Pinsir",
@@ -153,4 +153,4 @@ var _Rdex_ReBl = /* regional dex */
 	"0149"		: "00", // "Dragonite",
 	"0150"		: "00", // "Mewtwo", // uknown gender
 	"0151"		: "00", // "Mew", // uknown gender
-];
+};

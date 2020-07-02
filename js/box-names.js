@@ -1,4 +1,8 @@
-﻿_Names = {
+﻿_Names =
+{
+	//=======================================
+	// GENERATION 1
+	//=======================================
 	"0001"									: "Bulbasaur",
 	"0002"									: "Ivysaur",
 	"0003"									: "Venusaur",
@@ -59,6 +63,7 @@
 	"0025-kalos-cap"						: "Kalos Cap Pikachu", // male only
 	"0025-alola-cap"						: "Alola Cap Pikachu", // male only
 	"0025-partner-cap"						: "Partner Cap Pikachu", // male only
+	"0025-world-cap"						: "World Cap Pikachu",
 	"0025-m-letsgo"							: "Parter Pikachu♂",
 	"0025-f-letsgo"							: "Parter Pikachu♀",
 	"0025-gmax"								: "Gigantamax Pikachu",
@@ -224,7 +229,6 @@
 	"0123"									: "Scyther",
 	"0123-m"								: "Scyther♂",
 	"0123-f"								: "Scyther♀",
-	"0124"									: "Jynx", // female only
 	"0125"									: "Electabuzz",
 	"0126"									: "Magmar",
 	"0127"									: "Pinsir",
@@ -271,6 +275,9 @@
 	"0150-mega-x"							: "Mega Mewtwo X", // uknown gender
 	"0150-mega-y"							: "Mega Mewtwo Y", // uknown gender
 	"0151"									: "Mew", // uknown gender
+	//=======================================
+	// GENERATION 2
+	//=======================================
 	"0152"									: "Chikorita",
 	"0153"									: "Bayleef",
 	"0154"									: "Meganium",
@@ -453,6 +460,9 @@
 	"0249"									: "Lugia", // uknown gender
 	"0250"									: "Ho-Oh", // uknown gender
 	"0251"									: "Celebi", // uknown gender
+	//=======================================
+	// GENERATION 3
+	//=======================================
 	"0252"									: "Treecko",
 	"0253"									: "Grovyle",
 	"0254"									: "Sceptile",
@@ -654,6 +664,9 @@
 	"0386-attack"							: "Attack Deoxys", // uknown gender
 	"0386-defense"							: "Defense Deoxys", // uknown gender
 	"0386-speed"							: "Speed Deoxys", // uknown gender
+	//=======================================
+	// GENERATION 4
+	//=======================================
 	"0387"									: "Turtwig",
 	"0388"									: "Grotle",
 	"0389"									: "Torterra",
@@ -876,6 +889,9 @@
 	"0493-dragon"							: "Dragon Arceus", // uknown gender
 	"0493-dark"								: "Dark Arceus", // uknown gender
 	"0493-fairy"							: "Fairy Arceus", // uknown gender
+	//=======================================
+	// GENERATION 5
+	//=======================================
 	"0494"									: "Victini", // uknown gender
 	"0495"									: "Snivy",
 	"0496"									: "Servine",
@@ -1074,6 +1090,9 @@
 	"0649-shock"							: "Shock Drive Genesect", // uknown gender
 	"0649-burn"								: "Burn Drive Genesect", // uknown gender
 	"0649-chill"							: "Chill Drive Genesect", // uknown gender
+	//=======================================
+	// GENERATION 6
+	//=======================================
 	"0650"									: "Chespin",
 	"0651"									: "Quilladin",
 	"0652"									: "Chesnaught",
@@ -1216,6 +1235,9 @@
 	"0720-confined"							: "Hoopa Confined", // uknown gender
 	"0720-unbound"							: "Hoopa Unbound", // uknown gender
 	"0721"									: "Volcanion", // uknown gender
+	//=======================================
+	// GENERATION 7
+	//=======================================
 	"0722"									: "Rowlet",
 	"0723"									: "Dartrix",
 	"0724"									: "Decidueye",
@@ -1348,6 +1370,9 @@
 	"0808"									: "Meltan", // uknown gender
 	"0809"									: "Melmetal", // uknown gender
 	"0809-gmax"								: "Gigantamax Melmetal", // uknown gender
+	//=======================================
+	// GENERATION 8
+	//=======================================
 	"0810"									: "Grookey",
 	"0811"									: "Thwackey",
 	"0812"									: "Rillaboom",
@@ -1600,32 +1625,10 @@
 	"0982-rapid"							: "Rapid Strike Style Urshifu",
 	"0982-rapid-gmax"						: "Gigantamax Rapid Strike Style Urshifu",
 	"0983"									: "Zarude",
+	"0983-dada"								: "Dada Zarude",
 //	 TEMPORARY NUMBERING
 	"0894"									: "Regieleki",
 	"0895"									: "Regidrago",
 	"0896"									: "Calyrex",
 	"XXXX"									: "MissingNo."
 };
-/*
-Pokemon Home icon file name
-{poke_icon
-	Pokr_capture
-_{four-digit national number}
-_{three-digit major variation number}
-_{	mf: male and female
-	fd: female design
-	md: male design
-	fo: female only
-	mo: male only
-	uk: unknown / genderless
-	}
-_{	n: normal / mega evolution
-	g: gigantamax
-_{eight-digit minor variation number}
-_{	f: front
-	b: back
-	}
-_{	n: normal
-	r: shiny
-	}
-*/
