@@ -78,6 +78,11 @@ function inArray(haystack, needle)
 </script>
 <script lang="javascript" src="js/box-names.js"></script>
 <script lang="javascript" src="poke_icon/g01/box-g01-re-bl.js"></script>
+
+<script lang="javascript" src="poke_icon/g02/box-g02-go-si.js"></script>
+<script lang="javascript" src="poke_icon/g02/box-g02-natdex.js"></script>
+<script lang="javascript" src="poke_icon/g02/box-g02-evodex.js"></script>
+
 <script lang="javascript" src="poke_icon/g08/box-g08-sw-sh.js"></script>
 <script lang="javascript" src="poke_icon/g08/box-g08-natdex.js"></script>
 <script lang="javascript" src="poke_icon/g08/box-g08-evodex.js"></script>
@@ -133,7 +138,8 @@ if (version != "r")	// National Dex
 	maxBox = 30;
 	divBox = 6;
 
-	_Ndex = [];
+	_Ndex = {};
+	_Edex = {};
 	iconPath = "";
 	if (game == _Re || game == _Bl)
 	{
@@ -151,7 +157,7 @@ if (version != "r")	// National Dex
 	}
 	else if (game == _Go || game == _Si)
 	{
-		_Ndex = _Rdex_GoSi;
+		_Ndex = _Ndex_G02;
 		iconPath = _IcoPath_GoSi;
 		maxBox = 20;
 		divBox = 5;
@@ -181,10 +187,81 @@ if (version != "r")	// National Dex
 
 	boxCntr = 1;
 	boxIdx = 1;
-	if (game < _Ru)	// Gen 1 & 2
+	boxHead = "";
+	boxBody = "";
+	boxFoot = "";
+	if (game < _Ru)	// Gen 1 & 2; dex is object
 	{
+		key = 0;
+		idxStr = "0000";
+		for (const rdex in _Ndex)
+		{
+			if (rdex.substring(0, 4) != idxStr)
+			{
+				++key;
+				idxStr = rdex.substring(0, 4);
+			}
+			if (boxCntr == 1)
+			{
+				boxHead = "<table style='border:1px solid gray; font-family:consolas; text-align:center;' cellspacing=0><tr><th colspan=" + divBox + " style='border:1px solid gray;'>" + gameName;
+				if (game < _Go) // Gen 1
+				{
+					boxHead += " BOX" + ("  " + boxIdx.toString(10)).substr(-2);
+				}
+				else
+				{
+					if (version == "e")
+					{
+						boxHead += " E" + ("0" + boxIdx.toString(10)).substr(-2);
+					}
+					else
+					{
+						boxHead += " N" + ("000" + key.toString(10)).substr(-3);
+					}
+				}
+			}
+			
+			if (version == "e")
+			{
+				boxBody += "<td style='border:1px solid gray; width:50px; vertical-align:top;'><span title='" + rdex.substr(0, 4) + " " + _Names[rdex] + "'><img src='" + iconPath + "/" + _Ndex[rdex] + ".png' alt='" + rdex + "'></span><br/><span style='font-size:10px;'>#" + rdex.substr(0, 4) + "<br/>" + _Names[rdex] + "</span></td>";
+			}
+			else
+			{
+				boxBody += "<td style='border:1px solid gray; width:50px; vertical-align:top;'><span title='" + ("0000" + key.toString(10)).substr(-4) + " " + _Names[rdex] + "'><img src='" + iconPath + "/" + _Ndex[rdex] + ".png' alt='" + rdex + "'></span><br/><span style='font-size:10px;'>#" + ("0000" + key.toString(10)).substr(-4) + "<br/>" + _Names[rdex] + "</span></td>";
+			}
+
+			if (boxCntr == maxBox)
+			{
+				if (game < _Go) // Gen 1
+				{
+						boxHead += "</th></tr><tr>";
+				}
+				else // Gen 2
+				{
+					if (version == "e")
+					{
+						boxHead += "</th></tr><tr>";
+					}
+					else
+					{
+						boxHead += "-" + ("000" + key.toString(10)).substr(-3) + "</th></tr><tr>";
+					}
+				}
+				document.write(boxHead);
+				document.write(boxBody);
+				document.write("</tr></table><br/>");
+				boxCntr = 0;
+				boxHead = "";
+				boxBody = "";
+			}
+
+			if (boxCntr % divBox == 0)
+				boxBody += "</tr><tr>";
+
+			boxCntr++;
+		}
 	}
-	else //if (game > _Cr) // Gen 3 above
+	else //if (game > _Cr) // Gen 3 above; dex is array
 	{
 		key = 0;
 		idxStr = "0000";
@@ -200,7 +277,7 @@ if (version != "r")	// National Dex
 			//console.log(rdex + " - " + key + " - " + rdex.substring(0, 3) + " ?= " + idxStr);
 			if (boxCntr == 1)
 			{
-				boxHead = "<table style='border:1px solid gray; font-family:consolas; text-align:center;' cellspacing=0><tr><th colspan=6 style='border:1px solid gray;'>";
+				boxHead = "<table style='border:1px solid gray; font-family:consolas; text-align:center;' cellspacing=0><tr><th colspan=" + divBox + " style='border:1px solid gray;'>";
 				if (version == "e")
 				{
 					boxHead += gameName + " EvolutionDex " + ("0" + boxIdx.toString(10)).substr(-2);
@@ -214,11 +291,11 @@ if (version != "r")	// National Dex
 
 			if (version == "e")
 			{
-				boxBody += "<td style='border:1px solid gray; width:50px; vertical-align:top;'><span title='" + rdex.substr(0, 4) + " " + _Names[rdex] + "'><img src='" + iconPath + "/" + rdex + ".png' alt='" + rdex + "' width='64px'></span><br/><span style='font-size:10px;'>#" + rdex.substr(0, 4) + "<br/>" + _Names[rdex] + "</span></td>";
+				boxBody += "<td style='border:1px solid gray; width:50px; vertical-align:top;'><span title='" + rdex.substr(0, 4) + " " + _Names[rdex] + "'><img src='" + iconPath + "/" + rdex + ".png' alt='" + rdex + "'></span><br/><span style='font-size:10px;'>#" + rdex.substr(0, 4) + "<br/>" + _Names[rdex] + "</span></td>";
 			}
 			else
 			{
-				boxBody += "<td style='border:1px solid gray; width:50px; vertical-align:top;'><span title='" + ("0000" + key.toString(10)).substr(-4) + " " + _Names[rdex] + "'><img src='" + iconPath + "/" + rdex + ".png' alt='" + rdex + "' width='64px'></span><br/><span style='font-size:10px;'>#" + ("0000" + key.toString(10)).substr(-4) + "<br/>" + _Names[rdex] + "</span></td>";
+				boxBody += "<td style='border:1px solid gray; width:50px; vertical-align:top;'><span title='" + ("0000" + key.toString(10)).substr(-4) + " " + _Names[rdex] + "'><img src='" + iconPath + "/" + rdex + ".png' alt='" + rdex + "'></span><br/><span style='font-size:10px;'>#" + ("0000" + key.toString(10)).substr(-4) + "<br/>" + _Names[rdex] + "</span></td>";
 			}
 
 			if (boxCntr == maxBox)

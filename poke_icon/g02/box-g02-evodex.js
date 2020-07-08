@@ -1,7 +1,7 @@
 var _Evodex_G02 = /* regional dex */
 {
+	"0001"			: "01", // "Bulbasaur",
 	//-----------------------------
-	"0001"			: "00", // "Bulbasaur",
 	"0002"			: "00", // "Ivysaur",
 	"0003"			: "00", // "Venusaur",
 	"0004"			: "00", // "Charmander",

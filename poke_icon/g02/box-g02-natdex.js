@@ -1,7 +1,7 @@
 var _Ndex_G02 =
 {
+	"0001"			: "01", // "Bulbasaur",
 	//-----------------------------
-	"0001"			: "00", // "Bulbasaur",
 	"0002"			: "00", // "Ivysaur",
 	"0003"			: "00", // "Venusaur",
 	"0004"			: "00", // "Charmander",
@@ -29,8 +29,8 @@ var _Ndex_G02 =
 	"0026"			: "00", // "Raichu",
 	"0027"			: "00", // "Sandshrew",
 	"0028"			: "00", // "Sandslash",
-	"0029-f"		: "00", // "Nidoran♀", SPOT (in-game trade)
-	"0030"			: "00", // "Nidorina", TERRY (in-game trade)
+	"0029-f"		: "00", // "Nidoran♀",
+	"0030"			: "00", // "Nidorina",
 	"0031"			: "00", // "Nidoqueen",
 	"0032-m"		: "00", // "Nidoran♂",
 	"0033"			: "00", // "Nidorino",
@@ -83,10 +83,10 @@ var _Ndex_G02 =
 	"0080"			: "00", // "Slowbro",
 	"0081"			: "00", // "Magnemite",
 	"0082"			: "00", // "Magneton",
-	"0083"			: "00", // "Farfetch'd", DUX (in-game trade)
+	"0083"			: "00", // "Farfetch'd",
 	"0084"			: "00", // "Doduo",
 	"0085"			: "00", // "Dodrio",
-	"0086"			: "00", // "Seel", SAILOR (in-game trade)
+	"0086"			: "00", // "Seel",
 	"0087"			: "00", // "Dewgong",
 	"0088"			: "00", // "Grimer",
 	"0089"			: "00", // "Muk",
@@ -101,20 +101,20 @@ var _Ndex_G02 =
 	"0098"			: "00", // "Krabby",
 	"0099"			: "00", // "Kingler",
 	"0100"			: "00", // "Voltorb", // uknown gender
-	"0101"			: "00", // "Electrode", // uknown gender DORIS (in-game trade)
+	"0101"			: "00", // "Electrode", // uknown gender
 	"0102"			: "00", // "Exeggcute",
 	"0103"			: "00", // "Exeggutor",
 	"0104"			: "00", // "Cubone",
 	"0105"			: "00", // "Marowak",
 	"0106"			: "00", // "Hitmonlee", // male only
 	"0107"			: "00", // "Hitmonchan", // male only
-	"0108"			: "00", // "Lickitung", MARC (in-game trade)
+	"0108"			: "00", // "Lickitung",
 	"0109"			: "00", // "Koffing",
 	"0110"			: "00", // "Weezing",
 	"0111"			: "00", // "Rhyhorn",
 	"0112"			: "00", // "Rhydon",
 	"0113"			: "00", // "Chansey", // female only
-	"0114"			: "00", // "Tangela", CRINKLES (in-game trade)
+	"0114"			: "00", // "Tangela",
 	"0115"			: "00", // "Kangaskhan", // female only
 	"0116"			: "00", // "Horsea",
 	"0117"			: "00", // "Seadra",
@@ -122,9 +122,9 @@ var _Ndex_G02 =
 	"0119"			: "00", // "Seaking",
  	"0120"			: "00", // "Staryu", // uknown gender
 	"0121"			: "00", // "Starmie", // uknown gender
-	"0122"			: "00", // "Mr. Mime", MARCEL (in-game trade)
+	"0122"			: "00", // "Mr. Mime",
 	"0123"			: "00", // "Scyther",
-	"0124"			: "00", // "Jynx", // female only LOLA (in-game trade)
+	"0124"			: "00", // "Jynx", // female only
 	"0125"			: "00", // "Electabuzz",
 	"0126"			: "00", // "Magmar",
 	"0127"			: "00", // "Pinsir",
