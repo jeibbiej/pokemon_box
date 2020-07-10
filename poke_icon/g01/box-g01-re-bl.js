@@ -1,5 +1,5 @@
 var _IcoPath_ReBl = "poke_icon/g01/re-bl/";
-var _Rdex_ReBl = /* regional dex */
+var _Regdex_ReBl = /* regional dex */
 {
 	"0001"		: "01", // "Bulbasaur",
 	"0002"		: "01", // "Ivysaur",

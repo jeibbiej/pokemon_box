@@ -1,5 +1,5 @@
-var _IcoPath_GoSi = "icon/g01/go-si/";
-var _Rdex_GoSi = /* regional dex */
+var _IcoPath_GoSi = "poke_icon/g02/go-si/";
+var _Regdex_GoSi = /* regional dex */
 {
 	//-----------------------------
 	"0152"			: "00", // "Chikorita",

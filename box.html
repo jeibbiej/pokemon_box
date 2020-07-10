@@ -44,8 +44,8 @@ _US = 27;	// Ultra Sun
 _UM = 28;	// Ultra Moon
 _LP = 29;	// Let's Go, Pikachu!
 _LE = 30;	// Let's Go, Eevee!
-_Sw = 31;	// Sword
-_Sh = 32;	// Shield
+_Sw = 31;	// Sword + DLC: Isle of Armor + DLC: Crown Tundra
+_Sh = 32;	// Shield + DLC: Isle of Armor + DLC: Crown Tundra
 _Gen1 = _Re;
 _Gen1Max = 151;
 _Gen2 = _Go;
@@ -94,38 +94,39 @@ boxIdx = 1;
 boxHead = "";
 boxBody = "";
 gameName = getQueryVariable("game");
-if      (gameName == "Re") game = _Re;
-else if (gameName == "Bl") game = _Bl;
-else if (gameName == "Ye") game = _Ye;
-else if (gameName == "Go") game = _Go;
-else if (gameName == "Si") game = _Si;
-else if (gameName == "Cr") game = _Cr;
-else if (gameName == "Ru") game = _Ru;
-else if (gameName == "Sa") game = _Sa;
-else if (gameName == "Em") game = _Em;
-else if (gameName == "FR") game = _FR;
-else if (gameName == "LG") game = _LG;
-else if (gameName == "Di") game = _Di;
-else if (gameName == "Pe") game = _Pe;
-else if (gameName == "Pl") game = _Pl;
-else if (gameName == "HG") game = _HG;
-else if (gameName == "SS") game = _SS;
-else if (gameName == "Bk") game = _Bk;
-else if (gameName == "Wh") game = _Wh;
-else if (gameName == "B2") game = _B2;
-else if (gameName == "W2") game = _W2;
-else if (gameName == "X" ) game = _X_;
-else if (gameName == "Y" ) game = _Y_;
-else if (gameName == "oR") game = _oR;
-else if (gameName == "aS") game = _aS;
-else if (gameName == "Su") game = _Su;
-else if (gameName == "Mo") game = _Mo;
-else if (gameName == "US") game = _US;
-else if (gameName == "UM") game = _UM;
-else if (gameName == "LP") game = _LP;
-else if (gameName == "LE") game = _LE;
-else if (gameName == "Sw") game = _Sw;
-else if (gameName == "Sh") game = _Sh;
+//                    short name          full name
+if      (gameName == "Re" || gameName == "Red")           game = _Re;
+else if (gameName == "Bl" || gameName == "Blue")          game = _Bl;
+else if (gameName == "Ye" || gameName == "Yellow")        game = _Ye;
+else if (gameName == "Go" || gameName == "Gold")          game = _Go;
+else if (gameName == "Si" || gameName == "Silver")        game = _Si;
+else if (gameName == "Cr" || gameName == "Crystal")       game = _Cr;
+else if (gameName == "Ru" || gameName == "Ruby")          game = _Ru;
+else if (gameName == "Sa" || gameName == "Sapphire")      game = _Sa;
+else if (gameName == "Em" || gameName == "Emerald")       game = _Em;
+else if (gameName == "FR" || gameName == "FireRed")       game = _FR;
+else if (gameName == "LG" || gameName == "LeafGreen")     game = _LG;
+else if (gameName == "Di" || gameName == "Diamond")       game = _Di;
+else if (gameName == "Pe" || gameName == "Pearl")         game = _Pe;
+else if (gameName == "Pl" || gameName == "Platinum")      game = _Pl;
+else if (gameName == "HG" || gameName == "HeartGold")     game = _HG;
+else if (gameName == "SS" || gameName == "SoulSilver")    game = _SS;
+else if (gameName == "Bk" || gameName == "Black")         game = _Bk;
+else if (gameName == "Wh" || gameName == "White")         game = _Wh;
+else if (gameName == "B2" || gameName == "Black2")        game = _B2;
+else if (gameName == "W2" || gameName == "White2")        game = _W2;
+else if (gameName == "X"  || gameName == "X")             game = _X_;
+else if (gameName == "Y"  || gameName == "Y")             game = _Y_;
+else if (gameName == "oR" || gameName == "OmegaRuby")     game = _oR;
+else if (gameName == "aS" || gameName == "AlphaSapphire") game = _aS;
+else if (gameName == "Su" || gameName == "Sun")           game = _Su;
+else if (gameName == "Mo" || gameName == "Moon")          game = _Mo;
+else if (gameName == "US" || gameName == "UltraSun")      game = _US;
+else if (gameName == "UM" || gameName == "Red")           game = _UM;
+else if (gameName == "LP" || gameName == "Red")           game = _LP;
+else if (gameName == "LE" || gameName == "Red")           game = _LE;
+else if (gameName == "Sw" || gameName == "Red")           game = _Sw;
+else if (gameName == "Sh" || gameName == "Red")           game = _Sh;
 else
 {
 	document.writeln("Unknown game: ", gameName);
@@ -133,285 +134,185 @@ else
 }
 
 version = getQueryVariable("ver");
-if (version != "r")	// National Dex
+
+maxBox = 30;
+divBox = 6;
+
+_Rdex = {};
+_Ndex = {};
+_Edex = {};
+iconPath = "";
+imgWd = "64";
+if (game == _Re || game == _Bl)
 {
-	maxBox = 30;
-	divBox = 6;
+	_Rdex = _Regdex_ReBl;
+	_Ndex = _Regdex_ReBl;
+	_Edex = _Regdex_ReBl;
+	iconPath = _IcoPath_ReBl;
+	imgWd = "16";
+	maxBox = 20;
+	divBox = 5;
+}
+else if (game == _Ye)
+{
+	_Rdex = _Regdex_Ye;
+	_Ndex = _Regdex_Ye;
+	_Edex = _Regdex_Ye;
+	iconPath = _IcoPath_Ye;
+	imgWd = "16";
+	maxBox = 20;
+	divBox = 5;
+}
+else if (game == _Go || game == _Si)
+{
+	_Rdex = _Regdex_GoSi;
+	_Ndex = _Natdex_G02;
+	_Edex = _Evodex_G02;
+	iconPath = _IcoPath_GoSi;
+	imgWd = "16";
+	maxBox = 20;
+	divBox = 5;
+}
+else if (game == _Cr)
+{
+	_Rdex = _Regdex_Cr;
+	_Ndex = _Natdex_G02;
+	_Edex = _Evodex_G02;
+	iconPath = _IcoPath_Cr;
+	imgWd = "16";
+	maxBox = 20;
+	divBox = 5;
+}
+else if (game == _Sw || game == _Sh)
+{
+	_Rdex = _Regdex_SwSh;
+	_Ndex = _Natdex_G08;
+	_Edex = _Evodex_G08;
+	imgWd = "68";
+	iconPath = _IcoPath_Home;
+	if (version == "r")	// Evolution Dex
+	{
+		iconPath = _IcoPath_SwSh;
+	}
+}
+if (version == "e")	// Evolution Dex
+{
+	_Ndex = _Edex;
+}
+else if (version == "r")
+{
+	_Ndex = _Rdex;
+}
 
-	_Ndex = {};
-	_Edex = {};
-	iconPath = "";
-	if (game == _Re || game == _Bl)
+_MaxDex = _Ndex.length;
+
+boxCntr = 1;
+boxIdx = 1;
+boxHead = "";
+boxBody = "";
+boxFoot = "";
+key = 0;
+idxStr = "0000";
+for (const rdex in _Ndex)
+{
+	if (rdex.substring(0, 4) != idxStr)
 	{
-		_Ndex = _Rdex_ReBl;
-		iconPath = _IcoPath_ReBl;
-		maxBox = 20;
-		divBox = 5;
+		++key;
+		idxStr = rdex.substring(0, 4);
 	}
-	else if (game == _Ye)
+	if (boxCntr == 1)
 	{
-		_Ndex = _Rdex_Ye;
-		iconPath = _IcoPath_Ye;
-		maxBox = 20;
-		divBox = 5;
-	}
-	else if (game == _Go || game == _Si)
-	{
-		_Ndex = _Ndex_G02;
-		iconPath = _IcoPath_GoSi;
-		maxBox = 20;
-		divBox = 5;
-	}
-	else if (game == _Cr)
-	{
-		_Ndex = _Rdex_Cr;
-		iconPath = _IcoPath_Cr;
-		maxBox = 20;
-		divBox = 5;
-	}
-	else if (game == _Sw || game == _Sh)
-	{
-		if (game == _Sw)
-			CaughtColor = "blue";
-		else //if (game == _Sh)
-			CaughtColor = "red";
-		_Ndex = _Ndex_G08;
-		if (version == "e")	// Evolution Dex
+		boxHead = "<table style='border:1px solid gray; font-family:consolas; text-align:center;' cellspacing=0><tr><th colspan=" + divBox + " style='border:1px solid gray;'>" + gameName + " " + ("0" + boxIdx.toString(10)).substr(-2);
+		if (version == "e")
 		{
-			_Ndex = _Evodex_G08;
+			boxHead += " E";
 		}
-		iconPath = "poke_icon/home";
-	}
-
-	_MaxDex = _Ndex.length;
-
-	boxCntr = 1;
-	boxIdx = 1;
-	boxHead = "";
-	boxBody = "";
-	boxFoot = "";
-	if (game < _Ru)	// Gen 1 & 2; dex is object
-	{
-		key = 0;
-		idxStr = "0000";
-		for (const rdex in _Ndex)
+		else if (version == "r")
 		{
-			if (rdex.substring(0, 4) != idxStr)
-			{
-				++key;
-				idxStr = rdex.substring(0, 4);
-			}
-			if (boxCntr == 1)
-			{
-				boxHead = "<table style='border:1px solid gray; font-family:consolas; text-align:center;' cellspacing=0><tr><th colspan=" + divBox + " style='border:1px solid gray;'>" + gameName;
-				if (game < _Go) // Gen 1
-				{
-					boxHead += " BOX" + ("  " + boxIdx.toString(10)).substr(-2);
-				}
-				else
-				{
-					if (version == "e")
-					{
-						boxHead += " E" + ("0" + boxIdx.toString(10)).substr(-2);
-					}
-					else
-					{
-						boxHead += " N" + ("000" + key.toString(10)).substr(-3);
-					}
-				}
-			}
-			
-			if (version == "e")
-			{
-				boxBody += "<td style='border:1px solid gray; width:50px; vertical-align:top;'><span title='" + rdex.substr(0, 4) + " " + _Names[rdex] + "'><img src='" + iconPath + "/" + _Ndex[rdex] + ".png' alt='" + rdex + "'></span><br/><span style='font-size:10px;'>#" + rdex.substr(0, 4) + "<br/>" + _Names[rdex] + "</span></td>";
-			}
-			else
-			{
-				boxBody += "<td style='border:1px solid gray; width:50px; vertical-align:top;'><span title='" + ("0000" + key.toString(10)).substr(-4) + " " + _Names[rdex] + "'><img src='" + iconPath + "/" + _Ndex[rdex] + ".png' alt='" + rdex + "'></span><br/><span style='font-size:10px;'>#" + ("0000" + key.toString(10)).substr(-4) + "<br/>" + _Names[rdex] + "</span></td>";
-			}
-
-			if (boxCntr == maxBox)
-			{
-				if (game < _Go) // Gen 1
-				{
-						boxHead += "</th></tr><tr>";
-				}
-				else // Gen 2
-				{
-					if (version == "e")
-					{
-						boxHead += "</th></tr><tr>";
-					}
-					else
-					{
-						boxHead += "-" + ("000" + key.toString(10)).substr(-3) + "</th></tr><tr>";
-					}
-				}
-				document.write(boxHead);
-				document.write(boxBody);
-				document.write("</tr></table><br/>");
-				boxCntr = 0;
-				boxHead = "";
-				boxBody = "";
-			}
-
-			if (boxCntr % divBox == 0)
-				boxBody += "</tr><tr>";
-
-			boxCntr++;
-		}
-	}
-	else //if (game > _Cr) // Gen 3 above; dex is array
-	{
-		key = 0;
-		idxStr = "0000";
-		for (i = 0; i < _MaxDex; ++i)
-		{
-			rdex = _Ndex[i];
-			//console.log(rdex);
-			if (rdex.substring(0, 4) != idxStr)
-			{
-				++key;
-				idxStr = rdex.substring(0, 4);
-			}
-			//console.log(rdex + " - " + key + " - " + rdex.substring(0, 3) + " ?= " + idxStr);
-			if (boxCntr == 1)
-			{
-				boxHead = "<table style='border:1px solid gray; font-family:consolas; text-align:center;' cellspacing=0><tr><th colspan=" + divBox + " style='border:1px solid gray;'>";
-				if (version == "e")
-				{
-					boxHead += gameName + " EvolutionDex " + ("0" + boxIdx.toString(10)).substr(-2);
-				}
-				else
-				{
-					boxHead += gameName + " " + ("0" + boxIdx.toString(10)).substr(-2) + " Dex " + ("0000" + key.toString(10)).substr(-4);
-				}
-				++boxIdx;
-			}
-
-			if (version == "e")
-			{
-				boxBody += "<td style='border:1px solid gray; width:50px; vertical-align:top;'><span title='" + rdex.substr(0, 4) + " " + _Names[rdex] + "'><img src='" + iconPath + "/" + rdex + ".png' alt='" + rdex + "'></span><br/><span style='font-size:10px;'>#" + rdex.substr(0, 4) + "<br/>" + _Names[rdex] + "</span></td>";
-			}
-			else
-			{
-				boxBody += "<td style='border:1px solid gray; width:50px; vertical-align:top;'><span title='" + ("0000" + key.toString(10)).substr(-4) + " " + _Names[rdex] + "'><img src='" + iconPath + "/" + rdex + ".png' alt='" + rdex + "'></span><br/><span style='font-size:10px;'>#" + ("0000" + key.toString(10)).substr(-4) + "<br/>" + _Names[rdex] + "</span></td>";
-			}
-
-			if (boxCntr == maxBox)
-			{
-				if (version == "e")
-				{
-					boxHead += "</th></tr><tr>";
-				}
-				else
-				{
-					boxHead += "-" + ("0000" + key.toString(10)).substr(-4) + "</th></tr><tr>";
-				}
-				document.write(boxHead);
-				document.write(boxBody);
-				document.write("</tr></table><br/>");
-				boxCntr = 0;
-				boxHead = "";
-				boxBody = "";
-			}
-
-			if (boxCntr % divBox == 0)
-				boxBody += "</tr><tr>";
-
-			boxCntr++;
-		}
-		// filler
-		while (boxCntr <= maxBox)
-		{
-			boxBody += "<td style='border:1px solid gray; width:50px;'><img src='" + iconPath + "/0000-none.png' width='64px'><br/><span style='font-size:10px;'>&nbsp;</span></td>";
-			if (boxCntr % divBox == 0)
-				boxBody += "</tr><tr>";
-			boxCntr++;
-		}
-		if (version = "e")
-		{
-			boxHead += "</th></tr><tr>";
+			boxHead += " R";
 		}
 		else
 		{
-			boxHead += "-" + ("0000" + key.toString(10)).substr(-4) + "</th></tr><tr>";
+			boxHead += " N";
 		}
+		if (game < _Ru) // Gen 1 & 2
+		{
+			boxHead += ("000" + key.toString(10)).substr(-3);
+		}
+		else
+		{
+			boxHead += ("0000" + key.toString(10)).substr(-4);
+		}
+		++boxIdx;
+	}
+	
+	console.log(typeof(rdex) + " " + rdex + ": " + _Names[rdex]);
+	if (version == "e")
+	{
+		boxBody += "<td style='border:1px solid gray; width:50px; vertical-align:top;'><span title='" + rdex.substr(0, 4) + " " + _Names[rdex] + "'><img src='" + iconPath + _Ndex[rdex] + ".png' alt='" + _Ndex[rdex] + "' width='" + imgWd + "'></span><br/><span style='font-size:10px;'>#" + rdex.substr(0, 4) + "<br/>" + _Names[rdex] + "</span></td>";
+	}
+	else
+	{
+		boxBody += "<td style='border:1px solid gray; width:50px; vertical-align:top;'><span title='" + ("0000" + key.toString(10)).substr(-4) + " " + _Names[rdex] + "'><img src='" + iconPath + _Ndex[rdex] + ".png' alt='" + _Ndex[rdex] + "' width='" + imgWd + "'></span><br/><span style='font-size:10px;'>#" + ("0000" + key.toString(10)).substr(-4) + "<br/>" + _Names[rdex] + "</span></td>";
+	}
+
+	if (boxCntr == maxBox)
+	{
+		boxHead += "-";
+		if (game < _Ru) // Gen 1 & 2
+		{
+			boxHead += ("000" + key.toString(10)).substr(-3);
+		}
+		else
+		{
+			boxHead += ("0000" + key.toString(10)).substr(-4);
+		}
+		boxHead += "</th></tr><tr>";
+
 		document.write(boxHead);
 		document.write(boxBody);
-		document.write("</tr></table>");
+		document.write("</tr></table><br/>");
+		boxCntr = 0;
+		boxHead = "";
+		boxBody = "";
 	}
+
+	if (boxCntr % divBox == 0)
+		boxBody += "</tr><tr>";
+
+	boxCntr++;
 }
-else //if (version == "r") // Regional Dex
+// filler
+while (boxCntr <= maxBox)
 {
-	_Rdex = [];
-	if (game == _Sw || game == _Sh)
+	boxBody += "<td style='border:1px solid gray; width:50px; vertical-align:top;'><img src='" + iconPath;
+	if (game < _Ru) // Gen 1 & 2
 	{
-		_Rdex = _Rdex_SwSh;
-		if (game == _Sw)
-			CaughtColor = "blue";
-		else //if (game == _Sh)
-			CaughtColor = "red";
+		boxBody += "00";
 	}
-
-	maxBox = 30;
-	divBox = 6;
-
-	_MaxDex = _Rdex.length;
-
-	iconPath = "poke_icon/g08/sw-sh";
-	boxCntr = 1;
-	boxIdx = 1;
-	key = 0;
-	idxStr = "0000";
-	for (i = 0; i < _MaxDex; ++i)
+	else
 	{
-		rdex = _Rdex[i];
-		//console.log(rdex);
-		if (rdex.substring(0, 4) != idxStr)
-		{
-			++key;
-			idxStr = rdex.substring(0, 4);
-		}
-		//console.log(rdex + " - " + key + " - " + rdex.substring(0, 4) + " ?= " + idxStr);
-		if (boxCntr == 1)
-		{
-			boxHead = "<table style='border:1px solid gray; font-family:consolas; text-align:center;' cellspacing=0><tr><th colspan=6 style='border:1px solid gray;'>";
-			boxHead += gameName + " " + ("0" + boxIdx.toString(10)).substr(-2) + " Dex " + ("0000" + key.toString(10)).substr(-4);
-			++boxIdx;
-		}
-
-		boxBody += "<td style='border:1px solid gray; width:50px; vertical-align:top;'><span title='" + ("0000" + key.toString(10)).substr(-4) + " " + _Names[rdex] + "'><img src='" + iconPath + "/" + rdex + ".png' alt='" + rdex + "'></span><br/><span style='font-size:10px;'>#" + ("0000" + key.toString(10)).substr(-4) + "<br/>" + _Names[rdex] + "</span></td>";
-
-		if (boxCntr == maxBox)
-		{
-			boxHead += "-" + ("0000" + key.toString(10)).substr(-4) + "</th></tr><tr>";
-			document.write(boxHead);
-			document.write(boxBody);
-			document.write("</tr></table><br/>");
-			boxCntr = 0;
-			boxHead = "";
-			boxBody = "";
-		}
-
-		if (boxCntr % divBox == 0)
-			boxBody += "</tr><tr>";
-
-		boxCntr++;
+		boxBody += "0000";
 	}
-	// filler
-	while (boxCntr <= maxBox)
-	{
-		boxBody += "<td style='border:1px solid gray; width:50px;'><img src='" + iconPath + "/0000-none.png'><br/><span style='font-size:10px;'>&nbsp;</span></td>";
-		if (boxCntr % divBox == 0)
-			boxBody += "</tr><tr>";
-		boxCntr++;
-	}
-	boxHead += "-" + ("0000" + key.toString(10)).substr(-4) + "</th></tr><tr>";
-	document.write(boxHead);
-	document.write(boxBody);
-	document.write("</tr></table>");
+	boxBody += "-none.png' width='" + imgWd + "px'><br/><span style='font-size:10px;'>&nbsp;</span></td>";
+	if (boxCntr % divBox == 0)
+		boxBody += "</tr><tr>";
+	boxCntr++;
 }
+boxHead += "-";
+if (game < _Ru) // Gen 1 & 2
+{
+	boxHead += ("000" + key.toString(10)).substr(-3);
+}
+else
+{
+	boxHead += ("0000" + key.toString(10)).substr(-4);
+}
+boxHead += "</th></tr><tr>";
+
+document.write(boxHead);
+document.write(boxBody);
+document.write("</tr></table><br/>");
 </script>
 
 </body>

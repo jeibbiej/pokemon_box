@@ -1620,7 +1620,7 @@
 	"0890-emax"								: "Eternamax Eternatus", // uknown gender
 	"0891"									: "Kubfu",
 	"0892"									: "Urshifu",
-	"0982-sigle"							: "Single Strike Style Urshifu",
+	"0892-single"							: "Single Strike Style Urshifu",
 	"0892-single-gmax"						: "Gigantamax Single Strike Style Urshifu",
 	"0892-rapid"							: "Rapid Strike Style Urshifu",
 	"0892-rapid-gmax"						: "Gigantamax Rapid Strike Style Urshifu",
