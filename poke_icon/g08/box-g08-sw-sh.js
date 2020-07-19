@@ -82,6 +82,7 @@ var _Regdex_SwSh = /* regional dex */
 //	"0045":									"0045",									// "Vileplume"
 	"0045-m":								"0045",									// "Vileplume♂"
 	"0045-f":								"0045",									// "Vileplume♀"
+	"0182":									"0182",									// "Bellossom"
 	"0406":									"0406",									// "Budew"
 //	"0315":									"0315",									// "Roselia"
 	"0315-m":								"0315",									// "Roselia♂"
