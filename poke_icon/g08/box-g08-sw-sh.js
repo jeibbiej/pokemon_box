@@ -777,6 +777,7 @@ var _Regdex_SwSh = /* regional dex */
 	"0080":									"0080",									// "Slowbro"
 //	"0080-mega":							"0080-mega",							// "Mega Slowbro"
 //	"0199-galar":							"0199-galar",							// "Galarian Slowking"
+	"0199-galar":							"0000-none",							// "Galarian Slowking"
 	"0199":									"0199",									// "Slowking"
 	"0427":									"0427",									// "Buneary"
 	"0428":									"0428",									// "Lopunny"
