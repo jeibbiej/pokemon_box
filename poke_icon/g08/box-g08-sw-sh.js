@@ -22,7 +22,7 @@ var _Regdex_SwSh = /* regional dex */
 	"0011":									"0011",									// "Metapod"
 //	"0012":									"0012",									// "Butterfree"
 	"0012-m":								"0012",									// "Butterfree♂"
-	"0012-f":								"0012",									// "Butterfree♀"
+	"0012-f":								"custom/0012-f",						// "Butterfree♀"
 	"0012-gmax":							"0012-gmax",							// "Gigantamax Butterfree"
 	"0736":									"0736",									// "Grubbin"
 	"0737":									"0737",									// "Charjabug"
