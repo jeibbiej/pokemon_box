@@ -78,10 +78,10 @@ var _Regdex_SwSh = /* regional dex */
 	"0043":									"0043",									// "Oddish"
 //	"0044":									"0044",									// "Gloom"
 	"0044-m":								"0044",									// "Gloom♂"
-	"0044-f":								"0044",									// "Gloom♀"
+	"0044-f":								"custom/0044-f",						// "Gloom♀"
 //	"0045":									"0045",									// "Vileplume"
 	"0045-m":								"0045",									// "Vileplume♂"
-	"0045-f":								"0045",									// "Vileplume♀"
+	"0045-f":								"custom/0045-f",						// "Vileplume♀"
 	"0182":									"0182",									// "Bellossom"
 	"0406":									"0406",									// "Budew"
 //	"0315":									"0315",									// "Roselia"
@@ -130,7 +130,7 @@ var _Regdex_SwSh = /* regional dex */
 	"0518":									"0518",									// "Musharna"
 	"0177":									"0177",									// "Natu"
 //	"0178":									"0178",									// "Xatu"
-	"0178-m":								"0178",									// "Xatu♂"
+	"0178-m":								"custom/0178-m",						// "Xatu♂"
 	"0178-f":								"0178",									// "Xatu♀"
 	"0759":									"0759",									// "Stufful"
 	"0760":									"0760",									// "Bewear"
@@ -203,17 +203,17 @@ var _Regdex_SwSh = /* regional dex */
 	"0094-gmax":							"0094-gmax",							// "Gigantamax Gengar"
 //	"0129":									"0129",									// "Magikarp"
 	"0129-m":								"0129",									// "Magikarp♂"
-	"0129-f":								"0129",									// "Magikarp♀"
+	"0129-f":								"custom/0129-f",						// "Magikarp♀"
 //	"0130":									"0130",									// "Gyarados"
 	"0130-m":								"0130",									// "Gyarados♂"
-	"0130-f":								"0130",									// "Gyarados♀"
+	"0130-f":								"custom/0130-f",						// "Gyarados♀"
 //	"0130-mega":							"0130-mega",							// "Mega Gyarados"
 //	"0118":									"0118",									// "Goldeen"
 	"0118-m":								"0118",									// "Goldeen♂"
-	"0118-f":								"0118",									// "Goldeen♀"
+	"0118-f":								"custom/0118-f",						// "Goldeen♀"
 //	"0119":									"0119",									// "Seaking"
 	"0119-m":								"0119",									// "Seaking♂"
-	"0119-f":								"0119",									// "Seaking♀"
+	"0119-f":								"custom/0119-f",						// "Seaking♀"
 	"0223":									"0223",									// "Remoraid"
 //	"0224":									"0224",									// "Octillery"
 	"0224-m":								"0224",									// "Octillery♂"
@@ -405,9 +405,9 @@ var _Regdex_SwSh = /* regional dex */
 	"0598":									"0598",									// "Ferrothorn"
 //	"0710":									"0710",									// "Pumpkaboo"
 	"0710-average":							"0710-average",							// "Average Size Pumpkaboo"
-	"0710-small":							"0710-average",							// "Small Size Pumpkaboo"
-	"0710-large":							"0710-average",							// "Large Size Pumpkaboo"
-	"0710-super":							"0710-average",							// "Super Size Pumpkaboo"
+	"0710-small":							"custom/0710-small",					// "Small Size Pumpkaboo"
+	"0710-large":							"custom/0710-large",					// "Large Size Pumpkaboo"
+	"0710-super":							"custom/0710-super",					// "Super Size Pumpkaboo"
 //	"0711":									"0711",									// "Gourgeist"
 	"0711-average":							"0711-average",							// "Average Size Gourgeist"
 	"0711-small":							"0711-average",							// "Small Size Gourgeist"
@@ -417,7 +417,7 @@ var _Regdex_SwSh = /* regional dex */
 //	"0172-spiky-eared":						"0172-spiky-eared",						// "Spiky-eared Pichu" // female only
 //	"0025":									"0025",									// "Pikachu"
 	"0025-m":								"0025",									// "Pikachu♂"
-	"0025-f":								"0025",									// "Pikachu♀"
+	"0025-f":								"custom/0025-f",						// "Pikachu♀"
 //	"0025-cosplay":							"0025-cosplay",							// "Cosplay Pikachu" // female only
 //	"0025-rock-star":						"0025-rock-star",						// "Pikachu Rock Star" // female only
 //	"0025-belle":							"0025-belle",							// "Pikachu Belle" // female only
@@ -436,11 +436,11 @@ var _Regdex_SwSh = /* regional dex */
 	"0025-gmax":							"0025-gmax",							// "Gigantamax Pikachu"
 //	"0026":									"0026",									// "Raichu"
 	"0026-m":								"0026",									// "Raichu♂"
-	"0026-f":								"0026",									// "Raichu♀"
+	"0026-f":								"custom/0026-f",						// "Raichu♀"
 	"0026-alola":							"0026-alola",							// "Alolan Raichu"
 //	"0133":									"0133",									// "Eevee"
 	"0133-m":								"0133",									// "Eevee♂"
-	"0133-f":								"0133",									// "Eevee♀"
+	"0133-f":								"custom/0133-f",						// "Eevee♀"
 //	"0133-m-letsgo":						"0133-m-letsgo",						// "Partner Eevee♂"
 //	"0133-f-letsgo":						"0133-f-letsgo",						// "Partner Eevee♀"
 	"0133-gmax":							"0133-gmax",							// "Gigantamax Eevee"
@@ -536,10 +536,10 @@ var _Regdex_SwSh = /* regional dex */
 	"0547":									"0547",									// "Whimsicott"
 //	"0111":									"0111",									// "Rhyhorn"
 	"0111-m":								"0111",									// "Rhyhorn♂"
-	"0111-f":								"0111",									// "Rhyhorn♀"
+	"0111-f":								"custom/0111-f",						// "Rhyhorn♀"
 //	"0112":									"0112",									// "Rhydon"
 	"0112-m":								"0112",									// "Rhydon♂"
-	"0112-f":								"0112",									// "Rhydon♀"
+	"0112-f":								"custom/0112-f",						// "Rhydon♀"
 //	"0464":									"0464",									// "Rhyperior",
 	"0464-m":								"0464",									// "Rhyperior♂",
 	"0464-f":								"0464",									// "Rhyperior♀",
@@ -614,10 +614,10 @@ var _Regdex_SwSh = /* regional dex */
 	"0844-gmax":							"0844-gmax",							// "Gigantamax Sandaconda"
 //	"0449":									"0449",									// "Hippopotas"
 	"0449-m":								"0449",									// "Hippopotas♂"
-	"0449-f":								"0449",									// "Hippopotas♀"
+	"0449-f":								"custom/0449-f",						// "Hippopotas♀"
 //	"0450":									"0450",									// "Hippowdon",
 	"0450-m":								"0450",									// "Hippowdon♂",
-	"0450-f":								"0450",									// "Hippowdon♀",
+	"0450-f":								"custom/0450-f",						// "Hippowdon♀",
 	"0632":									"0632",									// "Durant"
 	"0631":									"0631",									// "Heatmor"
 	"0694":									"0694",									// "Helioptile"
@@ -727,23 +727,23 @@ var _Regdex_SwSh = /* regional dex */
 	"0006-gmax":							"0006-gmax",							// "Gigantamax Charizard"
 	"0772":									"0772",									// "Type: Null" // uknown gender
 	"0773":									"0773",									// "Silvally" // uknown gender
-	"0773-fighting":						"0773",									// "Silvally Type: Fighting" // uknown gender
-	"0773-flying":							"0773",									// "Silvally Type: Flying" // uknown gender
-	"0773-poison":							"0773",									// "Silvally Type: Poison" // uknown gender
-	"0773-ground":							"0773",									// "Silvally Type: Ground" // uknown gender
-	"0773-rock":							"0773",									// "Silvally Type: Rock" // uknown gender
-	"0773-bug":								"0773",									// "Silvally Type: Bug" // uknown gender
-	"0773-ghost":							"0773",									// "Silvally Type: Ghost" // uknown gender
-	"0773-steel":							"0773",									// "Silvally Type: Steel" // uknown gender
-	"0773-fire":							"0773",									// "Silvally Type: Fire" // uknown gender
-	"0773-water":							"0773",									// "Silvally Type: Water" // uknown gender
-	"0773-grass":							"0773",									// "Silvally Type: Grass" // uknown gender
-	"0773-electric":						"0773",									// "Silvally Type: Electric" // uknown gender
-	"0773-psychic":							"0773",									// "Silvally Type: Psychic" // uknown gender
-	"0773-ice":								"0773",									// "Silvally Type: Ice" // uknown gender
-	"0773-dragon":							"0773",									// "Silvally Type: Dragon" // uknown gender
-	"0773-dark":							"0773",									// "Silvally Type: Dark" // uknown gender
-	"0773-fairy":							"0773",									// "Silvally Type: Fairy" // uknown gender
+	"0773-fighting":						"custom/0773-fighting",					// "Silvally Type: Fighting" // uknown gender
+	"0773-flying":							"custom/0773-flying",					// "Silvally Type: Flying" // uknown gender
+	"0773-poison":							"custom/0773-poison",					// "Silvally Type: Poison" // uknown gender
+	"0773-ground":							"custom/0773-ground",					// "Silvally Type: Ground" // uknown gender
+	"0773-rock":							"custom/0773-rock",						// "Silvally Type: Rock" // uknown gender
+	"0773-bug":								"custom/0773-bug",						// "Silvally Type: Bug" // uknown gender
+	"0773-ghost":							"custom/0773-ghost",					// "Silvally Type: Ghost" // uknown gender
+	"0773-steel":							"custom/0773-steel",					// "Silvally Type: Steel" // uknown gender
+	"0773-fire":							"custom/0773-fire",						// "Silvally Type: Fire" // uknown gender
+	"0773-water":							"custom/0773-water",					// "Silvally Type: Water" // uknown gender
+	"0773-grass":							"custom/0773-grass",					// "Silvally Type: Grass" // uknown gender
+	"0773-electric":						"custom/0773-electric",					// "Silvally Type: Electric" // uknown gender
+	"0773-psychic":							"custom/0773-psychic",					// "Silvally Type: Psychic" // uknown gender
+	"0773-ice":								"custom/0773-ice",						// "Silvally Type: Ice" // uknown gender
+	"0773-dragon":							"custom/0773-dragon",					// "Silvally Type: Dragon" // uknown gender
+	"0773-dark":							"custom/0773-dark",						// "Silvally Type: Dark" // uknown gender
+	"0773-fairy":							"custom/0773-fairy",					// "Silvally Type: Fairy" // uknown gender
 	"0246":									"0246",									// "Larvitar"
 	"0247":									"0247",									// "Pupitar"
 	"0248":									"0248",									// "Tyranitar"
@@ -821,7 +821,7 @@ var _Regdex_SwSh = /* regional dex */
 	"0002":									"0002",									// "Ivysaur"
 //	"0003":									"0003",									// "Venusaur"
 	"0003-m":								"0003",									// "Venusaur♂"
-	"0003-f":								"0003",									// "Venusaur♀"
+	"0003-f":								"custom/0003-f",						// "Venusaur♀"
 //	"0003-mega":							"0003-mega",							// "Mega Venusaur"
 	"0003-gmax":							"0003-gmax",							// "Gigantamax Venusaur"
 	"0007":									"0007",									// "Squirtle"
