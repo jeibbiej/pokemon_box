@@ -1626,9 +1626,12 @@
 	"0892-rapid-gmax"						: "Gigantamax Rapid Strike Style Urshifu",
 	"0893"									: "Zarude",// unknown gender
 	"0893-dada"								: "Dada Zarude",// unknown gender
-//	 TEMPORARY NUMBERING
 	"0894"									: "Regieleki",
 	"0895"									: "Regidrago",
-	"0896"									: "Calyrex",
+	"0896": "Glastrier",
+	"0897": "Spectrier",
+	"0898"									: "Calyrex",
+	 "0898-ice-rider": "Ice Rider Calyrex",
+	 "0898-shadow-rider": "Shadow Rider Calyrex",
 	"XXXX"									: "MissingNo."
 };
