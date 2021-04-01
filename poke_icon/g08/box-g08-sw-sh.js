@@ -845,9 +845,9 @@ var _Regdex_SwSh = /* regional dex */
 	"0121":									"0121",									// "Starmie" // uknown gender
 	"0891":									"0891",									// "Kubfu"
 //	"0892":									"0892",									// "Urshifu"
-	"0892-single":							"0892-single",							// "Single Strike Style Urshifu"
+	"0892-single":							"0892",									// "Single Strike Style Urshifu"
 //	"0892-single-gmax":						"0892-single-gmax",						// "Gigantamax Single Strike Style Urshifu"
-	"0892-rapid":							"0892-single",							// "Rapid Strike Style Urshifu"
+	"0892-rapid":							"0892",									// "Rapid Strike Style Urshifu"
 //	"0892-rapid-gmax":						"0892-rapid-gmax",						// "Gigantamax Rapid Strike Style Urshifu"
 	"0587":									"0587",									// "Emolga"
 	"0702":									"0702",									// "Dedenne"
