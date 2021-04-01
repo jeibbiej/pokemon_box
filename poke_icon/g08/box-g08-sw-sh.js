@@ -431,6 +431,7 @@ var _Regdex_SwSh = /* regional dex */
 	"0025-kalos-cap":						"0025-kalos-cap",						// "Kalos Cap Pikachu" // male only
 	"0025-alola-cap":						"0025-alola-cap",						// "Alola Cap Pikachu" // male only
 	"0025-partner-cap":						"0025-partner-cap",						// "Partner Cap Pikachu" // male only
+	"0025-world-cap":						"0025-world-cap",						// "World Cap Pikachu" // male only
 //	"0025-m-letsgo":						"0025-m-letsgo",						// "Parter Pikachu♂"
 //	"0025-f-letsgo":						"0025-f-letsgo",						// "Parter Pikachu♀"
 //	"0025-gmax":							"0025-gmax",							// "Gigantamax Pikachu"
