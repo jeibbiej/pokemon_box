@@ -5,25 +5,25 @@ var _Regdex_SwSh = /* regional dex */
 	"0810":									"0810",									// "Grookey"
 	"0811":									"0811",									// "Thwackey"
 	"0812":									"0812",									// "Rillaboom"
-	"0812-gmax":							"0812-gmax",							// "Gigantamax Rillaboom"
+//	"0812-gmax":							"0812-gmax",							// "Gigantamax Rillaboom"
 	"0813":									"0813",									// "Scorbunny"
 	"0814":									"0814",									// "Raboot"
 	"0815":									"0815",									// "Cinderace"
-	"0815-gmax":							"0815-gmax",							// "Gigantamax Cinderace"
+//	"0815-gmax":							"0815-gmax",							// "Gigantamax Cinderace"
 	"0816":									"0816",									// "Sobble"
 	"0817":									"0817",									// "Drizzile"
 	"0818":									"0818",									// "Inteleon"
-	"0818-gmax":							"0818-gmax",							// "Gigantamax Inteleon"
+//	"0818-gmax":							"0818-gmax",							// "Gigantamax Inteleon"
 	"0824":									"0824",									// "Blipbug"
 	"0825":									"0825",									// "Dottler"
 	"0826":									"0826",									// "Orbeetle"
-	"0826-gmax":							"0826-gmax",							// "Gigantamax Orbeetle"
+//	"0826-gmax":							"0826-gmax",							// "Gigantamax Orbeetle"
 	"0010":									"0010",									// "Caterpie"
 	"0011":									"0011",									// "Metapod"
 //	"0012":									"0012",									// "Butterfree"
 	"0012-m":								"0012",									// "Butterfree♂"
 	"0012-f":								"custom/0012-f",						// "Butterfree♀"
-	"0012-gmax":							"0012-gmax",							// "Gigantamax Butterfree"
+//	"0012-gmax":							"0012-gmax",							// "Gigantamax Butterfree"
 	"0736":									"0736",									// "Grubbin"
 	"0737":									"0737",									// "Charjabug"
 	"0738":									"0738",									// "Vikavolt"
@@ -32,7 +32,7 @@ var _Regdex_SwSh = /* regional dex */
 	"0821":									"0821",									// "Rookidee"
 	"0822":									"0822",									// "Corvisquire"
 	"0823":									"0823",									// "Corviknight"
-	"0823-gmax":							"0823-gmax",							// "Gigantamax Corviknight"
+//	"0823-gmax":							"0823-gmax",							// "Gigantamax Corviknight"
 	"0819":									"0819",									// "Skwovet"
 	"0820":									"0820",									// "Greedent"
 	"0519":									"0519",									// "Pidove"
@@ -63,7 +63,7 @@ var _Regdex_SwSh = /* regional dex */
 	"0275-f":								"0275",									// "Shiftry♀"
 	"0833":									"0833",									// "Chewtle"
 	"0834":									"0834",									// "Drednaw"
-	"0834-gmax":							"0834-gmax",							// "Gigantamax Drednaw"
+//	"0834-gmax":							"0834-gmax",							// "Gigantamax Drednaw"
 	"0509":									"0509",									// "Purrloin"
 	"0510":									"0510",									// "Liepard"
 	"0835":									"0835",									// "Yamper"
@@ -143,7 +143,7 @@ var _Regdex_SwSh = /* regional dex */
 //	"0460-mega":							"0460-mega",							// "Mega Abomasnow"
 	"0098":									"0098",									// "Krabby"
 	"0099":									"0099",									// "Kingler"
-	"0099-gmax":							"0099-gmax",							// "Gigantamax Kingler"
+//	"0099-gmax":							"0099-gmax",							// "Gigantamax Kingler"
 //	"0194":									"0194",									// "Wooper"
 	"0194-m":								"0194",									// "Wooper♂"
 	"0194-f":								"0194",									// "Wooper♀"
@@ -195,12 +195,12 @@ var _Regdex_SwSh = /* regional dex */
 	"0066":									"0066",									// "Machop"
 	"0067":									"0067",									// "Machoke"
 	"0068":									"0068",									// "Machamp"
-	"0068-gmax":							"0068-gmax",							// "Gigantamax Machamp"
+//	"0068-gmax":							"0068-gmax",							// "Gigantamax Machamp"
 	"0092":									"0092",									// "Gastly"
 	"0093":									"0093",									// "Haunter"
 	"0094":									"0094",									// "Gengar"
 //	"0094-mega":							"0094-mega",							// "Mega Gengar"
-	"0094-gmax":							"0094-gmax",							// "Gigantamax Gengar"
+//	"0094-gmax":							"0094-gmax",							// "Gigantamax Gengar"
 //	"0129":									"0129",									// "Magikarp"
 	"0129-m":								"0129",									// "Magikarp♂"
 	"0129-f":								"custom/0129-f",						// "Magikarp♀"
@@ -233,14 +233,14 @@ var _Regdex_SwSh = /* regional dex */
 	"0771":									"0771",									// "Pyukumuku"
 	"0568":									"0568",									// "Trubbish"
 	"0569":									"0569",									// "Garbodor"
-	"0569-gmax":							"0569-gmax",							// "Gigantamax Garbodor"
+//	"0569-gmax":							"0569-gmax",							// "Gigantamax Garbodor"
 	"0850":									"0850",									// "Sizzlipede"
 	"0851":									"0851",									// "Centiskorch"
-	"0851-gmax":							"0851-gmax",							// "Gigantamax Centiskorch"
+//	"0851-gmax":							"0851-gmax",							// "Gigantamax Centiskorch"
 	"0837":									"0837",									// "Rolycoly"
 	"0838":									"0838",									// "Carkol"
 	"0839":									"0839",									// "Coalossal"
-	"0839-gmax":							"0839-gmax",							// "Gigantamax Coalossal"
+//	"0839-gmax":							"0839-gmax",							// "Gigantamax Coalossal"
 	"0050":									"0050",									// "Diglett"
 	"0050-alola":							"0050-alola",							// "Alolan Diglett"
 	"0051":									"0051",									// "Dugtrio"
@@ -266,7 +266,7 @@ var _Regdex_SwSh = /* regional dex */
 	"0052-galar":							"0052-galar",							// "Galarian Meowth"
 	"0052":									"0052",									// "Meowth"
 	"0052-alola":							"0052-alola",							// "Alolan Meowth"
-	"0052-gmax":							"0052-gmax",							// "Gigantamax Meowth"
+//	"0052-gmax":							"0052-gmax",							// "Gigantamax Meowth"
 	"0863":									"0863",									// "Perrserker"
 	"0053":									"0053",									// "Persian"
 	"0053-alola":							"0053-alola",							// "Alolan Persian"
@@ -274,131 +274,131 @@ var _Regdex_SwSh = /* regional dex */
 //	"0869":									"0869",									// "Alcremie" // female only
 //	"0869-gmax":							"0869-gmax",							// "Gigantamax Alcremie" // female only
 	"0869-vanilla-cream-strawberry":		"0869-vanilla-cream-strawberry",		// "Strawberry Sweet Vanilla Cream Alcremie" // female only
-	"0869-vanilla-cream-strawberry-gmax":	"0869-gmax",							// "Gigantamax Strawberry Sweet Vanilla Cream Alcremie" // female only
+//	"0869-vanilla-cream-strawberry-gmax":	"0869-gmax",							// "Gigantamax Strawberry Sweet Vanilla Cream Alcremie" // female only
 	"0869-vanilla-cream-berry":				"custom/0869-vanilla-cream-berry",		// "Berry Sweet Vanilla Cream Alcremie" // female only
-	"0869-vanilla-cream-berry-gmax":		"0869-gmax",							// "Gigantamax Berry Sweet Vanilla Cream Alcremie" // female only
+//	"0869-vanilla-cream-berry-gmax":		"0869-gmax",							// "Gigantamax Berry Sweet Vanilla Cream Alcremie" // female only
 	"0869-vanilla-cream-love":				"custom/0869-vanilla-cream-love",		// "Love Sweet Vanilla Cream Alcremie" // female only
-	"0869-vanilla-cream-love-gmax":			"0869-gmax",							// "Gigantamax Love Sweet Vanilla Cream Alcremie" // female only
+//	"0869-vanilla-cream-love-gmax":			"0869-gmax",							// "Gigantamax Love Sweet Vanilla Cream Alcremie" // female only
 	"0869-vanilla-cream-star":				"custom/0869-vanilla-cream-star",		// "Star Sweet Vanilla Cream Alcremie" // female only
-	"0869-vanilla-cream-star-gmax":			"0869-gmax",							// "Gigantamax Star Sweet Vanilla Cream Alcremie" // female only
+//	"0869-vanilla-cream-star-gmax":			"0869-gmax",							// "Gigantamax Star Sweet Vanilla Cream Alcremie" // female only
 	"0869-vanilla-cream-clover":			"custom/0869-vanilla-cream-clover",		// "Clover Sweet Vanilla Cream Alcremie" // female only
-	"0869-vanilla-cream-clover-gmax":		"0869-gmax",							// "Gigantamax Clover Sweet Vanilla Cream Alcremie" // female only
+//	"0869-vanilla-cream-clover-gmax":		"0869-gmax",							// "Gigantamax Clover Sweet Vanilla Cream Alcremie" // female only
 	"0869-vanilla-cream-flower":			"custom/0869-vanilla-cream-flower",		// "Flower Sweet Vanilla Cream Alcremie" // female only
-	"0869-vanilla-cream-flower-gmax":		"0869-gmax",							// "Gigantamax Flower Sweet Vanilla Cream Alcremie" // female only
+//	"0869-vanilla-cream-flower-gmax":		"0869-gmax",							// "Gigantamax Flower Sweet Vanilla Cream Alcremie" // female only
 	"0869-vanilla-cream-ribbon":			"custom/0869-vanilla-cream-ribbon",		// "Ribbon Sweet Vanilla Cream Alcremie" // female only
-	"0869-vanilla-cream-ribbon-gmax":		"0869-gmax",							// "Gigantamax Ribbon Sweet Vanilla Cream Alcremie" // female only
+//	"0869-vanilla-cream-ribbon-gmax":		"0869-gmax",							// "Gigantamax Ribbon Sweet Vanilla Cream Alcremie" // female only
 	"0869-ruby-cream-strawberry":			"0869-ruby-cream-strawberry",			// "Strawberry Sweet Ruby Cream Alcremie" // female only
-	"0869-ruby-cream-strawberry-gmax":		"0869-gmax",							// "Gigantamax Strawberry Sweet Ruby Cream Alcremie" // female only
+//	"0869-ruby-cream-strawberry-gmax":		"0869-gmax",							// "Gigantamax Strawberry Sweet Ruby Cream Alcremie" // female only
 	"0869-ruby-cream-berry":				"custom/0869-ruby-cream-berry",			// "Berry Sweet Ruby Cream Alcremie" // female only
-	"0869-ruby-cream-berry-gmax":			"0869-gmax",							// "Gigantamax Berry Sweet Ruby Cream Alcremie" // female only
+//	"0869-ruby-cream-berry-gmax":			"0869-gmax",							// "Gigantamax Berry Sweet Ruby Cream Alcremie" // female only
 	"0869-ruby-cream-love":					"custom/0869-ruby-cream-love",			// "Love Sweet Ruby Cream Alcremie" // female only
-	"0869-ruby-cream-love-gmax":			"0869-gmax",							// "Gigantamax Love Sweet Ruby Cream Alcremie" // female only
+//	"0869-ruby-cream-love-gmax":			"0869-gmax",							// "Gigantamax Love Sweet Ruby Cream Alcremie" // female only
 	"0869-ruby-cream-star":					"custom/0869-ruby-cream-star",			// "Star Sweet Ruby Cream Alcremie" // female only
-	"0869-ruby-cream-star-gmax":			"0869-gmax",							// "Gigantamax Star Sweet Ruby Cream Alcremie" // female only
+//	"0869-ruby-cream-star-gmax":			"0869-gmax",							// "Gigantamax Star Sweet Ruby Cream Alcremie" // female only
 	"0869-ruby-cream-clover":				"custom/0869-ruby-cream-clover",		// "Clover Sweet Ruby Cream Alcremie" // female only
-	"0869-ruby-cream-clover-gmax":			"0869-gmax",							// "Gigantamax Clover Sweet Ruby Cream Alcremie" // female only
+//	"0869-ruby-cream-clover-gmax":			"0869-gmax",							// "Gigantamax Clover Sweet Ruby Cream Alcremie" // female only
 	"0869-ruby-cream-flower":				"custom/0869-ruby-cream-flower",		// "Flower Sweet Ruby Cream Alcremie" // female only
-	"0869-ruby-cream-flower-gmax":			"0869-gmax",							// "Gigantamax Flower Sweet Ruby Cream Alcremie" // female only
+//	"0869-ruby-cream-flower-gmax":			"0869-gmax",							// "Gigantamax Flower Sweet Ruby Cream Alcremie" // female only
 	"0869-ruby-cream-ribbon":				"custom/0869-ruby-cream-ribbon",		// "Ribbon Sweet Ruby Cream Alcremie" // female only
-	"0869-ruby-cream-ribbon-gmax":			"0869-gmax",							// "Gigantamax Ribbon Sweet Ruby Cream Alcremie" // female only
+//	"0869-ruby-cream-ribbon-gmax":			"0869-gmax",							// "Gigantamax Ribbon Sweet Ruby Cream Alcremie" // female only
 	"0869-matcha-cream-strawberry":			"0869-matcha-cream-strawberry",			// "Strawberry Sweet Matcha Cream Alcremie" // female only
-	"0869-matcha-cream-strawberry-gmax":	"0869-gmax",							// "Gigantamax Strawberry Sweet Matcha Cream Alcremie" // female only
+//	"0869-matcha-cream-strawberry-gmax":	"0869-gmax",							// "Gigantamax Strawberry Sweet Matcha Cream Alcremie" // female only
 	"0869-matcha-cream-berry":				"custom/0869-matcha-cream-berry",		// "Berry Sweet Matcha Cream Alcremie" // female only
-	"0869-matcha-cream-berry-gmax":			"0869-gmax",							// "Gigantamax Berry Sweet Matcha Cream Alcremie" // female only
+//	"0869-matcha-cream-berry-gmax":			"0869-gmax",							// "Gigantamax Berry Sweet Matcha Cream Alcremie" // female only
 	"0869-matcha-cream-love":				"custom/0869-matcha-cream-love",		// "Love Sweet Matcha Cream Alcremie" // female only
-	"0869-matcha-cream-love-gmax":			"0869-gmax",							// "Gigantamax Love Sweet Matcha Cream Alcremie" // female only
+//	"0869-matcha-cream-love-gmax":			"0869-gmax",							// "Gigantamax Love Sweet Matcha Cream Alcremie" // female only
 	"0869-matcha-cream-star":				"custom/0869-matcha-cream-star",		// "Star Sweet Matcha Cream Alcremie" // female only
-	"0869-matcha-cream-star-gmax":			"0869-gmax",							// "Gigantamax Star Sweet Matcha Cream Alcremie" // female only
+//	"0869-matcha-cream-star-gmax":			"0869-gmax",							// "Gigantamax Star Sweet Matcha Cream Alcremie" // female only
 	"0869-matcha-cream-clover":				"custom/0869-matcha-cream-clover",		// "Clover Sweet Matcha Cream Alcremie" // female only
-	"0869-matcha-cream-clover-gmax":		"0869-gmax",							// "Gigantamax Clover Sweet Matcha Cream Alcremie" // female only
+//	"0869-matcha-cream-clover-gmax":		"0869-gmax",							// "Gigantamax Clover Sweet Matcha Cream Alcremie" // female only
 	"0869-matcha-cream-flower":				"custom/0869-matcha-cream-flower",		// "Flower Sweet Matcha Cream Alcremie" // female only
-	"0869-matcha-cream-flower-gmax":		"0869-gmax",							// "Gigantamax Flower Sweet Matcha Cream Alcremie" // female only
+//	"0869-matcha-cream-flower-gmax":		"0869-gmax",							// "Gigantamax Flower Sweet Matcha Cream Alcremie" // female only
 	"0869-matcha-cream-ribbon":				"custom/0869-matcha-cream-ribbon",		// "Ribbon Sweet Matcha Cream Alcremie" // female only
-	"0869-matcha-cream-ribbon-gmax":		"0869-gmax",							// "Gigantamax Ribbon Sweet Matcha Cream Alcremie" // female only
+//	"0869-matcha-cream-ribbon-gmax":		"0869-gmax",							// "Gigantamax Ribbon Sweet Matcha Cream Alcremie" // female only
 	"0869-mint-cream-strawberry":			"0869-mint-cream-strawberry",			// "Strawberry Sweet Mint Cream Alcremie" // female only
-	"0869-mint-cream-strawberry-gmax":		"0869-gmax",							// "Gigantamax Strawberry Sweet Mint Cream Alcremie" // female only
+//	"0869-mint-cream-strawberry-gmax":		"0869-gmax",							// "Gigantamax Strawberry Sweet Mint Cream Alcremie" // female only
 	"0869-mint-cream-berry":				"custom/0869-mint-cream-berry",			// "Berry Sweet Mint Cream Alcremie" // female only
-	"0869-mint-cream-berry-gmax":			"0869-gmax",							// "Gigantamax Berry Sweet Mint Cream Alcremie" // female only
+//	"0869-mint-cream-berry-gmax":			"0869-gmax",							// "Gigantamax Berry Sweet Mint Cream Alcremie" // female only
 	"0869-mint-cream-love":					"custom/0869-mint-cream-love",			// "Love Sweet Mint Cream Alcremie" // female only
-	"0869-mint-cream-love-gmax":			"0869-gmax",							// "Gigantamax Love Sweet Mint Cream Alcremie" // female only
+//	"0869-mint-cream-love-gmax":			"0869-gmax",							// "Gigantamax Love Sweet Mint Cream Alcremie" // female only
 	"0869-mint-cream-star":					"custom/0869-mint-cream-star",			// "Star Sweet Mint Cream Alcremie" // female only
-	"0869-mint-cream-star-gmax":			"0869-gmax",							// "Gigantamax Star Sweet Mint Cream Alcremie" // female only
+//	"0869-mint-cream-star-gmax":			"0869-gmax",							// "Gigantamax Star Sweet Mint Cream Alcremie" // female only
 	"0869-mint-cream-clover":				"custom/0869-mint-cream-clover",		// "Clover Sweet Mint Cream Alcremie" // female only
-	"0869-mint-cream-clover-gmax":			"0869-gmax",							// "Gigantamax Clover Sweet Mint Cream Alcremie" // female only
+//	"0869-mint-cream-clover-gmax":			"0869-gmax",							// "Gigantamax Clover Sweet Mint Cream Alcremie" // female only
 	"0869-mint-cream-flower":				"custom/0869-mint-cream-flower",		// "Flower Sweet Mint Cream Alcremie" // female only
-	"0869-mint-cream-flower-gmax":			"0869-gmax",							// "Gigantamax Flower Sweet Mint Cream Alcremie" // female only
+//	"0869-mint-cream-flower-gmax":			"0869-gmax",							// "Gigantamax Flower Sweet Mint Cream Alcremie" // female only
 	"0869-mint-cream-ribbon":				"custom/0869-mint-cream-ribbon",		// "Ribbon Sweet Mint Cream Alcremie" // female only
-	"0869-mint-cream-ribbon-gmax":			"0869-gmax",							// "Gigantamax Ribbon Sweet Mint Cream Alcremie" // female only
+//	"0869-mint-cream-ribbon-gmax":			"0869-gmax",							// "Gigantamax Ribbon Sweet Mint Cream Alcremie" // female only
 	"0869-lemon-cream-strawberry":			"0869-lemon-cream-strawberry",			// "Strawberry Sweet Lemon Cream Alcremie" // female only
-	"0869-lemon-cream-strawberry-gmax":		"0869-gmax",							// "Gigantamax Strawberry Sweet Lemon Cream Alcremie" // female only
+//	"0869-lemon-cream-strawberry-gmax":		"0869-gmax",							// "Gigantamax Strawberry Sweet Lemon Cream Alcremie" // female only
 	"0869-lemon-cream-berry":				"custom/0869-lemon-cream-berry",		// "Berry Sweet Lemon Cream Alcremie" // female only
-	"0869-lemon-cream-berry-gmax":			"0869-gmax",							// "Gigantamax Berry Sweet Lemon Cream Alcremie" // female only
+//	"0869-lemon-cream-berry-gmax":			"0869-gmax",							// "Gigantamax Berry Sweet Lemon Cream Alcremie" // female only
 	"0869-lemon-cream-love":				"custom/0869-lemon-cream-love",			// "Love Sweet Lemon Cream Alcremie" // female only
-	"0869-lemon-cream-love-gmax":			"0869-gmax",							// "Gigantamax Love Sweet Lemon Cream Alcremie" // female only
+//	"0869-lemon-cream-love-gmax":			"0869-gmax",							// "Gigantamax Love Sweet Lemon Cream Alcremie" // female only
 	"0869-lemon-cream-star":				"custom/0869-lemon-cream-star",			// "Star Sweet Lemon Cream Alcremie" // female only
-	"0869-lemon-cream-star-gmax":			"0869-gmax",							// "Gigantamax Star Sweet Lemon Cream Alcremie" // female only
+//	"0869-lemon-cream-star-gmax":			"0869-gmax",							// "Gigantamax Star Sweet Lemon Cream Alcremie" // female only
 	"0869-lemon-cream-clover":				"custom/0869-lemon-cream-clover",		// "Clover Sweet Lemon Cream Alcremie" // female only
-	"0869-lemon-cream-clover-gmax":			"0869-gmax",							// "Gigantamax Clover Sweet Lemon Cream Alcremie" // female only
+//	"0869-lemon-cream-clover-gmax":			"0869-gmax",							// "Gigantamax Clover Sweet Lemon Cream Alcremie" // female only
 	"0869-lemon-cream-flower":				"custom/0869-lemon-cream-flower",		// "Flower Sweet Lemon Cream Alcremie" // female only
-	"0869-lemon-cream-flower-gmax":			"0869-gmax",							// "Gigantamax Flower Sweet Lemon Cream Alcremie" // female only
+//	"0869-lemon-cream-flower-gmax":			"0869-gmax",							// "Gigantamax Flower Sweet Lemon Cream Alcremie" // female only
 	"0869-lemon-cream-ribbon":				"custom/0869-lemon-cream-ribbon",		// "Ribbon Sweet Lemon Cream Alcremie" // female only
-	"0869-lemon-cream-ribbon-gmax":			"0869-gmax",							// "Gigantamax Ribbon Sweet Lemon Cream Alcremie" // female only
+//	"0869-lemon-cream-ribbon-gmax":			"0869-gmax",							// "Gigantamax Ribbon Sweet Lemon Cream Alcremie" // female only
 	"0869-salted-cream-strawberry":			"0869-salted-cream-strawberry",			// "Strawberry Sweet Salted Cream Alcremie" // female only
-	"0869-salted-cream-strawberry-gmax":	"0869-gmax",							// "Gigantamax Strawberry Sweet Salted Cream Alcremie" // female only
+//	"0869-salted-cream-strawberry-gmax":	"0869-gmax",							// "Gigantamax Strawberry Sweet Salted Cream Alcremie" // female only
 	"0869-salted-cream-berry":				"custom/0869-salted-cream-berry",		// "Berry Sweet Salted Cream Alcremie" // female only
-	"0869-salted-cream-berry-gmax":			"0869-gmax",							// "Gigantamax Berry Sweet Salted Cream Alcremie" // female only
+//	"0869-salted-cream-berry-gmax":			"0869-gmax",							// "Gigantamax Berry Sweet Salted Cream Alcremie" // female only
 	"0869-salted-cream-love":				"custom/0869-salted-cream-love",		// "Love Sweet Salted Cream Alcremie" // female only
-	"0869-salted-cream-love-gmax":			"0869-gmax",							// "Gigantamax Love Sweet Salted Cream Alcremie" // female only
+//	"0869-salted-cream-love-gmax":			"0869-gmax",							// "Gigantamax Love Sweet Salted Cream Alcremie" // female only
 	"0869-salted-cream-star":				"custom/0869-salted-cream-star",		// "Star Sweet Salted Cream Alcremie" // female only
-	"0869-salted-cream-star-gmax":			"0869-gmax",							// "Gigantamax Star Sweet Salted Cream Alcremie" // female only
+//	"0869-salted-cream-star-gmax":			"0869-gmax",							// "Gigantamax Star Sweet Salted Cream Alcremie" // female only
 	"0869-salted-cream-clover":				"custom/0869-salted-cream-clover",		// "Clover Sweet Salted Cream Alcremie" // female only
-	"0869-salted-cream-clover-gmax":		"0869-gmax",							// "Gigantamax Clover Sweet Salted Cream Alcremie" // female only
+//	"0869-salted-cream-clover-gmax":		"0869-gmax",							// "Gigantamax Clover Sweet Salted Cream Alcremie" // female only
 	"0869-salted-cream-flower":				"custom/0869-salted-cream-flower",		// "Flower Sweet Salted Cream Alcremie" // female only
-	"0869-salted-cream-flower-gmax":		"0869-gmax",							// "Gigantamax Flower Sweet Salted Cream Alcremie" // female only
+//	"0869-salted-cream-flower-gmax":		"0869-gmax",							// "Gigantamax Flower Sweet Salted Cream Alcremie" // female only
 	"0869-salted-cream-ribbon":				"custom/0869-salted-cream-ribbon",		// "Ribbon Sweet Salted Cream Alcremie" // female only
-	"0869-salted-cream-ribbon-gmax":		"0869-gmax",							// "Gigantamax Ribbon Sweet Salted Cream Alcremie" // female only
+//	"0869-salted-cream-ribbon-gmax":		"0869-gmax",							// "Gigantamax Ribbon Sweet Salted Cream Alcremie" // female only
 	"0869-ruby-swirl-strawberry":			"0869-ruby-swirl-strawberry",			// "Strawberry Sweet Ruby Swirl Alcremie" // female only
-	"0869-ruby-swirl-strawberry-gmax":		"0869-gmax",							// "Gigantamax Strawberry Sweet Ruby Swirl Alcremie" // female only
+//	"0869-ruby-swirl-strawberry-gmax":		"0869-gmax",							// "Gigantamax Strawberry Sweet Ruby Swirl Alcremie" // female only
 	"0869-ruby-swirl-berry":				"custom/0869-ruby-swirl-berry",			// "Berry Sweet Ruby Swirl Alcremie" // female only
-	"0869-ruby-swirl-berry-gmax":			"0869-gmax",							// "Gigantamax Berry Sweet Ruby Swirl Alcremie" // female only
+//	"0869-ruby-swirl-berry-gmax":			"0869-gmax",							// "Gigantamax Berry Sweet Ruby Swirl Alcremie" // female only
 	"0869-ruby-swirl-love":					"custom/0869-ruby-swirl-love",			// "Love Sweet Ruby Swirl Alcremie" // female only
-	"0869-ruby-swirl-love-gmax":			"0869-gmax",							// "Gigantamax Love Sweet Ruby Swirl Alcremie" // female only
+//	"0869-ruby-swirl-love-gmax":			"0869-gmax",							// "Gigantamax Love Sweet Ruby Swirl Alcremie" // female only
 	"0869-ruby-swirl-star":					"custom/0869-ruby-swirl-star",			// "Star Sweet Ruby Swirl Alcremie" // female only
-	"0869-ruby-swirl-star-gmax":			"0869-gmax",							// "Gigantamax Star Sweet Ruby Swirl Alcremie" // female only
+//	"0869-ruby-swirl-star-gmax":			"0869-gmax",							// "Gigantamax Star Sweet Ruby Swirl Alcremie" // female only
 	"0869-ruby-swirl-clover":				"custom/0869-ruby-swirl-clover",		// "Clover Sweet Ruby Swirl Alcremie" // female only
-	"0869-ruby-swirl-clover-gmax":			"0869-gmax",							// "Gigantamax Clover Sweet Ruby Swirl Alcremie" // female only
+//	"0869-ruby-swirl-clover-gmax":			"0869-gmax",							// "Gigantamax Clover Sweet Ruby Swirl Alcremie" // female only
 	"0869-ruby-swirl-flower":				"custom/0869-ruby-swirl-flower",		// "Flower Sweet Ruby Swirl Alcremie" // female only
-	"0869-ruby-swirl-flower-gmax":			"0869-gmax",							// "Gigantamax Flower Sweet Ruby Swirl Alcremie" // female only
+//	"0869-ruby-swirl-flower-gmax":			"0869-gmax",							// "Gigantamax Flower Sweet Ruby Swirl Alcremie" // female only
 	"0869-ruby-swirl-ribbon":				"custom/0869-ruby-swirl-ribbon",		// "Ribbon Sweet Ruby Swirl Alcremie" // female only
-	"0869-ruby-swirl-ribbon-gmax":			"0869-gmax",							// "Gigantamax Ribbon Sweet Ruby Swirl Alcremie" // female only
+//	"0869-ruby-swirl-ribbon-gmax":			"0869-gmax",							// "Gigantamax Ribbon Sweet Ruby Swirl Alcremie" // female only
 	"0869-caramel-swirl-strawberry":		"0869-caramel-swirl-strawberry",		// "Strawberry Sweet Caramel Swirl Alcremie" // female only
-	"0869-caramel-swirl-strawberry-gmax":	"0869-gmax",							// "Gigantamax Strawberry Sweet Caramel Swirl Alcremie" // female only
+//	"0869-caramel-swirl-strawberry-gmax":	"0869-gmax",							// "Gigantamax Strawberry Sweet Caramel Swirl Alcremie" // female only
 	"0869-caramel-swirl-berry":				"custom/0869-caramel-swirl-berry",		// "Berry Sweet Caramel Swirl Alcremie" // female only
-	"0869-caramel-swirl-berry-gmax":		"0869-gmax",							// "Gigantamax Berry Sweet Caramel Swirl Alcremie" // female only
+//	"0869-caramel-swirl-berry-gmax":		"0869-gmax",							// "Gigantamax Berry Sweet Caramel Swirl Alcremie" // female only
 	"0869-caramel-swirl-love":				"custom/0869-caramel-swirl-love",		// "Love Sweet Caramel Swirl Alcremie" // female only
-	"0869-caramel-swirl-love-gmax":			"0869-gmax",							// "Gigantamax Love Sweet Caramel Swirl Alcremie" // female only
+//	"0869-caramel-swirl-love-gmax":			"0869-gmax",							// "Gigantamax Love Sweet Caramel Swirl Alcremie" // female only
 	"0869-caramel-swirl-star":				"custom/0869-caramel-swirl-star",		// "Star Sweet Caramel Swirl Alcremie" // female only
-	"0869-caramel-swirl-star-gmax":			"0869-gmax",							// "Gigantamax Star Sweet Caramel Swirl Alcremie" // female only
+//	"0869-caramel-swirl-star-gmax":			"0869-gmax",							// "Gigantamax Star Sweet Caramel Swirl Alcremie" // female only
 	"0869-caramel-swirl-clover":			"custom/0869-caramel-swirl-clover",		// "Clover Sweet Caramel Swirl Alcremie" // female only
-	"0869-caramel-swirl-clover-gmax":		"0869-gmax",							// "Gigantamax Clover Sweet Caramel Swirl Alcremie" // female only
+//	"0869-caramel-swirl-clover-gmax":		"0869-gmax",							// "Gigantamax Clover Sweet Caramel Swirl Alcremie" // female only
 	"0869-caramel-swirl-flower":			"custom/0869-caramel-swirl-flower",		// "Flower Sweet Caramel Swirl Alcremie" // female only
-	"0869-caramel-swirl-flower-gmax":		"0869-gmax",							// "Gigantamax Flower Sweet Caramel Swirl Alcremie" // female only
+//	"0869-caramel-swirl-flower-gmax":		"0869-gmax",							// "Gigantamax Flower Sweet Caramel Swirl Alcremie" // female only
 	"0869-caramel-swirl-ribbon":			"custom/0869-caramel-swirl-ribbon",		// "Ribbon Sweet Caramel Swirl Alcremie" // female only
-	"0869-caramel-swirl-ribbon-gmax":		"0869-gmax",							// "Gigantamax Ribbon Sweet Caramel Swirl Alcremie" // female only
+//	"0869-caramel-swirl-ribbon-gmax":		"0869-gmax",							// "Gigantamax Ribbon Sweet Caramel Swirl Alcremie" // female only
 	"0869-rainbow-swirl-strawberry":		"0869-rainbow-swirl-strawberry",		// "Strawberry Sweet Rainbow Swirl Alcremie" // female only
-	"0869-rainbow-swirl-strawberry-gmax":	"0869-gmax",							// "Gigantamax Strawberry Sweet Rainbow Swirl Alcremie" // female only
+//	"0869-rainbow-swirl-strawberry-gmax":	"0869-gmax",							// "Gigantamax Strawberry Sweet Rainbow Swirl Alcremie" // female only
 	"0869-rainbow-swirl-berry":				"custom/0869-rainbow-swirl-berry",		// "Berry Sweet Rainbow Swirl Alcremie" // female only
-	"0869-rainbow-swirl-berry-gmax":		"0869-gmax",							// "Gigantamax Berry Sweet Rainbow Swirl Alcremie" // female only
+//	"0869-rainbow-swirl-berry-gmax":		"0869-gmax",							// "Gigantamax Berry Sweet Rainbow Swirl Alcremie" // female only
 	"0869-rainbow-swirl-love":				"custom/0869-rainbow-swirl-love",		// "Love Sweet Rainbow Swirl Alcremie" // female only
-	"0869-rainbow-swirl-love-gmax":			"0869-gmax",							// "Gigantamax Love Sweet Rainbow Swirl Alcremie" // female only
+//	"0869-rainbow-swirl-love-gmax":			"0869-gmax",							// "Gigantamax Love Sweet Rainbow Swirl Alcremie" // female only
 	"0869-rainbow-swirl-star":				"custom/0869-rainbow-swirl-star",		// "Star Sweet Rainbow Swirl Alcremie" // female only
-	"0869-rainbow-swirl-star-gmax":			"0869-gmax",							// "Gigantamax Star Sweet Rainbow Swirl Alcremie" // female only
+//	"0869-rainbow-swirl-star-gmax":			"0869-gmax",							// "Gigantamax Star Sweet Rainbow Swirl Alcremie" // female only
 	"0869-rainbow-swirl-clover":			"custom/0869-rainbow-swirl-clover",		// "Clover Sweet Rainbow Swirl Alcremie" // female only
-	"0869-rainbow-swirl-clover-gmax":		"0869-gmax",							// "Gigantamax Clover Sweet Rainbow Swirl Alcremie" // female only
+//	"0869-rainbow-swirl-clover-gmax":		"0869-gmax",							// "Gigantamax Clover Sweet Rainbow Swirl Alcremie" // female only
 	"0869-rainbow-swirl-flower":			"custom/0869-rainbow-swirl-flower",		// "Flower Sweet Rainbow Swirl Alcremie" // female only
-	"0869-rainbow-swirl-flower-gmax":		"0869-gmax",							// "Gigantamax Flower Sweet Rainbow Swirl Alcremie" // female only
+//	"0869-rainbow-swirl-flower-gmax":		"0869-gmax",							// "Gigantamax Flower Sweet Rainbow Swirl Alcremie" // female only
 	"0869-rainbow-swirl-ribbon":			"custom/0869-rainbow-swirl-ribbon",		// "Ribbon Sweet Rainbow Swirl Alcremie" // female only
-	"0869-rainbow-swirl-ribbon-gmax":		"0869-gmax",							// "Gigantamax Ribbon Sweet Rainbow Swirl Alcremie" // female only
+//	"0869-rainbow-swirl-ribbon-gmax":		"0869-gmax",							// "Gigantamax Ribbon Sweet Rainbow Swirl Alcremie" // female only
 	"0742":									"0742",									// "Cutiefly"
 	"0743":									"0743",									// "Ribombee"
 	"0597":									"0597",									// "Ferroseed"
@@ -433,7 +433,7 @@ var _Regdex_SwSh = /* regional dex */
 	"0025-partner-cap":						"0025-partner-cap",						// "Partner Cap Pikachu" // male only
 //	"0025-m-letsgo":						"0025-m-letsgo",						// "Parter Pikachu♂"
 //	"0025-f-letsgo":						"0025-f-letsgo",						// "Parter Pikachu♀"
-	"0025-gmax":							"0025-gmax",							// "Gigantamax Pikachu"
+//	"0025-gmax":							"0025-gmax",							// "Gigantamax Pikachu"
 //	"0026":									"0026",									// "Raichu"
 	"0026-m":								"0026",									// "Raichu♂"
 	"0026-f":								"custom/0026-f",						// "Raichu♀"
@@ -443,7 +443,7 @@ var _Regdex_SwSh = /* regional dex */
 	"0133-f":								"custom/0133-f",						// "Eevee♀"
 //	"0133-m-letsgo":						"0133-m-letsgo",						// "Partner Eevee♂"
 //	"0133-f-letsgo":						"0133-f-letsgo",						// "Partner Eevee♀"
-	"0133-gmax":							"0133-gmax",							// "Gigantamax Eevee"
+//	"0133-gmax":							"0133-gmax",							// "Gigantamax Eevee"
 	"0134":									"0134",									// "Vaporeon"
 	"0135":									"0135",									// "Jolteon"
 	"0136":									"0136",									// "Flareon"
@@ -454,9 +454,9 @@ var _Regdex_SwSh = /* regional dex */
 	"0700":									"0700",									// "Sylveon"
 	"0840":									"0840",									// "Applin"
 	"0841":									"0841",									// "Flapple"
-	"0841-gmax":							"0841-gmax",							// "Gigantamax Flapple"
+//	"0841-gmax":							"0841-gmax",							// "Gigantamax Flapple"
 	"0842":									"0842",									// "Appletun"
-	"0842-gmax":							"0841-gmax",							// "Gigantamax Appletun"
+//	"0842-gmax":							"0841-gmax",							// "Gigantamax Appletun"
 	"0677":									"0677",									// "Espurr"
 //	"0678":									"0678",									// "Meowstic"
 	"0678-m":								"0678-m",								// "Meowstic♂" // male only
@@ -505,11 +505,11 @@ var _Regdex_SwSh = /* regional dex */
 	"0859":									"0859",									// "Impidimp" // male only
 	"0860":									"0860",									// "Morgrem" // male only
 	"0861":									"0861",									// "Grimmsnarl" // male only
-	"0861-gmax":							"0861-gmax",							// "Gigantamax Grimmsnarl" // male only
+//	"0861-gmax":							"0861-gmax",							// "Gigantamax Grimmsnarl" // male only
 	"0856":									"0856",									// "Hatenna" // female only
 	"0857":									"0857",									// "Hattrem" // female only
 	"0858":									"0858",									// "Hatterene" // female only
-	"0858-gmax":							"0858-gmax",							// "Gigantamax Hetterene" // female only
+//	"0858-gmax":							"0858-gmax",							// "Gigantamax Hetterene" // female only
 	"0757":									"0757",									// "Salandit"
 	"0758":									"0758",									// "Salazzle" // female only
 	"0624":									"0624",									// "Pawniard"
@@ -531,7 +531,7 @@ var _Regdex_SwSh = /* regional dex */
 	"0468":									"0468",									// "Togekiss"
 	"0446":									"0446",									// "Munchlax"
 	"0143":									"0143",									// "Snorlax"
-	"0143-gmax":							"0143-gmax",							// "Gigantamax Snorlax"
+//	"0143-gmax":							"0143-gmax",							// "Gigantamax Snorlax"
 	"0546":									"0546",									// "Cottonee"
 	"0547":									"0547",									// "Whimsicott"
 //	"0111":									"0111",									// "Rhyhorn"
@@ -589,7 +589,7 @@ var _Regdex_SwSh = /* regional dex */
 //	"0778-busted":							"0778-busted",							// "Busted Mimikyu"
 	"0878":									"0878",									// "Cufant"
 	"0879":									"0879",									// "Copperajah"
-	"0879-gmax":							"0879-gmax",							// "Gigantamax Copperajah"
+//	"0879-gmax":							"0879-gmax",							// "Gigantamax Copperajah"
 	"0211":									"0211",									// "Qwilfish"
 //	"0592":									"0592",									// "Frillish"
 	"0592-m":								"0592-m",								// "Frillish♂"
@@ -605,13 +605,13 @@ var _Regdex_SwSh = /* regional dex */
 	"0848":									"0848",									// "Toxel"
 //	"0849":									"0849",									// "Toxitricity"
 	"0849-low-key":							"0849-low-key",							// "Low Key Toxtricity" // blue
-	"0849-low-key-gmax":					"0849-gmax",							// "Gigantamax Low Key Toxtricity"
+//	"0849-low-key-gmax":					"0849-gmax",							// "Gigantamax Low Key Toxtricity"
 //	"0849-gmax":							"0849-gmax",							// "Gigantamax Toxtricity"
 	"0849-amped":							"0849-amped",							// "Amped Toxtricity" // yellow
-	"0849-amped-gmax":						"0849-gmax",							// "Gigantamax Amped Toxtricity"
+//	"0849-amped-gmax":						"0849-gmax",							// "Gigantamax Amped Toxtricity"
 	"0843":									"0843",									// "Silicobra"
 	"0844":									"0844",									// "Sandaconda"
-	"0844-gmax":							"0844-gmax",							// "Gigantamax Sandaconda"
+//	"0844-gmax":							"0844-gmax",							// "Gigantamax Sandaconda"
 //	"0449":									"0449",									// "Hippopotas"
 	"0449-m":								"0449",									// "Hippopotas♂"
 	"0449-f":								"custom/0449-f",						// "Hippopotas♀"
@@ -677,7 +677,7 @@ var _Regdex_SwSh = /* regional dex */
 	"0713":									"0713",									// "Avalugg"
 	"0781":									"0781",									// "Dhelmise" // uknown gender
 	"0131":									"0131",									// "Lapras"
-	"0131-gmax":							"0131-gmax",							// "Gigantamax Lapras"
+//	"0131-gmax":							"0131-gmax",							// "Gigantamax Lapras"
 	"0337":									"0337",									// "Lunatone" // uknown gender
 	"0338":									"0338",									// "Solrock" // uknown gender
 	"0439":									"0439",									// "Mime Jr."
@@ -697,7 +697,7 @@ var _Regdex_SwSh = /* regional dex */
 	"0875-ice":								"0875-ice",								// "Ice Face Eiscue"
 //	"0875-noice":							"0875-noice",							// "Noice Face Eiscue"
 	"0884":									"0884",									// "Duraludon"
-	"0884-gmax":							"0884-gmax",							// "Gigantamax Duraludon"
+//	"0884-gmax":							"0884-gmax",							// "Gigantamax Duraludon"
 	"0479":									"0479",									// "Rotom" // uknown gender
 	"0479-heat":							"0479-heat",							// "Heat Rotom" // uknown gender
 	"0479-wash":							"0479-wash",							// "Wash Rotom" // uknown gender
@@ -724,7 +724,7 @@ var _Regdex_SwSh = /* regional dex */
 	"0006":									"0006",									// "Charizard"
 //	"0006-mega-x":							"0006-mega-x",							// "Mega Charizard X"
 //	"0006-mega-y":							"0006-mega-y",							// "Mega Charizard Y"
-	"0006-gmax":							"0006-gmax",							// "Gigantamax Charizard"
+//	"0006-gmax":							"0006-gmax",							// "Gigantamax Charizard"
 	"0772":									"0772",									// "Type: Null" // uknown gender
 	"0773":									"0773",									// "Silvally" // uknown gender
 	"0773-fighting":						"custom/0773-fighting",					// "Silvally Type: Fighting" // uknown gender
@@ -823,12 +823,12 @@ var _Regdex_SwSh = /* regional dex */
 	"0003-m":								"0003",									// "Venusaur♂"
 	"0003-f":								"custom/0003-f",						// "Venusaur♀"
 //	"0003-mega":							"0003-mega",							// "Mega Venusaur"
-	"0003-gmax":							"0003-gmax",							// "Gigantamax Venusaur"
+//	"0003-gmax":							"0003-gmax",							// "Gigantamax Venusaur"
 	"0007":									"0007",									// "Squirtle"
 	"0008":									"0008",									// "Wartortle"
 	"0009":									"0009",									// "Blastoise"
 //	"0009-mega":							"0009-mega",							// "Mega Blastoise"
-	"0009-gmax":							"0009-gmax",							// "Gigantamax Blastoise"
+//	"0009-gmax":							"0009-gmax",							// "Gigantamax Blastoise"
 	"0543":									"0543",									// "Venipede"
 	"0544":									"0544",									// "Whirlipede"
 	"0545":									"0545",									// "Scolipede"
@@ -846,9 +846,9 @@ var _Regdex_SwSh = /* regional dex */
 	"0891":									"0891",									// "Kubfu"
 //	"0892":									"0892",									// "Urshifu"
 	"0892-single":							"0892-single",							// "Single Strike Style Urshifu"
-	"0892-single-gmax":						"0892-single-gmax",						// "Gigantamax Single Strike Style Urshifu"
+//	"0892-single-gmax":						"0892-single-gmax",						// "Gigantamax Single Strike Style Urshifu"
 	"0892-rapid":							"0892-single",							// "Rapid Strike Style Urshifu"
-	"0892-rapid-gmax":						"0892-rapid-gmax",						// "Gigantamax Rapid Strike Style Urshifu"
+//	"0892-rapid-gmax":						"0892-rapid-gmax",						// "Gigantamax Rapid Strike Style Urshifu"
 	"0587":									"0587",									// "Emolga"
 	"0702":									"0702",									// "Dedenne"
 	"0081":									"0081",									// "Magnemite"
@@ -929,6 +929,110 @@ var _Regdex_SwSh = /* regional dex */
 	"0474":									"0474",									// "Porygon-Z" // uknown gender
 	"0893":									"0893",									// "Zarude" // uknown gender
 //	"0893-dada"								// "Dada Zarude" // uknown gender
+//==============================
+//	 Crown Tundra Dex exclusive
+//==============================
+	"0238":									"0238",									// "Smoochum" // female only
+	"0124":									"0124",									// "Jynx" // female only
+	"0239":									"0239",									// "Elekid"
+	"0125":									"0125",									// "Electabuzz"
+	"0466":									"0466",									// "Electivire"
+	"0240":									"0240",									// "Magby"
+	"0126":									"0126",									// "Magmar"
+	"0467":									"0467",									// "Magmortar"
+	"0531":									"0531",									// "Audino"
+//	"0531-mega":							"0531-mega",							// "Mega Audino"
+	"0615":									"0615",									// "Cryogonal" // uknown gender
+	"0333":									"0333",									// "Swablu"
+	"0334":									"0334",									// "Altaria"
+//	"0334-mega":							"0334-mega",							// "Mega Altaria"
+	"0442":									"0442",									// "Spiritomb"
+//	"0029":									"0029",									// "Nidoran"
+	"0029-f":								"0029-f",								// "Nidoran♀"
+	"0030":									"0030",									// "Nidorina"
+	"0031":									"0031",									// "Nidoqueen"
+//	"0032":									"0032",									// "Nidoran"
+	"0032-m":								"0032-m",								// "Nidoran♂"
+	"0033":									"0033",									// "Nidorino"
+	"0034":									"0034",									// "Nidoking"
+	"0696":									"0696",									// "Tyrunt"
+	"0697":									"0697",									// "Tyrantrum"
+	"0698":									"0698",									// "Amaura"
+	"0699":									"0699",									// "Aurorus"
+	"0359":									"0359",									// "Absol"
+//	"0359-mega":							"0359-mega",							// "Mega Absol"
+	"0371":									"0371",									// "Bagon"
+	"0372":									"0372",									// "Shelgon"
+	"0373":									"0373",									// "Salamence"
+//	"0373-mega":							"0373-mega",							// "Mega Salamence"
+//	"0443":									"0443",									// "Gible"
+	"0443-m":								"0443-m",								// "Gible♂"
+	"0443-f":								"0443-f",								// "Gible♀"
+//	"0444":									"0444",									// "Gabite"
+	"0444-m":								"0444-m",								// "Gabite♂"
+	"0444-f":								"0444-f",								// "Gabite♀"
+//	"0445":									"0445",									// "Garchomp"
+	"0445-m":								"0445-m",								// "Garchomp♂"
+	"0445-f":								"0445-f",								// "Garchomp♀"
+//	"0445-mega":							"0445-mega",							// "Mega Garchomp"
+	"0138":									"0138",									// "Omanyte"
+	"0139":									"0139",									// "Omastar"
+	"0140":									"0140",									// "Kabuto"
+	"0141":									"0141",									// "Kabutops"
+	"0142":									"0142",									// "Aerodactyl"
+//	"0142-mega":							"0142-mega",							// "Mega Aerodactyl"
+	"0703":									"0703",									// "Carbink" // uknown gender
+	"0374":									"0374",									// "Beldum" // uknown gender
+	"0375":									"0375",									// "Metang" // uknown gender
+	"0376":									"0376",									// "Metagross" // uknown gender
+//	"0376-mega":							"0376-mega",							// "Mega Metagross" // uknown gender
+//	"0041":									"0041",									// "Zubat"
+	"0041-m":								"0041-m",								// "Zubat♂"
+	"0041-f":								"0041-f",								// "Zubat♀"
+//	"0042":									"0042",									// "Golbat"
+	"0042-m":								"0042-m",								// "Golbat♂"
+	"0042-f":								"0042-f",								// "Golbat♀"
+	"0169":									"0169",									// "Crobat"
+	"0564":									"0564",									// "Tirtouga"
+	"0565":									"0565",									// "Carracosta"
+	"0566":									"0566",									// "Archen"
+	"0567":									"0567",									// "Archeops"
+	"0363":									"0363",									// "Spheal"
+	"0364":									"0364",									// "Sealeo"
+	"0365":									"0365",									// "Walrein"
+	"0345":									"0345",									// "Lileep"
+	"0346":									"0346",									// "Cradily"
+	"0347":									"0347",									// "Anorith"
+	"0348":									"0348",									// "Armaldo"
+//	"0369":									"0369",									// "Relicanth"
+	"0369-m":								"0369-m",								// "Relicanth♂"
+	"0369-f":								"0369-f",								// "Relicanth♀"
+	"0304":									"0304",									// "Aron"
+	"0305":									"0305",									// "Lairon"
+	"0306":									"0306",									// "Aggron"
+//	"0306-mega":							"0306-mega",							// "Mega Aggron"
+	"0147":									"0147",									// "Dratini"
+	"0148":									"0148",									// "Dragonair"
+	"0149":									"0149",									// "Dragonite"
+	"0377":									"0377",									// "Regirock" // uknown gender
+	"0378":									"0378",									// "Regice" // uknown gender
+	"0379":									"0379",									// "Registeel" // uknown gender
+	"0894":									"0894",									// "Regieleki" // uknown gender
+	"0895":									"0895",									// "Regidrago" uknown gender
+	"0144":									"0144",									// "Articuno" // uknown gender
+	"0145":									"0145",									// "Zapdos" // uknown gender
+	"0146":									"0146",									// "Moltres" // uknown gender
+	"0144-galar":							"0144-galar",							// "Galarian Articuno" // uknown gender
+	"0145-galar":							"0145-galar",							// "Galarian Zapdos" // uknown gender
+	"0146-galar":							"0146-galar",							// "Galarian Moltres" // uknown gender
+	"0638":									"0638",									// "Cobalion" // uknown gender
+	"0639":									"0639",									// "Terrakion" // uknown gender
+	"0640":									"0640",									// "Virizion" // uknown gender
+	"0896":									"0896",									// "Glastrier" // unknown gender
+	"0897":									"0897",									// "Spectrier" // unknown gender
+	"0898":									"0898",									// "Calyrex" // uknown gender
+	"0898-ice":								"0898-ice",								// "Ice Rider Calyrex" // uknown gender
+	"0898-shadow":							"0898-shadow",							// "Shadow Rider Calyrex" // uknown gender
 //================
 //	 non-Galar Dex
 //================
@@ -936,18 +1040,88 @@ var _Regdex_SwSh = /* regional dex */
 //	"0150-mega-x":							"0150-mega-x",							// "Mega Mewtwo X" // uknown gender
 //	"0150-mega-y":							"0150-mega-y",							// "Mega Mewtwo Y" // uknown gender
 	"0151":									"0151",									// "Mew" // uknown gender
+	"0243":									"0243",									// "Raikou" // uknown gender
+	"0244":									"0244",									// "Entei" // uknown gender
+	"0245":									"0245",									// "Suicune" // uknown gender
+	"0249":									"0249",									// "Lugia" // uknown gender
+	"0250":									"0250",									// "Ho-Oh" // uknown gender
 	"0251":									"0251",									// "Celebi" // uknown gender
-	"0638":									"0638",									// "Cobalion" // uknown gender
-	"0639":									"0639",									// "Terrakion" // uknown gender
-	"0640":									"0640",									// "Virizion" // uknown gender
+	"0252":									"0252",									// "Treecko"
+	"0253":									"0253",									// "Grovyle"
+	"0254":									"0254",									// "Sceptile"
+//	"0254-mega":							"0254-mega",							// "Mega Sceptile"
+//	"0255":									"0255",									// "Torchic"
+	"0255-m":								"0255-m",								// "Torchic♂"
+	"0255-f":								"0255-f",								// "Torchic♀"
+//	"0256":									"0256",									// "Combusken"
+	"0256-m":								"0256-m",								// "Combusken♂"
+	"0256-f":								"0256-f",								// "Combusken♀"
+//	"0257":									"0257",									// "Blaziken"
+	"0257-m":								"0257-m",								// "Blaziken♂"
+	"0257-f":								"0257-f",								// "Blaziken♀"
+//	"0257-mega":							"0257-mega",							// "Mega Blaziken"
+	"0258":									"0258",									// "Mudkip"
+	"0259":									"0259",									// "Marshtomp"
+	"0260":									"0260",									// "Swampert"
+//	"0260-mega":							"0260-mega",							// "Mega Swampert"
+	"0380":									"0380",									// "Latias" // female only
+//	"0380-mega":							"0380-mega",							// "Mega Latias" // female only
+	"0381":									"0381",									// "Latios" // male only
+//	"0381-mega":							"0381-mega",							// "Mega Latios" // male only
+	"0382":									"0382",									// "Kyogre" // uknown gender
+//	"0382-primal":							"0382-primal",							// "Primal Kyogre" // uknown gender
+	"0383":									"0383",									// "Groudon" // uknown gender
+//	"0383-primal":							"0383-primal",							// "Primal Groudon" // uknown gender
+	"0384":									"0384",									// "Rayquaza" // uknown gender
+//	"0384-mega":							"0384-mega",							// "Mega Rayquaza" // uknown gender
+	"0385":									"0385",									// "Jirachi" // uknown gender
+	"0480":									"0480",									// "Uxie" // uknown gender
+	"0481":									"0481",									// "Mesprit" // uknown gender
+	"0482":									"0482",									// "Azelf" // uknown gender
+	"0483":									"0483",									// "Dialga" // uknown gender
+	"0484":									"0484",									// "Palkia" // uknown gender
+	"0485":									"0485",									// "Heatran"
+	"0486":									"0486",									// "Regigigas" // uknown gender
+//	"0487":									"0487",									// "Giratina" // uknown gender
+	"0487-altered":							"0487-altered",							// "Giratina Altered Forme" // uknown gender
+	"0487-origin":							"0487-origin",							// "Giratina Origin Forme" // uknown gender
+	"0488":									"0488",									// "Cresselia" // female only
+	"0494":									"0494",									// "Victini" // uknown gender
+//	"0641":									"0641",									// "Tornadus" // male only
+	"0641-incarnate":						"0641-incarnate",						// "Incarnate Forme Tornadus" // male only
+	"0641-therian":							"0641-therian",							// "Therian Forme Tornadus" // male only
+//	"0642":									"0642",									// "Thundurus" // male only
+	"0642-incarnate":						"0642-incarnate",						// "Incarnate Forme Thundurus" // male only
+	"0642-therian":							"0642-therian",							// "Therian Forme Thundurus" // male only
 	"0643":									"0643",									// "Reshiram" // uknown gender
 	"0644":									"0644",									// "Zekrom" // uknown gender
+//	"0645":									"0645",									// "Landorus" // male only
+	"0645-incarnate":						"0645-incarnate",						// "Incarnate Forme Landorus" // male only
+	"0645-therian":							"0645-therian",							// "Therian Forme Landorus" // male only
 	"0646":									"0646",									// "Kyurem" // uknown gender
 //	"0646-white":							"0646-white",							// "White Kyurem" // uknown gender
 //	"0646-black":							"0646-black",							// "Black Kyurem" // uknown gender
 //	"0647":									"0647",									// "Keldeo" // uknown gender
 	"0647-ordinary":						"0647-ordinary",						// "Ordinary Form Keldeo" // uknown gender
 //	"0647-resolute":						"0647-resolute",						// "Resolute Form Keldeo" // uknown gender
+	"0649":									"0649",									// "Genesect" // uknown gender
+	"0649-douse":							"0649-douse",							// "Douse Drive Genesect" // uknown gender
+	"0649-shock":							"0649-shock",							// "Shock Drive Genesect" // uknown gender
+	"0649-burn":							"0649-burn",							// "Burn Drive Genesect" // uknown gender
+	"0649-chill":							"0649-chill",							// "Chill Drive Genesect" // uknown gender
+//	"0716":									"0716",									// "Xerneas" // uknown gender
+	"0716-neutral":							"0716-neutral",							// "Neutral Xerneas" // uknown gender
+//	"0716-active":							"0716-active",							// "Active Xerneas" // uknown gender
+	"0717":									"0717",									// "Yveltal" // uknown gender
+//	"0718":									"0718",									// "Zygarde" // uknown gender
+	"0718-50":								"0718-50",								// "50% Zygarde" // uknown gender
+	"0718-10":								"0718-10",								// "10% Zygarde" // uknown gender
+	"0718-complete":						"0718-complete",						// "Complete Zygarde" // uknown gender
+//	"0718-core":							"0718-core",							// "Zygarde Core" // uknown gender// uncatchable
+//	"0718-cell":							"0718-cell",							// "Zygarde Cell" // uknown gender// uncatchable
+	"0719":									"0719",									// "Diancie" // uknown gender
+//	"0719-mega":							"0719-mega",							// "Mega Diancie" // uknown gender
+	"0721":									"0721",									// "Volcanion" // uknown gender
 	"0722":									"0722",									// "Rowlet"
 	"0723":									"0723",									// "Dartrix"
 	"0724":									"0724",									// "Decidueye"
@@ -957,20 +1131,138 @@ var _Regdex_SwSh = /* regional dex */
 	"0728":									"0728",									// "Popplio"
 	"0729":									"0729",									// "Brionne"
 	"0730":									"0730",									// "Primarina"
+	"0785":									"0785",									// "Tapu Koko" // uknown gender
+	"0786":									"0786",									// "Tapu Lele" // uknown gender
+	"0787":									"0787",									// "Tapu Bulu" // uknown gender
+	"0788":									"0788",									// "Tapu Fini" // uknown gender
 	"0789":									"0789",									// "Cosmog" // uknown gender
 	"0790":									"0790",									// "Cosmoen" // uknown gender
 	"0791":									"0791",									// "Solgaleo" // uknown gender
 //	"0791-radiant-sun":						"0791-radiant-sun",						// "Radiant Sun Solgaleo" // unknown gender
 	"0792":									"0792",									// "Lunala" // uknown gender
 //	"0792-full-moon":						"0792-full-moon",						// "Full Monn Lunala" // uknown gender
+	"0793":									"0793",									// "Nihilego" // uknown gender
+	"0794":									"0794",									// "Buzzwole" // uknown gender
+	"0795":									"0795",									// "Pheromosa" // uknown gender
+	"0796":									"0796",									// "Xurkitree" // uknown gender
+	"0797":									"0797",									// "Celesteela" // uknown gender
+	"0798":									"0798",									// "Kartana" // uknown gender
+	"0799":									"0799",									// "Guzzlord" // uknown gender
 	"0800":									"0800",									// "Necrozma" // uknown gender
 //	"0800-dusk-mane":						"0800-dusk-mane",						// "Dusk Mane Necrozma" // uknown gender
 //	"0800-dawn-wings":						"0800-dawn-wings",						// "Dawn Wings Necrozma" // uknown gender
 //	"0800-ultra":							"0800-ultra",							// "Ultra Necrozma" // uknown gender
+	"0801":									"0801",									// "Magearna" // uknown gender
+	"0801-original":						"0801-original",						// "Original Color Magearna" // uknown gender
 	"0802":									"0802",									// "Marshadow" // uknown gender
 //	"0802-zenith":							"0802-zenith",							// "Zenith Marshadow" // uknown gender
+	"0803":									"0803",									// "Poipole" // uknown gender
+	"0804":									"0804",									// "Naganadel" // uknown gender
+	"0805":									"0805",									// "Stakataka" // uknown gender
+	"0806":									"0806",									// "Blacephalon" // uknown gender
 	"0807":									"0807",									// "Zeraora" // uknown gender
 	"0808":									"0808",									// "Meltan" // uknown gender
 	"0809":									"0809",									// "Melmetal" // uknown gender
+//	"0809-gmax":							"0809-gmax",							// "Gigantamax Melmetal" // uknown gender
+//================
+//	 Gigantamax Dex
+//================
+	"0812-gmax":							"0812-gmax",							// "Gigantamax Rillaboom"
+	"0815-gmax":							"0815-gmax",							// "Gigantamax Cinderace"
+	"0818-gmax":							"0818-gmax",							// "Gigantamax Inteleon"
+	"0826-gmax":							"0826-gmax",							// "Gigantamax Orbeetle"
+	"0012-gmax":							"0012-gmax",							// "Gigantamax Butterfree"
+	"0823-gmax":							"0823-gmax",							// "Gigantamax Corviknight"
+	"0834-gmax":							"0834-gmax",							// "Gigantamax Drednaw"
+	"0099-gmax":							"0099-gmax",							// "Gigantamax Kingler"
+	"0068-gmax":							"0068-gmax",							// "Gigantamax Machamp"
+	"0094-gmax":							"0094-gmax",							// "Gigantamax Gengar"
+	"0569-gmax":							"0569-gmax",							// "Gigantamax Garbodor"
+	"0851-gmax":							"0851-gmax",							// "Gigantamax Centiskorch"
+	"0839-gmax":							"0839-gmax",							// "Gigantamax Coalossal"
+	"0052-gmax":							"0052-gmax",							// "Gigantamax Meowth"
+//	"0869-gmax":							"0869-gmax",							// "Gigantamax Alcremie" // female only
+	"0869-vanilla-cream-strawberry-gmax":	"0869-gmax",							// "Gigantamax Strawberry Sweet Vanilla Cream Alcremie" // female only
+	"0869-vanilla-cream-berry-gmax":		"0869-gmax",							// "Gigantamax Berry Sweet Vanilla Cream Alcremie" // female only
+	"0869-vanilla-cream-love-gmax":			"0869-gmax",							// "Gigantamax Love Sweet Vanilla Cream Alcremie" // female only
+	"0869-vanilla-cream-star-gmax":			"0869-gmax",							// "Gigantamax Star Sweet Vanilla Cream Alcremie" // female only
+	"0869-vanilla-cream-clover-gmax":		"0869-gmax",							// "Gigantamax Clover Sweet Vanilla Cream Alcremie" // female only
+	"0869-vanilla-cream-flower-gmax":		"0869-gmax",							// "Gigantamax Flower Sweet Vanilla Cream Alcremie" // female only
+	"0869-vanilla-cream-ribbon-gmax":		"0869-gmax",							// "Gigantamax Ribbon Sweet Vanilla Cream Alcremie" // female only
+	"0869-ruby-cream-strawberry-gmax":		"0869-gmax",							// "Gigantamax Strawberry Sweet Ruby Cream Alcremie" // female only
+	"0869-ruby-cream-berry-gmax":			"0869-gmax",							// "Gigantamax Berry Sweet Ruby Cream Alcremie" // female only
+	"0869-ruby-cream-love-gmax":			"0869-gmax",							// "Gigantamax Love Sweet Ruby Cream Alcremie" // female only
+	"0869-ruby-cream-star-gmax":			"0869-gmax",							// "Gigantamax Star Sweet Ruby Cream Alcremie" // female only
+	"0869-ruby-cream-clover-gmax":			"0869-gmax",							// "Gigantamax Clover Sweet Ruby Cream Alcremie" // female only
+	"0869-ruby-cream-flower-gmax":			"0869-gmax",							// "Gigantamax Flower Sweet Ruby Cream Alcremie" // female only
+	"0869-ruby-cream-ribbon-gmax":			"0869-gmax",							// "Gigantamax Ribbon Sweet Ruby Cream Alcremie" // female only
+	"0869-matcha-cream-strawberry-gmax":	"0869-gmax",							// "Gigantamax Strawberry Sweet Matcha Cream Alcremie" // female only
+	"0869-matcha-cream-berry-gmax":			"0869-gmax",							// "Gigantamax Berry Sweet Matcha Cream Alcremie" // female only
+	"0869-matcha-cream-love-gmax":			"0869-gmax",							// "Gigantamax Love Sweet Matcha Cream Alcremie" // female only
+	"0869-matcha-cream-star-gmax":			"0869-gmax",							// "Gigantamax Star Sweet Matcha Cream Alcremie" // female only
+	"0869-matcha-cream-clover-gmax":		"0869-gmax",							// "Gigantamax Clover Sweet Matcha Cream Alcremie" // female only
+	"0869-matcha-cream-flower-gmax":		"0869-gmax",							// "Gigantamax Flower Sweet Matcha Cream Alcremie" // female only
+	"0869-matcha-cream-ribbon-gmax":		"0869-gmax",							// "Gigantamax Ribbon Sweet Matcha Cream Alcremie" // female only
+	"0869-mint-cream-strawberry-gmax":		"0869-gmax",							// "Gigantamax Strawberry Sweet Mint Cream Alcremie" // female only
+	"0869-mint-cream-berry-gmax":			"0869-gmax",							// "Gigantamax Berry Sweet Mint Cream Alcremie" // female only
+	"0869-mint-cream-love-gmax":			"0869-gmax",							// "Gigantamax Love Sweet Mint Cream Alcremie" // female only
+	"0869-mint-cream-star-gmax":			"0869-gmax",							// "Gigantamax Star Sweet Mint Cream Alcremie" // female only
+	"0869-mint-cream-clover-gmax":			"0869-gmax",							// "Gigantamax Clover Sweet Mint Cream Alcremie" // female only
+	"0869-mint-cream-flower-gmax":			"0869-gmax",							// "Gigantamax Flower Sweet Mint Cream Alcremie" // female only
+	"0869-mint-cream-ribbon-gmax":			"0869-gmax",							// "Gigantamax Ribbon Sweet Mint Cream Alcremie" // female only
+	"0869-lemon-cream-strawberry-gmax":		"0869-gmax",							// "Gigantamax Strawberry Sweet Lemon Cream Alcremie" // female only
+	"0869-lemon-cream-berry-gmax":			"0869-gmax",							// "Gigantamax Berry Sweet Lemon Cream Alcremie" // female only
+	"0869-lemon-cream-love-gmax":			"0869-gmax",							// "Gigantamax Love Sweet Lemon Cream Alcremie" // female only
+	"0869-lemon-cream-star-gmax":			"0869-gmax",							// "Gigantamax Star Sweet Lemon Cream Alcremie" // female only
+	"0869-lemon-cream-clover-gmax":			"0869-gmax",							// "Gigantamax Clover Sweet Lemon Cream Alcremie" // female only
+	"0869-lemon-cream-flower-gmax":			"0869-gmax",							// "Gigantamax Flower Sweet Lemon Cream Alcremie" // female only
+	"0869-lemon-cream-ribbon-gmax":			"0869-gmax",							// "Gigantamax Ribbon Sweet Lemon Cream Alcremie" // female only
+	"0869-salted-cream-strawberry-gmax":	"0869-gmax",							// "Gigantamax Strawberry Sweet Salted Cream Alcremie" // female only
+	"0869-salted-cream-berry-gmax":			"0869-gmax",							// "Gigantamax Berry Sweet Salted Cream Alcremie" // female only
+	"0869-salted-cream-love-gmax":			"0869-gmax",							// "Gigantamax Love Sweet Salted Cream Alcremie" // female only
+	"0869-salted-cream-star-gmax":			"0869-gmax",							// "Gigantamax Star Sweet Salted Cream Alcremie" // female only
+	"0869-salted-cream-clover-gmax":		"0869-gmax",							// "Gigantamax Clover Sweet Salted Cream Alcremie" // female only
+	"0869-salted-cream-flower-gmax":		"0869-gmax",							// "Gigantamax Flower Sweet Salted Cream Alcremie" // female only
+	"0869-salted-cream-ribbon-gmax":		"0869-gmax",							// "Gigantamax Ribbon Sweet Salted Cream Alcremie" // female only
+	"0869-ruby-swirl-strawberry-gmax":		"0869-gmax",							// "Gigantamax Strawberry Sweet Ruby Swirl Alcremie" // female only
+	"0869-ruby-swirl-berry-gmax":			"0869-gmax",							// "Gigantamax Berry Sweet Ruby Swirl Alcremie" // female only
+	"0869-ruby-swirl-love-gmax":			"0869-gmax",							// "Gigantamax Love Sweet Ruby Swirl Alcremie" // female only
+	"0869-ruby-swirl-star-gmax":			"0869-gmax",							// "Gigantamax Star Sweet Ruby Swirl Alcremie" // female only
+	"0869-ruby-swirl-clover-gmax":			"0869-gmax",							// "Gigantamax Clover Sweet Ruby Swirl Alcremie" // female only
+	"0869-ruby-swirl-flower-gmax":			"0869-gmax",							// "Gigantamax Flower Sweet Ruby Swirl Alcremie" // female only
+	"0869-ruby-swirl-ribbon-gmax":			"0869-gmax",							// "Gigantamax Ribbon Sweet Ruby Swirl Alcremie" // female only
+	"0869-caramel-swirl-strawberry-gmax":	"0869-gmax",							// "Gigantamax Strawberry Sweet Caramel Swirl Alcremie" // female only
+	"0869-caramel-swirl-berry-gmax":		"0869-gmax",							// "Gigantamax Berry Sweet Caramel Swirl Alcremie" // female only
+	"0869-caramel-swirl-love-gmax":			"0869-gmax",							// "Gigantamax Love Sweet Caramel Swirl Alcremie" // female only
+	"0869-caramel-swirl-star-gmax":			"0869-gmax",							// "Gigantamax Star Sweet Caramel Swirl Alcremie" // female only
+	"0869-caramel-swirl-clover-gmax":		"0869-gmax",							// "Gigantamax Clover Sweet Caramel Swirl Alcremie" // female only
+	"0869-caramel-swirl-flower-gmax":		"0869-gmax",							// "Gigantamax Flower Sweet Caramel Swirl Alcremie" // female only
+	"0869-caramel-swirl-ribbon-gmax":		"0869-gmax",							// "Gigantamax Ribbon Sweet Caramel Swirl Alcremie" // female only
+	"0869-rainbow-swirl-strawberry-gmax":	"0869-gmax",							// "Gigantamax Strawberry Sweet Rainbow Swirl Alcremie" // female only
+	"0869-rainbow-swirl-berry-gmax":		"0869-gmax",							// "Gigantamax Berry Sweet Rainbow Swirl Alcremie" // female only
+	"0869-rainbow-swirl-love-gmax":			"0869-gmax",							// "Gigantamax Love Sweet Rainbow Swirl Alcremie" // female only
+	"0869-rainbow-swirl-star-gmax":			"0869-gmax",							// "Gigantamax Star Sweet Rainbow Swirl Alcremie" // female only
+	"0869-rainbow-swirl-clover-gmax":		"0869-gmax",							// "Gigantamax Clover Sweet Rainbow Swirl Alcremie" // female only
+	"0869-rainbow-swirl-flower-gmax":		"0869-gmax",							// "Gigantamax Flower Sweet Rainbow Swirl Alcremie" // female only
+	"0869-rainbow-swirl-ribbon-gmax":		"0869-gmax",							// "Gigantamax Ribbon Sweet Rainbow Swirl Alcremie" // female only
+	"0025-gmax":							"0025-gmax",							// "Gigantamax Pikachu"
+	"0133-gmax":							"0133-gmax",							// "Gigantamax Eevee"
+	"0841-gmax":							"0841-gmax",							// "Gigantamax Flapple"
+	"0842-gmax":							"0841-gmax",							// "Gigantamax Appletun"
+	"0861-gmax":							"0861-gmax",							// "Gigantamax Grimmsnarl" // male only
+	"0858-gmax":							"0858-gmax",							// "Gigantamax Hetterene" // female only
+	"0143-gmax":							"0143-gmax",							// "Gigantamax Snorlax"
+	"0879-gmax":							"0879-gmax",							// "Gigantamax Copperajah"
+//	"0849-gmax":							"0849-gmax",							// "Gigantamax Toxtricity"
+	"0849-low-key-gmax":					"0849-gmax",							// "Gigantamax Low Key Toxtricity"
+	"0849-amped-gmax":						"0849-gmax",							// "Gigantamax Amped Toxtricity"
+	"0844-gmax":							"0844-gmax",							// "Gigantamax Sandaconda"
+	"0131-gmax":							"0131-gmax",							// "Gigantamax Lapras"
+	"0884-gmax":							"0884-gmax",							// "Gigantamax Duraludon"
+	"0006-gmax":							"0006-gmax",							// "Gigantamax Charizard"
+	"0003-gmax":							"0003-gmax",							// "Gigantamax Venusaur"
+	"0009-gmax":							"0009-gmax",							// "Gigantamax Blastoise"
+	"0892-single-gmax":						"0892-single-gmax",						// "Gigantamax Single Strike Style Urshifu"
+	"0892-rapid-gmax":						"0892-rapid-gmax",						// "Gigantamax Rapid Strike Style Urshifu"
 	"0809-gmax":							"0809-gmax",							// "Gigantamax Melmetal" // uknown gender
 };

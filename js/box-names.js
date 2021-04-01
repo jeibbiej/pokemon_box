@@ -63,7 +63,7 @@
 	"0025-kalos-cap"						: "Kalos Cap Pikachu", // male only
 	"0025-alola-cap"						: "Alola Cap Pikachu", // male only
 	"0025-partner-cap"						: "Partner Cap Pikachu", // male only
-	"0025-world-cap"						: "World Cap Pikachu",
+	"0025-world-cap"						: "World Cap Pikachu", // male only
 	"0025-m-letsgo"							: "Parter Pikachu♂",
 	"0025-f-letsgo"							: "Parter Pikachu♀",
 	"0025-gmax"								: "Gigantamax Pikachu",
@@ -1628,10 +1628,11 @@
 	"0893-dada"								: "Dada Zarude",// unknown gender
 	"0894"									: "Regieleki",
 	"0895"									: "Regidrago",
-	"0896": "Glastrier",
-	"0897": "Spectrier",
+	"0896"									: "Glastrier",
+	"0897"									: "Spectrier",
 	"0898"									: "Calyrex",
-	 "0898-ice-rider": "Ice Rider Calyrex",
-	 "0898-shadow-rider": "Shadow Rider Calyrex",
+	"0898-ice"								: "Ice Rider Calyrex",
+	"0898-shadow"							: "Shadow Rider Calyrex",
+//	 TEMPORARY NUMBERING
 	"XXXX"									: "MissingNo."
 };

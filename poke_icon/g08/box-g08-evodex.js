@@ -62,6 +62,7 @@
 	"0025-kalos-cap":						"0025-kalos-cap",						// "Kalos Cap Pikachu" // male only
 	"0025-alola-cap":						"0025-alola-cap",						// "Alola Cap Pikachu" // male only
 	"0025-partner-cap":						"0025-partner-cap",						// "Partner Cap Pikachu" // male only
+	"0025-world-cap":                       "0025-world-cap",						// "World Cap Pikachu" // male only
 //	"0025-m-letsgo":						"0025-m-letsgo",						// "Parter Pikachu♂"
 //	"0025-f-letsgo":						"0025-f-letsgo",						// "Parter Pikachu♀"
 	"0025-gmax":							"0025-gmax",							// "Gigantamax Pikachu"
@@ -704,6 +705,8 @@
 	"0377":									"0377",									// "Regirock" // uknown gender
 	"0378":									"0378",									// "Regice" // uknown gender
 	"0379":									"0379",									// "Registeel" // uknown gender
+	"0894":									"0894",									// "Regieleki" // uknown gender
+	"0895":									"0895",									// "Regidrago" uknown gender
 	"0486":									"0486",									// "Regigigas" // uknown gender
 	"0380":									"0380",									// "Latias" // female only
 //	"0380-mega":							"0380-mega",							// "Mega Latias" // female only
@@ -1596,9 +1599,15 @@
 //	"0890-emax":							"0890-emax",							// "Eternamax Eternatus" // uknown gender
 	"0891":									"0891",									// "Kubfu"
 //	"0892":									"0892",									// "Urshifu"
-	"0892-sigle":							"0892",							// "Single Strike Style Urshifu"
+	"0892-sigle":							"0892",									// "Single Strike Style Urshifu"
 	"0892-single-gmax":						"0892-single-gmax",						// "Gigantamax Single Strike Style Urshifu"
-	"0892-rapid":							"0892",							// "Rapid Strike Style Urshifu"
+	"0892-rapid":							"0892",									// "Rapid Strike Style Urshifu"
 	"0892-rapid-gmax":						"0892-rapid-gmax",						// "Gigantamax Rapid Strike Style Urshifu"
 	"0893":									"0893",									// "Zarude"
+//	"0893-dada":							"0893-dada",							// "Dada Zarude" // unknown gender
+	"0896":									"0896",									// "Glastrier" // unknown gender
+	"0897":									"0897",									// "Spectrier" // unknown gender
+	"0898":									"0898",									// "Calyrex" // uknown gender
+	"0898-ice":								"0898-ice",								// "Ice Rider Calyrex" // uknown gender
+	"0898-shadow":							"0898-shadow",							// "Shadow Rider Calyrex" // uknown gender
 };
