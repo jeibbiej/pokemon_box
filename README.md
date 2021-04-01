@@ -8,5 +8,5 @@ Naming icon:
 2. Gen 1 and 2 should use two digit code (00) for each icon.
 3. Gen 3 above should use four digit code (0000) for each icon. This is in preparation (if ever) for four digit National Dex number.
 4. For Pokémon with forms, include a base icon. The one with no additional form name.
-4.1. Gender form should be added for those with gender difference. Use m or f for male or female, respectively. Use the correct gender for base and add only the 'newly' found gender form. Example: Doduo - 0084, 0084-m, Dodrio - 0085, 0085-f, since Doduo's 'original' form is female and Dodrio's is male.
-4.2. Formes (or form), including Mega Evolution (mega), regional variant (alola, galar), Gigantamax (gmax), should be descriptive.
+    4.1. Gender form should be added for those with gender difference. Use m or f for male or female, respectively. Use the correct gender for base and add only the 'newly' found gender form. Example: Doduo - 0084, 0084-m, Dodrio - 0085, 0085-f, since Doduo's 'original' form is female and Dodrio's is male.
+    4.2. Formes (or form), including Mega Evolution (mega), regional variant (alola, galar), Gigantamax (gmax), should be descriptive.
