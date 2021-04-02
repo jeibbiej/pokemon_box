@@ -1591,10 +1591,10 @@
 	"0887":									"0887",									// "Dragapult"
 //	"0888":									"0888",									// "Zacian" // uknown gender
 	"0888-hero":							"0888-hero",							// "Hero of Many Battles, Zacian" // uknown gender
-	"0888-crowned":							"0888-crowned",							// "Crowned Sword Zacian" // uknown gender
+//	"0888-crowned":							"0888-crowned",							// "Crowned Sword Zacian" // uknown gender
 //	"0889":									"0889",									// "Zamazenta" // uknown gender
 	"0889-hero":							"0889-hero",							// "Hero of Many Battles, Zamazenta" // uknown gender
-	"0889-crowned":							"0889-crowned",							// "Crowned Shield Zamazenta" // uknown gender
+//	"0889-crowned":							"0889-crowned",							// "Crowned Shield Zamazenta" // uknown gender
 	"0890":									"0890",									// "Eternatus" // uknown gender
 //	"0890-emax":							"0890-emax",							// "Eternamax Eternatus" // uknown gender
 	"0891":									"0891",									// "Kubfu"
