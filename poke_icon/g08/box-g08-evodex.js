@@ -1416,20 +1416,20 @@
 //	"0849":									"0849",									// "Toxitricity"
 //	"0849-gmax":							"0849-gmax",							// "Gigantamax Toxtricity"
 	"0849-low-key":							"0849-low-key",							// "Low Key Toxtricity" // blue
-	"0849-low-key-gmax":					"0849-low-key-gmax",					// "Gigantamax Low Key Toxtricity"
+	"0849-low-key-gmax":					"0849-gmax",							// "Gigantamax Low Key Toxtricity"
 	"0849-amped":							"0849-amped",							// "Amped Toxtricity" // yellow
-	"0849-amped-gmax":						"0849-amped-gmax",						// "Gigantamax Amped Toxtricity"
+	"0849-amped-gmax":						"0849-gmax",							// "Gigantamax Amped Toxtricity"
 	"0850":									"0850",									// "Sizzlipede"
 	"0851":									"0851",									// "Centiskorch"
 	"0851-gmax":							"0851-gmax",							// "Gigantamax Centiskorch"
 	"0852":									"0852",									// "Clobbopus"
 	"0853":									"0853",									// "Grapploct"
 //	"0854":									"0854",									// "Sinistea" // uknown gender
-	"0854-phony":							"0854-phony",							// "Phony Sinistea" // uknown gender
-	"0854-authentic":						"0854-authentic",						// "Authentic Sinistea" // uknown gender
+	"0854-phony":							"0854",									// "Phony Sinistea" // uknown gender
+	"0854-authentic":						"0854",									// "Authentic Sinistea" // uknown gender
 //	"0855":									"0855",									// "Polteageist" // uknown gender
-	"0855-phony":							"0855-phony",							// "Phony Polteageist" // uknown gender
-	"0855-authentic":						"0855-authentic",						// "Authentic Polteageist" // uknown gender
+	"0855-phony":							"0855",									// "Phony Polteageist" // uknown gender
+	"0855-authentic":						"0855",									// "Authentic Polteageist" // uknown gender
 	"0856":									"0856",									// "Hatenna" // female only
 	"0857":									"0857",									// "Hattrem" // female only
 	"0858":									"0858",									// "Hatterene" // female only
@@ -1442,131 +1442,131 @@
 //	"0869":									"0869",									// "Alcremie" // female only
 //	"0869-gmax":							"0869-gmax",							// "Gigantamax Alcremie" // female only
 	"0869-vanilla-cream-strawberry":		"0869-vanilla-cream-strawberry",		// "Strawberry Sweet Vanilla Cream Alcremie" // female only
-	"0869-vanilla-cream-strawberry-gmax":	"0869-vanilla-cream-strawberry-gmax",	// "Gigantamax Strawberry Sweet Vanilla Cream Alcremie" // female only
+	"0869-vanilla-cream-strawberry-gmax":	"0869-gmax",							// "Gigantamax Strawberry Sweet Vanilla Cream Alcremie" // female only
 	"0869-vanilla-cream-berry":				"0869-vanilla-cream-berry",				// "Berry Sweet Vanilla Cream Alcremie" // female only
-	"0869-vanilla-cream-berry-gmax":		"0869-vanilla-cream-berry-gmax",		// "Gigantamax Berry Sweet Vanilla Cream Alcremie" // female only
+	"0869-vanilla-cream-berry-gmax":		"0869-gmax",							// "Gigantamax Berry Sweet Vanilla Cream Alcremie" // female only
 	"0869-vanilla-cream-love":				"0869-vanilla-cream-love",				// "Love Sweet Vanilla Cream Alcremie" // female only
-	"0869-vanilla-cream-love-gmax":			"0869-vanilla-cream-love-gmax",			// "Gigantamax Love Sweet Vanilla Cream Alcremie" // female only
+	"0869-vanilla-cream-love-gmax":			"0869-gmax",							// "Gigantamax Love Sweet Vanilla Cream Alcremie" // female only
 	"0869-vanilla-cream-star":				"0869-vanilla-cream-star",				// "Star Sweet Vanilla Cream Alcremie" // female only
-	"0869-vanilla-cream-star-gmax":			"0869-vanilla-cream-star-gmax",			// "Gigantamax Star Sweet Vanilla Cream Alcremie" // female only
+	"0869-vanilla-cream-star-gmax":			"0869-gmax",							// "Gigantamax Star Sweet Vanilla Cream Alcremie" // female only
 	"0869-vanilla-cream-clover":			"0869-vanilla-cream-clover",			// "Clover Sweet Vanilla Cream Alcremie" // female only
-	"0869-vanilla-cream-clover-gmax":		"0869-vanilla-cream-clover-gmax",		// "Gigantamax Clover Sweet Vanilla Cream Alcremie" // female only
+	"0869-vanilla-cream-clover-gmax":		"0869-gmax",							// "Gigantamax Clover Sweet Vanilla Cream Alcremie" // female only
 	"0869-vanilla-cream-flower":			"0869-vanilla-cream-flower",			// "Flower Sweet Vanilla Cream Alcremie" // female only
-	"0869-vanilla-cream-flower-gmax":		"0869-vanilla-cream-flower-gmax",		// "Gigantamax Flower Sweet Vanilla Cream Alcremie" // female only
+	"0869-vanilla-cream-flower-gmax":		"0869-gmax",							// "Gigantamax Flower Sweet Vanilla Cream Alcremie" // female only
 	"0869-vanilla-cream-ribbon":			"0869-vanilla-cream-ribbon",			// "Ribbon Sweet Vanilla Cream Alcremie" // female only
-	"0869-vanilla-cream-ribbon-gmax":		"0869-vanilla-cream-ribbon-gmax",		// "Gigantamax Ribbon Sweet Vanilla Cream Alcremie" // female only
+	"0869-vanilla-cream-ribbon-gmax":		"0869-gmax",							// "Gigantamax Ribbon Sweet Vanilla Cream Alcremie" // female only
 	"0869-ruby-cream-strawberry":			"0869-ruby-cream-strawberry",			// "Strawberry Sweet Ruby Cream Alcremie" // female only
-	"0869-ruby-cream-strawberry-gmax":		"0869-ruby-cream-strawberry-gmax",		// "Gigantamax Strawberry Sweet Ruby Cream Alcremie" // female only
+	"0869-ruby-cream-strawberry-gmax":		"0869-gmax",							// "Gigantamax Strawberry Sweet Ruby Cream Alcremie" // female only
 	"0869-ruby-cream-berry":				"0869-ruby-cream-berry",				// "Berry Sweet Ruby Cream Alcremie" // female only
-	"0869-ruby-cream-berry-gmax":			"0869-ruby-cream-berry-gmax",			// "Gigantamax Berry Sweet Ruby Cream Alcremie" // female only
+	"0869-ruby-cream-berry-gmax":			"0869-gmax",							// "Gigantamax Berry Sweet Ruby Cream Alcremie" // female only
 	"0869-ruby-cream-love":					"0869-ruby-cream-love",					// "Love Sweet Ruby Cream Alcremie" // female only
-	"0869-ruby-cream-love-gmax":			"0869-ruby-cream-love-gmax",			// "Gigantamax Love Sweet Ruby Cream Alcremie" // female only
+	"0869-ruby-cream-love-gmax":			"0869-gmax",							// "Gigantamax Love Sweet Ruby Cream Alcremie" // female only
 	"0869-ruby-cream-star":					"0869-ruby-cream-star",					// "Star Sweet Ruby Cream Alcremie" // female only
-	"0869-ruby-cream-star-gmax":			"0869-ruby-cream-star-gmax",			// "Gigantamax Star Sweet Ruby Cream Alcremie" // female only
+	"0869-ruby-cream-star-gmax":			"0869-gmax",							// "Gigantamax Star Sweet Ruby Cream Alcremie" // female only
 	"0869-ruby-cream-clover":				"0869-ruby-cream-clover",				// "Clover Sweet Ruby Cream Alcremie" // female only
-	"0869-ruby-cream-clover-gmax":			"0869-ruby-cream-clover-gmax",			// "Gigantamax Clover Sweet Ruby Cream Alcremie" // female only
+	"0869-ruby-cream-clover-gmax":			"0869-gmax",							// "Gigantamax Clover Sweet Ruby Cream Alcremie" // female only
 	"0869-ruby-cream-flower":				"0869-ruby-cream-flower",				// "Flower Sweet Ruby Cream Alcremie" // female only
-	"0869-ruby-cream-flower-gmax":			"0869-ruby-cream-flower-gmax",			// "Gigantamax Flower Sweet Ruby Cream Alcremie" // female only
+	"0869-ruby-cream-flower-gmax":			"0869-gmax",							// "Gigantamax Flower Sweet Ruby Cream Alcremie" // female only
 	"0869-ruby-cream-ribbon":				"0869-ruby-cream-ribbon",				// "Ribbon Sweet Ruby Cream Alcremie" // female only
-	"0869-ruby-cream-ribbon-gmax":			"0869-ruby-cream-ribbon-gmax",			// "Gigantamax Ribbon Sweet Ruby Cream Alcremie" // female only
+	"0869-ruby-cream-ribbon-gmax":			"0869-gmax",							// "Gigantamax Ribbon Sweet Ruby Cream Alcremie" // female only
 	"0869-matcha-cream-strawberry":			"0869-matcha-cream-strawberry",			// "Strawberry Sweet Matcha Cream Alcremie" // female only
-	"0869-matcha-cream-strawberry-gmax":	"0869-matcha-cream-strawberry-gmax",	// "Gigantamax Strawberry Sweet Matcha Cream Alcremie" // female only
+	"0869-matcha-cream-strawberry-gmax":	"0869-gmax",							// "Gigantamax Strawberry Sweet Matcha Cream Alcremie" // female only
 	"0869-matcha-cream-berry":				"0869-matcha-cream-berry",				// "Berry Sweet Matcha Cream Alcremie" // female only
-	"0869-matcha-cream-berry-gmax":			"0869-matcha-cream-berry-gmax",			// "Gigantamax Berry Sweet Matcha Cream Alcremie" // female only
+	"0869-matcha-cream-berry-gmax":			"0869-gmax",							// "Gigantamax Berry Sweet Matcha Cream Alcremie" // female only
 	"0869-matcha-cream-love":				"0869-matcha-cream-love",				// "Love Sweet Matcha Cream Alcremie" // female only
-	"0869-matcha-cream-love-gmax":			"0869-matcha-cream-love-gmax",			// "Gigantamax Love Sweet Matcha Cream Alcremie" // female only
+	"0869-matcha-cream-love-gmax":			"0869-gmax",							// "Gigantamax Love Sweet Matcha Cream Alcremie" // female only
 	"0869-matcha-cream-star":				"0869-matcha-cream-star",				// "Star Sweet Matcha Cream Alcremie" // female only
-	"0869-matcha-cream-star-gmax":			"0869-matcha-cream-star-gmax",			// "Gigantamax Star Sweet Matcha Cream Alcremie" // female only
+	"0869-matcha-cream-star-gmax":			"0869-gmax",							// "Gigantamax Star Sweet Matcha Cream Alcremie" // female only
 	"0869-matcha-cream-clover":				"0869-matcha-cream-clover",				// "Clover Sweet Matcha Cream Alcremie" // female only
-	"0869-matcha-cream-clover-gmax":		"0869-matcha-cream-clover-gmax",		// "Gigantamax Clover Sweet Matcha Cream Alcremie" // female only
+	"0869-matcha-cream-clover-gmax":		"0869-gmax",							// "Gigantamax Clover Sweet Matcha Cream Alcremie" // female only
 	"0869-matcha-cream-flower":				"0869-matcha-cream-flower",				// "Flower Sweet Matcha Cream Alcremie" // female only
-	"0869-matcha-cream-flower-gmax":		"0869-matcha-cream-flower-gmax",		// "Gigantamax Flower Sweet Matcha Cream Alcremie" // female only
+	"0869-matcha-cream-flower-gmax":		"0869-gmax",							// "Gigantamax Flower Sweet Matcha Cream Alcremie" // female only
 	"0869-matcha-cream-ribbon":				"0869-matcha-cream-ribbon",				// "Ribbon Sweet Matcha Cream Alcremie" // female only
-	"0869-matcha-cream-ribbon-gmax":		"0869-matcha-cream-ribbon-gmax",		// "Gigantamax Ribbon Sweet Matcha Cream Alcremie" // female only
+	"0869-matcha-cream-ribbon-gmax":		"0869-gmax",							// "Gigantamax Ribbon Sweet Matcha Cream Alcremie" // female only
 	"0869-mint-cream-strawberry":			"0869-mint-cream-strawberry",			// "Strawberry Sweet Mint Cream Alcremie" // female only
-	"0869-mint-cream-strawberry-gmax":		"0869-mint-cream-strawberry-gmax",		// "Gigantamax Strawberry Sweet Mint Cream Alcremie" // female only
+	"0869-mint-cream-strawberry-gmax":		"0869-gmax",							// "Gigantamax Strawberry Sweet Mint Cream Alcremie" // female only
 	"0869-mint-cream-berry":				"0869-mint-cream-berry",				// "Berry Sweet Mint Cream Alcremie" // female only
-	"0869-mint-cream-berry-gmax":			"0869-mint-cream-berry-gmax",			// "Gigantamax Berry Sweet Mint Cream Alcremie" // female only
+	"0869-mint-cream-berry-gmax":			"0869-gmax",							// "Gigantamax Berry Sweet Mint Cream Alcremie" // female only
 	"0869-mint-cream-love":					"0869-mint-cream-love",					// "Love Sweet Mint Cream Alcremie" // female only
-	"0869-mint-cream-love-gmax":			"0869-mint-cream-love-gmax",			// "Gigantamax Love Sweet Mint Cream Alcremie" // female only
+	"0869-mint-cream-love-gmax":			"0869-gmax",							// "Gigantamax Love Sweet Mint Cream Alcremie" // female only
 	"0869-mint-cream-star":					"0869-mint-cream-star",					// "Star Sweet Mint Cream Alcremie" // female only
-	"0869-mint-cream-star-gmax":			"0869-mint-cream-star-gmax",			// "Gigantamax Star Sweet Mint Cream Alcremie" // female only
+	"0869-mint-cream-star-gmax":			"0869-gmax",							// "Gigantamax Star Sweet Mint Cream Alcremie" // female only
 	"0869-mint-cream-clover":				"0869-mint-cream-clover",				// "Clover Sweet Mint Cream Alcremie" // female only
-	"0869-mint-cream-clover-gmax":			"0869-mint-cream-clover-gmax",			// "Gigantamax Clover Sweet Mint Cream Alcremie" // female only
+	"0869-mint-cream-clover-gmax":			"0869-gmax",							// "Gigantamax Clover Sweet Mint Cream Alcremie" // female only
 	"0869-mint-cream-flower":				"0869-mint-cream-flower",				// "Flower Sweet Mint Cream Alcremie" // female only
-	"0869-mint-cream-flower-gmax":			"0869-mint-cream-flower-gmax",			// "Gigantamax Flower Sweet Mint Cream Alcremie" // female only
+	"0869-mint-cream-flower-gmax":			"0869-gmax",							// "Gigantamax Flower Sweet Mint Cream Alcremie" // female only
 	"0869-mint-cream-ribbon":				"0869-mint-cream-ribbon",				// "Ribbon Sweet Mint Cream Alcremie" // female only
-	"0869-mint-cream-ribbon-gmax":			"0869-mint-cream-ribbon-gmax",			// "Gigantamax Ribbon Sweet Mint Cream Alcremie" // female only
+	"0869-mint-cream-ribbon-gmax":			"0869-gmax",							// "Gigantamax Ribbon Sweet Mint Cream Alcremie" // female only
 	"0869-lemon-cream-strawberry":			"0869-lemon-cream-strawberry",			// "Strawberry Sweet Lemon Cream Alcremie" // female only
-	"0869-lemon-cream-strawberry-gmax":		"0869-lemon-cream-strawberry-gmax",		// "Gigantamax Strawberry Sweet Lemon Cream Alcremie" // female only
+	"0869-lemon-cream-strawberry-gmax":		"0869-gmax",							// "Gigantamax Strawberry Sweet Lemon Cream Alcremie" // female only
 	"0869-lemon-cream-berry":				"0869-lemon-cream-berry",				// "Berry Sweet Lemon Cream Alcremie" // female only
-	"0869-lemon-cream-berry-gmax":			"0869-lemon-cream-berry-gmax",			// "Gigantamax Berry Sweet Lemon Cream Alcremie" // female only
+	"0869-lemon-cream-berry-gmax":			"0869-gmax",							// "Gigantamax Berry Sweet Lemon Cream Alcremie" // female only
 	"0869-lemon-cream-love":				"0869-lemon-cream-love",				// "Love Sweet Lemon Cream Alcremie" // female only
-	"0869-lemon-cream-love-gmax":			"0869-lemon-cream-love-gmax",			// "Gigantamax Love Sweet Lemon Cream Alcremie" // female only
+	"0869-lemon-cream-love-gmax":			"0869-gmax",							// "Gigantamax Love Sweet Lemon Cream Alcremie" // female only
 	"0869-lemon-cream-star":				"0869-lemon-cream-star",				// "Star Sweet Lemon Cream Alcremie" // female only
-	"0869-lemon-cream-star-gmax":			"0869-lemon-cream-star-gmax",			// "Gigantamax Star Sweet Lemon Cream Alcremie" // female only
+	"0869-lemon-cream-star-gmax":			"0869-gmax",							// "Gigantamax Star Sweet Lemon Cream Alcremie" // female only
 	"0869-lemon-cream-clover":				"0869-lemon-cream-clover",				// "Clover Sweet Lemon Cream Alcremie" // female only
-	"0869-lemon-cream-clover-gmax":			"0869-lemon-cream-clover-gmax",			// "Gigantamax Clover Sweet Lemon Cream Alcremie" // female only
+	"0869-lemon-cream-clover-gmax":			"0869-gmax",							// "Gigantamax Clover Sweet Lemon Cream Alcremie" // female only
 	"0869-lemon-cream-flower":				"0869-lemon-cream-flower",				// "Flower Sweet Lemon Cream Alcremie" // female only
-	"0869-lemon-cream-flower-gmax":			"0869-lemon-cream-flower-gmax",			// "Gigantamax Flower Sweet Lemon Cream Alcremie" // female only
+	"0869-lemon-cream-flower-gmax":			"0869-gmax",							// "Gigantamax Flower Sweet Lemon Cream Alcremie" // female only
 	"0869-lemon-cream-ribbon":				"0869-lemon-cream-ribbon",				// "Ribbon Sweet Lemon Cream Alcremie" // female only
-	"0869-lemon-cream-ribbon-gmax":			"0869-lemon-cream-ribbon-gmax",			// "Gigantamax Ribbon Sweet Lemon Cream Alcremie" // female only
+	"0869-lemon-cream-ribbon-gmax":			"0869-gmax",							// "Gigantamax Ribbon Sweet Lemon Cream Alcremie" // female only
 	"0869-salted-cream-strawberry":			"0869-salted-cream-strawberry",			// "Strawberry Sweet Salted Cream Alcremie" // female only
-	"0869-salted-cream-strawberry-gmax":	"0869-salted-cream-strawberry-gmax",	// "Gigantamax Strawberry Sweet Salted Cream Alcremie" // female only
+	"0869-salted-cream-strawberry-gmax":	"0869-gmax",							// "Gigantamax Strawberry Sweet Salted Cream Alcremie" // female only
 	"0869-salted-cream-berry":				"0869-salted-cream-berry",				// "Berry Sweet Salted Cream Alcremie" // female only
-	"0869-salted-cream-berry-gmax":			"0869-salted-cream-berry-gmax",			// "Gigantamax Berry Sweet Salted Cream Alcremie" // female only
+	"0869-salted-cream-berry-gmax":			"0869-gmax",							// "Gigantamax Berry Sweet Salted Cream Alcremie" // female only
 	"0869-salted-cream-love":				"0869-salted-cream-love",				// "Love Sweet Salted Cream Alcremie" // female only
-	"0869-salted-cream-love-gmax":			"0869-salted-cream-love-gmax",			// "Gigantamax Love Sweet Salted Cream Alcremie" // female only
+	"0869-salted-cream-love-gmax":			"0869-gmax",							// "Gigantamax Love Sweet Salted Cream Alcremie" // female only
 	"0869-salted-cream-star":				"0869-salted-cream-star",				// "Star Sweet Salted Cream Alcremie" // female only
-	"0869-salted-cream-star-gmax":			"0869-salted-cream-star-gmax",			// "Gigantamax Star Sweet Salted Cream Alcremie" // female only
+	"0869-salted-cream-star-gmax":			"0869-gmax",							// "Gigantamax Star Sweet Salted Cream Alcremie" // female only
 	"0869-salted-cream-clover":				"0869-salted-cream-clover",				// "Clover Sweet Salted Cream Alcremie" // female only
-	"0869-salted-cream-clover-gmax":		"0869-salted-cream-clover-gmax",		// "Gigantamax Clover Sweet Salted Cream Alcremie" // female only
+	"0869-salted-cream-clover-gmax":		"0869-gmax",							// "Gigantamax Clover Sweet Salted Cream Alcremie" // female only
 	"0869-salted-cream-flower":				"0869-salted-cream-flower",				// "Flower Sweet Salted Cream Alcremie" // female only
-	"0869-salted-cream-flower-gmax":		"0869-salted-cream-flower-gmax",		// "Gigantamax Flower Sweet Salted Cream Alcremie" // female only
+	"0869-salted-cream-flower-gmax":		"0869-gmax",							// "Gigantamax Flower Sweet Salted Cream Alcremie" // female only
 	"0869-salted-cream-ribbon":				"0869-salted-cream-ribbon",				// "Ribbon Sweet Salted Cream Alcremie" // female only
-	"0869-salted-cream-ribbon-gmax":		"0869-salted-cream-ribbon-gmax",		// "Gigantamax Ribbon Sweet Salted Cream Alcremie" // female only
+	"0869-salted-cream-ribbon-gmax":		"0869-gmax",							// "Gigantamax Ribbon Sweet Salted Cream Alcremie" // female only
 	"0869-ruby-swirl-strawberry":			"0869-ruby-swirl-strawberry",			// "Strawberry Sweet Ruby Swirl Alcremie" // female only
-	"0869-ruby-swirl-strawberry-gmax":		"0869-ruby-swirl-strawberry-gmax",		// "Gigantamax Strawberry Sweet Ruby Swirl Alcremie" // female only
+	"0869-ruby-swirl-strawberry-gmax":		"0869-gmax",							// "Gigantamax Strawberry Sweet Ruby Swirl Alcremie" // female only
 	"0869-ruby-swirl-berry":				"0869-ruby-swirl-berry",				// "Berry Sweet Ruby Swirl Alcremie" // female only
-	"0869-ruby-swirl-berry-gmax":			"0869-ruby-swirl-berry-gmax",			// "Gigantamax Berry Sweet Ruby Swirl Alcremie" // female only
+	"0869-ruby-swirl-berry-gmax":			"0869-gmax",							// "Gigantamax Berry Sweet Ruby Swirl Alcremie" // female only
 	"0869-ruby-swirl-love":					"0869-ruby-swirl-love",					// "Love Sweet Ruby Swirl Alcremie" // female only
-	"0869-ruby-swirl-love-gmax":			"0869-ruby-swirl-love-gmax",			// "Gigantamax Love Sweet Ruby Swirl Alcremie" // female only
+	"0869-ruby-swirl-love-gmax":			"0869-gmax",							// "Gigantamax Love Sweet Ruby Swirl Alcremie" // female only
 	"0869-ruby-swirl-star":					"0869-ruby-swirl-star",					// "Star Sweet Ruby Swirl Alcremie" // female only
-	"0869-ruby-swirl-star-gmax":			"0869-ruby-swirl-star-gmax",			// "Gigantamax Star Sweet Ruby Swirl Alcremie" // female only
+	"0869-ruby-swirl-star-gmax":			"0869-gmax",							// "Gigantamax Star Sweet Ruby Swirl Alcremie" // female only
 	"0869-ruby-swirl-clover":				"0869-ruby-swirl-clover",				// "Clover Sweet Ruby Swirl Alcremie" // female only
-	"0869-ruby-swirl-clover-gmax":			"0869-ruby-swirl-clover-gmax",			// "Gigantamax Clover Sweet Ruby Swirl Alcremie" // female only
+	"0869-ruby-swirl-clover-gmax":			"0869-gmax",							// "Gigantamax Clover Sweet Ruby Swirl Alcremie" // female only
 	"0869-ruby-swirl-flower":				"0869-ruby-swirl-flower",				// "Flower Sweet Ruby Swirl Alcremie" // female only
-	"0869-ruby-swirl-flower-gmax":			"0869-ruby-swirl-flower-gmax",			// "Gigantamax Flower Sweet Ruby Swirl Alcremie" // female only
+	"0869-ruby-swirl-flower-gmax":			"0869-gmax",							// "Gigantamax Flower Sweet Ruby Swirl Alcremie" // female only
 	"0869-ruby-swirl-ribbon":				"0869-ruby-swirl-ribbon",				// "Ribbon Sweet Ruby Swirl Alcremie" // female only
-	"0869-ruby-swirl-ribbon-gmax":			"0869-ruby-swirl-ribbon-gmax",			// "Gigantamax Ribbon Sweet Ruby Swirl Alcremie" // female only
+	"0869-ruby-swirl-ribbon-gmax":			"0869-gmax",							// "Gigantamax Ribbon Sweet Ruby Swirl Alcremie" // female only
 	"0869-caramel-swirl-strawberry":		"0869-caramel-swirl-strawberry",		// "Strawberry Sweet Caramel Swirl Alcremie" // female only
-	"0869-caramel-swirl-strawberry-gmax":	"0869-caramel-swirl-strawberry-gmax",	// "Gigantamax Strawberry Sweet Caramel Swirl Alcremie" // female only
+	"0869-caramel-swirl-strawberry-gmax":	"0869-gmax",							// "Gigantamax Strawberry Sweet Caramel Swirl Alcremie" // female only
 	"0869-caramel-swirl-berry":				"0869-caramel-swirl-berry",				// "Berry Sweet Caramel Swirl Alcremie" // female only
-	"0869-caramel-swirl-berry-gmax":		"0869-caramel-swirl-berry-gmax",		// "Gigantamax Berry Sweet Caramel Swirl Alcremie" // female only
+	"0869-caramel-swirl-berry-gmax":		"0869-gmax",							// "Gigantamax Berry Sweet Caramel Swirl Alcremie" // female only
 	"0869-caramel-swirl-love":				"0869-caramel-swirl-love",				// "Love Sweet Caramel Swirl Alcremie" // female only
-	"0869-caramel-swirl-love-gmax":			"0869-caramel-swirl-love-gmax",			// "Gigantamax Love Sweet Caramel Swirl Alcremie" // female only
+	"0869-caramel-swirl-love-gmax":			"0869-gmax",							// "Gigantamax Love Sweet Caramel Swirl Alcremie" // female only
 	"0869-caramel-swirl-star":				"0869-caramel-swirl-star",				// "Star Sweet Caramel Swirl Alcremie" // female only
-	"0869-caramel-swirl-star-gmax":			"0869-caramel-swirl-star-gmax",			// "Gigantamax Star Sweet Caramel Swirl Alcremie" // female only
+	"0869-caramel-swirl-star-gmax":			"0869-gmax",							// "Gigantamax Star Sweet Caramel Swirl Alcremie" // female only
 	"0869-caramel-swirl-clover":			"0869-caramel-swirl-clover",			// "Clover Sweet Caramel Swirl Alcremie" // female only
-	"0869-caramel-swirl-clover-gmax":		"0869-caramel-swirl-clover-gmax",		// "Gigantamax Clover Sweet Caramel Swirl Alcremie" // female only
+	"0869-caramel-swirl-clover-gmax":		"0869-gmax",							// "Gigantamax Clover Sweet Caramel Swirl Alcremie" // female only
 	"0869-caramel-swirl-flower":			"0869-caramel-swirl-flower",			// "Flower Sweet Caramel Swirl Alcremie" // female only
-	"0869-caramel-swirl-flower-gmax":		"0869-caramel-swirl-flower-gmax",		// "Gigantamax Flower Sweet Caramel Swirl Alcremie" // female only
+	"0869-caramel-swirl-flower-gmax":		"0869-gmax",							// "Gigantamax Flower Sweet Caramel Swirl Alcremie" // female only
 	"0869-caramel-swirl-ribbon":			"0869-caramel-swirl-ribbon",			// "Ribbon Sweet Caramel Swirl Alcremie" // female only
-	"0869-caramel-swirl-ribbon-gmax":		"0869-caramel-swirl-ribbon-gmax",		// "Gigantamax Ribbon Sweet Caramel Swirl Alcremie" // female only
+	"0869-caramel-swirl-ribbon-gmax":		"0869-gmax",							// "Gigantamax Ribbon Sweet Caramel Swirl Alcremie" // female only
 	"0869-rainbow-swirl-strawberry":		"0869-rainbow-swirl-strawberry",		// "Strawberry Sweet Rainbow Swirl Alcremie" // female only
-	"0869-rainbow-swirl-strawberry-gmax":	"0869-rainbow-swirl-strawberry-gmax",	// "Gigantamax Strawberry Sweet Rainbow Swirl Alcremie" // female only
+	"0869-rainbow-swirl-strawberry-gmax":	"0869-gmax",							// "Gigantamax Strawberry Sweet Rainbow Swirl Alcremie" // female only
 	"0869-rainbow-swirl-berry":				"0869-rainbow-swirl-berry",				// "Berry Sweet Rainbow Swirl Alcremie" // female only
-	"0869-rainbow-swirl-berry-gmax":		"0869-rainbow-swirl-berry-gmax",		// "Gigantamax Berry Sweet Rainbow Swirl Alcremie" // female only
+	"0869-rainbow-swirl-berry-gmax":		"0869-gmax",							// "Gigantamax Berry Sweet Rainbow Swirl Alcremie" // female only
 	"0869-rainbow-swirl-love":				"0869-rainbow-swirl-love",				// "Love Sweet Rainbow Swirl Alcremie" // female only
-	"0869-rainbow-swirl-love-gmax":			"0869-rainbow-swirl-love-gmax",			// "Gigantamax Love Sweet Rainbow Swirl Alcremie" // female only
+	"0869-rainbow-swirl-love-gmax":			"0869-gmax",							// "Gigantamax Love Sweet Rainbow Swirl Alcremie" // female only
 	"0869-rainbow-swirl-star":				"0869-rainbow-swirl-star",				// "Star Sweet Rainbow Swirl Alcremie" // female only
-	"0869-rainbow-swirl-star-gmax":			"0869-rainbow-swirl-star-gmax",			// "Gigantamax Star Sweet Rainbow Swirl Alcremie" // female only
+	"0869-rainbow-swirl-star-gmax":			"0869-gmax",							// "Gigantamax Star Sweet Rainbow Swirl Alcremie" // female only
 	"0869-rainbow-swirl-clover":			"0869-rainbow-swirl-clover",			// "Clover Sweet Rainbow Swirl Alcremie" // female only
-	"0869-rainbow-swirl-clover-gmax":		"0869-rainbow-swirl-clover-gmax",		// "Gigantamax Clover Sweet Rainbow Swirl Alcremie" // female only
+	"0869-rainbow-swirl-clover-gmax":		"0869-gmax",							// "Gigantamax Clover Sweet Rainbow Swirl Alcremie" // female only
 	"0869-rainbow-swirl-flower":			"0869-rainbow-swirl-flower",			// "Flower Sweet Rainbow Swirl Alcremie" // female only
-	"0869-rainbow-swirl-flower-gmax":		"0869-rainbow-swirl-flower-gmax",		// "Gigantamax Flower Sweet Rainbow Swirl Alcremie" // female only
+	"0869-rainbow-swirl-flower-gmax":		"0869-gmax",							// "Gigantamax Flower Sweet Rainbow Swirl Alcremie" // female only
 	"0869-rainbow-swirl-ribbon":			"0869-rainbow-swirl-ribbon",			// "Ribbon Sweet Rainbow Swirl Alcremie" // female only
-	"0869-rainbow-swirl-ribbon-gmax":		"0869-rainbow-swirl-ribbon-gmax",		// "Gigantamax Ribbon Sweet Rainbow Swirl Alcremie" // female only
+	"0869-rainbow-swirl-ribbon-gmax":		"0869-gmax",							// "Gigantamax Ribbon Sweet Rainbow Swirl Alcremie" // female only
 	"0870":									"0870",									// "Falinks" // uknown gender
 	"0871":									"0871",									// "Pincurchin"
 	"0872":									"0872",									// "Snom"
