@@ -966,14 +966,14 @@ var _Regdex_SwSh = /* regional dex */
 	"0373":									"0373",									// "Salamence"
 //	"0373-mega":							"0373-mega",							// "Mega Salamence"
 //	"0443":									"0443",									// "Gible"
-	"0443-m":								"0443-m",								// "Gible♂"
-	"0443-f":								"0443-f",								// "Gible♀"
+	"0443-m":								"0443",									// "Gible♂"
+	"0443-f":								"0443",									// "Gible♀"
 //	"0444":									"0444",									// "Gabite"
-	"0444-m":								"0444-m",								// "Gabite♂"
-	"0444-f":								"0444-f",								// "Gabite♀"
+	"0444-m":								"0444",									// "Gabite♂"
+	"0444-f":								"0444",									// "Gabite♀"
 //	"0445":									"0445",									// "Garchomp"
-	"0445-m":								"0445-m",								// "Garchomp♂"
-	"0445-f":								"0445-f",								// "Garchomp♀"
+	"0445-m":								"0445",									// "Garchomp♂"
+	"0445-f":								"0445",									// "Garchomp♀"
 //	"0445-mega":							"0445-mega",							// "Mega Garchomp"
 	"0138":									"0138",									// "Omanyte"
 	"0139":									"0139",									// "Omastar"
@@ -987,11 +987,11 @@ var _Regdex_SwSh = /* regional dex */
 	"0376":									"0376",									// "Metagross" // uknown gender
 //	"0376-mega":							"0376-mega",							// "Mega Metagross" // uknown gender
 //	"0041":									"0041",									// "Zubat"
-	"0041-m":								"0041-m",								// "Zubat♂"
-	"0041-f":								"0041-f",								// "Zubat♀"
+	"0041-m":								"0041",									// "Zubat♂"
+	"0041-f":								"0041",									// "Zubat♀"
 //	"0042":									"0042",									// "Golbat"
-	"0042-m":								"0042-m",								// "Golbat♂"
-	"0042-f":								"0042-f",								// "Golbat♀"
+	"0042-m":								"0042",									// "Golbat♂"
+	"0042-f":								"0042",									// "Golbat♀"
 	"0169":									"0169",									// "Crobat"
 	"0564":									"0564",									// "Tirtouga"
 	"0565":									"0565",									// "Carracosta"
@@ -1005,8 +1005,8 @@ var _Regdex_SwSh = /* regional dex */
 	"0347":									"0347",									// "Anorith"
 	"0348":									"0348",									// "Armaldo"
 //	"0369":									"0369",									// "Relicanth"
-	"0369-m":								"0369-m",								// "Relicanth♂"
-	"0369-f":								"0369-f",								// "Relicanth♀"
+	"0369-m":								"0369",									// "Relicanth♂"
+	"0369-f":								"0369",									// "Relicanth♀"
 	"0304":									"0304",									// "Aron"
 	"0305":									"0305",									// "Lairon"
 	"0306":									"0306",									// "Aggron"
@@ -1051,14 +1051,14 @@ var _Regdex_SwSh = /* regional dex */
 	"0254":									"0254",									// "Sceptile"
 //	"0254-mega":							"0254-mega",							// "Mega Sceptile"
 //	"0255":									"0255",									// "Torchic"
-	"0255-m":								"0255-m",								// "Torchic♂"
-	"0255-f":								"0255-f",								// "Torchic♀"
+	"0255-m":								"0255",									// "Torchic♂"
+	"0255-f":								"0255",									// "Torchic♀"
 //	"0256":									"0256",									// "Combusken"
-	"0256-m":								"0256-m",								// "Combusken♂"
-	"0256-f":								"0256-f",								// "Combusken♀"
+	"0256-m":								"0256",									// "Combusken♂"
+	"0256-f":								"0256",									// "Combusken♀"
 //	"0257":									"0257",									// "Blaziken"
-	"0257-m":								"0257-m",								// "Blaziken♂"
-	"0257-f":								"0257-f",								// "Blaziken♀"
+	"0257-m":								"0257",									// "Blaziken♂"
+	"0257-f":								"0257",									// "Blaziken♀"
 //	"0257-mega":							"0257-mega",							// "Mega Blaziken"
 	"0258":									"0258",									// "Mudkip"
 	"0259":									"0259",									// "Marshtomp"
@@ -1099,11 +1099,11 @@ var _Regdex_SwSh = /* regional dex */
 	"0645-incarnate":						"0645-incarnate",						// "Incarnate Forme Landorus" // male only
 	"0645-therian":							"0645-therian",							// "Therian Forme Landorus" // male only
 	"0646":									"0646",									// "Kyurem" // uknown gender
-//	"0646-white":							"0646-white",							// "White Kyurem" // uknown gender
-//	"0646-black":							"0646-black",							// "Black Kyurem" // uknown gender
+	"0646-white":							"0646-white",							// "White Kyurem" // uknown gender
+	"0646-black":							"0646-black",							// "Black Kyurem" // uknown gender
 //	"0647":									"0647",									// "Keldeo" // uknown gender
 	"0647-ordinary":						"0647-ordinary",						// "Ordinary Form Keldeo" // uknown gender
-//	"0647-resolute":						"0647-resolute",						// "Resolute Form Keldeo" // uknown gender
+	"0647-resolute":						"0647-resolute",						// "Resolute Form Keldeo" // uknown gender
 	"0649":									"0649",									// "Genesect" // uknown gender
 	"0649-douse":							"0649-douse",							// "Douse Drive Genesect" // uknown gender
 	"0649-shock":							"0649-shock",							// "Shock Drive Genesect" // uknown gender
