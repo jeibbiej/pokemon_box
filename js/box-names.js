@@ -1004,7 +1004,7 @@
 	"0586"									: "Sawsbuck",
 	"0586-spring"							: "Spring Sawsbuck",
 	"0586-summer"							: "Summer Sawsbuck",
-	"0586-sutumn"							: "Autumn Sawsbuck",
+	"0586-autumn"							: "Autumn Sawsbuck",
 	"0586-winter"							: "Winter Sawsbuck",
 	"0587"									: "Emolga",
 	"0588"									: "Karrablast",
