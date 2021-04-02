@@ -229,6 +229,7 @@
 	"0123"									: "Scyther",
 	"0123-m"								: "Scyther♂",
 	"0123-f"								: "Scyther♀",
+	"0124"									: "Jynx",
 	"0125"									: "Electabuzz",
 	"0126"									: "Magmar",
 	"0127"									: "Pinsir",
