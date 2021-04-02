@@ -1019,12 +1019,12 @@ var _Regdex_SwSh = /* regional dex */
 	"0379":									"0379",									// "Registeel" // uknown gender
 	"0894":									"0894",									// "Regieleki" // uknown gender
 	"0895":									"0895",									// "Regidrago" uknown gender
-	"0144":									"0144",									// "Articuno" // uknown gender
 	"0144-galar":							"0144-galar",							// "Galarian Articuno" // uknown gender
-	"0145":									"0145",									// "Zapdos" // uknown gender
+	"0144":									"0144",									// "Articuno" // uknown gender
 	"0145-galar":							"0145-galar",							// "Galarian Zapdos" // uknown gender
-	"0146":									"0146",									// "Moltres" // uknown gender
+	"0145":									"0145",									// "Zapdos" // uknown gender
 	"0146-galar":							"0146-galar",							// "Galarian Moltres" // uknown gender
+	"0146":									"0146",									// "Moltres" // uknown gender
 	"0638":									"0638",									// "Cobalion" // uknown gender
 	"0639":									"0639",									// "Terrakion" // uknown gender
 	"0640":									"0640",									// "Virizion" // uknown gender
