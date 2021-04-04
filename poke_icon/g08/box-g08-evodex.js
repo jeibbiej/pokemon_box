@@ -1599,9 +1599,9 @@
 //	"0890-emax":							"0890-emax",							// "Eternamax Eternatus" // uknown gender
 	"0891":									"0891",									// "Kubfu"
 //	"0892":									"0892",									// "Urshifu"
-	"0892-single":							"0892",									// "Single Strike Style Urshifu"
+	"0892-single":							"0892-single",							// "Single Strike Style Urshifu"
 	"0892-single-gmax":						"0892-single-gmax",						// "Gigantamax Single Strike Style Urshifu"
-	"0892-rapid":							"0892",									// "Rapid Strike Style Urshifu"
+	"0892-rapid":							"0892-rapid",							// "Rapid Strike Style Urshifu"
 	"0892-rapid-gmax":						"0892-rapid-gmax",						// "Gigantamax Rapid Strike Style Urshifu"
 	"0893":									"0893",									// "Zarude"
 	"0893-dada":							"0893-dada",							// "Dada Zarude" // unknown gender
