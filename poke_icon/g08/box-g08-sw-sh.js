@@ -788,7 +788,7 @@ var _Regdex_SwSh = /* regional dex */
 	"0174":									"0174",									// "Igglybuff"
 	"0039":									"0039",									// "Jigglypuff"
 	"0040":									"0040",									// "Wigglytuff"
-	"0753":									"0753",									// "Formantis"
+	"0753":									"0753",									// "Fomantis"
 	"0754":									"0754",									// "Lurantis"
 	"0661":									"0661",									// "Fletchling"
 	"0662":									"0662",									// "Fletchinder"

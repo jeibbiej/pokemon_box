@@ -1279,7 +1279,7 @@
 	"0750"									: "Mudsdale",
 	"0751"									: "Dewpider",
 	"0752"									: "Araquanid",
-	"0753"									: "Formantis",
+	"0753"									: "Fomantis",
 	"0754"									: "Lurantis",
 	"0755"									: "Morelull",
 	"0756"									: "Shiinotic",
