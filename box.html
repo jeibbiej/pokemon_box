@@ -17,40 +17,25 @@ function getQueryVariable(variable)
 const GameVersion =
 {
 	/*Unknown*/Unk,
-	/*Red    */_Re, /*Blue    */_Bl, /*Yellow    */_Ye,
-	/*Gold   */_Go, /*Silver  */_Si, /*Crystal   */_Cr,
-	/*Ruby   */_Ru, /*Sapphire*/_Sa, /*FireRed   */_FR, /*LeafGreen     */_LG, /*Emerald   */_Em,
-	/*Diamond*/_Di, /*Pearl   */_Pe, /*Platinum  */_Pl, /*HeartGold     */_HG, /*SoulSilver*/_SS,
-	/*Black  */_Bk, /*White   */_Wh, /*Black 2   */_B2, /*White 2       */_W2,
-	/*X      */_X_, /*Y       */_Y_, /*Omega Ruby*/_oR, /*Alpha Sapphire*/_aS,
-	/*Sun    */_Su, /*Moon    */_Mo, /*Ultra Sun */_US, /*Ultra Moon    */_UM,
+	/*Red    */_Re, /*Blue    */_Bl, /*Yellow           */_Ye,
+	/*Gold   */_Go, /*Silver  */_Si, /*Crystal          */_Cr,
+	/*Ruby   */_Ru, /*Sapphire*/_Sa, /*FireRed          */_FR, /*LeafGreen     */_LG, /*Emerald           */_Em,
+	/*Diamond*/_Di, /*Pearl   */_Pe, /*Platinum         */_Pl, /*HeartGold     */_HG, /*SoulSilver        */_SS,
+	/*Black  */_Bk, /*White   */_Wh, /*Black 2          */_B2, /*White 2       */_W2,
+	/*X      */_X_, /*Y       */_Y_, /*Omega Ruby       */_oR, /*Alpha Sapphire*/_aS,
+	/*Sun    */_Su, /*Moon    */_Mo, /*Ultra Sun        */_US, /*Ultra Moon    */_UM, /*Let's GO, Pikachu!*/_LP, /*Let's GO, Eevee!*/_LE,
+	/*Sword  */_Sw, /*Shield  */_Sh, /*Brilliant Diamond*/_BD, /*Shinning Pearl*/_SP, /*Legends: Arceus   */_L493,
 };
-
-_LP   = 29;	// Let's Go, Pikachu!
-_LE   = 30;	// Let's Go, Eevee!
-_Sw   = 31;	// Sword + DLC: Isle of Armor + DLC: Crown Tundra
-_Sh   = 32;	// Shield + DLC: Isle of Armor + DLC: Crown Tundra
-_BD   = 33;	// Briliant Diamond
-_SP   = 34;	// Shining Pearl
-_L493 = 35;	// Legends: Arceus
-
+					/* 0    1    2    3    4    5    6    7    8*/
+const GenerationMax = [0, 151, 251, 386, 493, 649, 721, 809, 893];
 _Gen1 = _Re;
-_Gen1Max = 151;
 _Gen2 = _Go;
-_Gen2Max = 251;
 _Gen3 = _Ru;
-_Gen3Max = 386;
 _Gen4 = _Di;
-_Gen4Max = 493;
 _Gen5 = _Bk;
-_Gen5Max = 649;
 _Gen6 = _X_;
-_Gen6Max = 721;
 _Gen7 = _Su;
-_Gen7Max = 809;
 _Gen8 = _Sw
-_Gen8Max = 893;
-_MaxDex = _Gen7Max + 1;
 
 function inArray(haystack, needle)
 {
