@@ -28,6 +28,7 @@ const GameVersion =
 	/*Y                 */_Y_: 602,
 	/*Omega Ruby        */_oR: 603,
 	/*Alpha Sapphire    */_aS: 604,
+	/*Bank              */_Ba: 605,
 	/*Sun               */_Su: 701,
 	/*Moon              */_Mo: 702,
 	/*Ultra Sun         */_US: 703,
@@ -39,6 +40,7 @@ const GameVersion =
 	/*Brilliant Diamond */_BD: 803,
 	/*Shinning Pearl    */_SP: 804,
 	/*Legends: Arceus   */_L1: 805,
+	/*Home              */_Ho: 806,
 };
 					/* 0    1    2    3    4    5    6    7    8*/
 const GenerationMax = [0, 151, 251, 386, 493, 649, 721, 809, 893];
@@ -64,14 +66,11 @@ function inArray(haystack, needle)
 };
 </script>
 <script lang="javascript" src="js/fxn.js"></script>
-<script lang="javascript" src="js/box.js"></script>
 <script lang="javascript" src="js/box-names.js"></script>
-<script lang="javascript" src="poke_icon/g01/box.js"></script>
-<script lang="javascript" src="poke_icon/g02/box.js"></script>
-
-<script lang="javascript" src="poke_icon/g08/box-g08-sw-sh.js"></script>
-<script lang="javascript" src="poke_icon/g08/box-g08-natdex.js"></script>
-<script lang="javascript" src="poke_icon/g08/box-g08-evodex.js"></script>
+<script lang="javascript" src="poke_icon/g01/box-g01.js"></script>
+<script lang="javascript" src="poke_icon/g02/box-g02.js"></script>
+<script lang="javascript" src="poke_icon/g08/box-g08.js"></script>
+<script lang="javascript" src="js/box.js"></script>
 </head>
 <body>
 <script lang="javascript">
@@ -80,7 +79,6 @@ boxIdx = 1;
 boxHead = "";
 boxBody = "";
 gameName = getQueryVariable("game");
-
 _Dex = Dex[gameName];
 if (_Dex == undefined)
 {
@@ -90,26 +88,27 @@ if (_Dex == undefined)
 
 version = getQueryVariable("ver");
 
-maxBox = 30;
-divBox = 6;
+console.log(_Dex);
 
+game = _Dex.id;
 _Rdex = _Dex.rList;
 _Ndex = _Dex.nList;
 _Edex = _Dex.eList;
 iconPath = _Dex.iconPath;
 imgWd = _Dex.imgWd;
-if (game == GameVersion._Sw || game == GameVersion._Sh)
-{
-	_Rdex = _Regdex_SwSh;
-	_Ndex = _Natdex_G08;
-	_Edex = _Evodex_G08;
-	imgWd = "68";
-	iconPath = _IcoPath_Home;
-	if (version == "r")	// Evolution Dex
-	{
-		iconPath = _IcoPath_SwSh;
-	}
-}
+maxBox = _Dex.maxBox;
+divBox = _Dex.divBox;
+// if (game == GameVersion._Sw || game == GameVersion._Sh)
+// {
+// 	_Rdex = _Regdex_SwSh;
+// 	_Ndex = _Natdex_G08;
+// 	_Edex = _Evodex_G08;
+// 	iconPath = _IcoPath_Home;
+// 	if (version == "r")	// Evolution Dex
+// 	{
+// 		iconPath = _IcoPath_SwSh;
+// 	}
+// }
 
 if (version == "e")	// Evolution Dex
 {
@@ -138,7 +137,8 @@ for (const rdex in _Ndex)
 	}
 	if (boxCntr == 1)
 	{
-		boxHead = "<table style='border:1px solid gray; font-family:consolas; text-align:center;' cellspacing=0><tr><th colspan=" + divBox + " style='border:1px solid gray;'>" + gameName + " " + ("0" + boxIdx.toString(10)).substr(-2);
+		boxHead = "<table style='border:1px solid gray; font-family:consolas; text-align:center;' cellspacing=0>";
+		boxHead += "<tr><th colspan=" + divBox + " style='border:1px solid gray;'>" + gameName + " " + ("0" + boxIdx.toString(10)).substr(-2);
 		if (version == "e")
 		{
 			boxHead += " E";
@@ -208,7 +208,7 @@ for (const rdex in _Ndex)
 while (boxCntr <= maxBox)
 {
 	boxBody += "<td style='border:1px solid gray; width:50px; vertical-align:top;'><img src='" + iconPath;
-	if (game < _Ru) // Gen 1 & 2
+	if (game < GameVersion._Ru) // Gen 1 & 2
 	{
 		boxBody += "00";
 	}
@@ -222,7 +222,7 @@ while (boxCntr <= maxBox)
 	boxCntr++;
 }
 boxHead += "-";
-if (game < _Ru) // Gen 1 & 2
+if (game < GameVersion._Ru) // Gen 1 & 2
 {
 	boxHead += ("000" + key.toString(10)).substr(-3);
 }

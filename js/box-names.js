@@ -1,4 +1,4 @@
-﻿_Names =
+﻿const _Names =
 {
 	//=======================================
 	// GENERATION 1
@@ -1636,4 +1636,83 @@
 	"0898-shadow"							: "Shadow Rider Calyrex",
 //	 TEMPORARY NUMBERING
 	"XXXX"									: "MissingNo."
+};
+
+const _Names_GO = 
+{
+	// https://pokemongo.fandom.com/wiki/Event_Pok%C3%A9mon
+	"0001-go-shedinja"						: "Shedinja-costumed Bulbasaur",
+	"0001-go-red-party"						: "Red party hat Bulbasaur",
+	"0001-go-pikachu"						: "Pikachu visor Bulbasaur",
+	"0003-go-clone-m"						: "Clone Venusaur♂",
+	"0003-go-clone-f"						: "Clone Venusaur♀",
+	"0004-go-cubone"						: "Cubone-costumed Charmander",
+	"0004-go-red-party"						: "Red party hat Charmander",
+	"0004-go-pikachu"						: "Pikachu visor Charmander",
+	"0006-go-clone"							: "Clone Charizard",
+	"0007-go-squirtle"						: "Yamask-costumed Squirtle",
+	"0007-go-red-party"						: "Red party hat Squirtle",
+	"0007-go-pikachu"						: "Pikachu visor Squirtle",
+	"0009-go-clone"							: "Clone Blastoise",
+	"0020-go-party-m"						: "Party Raticate♂",
+	"0020-go-party-f"						: "Party Raticate♀",
+	"0025-go-straw-hat-m"					: "Straw Hat Pikachu♂",
+	"0025-go-straw-hat-f"					: "Straw Hat Pikachu♀",
+	"0025-go-mimikyu"						: "Mimikyu costume Pikachu", // male only
+	"0025-go-red-party-m"					: "Red party hat Pikachu♂",
+	"0025-go-red-party-f"					: "Red party hat Pikachu♀",
+	"0025-go-clone"							: "Clone Pikachu", // male only
+	"0025-go-spring-m"						: "Spring Pikachu♂",
+	"0025-go-spring-f"						: "Spring Pikachu♀",
+	"0025-go-safari-m"						: "Safari hat Pikachu♂",
+	"0025-go-safari-f"						: "Safari hat Pikachu♀",
+	"0025-go-charizard-m"					: "Charizard hat Pikachu♂",
+	"0025-go-charizard-f"					: "Charizard hat Pikachu♀",
+	"0025-go-umbreaon-m"					: "Umbreon hat Pikachu♂",
+	"0025-go-umbreaon-f"					: "Umbreon hat Pikachu♀",
+	"0025-go-rayquaza-m"					: "Rayquaza hat Pikachu♂",
+	"0025-go-rayquaza-f"					: "Rayquaza hat Pikachu♀",
+	"0025-go-lucario-m"						: "Lucario hat Pikachu♂",
+	"0025-go-lucario-f"						: "Lucario hat Pikachu♀",
+	"0025-go-fly-m"							: "Flying Pikachu♂",
+	"0025-go-fly-f"							: "Flying Pikachu♀",
+	"0025-go-explorer-m"					: "Explorer Pikachu♂",
+	"0025-go-explorer-f"					: "Explorer Pikachu♀",
+	"0025-go-holiday-m"						: "Holiday Pikachu♂",
+	"0025-go-holiday-f"						: "Holiday Pikachu♀",
+	"0025-go-5-m"							: "5th anniversary Pikachu♂",
+	"0025-go-5-f"							: "5th anniversary Pikachu♀",
+	"0025-go-meloetta-m"					: "Meloetta hat Pikachu♂",
+	"0025-go-meloetta-f"					: "Meloetta hat Pikachu♀",
+	"0025-go-kariyushi-m"					: "Kariyushi Pikachu♂",
+	"0025-go-kariyushi-f"					: "Kariyushi Pikachu♀",
+	"0133-go-red-party-m"					: "Red party hat Eevee♂",
+	"0133-go-red-party-f"					: "Red party hat Eevee♀",
+	"0150-go-armored"						: "Armored Mewtwo",
+	"0202-go-party-m"						: "Party Wobbuffet♂",
+	"0202-go-party-f"						: "Party Wobbuffet♀",
+	"0234-go-holiday"						: "Holiday Stantler",
+	"0265-go-party"							: "Party Wurmple",
+	"0327-go-1"								: "Patter 1 Spinda",
+	"0327-go-2"								: "Patter 2 Spinda",
+	"0327-go-3"								: "Patter 3 Spinda",
+	"0327-go-4"								: "Patter 4 Spinda",
+	"0327-go-5"								: "Patter 5 Spinda",
+	"0327-go-6"								: "Patter 6 Spinda",
+	"0327-go-7"								: "Patter 7 Spinda",
+	"0327-go-8"								: "Patter 8 Spinda",
+	"0327-go-9"								: "Patter 9 Spinda",
+
+	"0033-go-red-party"						: "Red party hat Nidorino",
+	"0094-go-red-party"						: "Red party hat Gengar",
+	"0175-go-flower"						: "Flower crown Togepi",
+	"0427-go-flower"						: "Flower crown Buneary",
+	"0238-go-bow"							: "Bow Smoochum", // female only
+	"0281-go-top"							: "Top hat and bow Kirlia",
+	"0403-go-top-m"							: "Top hat Shinx♂",
+	"0403-go-top-f"							: "Top hat Shinx♀",
+	"0453-go-baseball-m"					: "Baseball cap Croagunk♂",
+	"0453-go-baseball-f"					: "Baseball cap Croagunk♀",
+
+	// https://pokemongo.fandom.com/wiki/Shadow_Pok%C3%A9mon
 };

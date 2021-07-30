@@ -1,9 +1,10 @@
 var _Regdex_Go =
 {
-	code:		"Go",
-	name:		"Gold",
-	icoPath:	"poke_icon/g02/go-si/",
-	rList:
+	id			: 201,
+	code		: "Go",
+	name		: "Gold",
+	icoPath		: "poke_icon/g02/go-si/",
+	rList		:
 	{
 		//-----------------------------
 		"0152"			: "00", // "Chikorita",
@@ -284,7 +285,7 @@ var _Regdex_Go =
 		"0151"			: "00", // "Mew", // uknown gender
 		"0251"			: "00", // "Celebi", // uknown gender
 	},
-	nList:
+	nList		:
 	{
 		"0001"			: "01", // "Bulbasaur",
 		//-----------------------------
@@ -565,7 +566,7 @@ var _Regdex_Go =
 		"0250"			: "00", // "Ho-Oh", // uknown gender
 		"0251"			: "00", // "Celebi", // uknown gender
 	},
-	eList:
+	eList		:
 	{
 		"0001"			: "01", // "Bulbasaur",
 		//-----------------------------
@@ -846,30 +847,32 @@ var _Regdex_Go =
 		"0250"			: "00", // "Ho-Oh", // uknown gender
 		"0251"			: "00", // "Celebi", // uknown gender
 	},
-	imgWd:		16,
-	maxBox:		20,
-	divBox:		5,
+	imgWd		: 16,
+	maxBox		: 20,
+	divBox		:  5,
 }
 
 var _Regdex_Si =
 {
-	code:		"Si",
-	name:		"Silver",
-	icoPath:	_Regdex_Go.icoPath,
-	rList:		_Regdex_Go.rList,
-	nList:		_Regdex_Go.rList,
-	eList:		_Regdex_Go.rList,
-	imgWd:		_Regdex_Go.imgWd,
-	maxBox:		_Regdex_Go.maxBox,
-	divBox:		_Regdex_Go.divBox,
+	id			: 202,
+	code		: "Si",
+	name		: "Silver",
+	icoPath		: _Regdex_Go.icoPath,
+	rList		: _Regdex_Go.rList,
+	nList		: _Regdex_Go.rList,
+	eList		: _Regdex_Go.rList,
+	imgWd		: _Regdex_Go.imgWd,
+	maxBox		: _Regdex_Go.maxBox,
+	divBox		: _Regdex_Go.divBox,
 }
 
 var _Regdex_Bl =
 {
-	code:		"Cr",
-	name:		"Crystal",
-	icoPath:	"icon/g01/cr/",
-	rList:
+	id			: 203,
+	code		: "Cr",
+	name		: "Crystal",
+	icoPath		: "icon/g01/cr/",
+	rList		:
 	{
 		//-----------------------------
 		"0152"			: "00", // "Chikorita",
@@ -1150,9 +1153,9 @@ var _Regdex_Bl =
 		"0151"			: "00", // "Mew", // uknown gender
 		"0251"			: "00", // "Celebi", // uknown gender
 	},
-	nList:		_Regdex_Go.rList,
-	eList:		_Regdex_Go.rList,
-	imgWd:		_Regdex_Go.imgWd,
-	maxBox:		_Regdex_Go.maxBox,
-	divBox:		_Regdex_Go.divBox,
+	nList		: _Regdex_Go.rList,
+	eList		: _Regdex_Go.rList,
+	imgWd		: _Regdex_Go.imgWd,
+	maxBox		: _Regdex_Go.maxBox,
+	divBox		: _Regdex_Go.divBox,
 }
