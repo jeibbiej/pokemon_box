@@ -3,44 +3,46 @@
 <script lang="javascript">
 const GameVersion =
 {
-	/*Unknown           */Unk:   0,
-	/*Red               */_Re: 101,
-	/*Blue              */_Bl: 102,
-	/*Yellow            */_Ye: 103,
-	/*Gold              */_Go: 201,
 	/*Silver            */_Si: 202,
-	/*Crystal           */_Cr: 203,
-	/*Ruby              */_Ru: 301,
-	/*Sapphire          */_Sa: 302,
-	/*FireRed           */_FR: 303,
-	/*LeafGreen         */_LG: 304,
-	/*Emerald           */_Em: 305,
-	/*Diamond           */_Di: 401,
-	/*Pearl             */_Pe: 402,
-	/*Platinum          */_Pl: 403,
-	/*HeartGold         */_HG: 404,
-	/*SoulSilver        */_SS: 405,
-	/*Black             */_Bk: 501,
-	/*White             */_Wh: 502,
-	/*Black 2           */_B2: 503,
-	/*White 2           */_W2: 504,
-	/*X                 */_X_: 601,
-	/*Y                 */_Y_: 602,
-	/*Omega Ruby        */_oR: 603,
-	/*Alpha Sapphire    */_aS: 604,
-	/*Bank              */_Ba: 605,
-	/*Sun               */_Su: 701,
-	/*Moon              */_Mo: 702,
-	/*Ultra Sun         */_US: 703,
-	/*Ultra Moon        */_UM: 704,
-	/*Let's GO, Pikachu!*/_LP: 705,
-	/*Let's GO, Eevee!  */_LE: 706,
-	/*Sword             */_Sw: 801,
-	/*Shield            */_Sh: 802,
-	/*Brilliant Diamond */_BD: 803,
-	/*Shinning Pearl    */_SP: 804,
-	/*Legends: Arceus   */_L1: 805,
-	/*Home              */_Ho: 806,
+	/*Unknown           */Unk:    0,
+	/*Red               */_Re:    1,
+	/*Blue              */_Bl:    2,
+	/*Yellow            */_Ye:    3,
+	/*Gold              */_Go:    4,
+	/*Silver            */_Si:    5,
+	/*Crystal           */_Cr:    6,
+	/*Ruby              */_Ru:    7,
+	/*Sapphire          */_Sa:    8,
+	/*FireRed           */_FR:    9,
+	/*LeafGreen         */_LG:   10,
+	/*Emerald           */_Em:   11,
+	/*Diamond           */_Di:   12,
+	/*Pearl             */_Pe:   13,
+	/*Platinum          */_Pl:   14,
+	/*HeartGold         */_HG:   15,
+	/*SoulSilver        */_SS:   16,
+	/*Black             */_Bk:   17,
+	/*White             */_Wh:   18,
+	/*Black 2           */_B2:   19,
+	/*White 2           */_W2:   20,
+	/*X                 */_X_:   21,
+	/*Y                 */_Y_:   22,
+	/*Omega Ruby        */_oR:   23,
+	/*Alpha Sapphire    */_aS:   24,
+	/*Sun               */_Su:   25,
+	/*Moon              */_Mo:   26,
+	/*Ultra Sun         */_US:   27,
+	/*Ultra Moon        */_UM:   28,
+	/*Let's GO, Pikachu!*/_LP:   29,
+	/*Let's GO, Eevee!  */_LE:   30,
+	/*Sword             */_Sw:   31,
+	/*Shield            */_Sh:   32,
+	/*Brilliant Diamond */_BD:   33,
+	/*Shinning Pearl    */_SP:   34,
+	/*Legends: Arceus   */_L1:   35,
+	//== STORAGE
+	/*Bank              */_Ba: 1001,
+	/*Home              */_Ho: 1002,
 };
 					/* 0    1    2    3    4    5    6    7    8*/
 const GenerationMax = [0, 151, 251, 386, 493, 649, 721, 809, 893];
@@ -53,17 +55,6 @@ _Gen6 = GameVersion._X_;
 _Gen7 = GameVersion._Su;
 _Gen8 = GameVersion._Sw
 
-function inArray(haystack, needle)
-{
-	var len = haystack.length;
-	for (var i=0; i<len; i++) {
-		if (haystack[i]==needle) {
-			return i;
-		}
-	}
-	//console.log("needle:" + needle + " haystack:" + haystack);
-	return -1
-};
 </script>
 <script lang="javascript" src="js/fxn.js"></script>
 <script lang="javascript" src="js/box-names.js"></script>

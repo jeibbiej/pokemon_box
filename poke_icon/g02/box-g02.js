@@ -1,10 +1,6 @@
-var _Regdex_Go =
+const _Regdex =
 {
-	id			: 201,
-	code		: "Go",
-	name		: "Gold",
-	icoPath		: "poke_icon/g02/go-si/",
-	rList		:
+	rGoSi	:
 	{
 		//-----------------------------
 		"0152"			: "00", // "Chikorita",
@@ -285,7 +281,7 @@ var _Regdex_Go =
 		"0151"			: "00", // "Mew", // uknown gender
 		"0251"			: "00", // "Celebi", // uknown gender
 	},
-	nList		:
+	nGoSi	:
 	{
 		"0001"			: "01", // "Bulbasaur",
 		//-----------------------------
@@ -566,7 +562,7 @@ var _Regdex_Go =
 		"0250"			: "00", // "Ho-Oh", // uknown gender
 		"0251"			: "00", // "Celebi", // uknown gender
 	},
-	eList		:
+	eGoSi	:
 	{
 		"0001"			: "01", // "Bulbasaur",
 		//-----------------------------
@@ -847,32 +843,7 @@ var _Regdex_Go =
 		"0250"			: "00", // "Ho-Oh", // uknown gender
 		"0251"			: "00", // "Celebi", // uknown gender
 	},
-	imgWd		: 16,
-	maxBox		: 20,
-	divBox		:  5,
-}
-
-var _Regdex_Si =
-{
-	id			: 202,
-	code		: "Si",
-	name		: "Silver",
-	icoPath		: _Regdex_Go.icoPath,
-	rList		: _Regdex_Go.rList,
-	nList		: _Regdex_Go.rList,
-	eList		: _Regdex_Go.rList,
-	imgWd		: _Regdex_Go.imgWd,
-	maxBox		: _Regdex_Go.maxBox,
-	divBox		: _Regdex_Go.divBox,
-}
-
-var _Regdex_Bl =
-{
-	id			: 203,
-	code		: "Cr",
-	name		: "Crystal",
-	icoPath		: "icon/g01/cr/",
-	rList		:
+	rCr		:
 	{
 		//-----------------------------
 		"0152"			: "00", // "Chikorita",
@@ -1153,8 +1124,45 @@ var _Regdex_Bl =
 		"0151"			: "00", // "Mew", // uknown gender
 		"0251"			: "00", // "Celebi", // uknown gender
 	},
-	nList		: _Regdex_Go.rList,
-	eList		: _Regdex_Go.rList,
+}
+
+const _Regdex_Go =
+{
+	id			: _GameId._Go,
+	code		: "Go",
+	name		: _GameNames._Go,
+	icoPath		: "poke_icon/g02/go-si/",
+	rList		: _Regdex.rGoSi,
+	nList		: _Regdex.nGoSi,
+	eList		: _Regdex.eGoSi,
+	imgWd		: 16,
+	maxBox		: 20,
+	divBox		:  5,
+}
+
+const _Regdex_Si =
+{
+	id			: _GameId._Si,
+	code		: "Si",
+	name		: _GameNames._Si,
+	icoPath		: _Regdex_Go.icoPath,
+	rList		: _Regdex.rGoSi,
+	nList		: _Regdex.nGoSi,
+	eList		: _Regdex.eGoSi,
+	imgWd		: _Regdex_Go.imgWd,
+	maxBox		: _Regdex_Go.maxBox,
+	divBox		: _Regdex_Go.divBox,
+}
+
+const _Regdex_Cr =
+{
+	id			: _GameId._Cr,
+	code		: "Cr",
+	name		: _GameNames._Cr,
+	icoPath		: "icon/g01/cr/",
+	rList		: _Regdex.rCr,
+	nList		: _Regdex.rCr,
+	eList		: _Regdex.rCr,
 	imgWd		: _Regdex_Go.imgWd,
 	maxBox		: _Regdex_Go.maxBox,
 	divBox		: _Regdex_Go.divBox,

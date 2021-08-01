@@ -1,10 +1,6 @@
-var _Regdex_Re =
+const _Regdex =
 {
-	id			: 101,
-	code		: "Re",
-	name		: "Red",
-	icoPath		: "poke_icon/g01/re-bl/",
-	rList		:
+	rReBl	: 
 	{
 		"0001"		: "01", // "Bulbasaur",
 		"0002"		: "01", // "Ivysaur",
@@ -109,9 +105,9 @@ var _Regdex_Re =
 		"0101"		: "09", // "Electrode", // uknown gender DORIS (in-game trade)
 		"0102"		: "01", // "Exeggcute",
 		"0103"		: "01", // "Exeggutor",
+		"0104"		: "02", // "Cubone",
+		"0105"		: "02", // "Marowak",
 		//-----------------------------
-		"0104"		: "00", // "Cubone",
-		"0105"		: "00", // "Marowak",
 		"0106"		: "00", // "Hitmonlee", // male only
 		"0107"		: "00", // "Hitmonchan", // male only
 		"0108"		: "00", // "Lickitung", MARC (in-game trade)
@@ -159,32 +155,7 @@ var _Regdex_Re =
 		"0150"		: "00", // "Mewtwo", // uknown gender
 		"0151"		: "00", // "Mew", // uknown gender
 	},
-	imgWd		: 16,
-	maxBox		: 20,
-	divBox		:  5,
-}
-
-var _Regdex_Bl =
-{
-	id			: 102,
-	code		: "Bl",
-	name		: "Blue",
-	icoPath		: _Regdex_Re.icoPath,
-	rList		: _Regdex_Re.rList,
-	nList		: _Regdex_Re.rList,
-	eList		: _Regdex_Re.rList,
-	imgWd		: _Regdex_Re.imgWd,
-	maxBox		: _Regdex_Re.maxBox,
-	divBox		: _Regdex_Re.divBox,
-}
-
-var _Regdex_Ye =
-{
-	id			: 103,
-	code		: "Ye",
-	name		: "Yellow",
-	icoPath		: "icon/g01/ye/",
-	rList		:
+	rYe		:
 	{
 		"0001"		: "00", // "Bulbasaur",
 		"0002"		: "00", // "Ivysaur",
@@ -338,12 +309,46 @@ var _Regdex_Ye =
 		"0150"		: "00", // "Mewtwo",
 		"0151"		: "00", // "Mew",
 	},
-	nList		: {},
-	eList		: {},
+}
+
+const _Regdex_Re =
+{
+	id			: 101,
+	code		: "Re",
+	name		: "Red",
+	icoPath		: "poke_icon/g01/re-bl/",
+	rList		: _Regdex.rReBl,
+	nList		: _Regdex.rReBl,
+	eList		: _Regdex.rReBl,
+	imgWd		: 16,
+	maxBox		: 20,
+	divBox		:  5,
+}
+
+var _Regdex_Bl =
+{
+	id			: 102,
+	code		: "Bl",
+	name		: "Blue",
+	icoPath		: _Regdex_Re.icoPath,
+	rList		: _Regdex.rReBl,
+	nList		: _Regdex.rReBl,
+	eList		: _Regdex.rReBl,
+	imgWd		: _Regdex_Re.imgWd,
+	maxBox		: _Regdex_Re.maxBox,
+	divBox		: _Regdex_Re.divBox,
+}
+
+var _Regdex_Ye =
+{
+	id			: 103,
+	code		: "Ye",
+	name		: "Yellow",
+	icoPath		: "icon/g01/ye/",
+	rList		: _Regdex.rYe,
+	nList		: _Regdex.rYe,
+	eList		: _Regdex.rYe,
 	imgWd		: _Regdex_Re.imgWd,
 	maxBox		: _Regdex_Re.maxBox,
 	divBox		: _Regdex_Re.divBox,
 };
-
-_Regdex_Ye.nList = _Regdex_Ye.rList;
-_Regdex_Ye.eList = _Regdex_Ye.rList;
