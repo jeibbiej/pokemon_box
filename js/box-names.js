@@ -1717,51 +1717,6 @@ const _Names_GO =
 	// https://pokemongo.fandom.com/wiki/Shadow_Pok%C3%A9mon
 };
 
-const _GameNames =
-{
-	_Re: "Pokémon Red",
-	_Bl: "Pokémon Blue",
-	_Ye: "Pokémon Yellow",
-	_Go: "Pokémon Gold",
-	_Si: "Pokémon Silver",
-	_Cr: "Pokémon Crystal",
-	_Ru: "Pokémon Ruby",
-	_Sa: "Pokémon Sapphire",
-	_FR: "Pokémon FireRed",
-	_LG: "Pokémon LeafGreen",
-	_Em: "Pokémon Emerald",
-	_Di: "Pokémon Diamond",
-	_Pe: "Pokémon Pearl",
-	_Pl: "Pokémon Platinum",
-	_HG: "Pokémon HeartGold",
-	_SS: "Pokémon SoulSilver",
-	_Bk: "Pokémon Black",
-	_Wh: "Pokémon White",
-	_B2: "Pokémon Black 2",
-	_W2: "Pokémon White 2",
-	_X_: "Pokémon X",
-	_Y_: "Pokémon Y",
-	_oR: "Pokémon Omega Ruby",
-	_aS: "Pokémon Alpha Sapphire",
-	_Su: "Pokémon Sun",
-	_Mo: "Pokémon Moon",
-	_US: "Pokémon Ultra Sun",
-	_UM: "Pokémon Ultra Moon",
-	_LP: "Pokémon Let's GO, Pikachu!",
-	_LE: "Pokémon Let's GO, Eevee!",
-	_Sw: "Pokémon Sword",
-	_Sh: "Pokémon Shield",
-	_BD: "Pokémon Brilliant Diamond",
-	_SP: "Pokémon Shining Pearl",
-	_L1: "Pokémon Legends: Arceus",
-
-    _PR_Ra: "Pokémon Ranger",
-	_PR_SA: "Pokémon Ranger: Shadows of Almia",
-	_PR_GS: "Pokémon Ranger: Guardian Signs",
-
-	_SSBank: "Pokémon Bank",
-	_SSHome: "Pokémon Home",
-};
 
 const _RegionNames =
 {

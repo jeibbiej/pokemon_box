@@ -313,9 +313,9 @@ const _Regdex =
 
 const _Regdex_Re =
 {
-	id			: 101,
+	id			: _GameVersions.Re.id,
 	code		: "Re",
-	name		: "Red",
+	name		: _GameVersions.Re.name,
 	icoPath		: "poke_icon/g01/re-bl/",
 	rList		: _Regdex.rReBl,
 	nList		: _Regdex.rReBl,

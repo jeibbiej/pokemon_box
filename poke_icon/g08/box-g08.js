@@ -1,10 +1,6 @@
-﻿var _Regdex_Sw =
+﻿const _Regdex =
 {
-	id			: 801,
-	code		: "Sw",
-	name		: "Sword",
-	icoPath		: "poke_icon/g08/sw-sh/",
-	rList:
+	rSwSh	:
 	{
 		"0810":									"0810",									// "Grookey"
 		"0811":									"0811",									// "Thwackey"
@@ -1270,7 +1266,7 @@
 		"0892-rapid-gmax":						"0892-rapid-gmax",						// "Gigantamax Rapid Strike Style Urshifu"
 		"0809-gmax":							"0809-gmax",							// "Gigantamax Melmetal" // uknown gender
 	},
-	nList:
+	nSwSh	:
 	{
 	//	==============
 	//	 Generation 1
@@ -2907,7 +2903,7 @@
 		"0898-ice":								"0898-ice",								// "Ice Rider Calyrex" // uknown gender
 		"0898-shadow":							"0898-shadow",							// "Shadow Rider Calyrex" // uknown gender
 	},
-	eList:
+	eSwSh	:
 	{
 		"0001":									"0001",									// "Bulbasaur"
 		"0002":									"0002",									// "Ivysaur"
@@ -4520,20 +4516,31 @@
 		"0898-ice":								"0898-ice",								// "Ice Rider Calyrex" // uknown gender
 		"0898-shadow":							"0898-shadow",							// "Shadow Rider Calyrex" // uknown gender
 	},
+};
+
+const _Regdex_Sw =
+{
+	id			: _GameId._Sw,
+	code		: "Sw",
+	name		: _GameNames._Sw,
+	icoPath		: "poke_icon/g08/sw-sh/",
+	rList		: _Regdex.rSwSh,
+	nList		: _Regdex.nSwSh,
+	eList		: _Regdex.eSwSh,
 	imgWd		: 68,
 	maxBox		: 30,
 	divBox		:  6,
 }
 
-var _Regdex_Sh =
+const _Regdex_Sh =
 {
-	id			: 802,
+	id			: _GameId._Sh,
 	code		: "Sh",
 	name		: "Shield",
 	icoPath		: _Regdex_Sw.icoPath,
-	rList		: _Regdex_Sw.rList,
-	nList		: _Regdex_Sw.nList,
-	eList		: _Regdex_Sw.eList,
+	rList		: _Regdex.rList,
+	nList		: _Regdex.nList,
+	eList		: _Regdex.eList,
 	imgWd		: _Regdex_Sw.imgWd,
 	maxBox		: _Regdex_Sw.maxBox,
 	divBox		: _Regdex_Sw.divBox,
@@ -4541,7 +4548,7 @@ var _Regdex_Sh =
 
 var _Regdex_Ho =
 {
-	id			: 806,
+	id			: _GameId._SSHome,
 	code		: "Ho",
 	name		: "Home",
 	icoPath		: "poke_icon/g08/home/",
