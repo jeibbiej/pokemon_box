@@ -56,11 +56,11 @@ _Gen8 = GameVersion._Sw
 
 </script>
 <script lang="javascript" src="js/fxn.js"></script>
-<script lang="javascript" src="js/box-names.js"></script>
+<script lang="javascript" src="js/pkmn-names.js"></script>
 <script lang="javascript" src="poke_icon/g01/box-g01.js"></script>
 <script lang="javascript" src="poke_icon/g02/box-g02.js"></script>
 <script lang="javascript" src="poke_icon/g08/box-g08.js"></script>
-<script lang="javascript" src="js/box.js"></script>
+<script lang="javascript" src="js/game.js"></script>
 </head>
 <body>
 <script lang="javascript">
@@ -88,6 +88,15 @@ iconPath = _Dex.iconPath;
 imgWd = _Dex.imgWd;
 maxBox = _Dex.maxBox;
 divBox = _Dex.divBox;
+
+_GameVersions.forEach(gv =>
+ {
+	if (gv.id === -1)
+		continue;
+	
+	document.write("[ <a href='box.html?game={gameName}&ver={version}'>{gv.name}</a> ]");
+});
+
 // if (game == GameVersion._Sw || game == GameVersion._Sh)
 // {
 // 	_Rdex = _Regdex_SwSh;
