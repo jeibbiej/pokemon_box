@@ -1,60 +1,5 @@
 ﻿<html>
 <head>
-<script lang="javascript">
-const GameVersion =
-{
-	/*Unknown           */Unk:    0,
-	/*Red               */_Re:    1,
-	/*Blue              */_Bl:    2,
-	/*Yellow            */_Ye:    3,
-	/*Gold              */_Go:    4,
-	/*Silver            */_Si:    5,
-	/*Crystal           */_Cr:    6,
-	/*Ruby              */_Ru:    7,
-	/*Sapphire          */_Sa:    8,
-	/*FireRed           */_FR:    9,
-	/*LeafGreen         */_LG:   10,
-	/*Emerald           */_Em:   11,
-	/*Diamond           */_Di:   12,
-	/*Pearl             */_Pe:   13,
-	/*Platinum          */_Pl:   14,
-	/*HeartGold         */_HG:   15,
-	/*SoulSilver        */_SS:   16,
-	/*Black             */_Bk:   17,
-	/*White             */_Wh:   18,
-	/*Black 2           */_B2:   19,
-	/*White 2           */_W2:   20,
-	/*X                 */_X_:   21,
-	/*Y                 */_Y_:   22,
-	/*Omega Ruby        */_oR:   23,
-	/*Alpha Sapphire    */_aS:   24,
-	/*Sun               */_Su:   25,
-	/*Moon              */_Mo:   26,
-	/*Ultra Sun         */_US:   27,
-	/*Ultra Moon        */_UM:   28,
-	/*Let's GO, Pikachu!*/_LP:   29,
-	/*Let's GO, Eevee!  */_LE:   30,
-	/*Sword             */_Sw:   31,
-	/*Shield            */_Sh:   32,
-	/*Brilliant Diamond */_BD:   33,
-	/*Shinning Pearl    */_SP:   34,
-	/*Legends: Arceus   */_L1:   35,
-	//== STORAGE
-	/*Bank              */_Ba: 1001,
-	/*Home              */_Ho: 1002,
-};
-					/* 0    1    2    3    4    5    6    7    8*/
-const GenerationMax = [0, 151, 251, 386, 493, 649, 721, 809, 893];
-_Gen1 = GameVersion._Re;
-_Gen2 = GameVersion._Go;
-_Gen3 = GameVersion._Ru;
-_Gen4 = GameVersion._Di;
-_Gen5 = GameVersion._Bk;
-_Gen6 = GameVersion._X_;
-_Gen7 = GameVersion._Su;
-_Gen8 = GameVersion._Sw
-
-</script>
 <script lang="javascript" src="js/fxn.js"></script>
 <script lang="javascript" src="js/pkmn-names.js"></script>
 <script lang="javascript" src="poke_icon/g01/box-g01.js"></script>
@@ -69,7 +14,7 @@ boxIdx = 1;
 boxHead = "";
 boxBody = "";
 gameName = getQueryVariable("game");
-_Dex = Dex[gameName];
+_Dex = _GameVersions[gameName];
 if (_Dex == undefined)
 {
 	document.writeln("Unknown game: ", gameName);
@@ -81,20 +26,20 @@ version = getQueryVariable("ver");
 console.log(_Dex);
 
 game = _Dex.id;
-_Rdex = _Dex.rList;
-_Ndex = _Dex.nList;
-_Edex = _Dex.eList;
-iconPath = _Dex.iconPath;
+_Rdex = _Dex.rDex;
+_Ndex = _Dex.nDex;
+_Edex = _Dex.eDex;
+iconPath = _Dex.icoPath;
 imgWd = _Dex.imgWd;
 maxBox = _Dex.maxBox;
 divBox = _Dex.divBox;
 
-_GameVersions.forEach(gv =>
+Object.entries(_GameVersions).forEach(gv =>
  {
-	if (gv.id === -1)
-		continue;
+	if (gv[1].id === -1)
+		return;
 	
-	document.write("[ <a href='box.html?game={gameName}&ver={version}'>{gv.name}</a> ]");
+	document.write(`[&nbsp;<a href='box.html?game=${gv[1].code}&ver=${version}'>${gv[1].name}</a>&nbsp;]`);
 });
 
 // if (game == GameVersion._Sw || game == GameVersion._Sh)
@@ -118,7 +63,7 @@ else if (version == "r") // Regional Dex
 	_Ndex = _Rdex;
 }
 
-_MaxDex = _Ndex.length;
+_MaxDex = Object.keys(_Ndex).length;
 
 boxCntr = 1;
 boxIdx = 1;
@@ -127,6 +72,7 @@ boxBody = "";
 boxFoot = "";
 key = 0;
 idxStr = "0000";
+keyStr = "";
 for (const rdex in _Ndex)
 {
 	if (rdex.substring(0, 4) != idxStr)
@@ -134,10 +80,18 @@ for (const rdex in _Ndex)
 		++key;
 		idxStr = rdex.substring(0, 4);
 	}
+	if (game < _GameVersions.Ru.id) // Gen 1 & 2
+	{
+		keyStr = String(key).padStart(3, "0");
+	}
+	else
+	{
+		keyStr = String(key).padStart(4, "0");
+	}
 	if (boxCntr == 1)
 	{
-		boxHead = "<table style='border:1px solid gray; font-family:consolas; text-align:center;' cellspacing=0>";
-		boxHead += "<tr><th colspan=" + divBox + " style='border:1px solid gray;'>" + gameName + " " + ("0" + boxIdx.toString(10)).substr(-2);
+		boxHead = `<table style='border:1px solid gray; font-family:consolas; text-align:center;' cellspacing=0>`;
+		boxHead += `<tr><th colspan=${divBox} style='border:1px solid gray;'>${gameName} ${String(boxIdx).padStart(2, "0")}`;
 		if (version == "e")
 		{
 			boxHead += " E";
@@ -150,45 +104,31 @@ for (const rdex in _Ndex)
 		{
 			boxHead += " N";
 		}
-		if (game < GameVersion._Ru) // Gen 1 & 2
-		{
-			boxHead += ("000" + key.toString(10)).substr(-3);
-		}
-		else
-		{
-			boxHead += ("0000" + key.toString(10)).substr(-4);
-		}
+		boxHead += keyStr;
 		++boxIdx;
 	}
 	
 	console.log(typeof(rdex) + " " + rdex + ": " + _Names[rdex]);
 	if (version == "e")
 	{
-		boxBody += "<td style='border:1px solid gray; width:50px; vertical-align:top;'>";
-		boxBody += "<span title='" + rdex.substr(0, 4) + " " + _Names[rdex] + "'>";
-		boxBody += "<img id='" + idxStr + "'' src='" + iconPath + _Ndex[rdex] + ".png' alt='" + _Ndex[rdex] + "' width='" + imgWd + "' onclick='imgPokemon_Clicked(this)'/>";
-		boxBody += "</span><br/>";
-		boxBody += "<span style='font-size:10px;'>#" + rdex.substr(0, 4) + "<br/>";
-		boxBody += _Names[rdex] + "</span></td>";
+		boxBody += `<td style='border:1px solid gray; width:50px; vertical-align:top;'>`;
+		boxBody += `<span title='${rdex.substr(0, 4)} ${_Names[rdex]}'>`;
+		boxBody += `<img class="gray" id='${idxStr}' src='${iconPath}${_Ndex[rdex]}.png' alt='${_Ndex[rdex]}' width='${imgWd}' onclick='imgPokemon_Clicked(this)'/>`;
+		boxBody += `</span><br/>`;
+		boxBody += `<span style='font-size:10px;'>#${rdex.substr(0, 4)}<br/>`;
+		boxBody += `${_Names[rdex]}</span></td>`;
 	}
 	else
 	{
-		boxBody += "<td style='border:1px solid gray; width:50px; vertical-align:top;'>";
-		boxBody += "<span title='" + ("0000" + key.toString(10)).substr(-4) + " " + _Names[rdex] + "'><img id='" + idxStr + "'' src='" + iconPath + _Ndex[rdex] + ".png' alt='" + _Ndex[rdex] + "' width='" + imgWd + "' onclick='imgPokemon_Clicked(this)'></span><br/><span style='font-size:10px;'>#" + ("0000" + key.toString(10)).substr(-4) + "<br/>" + _Names[rdex] + "</span></td>";
+		boxBody += `<td style='border:1px solid gray; width:50px; vertical-align:top;'>`;
+		boxBody += `<span title='${keyStr} ${_Names[rdex]}'>`;
+		boxBody += `<img id='${idxStr}' src='${iconPath}${_Ndex[rdex]}.png' alt='${_Ndex[rdex]}' width='${imgWd}' onclick='imgPokemon_Clicked(this)'>`;
+		boxBody += `</span><br/><span style='font-size:10px;'>#${keyStr}<br/>${_Names[rdex]}</span></td>`;
 	}
 
 	if (boxCntr == maxBox)
 	{
-		boxHead += "-";
-		if (game < GameVersion._Ru) // Gen 1 & 2
-		{
-			boxHead += ("000" + key.toString(10)).substr(-3);
-		}
-		else
-		{
-			boxHead += ("0000" + key.toString(10)).substr(-4);
-		}
-		boxHead += "</th></tr><tr>";
+		boxHead += `-${keyStr}</th></tr><tr>`;
 
 		document.write(boxHead);
 		document.write(boxBody);
@@ -203,6 +143,7 @@ for (const rdex in _Ndex)
 
 	boxCntr++;
 }
+
 // filler
 while (boxCntr <= maxBox)
 {
@@ -223,13 +164,13 @@ while (boxCntr <= maxBox)
 boxHead += "-";
 if (game < GameVersion._Ru) // Gen 1 & 2
 {
-	boxHead += ("000" + key.toString(10)).substr(-3);
+	keyStr = String(key).padStart(3, "0");
 }
 else
 {
-	boxHead += ("0000" + key.toString(10)).substr(-4);
+	keyStr = String(key).padStart(4, "0");
 }
-boxHead += "</th></tr><tr>";
+boxHead += `${keyStr}</th></tr><tr>`;
 
 document.write(boxHead);
 document.write(boxBody);

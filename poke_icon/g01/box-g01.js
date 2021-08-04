@@ -1,9 +1,9 @@
 const IcoPathReBl 	= "poke_icon/g01/re-bl/";
-const IcoPathYe		= "poke_icon/g01/ye";
+const IcoPathYe		= "poke_icon/g01/ye/";
 
-const ImgWd_G01		= 16,
-const MaxBox_G01	= 20,
-const DivBox_G01	=  5,
+const ImgWd_G01		= 16;
+const MaxBox_G01	= 20;
+const DivBox_G01	=  5;
 
 const _Regdex_rReBl =
 {

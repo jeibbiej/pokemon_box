@@ -28,6 +28,9 @@ TrozeiSeries
 OtherSeries
 */
 
+                    /* 0    1    2    3    4    5    6    7    8*/
+const GenerationMax = [0, 151, 251, 386, 493, 649, 721, 809, 893];
+
 const _GameVersions =
 {
     Unk: {id: -1, icoPath: "", rDex: {}, nDex: {}, eDex: {}, code:"Unk", name: "<i>Unknown</i>"},
@@ -35,9 +38,9 @@ const _GameVersions =
     Re	: {id: MainSeries +  1,	icoPath: IcoPathReBl, rDex: _Regdex_rReBl, nDex: _Regdex_rReBl, eDex: _Regdex_rReBl, imgWd: ImgWd_G01, maxBox: MaxBox_G01, divBox: DivBox_G01, code: "Re", name: "Pokémon Red"},
 	Bl	: {id: MainSeries +  2,	icoPath: IcoPathReBl, rDex: _Regdex_rReBl, nDex: _Regdex_rReBl, eDex: _Regdex_rReBl, imgWd: ImgWd_G01, maxBox: MaxBox_G01, divBox: DivBox_G01, code: "Bl", name: "Pokémon Blue"},
 	Ye	: {id: MainSeries +  3,	icoPath: IcoPathYe,   rDex: _Regdex_rYe,   nDex: _Regdex_rYe,   eDex: _Regdex_rYe,   imgWd: ImgWd_G01, maxBox: MaxBox_G01, divBox: DivBox_G01, code: "Ye", name: "Pokémon Yellow"},
-	Go	: {id: MainSeries +  4,	icoPath: "",          rDex: {},            nDex: {},            eDex: {},            imgWd: 0,         maxBox: 0,          divBox: 0,          code: "Go", name: "Pokémon Gold"},
-	Si	: {id: MainSeries +  5,	icoPath: "",          rDex: {},            nDex: {},            eDex: {},            imgWd: 0,         maxBox: 0,          divBox: 0,          code: "Si", name: "Pokémon Silver"},
-	Cr	: {id: MainSeries +  6,	icoPath: "",          rDex: {},            nDex: {},            eDex: {},            imgWd: 0,         maxBox: 0,          divBox: 0,          code: "Cr", name: "Pokémon Crystal"},
+	Go	: {id: MainSeries +  4,	icoPath: IcoPathGoSi, rDex: _Regdex_rGoSi, nDex: _Regdex_nGoSi, eDex: _Regdex_eGoSi, imgWd: ImgWd_G02, maxBox: MaxBox_G02, divBox: DivBox_G02, code: "Go", name: "Pokémon Gold"},
+	Si	: {id: MainSeries +  5,	icoPath: IcoPathGoSi, rDex: _Regdex_rGoSi, nDex: _Regdex_nGoSi, eDex: _Regdex_eGoSi, imgWd: ImgWd_G02, maxBox: MaxBox_G02, divBox: DivBox_G02, code: "Si", name: "Pokémon Silver"},
+	Cr	: {id: MainSeries +  6,	icoPath: IcoPathCr,   rDex: _Regdex_rCr,   nDex: _Regdex_nGoSi, eDex: _Regdex_eGoSi, imgWd: ImgWd_G02, maxBox: MaxBox_G02, divBox: DivBox_G02, code: "Cr", name: "Pokémon Crystal"},
 	Ru	: {id: MainSeries +  7,	icoPath: "",          rDex: {},            nDex: {},            eDex: {},            imgWd: 0,         maxBox: 0,          divBox: 0,          code: "Ru", name: "Pokémon Ruby"},
 	Sa	: {id: MainSeries +  8,	icoPath: "",          rDex: {},            nDex: {},            eDex: {},            imgWd: 0,         maxBox: 0,          divBox: 0,          code: "Sa", name: "Pokémon Sapphire"},
 	FR	: {id: MainSeries +  9,	icoPath: "",          rDex: {},            nDex: {},            eDex: {},            imgWd: 0,         maxBox: 0,          divBox: 0,          code: "FR", name: "Pokémon FireRed"},
@@ -62,8 +65,8 @@ const _GameVersions =
 	UM	: {id: MainSeries + 28,	icoPath: "",          rDex: {},            nDex: {},            eDex: {},            imgWd: 0,         maxBox: 0,          divBox: 0,          code: "UM", name: "Pokémon Ultra Moon"},
 	LP	: {id: MainSeries + 29,	icoPath: "",          rDex: {},            nDex: {},            eDex: {},            imgWd: 0,         maxBox: 0,          divBox: 0,          code: "LP", name: "Pokémon Let's GO, Pikachu!"},
 	LE	: {id: MainSeries + 30,	icoPath: "",          rDex: {},            nDex: {},            eDex: {},            imgWd: 0,         maxBox: 0,          divBox: 0,          code: "LE", name: "Pokémon Let's GO, Eevee!"},
-	Sw	: {id: MainSeries + 31,	icoPath: "",          rDex: {},            nDex: {},            eDex: {},            imgWd: 0,         maxBox: 0,          divBox: 0,          code: "Sw", name: "Pokémon Sword"},
-	Sh	: {id: MainSeries + 32,	icoPath: "",          rDex: {},            nDex: {},            eDex: {},            imgWd: 0,         maxBox: 0,          divBox: 0,          code: "Sh", name: "Pokémon Shield"},
+	Sw	: {id: MainSeries + 31,	icoPath: IcoPathSwSh, rDex: _Regdex_rSwSh, nDex: _Regdex_nSwSh, eDex: _Regdex_eSwSh, imgWd: ImgWd_G08, maxBox: MaxBox_G08, divBox: DivBox_G08, code: "Sw", name: "Pokémon Sword"},
+	Sh	: {id: MainSeries + 32,	icoPath: IcoPathSwSh, rDex: _Regdex_rSwSh, nDex: _Regdex_nSwSh, eDex: _Regdex_eSwSh, imgWd: ImgWd_G08, maxBox: MaxBox_G08, divBox: DivBox_G08, code: "Sh", name: "Pokémon Shield"},
 	BD	: {id: MainSeries + 33,	icoPath: "",          rDex: {},            nDex: {},            eDex: {},            imgWd: 0,         maxBox: 0,          divBox: 0,          code: "BD", name: "Pokémon Brilliant Diamond"},
 	SP	: {id: MainSeries + 34,	icoPath: "",          rDex: {},            nDex: {},            eDex: {},            imgWd: 0,         maxBox: 0,          divBox: 0,          code: "SP", name: "Pokémon Shining Pearl"},
 
@@ -81,8 +84,8 @@ const _GameVersions =
 	Pz_Pc	: {id: PuzzleSeries + 6, icoPath: "", rDex: {}, nDex: {}, eDex: {}, imgWd: 0, maxBox: 0, divBox: 0, code: "Pz_Pc", name: "Pokémon Picross"},
 	Pz_CM	: {id: PuzzleSeries + 7, icoPath: "", rDex: {}, nDex: {}, eDex: {}, imgWd: 0, maxBox: 0, divBox: 0, code: "Pz_CM", name: "Pokémon Café Mix"},
 
-	SS_BoxRS	: {id: StorageSystem + 1, icoPath: "", rDex: {}, nDex: {}, eDex: {}, imgWd: 0, maxBox: 0, divBox: 0, code: "SS_BoxRS", name: "Pokémon Box Ruby & Sapphire"},
-	SS_Ranch	: {id: StorageSystem + 2, icoPath: "", rDex: {}, nDex: {}, eDex: {}, imgWd: 0, maxBox: 0, divBox: 0, code: "SS_Ranch", name: "My Pokémon Ranch"},
-	SS_Bank		: {id: StorageSystem + 3, icoPath: "", rDex: {}, nDex: {}, eDex: {}, imgWd: 0, maxBox: 0, divBox: 0, code: "SS_Bank",  name: "Pokémon Bank"},
-	SS_Home		: {id: StorageSystem + 4, icoPath: "", rDex: {}, nDex: {}, eDex: {}, imgWd: 0, maxBox: 0, divBox: 0, code: "SS_Home",  name: "Pokémon HOME"},
+	SS_BoxRS	: {id: StorageSystem + 1, icoPath: "",            rDex: {}, nDex: {},            eDex: {},            imgWd: 0,         maxBox: 0,          divBox: 0,          code: "SS_BoxRS", name: "Pokémon Box Ruby & Sapphire"},
+	SS_Ranch	: {id: StorageSystem + 2, icoPath: "",            rDex: {}, nDex: {},            eDex: {},            imgWd: 0,         maxBox: 0,          divBox: 0,          code: "SS_Ranch", name: "My Pokémon Ranch"},
+	SS_Bank		: {id: StorageSystem + 3, icoPath: "",            rDex: {}, nDex: {},            eDex: {},            imgWd: 0,         maxBox: 0,          divBox: 0,          code: "SS_Bank",  name: "Pokémon Bank"},
+	SS_Home		: {id: StorageSystem + 4, icoPath: IcoPathSSHome, rDex: {}, nDex: _Regdex_nSwSh, eDex: _Regdex_eSwSh, imgWd: ImgWd_G08, maxBox: MaxBox_G08, divBox: DivBox_G08, code: "SS_Home",  name: "Pokémon HOME"},
 };
