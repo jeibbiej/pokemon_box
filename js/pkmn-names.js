@@ -1720,4 +1720,19 @@ const _Names_GO =
 
 const _RegionNames =
 {
+	// main series
+	"kanto"  : { n: "Kanto",   adj: "Kantonian", },
+	"johto"  : { n: "Johto",   adj: "Johtonian", },
+	"hoenn"  : { n: "Hoenn",   adj: "Hoennian",  },
+	"sinnoh" : { n: "Sinnoh",  adj: "Sinnohan",  },
+	"unova"  : { n: "Unova",   adj: "Unovan",    },
+	"kalos"  : { n: "Kalos",   adj: "Kalosian",  },
+	"alola"  : { n: "Alola",   adj: "Alolan",    },
+	"galar"  : { n: "Galar",   adj: "Galarian",  },
+	// side games - Colosseum
+	"orre"   : { n: "Orre",    adj: "Orre-jin",  },
+	// side games - Ranger
+	"fiore"  : { n: "Fiore",   adj: "Fiore-jin", },
+	"almia"  : { n: "Almia",   adj: "Almia-jin"  },
+	"oblivia": { n: "Oblivia", adj: "Oblivia-jin"},
 };
