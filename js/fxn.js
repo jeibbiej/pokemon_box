@@ -108,11 +108,11 @@ function inZukan(game, version, pkmn)
 {
 	var zukan = localStorage.getObject(lsName);
 	if (zukan == null)
-		zukan = {};
+		return false;
 	if (!zukan.hasOwnProperty(game))
-		zukan[game] = {};
+		return false;
 	if (!zukan.hasOwnProperty(version))
-		zukan[game][version] = [];
+		return false;
 	return zukan[game][version].includes(pkmn);
 }
 
