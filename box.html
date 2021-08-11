@@ -35,8 +35,6 @@ imgWd = _Dex.imgWd;
 maxBox = _Dex.maxBox;
 divBox = _Dex.divBox;
 
-var savedZukan = getZukan(game, version);
-
 Object.entries(_GameVersions).forEach(gv =>
  {
 	if (gv[1].id === -1)
@@ -117,7 +115,7 @@ for (const rdex in _Ndex)
 		boxBody += `<td style='border:1px solid gray; width:50px; vertical-align:top;'>`;
 		boxBody += `<span title='${rdex.substr(0, 4)} ${_Names[rdex]}'>`;
 		boxBody += `<img id='${idxStr}' src='${iconPath}${_Ndex[rdex]}.png' alt='${_Ndex[rdex]}' width='${imgWd}' `;
-		if (savedZukan.indexOf(rdex) == -1)
+		if (!inZukan(game, version, rdex))
 			boxBody += `class="gray" `;
 		boxBody += `onclick='imgPokemon_Clicked(this, ${game}, "${version}")'/>`;
 		boxBody += `</span><br/>`;
@@ -129,7 +127,7 @@ for (const rdex in _Ndex)
 		boxBody += `<td style='border:1px solid gray; width:50px; vertical-align:top;'>`;
 		boxBody += `<span title='${keyStr} ${_Names[rdex]}'>`;
 		boxBody += `<img id='${idxStr}' src='${iconPath}${_Ndex[rdex]}.png' alt='${_Ndex[rdex]}' width='${imgWd}' `;
-		if (savedZukan.indexOf(rdex) == -1)
+		if (!inZukan(game, version, rdex))
 			boxBody += `class="gray" `;
 		boxBody += `onclick='imgPokemon_Clicked(this, ${game}, "${version}")'/>`;
 		boxBody += `</span><br/><span style='font-size:10px;'>#${keyStr}<br/>${_Names[rdex]}</span></td>`;
