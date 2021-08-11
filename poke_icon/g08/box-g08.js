@@ -1121,7 +1121,7 @@ const _Regdex_rSwSh	=
 //	"0718":									"0718",									// "Zygarde" // uknown gender
 	"0718-50":								"0718-50",								// "50% Zygarde" // uknown gender
 	"0718-10":								"0718-10",								// "10% Zygarde" // uknown gender
-	"0718-complete":						"0718-complete",						// "Complete Zygarde" // uknown gender
+//	"0718-complete":						"0718-complete",						// "Complete Zygarde" // uknown gender
 //	"0718-core":							"0718-core",							// "Zygarde Core" // uknown gender// uncatchable
 //	"0718-cell":							"0718-cell",							// "Zygarde Cell" // uknown gender// uncatchable
 	"0719":									"0719",									// "Diancie" // uknown gender
