@@ -31,18 +31,18 @@ function getQueryVariable(variable)
 	return "";
 };
 
-function imgPokemon_Clicked(el, game)
+function imgPokemon_Clicked(el, game, version)
 {
 	// check if image is "enabled" or not
 	if (el.classList.contains('gray'))
 	{
-		el.classList.remove('gray');
-		insertZukan(game, el.id);
+		if (insertZukan(game, version, el.id))
+			el.classList.remove('gray');
 	}
 	else
 	{
-		el.classList.add('gray');
-		deleteZukan(game, el.id);
+		if (deleteZukan(game, version, el.id))
+			el.classList.add('gray');
 	}
 }
 
@@ -54,16 +54,22 @@ const lsName = "zukanData";
 /// <param name=""></param>
 /// <param name=""></param>
 /// <returns></returns>
-function insertZukan(game, pkmn)
+function insertZukan(game, version, pkmn)
 {
 	var zukan = localStorage.getObject(lsName);
 	if (zukan == null)
 		zukan = {};
 	if (!zukan.hasOwnProperty(game))
-		zukan[game] = [];
-	if (!zukan[game].includes(pkmn))
-		zukan[game].push(pkmn);
-	localStorage.setObject(lsName, zukan);
+		zukan[game] = {};
+	if (!zukan[game].hasOwnProperty(version))
+		zukan[game][version] = [];
+	if (!zukan[game][version].includes(pkmn))
+	{
+		zukan[game][version].push(pkmn);
+		localStorage.setObject(lsName, zukan);
+		return true;
+	}
+	return false;
 }
 
 /// <summary>
@@ -72,17 +78,35 @@ function insertZukan(game, pkmn)
 /// <param name=""></param>
 /// <param name=""></param>
 /// <returns></returns>
-function deleteZukan(game, pkmn)
+function deleteZukan(game, version, pkmn)
 {
 	var zukan = localStorage.getObject(lsName);
 	if (zukan == null)
-		return;
+		return false;
 	if (!zukan.hasOwnProperty(game))
-		return;
-	var idx = zukan[game].indexOf(pkmn);
+		return false;
+	if (!zukan[game].hasOwnProperty(version))
+		return false;
+	var idx = zukan[game][version].indexOf(pkmn);
 	if (idx >= 0)
-		delete zukan[game][idx];
-	localStorage.setObject(lsName);
+	{
+		delete zukan[game][version][idx];
+		localStorage.setObject(lsName, zukan);
+		return true;
+	}
+	return false;
+}
+
+function getZukan(game, version)
+{
+	var zukan = localStorage.getObject(lsName);
+	if (zukan == null)
+		zukan = {};
+	if (!zukan.hasOwnProperty(game))
+		zukan[game] = {};
+	if (!zukan.hasOwnProperty(version))
+		zukan[game][version] = [];
+	return zukan[game][version];
 }
 
 Storage.prototype.setObject = function (key, value)
