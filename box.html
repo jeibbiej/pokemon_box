@@ -39,7 +39,7 @@ var savedZukan = localStorage.getObject(lsName);
 if (savedZukan == null)
 	savedZukan = {};
 var savedZukanGame = [];
-if (savedZukan.indexOf)
+if (savedZukan.hasOwnProperty(game))
 	savedZukanGame = savedZukan[game];
 
 Object.entries(_GameVersions).forEach(gv =>
