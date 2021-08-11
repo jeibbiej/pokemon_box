@@ -111,7 +111,7 @@ function inZukan(game, version, pkmn)
 		return false;
 	if (!zukan.hasOwnProperty(game))
 		return false;
-	if (!zukan.hasOwnProperty(version))
+	if (!zukan[game].hasOwnProperty(version))
 		return false;
 	return zukan[game][version].includes(pkmn);
 }
