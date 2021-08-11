@@ -114,7 +114,7 @@ for (const rdex in _Ndex)
 	{
 		boxBody += `<td style='border:1px solid gray; width:50px; vertical-align:top;'>`;
 		boxBody += `<span title='${rdex.substr(0, 4)} ${_Names[rdex]}'>`;
-		boxBody += `<img id='${idxStr}' src='${iconPath}${_Ndex[rdex]}.png' alt='${_Ndex[rdex]}' width='${imgWd}' `;
+		boxBody += `<img id='${rdex}' src='${iconPath}${_Ndex[rdex]}.png' alt='${_Ndex[rdex]}' width='${imgWd}' `;
 		if (!inZukan(game, version, rdex))
 			boxBody += `class="gray" `;
 		boxBody += `onclick='imgPokemon_Clicked(this, ${game}, "${version}")'/>`;
@@ -126,7 +126,7 @@ for (const rdex in _Ndex)
 	{
 		boxBody += `<td style='border:1px solid gray; width:50px; vertical-align:top;'>`;
 		boxBody += `<span title='${keyStr} ${_Names[rdex]}'>`;
-		boxBody += `<img id='${idxStr}' src='${iconPath}${_Ndex[rdex]}.png' alt='${_Ndex[rdex]}' width='${imgWd}' `;
+		boxBody += `<img id='${rdex}' src='${iconPath}${_Ndex[rdex]}.png' alt='${_Ndex[rdex]}' width='${imgWd}' `;
 		if (!inZukan(game, version, rdex))
 			boxBody += `class="gray" `;
 		boxBody += `onclick='imgPokemon_Clicked(this, ${game}, "${version}")'/>`;
