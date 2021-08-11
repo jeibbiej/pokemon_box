@@ -35,15 +35,14 @@ function imgPokemon_Clicked(el, game, version)
 {
 	// check if image is "enabled" or not
 	if (el.classList.contains('gray'))
-	{
-		if (insertZukan(game, version, el.id))
-			el.classList.remove('gray');
-	}
+		insertZukan(game, version, el.id);
 	else
-	{
-		if (deleteZukan(game, version, el.id))
-			el.classList.add('gray');
-	}
+		deleteZukan(game, version, el.id);
+
+	if (inZukan(game, version, el.id))
+		el.classList.remove('gray');
+	else
+		el.classList.add('gray');
 }
 
 const lsName = "zukanData";
@@ -67,9 +66,7 @@ function insertZukan(game, version, pkmn)
 	{
 		zukan[game][version].push(pkmn);
 		localStorage.setObject(lsName, zukan);
-		return true;
 	}
-	return false;
 }
 
 /// <summary>
@@ -82,19 +79,17 @@ function deleteZukan(game, version, pkmn)
 {
 	var zukan = localStorage.getObject(lsName);
 	if (zukan == null)
-		return false;
+		return;
 	if (!zukan.hasOwnProperty(game))
-		return false;
+		return;
 	if (!zukan[game].hasOwnProperty(version))
-		return false;
+		return;
 	var idx = zukan[game][version].indexOf(pkmn);
 	if (idx >= 0)
 	{
 		delete zukan[game][version][idx];
 		localStorage.setObject(lsName, zukan);
-		return true;
 	}
-	return false;
 }
 
 function getZukan(game, version)
@@ -107,6 +102,18 @@ function getZukan(game, version)
 	if (!zukan.hasOwnProperty(version))
 		zukan[game][version] = [];
 	return zukan[game][version];
+}
+
+function inZukan(game, version, pkmn)
+{
+	var zukan = localStorage.getObject(lsName);
+	if (zukan == null)
+		zukan = {};
+	if (!zukan.hasOwnProperty(game))
+		zukan[game] = {};
+	if (!zukan.hasOwnProperty(version))
+		zukan[game][version] = [];
+	return zukan[game][version].includes(pkmn);
 }
 
 Storage.prototype.setObject = function (key, value)
