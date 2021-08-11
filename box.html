@@ -35,12 +35,7 @@ imgWd = _Dex.imgWd;
 maxBox = _Dex.maxBox;
 divBox = _Dex.divBox;
 
-var savedZukan = localStorage.getObject(lsName);
-if (savedZukan == null)
-	savedZukan = {};
-var savedZukanGame = [];
-if (savedZukan.hasOwnProperty(game))
-	savedZukanGame = savedZukan[game];
+var savedZukan = getZukan(game, version);
 
 Object.entries(_GameVersions).forEach(gv =>
  {
@@ -122,9 +117,9 @@ for (const rdex in _Ndex)
 		boxBody += `<td style='border:1px solid gray; width:50px; vertical-align:top;'>`;
 		boxBody += `<span title='${rdex.substr(0, 4)} ${_Names[rdex]}'>`;
 		boxBody += `<img id='${idxStr}' src='${iconPath}${_Ndex[rdex]}.png' alt='${_Ndex[rdex]}' width='${imgWd}' `;
-		if (savedZukanGame.indexOf(rdex) == -1)
+		if (savedZukan.indexOf(rdex) == -1)
 			boxBody += `class="gray" `;
-		boxBody += `onclick='imgPokemon_Clicked(this, ${game})'/>`;
+		boxBody += `onclick='imgPokemon_Clicked(this, ${game}, ${version})'/>`;
 		boxBody += `</span><br/>`;
 		boxBody += `<span style='font-size:10px;'>#${rdex.substr(0, 4)}<br/>`;
 		boxBody += `${_Names[rdex]}</span></td>`;
@@ -134,9 +129,9 @@ for (const rdex in _Ndex)
 		boxBody += `<td style='border:1px solid gray; width:50px; vertical-align:top;'>`;
 		boxBody += `<span title='${keyStr} ${_Names[rdex]}'>`;
 		boxBody += `<img id='${idxStr}' src='${iconPath}${_Ndex[rdex]}.png' alt='${_Ndex[rdex]}' width='${imgWd}' `;
-		if (savedZukanGame.indexOf(rdex) == -1)
+		if (savedZukan.indexOf(rdex) == -1)
 			boxBody += `class="gray" `;
-		boxBody += `onclick='imgPokemon_Clicked(this, ${game})'/>`;
+		boxBody += `onclick='imgPokemon_Clicked(this, ${game}, ${version})'/>`;
 		boxBody += `</span><br/><span style='font-size:10px;'>#${keyStr}<br/>${_Names[rdex]}</span></td>`;
 	}
 
