@@ -38,7 +38,9 @@ divBox = _Dex.divBox;
 var savedZukan = localStorage.getObject(lsName);
 if (savedZukan == null)
 	savedZukan = {};
-var savedZukanGame = savedZukan[game];
+var savedZukanGame = [];
+if (savedZukan.indexOf)
+	savedZukanGame = savedZukan[game];
 
 Object.entries(_GameVersions).forEach(gv =>
  {
