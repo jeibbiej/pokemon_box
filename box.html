@@ -1,5 +1,6 @@
 ﻿<html>
 <head>
+<link rel="stylesheet" href="css/style.css">
 <script lang="javascript" src="js/fxn.js"></script>
 <script lang="javascript" src="js/pkmn-names.js"></script>
 <script lang="javascript" src="poke_icon/g01/box-g01.js"></script>
@@ -34,11 +35,16 @@ imgWd = _Dex.imgWd;
 maxBox = _Dex.maxBox;
 divBox = _Dex.divBox;
 
+var savedZukan = localStorage.getObject(lsName);
+if (savedZukan == null)
+	savedZukan = {};
+var savedZukanGame = savedZukan[game];
+
 Object.entries(_GameVersions).forEach(gv =>
  {
 	if (gv[1].id === -1)
 		return;
-	
+
 	document.write(`[&nbsp;<a href='box.html?game=${gv[1].code}&ver=${version}'>${gv[1].name}</a>&nbsp;]`);
 });
 
@@ -107,13 +113,16 @@ for (const rdex in _Ndex)
 		boxHead += keyStr;
 		++boxIdx;
 	}
-	
+
 	console.log(typeof(rdex) + " " + rdex + ": " + _Names[rdex]);
 	if (version == "e")
 	{
 		boxBody += `<td style='border:1px solid gray; width:50px; vertical-align:top;'>`;
 		boxBody += `<span title='${rdex.substr(0, 4)} ${_Names[rdex]}'>`;
-		boxBody += `<img class="gray" id='${idxStr}' src='${iconPath}${_Ndex[rdex]}.png' alt='${_Ndex[rdex]}' width='${imgWd}' onclick='imgPokemon_Clicked(this)'/>`;
+		boxBody += `<img id='${idxStr}' src='${iconPath}${_Ndex[rdex]}.png' alt='${_Ndex[rdex]}' width='${imgWd}' `;
+		if (savedZukanGame.indexOf(rdex) == -1)
+			boxBody += `class="gray" `;
+		boxBody += `onclick='imgPokemon_Clicked(this, ${game})'/>`;
 		boxBody += `</span><br/>`;
 		boxBody += `<span style='font-size:10px;'>#${rdex.substr(0, 4)}<br/>`;
 		boxBody += `${_Names[rdex]}</span></td>`;
@@ -122,7 +131,10 @@ for (const rdex in _Ndex)
 	{
 		boxBody += `<td style='border:1px solid gray; width:50px; vertical-align:top;'>`;
 		boxBody += `<span title='${keyStr} ${_Names[rdex]}'>`;
-		boxBody += `<img id='${idxStr}' src='${iconPath}${_Ndex[rdex]}.png' alt='${_Ndex[rdex]}' width='${imgWd}' onclick='imgPokemon_Clicked(this)'>`;
+		boxBody += `<img id='${idxStr}' src='${iconPath}${_Ndex[rdex]}.png' alt='${_Ndex[rdex]}' width='${imgWd}' `;
+		if (savedZukanGame.indexOf(rdex) == -1)
+			boxBody += `class="gray" `;
+		boxBody += `onclick='imgPokemon_Clicked(this, ${game})'/>`;
 		boxBody += `</span><br/><span style='font-size:10px;'>#${keyStr}<br/>${_Names[rdex]}</span></td>`;
 	}
 
@@ -147,7 +159,7 @@ for (const rdex in _Ndex)
 // filler
 while (boxCntr <= maxBox)
 {
-	boxBody += "<td style='border:1px solid gray; width:50px; vertical-align:top;'><img src='" + iconPath;
+	boxBody += `<td style='border:1px solid gray; width:50px; vertical-align:top;'><img src='${iconPath}`;
 	if (game < GameVersion._Ru) // Gen 1 & 2
 	{
 		boxBody += "00";
@@ -156,7 +168,12 @@ while (boxCntr <= maxBox)
 	{
 		boxBody += "0000";
 	}
-	boxBody += "-none.png' width='" + imgWd + "px'><br/><span style='font-size:10px;'>&nbsp;</span></td>";
+	boxBody += `-none.png' width='${imgWd}px'/>`;
+	// boxBody += `-none.png' width='${imgWd}px' `;
+	// if (savedZukanGame.indexOf(rdex) == -1)
+	// 	boxBody += `class="gray" `;
+	// boxBody += `onclick='imgPokemon_Clicked(this, ${game})'/>`;
+	boxBody += `<span style='font-size:10px;'>&nbsp;</span></td>`;
 	if (boxCntr % divBox == 0)
 		boxBody += "</tr><tr>";
 	boxCntr++;

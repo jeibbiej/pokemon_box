@@ -8,7 +8,7 @@
             "type": "pwa-chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
-            "url": "file:///C:/Users/j.bautista.DELL-DP1/Documents/GitHub/pokemon_box/box.html?game=Sw&ver=e",
+            "url": "file:///C:/Users/j.bautista.DELL-DP1/Documents/GitHub/pokemon_box/box.html?game=Sw&ver=r",
             "webRoot": "${workspaceFolder}"
         }
     ]

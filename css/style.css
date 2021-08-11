@@ -1,4 +1,6 @@
 .gray
 {
-    filter:grayscale(50%);
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    background-color: #808080;
 }
