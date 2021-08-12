@@ -144,7 +144,16 @@ function saveToLocal()
 
 	//location.href = `data:text/plain,${zukan}`;
 
-	exportData = `data:text/plain,${zukan}`;
-	encodedUri = encodeURI(exportData);
-	newWindow = window.open(encodedUri);
+	// exportData = `data:text/plain,${zukan}`;
+	// encodedUri = encodeURI(exportData);
+	// newWindow = window.open(encodedUri);
+
+	var dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(zukan));
+    var downloadAnchorNode = document.createElement('a');
+    downloadAnchorNode.setAttribute("href", dataStr);
+    downloadAnchorNode.setAttribute("download", lsName + ".json");
+    document.body.appendChild(downloadAnchorNode); // required for firefox
+    downloadAnchorNode.click();
+    downloadAnchorNode.remove();
+
 }
