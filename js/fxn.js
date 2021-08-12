@@ -128,3 +128,16 @@ Storage.prototype.getObject = function (key)
 		return {};
 	return val && JSON.parse(val);
 }
+
+function saveToLocal()
+{
+	var myString = localStorage.getItem(lsName);
+	chrome.downloads.download({
+		url: "data:text/plain," + myString,
+		filename: `${lsName}.json`,
+		conflictAction: "prompt", // or "overwrite" / "prompt"
+		saveAs: true, // true gives save-as dialogue
+	}, function(downloadId) {
+		console.log("Downloaded item with ID", downloadId);
+	});
+}

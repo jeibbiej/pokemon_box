@@ -35,13 +35,15 @@ imgWd = _Dex.imgWd;
 maxBox = _Dex.maxBox;
 divBox = _Dex.divBox;
 
-Object.entries(_GameVersions).forEach(gv =>
- {
-	if (gv[1].id === -1)
-		return;
+document.write(`<button type="button" onclick="saveToLocal()">Save</button>`);
 
-	document.write(`[&nbsp;<a href='box.html?game=${gv[1].code}&ver=${version}'>${gv[1].name}</a>&nbsp;]`);
-});
+// Object.entries(_GameVersions).forEach(gv =>
+//  {
+// 	if (gv[1].id === -1)
+// 		return;
+
+// 	document.write(`[&nbsp;<a href='box.html?game=${gv[1].code}&ver=${version}'>${gv[1].name}</a>&nbsp;]`);
+// });
 
 // if (game == GameVersion._Sw || game == GameVersion._Sh)
 // {
