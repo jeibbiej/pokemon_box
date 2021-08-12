@@ -132,23 +132,7 @@ Storage.prototype.getObject = function (key)
 function saveToLocal()
 {
 	var zukan = localStorage.getItem(lsName);
-	// chrome.downloads.download({
-	// 	url: "data:text/plain," + zukan,
-	// 	filename: `${lsName}.json`,
-	// 	conflictAction: "prompt", // or "overwrite" / "prompt"
-	// 	saveAs: true, // true gives save-as dialogue
-	// }, function(downloadId) {
-	// 	console.log("Downloaded item with ID", downloadId);
-	// });
-
-
-	//location.href = `data:text/plain,${zukan}`;
-
-	// exportData = `data:text/plain,${zukan}`;
-	// encodedUri = encodeURI(exportData);
-	// newWindow = window.open(encodedUri);
-
-	var dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(zukan));
+	var dataStr = "data:text/json;charset=utf-8," + JSON.stringify(zukan);
     var downloadAnchorNode = document.createElement('a');
     downloadAnchorNode.setAttribute("href", dataStr);
     downloadAnchorNode.setAttribute("download", lsName + ".json");
