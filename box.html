@@ -9,7 +9,25 @@
 <script lang="javascript" src="js/game.js"></script>
 </head>
 <body>
+	<input type="file" id="file-selector" accept=".json">Import</input>
 <script lang="javascript">
+const fileSelector = document.getElementById('file-selector');
+fileSelector.addEventListener('change', (event) =>
+{
+	const fileList = event.target.files;
+	if (fileList.length != 1)
+		return;
+
+	file = fileList[0];
+
+	const reader = new FileReader();
+	reader.addEventListener('load', (event) =>
+	{
+		img.src = event.target.result;
+	});
+	reader.readAsDataURL(file);
+});
+
 boxCntr = 1;
 boxIdx = 1;
 boxHead = "";
@@ -35,7 +53,8 @@ imgWd = _Dex.imgWd;
 maxBox = _Dex.maxBox;
 divBox = _Dex.divBox;
 
-document.write(`<button type="button" onclick="saveToLocal()">Save</button>`);
+document.write(`<button type="button" onclick="saveToLocal()">Export</button>`);
+document.write(`<button type="file" onclick="loadFromLocal()">Import</button>`);
 document.write(`<a id="downloadAnchorElem" style="display:none"></a>`);
 
 // Object.entries(_GameVersions).forEach(gv =>

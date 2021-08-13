@@ -133,11 +133,17 @@ function saveToLocal()
 {
 	var zukan = localStorage.getItem(lsName);
 	var dataStr = "data:text/json;charset=utf-8," + JSON.stringify(zukan);
-    var downloadAnchorNode = document.createElement('a');
-    downloadAnchorNode.setAttribute("href", dataStr);
-    downloadAnchorNode.setAttribute("download", lsName + ".json");
-    document.body.appendChild(downloadAnchorNode); // required for firefox
-    downloadAnchorNode.click();
-    downloadAnchorNode.remove();
+	var downloadAnchorNode = document.createElement('a');
+	downloadAnchorNode.setAttribute("href", dataStr);
+	downloadAnchorNode.setAttribute("download", lsName + ".json");
+	document.body.appendChild(downloadAnchorNode); // required for firefox
+	downloadAnchorNode.click();
+	downloadAnchorNode.remove();
+}
 
+function loadFromLocal()
+{
+	fetch(`${lsName}.json`)
+	.then(response => response.json())
+	.then(json => console.log(json));
 }
