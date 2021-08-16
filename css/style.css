@@ -4,3 +4,42 @@
     -webkit-filter: grayscale(100%);
     background-color: #808080;
 }
+
+.menu-icon
+{
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+    position: relative;
+}
+
+.menu-itm
+{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 48px;
+}
+
+#mainMenu
+{
+    float: right;
+}
+
+#btnMenu
+{
+    text-align: right;
+}
+
+#divMenu
+{
+    display: none;
+    width: 150px;
+}
+
+div
+{
+    border: 1px solid gray;
+}

@@ -10,6 +10,10 @@
 </head>
 <body>
 	<input type="file" id="file-selector" accept=".json">Import</input>
+	<div id="mainMenu">
+		<div id="btnMenu" onclick="toggleMenu()">[...]</div>
+		<div id="divMenu"></div>
+	</div>
 <script lang="javascript">
 const fileSelector = document.getElementById('file-selector');
 fileSelector.addEventListener('change', (event) =>
@@ -57,13 +61,23 @@ document.write(`<button type="button" onclick="saveToLocal()">Export</button>`);
 document.write(`<button type="file" onclick="loadFromLocal()">Import</button>`);
 document.write(`<a id="downloadAnchorElem" style="display:none"></a>`);
 
-// Object.entries(_GameVersions).forEach(gv =>
-//  {
-// 	if (gv[1].id === -1)
-// 		return;
+var menu = document.getElementById("divMenu");
+Object.entries(_GameVersions).forEach(gv =>
+{
+	if (gv[1].id === -1)
+		return;
 
-// 	document.write(`[&nbsp;<a href='box.html?game=${gv[1].code}&ver=${version}'>${gv[1].name}</a>&nbsp;]`);
-// });
+	if (gv[1].ico === "")
+		menu.innerHTML += `<div class='menu-icon'>
+			<a href='box.html?game=${gv[1].code}&ver=${version}'>
+			<img src='https://assets.pokemon.com/static2/_ui/img/chrome/loaders/pokeball_gray.png.png' class='menu-itm'
+			title='${gv[1].name}'></a></div>`;
+	else
+		menu.innerHTML += `<div class='menu-icon'>
+			<a href='box.html?game=${gv[1].code}&ver=${version}'>
+			<img src='game_icon/${gv[1].ico}.png' class='menu-itm'
+			title='${gv[1].name}'></a></div>`;
+});
 
 // if (game == GameVersion._Sw || game == GameVersion._Sh)
 // {

@@ -147,3 +147,16 @@ function loadFromLocal()
 	.then(response => response.json())
 	.then(json => console.log(json));
 }
+
+function toggleMenu()
+{
+	var x = document.getElementById("divMenu");
+	if (x.style.display === "none")
+	{
+		x.style.display = "inline-block";
+	}
+	else
+	{
+		x.style.display = "none";
+	}
+}
