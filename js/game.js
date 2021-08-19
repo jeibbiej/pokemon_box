@@ -87,5 +87,5 @@ const _GameVersions =
 	SS_BoxRS	: {id: StorageSystem + 1, ico: "",            icoPath: "",            rDex: {}, nDex: {},            eDex: {},            imgWd: 0,         maxBox: 0,          divBox: 0,          code: "SS_BoxRS", name: "Pokémon Box Ruby & Sapphire"},
 	SS_Ranch	: {id: StorageSystem + 2, ico: "",            icoPath: "",            rDex: {}, nDex: {},            eDex: {},            imgWd: 0,         maxBox: 0,          divBox: 0,          code: "SS_Ranch", name: "My Pokémon Ranch"},
 	SS_Bank		: {id: StorageSystem + 3, ico: "bank",        icoPath: "",            rDex: {}, nDex: {},            eDex: {},            imgWd: 0,         maxBox: 0,          divBox: 0,          code: "SS_Bank",  name: "Pokémon Bank"},
-	SS_Home		: {id: StorageSystem + 4, ico: "custom/home", icoPath: IcoPathSSHome, rDex: {}, nDex: _Regdex_nSwSh, eDex: _Regdex_eSwSh, imgWd: ImgWd_G08, maxBox: MaxBox_G08, divBox: DivBox_G08, code: "SS_Home",  name: "Pokémon HOME"},
+	SS_Home		: {id: StorageSystem + 4, ico: "custom/home", icoPath: IcoPathSSHome, rDex: {}, nDex: _Regdex_nHome, eDex: _Regdex_eHome, imgWd: ImgWd_G08, maxBox: MaxBox_G08, divBox: DivBox_G08, code: "SS_Home",  name: "Pokémon HOME"},
 };
