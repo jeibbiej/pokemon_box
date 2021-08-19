@@ -4524,7 +4524,7 @@ const _Regdex_eSwSh	=
 	"0898-shadow":							"0898-shadow",							// "Shadow Rider Calyrex" // uknown gender
 };
 
-const _Regdex_nSwSh	=
+const _Regdex_nHome	=
 {
 //	==============
 //	 Generation 1
