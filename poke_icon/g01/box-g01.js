@@ -112,53 +112,52 @@ const _Regdex_rReBl =
 	"0103"		: "01", // "Exeggutor",
 	"0104"		: "02", // "Cubone",
 	"0105"		: "02", // "Marowak",
-	//-----------------------------
-	"0106"		: "00", // "Hitmonlee", // male only
-	"0107"		: "00", // "Hitmonchan", // male only
-	"0108"		: "00", // "Lickitung", MARC (in-game trade)
-	"0109"		: "00", // "Koffing",
-	"0110"		: "00", // "Weezing",
-	"0111"		: "00", // "Rhyhorn",
-	"0112"		: "00", // "Rhydon",
-	"0113"		: "00", // "Chansey", // female only
-	"0114"		: "00", // "Tangela", CRINKLES (in-game trade)
-	"0115"		: "00", // "Kangaskhan", // female only
-	"0116"		: "00", // "Horsea",
-	"0117"		: "00", // "Seadra",
-	"0118"		: "00", // "Goldeen",
-	"0119"		: "00", // "Seaking",
-	"0120"		: "00", // "Staryu", // uknown gender
-	"0121"		: "00", // "Starmie", // uknown gender
-	"0122"		: "00", // "Mr. Mime", MARCEL (in-game trade)
-	"0123"		: "00", // "Scyther",
-	"0124"		: "00", // "Jynx", // female only LOLA (in-game trade)
-	"0125"		: "00", // "Electabuzz",
-	"0126"		: "00", // "Magmar",
-	"0127"		: "00", // "Pinsir",
-	"0128"		: "00", // "Tauros", // male only
-	"0129"		: "00", // "Magikarp",
-	"0130"		: "00", // "Gyarados",
-	"0131"		: "00", // "Lapras",
-	"0132"		: "00", // "Ditto", // uknown gender
-	"0133"		: "00", // "Eevee",
-	"0134"		: "00", // "Vaporeon",
-	"0135"		: "00", // "Jolteon",
-	"0136"		: "00", // "Flareon",
-	"0137"		: "00", // "Porygon", // uknown gender
-	"0138"		: "00", // "Omanyte",
-	"0139"		: "00", // "Omastar",
-	"0140"		: "00", // "Kabuto",
-	"0141"		: "00", // "Kabutops",
-	"0142"		: "00", // "Aerodactyl",
-	"0143"		: "00", // "Snorlax",
-	"0144"		: "00", // "Articuno", // uknown gender
-	"0145"		: "00", // "Zapdos", // uknown gender
-	"0146"		: "00", // "Moltres", // uknown gender
-	"0147"		: "00", // "Dratini",
-	"0148"		: "00", // "Dragonair",
-	"0149"		: "00", // "Dragonite",
-	"0150"		: "00", // "Mewtwo", // uknown gender
-	"0151"		: "00", // "Mew", // uknown gender
+/**/"0106"		: "00", // "Hitmonlee", // male only
+	"0107"		: "02", // "Hitmonchan", // male only
+	"0108"		: "02", // "Lickitung", MARC (in-game trade)
+	"0109"		: "02", // "Koffing",
+	"0110"		: "02", // "Weezing",
+	"0111"		: "06", // "Rhyhorn",
+/**/"0112"		: "00", // "Rhydon",
+	"0113"		: "08", // "Chansey", // female only
+	"0114"		: "01", // "Tangela", CRINKLES (in-game trade)
+	"0115"		: "02", // "Kangaskhan", // female only
+	"0116"		: "03", // "Horsea",
+	"0117"		: "03", // "Seadra",
+	"0118"		: "03", // "Goldeen",
+	"0119"		: "03", // "Seaking",
+	"0120"		: "10", // "Staryu", // uknown gender
+/**/"0121"		: "00", // "Starmie", // uknown gender
+	"0122"		: "02", // "Mr. Mime", MARCEL (in-game trade)
+	"0123"		: "04", // "Scyther",
+	"0124"		: "02", // "Jynx", // female only LOLA (in-game trade)
+/**/"0125"		: "00", // "Electabuzz",
+	"0126"		: "02", // "Magmar",
+	"0127"		: "04", // "Pinsir",
+	"0128"		: "06", // "Tauros", // male only
+	"0129"		: "03", // "Magikarp",
+/**/"0130"		: "00", // "Gyarados",
+	"0131"		: "03", // "Lapras",
+	"0132"		: "02", // "Ditto", // uknown gender
+	"0133"		: "06", // "Eevee",
+/**/"0134"		: "00", // "Vaporeon",
+/**/"0135"		: "00", // "Jolteon",
+/**/"0136"		: "00", // "Flareon",
+/**/"0137"		: "00", // "Porygon", // uknown gender
+	"0138"		: "10", // "Omanyte",
+/**/"0139"		: "00", // "Omastar",
+/**/"0140"		: "00", // "Kabuto",
+/**/"0141"		: "00", // "Kabutops",
+	"0142"		: "05", // "Aerodactyl",
+	"0143"		: "02", // "Snorlax",
+/**/"0144"		: "00", // "Articuno", // uknown gender
+/**/"0145"		: "00", // "Zapdos", // uknown gender
+	"0146"		: "05", // "Moltres", // uknown gender
+	"0147"		: "07", // "Dratini",
+/**/"0148"		: "00", // "Dragonair",
+/**/"0149"		: "00", // "Dragonite",
+/**/"0150"		: "00", // "Mewtwo", // uknown gender
+	"0151"		: "02", // "Mew", // uknown gender
 };
 
 const _Regdex_rYe =
