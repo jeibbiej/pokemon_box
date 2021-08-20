@@ -79,7 +79,8 @@ if (game < _GameVersions.Ru.id)
 else if (game > _GameVersions.vcYe.id &&
 		game <= _GameVersions.vcCr.id)
 {
-	boxIdx = 2;
+	if (game <= _GameVersions.vcYe.id) // cannot rename box
+		boxIdx = 2;
 	// remove Unown A-Z
 	const vcUnown =
 	[

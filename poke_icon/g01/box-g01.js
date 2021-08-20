@@ -112,7 +112,7 @@ const _Regdex_rReBl =
 	"0103"		: "01", // "Exeggutor",
 	"0104"		: "02", // "Cubone",
 	"0105"		: "02", // "Marowak",
-/**/"0106"		: "00", // "Hitmonlee", // male only
+	"0106"		: "02", // "Hitmonlee", // male only
 	"0107"		: "02", // "Hitmonchan", // male only
 	"0108"		: "02", // "Lickitung", MARC (in-game trade)
 	"0109"		: "02", // "Koffing",
@@ -131,7 +131,7 @@ const _Regdex_rReBl =
 	"0122"		: "02", // "Mr. Mime", MARCEL (in-game trade)
 	"0123"		: "04", // "Scyther",
 	"0124"		: "02", // "Jynx", // female only LOLA (in-game trade)
-/**/"0125"		: "00", // "Electabuzz",
+	"0125"		: "02", // "Electabuzz",
 	"0126"		: "02", // "Magmar",
 	"0127"		: "04", // "Pinsir",
 	"0128"		: "06", // "Tauros", // male only
@@ -146,7 +146,7 @@ const _Regdex_rReBl =
 /**/"0137"		: "00", // "Porygon", // uknown gender
 	"0138"		: "10", // "Omanyte",
 /**/"0139"		: "00", // "Omastar",
-/**/"0140"		: "00", // "Kabuto",
+	"0140"		: "10", // "Kabuto",
 /**/"0141"		: "00", // "Kabutops",
 	"0142"		: "05", // "Aerodactyl",
 	"0143"		: "02", // "Snorlax",
@@ -301,7 +301,7 @@ const _Regdex_rYe =
 /**/"0137"		: "00", // "Porygon",
 /**/"0138"		: "00", // "Omanyte",
 /**/"0139"		: "00", // "Omastar",
-	"0140"		: "11", // "Kabuto",
+	"0140"		: "10", // "Kabuto",
 /**/"0141"		: "00", // "Kabutops",
 	"0142"		: "05", // "Aerodactyl",
 	"0143"		: "02", // "Snorlax",
