@@ -59,6 +59,7 @@ imgWd = _Dex.imgWd * (game == HomeId ? 1 : 2);
 maxBox = _Dex.maxBox;
 divBox = _Dex.divBox;
 
+boxIdx = 1;
 if (game < _GameVersions.Ru.id)
 {
 	// remove Unown
@@ -78,6 +79,7 @@ if (game < _GameVersions.Ru.id)
 else if (game > _GameVersions.vcYe.id &&
 		game <= _GameVersions.vcCr.id)
 {
+	boxIdx = 2;
 	// remove Unown A-Z
 	const vcUnown =
 	[
@@ -104,7 +106,6 @@ else if (game > _GameVersions.vcYe.id &&
 		delete _GameVersions.vcCr.eDex[n201];
 	});
 }
-
 
 document.getElementById("btnMenu").innerHTML = `[${_Dex.name}...]`;
 
@@ -159,7 +160,6 @@ else if (version == "r") // Regional Dex
 _MaxDex = Object.keys(_Ndex).length;
 
 boxCntr = 1;
-boxIdx = 1;
 boxHead = "";
 boxBody = "";
 boxFoot = "";
