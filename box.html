@@ -11,7 +11,7 @@
 <body>
 	<input type="file" id="file-selector" accept=".json">Import</input>
 	<div id="mainMenu">
-		<div id="btnMenu" onclick="toggleMenu()">[...]</div>
+		<div id="btnMenu" onclick="toggleMenu()"></div>
 		<div id="divMenu"></div>
 	</div>
 <script lang="javascript">
@@ -48,14 +48,17 @@ version = getQueryVariable("ver");
 
 console.log(_Dex);
 
+const HomeId = _GameVersions.SS_Home.id
 game = _Dex.id;
 _Rdex = _Dex.rDex;
 _Ndex = _Dex.nDex;
 _Edex = _Dex.eDex;
 iconPath = _Dex.icoPath;
-imgWd = _Dex.imgWd;
+imgWd = _Dex.imgWd * (game == HomeId ? 1 : 2);
 maxBox = _Dex.maxBox;
 divBox = _Dex.divBox;
+
+document.getElementById("btnMenu").innerHTML = `[${_Dex.name}...]`;
 
 document.write(`<button type="button" onclick="saveToLocal()">Export</button>`);
 document.write(`<button type="file" onclick="loadFromLocal()">Import</button>`);
@@ -70,7 +73,7 @@ Object.entries(_GameVersions).forEach(gv =>
 	if (gv[1].ico === "")
 		menu.innerHTML += `<div class='menu-icon'>
 			<a href='box.html?game=${gv[1].code}&ver=${version}'>
-			<img src='https://assets.pokemon.com/static2/_ui/img/chrome/loaders/pokeball_gray.png.png' class='menu-itm'
+			<img src='https://assets.pokemon.com/static2/_ui/img/chrome/loaders/pokeball_gray.png' class='menu-itm'
 			title='${gv[1].name}'></a></div>`;
 	else
 		menu.innerHTML += `<div class='menu-icon'>
@@ -152,7 +155,9 @@ for (const rdex in _Ndex)
 		boxBody += `<span title='${rdex.substr(0, 4)} ${_Names[rdex]}'>`;
 		boxBody += `<img id='${rdex}' src='${iconPath}${_Ndex[rdex]}.png' alt='${_Ndex[rdex]}' width='${imgWd}' `;
 		if (!inZukan(game, version, rdex))
-			boxBody += `class="gray" `;
+			boxBody += `class="zukan-icon gray"; `;
+		else
+			boxBody += `class="zukan-icon"; `;
 		boxBody += `onclick='imgPokemon_Clicked(this, ${game}, "${version}")'/>`;
 		boxBody += `</span><br/>`;
 		boxBody += `<span style='font-size:10px;'>#${rdex.substr(0, 4)}<br/>`;
@@ -164,7 +169,9 @@ for (const rdex in _Ndex)
 		boxBody += `<span title='${keyStr} ${_Names[rdex]}'>`;
 		boxBody += `<img id='${rdex}' src='${iconPath}${_Ndex[rdex]}.png' alt='${_Ndex[rdex]}' width='${imgWd}' `;
 		if (!inZukan(game, version, rdex))
-			boxBody += `class="gray" `;
+			boxBody += `class="zukan-icon gray"; `;
+		else
+			boxBody += `class="zukan-icon"; `;
 		boxBody += `onclick='imgPokemon_Clicked(this, ${game}, "${version}")'/>`;
 		boxBody += `</span><br/><span style='font-size:10px;'>#${keyStr}<br/>${_Names[rdex]}</span></td>`;
 	}
