@@ -131,9 +131,9 @@ Object.entries(_GameVersions).forEach(gv =>
 });
 
 menu = document.getElementById("divVer");
-menu.innerHTML += `<a class="btnVer" href='box.html?game=${_Dex.code}&ver=r'> [ R ] </a>`;
-menu.innerHTML += `<a class="btnVer" href='box.html?game=${_Dex.code}&ver=n'> [ N ] </a>`;
-menu.innerHTML += `<a class="btnVer" href='box.html?game=${_Dex.code}&ver=e'> [ E ] </a>`;
+if (version == "r") menu.innerHTML += " [ Regional ] "; else menu.innerHTML += `<a class="btnVer" href='box.html?game=${_Dex.code}&ver=r'> [ R ] </a>`;
+if (version == "n") menu.innerHTML += " [ National ] "; else menu.innerHTML += `<a class="btnVer" href='box.html?game=${_Dex.code}&ver=n'> [ N ] </a>`;
+if (version == "e") menu.innerHTML += " [ Evolution ] "; else menu.innerHTML += `<a class="btnVer" href='box.html?game=${_Dex.code}&ver=e'> [ E ] </a>`;
 
 // if (game == GameVersion._Sw || game == GameVersion._Sh)
 // {
