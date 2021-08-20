@@ -207,33 +207,33 @@ const _Regdex_nGoSi =
 /**/"0198"			: "00", // "Murkrow",
 /**/"0199"			: "00", // "Slowking",
 /**/"0200"			: "00", // "Misdreavus",
-//	"0201"			: "z35", // "Unown", // uknown gender
+	"0201"			: "z35", // "Unown", // uknown gender
 	"0201-angry"	: "z35", // "Unown Angry", // uknown gender
-//	"0201-bear"		: "z35", // "Unown Bear", // uknown gender
-//	"0201-chase"	: "z35", // "Unown Chase", // uknown gender
-//	"0201-direct"	: "z35", // "Unown Direct", // uknown gender
-//	"0201-engage"	: "z35", // "Unown Engage", // uknown gender
-//	"0201-find"		: "z35", // "Unown Find", // uknown gender
-//	"0201-give"		: "z35", // "Unown Give", // uknown gender
-//	"0201-help"		: "z35", // "Unown Help", // uknown gender
-//	"0201-increase"	: "z35", // "Unown Increase", // uknown gender
-//	"0201-join"		: "z35", // "Unown Join", // uknown gender
-//	"0201-keep"		: "z35", // "Unown Keep", // uknown gender
-//	"0201-laugh"	: "z35", // "Unown Laugh", // uknown gender
-//	"0201-make"		: "z35", // "Unown Make", // uknown gender
-//	"0201-nuzzle"	: "z35", // "Unown Nuzzle", // uknown gender
-//	"0201-observe"	: "z35", // "Unown Observe", // uknown gender
-//	"0201-perform"	: "z35", // "Unown Perform", // uknown gender
-//	"0201-quicken"	: "z35", // "Unown Quicken", // uknown gender
-//	"0201-reassure"	: "z35", // "Unown Reassure", // uknown gender
-//	"0201-search"	: "z35", // "Unown Search", // uknown gender
-//	"0201-tell"		: "z35", // "Unown Tell", // uknown gender
-//	"0201-undo"		: "z35", // "Unown Undo", // uknown gender
-//	"0201-vanish"	: "z35", // "Unown Vanish", // uknown gender
-//	"0201-want"		: "z35", // "Unown Want", // uknown gender
-//	"0201-xxxxx"	: "z35", // "Unown XXXXX", // uknown gender
-//	"0201-yield"	: "z35", // "Unown Yield", // uknown gender
-//	"0201-zoom"		: "z35", // "Unown Zoom", // uknown gender
+	"0201-bear"		: "z35", // "Unown Bear", // uknown gender
+	"0201-chase"	: "z35", // "Unown Chase", // uknown gender
+	"0201-direct"	: "z35", // "Unown Direct", // uknown gender
+	"0201-engage"	: "z35", // "Unown Engage", // uknown gender
+	"0201-find"		: "z35", // "Unown Find", // uknown gender
+	"0201-give"		: "z35", // "Unown Give", // uknown gender
+	"0201-help"		: "z35", // "Unown Help", // uknown gender
+	"0201-increase"	: "z35", // "Unown Increase", // uknown gender
+	"0201-join"		: "z35", // "Unown Join", // uknown gender
+	"0201-keep"		: "z35", // "Unown Keep", // uknown gender
+	"0201-laugh"	: "z35", // "Unown Laugh", // uknown gender
+	"0201-make"		: "z35", // "Unown Make", // uknown gender
+	"0201-nuzzle"	: "z35", // "Unown Nuzzle", // uknown gender
+	"0201-observe"	: "z35", // "Unown Observe", // uknown gender
+	"0201-perform"	: "z35", // "Unown Perform", // uknown gender
+	"0201-quicken"	: "z35", // "Unown Quicken", // uknown gender
+	"0201-reassure"	: "z35", // "Unown Reassure", // uknown gender
+	"0201-search"	: "z35", // "Unown Search", // uknown gender
+	"0201-tell"		: "z35", // "Unown Tell", // uknown gender
+	"0201-undo"		: "z35", // "Unown Undo", // uknown gender
+	"0201-vanish"	: "z35", // "Unown Vanish", // uknown gender
+	"0201-want"		: "z35", // "Unown Want", // uknown gender
+	"0201-xxxxx"	: "z35", // "Unown XXXXX", // uknown gender
+	"0201-yield"	: "z35", // "Unown Yield", // uknown gender
+	"0201-zoom"		: "z35", // "Unown Zoom", // uknown gender
 /**/"0202"			: "00", // "Wobbuffet",
 /**/"0203"			: "00", // "Girafarig",
 /**/"0204"			: "00", // "Pineco",
@@ -498,33 +498,33 @@ const _Regdex_eGoSi =
 	"0195"			: "z12", // "Quagsire",
 /**/"0198"			: "00", // "Murkrow",
 /**/"0200"			: "00", // "Misdreavus",
-//	"0201"			: "z35", // "Unown", // uknown gender
+	"0201"			: "z35", // "Unown", // uknown gender
 	"0201-angry"	: "z35", // "Unown Angry", // uknown gender
-//	"0201-bear"		: "z35", // "Unown Bear", // uknown gender
-//	"0201-chase"	: "z35", // "Unown Chase", // uknown gender
-//	"0201-direct"	: "z35", // "Unown Direct", // uknown gender
-//	"0201-engage"	: "z35", // "Unown Engage", // uknown gender
-//	"0201-find"		: "z35", // "Unown Find", // uknown gender
-//	"0201-give"		: "z35", // "Unown Give", // uknown gender
-//	"0201-help"		: "z35", // "Unown Help", // uknown gender
-//	"0201-increase"	: "z35", // "Unown Increase", // uknown gender
-//	"0201-join"		: "z35", // "Unown Join", // uknown gender
-//	"0201-keep"		: "z35", // "Unown Keep", // uknown gender
-//	"0201-laugh"	: "z35", // "Unown Laugh", // uknown gender
-//	"0201-make"		: "z35", // "Unown Make", // uknown gender
-//	"0201-nuzzle"	: "z35", // "Unown Nuzzle", // uknown gender
-//	"0201-observe"	: "z35", // "Unown Observe", // uknown gender
-//	"0201-perform"	: "z35", // "Unown Perform", // uknown gender
-//	"0201-quicken"	: "z35", // "Unown Quicken", // uknown gender
-//	"0201-reassure"	: "z35", // "Unown Reassure", // uknown gender
-//	"0201-search"	: "z35", // "Unown Search", // uknown gender
-//	"0201-tell"		: "z35", // "Unown Tell", // uknown gender
-//	"0201-undo"		: "z35", // "Unown Undo", // uknown gender
-//	"0201-vanish"	: "z35", // "Unown Vanish", // uknown gender
-//	"0201-want"		: "z35", // "Unown Want", // uknown gender
-//	"0201-xxxxx"	: "z35", // "Unown XXXXX", // uknown gender
-//	"0201-yield"	: "z35", // "Unown Yield", // uknown gender
-//	"0201-zoom"		: "z35", // "Unown Zoom", // uknown gender
+	"0201-bear"		: "z35", // "Unown Bear", // uknown gender
+	"0201-chase"	: "z35", // "Unown Chase", // uknown gender
+	"0201-direct"	: "z35", // "Unown Direct", // uknown gender
+	"0201-engage"	: "z35", // "Unown Engage", // uknown gender
+	"0201-find"		: "z35", // "Unown Find", // uknown gender
+	"0201-give"		: "z35", // "Unown Give", // uknown gender
+	"0201-help"		: "z35", // "Unown Help", // uknown gender
+	"0201-increase"	: "z35", // "Unown Increase", // uknown gender
+	"0201-join"		: "z35", // "Unown Join", // uknown gender
+	"0201-keep"		: "z35", // "Unown Keep", // uknown gender
+	"0201-laugh"	: "z35", // "Unown Laugh", // uknown gender
+	"0201-make"		: "z35", // "Unown Make", // uknown gender
+	"0201-nuzzle"	: "z35", // "Unown Nuzzle", // uknown gender
+	"0201-observe"	: "z35", // "Unown Observe", // uknown gender
+	"0201-perform"	: "z35", // "Unown Perform", // uknown gender
+	"0201-quicken"	: "z35", // "Unown Quicken", // uknown gender
+	"0201-reassure"	: "z35", // "Unown Reassure", // uknown gender
+	"0201-search"	: "z35", // "Unown Search", // uknown gender
+	"0201-tell"		: "z35", // "Unown Tell", // uknown gender
+	"0201-undo"		: "z35", // "Unown Undo", // uknown gender
+	"0201-vanish"	: "z35", // "Unown Vanish", // uknown gender
+	"0201-want"		: "z35", // "Unown Want", // uknown gender
+	"0201-xxxxx"	: "z35", // "Unown XXXXX", // uknown gender
+	"0201-yield"	: "z35", // "Unown Yield", // uknown gender
+	"0201-zoom"		: "z35", // "Unown Zoom", // uknown gender
 /**/"0202"			: "00", // "Wobbuffet",
 /**/"0203"			: "00", // "Girafarig",
 /**/"0204"			: "00", // "Pineco",
@@ -629,33 +629,33 @@ const _Regdex_rGoSi =
 	"0092"			: "z29", // "Gastly",
 /**/"0093"			: "00", // "Haunter",
 /**/"0094"			: "00", // "Gengar",
-//	"0201"			: "z35", // "Unown", // uknown gender
+	"0201"			: "z35", // "Unown", // uknown gender
 	"0201-angry"	: "z35", // "Unown Angry", // uknown gender
-//	"0201-bear"		: "z35", // "Unown Bear", // uknown gender
-//	"0201-chase"	: "z35", // "Unown Chase", // uknown gender
-//	"0201-direct"	: "z35", // "Unown Direct", // uknown gender
-//	"0201-engage"	: "z35", // "Unown Engage", // uknown gender
-//	"0201-find"		: "z35", // "Unown Find", // uknown gender
-//	"0201-give"		: "z35", // "Unown Give", // uknown gender
-//	"0201-help"		: "z35", // "Unown Help", // uknown gender
-//	"0201-increase"	: "z35", // "Unown Increase", // uknown gender
-//	"0201-join"		: "z35", // "Unown Join", // uknown gender
-//	"0201-keep"		: "z35", // "Unown Keep", // uknown gender
-//	"0201-laugh"	: "z35", // "Unown Laugh", // uknown gender
-//	"0201-make"		: "z35", // "Unown Make", // uknown gender
-//	"0201-nuzzle"	: "z35", // "Unown Nuzzle", // uknown gender
-//	"0201-observe"	: "z35", // "Unown Observe", // uknown gender
-//	"0201-perform"	: "z35", // "Unown Perform", // uknown gender
-//	"0201-quicken"	: "z35", // "Unown Quicken", // uknown gender
-//	"0201-reassure"	: "z35", // "Unown Reassure", // uknown gender
-//	"0201-search"	: "z35", // "Unown Search", // uknown gender
-//	"0201-tell"		: "z35", // "Unown Tell", // uknown gender
-//	"0201-undo"		: "z35", // "Unown Undo", // uknown gender
-//	"0201-vanish"	: "z35", // "Unown Vanish", // uknown gender
-//	"0201-want"		: "z35", // "Unown Want", // uknown gender
-//	"0201-xxxxx"	: "z35", // "Unown XXXXX", // uknown gender
-//	"0201-yield"	: "z35", // "Unown Yield", // uknown gender
-//	"0201-zoom"		: "z35", // "Unown Zoom", // uknown gender
+	"0201-bear"		: "z35", // "Unown Bear", // uknown gender
+	"0201-chase"	: "z35", // "Unown Chase", // uknown gender
+	"0201-direct"	: "z35", // "Unown Direct", // uknown gender
+	"0201-engage"	: "z35", // "Unown Engage", // uknown gender
+	"0201-find"		: "z35", // "Unown Find", // uknown gender
+	"0201-give"		: "z35", // "Unown Give", // uknown gender
+	"0201-help"		: "z35", // "Unown Help", // uknown gender
+	"0201-increase"	: "z35", // "Unown Increase", // uknown gender
+	"0201-join"		: "z35", // "Unown Join", // uknown gender
+	"0201-keep"		: "z35", // "Unown Keep", // uknown gender
+	"0201-laugh"	: "z35", // "Unown Laugh", // uknown gender
+	"0201-make"		: "z35", // "Unown Make", // uknown gender
+	"0201-nuzzle"	: "z35", // "Unown Nuzzle", // uknown gender
+	"0201-observe"	: "z35", // "Unown Observe", // uknown gender
+	"0201-perform"	: "z35", // "Unown Perform", // uknown gender
+	"0201-quicken"	: "z35", // "Unown Quicken", // uknown gender
+	"0201-reassure"	: "z35", // "Unown Reassure", // uknown gender
+	"0201-search"	: "z35", // "Unown Search", // uknown gender
+	"0201-tell"		: "z35", // "Unown Tell", // uknown gender
+	"0201-undo"		: "z35", // "Unown Undo", // uknown gender
+	"0201-vanish"	: "z35", // "Unown Vanish", // uknown gender
+	"0201-want"		: "z35", // "Unown Want", // uknown gender
+	"0201-xxxxx"	: "z35", // "Unown XXXXX", // uknown gender
+	"0201-yield"	: "z35", // "Unown Yield", // uknown gender
+	"0201-zoom"		: "z35", // "Unown Zoom", // uknown gender
 	"0095"			: "z10", // "Onix", ROCKY (in-game trade)
 /**/"0208"			: "00", // "Steelix",
 	"0069"			: "z16", // "Bellsprout",
@@ -911,33 +911,33 @@ const _Regdex_rCr =
 	"0092"			: "00", // "Gastly",
 	"0093"			: "00", // "Haunter",
 	"0094"			: "00", // "Gengar",
-//	"0201"			: "00", // "Unown", // uknown gender
+	"0201"			: "00", // "Unown", // uknown gender
 	"0201-angry"	: "00", // "Unown Angry", // uknown gender
-//	"0201-bear"		: "00", // "Unown Bear", // uknown gender
-//	"0201-chase"	: "00", // "Unown Chase", // uknown gender
-//	"0201-direct"	: "00", // "Unown Direct", // uknown gender
-//	"0201-engage"	: "00", // "Unown Engage", // uknown gender
-//	"0201-find"		: "00", // "Unown Find", // uknown gender
-//	"0201-give"		: "00", // "Unown Give", // uknown gender
-//	"0201-help"		: "00", // "Unown Help", // uknown gender
-//	"0201-increase"	: "00", // "Unown Increase", // uknown gender
-//	"0201-join"		: "00", // "Unown Join", // uknown gender
-//	"0201-keep"		: "00", // "Unown Keep", // uknown gender
-//	"0201-laugh"	: "00", // "Unown Laugh", // uknown gender
-//	"0201-make"		: "00", // "Unown Make", // uknown gender
-//	"0201-nuzzle"	: "00", // "Unown Nuzzle", // uknown gender
-//	"0201-observe"	: "00", // "Unown Observe", // uknown gender
-//	"0201-perform"	: "00", // "Unown Perform", // uknown gender
-//	"0201-quicken"	: "00", // "Unown Quicken", // uknown gender
-//	"0201-reassure"	: "00", // "Unown Reassure", // uknown gender
-//	"0201-search"	: "00", // "Unown Search", // uknown gender
-//	"0201-tell"		: "00", // "Unown Tell", // uknown gender
-//	"0201-undo"		: "00", // "Unown Undo", // uknown gender
-//	"0201-vanish"	: "00", // "Unown Vanish", // uknown gender
-//	"0201-want"		: "00", // "Unown Want", // uknown gender
-//	"0201-xxxxx"	: "00", // "Unown XXXXX", // uknown gender
-//	"0201-yield"	: "00", // "Unown Yield", // uknown gender
-//	"0201-zoom"		: "00", // "Unown Zoom", // uknown gender
+	"0201-bear"		: "00", // "Unown Bear", // uknown gender
+	"0201-chase"	: "00", // "Unown Chase", // uknown gender
+	"0201-direct"	: "00", // "Unown Direct", // uknown gender
+	"0201-engage"	: "00", // "Unown Engage", // uknown gender
+	"0201-find"		: "00", // "Unown Find", // uknown gender
+	"0201-give"		: "00", // "Unown Give", // uknown gender
+	"0201-help"		: "00", // "Unown Help", // uknown gender
+	"0201-increase"	: "00", // "Unown Increase", // uknown gender
+	"0201-join"		: "00", // "Unown Join", // uknown gender
+	"0201-keep"		: "00", // "Unown Keep", // uknown gender
+	"0201-laugh"	: "00", // "Unown Laugh", // uknown gender
+	"0201-make"		: "00", // "Unown Make", // uknown gender
+	"0201-nuzzle"	: "00", // "Unown Nuzzle", // uknown gender
+	"0201-observe"	: "00", // "Unown Observe", // uknown gender
+	"0201-perform"	: "00", // "Unown Perform", // uknown gender
+	"0201-quicken"	: "00", // "Unown Quicken", // uknown gender
+	"0201-reassure"	: "00", // "Unown Reassure", // uknown gender
+	"0201-search"	: "00", // "Unown Search", // uknown gender
+	"0201-tell"		: "00", // "Unown Tell", // uknown gender
+	"0201-undo"		: "00", // "Unown Undo", // uknown gender
+	"0201-vanish"	: "00", // "Unown Vanish", // uknown gender
+	"0201-want"		: "00", // "Unown Want", // uknown gender
+	"0201-xxxxx"	: "00", // "Unown XXXXX", // uknown gender
+	"0201-yield"	: "00", // "Unown Yield", // uknown gender
+	"0201-zoom"		: "00", // "Unown Zoom", // uknown gender
 	"0095"			: "00", // "Onix", ROCKY (in-game trade)
 	"0208"			: "00", // "Steelix",
 	"0069"			: "00", // "Bellsprout",

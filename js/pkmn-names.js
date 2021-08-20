@@ -123,6 +123,7 @@
 	"0056"									: "Mankey",
 	"0057"									: "Primeape",
 	"0058"									: "Growlithe",
+	"0058-hisui"							: "Hisuian Growlithe",
 	"0059"									: "Arcanine",
 	"0060"									: "Poliwag",
 	"0061"									: "Poliwhirl",
@@ -1054,6 +1055,7 @@
 	"0626"									: "Bouffalant",
 	"0627"									: "Rufflet", // male only
 	"0628"									: "Braviary", // male only
+	"0628-hisui"							: "Hisuian Braviary",
 	"0629"									: "Vullaby", // female only
 	"0630"									: "Mandibuzz", // female only
 	"0631"									: "Heatmor",
@@ -1635,6 +1637,10 @@
 	"0898-ice"								: "Ice Rider Calyrex",
 	"0898-shadow"							: "Shadow Rider Calyrex",
 //	 TEMPORARY NUMBERING
+	"0899"									: "Wyrdeer",
+	"0900"									: "Basculegion",
+	"0900-red"								: "Red-striped Basculegion",
+	"0900-blue"								: "Blue-striped Basculegion",
 	"XXXX"									: "MissingNo."
 };
 
@@ -1729,6 +1735,7 @@ const _RegionNames =
 	"kalos"  : { n: "Kalos",   adj: "Kalosian",  },
 	"alola"  : { n: "Alola",   adj: "Alolan",    },
 	"galar"  : { n: "Galar",   adj: "Galarian",  },
+	"hisui"  : { n: "Hisui",   adj: "Hisuian",   },
 	// side games - Colosseum
 	"orre"   : { n: "Orre",    adj: "Orre-jin",  },
 	// side games - Ranger

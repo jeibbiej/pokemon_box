@@ -160,3 +160,8 @@ function toggleMenu()
 		x.style.display = "none";
 	}
 }
+
+function changeVer(newVer)
+{
+	updateURLParameter(window.location.href, "ver", newVer);
+}

@@ -12,6 +12,7 @@
 	<input type="file" id="file-selector" accept=".json">Import</input>
 	<div id="mainMenu">
 		<div id="btnMenu" onclick="toggleMenu()"></div>
+		<div id="divVer"></div>
 		<div id="divMenu"></div>
 	</div>
 <script lang="javascript">
@@ -58,6 +59,53 @@ imgWd = _Dex.imgWd * (game == HomeId ? 1 : 2);
 maxBox = _Dex.maxBox;
 divBox = _Dex.divBox;
 
+if (game < _GameVersions.Ru.id)
+{
+	// remove Unown
+	// national
+	delete _GameVersions.Go.nDex["0201"];
+	delete _GameVersions.Si.nDex["0201"];
+	delete _GameVersions.Cr.nDex["0201"];
+	// regional
+	delete _GameVersions.Go.rDex["0201"];
+	delete _GameVersions.Si.rDex["0201"];
+	delete _GameVersions.Cr.rDex["0201"];
+	// evolution
+	delete _GameVersions.Go.eDex["0201"];
+	delete _GameVersions.Si.eDex["0201"];
+	delete _GameVersions.Cr.eDex["0201"];
+}
+else if (game > _GameVersions.vcYe.id &&
+		game <= _GameVersions.vcCr.id)
+{
+	// remove Unown A-Z
+	const vcUnown =
+	[
+		"0201-angry",  "0201-bear",   "0201-chase",    "0201-direct",  "0201-engage",  "0201-find",
+		"0201-give",   "0201-help",   "0201-increase", "0201-join",    "0201-keep",    "0201-laugh",
+		"0201-make",   "0201-nuzzle", "0201-observe",  "0201-perform", "0201-quicken", "0201-reassure",
+		"0201-search", "0201-tell",   "0201-undo",     "0201-vanish",  "0201-want",    "0201-xxxxx",
+		"0201-yield",  "0201-zoom"
+	];
+
+	vcUnown.forEach(n201 =>
+	{
+		// national
+		delete _GameVersions.vcGo.nDex[n201];
+		delete _GameVersions.vcSi.nDex[n201];
+		delete _GameVersions.vcCr.nDex[n201];
+		// regional
+		delete _GameVersions.vcGo.rDex[n201];
+		delete _GameVersions.vcSi.rDex[n201];
+		delete _GameVersions.vcCr.rDex[n201];
+		// evolution
+		delete _GameVersions.vcGo.eDex[n201];
+		delete _GameVersions.vcSi.eDex[n201];
+		delete _GameVersions.vcCr.eDex[n201];
+	});
+}
+
+
 document.getElementById("btnMenu").innerHTML = `[${_Dex.name}...]`;
 
 document.write(`<button type="button" onclick="saveToLocal()">Export</button>`);
@@ -81,6 +129,11 @@ Object.entries(_GameVersions).forEach(gv =>
 			<img src='game_icon/${gv[1].ico}.png' class='menu-itm'
 			title='${gv[1].name}'></a></div>`;
 });
+
+menu = document.getElementById("divVer");
+menu.innerHTML += `<a class="btnVer" href='box.html?game=${_Dex.code}&ver=r'> [ R ] </a>`;
+menu.innerHTML += `<a class="btnVer" href='box.html?game=${_Dex.code}&ver=n'> [ N ] </a>`;
+menu.innerHTML += `<a class="btnVer" href='box.html?game=${_Dex.code}&ver=e'> [ E ] </a>`;
 
 // if (game == GameVersion._Sw || game == GameVersion._Sh)
 // {
@@ -198,7 +251,8 @@ for (const rdex in _Ndex)
 while (boxCntr <= maxBox)
 {
 	boxBody += `<td style='border:1px solid gray; width:50px; vertical-align:top;'><img src='${iconPath}`;
-	if (game < _GameVersions.Ru.id) // Gen 1 & 2
+	if (game < _GameVersions.Ru.id || 	// Gen 1 & 2
+		game > VirtualConsole)			// Virtual Console of Gen 1 and 2
 	{
 		boxBody += "00";
 	}
@@ -217,7 +271,8 @@ while (boxCntr <= maxBox)
 	boxCntr++;
 }
 boxHead += "-";
-if (game < _GameVersions.Ru.id) // Gen 1 & 2
+if (game < _GameVersions.Ru.id ||	// Gen 1 & 2
+	game > VirtualConsole)			// Virtual Console of Gen 1 and 2
 {
 	keyStr = String(key).padStart(3, "0");
 }
