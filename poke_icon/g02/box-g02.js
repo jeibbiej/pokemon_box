@@ -1,5 +1,5 @@
-const IcoPathGoSi 	= "poke_icon/g02/go-si/";
-const IcoPathCr		= "poke_icon/g02/cr/";
+const IcoPathGoSi 	= "poke_icon/g02/1/";
+const IcoPathCr		= "poke_icon/g02/1/";
 
 const ImgWd_G02		= 16;
 const MaxBox_G02	= 20;

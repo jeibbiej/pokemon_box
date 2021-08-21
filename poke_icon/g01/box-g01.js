@@ -1,5 +1,5 @@
-const IcoPathReBl 	= "poke_icon/g01/re-bl/";
-const IcoPathYe		= "poke_icon/g01/ye/";
+const IcoPathReBl 	= "poke_icon/g01/1/";
+const IcoPathYe		= "poke_icon/g01/2/";
 
 const ImgWd_G01		= 16;
 const MaxBox_G01	= 20;
@@ -186,8 +186,8 @@ const _Regdex_rYe =
 	"0022"		: "05", // "Fearow",
 	"0023"		: "07", // "Ekans",
 	"0024"		: "07", // "Arbok",
-	"0025"		: "08", // "Pikachu",
-	"0026"		: "08", // "Raichu",
+	"0025"		: "99", // "Pikachu",
+	"0026"		: "99", // "Raichu",
 	"0027"		: "02", // "Sandshrew",
 	"0028"		: "02", // "Sandslash",
 	"0029-f"	: "02", // "Nidoran♀", SPOT (in-game trade)
@@ -196,12 +196,12 @@ const _Regdex_rYe =
 	"0032-m"	: "02", // "Nidoran♂",
 	"0033"		: "02", // "Nidorino",
 	"0034"		: "02", // "Nidoking",
-	"0035"		: "09", // "Clefairy",
-	"0036"		: "09", // "Clefable",
+	"0035"		: "08", // "Clefairy",
+	"0036"		: "08", // "Clefable",
 	"0037"		: "06", // "Vulpix",
 	"0038"		: "06", // "Ninetales",
-	"0039"		: "09", // "Jigglypuff",
-	"0040"		: "09", // "Wigglytuff",
+	"0039"		: "08", // "Jigglypuff",
+	"0040"		: "08", // "Wigglytuff",
 	"0041"		: "02", // "Zubat",
 	"0042"		: "02", // "Golbat",
 	"0043"		: "01", // "Oddish",
@@ -242,8 +242,8 @@ const _Regdex_rYe =
 	"0078"		: "06", // "Rapidash",
 	"0079"		: "06", // "Slowpoke",
 	"0080"		: "02", // "Slowbro",
-	"0081"		: "10", // "Magnemite",
-	"0082"		: "10", // "Magneton",
+	"0081"		: "09", // "Magnemite",
+	"0082"		: "09", // "Magneton",
 	"0083"		: "05", // "Farfetch'd", DUX (in-game trade)
 	"0084"		: "05", // "Doduo",
 	"0085"		: "05", // "Dodrio",
@@ -251,8 +251,8 @@ const _Regdex_rYe =
 	"0087"		: "03", // "Dewgong",
 	"0088"		: "02", // "Grimer",
 	"0089"		: "02", // "Muk",
-	"0090"		: "11", // "Shellder",
-	"0091"		: "11", // "Cloyster",
+	"0090"		: "10", // "Shellder",
+	"0091"		: "10", // "Cloyster",
 	"0092"		: "02", // "Gastly",
 	"0093"		: "02", // "Haunter",
 	"0094"		: "02", // "Gengar",
@@ -261,8 +261,8 @@ const _Regdex_rYe =
 /**/"0097"		: "00", // "Hypno",
 	"0098"		: "03", // "Krabby",
 	"0099"		: "03", // "Kingler",
-	"0100"		: "10", // "Voltorb",
-	"0101"		: "10", // "Electrode",DORIS (in-game trade)
+	"0100"		: "09", // "Voltorb",
+	"0101"		: "09", // "Electrode",DORIS (in-game trade)
 	"0102"		: "01", // "Exeggcute",
 /**/"0103"		: "00", // "Exeggutor",
 	"0104"		: "02", // "Cubone",
@@ -274,14 +274,14 @@ const _Regdex_rYe =
 /**/"0110"		: "00", // "Weezing",
 	"0111"		: "06", // "Rhyhorn",
 /**/"0112"		: "00", // "Rhydon",
-	"0113"		: "09", // "Chansey",
+	"0113"		: "08", // "Chansey",
 /**/"0114"		: "00", // "Tangela", CRINKLES (in-game trade)
 	"0115"		: "02", // "Kangaskhan",
 /**/"0116"		: "00", // "Horsea",
 /**/"0117"		: "00", // "Seadra",
 /**/"0118"		: "00", // "Goldeen",
 /**/"0119"		: "00", // "Seaking",
-	"0120"		: "11", // "Staryu",
+	"0120"		: "10", // "Staryu",
 /**/"0121"		: "00", // "Starmie",
 /**/"0122"		: "00", // "Mr. Mime", MARCEL (in-game trade)
 /**/"0123"		: "00", // "Scyther",
