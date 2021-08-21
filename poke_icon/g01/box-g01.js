@@ -127,7 +127,7 @@ const _Regdex_rReBl =
 	"0118"		: "03", // "Goldeen",
 	"0119"		: "03", // "Seaking",
 	"0120"		: "10", // "Staryu", // uknown gender
-/**/"0121"		: "00", // "Starmie", // uknown gender
+	"0121"		: "10", // "Starmie", // uknown gender
 	"0122"		: "02", // "Mr. Mime", MARCEL (in-game trade)
 	"0123"		: "04", // "Scyther",
 	"0124"		: "02", // "Jynx", // female only LOLA (in-game trade)
@@ -136,7 +136,7 @@ const _Regdex_rReBl =
 	"0127"		: "04", // "Pinsir",
 	"0128"		: "06", // "Tauros", // male only
 	"0129"		: "03", // "Magikarp",
-/**/"0130"		: "00", // "Gyarados",
+	"0130"		: "07", // "Gyarados",
 	"0131"		: "03", // "Lapras",
 	"0132"		: "02", // "Ditto", // uknown gender
 	"0133"		: "06", // "Eevee",
@@ -154,7 +154,7 @@ const _Regdex_rReBl =
 /**/"0145"		: "00", // "Zapdos", // uknown gender
 	"0146"		: "05", // "Moltres", // uknown gender
 	"0147"		: "07", // "Dratini",
-/**/"0148"		: "00", // "Dragonair",
+	"0148"		: "07", // "Dragonair",
 /**/"0149"		: "00", // "Dragonite",
 /**/"0150"		: "00", // "Mewtwo", // uknown gender
 	"0151"		: "02", // "Mew", // uknown gender
