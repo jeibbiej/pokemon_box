@@ -168,6 +168,7 @@ boxFoot = "";
 key = 0;
 idxStr = "0000";
 keyStr = "";
+console.log(`maxBox: ${maxBox}`);
 for (const rdex in _Ndex)
 {
 	if (rdex.substring(0, 4) != idxStr)
@@ -203,7 +204,7 @@ for (const rdex in _Ndex)
 		++boxIdx;
 	}
 
-	console.log(typeof(rdex) + " " + rdex + ": " + _Names[rdex]);
+	//console.log(typeof(rdex) + " " + rdex + ": " + _Names[rdex]);
 	if (version == "e")
 	{
 		boxBody += `<td style='border:1px solid gray; width:50px; vertical-align:top;'>`;
@@ -262,7 +263,7 @@ while (boxCntr <= maxBox)
 	{
 		boxBody += "0000";
 	}
-	boxBody += `-none.png' width='${imgWd}px'/>`;
+	boxBody += `-none.png' width='${imgWd}px' class="zukan-icon"/>`;
 	// boxBody += `-none.png' width='${imgWd}px' `;
 	// if (savedZukanGame.indexOf(rdex) == -1)
 	// 	boxBody += `class="gray" `;
