@@ -186,8 +186,8 @@ const _Regdex_rYe =
 	"0022"		: "05", // "Fearow",
 	"0023"		: "07", // "Ekans",
 	"0024"		: "07", // "Arbok",
-	"0025"		: "99", // "Pikachu",
-	"0026"		: "99", // "Raichu",
+	"0025"		: "11", // "Pikachu",
+	"0026"		: "11", // "Raichu",
 	"0027"		: "02", // "Sandshrew",
 	"0028"		: "02", // "Sandslash",
 	"0029-f"	: "02", // "Nidoran♀", SPOT (in-game trade)
