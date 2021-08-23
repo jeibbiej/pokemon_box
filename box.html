@@ -25,8 +25,8 @@ if (window.visualViewport)
 	function onWindowScroll()
 	{
 		windowtop.style.top = window.visualViewport.offsetTop + "px";
-		//windowtop.style.left = window.visualViewport.offsetLeft + "px";
-		windowtop.style.right = window.visualViewport.offsetLeft + window.visualViewport.width + "px";
+		windowtop.style.left = window.visualViewport.offsetLeft + "px";
+		//windowtop.style.right = window.visualViewport.offsetLeft + window.visualViewport.width + "px";
 		windowtop.style.width = window.visualViewport.width + "px";
 	}
 	onWindowScroll();
