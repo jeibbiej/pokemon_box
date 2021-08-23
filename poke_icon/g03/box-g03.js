@@ -6,7 +6,10 @@ const ImgWd_G03		= 32;
 const MaxBox_G03	= 30;
 const DivBox_G03	=  6;
 
-const _Regdex_nRuSaFRLGEm =
+//============================================================================
+// NATIONAL POKEDEX
+//============================================================================
+const _Regdex_n_300 =
 {
 	"0001"				: "0001",				// "Bulbasaur",
 	"0002"				: "0002",				// "Ivysaur",
@@ -431,26 +434,26 @@ const _Regdex_nRuSaFRLGEm =
 //	"0386-speed"		: "0386-speed",			// "Speed Deoxys", // uknown gender
 }
 
-const _Regdex_nRuSa =
+const _Regdex_n_301 =
 {
-	..._Regdex_nRuSaFRLGEm,
+	..._Regdex_n_300,
 	"0386"				: "0386",				// "Deoxys", // uknown gender
 }
 
-const _Regdex_nFR =
+const _Regdex_n_302 =
 {
-	..._Regdex_nRuSaFRLGEm,
+	..._Regdex_n_300,
 	"0386-attack"		: "0386-attack",		// "Attack Deoxys", // uknown gender
 }
 
-const _Regdex_nLG =
+const _Regdex_n_303 =
 {
-	..._Regdex_nRuSaFRLGEm,
+	..._Regdex_n_300,
 	"0386-defense"		: "0386-defense",		// "Defense Deoxys", // uknown gender
 }
 
-const _Regdex_nEm =
+const _Regdex_n_304 =
 {
-	..._Regdex_nRuSaFRLGEm,
+	..._Regdex_n_300,
 	"0386-speed"		: "0386-speed",			// "Speed Deoxys", // uknown gender
 }
