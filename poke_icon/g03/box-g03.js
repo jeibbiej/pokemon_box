@@ -678,36 +678,36 @@ const _Regdex_e_300 =
 	"0195"				: "0195",				// "Quagsire",
 	"0198"				: "0198",				// "Murkrow",
 	"0200"				: "0200",				// "Misdreavus",
-//	"0201"				: "0201",				// "Unown", // uknown gender
+	"0201"				: "0201",				// "Unown", // uknown gender
 //	"0201-angry"		: "0201-angry",			// "Unown Angry", // uknown gender
-	"0201-anger"		: "0201-anger",			// "Unown Angry", // uknown gender
-	"0201-bear"			: "0201-bear",			// "Unown Bear", // uknown gender
-	"0201-chase"		: "0201-chase",			// "Unown Chase", // uknown gender
-	"0201-direct"		: "0201-direct",		// "Unown Direct", // uknown gender
-	"0201-engage"		: "0201-engage",		// "Unown Engage", // uknown gender
-	"0201-find"			: "0201-find",			// "Unown Find", // uknown gender
-	"0201-give"			: "0201-give",			// "Unown Give", // uknown gender
-	"0201-help"			: "0201-help",			// "Unown Help", // uknown gender
-	"0201-increase"		: "0201-increase",		// "Unown Increase", // uknown gender
-	"0201-join"			: "0201-join",			// "Unown Join", // uknown gender
-	"0201-keep"			: "0201-keep",			// "Unown Keep", // uknown gender
-	"0201-laugh"		: "0201-laugh",			// "Unown Laugh", // uknown gender
-	"0201-make"			: "0201-make",			// "Unown Make", // uknown gender
-	"0201-nuzzle"		: "0201-nuzzle",		// "Unown Nuzzle", // uknown gender
-	"0201-observe"		: "0201-observe",		// "Unown Observe", // uknown gender
-	"0201-perform"		: "0201-perform",		// "Unown Perform", // uknown gender
-	"0201-quicken"		: "0201-quicken",		// "Unown Quicken", // uknown gender
-	"0201-reassure"		: "0201-reassure",		// "Unown Reassure", // uknown gender
-	"0201-search"		: "0201-search",		// "Unown Search", // uknown gender
-	"0201-tell"			: "0201-tell",			// "Unown Tell", // uknown gender
-	"0201-undo"			: "0201-undo",			// "Unown Undo", // uknown gender
-	"0201-vanish"		: "0201-vanish",		// "Unown Vanish", // uknown gender
-	"0201-want"			: "0201-want",			// "Unown Want", // uknown gender
-	"0201-xxxxx"		: "0201-xxxxx",			// "Unown XXXXX", // uknown gender
-	"0201-yield"		: "0201-yield",			// "Unown Yield", // uknown gender
-	"0201-zoom"			: "0201-zoom",			// "Unown Zoom", // uknown gender
-	"0201-exclamation"	: "0201-exclamation",	// "Unown !!!!!", // uknown gender
-	"0201-question"		: "0201-question",		// "Unown ?????", // uknown gender
+//	"0201-anger"		: "0201-anger",			// "Unown Angry", // uknown gender
+//	"0201-bear"			: "0201-bear",			// "Unown Bear", // uknown gender
+//	"0201-chase"		: "0201-chase",			// "Unown Chase", // uknown gender
+//	"0201-direct"		: "0201-direct",		// "Unown Direct", // uknown gender
+//	"0201-engage"		: "0201-engage",		// "Unown Engage", // uknown gender
+//	"0201-find"			: "0201-find",			// "Unown Find", // uknown gender
+//	"0201-give"			: "0201-give",			// "Unown Give", // uknown gender
+//	"0201-help"			: "0201-help",			// "Unown Help", // uknown gender
+//	"0201-increase"		: "0201-increase",		// "Unown Increase", // uknown gender
+//	"0201-join"			: "0201-join",			// "Unown Join", // uknown gender
+//	"0201-keep"			: "0201-keep",			// "Unown Keep", // uknown gender
+//	"0201-laugh"		: "0201-laugh",			// "Unown Laugh", // uknown gender
+//	"0201-make"			: "0201-make",			// "Unown Make", // uknown gender
+//	"0201-nuzzle"		: "0201-nuzzle",		// "Unown Nuzzle", // uknown gender
+//	"0201-observe"		: "0201-observe",		// "Unown Observe", // uknown gender
+//	"0201-perform"		: "0201-perform",		// "Unown Perform", // uknown gender
+//	"0201-quicken"		: "0201-quicken",		// "Unown Quicken", // uknown gender
+//	"0201-reassure"		: "0201-reassure",		// "Unown Reassure", // uknown gender
+//	"0201-search"		: "0201-search",		// "Unown Search", // uknown gender
+//	"0201-tell"			: "0201-tell",			// "Unown Tell", // uknown gender
+//	"0201-undo"			: "0201-undo",			// "Unown Undo", // uknown gender
+//	"0201-vanish"		: "0201-vanish",		// "Unown Vanish", // uknown gender
+//	"0201-want"			: "0201-want",			// "Unown Want", // uknown gender
+//	"0201-xxxxx"		: "0201-xxxxx",			// "Unown XXXXX", // uknown gender
+//	"0201-yield"		: "0201-yield",			// "Unown Yield", // uknown gender
+//	"0201-zoom"			: "0201-zoom",			// "Unown Zoom", // uknown gender
+//	"0201-exclamation"	: "0201-exclamation",	// "Unown !!!!!", // uknown gender
+//	"0201-question"		: "0201-question",		// "Unown ?????", // uknown gender
 	"0360"				: "0360",				// "Wynaut",
 	"0202"				: "0202",				// "Wobbuffet",
 	"0203"				: "0203",				// "Girafarig",
