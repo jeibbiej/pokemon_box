@@ -36,12 +36,12 @@ const _GameVersions =
 {
     Unk: {id: -1, icoPath: "", rDex: {}, nDex: {}, eDex: {}, code:"Unk", name: "<i>Unknown</i>"},
 
-    Re	: {id: MainSeries +  1,	ico: "custom/red",             icoPath: IcoPathReBl, rDex: {},            nDex: _Regdex_rReBl, eDex: {},            imgWd: ImgWd_G01, maxBox: MaxBox_G01, divBox: DivBox_G01, code: "Re",   name: "Pokémon Red"},
-	Bl	: {id: MainSeries +  2,	ico: "custom/blue",            icoPath: IcoPathReBl, rDex: {},            nDex: _Regdex_rReBl, eDex: {},            imgWd: ImgWd_G01, maxBox: MaxBox_G01, divBox: DivBox_G01, code: "Bl",   name: "Pokémon Blue"},
-	Ye	: {id: MainSeries +  3,	ico: "custom/yellow",          icoPath: IcoPathYe,   rDex: {},            nDex: _Regdex_rYe,   eDex: {},            imgWd: ImgWd_G01, maxBox: MaxBox_G01, divBox: DivBox_G01, code: "Ye",   name: "Pokémon Yellow"},
-	Go	: {id: MainSeries +  4,	ico: "custom/gold",            icoPath: IcoPathGoSi, rDex: _Regdex_rGoSi, nDex: _Regdex_nGoSi, eDex: _Regdex_eGoSi, imgWd: ImgWd_G02, maxBox: MaxBox_G02, divBox: DivBox_G02, code: "Go",   name: "Pokémon Gold"},
-	Si	: {id: MainSeries +  5,	ico: "custom/silver",          icoPath: IcoPathGoSi, rDex: _Regdex_rGoSi, nDex: _Regdex_nGoSi, eDex: _Regdex_eGoSi, imgWd: ImgWd_G02, maxBox: MaxBox_G02, divBox: DivBox_G02, code: "Si",   name: "Pokémon Silver"},
-	Cr	: {id: MainSeries +  6,	ico: "custom/crystal",         icoPath: IcoPathCr,   rDex: _Regdex_rCr,   nDex: _Regdex_nGoSi, eDex: _Regdex_eGoSi, imgWd: ImgWd_G02, maxBox: MaxBox_G02, divBox: DivBox_G02, code: "Cr",   name: "Pokémon Crystal"},
+    Re	: {id: MainSeries +  1,	ico: "custom/red",             icoPath: IcoPathReBl, rDex: {},            nDex: _Regdex_n_101, eDex: {},            imgWd: ImgWd_G01, maxBox: MaxBox_G01, divBox: DivBox_G01, code: "Re",   name: "Pokémon Red"},
+	Bl	: {id: MainSeries +  2,	ico: "custom/blue",            icoPath: IcoPathReBl, rDex: {},            nDex: _Regdex_n_101, eDex: {},            imgWd: ImgWd_G01, maxBox: MaxBox_G01, divBox: DivBox_G01, code: "Bl",   name: "Pokémon Blue"},
+	Ye	: {id: MainSeries +  3,	ico: "custom/yellow",          icoPath: IcoPathYe,   rDex: {},            nDex: _Regdex_n_102, eDex: {},            imgWd: ImgWd_G01, maxBox: MaxBox_G01, divBox: DivBox_G01, code: "Ye",   name: "Pokémon Yellow"},
+	Go	: {id: MainSeries +  4,	ico: "custom/gold",            icoPath: IcoPathGoSi, rDex: _Regdex_r_201, nDex: _Regdex_n_201, eDex: _Regdex_e_201, imgWd: ImgWd_G02, maxBox: MaxBox_G02, divBox: DivBox_G02, code: "Go",   name: "Pokémon Gold"},
+	Si	: {id: MainSeries +  5,	ico: "custom/silver",          icoPath: IcoPathGoSi, rDex: _Regdex_r_201, nDex: _Regdex_n_201, eDex: _Regdex_e_201, imgWd: ImgWd_G02, maxBox: MaxBox_G02, divBox: DivBox_G02, code: "Si",   name: "Pokémon Silver"},
+	Cr	: {id: MainSeries +  6,	ico: "custom/crystal",         icoPath: IcoPathCr,   rDex: _Regdex_r_201, nDex: _Regdex_n_201, eDex: _Regdex_e_201, imgWd: ImgWd_G02, maxBox: MaxBox_G02, divBox: DivBox_G02, code: "Cr",   name: "Pokémon Crystal"},
 	Ru	: {id: MainSeries +  7,	ico: "custom/ruby",            icoPath: IcoPathRuSa, rDex: {},            nDex: _Regdex_nRuSa, eDex: {},            imgWd: ImgWd_G03, maxBox: MaxBox_G03, divBox: DivBox_G03, code: "Ru",   name: "Pokémon Ruby"},
 	Sa	: {id: MainSeries +  8,	ico: "custom/sapphire",        icoPath: IcoPathRuSa, rDex: {},            nDex: _Regdex_nRuSa, eDex: {},            imgWd: ImgWd_G03, maxBox: MaxBox_G03, divBox: DivBox_G03, code: "Sa",   name: "Pokémon Sapphire"},
 	FR	: {id: MainSeries +  9,	ico: "custom/firered_",        icoPath: "",          rDex: {},            nDex: {},            eDex: {},            imgWd: 0,         maxBox: 0,          divBox: 0,          code: "FR",   name: "Pokémon FireRed"},
