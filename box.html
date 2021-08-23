@@ -17,6 +17,25 @@
 		<div id="divMenu"></div>
 	</div>
 <script lang="javascript">
+
+if (window.visualViewport)
+{
+	var windowtop = document.getElementById("mainMenu");
+	
+	function onWindowScroll()
+	{
+		windowtop.style.top = window.visualViewport.offsetTop + "px";
+		//windowtop.style.left = window.visualViewport.offsetLeft + "px";
+		windowtop.style.right = window.visualViewport.offsetLeft + window.visualViewport.width + "px";
+		windowtop.style.width = window.visualViewport.width + "px";
+	}
+	onWindowScroll();
+	window.visualViewport.addEventListener("resize", onWindowScroll);
+	window.visualViewport.addEventListener("scroll", onWindowScroll);
+	// https://developers.google.com/web/updates/2017/09/visual-viewport-api#gotchas
+	window.addEventListener('scroll', onWindowScroll);
+}	
+
 const fileSelector = document.getElementById('file-selector');
 fileSelector.addEventListener('change', (event) =>
 {
