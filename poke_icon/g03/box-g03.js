@@ -678,7 +678,7 @@ const _Regdex_e_300 =
 	"0195"				: "0195",				// "Quagsire",
 	"0198"				: "0198",				// "Murkrow",
 	"0200"				: "0200",				// "Misdreavus",
-	"0201"				: "0201",				// "Unown", // uknown gender
+	"0201"				: "0201-anger",				// "Unown", // uknown gender
 //	"0201-angry"		: "0201-angry",			// "Unown Angry", // uknown gender
 //	"0201-anger"		: "0201-anger",			// "Unown Angry", // uknown gender
 //	"0201-bear"			: "0201-bear",			// "Unown Bear", // uknown gender
