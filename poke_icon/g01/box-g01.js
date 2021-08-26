@@ -121,7 +121,7 @@ const _Regdex_n_101 =
 	"0109"		: "02", // "Koffing",
 	"0110"		: "02", // "Weezing",
 	"0111"		: "06", // "Rhyhorn",
-/**/"0112"		: "00", // "Rhydon",
+	"0112"		: "02", // "Rhydon",
 	"0113"		: "08", // "Chansey", // female only
 	"0114"		: "01", // "Tangela", CRINKLES (in-game trade)
 	"0115"		: "02", // "Kangaskhan", // female only
@@ -276,7 +276,7 @@ const _Regdex_n_102 =
 /**/"0109"		: "00", // "Koffing",
 /**/"0110"		: "00", // "Weezing",
 	"0111"		: "06", // "Rhyhorn",
-/**/"0112"		: "00", // "Rhydon",
+	"0112"		: "02", // "Rhydon",
 	"0113"		: "09", // "Chansey",
 /**/"0114"		: "00", // "Tangela", CRINKLES (in-game trade)
 	"0115"		: "02", // "Kangaskhan",
