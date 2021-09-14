@@ -428,7 +428,7 @@ const _Regdex_n_300 =
 	"0383"				: "0383",				// "Groudon", // uknown gender
 	"0384"				: "0384",				// "Rayquaza", // uknown gender
 	"0385"				: "0385",				// "Jirachi", // uknown gender
-//	"0386"				: "0386",				// "Deoxys", // uknown gender
+	"0386"				: "0386",				// "Deoxys", // uknown gender
 //	"0386-attack"		: "0386-attack",		// "Attack Deoxys", // uknown gender
 //	"0386-defense"		: "0386-defense",		// "Defense Deoxys", // uknown gender
 //	"0386-speed"		: "0386-speed",			// "Speed Deoxys", // uknown gender
@@ -443,19 +443,19 @@ const _Regdex_n_301 =
 const _Regdex_n_302 =
 {
 	..._Regdex_n_300,
-	"0386-attack"		: "0386-attack",		// "Attack Deoxys", // uknown gender
+	"0386"				: "0386-attack",		// "Attack Deoxys", // uknown gender
 }
 
 const _Regdex_n_303 =
 {
 	..._Regdex_n_300,
-	"0386-defense"		: "0386-defense",		// "Defense Deoxys", // uknown gender
+	"0386"				: "0386-defense",		// "Defense Deoxys", // uknown gender
 }
 
 const _Regdex_n_304 =
 {
 	..._Regdex_n_300,
-	"0386-speed"		: "0386-speed",			// "Speed Deoxys", // uknown gender
+	"0386"				: "0386-speed",			// "Speed Deoxys", // uknown gender
 }
 
 //============================================================================
@@ -880,7 +880,7 @@ const _Regdex_e_300 =
 	"0383"				: "0383",				// "Groudon", // uknown gender
 	"0384"				: "0384",				// "Rayquaza", // uknown gender
 	"0385"				: "0385",				// "Jirachi", // uknown gender
-//	"0386"				: "0386",				// "Deoxys", // uknown gender
+	"0386"				: "0386",				// "Deoxys", // uknown gender
 //	"0386-attack"		: "0386-attack",		// "Attack Deoxys", // uknown gender
 //	"0386-defense"		: "0386-defense",		// "Defense Deoxys", // uknown gender
 //	"0386-speed"		: "0386-speed",			// "Speed Deoxys", // uknown gender
@@ -896,21 +896,256 @@ const _Regdex_e_301 =
 const _Regdex_e_302 =
 {
 	..._Regdex_e_300,
-	"0386-attack"		: "0386-attack",		// "Attack Deoxys", // uknown gender
+	"0386"				: "0386-attack",		// "Attack Deoxys", // uknown gender
 }
 
 const _Regdex_e_303 =
 {
 	..._Regdex_e_300,
-	"0386-defense"		: "0386-defense",		// "Defense Deoxys", // uknown gender
+	"0386"				: "0386-defense",		// "Defense Deoxys", // uknown gender
 }
 
 const _Regdex_e_304 =
 {
 	..._Regdex_e_300,
-	"0386-speed"		: "0386-speed",			// "Speed Deoxys", // uknown gender
+	"0386"				: "0386-speed",			// "Speed Deoxys", // uknown gender
 }
 
 //============================================================================
 // REGIONAL POKEDEX
 //============================================================================
+const _Regdex_r_300 =
+{
+	"0252"				: "0252",				// "Treecko",
+	"0253"				: "0253",				// "Grovyle",
+	"0254"				: "0254",				// "Sceptile",
+	"0255"				: "0255",				// "Torchic",
+	"0256"				: "0256",				// "Combusken",
+	"0257"				: "0257",				// "Blaziken",
+	"0258"				: "0258",				// "Mudkip",
+	"0259"				: "0259",				// "Marshtomp",
+	"0260"				: "0260",				// "Swampert",
+	"0261"				: "0261",				// "Poochyena",
+	"0262"				: "0262",				// "Mightyena",
+	"0263"				: "0263",				// "Zigzagoon",
+	"0264"				: "0264",				// "Linoone",
+	"0265"				: "0265",				// "Wurmple",
+	"0266"				: "0266",				// "Silcoon",
+	"0267"				: "0267",				// "Beautifly",
+	"0268"				: "0268",				// "Cascoon",
+	"0269"				: "0269",				// "Dustox",
+	"0270"				: "0270",				// "Lotad",
+	"0271"				: "0271",				// "Lombre",
+	"0272"				: "0272",				// "Ludicolo",
+	"0273"				: "0273",				// "Seedot",
+	"0274"				: "0274",				// "Nuzleaf",
+	"0275"				: "0275",				// "Shiftry",
+	"0276"				: "0276",				// "Taillow",
+	"0277"				: "0277",				// "Swellow",
+	"0278"				: "0278",				// "Wingull",
+	"0279"				: "0279",				// "Pelipper",
+	"0280"				: "0280",				// "Ralts",
+	"0281"				: "0281",				// "Kirlia",
+	"0282"				: "0282",				// "Gardevoir",
+	"0283"				: "0283",				// "Surskit",
+	"0284"				: "0284",				// "Masquerain",
+	"0285"				: "0285",				// "Shroomish",
+	"0286"				: "0286",				// "Breloom",
+	"0287"				: "0287",				// "Slakoth",
+	"0288"				: "0288",				// "Vigoroth",
+	"0289"				: "0289",				// "Slaking",
+	"0063"				: "0063",				// "Abra",
+	"0064"				: "0064",				// "Kadabra",
+	"0065"				: "0065",				// "Alakazam",
+	"0290"				: "0290",				// "Nincada",
+	"0291"				: "0291",				// "Ninjask",
+	"0292"				: "0292",				// "Shedinja", // uknown gender
+	"0293"				: "0293",				// "Whismur",
+	"0294"				: "0294",				// "Loudred",
+	"0295"				: "0295",				// "Exploud",
+	"0296"				: "0296",				// "Makuhita",
+	"0297"				: "0297",				// "Hariyama",
+	"0118"				: "0118",				// "Goldeen",
+	"0119"				: "0119",				// "Seaking",
+	"0129"				: "0129",				// "Magikarp",
+	"0130"				: "0130",				// "Gyarados",
+	"0298"				: "0298",				// "Azurill",
+	"0183"				: "0183",				// "Marill",
+	"0184"				: "0184",				// "Azumarill",
+	"0074"				: "0074",				// "Geodude",
+	"0075"				: "0075",				// "Graveler",
+	"0076"				: "0076",				// "Golem",
+	"0299"				: "0299",				// "Nosepass",
+	"0300"				: "0300",				// "Skitty",
+	"0301"				: "0301",				// "Delcatty",
+	"0041"				: "0041",				// "Zubat",
+	"0042"				: "0042",				// "Golbat",
+	"0169"				: "0169",				// "Crobat",
+	"0072"				: "0072",				// "Tentacool",
+	"0073"				: "0073",				// "Tentacruel",
+	"0302"				: "0302",				// "Sableye",
+	"0303"				: "0303",				// "Mawile",
+	"0304"				: "0304",				// "Aron",
+	"0305"				: "0305",				// "Lairon",
+	"0306"				: "0306",				// "Aggron",
+	"0066"				: "0066",				// "Machop",
+	"0067"				: "0067",				// "Machoke",
+	"0068"				: "0068",				// "Machamp",
+	"0307"				: "0307",				// "Meditite",
+	"0308"				: "0308",				// "Medicham",
+	"0309"				: "0309",				// "Electrike",
+	"0310"				: "0310",				// "Manectric",
+	"0311"				: "0311",				// "Plusle",
+	"0312"				: "0312",				// "Minun",
+	"0081"				: "0081",				// "Magnemite",
+	"0082"				: "0082",				// "Magneton",
+	"0100"				: "0100",				// "Voltorb", // uknown gender
+	"0101"				: "0101",				// "Electrode", // uknown gender
+	"0313"				: "0313",				// "Volbeat", // male only
+	"0314"				: "0314",				// "Illumise", // female only
+	"0043"				: "0043",				// "Oddish",
+	"0044"				: "0044",				// "Gloom",
+	"0045"				: "0045",				// "Vileplume",
+	"0182"				: "0182",				// "Bellossom",
+	"0084"				: "0084",				// "Doduo",
+	"0085"				: "0085",				// "Dodrio",
+	"0315"				: "0315",				// "Roselia",
+	"0316"				: "0316",				// "Gulpin",
+	"0317"				: "0317",				// "Swalot",
+	"0318"				: "0318",				// "Carvanha",
+	"0319"				: "0319",				// "Sharpedo",
+	"0320"				: "0320",				// "Wailmer",
+	"0321"				: "0321",				// "Wailord",
+	"0322"				: "0322",				// "Numel",
+	"0323"				: "0323",				// "Camerupt",
+	"0218"				: "0218",				// "Slugma",
+	"0219"				: "0219",				// "Magcargo",
+	"0324"				: "0324",				// "Torkoal",
+	"0088"				: "0088",				// "Grimer",
+	"0089"				: "0089",				// "Muk",
+	"0109"				: "0109",				// "Koffing",
+	"0110"				: "0110",				// "Weezing",
+	"0325"				: "0325",				// "Spoink",
+	"0326"				: "0326",				// "Grumpig",
+	"0027"				: "0027",				// "Sandshrew",
+	"0028"				: "0028",				// "Sandslash",
+	"0327"				: "0327",				// "Spinda",
+	"0227"				: "0227",				// "Skarmory",
+	"0328"				: "0328",				// "Trapinch",
+	"0329"				: "0329",				// "Vibrava",
+	"0330"				: "0330",				// "Flygon",
+	"0331"				: "0331",				// "Cacnea",
+	"0332"				: "0332",				// "Cacturne",
+	"0333"				: "0333",				// "Swablu",
+	"0334"				: "0334",				// "Altaria",
+	"0335"				: "0335",				// "Zangoose",
+	"0336"				: "0336",				// "Seviper",
+	"0337"				: "0337",				// "Lunatone", // uknown gender
+	"0338"				: "0338",				// "Solrock", // uknown gender
+	"0339"				: "0339",				// "Barboach",
+	"0340"				: "0340",				// "Whiscash",
+	"0341"				: "0341",				// "Corphish",
+	"0342"				: "0342",				// "Crawdaunt",
+	"0343"				: "0343",				// "Baltoy", // uknown gender
+	"0344"				: "0344",				// "Claydol", // uknown gender
+	"0345"				: "0345",				// "Lileep",
+	"0346"				: "0346",				// "Cradily",
+	"0347"				: "0347",				// "Anorith",
+	"0348"				: "0348",				// "Armaldo",
+	"0174"				: "0174",				// "Igglybuff",
+	"0039"				: "0039",				// "Jigglypuff",
+	"0040"				: "0040",				// "Wigglytuff",
+	"0349"				: "0349",				// "Feebas",
+	"0350"				: "0350",				// "Milotic",
+	"0351"				: "0351",				// "Castform",
+//	"0351-sunny"		: "0351-sunny",			// "Sunny Castform",
+//	"0351-rainy"		: "0351-rainy",			// "Rainy Castform",
+//	"0351-snowy"		: "0351-snowy",			// "Snowy Castform",
+	"0120"				: "0120",				// "Staryu", // uknown gender
+	"0121"				: "0121",				// "Starmie", // uknown gender
+	"0352"				: "0352",				// "Kecleon",
+	"0353"				: "0353",				// "Shuppet",
+	"0354"				: "0354",				// "Banette",
+	"0355"				: "0355",				// "Duskull",
+	"0356"				: "0356",				// "Dusclops",
+	"0357"				: "0357",				// "Tropius",
+	"0358"				: "0358",				// "Chimecho",
+	"0359"				: "0359",				// "Absol",
+	"0037"				: "0037",				// "Vulpix",
+	"0038"				: "0038",				// "Ninetales",
+	"0172"				: "0172",				// "Pichu",
+	"0025"				: "0025",				// "Pikachu",
+	"0026"				: "0026",				// "Raichu",
+	"0054"				: "0054",				// "Psyduck",
+	"0055"				: "0055",				// "Golduck",
+	"0360"				: "0360",				// "Wynaut",
+	"0202"				: "0202",				// "Wobbuffet",
+	"0177"				: "0177",				// "Natu",
+	"0178"				: "0178",				// "Xatu",
+	"0203"				: "0203",				// "Girafarig",
+	"0231"				: "0231",				// "Phanpy",
+	"0232"				: "0232",				// "Donphan",
+	"0127"				: "0127",				// "Pinsir",
+	"0214"				: "0214",				// "Heracross",
+	"0111"				: "0111",				// "Rhyhorn",
+	"0112"				: "0112",				// "Rhydon",
+	"0361"				: "0361",				// "Snorunt",
+	"0362"				: "0362",				// "Glalie",
+	"0363"				: "0363",				// "Spheal",
+	"0364"				: "0364",				// "Sealeo",
+	"0365"				: "0365",				// "Walrein",
+	"0366"				: "0366",				// "Clamperl",
+	"0367"				: "0367",				// "Huntail",
+	"0368"				: "0368",				// "Gorebyss",
+	"0369"				: "0369",				// "Relicanth",
+	"0222"				: "0222",				// "Corsola",
+	"0170"				: "0170",				// "Chinchou",
+	"0171"				: "0171",				// "Lanturn",
+	"0370"				: "0370",				// "Luvdisc",
+	"0116"				: "0116",				// "Horsea",
+	"0117"				: "0117",				// "Seadra",
+	"0230"				: "0230",				// "Kingdra",
+	"0371"				: "0371",				// "Bagon",
+	"0372"				: "0372",				// "Shelgon",
+	"0373"				: "0373",				// "Salamence",
+	"0374"				: "0374",				// "Beldum", // uknown gender
+	"0375"				: "0375",				// "Metang", // uknown gender
+	"0376"				: "0376",				// "Metagross", // uknown gender
+	"0377"				: "0377",				// "Regirock", // uknown gender
+	"0378"				: "0378",				// "Regice", // uknown gender
+	"0379"				: "0379",				// "Registeel", // uknown gender
+	"0380"				: "0380",				// "Latias", // female only
+	"0381"				: "0381",				// "Latios", // male only
+	"0382"				: "0382",				// "Kyogre", // uknown gender
+	"0383"				: "0383",				// "Groudon", // uknown gender
+	"0384"				: "0384",				// "Rayquaza", // uknown gender
+	"0385"				: "0385",				// "Jirachi", // uknown gender
+	"0386"				: "0386",				// "Deoxys", // uknown gender
+//	"0386-attack"		: "0386-attack",		// "Attack Deoxys", // uknown gender
+//	"0386-defense"		: "0386-defense",		// "Defense Deoxys", // uknown gender
+//	"0386-speed"		: "0386-speed",			// "Speed Deoxys", // uknown gender
+}
+
+const _Regdex_r_301 =
+{
+	..._Regdex_r_300,
+	"0386"				: "0386",				// "Deoxys", // uknown gender
+}
+
+const _Regdex_r_302 =
+{
+	..._Regdex_r_300,
+	"0386"				: "0386-attack",		// "Attack Deoxys", // uknown gender
+}
+
+const _Regdex_r_303 =
+{
+	..._Regdex_r_300,
+	"0386"				: "0386-defense",		// "Defense Deoxys", // uknown gender
+}
+
+const _Regdex_r_304 =
+{
+	..._Regdex_r_300,
+	"0386"				: "0386-speed",			// "Speed Deoxys", // uknown gender
+}
