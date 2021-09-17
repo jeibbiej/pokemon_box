@@ -2,7 +2,8 @@ const IcoPathReBl 	= "poke_icon/g01/1/";
 const IcoPathYe		= "poke_icon/g01/2/";
 
 const ImgWd_G01		= 16;
-const MaxBox_G01	= 20;
+const BoxCap_G01	= 20;
+const MaxBox_G01	= 12;
 const DivBox_G01	=  5;
 
 //============================================================================

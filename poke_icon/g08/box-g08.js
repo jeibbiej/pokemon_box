@@ -2,7 +2,8 @@
 const IcoPathSSHome	= "poke_icon/g08/home/";
 
 const ImgWd_G08		= 68;
-const MaxBox_G08	= 30;
+const BoxCap_G08	= 30;
+const MaxBox_G08	= 32;
 const DivBox_G08	=  6;
 
 const _Regdex_rSwSh	=
