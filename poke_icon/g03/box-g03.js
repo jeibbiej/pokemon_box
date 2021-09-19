@@ -10,1143 +10,1229 @@ const DivBox_G03	=  6;
 //============================================================================
 // NATIONAL POKEDEX
 //============================================================================
-const _Regdex_n_300 =
-{
-	"0001"				: "0001",				// "Bulbasaur",
-	"0002"				: "0002",				// "Ivysaur",
-	"0003"				: "0003",				// "Venusaur",
-	"0004"				: "0004",				// "Charmander",
-	"0005"				: "0005",				// "Charmeleon",
-	"0006"				: "0006",				// "Charizard",
-	"0007"				: "0007",				// "Squirtle",
-	"0008"				: "0008",				// "Wartortle",
-	"0009"				: "0009",				// "Blastoise",
-	"0010"				: "0010",				// "Caterpie",
-	"0011"				: "0011",				// "Metapod",
-	"0012"				: "0012",				// "Butterfree",
-	"0013"				: "0013",				// "Weedle",
-	"0014"				: "0014",				// "Kakuna",
-	"0015"				: "0015",				// "Beedrill",
-	"0016"				: "0016",				// "Pidgey",
-	"0017"				: "0017",				// "Pidgeotto",
-	"0018"				: "0018",				// "Pidgeot",
-	"0019"				: "0019",				// "Rattata",
-	"0020"				: "0020",				// "Raticate",
-	"0021"				: "0021",				// "Spearow",
-	"0022"				: "0022",				// "Fearow",
-	"0023"				: "0023",				// "Ekans",
-	"0024"				: "0024",				// "Arbok",
-	"0025"				: "0025",				// "Pikachu",
-	"0026"				: "0026",				// "Raichu",
-	"0027"				: "0027",				// "Sandshrew",
-	"0028"				: "0028",				// "Sandslash",
-	"0029-f"			: "0029-f",				// "Nidoran♀",
-	"0030"				: "0030",				// "Nidorina",
-	"0031"				: "0031",				// "Nidoqueen",
-	"0032-m"			: "0032-m",				// "Nidoran♂",
-	"0033"				: "0033",				// "Nidorino",
-	"0034"				: "0034",				// "Nidoking",
-	"0035"				: "0035",				// "Clefairy",
-	"0036"				: "0036",				// "Clefable",
-	"0037"				: "0037",				// "Vulpix",
-	"0038"				: "0038",				// "Ninetales",
-	"0039"				: "0039",				// "Jigglypuff",
-	"0040"				: "0040",				// "Wigglytuff",
-	"0041"				: "0041",				// "Zubat",
-	"0042"				: "0042",				// "Golbat",
-	"0043"				: "0043",				// "Oddish",
-	"0044"				: "0044",				// "Gloom",
-	"0045"				: "0045",				// "Vileplume",
-	"0046"				: "0046",				// "Paras",
-	"0047"				: "0047",				// "Parasect",
-	"0048"				: "0048",				// "Venonat",
-	"0049"				: "0049",				// "Venomoth",
-	"0050"				: "0050",				// "Diglett",
-	"0051"				: "0051",				// "Dugtrio",
-	"0052"				: "0052",				// "Meowth",
-	"0053"				: "0053",				// "Persian",
-	"0054"				: "0054",				// "Psyduck",
-	"0055"				: "0055",				// "Golduck",
-	"0056"				: "0056",				// "Mankey",
-	"0057"				: "0057",				// "Primeape",
-	"0058"				: "0058",				// "Growlithe",
-	"0059"				: "0059",				// "Arcanine",
-	"0060"				: "0060",				// "Poliwag",
-	"0061"				: "0061",				// "Poliwhirl",
-	"0062"				: "0062",				// "Poliwrath",
-	"0063"				: "0063",				// "Abra",
-	"0064"				: "0064",				// "Kadabra",
-	"0065"				: "0065",				// "Alakazam",
-	"0066"				: "0066",				// "Machop",
-	"0067"				: "0067",				// "Machoke",
-	"0068"				: "0068",				// "Machamp",
-	"0069"				: "0069",				// "Bellsprout",
-	"0070"				: "0070",				// "Weepinbell",
-	"0071"				: "0071",				// "Victreebel",
-	"0072"				: "0072",				// "Tentacool",
-	"0073"				: "0073",				// "Tentacruel",
-	"0074"				: "0074",				// "Geodude",
-	"0075"				: "0075",				// "Graveler",
-	"0076"				: "0076",				// "Golem",
-	"0077"				: "0077",				// "Ponyta",
-	"0078"				: "0078",				// "Rapidash",
-	"0079"				: "0079",				// "Slowpoke",
-	"0080"				: "0080",				// "Slowbro",
-	"0081"				: "0081",				// "Magnemite",
-	"0082"				: "0082",				// "Magneton",
-	"0083"				: "0083",				// "Farfetch'd",
-	"0084"				: "0084",				// "Doduo",
-	"0085"				: "0085",				// "Dodrio",
-	"0086"				: "0086",				// "Seel",
-	"0087"				: "0087",				// "Dewgong",
-	"0088"				: "0088",				// "Grimer",
-	"0089"				: "0089",				// "Muk",
-	"0090"				: "0090",				// "Shellder",
-	"0091"				: "0091",				// "Cloyster",
-	"0092"				: "0092",				// "Gastly",
-	"0093"				: "0093",				// "Haunter",
-	"0094"				: "0094",				// "Gengar",
-	"0095"				: "0095",				// "Onix",
-	"0096"				: "0096",				// "Drowzee",
-	"0097"				: "0097",				// "Hypno",
-	"0098"				: "0098",				// "Krabby",
-	"0099"				: "0099",				// "Kingler",
-	"0100"				: "0100",				// "Voltorb", // uknown gender
-	"0101"				: "0101",				// "Electrode", // uknown gender
-	"0102"				: "0102",				// "Exeggcute",
-	"0103"				: "0103",				// "Exeggutor",
-	"0104"				: "0104",				// "Cubone",
-	"0105"				: "0105",				// "Marowak",
-	"0106"				: "0106",				// "Hitmonlee", // male only
-	"0107"				: "0107",				// "Hitmonchan", // male only
-	"0108"				: "0108",				// "Lickitung",
-	"0109"				: "0109",				// "Koffing",
-	"0110"				: "0110",				// "Weezing",
-	"0111"				: "0111",				// "Rhyhorn",
-	"0112"				: "0112",				// "Rhydon",
-	"0113"				: "0113",				// "Chansey", // female only
-	"0114"				: "0114",				// "Tangela",
-	"0115"				: "0115",				// "Kangaskhan", // female only
-	"0116"				: "0116",				// "Horsea",
-	"0117"				: "0117",				// "Seadra",
-	"0118"				: "0118",				// "Goldeen",
-	"0119"				: "0119",				// "Seaking",
-	"0120"				: "0120",				// "Staryu", // uknown gender
-	"0121"				: "0121",				// "Starmie", // uknown gender
-	"0122"				: "0122",				// "Mr. Mime",
-	"0123"				: "0123",				// "Scyther",
-	"0124"				: "0124",				// "Jynx", // female only
-	"0125"				: "0125",				// "Electabuzz",
-	"0126"				: "0126",				// "Magmar",
-	"0127"				: "0127",				// "Pinsir",
-	"0128"				: "0128",				// "Tauros", // male only
-	"0129"				: "0129",				// "Magikarp",
-	"0130"				: "0130",				// "Gyarados",
-	"0131"				: "0131",				// "Lapras",
-	"0132"				: "0132",				// "Ditto", // uknown gender
-	"0133"				: "0133",				// "Eevee",
-	"0134"				: "0134",				// "Vaporeon",
-	"0135"				: "0135",				// "Jolteon",
-	"0136"				: "0136",				// "Flareon",
-	"0137"				: "0137",				// "Porygon", // uknown gender
-	"0138"				: "0138",				// "Omanyte",
-	"0139"				: "0139",				// "Omastar",
-	"0140"				: "0140",				// "Kabuto",
-	"0141"				: "0141",				// "Kabutops",
-	"0142"				: "0142",				// "Aerodactyl",
-	"0143"				: "0143",				// "Snorlax",
-	"0144"				: "0144",				// "Articuno", // uknown gender
-	"0145"				: "0145",				// "Zapdos", // uknown gender
-	"0146"				: "0146",				// "Moltres", // uknown gender
-	"0147"				: "0147",				// "Dratini",
-	"0148"				: "0148",				// "Dragonair",
-	"0149"				: "0149",				// "Dragonite",
-	"0150"				: "0150",				// "Mewtwo", // uknown gender
-	"0151"				: "0151",				// "Mew", // uknown gender
-	"0152"				: "0152",				// "Chikorita",
-	"0153"				: "0153",				// "Bayleef",
-	"0154"				: "0154",				// "Meganium",
-	"0155"				: "0155",				// "Cyndaquil",
-	"0156"				: "0156",				// "Quilava",
-	"0157"				: "0157",				// "Typhlosion",
-	"0158"				: "0158",				// "Totodile",
-	"0159"				: "0159",				// "Croconaw",
-	"0160"				: "0160",				// "Feraligatr",
-	"0161"				: "0161",				// "Sentret",
-	"0162"				: "0162",				// "Furret",
-	"0163"				: "0163",				// "Hoothoot",
-	"0164"				: "0164",				// "Noctowl",
-	"0165"				: "0165",				// "Ledyba",
-	"0166"				: "0166",				// "Ledian",
-	"0167"				: "0167",				// "Spinarak",
-	"0168"				: "0168",				// "Ariados",
-	"0169"				: "0169",				// "Crobat",
-	"0170"				: "0170",				// "Chinchou",
-	"0171"				: "0171",				// "Lanturn",
-	"0172"				: "0172",				// "Pichu",
-	"0173"				: "0173",				// "Cleffa",
-	"0174"				: "0174",				// "Igglybuff",
-	"0175"				: "0175",				// "Togepi",
-	"0176"				: "0176",				// "Togetic",
-	"0177"				: "0177",				// "Natu",
-	"0178"				: "0178",				// "Xatu",
-	"0179"				: "0179",				// "Mareep",
-	"0180"				: "0180",				// "Flaaffy",
-	"0181"				: "0181",				// "Ampharos",
-	"0182"				: "0182",				// "Bellossom",
-	"0183"				: "0183",				// "Marill",
-	"0184"				: "0184",				// "Azumarill",
-	"0185"				: "0185",				// "Sudowoodo",
-	"0186"				: "0186",				// "Politoed",
-	"0187"				: "0187",				// "Hoppip",
-	"0188"				: "0188",				// "Skiploom",
-	"0189"				: "0189",				// "Jumpluff",
-	"0190"				: "0190",				// "Aipom",
-	"0191"				: "0191",				// "Sunkern",
-	"0192"				: "0192",				// "Sunflora",
-	"0193"				: "0193",				// "Yanma",
-	"0194"				: "0194",				// "Wooper",
-	"0195"				: "0195",				// "Quagsire",
-	"0196"				: "0196",				// "Espeon",
-	"0197"				: "0197",				// "Umbreon",
-	"0198"				: "0198",				// "Murkrow",
-	"0199"				: "0199",				// "Slowking",
-	"0200"				: "0200",				// "Misdreavus",
-//	"0201"				: "0201",				// "Unown", // uknown gender
-//	"0201-angry"		: "0201-angry",			// "Unown Angry", // uknown gender
-	"0201-anger"		: "0201-anger",			// "Unown Angry", // uknown gender
-	"0201-bear"			: "0201-bear",			// "Unown Bear", // uknown gender
-	"0201-chase"		: "0201-chase",			// "Unown Chase", // uknown gender
-	"0201-direct"		: "0201-direct",		// "Unown Direct", // uknown gender
-	"0201-engage"		: "0201-engage",		// "Unown Engage", // uknown gender
-	"0201-find"			: "0201-find",			// "Unown Find", // uknown gender
-	"0201-give"			: "0201-give",			// "Unown Give", // uknown gender
-	"0201-help"			: "0201-help",			// "Unown Help", // uknown gender
-	"0201-increase"		: "0201-increase",		// "Unown Increase", // uknown gender
-	"0201-join"			: "0201-join",			// "Unown Join", // uknown gender
-	"0201-keep"			: "0201-keep",			// "Unown Keep", // uknown gender
-	"0201-laugh"		: "0201-laugh",			// "Unown Laugh", // uknown gender
-	"0201-make"			: "0201-make",			// "Unown Make", // uknown gender
-	"0201-nuzzle"		: "0201-nuzzle",		// "Unown Nuzzle", // uknown gender
-	"0201-observe"		: "0201-observe",		// "Unown Observe", // uknown gender
-	"0201-perform"		: "0201-perform",		// "Unown Perform", // uknown gender
-	"0201-quicken"		: "0201-quicken",		// "Unown Quicken", // uknown gender
-	"0201-reassure"		: "0201-reassure",		// "Unown Reassure", // uknown gender
-	"0201-search"		: "0201-search",		// "Unown Search", // uknown gender
-	"0201-tell"			: "0201-tell",			// "Unown Tell", // uknown gender
-	"0201-undo"			: "0201-undo",			// "Unown Undo", // uknown gender
-	"0201-vanish"		: "0201-vanish",		// "Unown Vanish", // uknown gender
-	"0201-want"			: "0201-want",			// "Unown Want", // uknown gender
-	"0201-xxxxx"		: "0201-xxxxx",			// "Unown XXXXX", // uknown gender
-	"0201-yield"		: "0201-yield",			// "Unown Yield", // uknown gender
-	"0201-zoom"			: "0201-zoom",			// "Unown Zoom", // uknown gender
-	"0201-exclamation"	: "0201-exclamation",	// "Unown !!!!!", // uknown gender
-	"0201-question"		: "0201-question",		// "Unown ?????", // uknown gender
-	"0202"				: "0202",				// "Wobbuffet",
-	"0203"				: "0203",				// "Girafarig",
-	"0204"				: "0204",				// "Pineco",
-	"0205"				: "0205",				// "Forretress",
-	"0206"				: "0206",				// "Dunsparce",
-	"0207"				: "0207",				// "Gligar",
-	"0208"				: "0208",				// "Steelix",
-	"0209"				: "0209",				// "Snubbull",
-	"0210"				: "0210",				// "Granbull",
-	"0211"				: "0211",				// "Qwilfish",
-	"0212"				: "0212",				// "Scizor",
-	"0213"				: "0213",				// "Shuckle",
-	"0214"				: "0214",				// "Heracross",
-	"0215"				: "0215",				// "Sneasel",
-	"0216"				: "0216",				// "Teddiursa",
-	"0217"				: "0217",				// "Ursaring",
-	"0218"				: "0218",				// "Slugma",
-	"0219"				: "0219",				// "Magcargo",
-	"0220"				: "0220",				// "Swinub",
-	"0221"				: "0221",				// "Piloswine",
-	"0222"				: "0222",				// "Corsola",
-	"0223"				: "0223",				// "Remoraid",
-	"0224"				: "0224",				// "Octillery",
-	"0225"				: "0225",				// "Delibird",
-	"0226"				: "0226",				// "Mantine",
-	"0227"				: "0227",				// "Skarmory",
-	"0228"				: "0228",				// "Houndour",
-	"0229"				: "0229",				// "Houndoom",
-	"0230"				: "0230",				// "Kingdra",
-	"0231"				: "0231",				// "Phanpy",
-	"0232"				: "0232",				// "Donphan",
-	"0233"				: "0233",				// "Porygon2", // uknown gender
-	"0234"				: "0234",				// "Stantler",
-	"0235"				: "0235",				// "Smeargle",
-	"0236"				: "0236",				// "Tyrogue", // male only
-	"0237"				: "0237",				// "Hitmontop", // male only
-	"0238"				: "0238",				// "Smoochum", // female only
-	"0239"				: "0239",				// "Elekid",
-	"0240"				: "0240",				// "Magby",
-	"0241"				: "0241",				// "Miltank", // female only
-	"0242"				: "0242",				// "Blissey", // female only
-	"0243"				: "0243",				// "Raikou", // uknown gender
-	"0244"				: "0244",				// "Entei", // uknown gender
-	"0245"				: "0245",				// "Suicune", // uknown gender
-	"0246"				: "0246",				// "Larvitar",
-	"0247"				: "0247",				// "Pupitar",
-	"0248"				: "0248",				// "Tyranitar",
-	"0249"				: "0249",				// "Lugia", // uknown gender
-	"0250"				: "0250",				// "Ho-Oh", // uknown gender
-	"0251"				: "0251",				// "Celebi", // uknown gender
-	"0252"				: "0252",				// "Treecko",
-	"0253"				: "0253",				// "Grovyle",
-	"0254"				: "0254",				// "Sceptile",
-	"0255"				: "0255",				// "Torchic",
-	"0256"				: "0256",				// "Combusken",
-	"0257"				: "0257",				// "Blaziken",
-	"0258"				: "0258",				// "Mudkip",
-	"0259"				: "0259",				// "Marshtomp",
-	"0260"				: "0260",				// "Swampert",
-	"0261"				: "0261",				// "Poochyena",
-	"0262"				: "0262",				// "Mightyena",
-	"0263"				: "0263",				// "Zigzagoon",
-	"0264"				: "0264",				// "Linoone",
-	"0265"				: "0265",				// "Wurmple",
-	"0266"				: "0266",				// "Silcoon",
-	"0267"				: "0267",				// "Beautifly",
-	"0268"				: "0268",				// "Cascoon",
-	"0269"				: "0269",				// "Dustox",
-	"0270"				: "0270",				// "Lotad",
-	"0271"				: "0271",				// "Lombre",
-	"0272"				: "0272",				// "Ludicolo",
-	"0273"				: "0273",				// "Seedot",
-	"0274"				: "0274",				// "Nuzleaf",
-	"0275"				: "0275",				// "Shiftry",
-	"0276"				: "0276",				// "Taillow",
-	"0277"				: "0277",				// "Swellow",
-	"0278"				: "0278",				// "Wingull",
-	"0279"				: "0279",				// "Pelipper",
-	"0280"				: "0280",				// "Ralts",
-	"0281"				: "0281",				// "Kirlia",
-	"0282"				: "0282",				// "Gardevoir",
-	"0283"				: "0283",				// "Surskit",
-	"0284"				: "0284",				// "Masquerain",
-	"0285"				: "0285",				// "Shroomish",
-	"0286"				: "0286",				// "Breloom",
-	"0287"				: "0287",				// "Slakoth",
-	"0288"				: "0288",				// "Vigoroth",
-	"0289"				: "0289",				// "Slaking",
-	"0290"				: "0290",				// "Nincada",
-	"0291"				: "0291",				// "Ninjask",
-	"0292"				: "0292",				// "Shedinja", // uknown gender
-	"0293"				: "0293",				// "Whismur",
-	"0294"				: "0294",				// "Loudred",
-	"0295"				: "0295",				// "Exploud",
-	"0296"				: "0296",				// "Makuhita",
-	"0297"				: "0297",				// "Hariyama",
-	"0298"				: "0298",				// "Azurill",
-	"0299"				: "0299",				// "Nosepass",
-	"0300"				: "0300",				// "Skitty",
-	"0301"				: "0301",				// "Delcatty",
-	"0302"				: "0302",				// "Sableye",
-	"0303"				: "0303",				// "Mawile",
-	"0304"				: "0304",				// "Aron",
-	"0305"				: "0305",				// "Lairon",
-	"0306"				: "0306",				// "Aggron",
-	"0307"				: "0307",				// "Meditite",
-	"0308"				: "0308",				// "Medicham",
-	"0309"				: "0309",				// "Electrike",
-	"0310"				: "0310",				// "Manectric",
-	"0311"				: "0311",				// "Plusle",
-	"0312"				: "0312",				// "Minun",
-	"0313"				: "0313",				// "Volbeat", // male only
-	"0314"				: "0314",				// "Illumise", // female only
-	"0315"				: "0315",				// "Roselia",
-	"0316"				: "0316",				// "Gulpin",
-	"0317"				: "0317",				// "Swalot",
-	"0318"				: "0318",				// "Carvanha",
-	"0319"				: "0319",				// "Sharpedo",
-	"0320"				: "0320",				// "Wailmer",
-	"0321"				: "0321",				// "Wailord",
-	"0322"				: "0322",				// "Numel",
-	"0323"				: "0323",				// "Camerupt",
-	"0324"				: "0324",				// "Torkoal",
-	"0325"				: "0325",				// "Spoink",
-	"0326"				: "0326",				// "Grumpig",
-	"0327"				: "0327",				// "Spinda",
-	"0328"				: "0328",				// "Trapinch",
-	"0329"				: "0329",				// "Vibrava",
-	"0330"				: "0330",				// "Flygon",
-	"0331"				: "0331",				// "Cacnea",
-	"0332"				: "0332",				// "Cacturne",
-	"0333"				: "0333",				// "Swablu",
-	"0334"				: "0334",				// "Altaria",
-	"0335"				: "0335",				// "Zangoose",
-	"0336"				: "0336",				// "Seviper",
-	"0337"				: "0337",				// "Lunatone", // uknown gender
-	"0338"				: "0338",				// "Solrock", // uknown gender
-	"0339"				: "0339",				// "Barboach",
-	"0340"				: "0340",				// "Whiscash",
-	"0341"				: "0341",				// "Corphish",
-	"0342"				: "0342",				// "Crawdaunt",
-	"0343"				: "0343",				// "Baltoy", // uknown gender
-	"0344"				: "0344",				// "Claydol", // uknown gender
-	"0345"				: "0345",				// "Lileep",
-	"0346"				: "0346",				// "Cradily",
-	"0347"				: "0347",				// "Anorith",
-	"0348"				: "0348",				// "Armaldo",
-	"0349"				: "0349",				// "Feebas",
-	"0350"				: "0350",				// "Milotic",
-	"0351"				: "0351",				// "Castform",
-//	"0351-sunny"		: "0351-sunny",			// "Sunny Castform",
-//	"0351-rainy"		: "0351-rainy",			// "Rainy Castform",
-//	"0351-snowy"		: "0351-snowy",			// "Snowy Castform",
-	"0352"				: "0352",				// "Kecleon",
-	"0353"				: "0353",				// "Shuppet",
-	"0354"				: "0354",				// "Banette",
-	"0355"				: "0355",				// "Duskull",
-	"0356"				: "0356",				// "Dusclops",
-	"0357"				: "0357",				// "Tropius",
-	"0358"				: "0358",				// "Chimecho",
-	"0359"				: "0359",				// "Absol",
-	"0360"				: "0360",				// "Wynaut",
-	"0361"				: "0361",				// "Snorunt",
-	"0362"				: "0362",				// "Glalie",
-	"0363"				: "0363",				// "Spheal",
-	"0364"				: "0364",				// "Sealeo",
-	"0365"				: "0365",				// "Walrein",
-	"0366"				: "0366",				// "Clamperl",
-	"0367"				: "0367",				// "Huntail",
-	"0368"				: "0368",				// "Gorebyss",
-	"0369"				: "0369",				// "Relicanth",
-	"0370"				: "0370",				// "Luvdisc",
-	"0371"				: "0371",				// "Bagon",
-	"0372"				: "0372",				// "Shelgon",
-	"0373"				: "0373",				// "Salamence",
-	"0374"				: "0374",				// "Beldum", // uknown gender
-	"0375"				: "0375",				// "Metang", // uknown gender
-	"0376"				: "0376",				// "Metagross", // uknown gender
-	"0377"				: "0377",				// "Regirock", // uknown gender
-	"0378"				: "0378",				// "Regice", // uknown gender
-	"0379"				: "0379",				// "Registeel", // uknown gender
-	"0380"				: "0380",				// "Latias", // female only
-	"0381"				: "0381",				// "Latios", // male only
-	"0382"				: "0382",				// "Kyogre", // uknown gender
-	"0383"				: "0383",				// "Groudon", // uknown gender
-	"0384"				: "0384",				// "Rayquaza", // uknown gender
-	"0385"				: "0385",				// "Jirachi", // uknown gender
-	"0386"				: "0386",				// "Deoxys", // uknown gender
-//	"0386-attack"		: "0386-attack",		// "Attack Deoxys", // uknown gender
-//	"0386-defense"		: "0386-defense",		// "Defense Deoxys", // uknown gender
-//	"0386-speed"		: "0386-speed",			// "Speed Deoxys", // uknown gender
-}
-
 const _Regdex_n_301 =
 {
-	..._Regdex_n_300,
-	"0386"				: "0386",				// "Deoxys", // uknown gender
-}
-
-const _Regdex_n_302 =
-{
-	..._Regdex_n_300,
-	"0386"				: "0386-attack",		// "Attack Deoxys", // uknown gender
-}
-
-const _Regdex_n_303 =
-{
-	..._Regdex_n_300,
-	"0386"				: "0386-defense",		// "Defense Deoxys", // uknown gender
-}
-
-const _Regdex_n_304 =
-{
-	..._Regdex_n_300,
-	"0386"				: "0386-speed",			// "Speed Deoxys", // uknown gender
+	"0001"             : {ico: "0001",             flags: 0},                      // "Bulbasaur",
+	"0002"             : {ico: "0002",             flags: 0},                      // "Ivysaur",
+	"0003"             : {ico: "0003",             flags: 0},                      // "Venusaur",
+	"0004"             : {ico: "0004",             flags: 0},                      // "Charmander",
+	"0005"             : {ico: "0005",             flags: 0},                      // "Charmeleon",
+	"0006"             : {ico: "0006",             flags: 0},                      // "Charizard",
+	"0007"             : {ico: "0007",             flags: 0},                      // "Squirtle",
+	"0008"             : {ico: "0008",             flags: 0},                      // "Wartortle",
+	"0009"             : {ico: "0009",             flags: 0},                      // "Blastoise",
+	"0010"             : {ico: "0010",             flags: 0},                      // "Caterpie",
+	"0011"             : {ico: "0011",             flags: 0},                      // "Metapod",
+	"0012"             : {ico: "0012",             flags: 0},                      // "Butterfree",
+	"0013"             : {ico: "0013",             flags: 0},                      // "Weedle",
+	"0014"             : {ico: "0014",             flags: 0},                      // "Kakuna",
+	"0015"             : {ico: "0015",             flags: 0},                      // "Beedrill",
+	"0016"             : {ico: "0016",             flags: 0},                      // "Pidgey",
+	"0017"             : {ico: "0017",             flags: 0},                      // "Pidgeotto",
+	"0018"             : {ico: "0018",             flags: 0},                      // "Pidgeot",
+	"0019"             : {ico: "0019",             flags: 0},                      // "Rattata",
+	"0020"             : {ico: "0020",             flags: 0},                      // "Raticate",
+	"0021"             : {ico: "0021",             flags: 0},                      // "Spearow",
+	"0022"             : {ico: "0022",             flags: 0},                      // "Fearow",
+	"0023"             : {ico: "0023",             flags: 0},                      // "Ekans",
+	"0024"             : {ico: "0024",             flags: 0},                      // "Arbok",
+	"0025"             : {ico: "0025",             flags: 0},                      // "Pikachu",
+	"0026"             : {ico: "0026",             flags: 0},                      // "Raichu",
+	"0027"             : {ico: "0027",             flags: 0},                      // "Sandshrew",
+	"0028"             : {ico: "0028",             flags: 0},                      // "Sandslash",
+	"0029"             : {ico: "0029-f",           flags: FLAGS_MAJ_GENDER_BASE},  // "Nidoran",
+	"0029-f"           : {ico: "0029-f",           flags: FLAGS_MAJ_GENDER_DIFF},  // "Nidoran♀",
+	"0030"             : {ico: "0030",             flags: 0},                      // "Nidorina",
+	"0031"             : {ico: "0031",             flags: 0},                      // "Nidoqueen",
+	"0032"             : {ico: "0032-m",           flags: FLAGS_MAJ_GENDER_BASE},  // "Nidoran",
+	"0032-m"           : {ico: "0032-m",           flags: FLAGS_MAJ_GENDER_DIFF},  // "Nidoran♂",
+	"0033"             : {ico: "0033",             flags: 0},                      // "Nidorino",
+	"0034"             : {ico: "0034",             flags: 0},                      // "Nidoking",
+	"0035"             : {ico: "0035",             flags: 0},                      // "Clefairy",
+	"0036"             : {ico: "0036",             flags: 0},                      // "Clefable",
+	"0037"             : {ico: "0037",             flags: 0},                      // "Vulpix",
+	"0038"             : {ico: "0038",             flags: 0},                      // "Ninetales",
+	"0039"             : {ico: "0039",             flags: 0},                      // "Jigglypuff",
+	"0040"             : {ico: "0040",             flags: 0},                      // "Wigglytuff",
+	"0041"             : {ico: "0041",             flags: 0},                      // "Zubat",
+	"0042"             : {ico: "0042",             flags: 0},                      // "Golbat",
+	"0043"             : {ico: "0043",             flags: 0},                      // "Oddish",
+	"0044"             : {ico: "0044",             flags: 0},                      // "Gloom",
+	"0045"             : {ico: "0045",             flags: 0},                      // "Vileplume",
+	"0046"             : {ico: "0046",             flags: 0},                      // "Paras",
+	"0047"             : {ico: "0047",             flags: 0},                      // "Parasect",
+	"0048"             : {ico: "0048",             flags: 0},                      // "Venonat",
+	"0049"             : {ico: "0049",             flags: 0},                      // "Venomoth",
+	"0050"             : {ico: "0050",             flags: 0},                      // "Diglett",
+	"0051"             : {ico: "0051",             flags: 0},                      // "Dugtrio",
+	"0052"             : {ico: "0052",             flags: 0},                      // "Meowth",
+	"0053"             : {ico: "0053",             flags: 0},                      // "Persian",
+	"0054"             : {ico: "0054",             flags: 0},                      // "Psyduck",
+	"0055"             : {ico: "0055",             flags: 0},                      // "Golduck",
+	"0056"             : {ico: "0056",             flags: 0},                      // "Mankey",
+	"0057"             : {ico: "0057",             flags: 0},                      // "Primeape",
+	"0058"             : {ico: "0058",             flags: 0},                      // "Growlithe",
+	"0059"             : {ico: "0059",             flags: 0},                      // "Arcanine",
+	"0060"             : {ico: "0060",             flags: 0},                      // "Poliwag",
+	"0061"             : {ico: "0061",             flags: 0},                      // "Poliwhirl",
+	"0062"             : {ico: "0062",             flags: 0},                      // "Poliwrath",
+	"0063"             : {ico: "0063",             flags: 0},                      // "Abra",
+	"0064"             : {ico: "0064",             flags: 0},                      // "Kadabra",
+	"0065"             : {ico: "0065",             flags: 0},                      // "Alakazam",
+	"0066"             : {ico: "0066",             flags: 0},                      // "Machop",
+	"0067"             : {ico: "0067",             flags: 0},                      // "Machoke",
+	"0068"             : {ico: "0068",             flags: 0},                      // "Machamp",
+	"0069"             : {ico: "0069",             flags: 0},                      // "Bellsprout",
+	"0070"             : {ico: "0070",             flags: 0},                      // "Weepinbell",
+	"0071"             : {ico: "0071",             flags: 0},                      // "Victreebel",
+	"0072"             : {ico: "0072",             flags: 0},                      // "Tentacool",
+	"0073"             : {ico: "0073",             flags: 0},                      // "Tentacruel",
+	"0074"             : {ico: "0074",             flags: 0},                      // "Geodude",
+	"0075"             : {ico: "0075",             flags: 0},                      // "Graveler",
+	"0076"             : {ico: "0076",             flags: 0},                      // "Golem",
+	"0077"             : {ico: "0077",             flags: 0},                      // "Ponyta",
+	"0078"             : {ico: "0078",             flags: 0},                      // "Rapidash",
+	"0079"             : {ico: "0079",             flags: 0},                      // "Slowpoke",
+	"0080"             : {ico: "0080",             flags: 0},                      // "Slowbro",
+	"0081"             : {ico: "0081",             flags: 0},                      // "Magnemite",
+	"0082"             : {ico: "0082",             flags: 0},                      // "Magneton",
+	"0083"             : {ico: "0083",             flags: 0},                      // "Farfetch'd",
+	"0084"             : {ico: "0084",             flags: 0},                      // "Doduo",
+	"0085"             : {ico: "0085",             flags: 0},                      // "Dodrio",
+	"0086"             : {ico: "0086",             flags: 0},                      // "Seel",
+	"0087"             : {ico: "0087",             flags: 0},                      // "Dewgong",
+	"0088"             : {ico: "0088",             flags: 0},                      // "Grimer",
+	"0089"             : {ico: "0089",             flags: 0},                      // "Muk",
+	"0090"             : {ico: "0090",             flags: 0},                      // "Shellder",
+	"0091"             : {ico: "0091",             flags: 0},                      // "Cloyster",
+	"0092"             : {ico: "0092",             flags: 0},                      // "Gastly",
+	"0093"             : {ico: "0093",             flags: 0},                      // "Haunter",
+	"0094"             : {ico: "0094",             flags: 0},                      // "Gengar",
+	"0095"             : {ico: "0095",             flags: 0},                      // "Onix",
+	"0096"             : {ico: "0096",             flags: 0},                      // "Drowzee",
+	"0097"             : {ico: "0097",             flags: 0},                      // "Hypno",
+	"0098"             : {ico: "0098",             flags: 0},                      // "Krabby",
+	"0099"             : {ico: "0099",             flags: 0},                      // "Kingler",
+	"0100"             : {ico: "0100",             flags: 0},                      // "Voltorb", // uknown gender
+	"0101"             : {ico: "0101",             flags: 0},                      // "Electrode", // uknown gender
+	"0102"             : {ico: "0102",             flags: 0},                      // "Exeggcute",
+	"0103"             : {ico: "0103",             flags: 0},                      // "Exeggutor",
+	"0104"             : {ico: "0104",             flags: 0},                      // "Cubone",
+	"0105"             : {ico: "0105",             flags: 0},                      // "Marowak",
+	"0106"             : {ico: "0106",             flags: 0},                      // "Hitmonlee", // male only
+	"0107"             : {ico: "0107",             flags: 0},                      // "Hitmonchan", // male only
+	"0108"             : {ico: "0108",             flags: 0},                      // "Lickitung",
+	"0109"             : {ico: "0109",             flags: 0},                      // "Koffing",
+	"0110"             : {ico: "0110",             flags: 0},                      // "Weezing",
+	"0111"             : {ico: "0111",             flags: 0},                      // "Rhyhorn",
+	"0112"             : {ico: "0112",             flags: 0},                      // "Rhydon",
+	"0113"             : {ico: "0113",             flags: 0},                      // "Chansey", // female only
+	"0114"             : {ico: "0114",             flags: 0},                      // "Tangela",
+	"0115"             : {ico: "0115",             flags: 0},                      // "Kangaskhan", // female only
+	"0116"             : {ico: "0116",             flags: 0},                      // "Horsea",
+	"0117"             : {ico: "0117",             flags: 0},                      // "Seadra",
+	"0118"             : {ico: "0118",             flags: 0},                      // "Goldeen",
+	"0119"             : {ico: "0119",             flags: 0},                      // "Seaking",
+	"0120"             : {ico: "0120",             flags: 0},                      // "Staryu", // uknown gender
+	"0121"             : {ico: "0121",             flags: 0},                      // "Starmie", // uknown gender
+	"0122"             : {ico: "0122",             flags: 0},                      // "Mr. Mime",
+	"0123"             : {ico: "0123",             flags: 0},                      // "Scyther",
+	"0124"             : {ico: "0124",             flags: 0},                      // "Jynx", // female only
+	"0125"             : {ico: "0125",             flags: 0},                      // "Electabuzz",
+	"0126"             : {ico: "0126",             flags: 0},                      // "Magmar",
+	"0127"             : {ico: "0127",             flags: 0},                      // "Pinsir",
+	"0128"             : {ico: "0128",             flags: 0},                      // "Tauros", // male only
+	"0129"             : {ico: "0129",             flags: 0},                      // "Magikarp",
+	"0130"             : {ico: "0130",             flags: 0},                      // "Gyarados",
+	"0131"             : {ico: "0131",             flags: 0},                      // "Lapras",
+	"0132"             : {ico: "0132",             flags: 0},                      // "Ditto", // uknown gender
+	"0133"             : {ico: "0133",             flags: 0},                      // "Eevee",
+	"0134"             : {ico: "0134",             flags: 0},                      // "Vaporeon",
+	"0135"             : {ico: "0135",             flags: 0},                      // "Jolteon",
+	"0136"             : {ico: "0136",             flags: 0},                      // "Flareon",
+	"0137"             : {ico: "0137",             flags: 0},                      // "Porygon", // uknown gender
+	"0138"             : {ico: "0138",             flags: 0},                      // "Omanyte",
+	"0139"             : {ico: "0139",             flags: 0},                      // "Omastar",
+	"0140"             : {ico: "0140",             flags: 0},                      // "Kabuto",
+	"0141"             : {ico: "0141",             flags: 0},                      // "Kabutops",
+	"0142"             : {ico: "0142",             flags: 0},                      // "Aerodactyl",
+	"0143"             : {ico: "0143",             flags: 0},                      // "Snorlax",
+	"0144"             : {ico: "0144",             flags: 0},                      // "Articuno", // uknown gender
+	"0145"             : {ico: "0145",             flags: 0},                      // "Zapdos", // uknown gender
+	"0146"             : {ico: "0146",             flags: 0},                      // "Moltres", // uknown gender
+	"0147"             : {ico: "0147",             flags: 0},                      // "Dratini",
+	"0148"             : {ico: "0148",             flags: 0},                      // "Dragonair",
+	"0149"             : {ico: "0149",             flags: 0},                      // "Dragonite",
+	"0150"             : {ico: "0150",             flags: 0},                      // "Mewtwo", // uknown gender
+	"0151"             : {ico: "0151",             flags: 0},                      // "Mew", // uknown gender
+	"0152"             : {ico: "0152",             flags: 0},                      // "Chikorita",
+	"0153"             : {ico: "0153",             flags: 0},                      // "Bayleef",
+	"0154"             : {ico: "0154",             flags: 0},                      // "Meganium",
+	"0155"             : {ico: "0155",             flags: 0},                      // "Cyndaquil",
+	"0156"             : {ico: "0156",             flags: 0},                      // "Quilava",
+	"0157"             : {ico: "0157",             flags: 0},                      // "Typhlosion",
+	"0158"             : {ico: "0158",             flags: 0},                      // "Totodile",
+	"0159"             : {ico: "0159",             flags: 0},                      // "Croconaw",
+	"0160"             : {ico: "0160",             flags: 0},                      // "Feraligatr",
+	"0161"             : {ico: "0161",             flags: 0},                      // "Sentret",
+	"0162"             : {ico: "0162",             flags: 0},                      // "Furret",
+	"0163"             : {ico: "0163",             flags: 0},                      // "Hoothoot",
+	"0164"             : {ico: "0164",             flags: 0},                      // "Noctowl",
+	"0165"             : {ico: "0165",             flags: 0},                      // "Ledyba",
+	"0166"             : {ico: "0166",             flags: 0},                      // "Ledian",
+	"0167"             : {ico: "0167",             flags: 0},                      // "Spinarak",
+	"0168"             : {ico: "0168",             flags: 0},                      // "Ariados",
+	"0169"             : {ico: "0169",             flags: 0},                      // "Crobat",
+	"0170"             : {ico: "0170",             flags: 0},                      // "Chinchou",
+	"0171"             : {ico: "0171",             flags: 0},                      // "Lanturn",
+	"0172"             : {ico: "0172",             flags: 0},                      // "Pichu",
+	"0173"             : {ico: "0173",             flags: 0},                      // "Cleffa",
+	"0174"             : {ico: "0174",             flags: 0},                      // "Igglybuff",
+	"0175"             : {ico: "0175",             flags: 0},                      // "Togepi",
+	"0176"             : {ico: "0176",             flags: 0},                      // "Togetic",
+	"0177"             : {ico: "0177",             flags: 0},                      // "Natu",
+	"0178"             : {ico: "0178",             flags: 0},                      // "Xatu",
+	"0179"             : {ico: "0179",             flags: 0},                      // "Mareep",
+	"0180"             : {ico: "0180",             flags: 0},                      // "Flaaffy",
+	"0181"             : {ico: "0181",             flags: 0},                      // "Ampharos",
+	"0182"             : {ico: "0182",             flags: 0},                      // "Bellossom",
+	"0183"             : {ico: "0183",             flags: 0},                      // "Marill",
+	"0184"             : {ico: "0184",             flags: 0},                      // "Azumarill",
+	"0185"             : {ico: "0185",             flags: 0},                      // "Sudowoodo",
+	"0186"             : {ico: "0186",             flags: 0},                      // "Politoed",
+	"0187"             : {ico: "0187",             flags: 0},                      // "Hoppip",
+	"0188"             : {ico: "0188",             flags: 0},                      // "Skiploom",
+	"0189"             : {ico: "0189",             flags: 0},                      // "Jumpluff",
+	"0190"             : {ico: "0190",             flags: 0},                      // "Aipom",
+	"0191"             : {ico: "0191",             flags: 0},                      // "Sunkern",
+	"0192"             : {ico: "0192",             flags: 0},                      // "Sunflora",
+	"0193"             : {ico: "0193",             flags: 0},                      // "Yanma",
+	"0194"             : {ico: "0194",             flags: 0},                      // "Wooper",
+	"0195"             : {ico: "0195",             flags: 0},                      // "Quagsire",
+	"0196"             : {ico: "0196",             flags: 0},                      // "Espeon",
+	"0197"             : {ico: "0197",             flags: 0},                      // "Umbreon",
+	"0198"             : {ico: "0198",             flags: 0},                      // "Murkrow",
+	"0199"             : {ico: "0199",             flags: 0},                      // "Slowking",
+	"0200"             : {ico: "0200",             flags: 0},                      // "Misdreavus",
+	"0201"             : {ico: "0201",             flags: FLAGS_FORM_0201_BASE},   // "Unown", // uknown gender
+	"0201-angry"       : {ico: "0201-angry",       flags: FLAGS_FORM_0201},        // "Unown Angry", // uknown gender
+	"0201-bear"        : {ico: "0201-bear",        flags: FLAGS_FORM_0201},        // "Unown Bear", // uknown gender
+	"0201-chase"       : {ico: "0201-chase",       flags: FLAGS_FORM_0201},        // "Unown Chase", // uknown gender
+	"0201-direct"      : {ico: "0201-direct",      flags: FLAGS_FORM_0201},        // "Unown Direct", // uknown gender
+	"0201-engage"      : {ico: "0201-engage",      flags: FLAGS_FORM_0201},        // "Unown Engage", // uknown gender
+	"0201-find"        : {ico: "0201-find",        flags: FLAGS_FORM_0201},        // "Unown Find", // uknown gender
+	"0201-give"        : {ico: "0201-give",        flags: FLAGS_FORM_0201},        // "Unown Give", // uknown gender
+	"0201-help"        : {ico: "0201-help",        flags: FLAGS_FORM_0201},        // "Unown Help", // uknown gender
+	"0201-increase"    : {ico: "0201-increase",    flags: FLAGS_FORM_0201},        // "Unown Increase", // uknown gender
+	"0201-join"        : {ico: "0201-join",        flags: FLAGS_FORM_0201},        // "Unown Join", // uknown gender
+	"0201-keep"        : {ico: "0201-keep",        flags: FLAGS_FORM_0201},        // "Unown Keep", // uknown gender
+	"0201-laugh"       : {ico: "0201-laugh",       flags: FLAGS_FORM_0201},        // "Unown Laugh", // uknown gender
+	"0201-make"        : {ico: "0201-make",        flags: FLAGS_FORM_0201},        // "Unown Make", // uknown gender
+	"0201-nuzzle"      : {ico: "0201-nuzzle",      flags: FLAGS_FORM_0201},        // "Unown Nuzzle", // uknown gender
+	"0201-observe"     : {ico: "0201-observe",     flags: FLAGS_FORM_0201},        // "Unown Observe", // uknown gender
+	"0201-perform"     : {ico: "0201-perform",     flags: FLAGS_FORM_0201},        // "Unown Perform", // uknown gender
+	"0201-quicken"     : {ico: "0201-quicken",     flags: FLAGS_FORM_0201},        // "Unown Quicken", // uknown gender
+	"0201-reassure"    : {ico: "0201-reassure",    flags: FLAGS_FORM_0201},        // "Unown Reassure", // uknown gender
+	"0201-search"      : {ico: "0201-search",      flags: FLAGS_FORM_0201},        // "Unown Search", // uknown gender
+	"0201-tell"        : {ico: "0201-tell",        flags: FLAGS_FORM_0201},        // "Unown Tell", // uknown gender
+	"0201-undo"        : {ico: "0201-undo",        flags: FLAGS_FORM_0201},        // "Unown Undo", // uknown gender
+	"0201-vanish"      : {ico: "0201-vanish",      flags: FLAGS_FORM_0201},        // "Unown Vanish", // uknown gender
+	"0201-want"        : {ico: "0201-want",        flags: FLAGS_FORM_0201},        // "Unown Want", // uknown gender
+	"0201-xxxxx"       : {ico: "0201-xxxxx",       flags: FLAGS_FORM_0201},        // "Unown XXXXX", // uknown gender
+	"0201-yield"       : {ico: "0201-yield",       flags: FLAGS_FORM_0201},        // "Unown Yield", // uknown gender
+	"0201-zoom"        : {ico: "0201-zoom",        flags: FLAGS_FORM_0201},        // "Unown Zoom", // uknown gender
+	"0201-exclamation" : {ico: "0201-exclamation", flags: FLAGS_FORM_0201},        // "Unown !!!!!", // uknown gender
+	"0201-question"    : {ico: "0201-question",    flags: FLAGS_FORM_0201},        // "Unown ?????", // uknown gender
+	"0202"             : {ico: "0202",             flags: 0},                      // "Wobbuffet",
+	"0203"             : {ico: "0203",             flags: 0},                      // "Girafarig",
+	"0204"             : {ico: "0204",             flags: 0},                      // "Pineco",
+	"0205"             : {ico: "0205",             flags: 0},                      // "Forretress",
+	"0206"             : {ico: "0206",             flags: 0},                      // "Dunsparce",
+	"0207"             : {ico: "0207",             flags: 0},                      // "Gligar",
+	"0208"             : {ico: "0208",             flags: 0},                      // "Steelix",
+	"0209"             : {ico: "0209",             flags: 0},                      // "Snubbull",
+	"0210"             : {ico: "0210",             flags: 0},                      // "Granbull",
+	"0211"             : {ico: "0211",             flags: 0},                      // "Qwilfish",
+	"0212"             : {ico: "0212",             flags: 0},                      // "Scizor",
+	"0213"             : {ico: "0213",             flags: 0},                      // "Shuckle",
+	"0214"             : {ico: "0214",             flags: 0},                      // "Heracross",
+	"0215"             : {ico: "0215",             flags: 0},                      // "Sneasel",
+	"0216"             : {ico: "0216",             flags: 0},                      // "Teddiursa",
+	"0217"             : {ico: "0217",             flags: 0},                      // "Ursaring",
+	"0218"             : {ico: "0218",             flags: 0},                      // "Slugma",
+	"0219"             : {ico: "0219",             flags: 0},                      // "Magcargo",
+	"0220"             : {ico: "0220",             flags: 0},                      // "Swinub",
+	"0221"             : {ico: "0221",             flags: 0},                      // "Piloswine",
+	"0222"             : {ico: "0222",             flags: 0},                      // "Corsola",
+	"0223"             : {ico: "0223",             flags: 0},                      // "Remoraid",
+	"0224"             : {ico: "0224",             flags: 0},                      // "Octillery",
+	"0225"             : {ico: "0225",             flags: 0},                      // "Delibird",
+	"0226"             : {ico: "0226",             flags: 0},                      // "Mantine",
+	"0227"             : {ico: "0227",             flags: 0},                      // "Skarmory",
+	"0228"             : {ico: "0228",             flags: 0},                      // "Houndour",
+	"0229"             : {ico: "0229",             flags: 0},                      // "Houndoom",
+	"0230"             : {ico: "0230",             flags: 0},                      // "Kingdra",
+	"0231"             : {ico: "0231",             flags: 0},                      // "Phanpy",
+	"0232"             : {ico: "0232",             flags: 0},                      // "Donphan",
+	"0233"             : {ico: "0233",             flags: 0},                      // "Porygon2", // uknown gender
+	"0234"             : {ico: "0234",             flags: 0},                      // "Stantler",
+	"0235"             : {ico: "0235",             flags: 0},                      // "Smeargle",
+	"0236"             : {ico: "0236",             flags: 0},                      // "Tyrogue", // male only
+	"0237"             : {ico: "0237",             flags: 0},                      // "Hitmontop", // male only
+	"0238"             : {ico: "0238",             flags: 0},                      // "Smoochum", // female only
+	"0239"             : {ico: "0239",             flags: 0},                      // "Elekid",
+	"0240"             : {ico: "0240",             flags: 0},                      // "Magby",
+	"0241"             : {ico: "0241",             flags: 0},                      // "Miltank", // female only
+	"0242"             : {ico: "0242",             flags: 0},                      // "Blissey", // female only
+	"0243"             : {ico: "0243",             flags: 0},                      // "Raikou", // uknown gender
+	"0244"             : {ico: "0244",             flags: 0},                      // "Entei", // uknown gender
+	"0245"             : {ico: "0245",             flags: 0},                      // "Suicune", // uknown gender
+	"0246"             : {ico: "0246",             flags: 0},                      // "Larvitar",
+	"0247"             : {ico: "0247",             flags: 0},                      // "Pupitar",
+	"0248"             : {ico: "0248",             flags: 0},                      // "Tyranitar",
+	"0249"             : {ico: "0249",             flags: 0},                      // "Lugia", // uknown gender
+	"0250"             : {ico: "0250",             flags: 0},                      // "Ho-Oh", // uknown gender
+	"0251"             : {ico: "0251",             flags: 0},                      // "Celebi", // uknown gender
+	"0252"             : {ico: "0252",             flags: 0},                      // "Treecko",
+	"0253"             : {ico: "0253",             flags: 0},                      // "Grovyle",
+	"0254"             : {ico: "0254",             flags: 0},                      // "Sceptile",
+	"0255"             : {ico: "0255",             flags: 0},                      // "Torchic",
+	"0256"             : {ico: "0256",             flags: 0},                      // "Combusken",
+	"0257"             : {ico: "0257",             flags: 0},                      // "Blaziken",
+	"0258"             : {ico: "0258",             flags: 0},                      // "Mudkip",
+	"0259"             : {ico: "0259",             flags: 0},                      // "Marshtomp",
+	"0260"             : {ico: "0260",             flags: 0},                      // "Swampert",
+	"0261"             : {ico: "0261",             flags: 0},                      // "Poochyena",
+	"0262"             : {ico: "0262",             flags: 0},                      // "Mightyena",
+	"0263"             : {ico: "0263",             flags: 0},                      // "Zigzagoon",
+	"0264"             : {ico: "0264",             flags: 0},                      // "Linoone",
+	"0265"             : {ico: "0265",             flags: 0},                      // "Wurmple",
+	"0266"             : {ico: "0266",             flags: 0},                      // "Silcoon",
+	"0267"             : {ico: "0267",             flags: 0},                      // "Beautifly",
+	"0268"             : {ico: "0268",             flags: 0},                      // "Cascoon",
+	"0269"             : {ico: "0269",             flags: 0},                      // "Dustox",
+	"0270"             : {ico: "0270",             flags: 0},                      // "Lotad",
+	"0271"             : {ico: "0271",             flags: 0},                      // "Lombre",
+	"0272"             : {ico: "0272",             flags: 0},                      // "Ludicolo",
+	"0273"             : {ico: "0273",             flags: 0},                      // "Seedot",
+	"0274"             : {ico: "0274",             flags: 0},                      // "Nuzleaf",
+	"0275"             : {ico: "0275",             flags: 0},                      // "Shiftry",
+	"0276"             : {ico: "0276",             flags: 0},                      // "Taillow",
+	"0277"             : {ico: "0277",             flags: 0},                      // "Swellow",
+	"0278"             : {ico: "0278",             flags: 0},                      // "Wingull",
+	"0279"             : {ico: "0279",             flags: 0},                      // "Pelipper",
+	"0280"             : {ico: "0280",             flags: 0},                      // "Ralts",
+	"0281"             : {ico: "0281",             flags: 0},                      // "Kirlia",
+	"0282"             : {ico: "0282",             flags: 0},                      // "Gardevoir",
+	"0283"             : {ico: "0283",             flags: 0},                      // "Surskit",
+	"0284"             : {ico: "0284",             flags: 0},                      // "Masquerain",
+	"0285"             : {ico: "0285",             flags: 0},                      // "Shroomish",
+	"0286"             : {ico: "0286",             flags: 0},                      // "Breloom",
+	"0287"             : {ico: "0287",             flags: 0},                      // "Slakoth",
+	"0288"             : {ico: "0288",             flags: 0},                      // "Vigoroth",
+	"0289"             : {ico: "0289",             flags: 0},                      // "Slaking",
+	"0290"             : {ico: "0290",             flags: 0},                      // "Nincada",
+	"0291"             : {ico: "0291",             flags: 0},                      // "Ninjask",
+	"0292"             : {ico: "0292",             flags: 0},                      // "Shedinja", // uknown gender
+	"0293"             : {ico: "0293",             flags: 0},                      // "Whismur",
+	"0294"             : {ico: "0294",             flags: 0},                      // "Loudred",
+	"0295"             : {ico: "0295",             flags: 0},                      // "Exploud",
+	"0296"             : {ico: "0296",             flags: 0},                      // "Makuhita",
+	"0297"             : {ico: "0297",             flags: 0},                      // "Hariyama",
+	"0298"             : {ico: "0298",             flags: 0},                      // "Azurill",
+	"0299"             : {ico: "0299",             flags: 0},                      // "Nosepass",
+	"0300"             : {ico: "0300",             flags: 0},                      // "Skitty",
+	"0301"             : {ico: "0301",             flags: 0},                      // "Delcatty",
+	"0302"             : {ico: "0302",             flags: 0},                      // "Sableye",
+	"0303"             : {ico: "0303",             flags: 0},                      // "Mawile",
+	"0304"             : {ico: "0304",             flags: 0},                      // "Aron",
+	"0305"             : {ico: "0305",             flags: 0},                      // "Lairon",
+	"0306"             : {ico: "0306",             flags: 0},                      // "Aggron",
+	"0307"             : {ico: "0307",             flags: 0},                      // "Meditite",
+	"0308"             : {ico: "0308",             flags: 0},                      // "Medicham",
+	"0309"             : {ico: "0309",             flags: 0},                      // "Electrike",
+	"0310"             : {ico: "0310",             flags: 0},                      // "Manectric",
+	"0311"             : {ico: "0311",             flags: 0},                      // "Plusle",
+	"0312"             : {ico: "0312",             flags: 0},                      // "Minun",
+	"0313"             : {ico: "0313",             flags: 0},                      // "Volbeat", // male only
+	"0314"             : {ico: "0314",             flags: 0},                      // "Illumise", // female only
+	"0315"             : {ico: "0315",             flags: 0},                      // "Roselia",
+	"0316"             : {ico: "0316",             flags: 0},                      // "Gulpin",
+	"0317"             : {ico: "0317",             flags: 0},                      // "Swalot",
+	"0318"             : {ico: "0318",             flags: 0},                      // "Carvanha",
+	"0319"             : {ico: "0319",             flags: 0},                      // "Sharpedo",
+	"0320"             : {ico: "0320",             flags: 0},                      // "Wailmer",
+	"0321"             : {ico: "0321",             flags: 0},                      // "Wailord",
+	"0322"             : {ico: "0322",             flags: 0},                      // "Numel",
+	"0323"             : {ico: "0323",             flags: 0},                      // "Camerupt",
+	"0324"             : {ico: "0324",             flags: 0},                      // "Torkoal",
+	"0325"             : {ico: "0325",             flags: 0},                      // "Spoink",
+	"0326"             : {ico: "0326",             flags: 0},                      // "Grumpig",
+	"0327"             : {ico: "0327",             flags: 0},                      // "Spinda",
+	"0328"             : {ico: "0328",             flags: 0},                      // "Trapinch",
+	"0329"             : {ico: "0329",             flags: 0},                      // "Vibrava",
+	"0330"             : {ico: "0330",             flags: 0},                      // "Flygon",
+	"0331"             : {ico: "0331",             flags: 0},                      // "Cacnea",
+	"0332"             : {ico: "0332",             flags: 0},                      // "Cacturne",
+	"0333"             : {ico: "0333",             flags: 0},                      // "Swablu",
+	"0334"             : {ico: "0334",             flags: 0},                      // "Altaria",
+	"0335"             : {ico: "0335",             flags: 0},                      // "Zangoose",
+	"0336"             : {ico: "0336",             flags: 0},                      // "Seviper",
+	"0337"             : {ico: "0337",             flags: 0},                      // "Lunatone", // uknown gender
+	"0338"             : {ico: "0338",             flags: 0},                      // "Solrock", // uknown gender
+	"0339"             : {ico: "0339",             flags: 0},                      // "Barboach",
+	"0340"             : {ico: "0340",             flags: 0},                      // "Whiscash",
+	"0341"             : {ico: "0341",             flags: 0},                      // "Corphish",
+	"0342"             : {ico: "0342",             flags: 0},                      // "Crawdaunt",
+	"0343"             : {ico: "0343",             flags: 0},                      // "Baltoy", // uknown gender
+	"0344"             : {ico: "0344",             flags: 0},                      // "Claydol", // uknown gender
+	"0345"             : {ico: "0345",             flags: 0},                      // "Lileep",
+	"0346"             : {ico: "0346",             flags: 0},                      // "Cradily",
+	"0347"             : {ico: "0347",             flags: 0},                      // "Anorith",
+	"0348"             : {ico: "0348",             flags: 0},                      // "Armaldo",
+	"0349"             : {ico: "0349",             flags: 0},                      // "Feebas",
+	"0350"             : {ico: "0350",             flags: 0},                      // "Milotic",
+	"0351"             : {ico: "0351",             flags: FLAGS_BATTLE_FORM_BASE}, // "Castform",
+	"0351-sunny"       : {ico: "0351-sunny",       flags: FLAGS_BATTLE_FORM},      // "Sunny Castform",
+	"0351-rainy"       : {ico: "0351-rainy",       flags: FLAGS_BATTLE_FORM},      // "Rainy Castform",
+	"0351-snowy"       : {ico: "0351-snowy",       flags: FLAGS_BATTLE_FORM},      // "Snowy Castform",
+	"0352"             : {ico: "0352",             flags: 0},                      // "Kecleon",
+	"0353"             : {ico: "0353",             flags: 0},                      // "Shuppet",
+	"0354"             : {ico: "0354",             flags: 0},                      // "Banette",
+	"0355"             : {ico: "0355",             flags: 0},                      // "Duskull",
+	"0356"             : {ico: "0356",             flags: 0},                      // "Dusclops",
+	"0357"             : {ico: "0357",             flags: 0},                      // "Tropius",
+	"0358"             : {ico: "0358",             flags: 0},                      // "Chimecho",
+	"0359"             : {ico: "0359",             flags: 0},                      // "Absol",
+	"0360"             : {ico: "0360",             flags: 0},                      // "Wynaut",
+	"0361"             : {ico: "0361",             flags: 0},                      // "Snorunt",
+	"0362"             : {ico: "0362",             flags: 0},                      // "Glalie",
+	"0363"             : {ico: "0363",             flags: 0},                      // "Spheal",
+	"0364"             : {ico: "0364",             flags: 0},                      // "Sealeo",
+	"0365"             : {ico: "0365",             flags: 0},                      // "Walrein",
+	"0366"             : {ico: "0366",             flags: 0},                      // "Clamperl",
+	"0367"             : {ico: "0367",             flags: 0},                      // "Huntail",
+	"0368"             : {ico: "0368",             flags: 0},                      // "Gorebyss",
+	"0369"             : {ico: "0369",             flags: 0},                      // "Relicanth",
+	"0370"             : {ico: "0370",             flags: 0},                      // "Luvdisc",
+	"0371"             : {ico: "0371",             flags: 0},                      // "Bagon",
+	"0372"             : {ico: "0372",             flags: 0},                      // "Shelgon",
+	"0373"             : {ico: "0373",             flags: 0},                      // "Salamence",
+	"0374"             : {ico: "0374",             flags: 0},                      // "Beldum", // uknown gender
+	"0375"             : {ico: "0375",             flags: 0},                      // "Metang", // uknown gender
+	"0376"             : {ico: "0376",             flags: 0},                      // "Metagross", // uknown gender
+	"0377"             : {ico: "0377",             flags: 0},                      // "Regirock", // uknown gender
+	"0378"             : {ico: "0378",             flags: 0},                      // "Regice", // uknown gender
+	"0379"             : {ico: "0379",             flags: 0},                      // "Registeel", // uknown gender
+	"0380"             : {ico: "0380",             flags: 0},                      // "Latias", // female only
+	"0381"             : {ico: "0381",             flags: 0},                      // "Latios", // male only
+	"0382"             : {ico: "0382",             flags: 0},                      // "Kyogre", // uknown gender
+	"0383"             : {ico: "0383",             flags: 0},                      // "Groudon", // uknown gender
+	"0384"             : {ico: "0384",             flags: 0},                      // "Rayquaza", // uknown gender
+	"0385"             : {ico: "0385",             flags: 0},                      // "Jirachi", // uknown gender
+	"0386"             : {ico: "0386",             flags: FLAGS_FORM_0386_RuSa},   // "Deoxys", // uknown gender
+	"0386-attack"      : {ico: "0386-attack",      flags: FLAGS_FORM_0386_FR},     // "Attack Deoxys", // uknown gender
+	"0386-defense"     : {ico: "0386-defense",     flags: FLAGS_FORM_0386_LG},     // "Defense Deoxys", // uknown gender
+	"0386-speed"       : {ico: "0386-speed",       flags: FLAGS_FORM_0386_Em},     // "Speed Deoxys", // uknown gender
 }
 
 //============================================================================
 // EVOLUTION POKEDEX
 //============================================================================
-const _Regdex_e_300 =
-{
-	"0001"				: "0001",				// "Bulbasaur",
-	"0002"				: "0002",				// "Ivysaur",
-	"0003"				: "0003",				// "Venusaur",
-	"0004"				: "0004",				// "Charmander",
-	"0005"				: "0005",				// "Charmeleon",
-	"0006"				: "0006",				// "Charizard",
-	"0007"				: "0007",				// "Squirtle",
-	"0008"				: "0008",				// "Wartortle",
-	"0009"				: "0009",				// "Blastoise",
-	"0010"				: "0010",				// "Caterpie",
-	"0011"				: "0011",				// "Metapod",
-	"0012"				: "0012",				// "Butterfree",
-	"0013"				: "0013",				// "Weedle",
-	"0014"				: "0014",				// "Kakuna",
-	"0015"				: "0015",				// "Beedrill",
-	"0016"				: "0016",				// "Pidgey",
-	"0017"				: "0017",				// "Pidgeotto",
-	"0018"				: "0018",				// "Pidgeot",
-	"0019"				: "0019",				// "Rattata",
-	"0020"				: "0020",				// "Raticate",
-	"0021"				: "0021",				// "Spearow",
-	"0022"				: "0022",				// "Fearow",
-	"0023"				: "0023",				// "Ekans",
-	"0024"				: "0024",				// "Arbok",
-	"0172"				: "0172",				// "Pichu",
-	"0025"				: "0025",				// "Pikachu",
-	"0026"				: "0026",				// "Raichu",
-	"0027"				: "0027",				// "Sandshrew",
-	"0028"				: "0028",				// "Sandslash",
-	"0029-f"			: "0029-f",				// "Nidoran♀",
-	"0030"				: "0030",				// "Nidorina",
-	"0031"				: "0031",				// "Nidoqueen",
-	"0032-m"			: "0032-m",				// "Nidoran♂",
-	"0033"				: "0033",				// "Nidorino",
-	"0034"				: "0034",				// "Nidoking",
-	"0173"				: "0173",				// "Cleffa",
-	"0035"				: "0035",				// "Clefairy",
-	"0036"				: "0036",				// "Clefable",
-	"0037"				: "0037",				// "Vulpix",
-	"0038"				: "0038",				// "Ninetales",
-	"0174"				: "0174",				// "Igglybuff",
-	"0039"				: "0039",				// "Jigglypuff",
-	"0040"				: "0040",				// "Wigglytuff",
-	"0041"				: "0041",				// "Zubat",
-	"0042"				: "0042",				// "Golbat",
-	"0169"				: "0169",				// "Crobat",
-	"0043"				: "0043",				// "Oddish",
-	"0044"				: "0044",				// "Gloom",
-	"0045"				: "0045",				// "Vileplume",
-	"0182"				: "0182",				// "Bellossom",
-	"0046"				: "0046",				// "Paras",
-	"0047"				: "0047",				// "Parasect",
-	"0048"				: "0048",				// "Venonat",
-	"0049"				: "0049",				// "Venomoth",
-	"0050"				: "0050",				// "Diglett",
-	"0051"				: "0051",				// "Dugtrio",
-	"0052"				: "0052",				// "Meowth",
-	"0053"				: "0053",				// "Persian",
-	"0054"				: "0054",				// "Psyduck",
-	"0055"				: "0055",				// "Golduck",
-	"0056"				: "0056",				// "Mankey",
-	"0057"				: "0057",				// "Primeape",
-	"0058"				: "0058",				// "Growlithe",
-	"0059"				: "0059",				// "Arcanine",
-	"0060"				: "0060",				// "Poliwag",
-	"0061"				: "0061",				// "Poliwhirl",
-	"0062"				: "0062",				// "Poliwrath",
-	"0186"				: "0186",				// "Politoed",
-	"0063"				: "0063",				// "Abra",
-	"0064"				: "0064",				// "Kadabra",
-	"0065"				: "0065",				// "Alakazam",
-	"0066"				: "0066",				// "Machop",
-	"0067"				: "0067",				// "Machoke",
-	"0068"				: "0068",				// "Machamp",
-	"0069"				: "0069",				// "Bellsprout",
-	"0070"				: "0070",				// "Weepinbell",
-	"0071"				: "0071",				// "Victreebel",
-	"0072"				: "0072",				// "Tentacool",
-	"0073"				: "0073",				// "Tentacruel",
-	"0074"				: "0074",				// "Geodude",
-	"0075"				: "0075",				// "Graveler",
-	"0076"				: "0076",				// "Golem",
-	"0077"				: "0077",				// "Ponyta",
-	"0078"				: "0078",				// "Rapidash",
-	"0079"				: "0079",				// "Slowpoke",
-	"0080"				: "0080",				// "Slowbro",
-	"0199"				: "0199",				// "Slowking",
-	"0081"				: "0081",				// "Magnemite",
-	"0082"				: "0082",				// "Magneton",
-	"0083"				: "0083",				// "Farfetch'd",
-	"0084"				: "0084",				// "Doduo",
-	"0085"				: "0085",				// "Dodrio",
-	"0086"				: "0086",				// "Seel",
-	"0087"				: "0087",				// "Dewgong",
-	"0088"				: "0088",				// "Grimer",
-	"0089"				: "0089",				// "Muk",
-	"0090"				: "0090",				// "Shellder",
-	"0091"				: "0091",				// "Cloyster",
-	"0092"				: "0092",				// "Gastly",
-	"0093"				: "0093",				// "Haunter",
-	"0094"				: "0094",				// "Gengar",
-	"0095"				: "0095",				// "Onix",
-	"0208"				: "0208",				// "Steelix",
-	"0096"				: "0096",				// "Drowzee",
-	"0097"				: "0097",				// "Hypno",
-	"0098"				: "0098",				// "Krabby",
-	"0099"				: "0099",				// "Kingler",
-	"0100"				: "0100",				// "Voltorb", // uknown gender
-	"0101"				: "0101",				// "Electrode", // uknown gender
-	"0102"				: "0102",				// "Exeggcute",
-	"0103"				: "0103",				// "Exeggutor",
-	"0104"				: "0104",				// "Cubone",
-	"0105"				: "0105",				// "Marowak",
-	"0236"				: "0236",				// "Tyrogue", // male only
-	"0106"				: "0106",				// "Hitmonlee", // male only
-	"0107"				: "0107",				// "Hitmonchan", // male only
-	"0237"				: "0237",				// "Hitmontop", // male only
-	"0108"				: "0108",				// "Lickitung",
-	"0109"				: "0109",				// "Koffing",
-	"0110"				: "0110",				// "Weezing",
-	"0111"				: "0111",				// "Rhyhorn",
-	"0112"				: "0112",				// "Rhydon",
-	"0113"				: "0113",				// "Chansey", // female only
-	"0242"				: "0242",				// "Blissey", // female only
-	"0114"				: "0114",				// "Tangela",
-	"0115"				: "0115",				// "Kangaskhan", // female only
-	"0116"				: "0116",				// "Horsea",
-	"0117"				: "0117",				// "Seadra",
-	"0230"				: "0230",				// "Kingdra",
-	"0118"				: "0118",				// "Goldeen",
-	"0119"				: "0119",				// "Seaking",
-	"0120"				: "0120",				// "Staryu", // uknown gender
-	"0121"				: "0121",				// "Starmie", // uknown gender
-	"0122"				: "0122",				// "Mr. Mime",
-	"0123"				: "0123",				// "Scyther",
-	"0212"				: "0212",				// "Scizor",
-	"0238"				: "0238",				// "Smoochum", // female only
-	"0124"				: "0124",				// "Jynx", // female only
-	"0239"				: "0239",				// "Elekid",
-	"0125"				: "0125",				// "Electabuzz",
-	"0240"				: "0240",				// "Magby",
-	"0126"				: "0126",				// "Magmar",
-	"0127"				: "0127",				// "Pinsir",
-	"0128"				: "0128",				// "Tauros", // male only
-	"0129"				: "0129",				// "Magikarp",
-	"0130"				: "0130",				// "Gyarados",
-	"0131"				: "0131",				// "Lapras",
-	"0132"				: "0132",				// "Ditto", // uknown gender
-	"0133"				: "0133",				// "Eevee",
-	"0134"				: "0134",				// "Vaporeon",
-	"0135"				: "0135",				// "Jolteon",
-	"0136"				: "0136",				// "Flareon",
-	"0196"				: "0196",				// "Espeon",
-	"0197"				: "0197",				// "Umbreon",
-	"0137"				: "0137",				// "Porygon", // uknown gender
-	"0233"				: "0233",				// "Porygon2", // uknown gender
-	"0138"				: "0138",				// "Omanyte",
-	"0139"				: "0139",				// "Omastar",
-	"0140"				: "0140",				// "Kabuto",
-	"0141"				: "0141",				// "Kabutops",
-	"0142"				: "0142",				// "Aerodactyl",
-	"0345"				: "0345",				// "Lileep",
-	"0346"				: "0346",				// "Cradily",
-	"0347"				: "0347",				// "Anorith",
-	"0348"				: "0348",				// "Armaldo",
-	"0143"				: "0143",				// "Snorlax",
-	"0144"				: "0144",				// "Articuno", // uknown gender
-	"0145"				: "0145",				// "Zapdos", // uknown gender
-	"0146"				: "0146",				// "Moltres", // uknown gender
-	"0147"				: "0147",				// "Dratini",
-	"0148"				: "0148",				// "Dragonair",
-	"0149"				: "0149",				// "Dragonite",
-	"0150"				: "0150",				// "Mewtwo", // uknown gender
-	"0151"				: "0151",				// "Mew", // uknown gender
-	"0152"				: "0152",				// "Chikorita",
-	"0153"				: "0153",				// "Bayleef",
-	"0154"				: "0154",				// "Meganium",
-	"0155"				: "0155",				// "Cyndaquil",
-	"0156"				: "0156",				// "Quilava",
-	"0157"				: "0157",				// "Typhlosion",
-	"0158"				: "0158",				// "Totodile",
-	"0159"				: "0159",				// "Croconaw",
-	"0160"				: "0160",				// "Feraligatr",
-	"0161"				: "0161",				// "Sentret",
-	"0162"				: "0162",				// "Furret",
-	"0163"				: "0163",				// "Hoothoot",
-	"0164"				: "0164",				// "Noctowl",
-	"0165"				: "0165",				// "Ledyba",
-	"0166"				: "0166",				// "Ledian",
-	"0167"				: "0167",				// "Spinarak",
-	"0168"				: "0168",				// "Ariados",
-	"0170"				: "0170",				// "Chinchou",
-	"0171"				: "0171",				// "Lanturn",
-	"0175"				: "0175",				// "Togepi",
-	"0176"				: "0176",				// "Togetic",
-	"0177"				: "0177",				// "Natu",
-	"0178"				: "0178",				// "Xatu",
-	"0179"				: "0179",				// "Mareep",
-	"0180"				: "0180",				// "Flaaffy",
-	"0181"				: "0181",				// "Ampharos",
-	"0298"				: "0298",				// "Azurill",
-	"0183"				: "0183",				// "Marill",
-	"0184"				: "0184",				// "Azumarill",
-	"0185"				: "0185",				// "Sudowoodo",
-	"0187"				: "0187",				// "Hoppip",
-	"0188"				: "0188",				// "Skiploom",
-	"0189"				: "0189",				// "Jumpluff",
-	"0190"				: "0190",				// "Aipom",
-	"0191"				: "0191",				// "Sunkern",
-	"0192"				: "0192",				// "Sunflora",
-	"0193"				: "0193",				// "Yanma",
-	"0194"				: "0194",				// "Wooper",
-	"0195"				: "0195",				// "Quagsire",
-	"0198"				: "0198",				// "Murkrow",
-	"0200"				: "0200",				// "Misdreavus",
-	"0201"				: "0201-anger",				// "Unown", // uknown gender
-//	"0201-angry"		: "0201-angry",			// "Unown Angry", // uknown gender
-//	"0201-anger"		: "0201-anger",			// "Unown Angry", // uknown gender
-//	"0201-bear"			: "0201-bear",			// "Unown Bear", // uknown gender
-//	"0201-chase"		: "0201-chase",			// "Unown Chase", // uknown gender
-//	"0201-direct"		: "0201-direct",		// "Unown Direct", // uknown gender
-//	"0201-engage"		: "0201-engage",		// "Unown Engage", // uknown gender
-//	"0201-find"			: "0201-find",			// "Unown Find", // uknown gender
-//	"0201-give"			: "0201-give",			// "Unown Give", // uknown gender
-//	"0201-help"			: "0201-help",			// "Unown Help", // uknown gender
-//	"0201-increase"		: "0201-increase",		// "Unown Increase", // uknown gender
-//	"0201-join"			: "0201-join",			// "Unown Join", // uknown gender
-//	"0201-keep"			: "0201-keep",			// "Unown Keep", // uknown gender
-//	"0201-laugh"		: "0201-laugh",			// "Unown Laugh", // uknown gender
-//	"0201-make"			: "0201-make",			// "Unown Make", // uknown gender
-//	"0201-nuzzle"		: "0201-nuzzle",		// "Unown Nuzzle", // uknown gender
-//	"0201-observe"		: "0201-observe",		// "Unown Observe", // uknown gender
-//	"0201-perform"		: "0201-perform",		// "Unown Perform", // uknown gender
-//	"0201-quicken"		: "0201-quicken",		// "Unown Quicken", // uknown gender
-//	"0201-reassure"		: "0201-reassure",		// "Unown Reassure", // uknown gender
-//	"0201-search"		: "0201-search",		// "Unown Search", // uknown gender
-//	"0201-tell"			: "0201-tell",			// "Unown Tell", // uknown gender
-//	"0201-undo"			: "0201-undo",			// "Unown Undo", // uknown gender
-//	"0201-vanish"		: "0201-vanish",		// "Unown Vanish", // uknown gender
-//	"0201-want"			: "0201-want",			// "Unown Want", // uknown gender
-//	"0201-xxxxx"		: "0201-xxxxx",			// "Unown XXXXX", // uknown gender
-//	"0201-yield"		: "0201-yield",			// "Unown Yield", // uknown gender
-//	"0201-zoom"			: "0201-zoom",			// "Unown Zoom", // uknown gender
-//	"0201-exclamation"	: "0201-exclamation",	// "Unown !!!!!", // uknown gender
-//	"0201-question"		: "0201-question",		// "Unown ?????", // uknown gender
-	"0360"				: "0360",				// "Wynaut",
-	"0202"				: "0202",				// "Wobbuffet",
-	"0203"				: "0203",				// "Girafarig",
-	"0204"				: "0204",				// "Pineco",
-	"0205"				: "0205",				// "Forretress",
-	"0206"				: "0206",				// "Dunsparce",
-	"0207"				: "0207",				// "Gligar",
-	"0209"				: "0209",				// "Snubbull",
-	"0210"				: "0210",				// "Granbull",
-	"0211"				: "0211",				// "Qwilfish",
-	"0213"				: "0213",				// "Shuckle",
-	"0214"				: "0214",				// "Heracross",
-	"0215"				: "0215",				// "Sneasel",
-	"0216"				: "0216",				// "Teddiursa",
-	"0217"				: "0217",				// "Ursaring",
-	"0218"				: "0218",				// "Slugma",
-	"0219"				: "0219",				// "Magcargo",
-	"0220"				: "0220",				// "Swinub",
-	"0221"				: "0221",				// "Piloswine",
-	"0222"				: "0222",				// "Corsola",
-	"0223"				: "0223",				// "Remoraid",
-	"0224"				: "0224",				// "Octillery",
-	"0225"				: "0225",				// "Delibird",
-	"0226"				: "0226",				// "Mantine",
-	"0227"				: "0227",				// "Skarmory",
-	"0228"				: "0228",				// "Houndour",
-	"0229"				: "0229",				// "Houndoom",
-	"0231"				: "0231",				// "Phanpy",
-	"0232"				: "0232",				// "Donphan",
-	"0234"				: "0234",				// "Stantler",
-	"0235"				: "0235",				// "Smeargle",
-	"0241"				: "0241",				// "Miltank", // female only
-	"0243"				: "0243",				// "Raikou", // uknown gender
-	"0244"				: "0244",				// "Entei", // uknown gender
-	"0245"				: "0245",				// "Suicune", // uknown gender
-	"0246"				: "0246",				// "Larvitar",
-	"0247"				: "0247",				// "Pupitar",
-	"0248"				: "0248",				// "Tyranitar",
-	"0249"				: "0249",				// "Lugia", // uknown gender
-	"0250"				: "0250",				// "Ho-Oh", // uknown gender
-	"0251"				: "0251",				// "Celebi", // uknown gender
-	"0252"				: "0252",				// "Treecko",
-	"0253"				: "0253",				// "Grovyle",
-	"0254"				: "0254",				// "Sceptile",
-	"0255"				: "0255",				// "Torchic",
-	"0256"				: "0256",				// "Combusken",
-	"0257"				: "0257",				// "Blaziken",
-	"0258"				: "0258",				// "Mudkip",
-	"0259"				: "0259",				// "Marshtomp",
-	"0260"				: "0260",				// "Swampert",
-	"0261"				: "0261",				// "Poochyena",
-	"0262"				: "0262",				// "Mightyena",
-	"0263"				: "0263",				// "Zigzagoon",
-	"0264"				: "0264",				// "Linoone",
-	"0265"				: "0265",				// "Wurmple",
-	"0266"				: "0266",				// "Silcoon",
-	"0267"				: "0267",				// "Beautifly",
-	"0268"				: "0268",				// "Cascoon",
-	"0269"				: "0269",				// "Dustox",
-	"0270"				: "0270",				// "Lotad",
-	"0271"				: "0271",				// "Lombre",
-	"0272"				: "0272",				// "Ludicolo",
-	"0273"				: "0273",				// "Seedot",
-	"0274"				: "0274",				// "Nuzleaf",
-	"0275"				: "0275",				// "Shiftry",
-	"0276"				: "0276",				// "Taillow",
-	"0277"				: "0277",				// "Swellow",
-	"0278"				: "0278",				// "Wingull",
-	"0279"				: "0279",				// "Pelipper",
-	"0280"				: "0280",				// "Ralts",
-	"0281"				: "0281",				// "Kirlia",
-	"0282"				: "0282",				// "Gardevoir",
-	"0283"				: "0283",				// "Surskit",
-	"0284"				: "0284",				// "Masquerain",
-	"0285"				: "0285",				// "Shroomish",
-	"0286"				: "0286",				// "Breloom",
-	"0287"				: "0287",				// "Slakoth",
-	"0288"				: "0288",				// "Vigoroth",
-	"0289"				: "0289",				// "Slaking",
-	"0290"				: "0290",				// "Nincada",
-	"0291"				: "0291",				// "Ninjask",
-	"0292"				: "0292",				// "Shedinja", // uknown gender
-	"0293"				: "0293",				// "Whismur",
-	"0294"				: "0294",				// "Loudred",
-	"0295"				: "0295",				// "Exploud",
-	"0296"				: "0296",				// "Makuhita",
-	"0297"				: "0297",				// "Hariyama",
-	"0299"				: "0299",				// "Nosepass",
-	"0300"				: "0300",				// "Skitty",
-	"0301"				: "0301",				// "Delcatty",
-	"0302"				: "0302",				// "Sableye",
-	"0303"				: "0303",				// "Mawile",
-	"0304"				: "0304",				// "Aron",
-	"0305"				: "0305",				// "Lairon",
-	"0306"				: "0306",				// "Aggron",
-	"0307"				: "0307",				// "Meditite",
-	"0308"				: "0308",				// "Medicham",
-	"0309"				: "0309",				// "Electrike",
-	"0310"				: "0310",				// "Manectric",
-	"0311"				: "0311",				// "Plusle",
-	"0312"				: "0312",				// "Minun",
-	"0313"				: "0313",				// "Volbeat", // male only
-	"0314"				: "0314",				// "Illumise", // female only
-	"0315"				: "0315",				// "Roselia",
-	"0316"				: "0316",				// "Gulpin",
-	"0317"				: "0317",				// "Swalot",
-	"0318"				: "0318",				// "Carvanha",
-	"0319"				: "0319",				// "Sharpedo",
-	"0320"				: "0320",				// "Wailmer",
-	"0321"				: "0321",				// "Wailord",
-	"0322"				: "0322",				// "Numel",
-	"0323"				: "0323",				// "Camerupt",
-	"0324"				: "0324",				// "Torkoal",
-	"0325"				: "0325",				// "Spoink",
-	"0326"				: "0326",				// "Grumpig",
-	"0327"				: "0327",				// "Spinda",
-	"0328"				: "0328",				// "Trapinch",
-	"0329"				: "0329",				// "Vibrava",
-	"0330"				: "0330",				// "Flygon",
-	"0331"				: "0331",				// "Cacnea",
-	"0332"				: "0332",				// "Cacturne",
-	"0333"				: "0333",				// "Swablu",
-	"0334"				: "0334",				// "Altaria",
-	"0335"				: "0335",				// "Zangoose",
-	"0336"				: "0336",				// "Seviper",
-	"0337"				: "0337",				// "Lunatone", // uknown gender
-	"0338"				: "0338",				// "Solrock", // uknown gender
-	"0339"				: "0339",				// "Barboach",
-	"0340"				: "0340",				// "Whiscash",
-	"0341"				: "0341",				// "Corphish",
-	"0342"				: "0342",				// "Crawdaunt",
-	"0343"				: "0343",				// "Baltoy", // uknown gender
-	"0344"				: "0344",				// "Claydol", // uknown gender
-	"0349"				: "0349",				// "Feebas",
-	"0350"				: "0350",				// "Milotic",
-	"0351"				: "0351",				// "Castform",
-//	"0351-sunny"		: "0351-sunny",			// "Sunny Castform",
-//	"0351-rainy"		: "0351-rainy",			// "Rainy Castform",
-//	"0351-snowy"		: "0351-snowy",			// "Snowy Castform",
-	"0352"				: "0352",				// "Kecleon",
-	"0353"				: "0353",				// "Shuppet",
-	"0354"				: "0354",				// "Banette",
-	"0355"				: "0355",				// "Duskull",
-	"0356"				: "0356",				// "Dusclops",
-	"0357"				: "0357",				// "Tropius",
-	"0358"				: "0358",				// "Chimecho",
-	"0359"				: "0359",				// "Absol",
-	"0361"				: "0361",				// "Snorunt",
-	"0362"				: "0362",				// "Glalie",
-	"0363"				: "0363",				// "Spheal",
-	"0364"				: "0364",				// "Sealeo",
-	"0365"				: "0365",				// "Walrein",
-	"0366"				: "0366",				// "Clamperl",
-	"0367"				: "0367",				// "Huntail",
-	"0368"				: "0368",				// "Gorebyss",
-	"0369"				: "0369",				// "Relicanth",
-	"0370"				: "0370",				// "Luvdisc",
-	"0371"				: "0371",				// "Bagon",
-	"0372"				: "0372",				// "Shelgon",
-	"0373"				: "0373",				// "Salamence",
-	"0374"				: "0374",				// "Beldum", // uknown gender
-	"0375"				: "0375",				// "Metang", // uknown gender
-	"0376"				: "0376",				// "Metagross", // uknown gender
-	"0377"				: "0377",				// "Regirock", // uknown gender
-	"0378"				: "0378",				// "Regice", // uknown gender
-	"0379"				: "0379",				// "Registeel", // uknown gender
-	"0380"				: "0380",				// "Latias", // female only
-	"0381"				: "0381",				// "Latios", // male only
-	"0382"				: "0382",				// "Kyogre", // uknown gender
-	"0383"				: "0383",				// "Groudon", // uknown gender
-	"0384"				: "0384",				// "Rayquaza", // uknown gender
-	"0385"				: "0385",				// "Jirachi", // uknown gender
-	"0386"				: "0386",				// "Deoxys", // uknown gender
-//	"0386-attack"		: "0386-attack",		// "Attack Deoxys", // uknown gender
-//	"0386-defense"		: "0386-defense",		// "Defense Deoxys", // uknown gender
-//	"0386-speed"		: "0386-speed",			// "Speed Deoxys", // uknown gender
-	//========================================
-}
-
 const _Regdex_e_301 =
 {
-	..._Regdex_e_300,
-	"0386"				: "0386",				// "Deoxys", // uknown gender
-}
-
-const _Regdex_e_302 =
-{
-	..._Regdex_e_300,
-	"0386"				: "0386-attack",		// "Attack Deoxys", // uknown gender
-}
-
-const _Regdex_e_303 =
-{
-	..._Regdex_e_300,
-	"0386"				: "0386-defense",		// "Defense Deoxys", // uknown gender
-}
-
-const _Regdex_e_304 =
-{
-	..._Regdex_e_300,
-	"0386"				: "0386-speed",			// "Speed Deoxys", // uknown gender
+	"0001"             : {ico: "0001",             flags: 0},                      // "Bulbasaur",
+	"0002"             : {ico: "0002",             flags: 0},                      // "Ivysaur",
+	"0003"             : {ico: "0003",             flags: 0},                      // "Venusaur",
+	"0004"             : {ico: "0004",             flags: 0},                      // "Charmander",
+	"0005"             : {ico: "0005",             flags: 0},                      // "Charmeleon",
+	"0006"             : {ico: "0006",             flags: 0},                      // "Charizard",
+	"0007"             : {ico: "0007",             flags: 0},                      // "Squirtle",
+	"0008"             : {ico: "0008",             flags: 0},                      // "Wartortle",
+	"0009"             : {ico: "0009",             flags: 0},                      // "Blastoise",
+	"0010"             : {ico: "0010",             flags: 0},                      // "Caterpie",
+	"0011"             : {ico: "0011",             flags: 0},                      // "Metapod",
+	"0012"             : {ico: "0012",             flags: 0},                      // "Butterfree",
+	"0013"             : {ico: "0013",             flags: 0},                      // "Weedle",
+	"0014"             : {ico: "0014",             flags: 0},                      // "Kakuna",
+	"0015"             : {ico: "0015",             flags: 0},                      // "Beedrill",
+	"0016"             : {ico: "0016",             flags: 0},                      // "Pidgey",
+	"0017"             : {ico: "0017",             flags: 0},                      // "Pidgeotto",
+	"0018"             : {ico: "0018",             flags: 0},                      // "Pidgeot",
+	"0019"             : {ico: "0019",             flags: 0},                      // "Rattata",
+	"0020"             : {ico: "0020",             flags: 0},                      // "Raticate",
+	"0021"             : {ico: "0021",             flags: 0},                      // "Spearow",
+	"0022"             : {ico: "0022",             flags: 0},                      // "Fearow",
+	"0023"             : {ico: "0023",             flags: 0},                      // "Ekans",
+	"0024"             : {ico: "0024",             flags: 0},                      // "Arbok",
+	"0172"             : {ico: "0172",             flags: 0},                      // "Pichu",
+	"0025"             : {ico: "0025",             flags: 0},                      // "Pikachu",
+	"0026"             : {ico: "0026",             flags: 0},                      // "Raichu",
+	"0027"             : {ico: "0027",             flags: 0},                      // "Sandshrew",
+	"0028"             : {ico: "0028",             flags: 0},                      // "Sandslash",
+	"0029"             : {ico: "0029-f",           flags: FLAGS_MAJ_GENDER_BASE},  // "Nidoran",
+	"0029-f"           : {ico: "0029-f",           flags: FLAGS_MAJ_GENDER_DIFF},  // "Nidoran♀",
+	"0030"             : {ico: "0030",             flags: 0},                      // "Nidorina",
+	"0031"             : {ico: "0031",             flags: 0},                      // "Nidoqueen",
+	"0032"             : {ico: "0032-m",           flags: FLAGS_MAJ_GENDER_BASE},  // "Nidoran♂",
+	"0032-m"           : {ico: "0032-m",           flags: FLAGS_MAJ_GENDER_DIFF},  // "Nidoran♂",
+	"0033"             : {ico: "0033",             flags: 0},                      // "Nidorino",
+	"0034"             : {ico: "0034",             flags: 0},                      // "Nidoking",
+	"0173"             : {ico: "0173",             flags: 0},                      // "Cleffa",
+	"0035"             : {ico: "0035",             flags: 0},                      // "Clefairy",
+	"0036"             : {ico: "0036",             flags: 0},                      // "Clefable",
+	"0037"             : {ico: "0037",             flags: 0},                      // "Vulpix",
+	"0038"             : {ico: "0038",             flags: 0},                      // "Ninetales",
+	"0174"             : {ico: "0174",             flags: 0},                      // "Igglybuff",
+	"0039"             : {ico: "0039",             flags: 0},                      // "Jigglypuff",
+	"0040"             : {ico: "0040",             flags: 0},                      // "Wigglytuff",
+	"0041"             : {ico: "0041",             flags: 0},                      // "Zubat",
+	"0042"             : {ico: "0042",             flags: 0},                      // "Golbat",
+	"0169"             : {ico: "0169",             flags: 0},                      // "Crobat",
+	"0043"             : {ico: "0043",             flags: 0},                      // "Oddish",
+	"0044"             : {ico: "0044",             flags: 0},                      // "Gloom",
+	"0045"             : {ico: "0045",             flags: 0},                      // "Vileplume",
+	"0182"             : {ico: "0182",             flags: 0},                      // "Bellossom",
+	"0046"             : {ico: "0046",             flags: 0},                      // "Paras",
+	"0047"             : {ico: "0047",             flags: 0},                      // "Parasect",
+	"0048"             : {ico: "0048",             flags: 0},                      // "Venonat",
+	"0049"             : {ico: "0049",             flags: 0},                      // "Venomoth",
+	"0050"             : {ico: "0050",             flags: 0},                      // "Diglett",
+	"0051"             : {ico: "0051",             flags: 0},                      // "Dugtrio",
+	"0052"             : {ico: "0052",             flags: 0},                      // "Meowth",
+	"0053"             : {ico: "0053",             flags: 0},                      // "Persian",
+	"0054"             : {ico: "0054",             flags: 0},                      // "Psyduck",
+	"0055"             : {ico: "0055",             flags: 0},                      // "Golduck",
+	"0056"             : {ico: "0056",             flags: 0},                      // "Mankey",
+	"0057"             : {ico: "0057",             flags: 0},                      // "Primeape",
+	"0058"             : {ico: "0058",             flags: 0},                      // "Growlithe",
+	"0059"             : {ico: "0059",             flags: 0},                      // "Arcanine",
+	"0060"             : {ico: "0060",             flags: 0},                      // "Poliwag",
+	"0061"             : {ico: "0061",             flags: 0},                      // "Poliwhirl",
+	"0062"             : {ico: "0062",             flags: 0},                      // "Poliwrath",
+	"0186"             : {ico: "0186",             flags: 0},                      // "Politoed",
+	"0063"             : {ico: "0063",             flags: 0},                      // "Abra",
+	"0064"             : {ico: "0064",             flags: 0},                      // "Kadabra",
+	"0065"             : {ico: "0065",             flags: 0},                      // "Alakazam",
+	"0066"             : {ico: "0066",             flags: 0},                      // "Machop",
+	"0067"             : {ico: "0067",             flags: 0},                      // "Machoke",
+	"0068"             : {ico: "0068",             flags: 0},                      // "Machamp",
+	"0069"             : {ico: "0069",             flags: 0},                      // "Bellsprout",
+	"0070"             : {ico: "0070",             flags: 0},                      // "Weepinbell",
+	"0071"             : {ico: "0071",             flags: 0},                      // "Victreebel",
+	"0072"             : {ico: "0072",             flags: 0},                      // "Tentacool",
+	"0073"             : {ico: "0073",             flags: 0},                      // "Tentacruel",
+	"0074"             : {ico: "0074",             flags: 0},                      // "Geodude",
+	"0075"             : {ico: "0075",             flags: 0},                      // "Graveler",
+	"0076"             : {ico: "0076",             flags: 0},                      // "Golem",
+	"0077"             : {ico: "0077",             flags: 0},                      // "Ponyta",
+	"0078"             : {ico: "0078",             flags: 0},                      // "Rapidash",
+	"0079"             : {ico: "0079",             flags: 0},                      // "Slowpoke",
+	"0080"             : {ico: "0080",             flags: 0},                      // "Slowbro",
+	"0199"             : {ico: "0199",             flags: 0},                      // "Slowking",
+	"0081"             : {ico: "0081",             flags: 0},                      // "Magnemite",
+	"0082"             : {ico: "0082",             flags: 0},                      // "Magneton",
+	"0083"             : {ico: "0083",             flags: 0},                      // "Farfetch'd",
+	"0084"             : {ico: "0084",             flags: 0},                      // "Doduo",
+	"0085"             : {ico: "0085",             flags: 0},                      // "Dodrio",
+	"0086"             : {ico: "0086",             flags: 0},                      // "Seel",
+	"0087"             : {ico: "0087",             flags: 0},                      // "Dewgong",
+	"0088"             : {ico: "0088",             flags: 0},                      // "Grimer",
+	"0089"             : {ico: "0089",             flags: 0},                      // "Muk",
+	"0090"             : {ico: "0090",             flags: 0},                      // "Shellder",
+	"0091"             : {ico: "0091",             flags: 0},                      // "Cloyster",
+	"0092"             : {ico: "0092",             flags: 0},                      // "Gastly",
+	"0093"             : {ico: "0093",             flags: 0},                      // "Haunter",
+	"0094"             : {ico: "0094",             flags: 0},                      // "Gengar",
+	"0095"             : {ico: "0095",             flags: 0},                      // "Onix",
+	"0208"             : {ico: "0208",             flags: 0},                      // "Steelix",
+	"0096"             : {ico: "0096",             flags: 0},                      // "Drowzee",
+	"0097"             : {ico: "0097",             flags: 0},                      // "Hypno",
+	"0098"             : {ico: "0098",             flags: 0},                      // "Krabby",
+	"0099"             : {ico: "0099",             flags: 0},                      // "Kingler",
+	"0100"             : {ico: "0100",             flags: 0},                      // "Voltorb", // uknown gender
+	"0101"             : {ico: "0101",             flags: 0},                      // "Electrode", // uknown gender
+	"0102"             : {ico: "0102",             flags: 0},                      // "Exeggcute",
+	"0103"             : {ico: "0103",             flags: 0},                      // "Exeggutor",
+	"0104"             : {ico: "0104",             flags: 0},                      // "Cubone",
+	"0105"             : {ico: "0105",             flags: 0},                      // "Marowak",
+	"0236"             : {ico: "0236",             flags: 0},                      // "Tyrogue", // male only
+	"0106"             : {ico: "0106",             flags: 0},                      // "Hitmonlee", // male only
+	"0107"             : {ico: "0107",             flags: 0},                      // "Hitmonchan", // male only
+	"0237"             : {ico: "0237",             flags: 0},                      // "Hitmontop", // male only
+	"0108"             : {ico: "0108",             flags: 0},                      // "Lickitung",
+	"0109"             : {ico: "0109",             flags: 0},                      // "Koffing",
+	"0110"             : {ico: "0110",             flags: 0},                      // "Weezing",
+	"0111"             : {ico: "0111",             flags: 0},                      // "Rhyhorn",
+	"0112"             : {ico: "0112",             flags: 0},                      // "Rhydon",
+	"0113"             : {ico: "0113",             flags: 0},                      // "Chansey", // female only
+	"0242"             : {ico: "0242",             flags: 0},                      // "Blissey", // female only
+	"0114"             : {ico: "0114",             flags: 0},                      // "Tangela",
+	"0115"             : {ico: "0115",             flags: 0},                      // "Kangaskhan", // female only
+	"0116"             : {ico: "0116",             flags: 0},                      // "Horsea",
+	"0117"             : {ico: "0117",             flags: 0},                      // "Seadra",
+	"0230"             : {ico: "0230",             flags: 0},                      // "Kingdra",
+	"0118"             : {ico: "0118",             flags: 0},                      // "Goldeen",
+	"0119"             : {ico: "0119",             flags: 0},                      // "Seaking",
+	"0120"             : {ico: "0120",             flags: 0},                      // "Staryu", // uknown gender
+	"0121"             : {ico: "0121",             flags: 0},                      // "Starmie", // uknown gender
+	"0122"             : {ico: "0122",             flags: 0},                      // "Mr. Mime",
+	"0123"             : {ico: "0123",             flags: 0},                      // "Scyther",
+	"0212"             : {ico: "0212",             flags: 0},                      // "Scizor",
+	"0238"             : {ico: "0238",             flags: 0},                      // "Smoochum", // female only
+	"0124"             : {ico: "0124",             flags: 0},                      // "Jynx", // female only
+	"0239"             : {ico: "0239",             flags: 0},                      // "Elekid",
+	"0125"             : {ico: "0125",             flags: 0},                      // "Electabuzz",
+	"0240"             : {ico: "0240",             flags: 0},                      // "Magby",
+	"0126"             : {ico: "0126",             flags: 0},                      // "Magmar",
+	"0127"             : {ico: "0127",             flags: 0},                      // "Pinsir",
+	"0128"             : {ico: "0128",             flags: 0},                      // "Tauros", // male only
+	"0129"             : {ico: "0129",             flags: 0},                      // "Magikarp",
+	"0130"             : {ico: "0130",             flags: 0},                      // "Gyarados",
+	"0131"             : {ico: "0131",             flags: 0},                      // "Lapras",
+	"0132"             : {ico: "0132",             flags: 0},                      // "Ditto", // uknown gender
+	"0133"             : {ico: "0133",             flags: 0},                      // "Eevee",
+	"0134"             : {ico: "0134",             flags: 0},                      // "Vaporeon",
+	"0135"             : {ico: "0135",             flags: 0},                      // "Jolteon",
+	"0136"             : {ico: "0136",             flags: 0},                      // "Flareon",
+	"0196"             : {ico: "0196",             flags: 0},                      // "Espeon",
+	"0197"             : {ico: "0197",             flags: 0},                      // "Umbreon",
+	"0137"             : {ico: "0137",             flags: 0},                      // "Porygon", // uknown gender
+	"0233"             : {ico: "0233",             flags: 0},                      // "Porygon2", // uknown gender
+	"0138"             : {ico: "0138",             flags: 0},                      // "Omanyte",
+	"0139"             : {ico: "0139",             flags: 0},                      // "Omastar",
+	"0140"             : {ico: "0140",             flags: 0},                      // "Kabuto",
+	"0141"             : {ico: "0141",             flags: 0},                      // "Kabutops",
+	"0142"             : {ico: "0142",             flags: 0},                      // "Aerodactyl",
+	"0345"             : {ico: "0345",             flags: 0},                      // "Lileep",
+	"0346"             : {ico: "0346",             flags: 0},                      // "Cradily",
+	"0347"             : {ico: "0347",             flags: 0},                      // "Anorith",
+	"0348"             : {ico: "0348",             flags: 0},                      // "Armaldo",
+	"0143"             : {ico: "0143",             flags: 0},                      // "Snorlax",
+	"0144"             : {ico: "0144",             flags: 0},                      // "Articuno", // uknown gender
+	"0145"             : {ico: "0145",             flags: 0},                      // "Zapdos", // uknown gender
+	"0146"             : {ico: "0146",             flags: 0},                      // "Moltres", // uknown gender
+	"0147"             : {ico: "0147",             flags: 0},                      // "Dratini",
+	"0148"             : {ico: "0148",             flags: 0},                      // "Dragonair",
+	"0149"             : {ico: "0149",             flags: 0},                      // "Dragonite",
+	"0150"             : {ico: "0150",             flags: 0},                      // "Mewtwo", // uknown gender
+	"0151"             : {ico: "0151",             flags: 0},                      // "Mew", // uknown gender
+	"0152"             : {ico: "0152",             flags: 0},                      // "Chikorita",
+	"0153"             : {ico: "0153",             flags: 0},                      // "Bayleef",
+	"0154"             : {ico: "0154",             flags: 0},                      // "Meganium",
+	"0155"             : {ico: "0155",             flags: 0},                      // "Cyndaquil",
+	"0156"             : {ico: "0156",             flags: 0},                      // "Quilava",
+	"0157"             : {ico: "0157",             flags: 0},                      // "Typhlosion",
+	"0158"             : {ico: "0158",             flags: 0},                      // "Totodile",
+	"0159"             : {ico: "0159",             flags: 0},                      // "Croconaw",
+	"0160"             : {ico: "0160",             flags: 0},                      // "Feraligatr",
+	"0161"             : {ico: "0161",             flags: 0},                      // "Sentret",
+	"0162"             : {ico: "0162",             flags: 0},                      // "Furret",
+	"0163"             : {ico: "0163",             flags: 0},                      // "Hoothoot",
+	"0164"             : {ico: "0164",             flags: 0},                      // "Noctowl",
+	"0165"             : {ico: "0165",             flags: 0},                      // "Ledyba",
+	"0166"             : {ico: "0166",             flags: 0},                      // "Ledian",
+	"0167"             : {ico: "0167",             flags: 0},                      // "Spinarak",
+	"0168"             : {ico: "0168",             flags: 0},                      // "Ariados",
+	"0170"             : {ico: "0170",             flags: 0},                      // "Chinchou",
+	"0171"             : {ico: "0171",             flags: 0},                      // "Lanturn",
+	"0175"             : {ico: "0175",             flags: 0},                      // "Togepi",
+	"0176"             : {ico: "0176",             flags: 0},                      // "Togetic",
+	"0177"             : {ico: "0177",             flags: 0},                      // "Natu",
+	"0178"             : {ico: "0178",             flags: 0},                      // "Xatu",
+	"0179"             : {ico: "0179",             flags: 0},                      // "Mareep",
+	"0180"             : {ico: "0180",             flags: 0},                      // "Flaaffy",
+	"0181"             : {ico: "0181",             flags: 0},                      // "Ampharos",
+	"0298"             : {ico: "0298",             flags: 0},                      // "Azurill",
+	"0183"             : {ico: "0183",             flags: 0},                      // "Marill",
+	"0184"             : {ico: "0184",             flags: 0},                      // "Azumarill",
+	"0185"             : {ico: "0185",             flags: 0},                      // "Sudowoodo",
+	"0187"             : {ico: "0187",             flags: 0},                      // "Hoppip",
+	"0188"             : {ico: "0188",             flags: 0},                      // "Skiploom",
+	"0189"             : {ico: "0189",             flags: 0},                      // "Jumpluff",
+	"0190"             : {ico: "0190",             flags: 0},                      // "Aipom",
+	"0191"             : {ico: "0191",             flags: 0},                      // "Sunkern",
+	"0192"             : {ico: "0192",             flags: 0},                      // "Sunflora",
+	"0193"             : {ico: "0193",             flags: 0},                      // "Yanma",
+	"0194"             : {ico: "0194",             flags: 0},                      // "Wooper",
+	"0195"             : {ico: "0195",             flags: 0},                      // "Quagsire",
+	"0198"             : {ico: "0198",             flags: 0},                      // "Murkrow",
+	"0200"             : {ico: "0200",             flags: 0},                      // "Misdreavus",
+	"0201"             : {ico: "0201-anger",       flags: FLAGS_FORM_0201_BASE},   // "Unown", // uknown gender
+	"0201-anger"       : {ico: "0201-anger",       flags: FLAGS_FORM_0201},        // "Unown Angry", // uknown gender
+	"0201-bear"        : {ico: "0201-bear",        flags: FLAGS_FORM_0201},        // "Unown Bear", // uknown gender
+	"0201-chase"       : {ico: "0201-chase",       flags: FLAGS_FORM_0201},        // "Unown Chase", // uknown gender
+	"0201-direct"      : {ico: "0201-direct",      flags: FLAGS_FORM_0201},        // "Unown Direct", // uknown gender
+	"0201-engage"      : {ico: "0201-engage",      flags: FLAGS_FORM_0201},        // "Unown Engage", // uknown gender
+	"0201-find"        : {ico: "0201-find",        flags: FLAGS_FORM_0201},        // "Unown Find", // uknown gender
+	"0201-give"        : {ico: "0201-give",        flags: FLAGS_FORM_0201},        // "Unown Give", // uknown gender
+	"0201-help"        : {ico: "0201-help",        flags: FLAGS_FORM_0201},        // "Unown Help", // uknown gender
+	"0201-increase"    : {ico: "0201-increase",    flags: FLAGS_FORM_0201},        // "Unown Increase", // uknown gender
+	"0201-join"        : {ico: "0201-join",        flags: FLAGS_FORM_0201},        // "Unown Join", // uknown gender
+	"0201-keep"        : {ico: "0201-keep",        flags: FLAGS_FORM_0201},        // "Unown Keep", // uknown gender
+	"0201-laugh"       : {ico: "0201-laugh",       flags: FLAGS_FORM_0201},        // "Unown Laugh", // uknown gender
+	"0201-make"        : {ico: "0201-make",        flags: FLAGS_FORM_0201},        // "Unown Make", // uknown gender
+	"0201-nuzzle"      : {ico: "0201-nuzzle",      flags: FLAGS_FORM_0201},        // "Unown Nuzzle", // uknown gender
+	"0201-observe"     : {ico: "0201-observe",     flags: FLAGS_FORM_0201},        // "Unown Observe", // uknown gender
+	"0201-perform"     : {ico: "0201-perform",     flags: FLAGS_FORM_0201},        // "Unown Perform", // uknown gender
+	"0201-quicken"     : {ico: "0201-quicken",     flags: FLAGS_FORM_0201},        // "Unown Quicken", // uknown gender
+	"0201-reassure"    : {ico: "0201-reassure",    flags: FLAGS_FORM_0201},        // "Unown Reassure", // uknown gender
+	"0201-search"      : {ico: "0201-search",      flags: FLAGS_FORM_0201},        // "Unown Search", // uknown gender
+	"0201-tell"        : {ico: "0201-tell",        flags: FLAGS_FORM_0201},        // "Unown Tell", // uknown gender
+	"0201-undo"        : {ico: "0201-undo",        flags: FLAGS_FORM_0201},        // "Unown Undo", // uknown gender
+	"0201-vanish"      : {ico: "0201-vanish",      flags: FLAGS_FORM_0201},        // "Unown Vanish", // uknown gender
+	"0201-want"        : {ico: "0201-want",        flags: FLAGS_FORM_0201},        // "Unown Want", // uknown gender
+	"0201-xxxxx"       : {ico: "0201-xxxxx",       flags: FLAGS_FORM_0201},        // "Unown XXXXX", // uknown gender
+	"0201-yield"       : {ico: "0201-yield",       flags: FLAGS_FORM_0201},        // "Unown Yield", // uknown gender
+	"0201-zoom"        : {ico: "0201-zoom",        flags: FLAGS_FORM_0201},        // "Unown Zoom", // uknown gender
+	"0201-exclamation" : {ico: "0201-exclamation", flags: FLAGS_FORM_0201},        // "Unown !!!!!", // uknown gender
+	"0201-question"    : {ico: "0201-question",    flags: FLAGS_FORM_0201},        // "Unown ?????", // uknown gender
+	"0360"             : {ico: "0360",             flags: 0},                      // "Wynaut",
+	"0202"             : {ico: "0202",             flags: 0},                      // "Wobbuffet",
+	"0203"             : {ico: "0203",             flags: 0},                      // "Girafarig",
+	"0204"             : {ico: "0204",             flags: 0},                      // "Pineco",
+	"0205"             : {ico: "0205",             flags: 0},                      // "Forretress",
+	"0206"             : {ico: "0206",             flags: 0},                      // "Dunsparce",
+	"0207"             : {ico: "0207",             flags: 0},                      // "Gligar",
+	"0209"             : {ico: "0209",             flags: 0},                      // "Snubbull",
+	"0210"             : {ico: "0210",             flags: 0},                      // "Granbull",
+	"0211"             : {ico: "0211",             flags: 0},                      // "Qwilfish",
+	"0213"             : {ico: "0213",             flags: 0},                      // "Shuckle",
+	"0214"             : {ico: "0214",             flags: 0},                      // "Heracross",
+	"0215"             : {ico: "0215",             flags: 0},                      // "Sneasel",
+	"0216"             : {ico: "0216",             flags: 0},                      // "Teddiursa",
+	"0217"             : {ico: "0217",             flags: 0},                      // "Ursaring",
+	"0218"             : {ico: "0218",             flags: 0},                      // "Slugma",
+	"0219"             : {ico: "0219",             flags: 0},                      // "Magcargo",
+	"0220"             : {ico: "0220",             flags: 0},                      // "Swinub",
+	"0221"             : {ico: "0221",             flags: 0},                      // "Piloswine",
+	"0222"             : {ico: "0222",             flags: 0},                      // "Corsola",
+	"0223"             : {ico: "0223",             flags: 0},                      // "Remoraid",
+	"0224"             : {ico: "0224",             flags: 0},                      // "Octillery",
+	"0225"             : {ico: "0225",             flags: 0},                      // "Delibird",
+	"0226"             : {ico: "0226",             flags: 0},                      // "Mantine",
+	"0227"             : {ico: "0227",             flags: 0},                      // "Skarmory",
+	"0228"             : {ico: "0228",             flags: 0},                      // "Houndour",
+	"0229"             : {ico: "0229",             flags: 0},                      // "Houndoom",
+	"0231"             : {ico: "0231",             flags: 0},                      // "Phanpy",
+	"0232"             : {ico: "0232",             flags: 0},                      // "Donphan",
+	"0234"             : {ico: "0234",             flags: 0},                      // "Stantler",
+	"0235"             : {ico: "0235",             flags: 0},                      // "Smeargle",
+	"0241"             : {ico: "0241",             flags: 0},                      // "Miltank", // female only
+	"0243"             : {ico: "0243",             flags: 0},                      // "Raikou", // uknown gender
+	"0244"             : {ico: "0244",             flags: 0},                      // "Entei", // uknown gender
+	"0245"             : {ico: "0245",             flags: 0},                      // "Suicune", // uknown gender
+	"0246"             : {ico: "0246",             flags: 0},                      // "Larvitar",
+	"0247"             : {ico: "0247",             flags: 0},                      // "Pupitar",
+	"0248"             : {ico: "0248",             flags: 0},                      // "Tyranitar",
+	"0249"             : {ico: "0249",             flags: 0},                      // "Lugia", // uknown gender
+	"0250"             : {ico: "0250",             flags: 0},                      // "Ho-Oh", // uknown gender
+	"0251"             : {ico: "0251",             flags: 0},                      // "Celebi", // uknown gender
+	"0252"             : {ico: "0252",             flags: 0},                      // "Treecko",
+	"0253"             : {ico: "0253",             flags: 0},                      // "Grovyle",
+	"0254"             : {ico: "0254",             flags: 0},                      // "Sceptile",
+	"0255"             : {ico: "0255",             flags: 0},                      // "Torchic",
+	"0256"             : {ico: "0256",             flags: 0},                      // "Combusken",
+	"0257"             : {ico: "0257",             flags: 0},                      // "Blaziken",
+	"0258"             : {ico: "0258",             flags: 0},                      // "Mudkip",
+	"0259"             : {ico: "0259",             flags: 0},                      // "Marshtomp",
+	"0260"             : {ico: "0260",             flags: 0},                      // "Swampert",
+	"0261"             : {ico: "0261",             flags: 0},                      // "Poochyena",
+	"0262"             : {ico: "0262",             flags: 0},                      // "Mightyena",
+	"0263"             : {ico: "0263",             flags: 0},                      // "Zigzagoon",
+	"0264"             : {ico: "0264",             flags: 0},                      // "Linoone",
+	"0265"             : {ico: "0265",             flags: 0},                      // "Wurmple",
+	"0266"             : {ico: "0266",             flags: 0},                      // "Silcoon",
+	"0267"             : {ico: "0267",             flags: 0},                      // "Beautifly",
+	"0268"             : {ico: "0268",             flags: 0},                      // "Cascoon",
+	"0269"             : {ico: "0269",             flags: 0},                      // "Dustox",
+	"0270"             : {ico: "0270",             flags: 0},                      // "Lotad",
+	"0271"             : {ico: "0271",             flags: 0},                      // "Lombre",
+	"0272"             : {ico: "0272",             flags: 0},                      // "Ludicolo",
+	"0273"             : {ico: "0273",             flags: 0},                      // "Seedot",
+	"0274"             : {ico: "0274",             flags: 0},                      // "Nuzleaf",
+	"0275"             : {ico: "0275",             flags: 0},                      // "Shiftry",
+	"0276"             : {ico: "0276",             flags: 0},                      // "Taillow",
+	"0277"             : {ico: "0277",             flags: 0},                      // "Swellow",
+	"0278"             : {ico: "0278",             flags: 0},                      // "Wingull",
+	"0279"             : {ico: "0279",             flags: 0},                      // "Pelipper",
+	"0280"             : {ico: "0280",             flags: 0},                      // "Ralts",
+	"0281"             : {ico: "0281",             flags: 0},                      // "Kirlia",
+	"0282"             : {ico: "0282",             flags: 0},                      // "Gardevoir",
+	"0283"             : {ico: "0283",             flags: 0},                      // "Surskit",
+	"0284"             : {ico: "0284",             flags: 0},                      // "Masquerain",
+	"0285"             : {ico: "0285",             flags: 0},                      // "Shroomish",
+	"0286"             : {ico: "0286",             flags: 0},                      // "Breloom",
+	"0287"             : {ico: "0287",             flags: 0},                      // "Slakoth",
+	"0288"             : {ico: "0288",             flags: 0},                      // "Vigoroth",
+	"0289"             : {ico: "0289",             flags: 0},                      // "Slaking",
+	"0290"             : {ico: "0290",             flags: 0},                      // "Nincada",
+	"0291"             : {ico: "0291",             flags: 0},                      // "Ninjask",
+	"0292"             : {ico: "0292",             flags: 0},                      // "Shedinja", // uknown gender
+	"0293"             : {ico: "0293",             flags: 0},                      // "Whismur",
+	"0294"             : {ico: "0294",             flags: 0},                      // "Loudred",
+	"0295"             : {ico: "0295",             flags: 0},                      // "Exploud",
+	"0296"             : {ico: "0296",             flags: 0},                      // "Makuhita",
+	"0297"             : {ico: "0297",             flags: 0},                      // "Hariyama",
+	"0299"             : {ico: "0299",             flags: 0},                      // "Nosepass",
+	"0300"             : {ico: "0300",             flags: 0},                      // "Skitty",
+	"0301"             : {ico: "0301",             flags: 0},                      // "Delcatty",
+	"0302"             : {ico: "0302",             flags: 0},                      // "Sableye",
+	"0303"             : {ico: "0303",             flags: 0},                      // "Mawile",
+	"0304"             : {ico: "0304",             flags: 0},                      // "Aron",
+	"0305"             : {ico: "0305",             flags: 0},                      // "Lairon",
+	"0306"             : {ico: "0306",             flags: 0},                      // "Aggron",
+	"0307"             : {ico: "0307",             flags: 0},                      // "Meditite",
+	"0308"             : {ico: "0308",             flags: 0},                      // "Medicham",
+	"0309"             : {ico: "0309",             flags: 0},                      // "Electrike",
+	"0310"             : {ico: "0310",             flags: 0},                      // "Manectric",
+	"0311"             : {ico: "0311",             flags: 0},                      // "Plusle",
+	"0312"             : {ico: "0312",             flags: 0},                      // "Minun",
+	"0313"             : {ico: "0313",             flags: 0},                      // "Volbeat", // male only
+	"0314"             : {ico: "0314",             flags: 0},                      // "Illumise", // female only
+	"0315"             : {ico: "0315",             flags: 0},                      // "Roselia",
+	"0316"             : {ico: "0316",             flags: 0},                      // "Gulpin",
+	"0317"             : {ico: "0317",             flags: 0},                      // "Swalot",
+	"0318"             : {ico: "0318",             flags: 0},                      // "Carvanha",
+	"0319"             : {ico: "0319",             flags: 0},                      // "Sharpedo",
+	"0320"             : {ico: "0320",             flags: 0},                      // "Wailmer",
+	"0321"             : {ico: "0321",             flags: 0},                      // "Wailord",
+	"0322"             : {ico: "0322",             flags: 0},                      // "Numel",
+	"0323"             : {ico: "0323",             flags: 0},                      // "Camerupt",
+	"0324"             : {ico: "0324",             flags: 0},                      // "Torkoal",
+	"0325"             : {ico: "0325",             flags: 0},                      // "Spoink",
+	"0326"             : {ico: "0326",             flags: 0},                      // "Grumpig",
+	"0327"             : {ico: "0327",             flags: 0},                      // "Spinda",
+	"0328"             : {ico: "0328",             flags: 0},                      // "Trapinch",
+	"0329"             : {ico: "0329",             flags: 0},                      // "Vibrava",
+	"0330"             : {ico: "0330",             flags: 0},                      // "Flygon",
+	"0331"             : {ico: "0331",             flags: 0},                      // "Cacnea",
+	"0332"             : {ico: "0332",             flags: 0},                      // "Cacturne",
+	"0333"             : {ico: "0333",             flags: 0},                      // "Swablu",
+	"0334"             : {ico: "0334",             flags: 0},                      // "Altaria",
+	"0335"             : {ico: "0335",             flags: 0},                      // "Zangoose",
+	"0336"             : {ico: "0336",             flags: 0},                      // "Seviper",
+	"0337"             : {ico: "0337",             flags: 0},                      // "Lunatone", // uknown gender
+	"0338"             : {ico: "0338",             flags: 0},                      // "Solrock", // uknown gender
+	"0339"             : {ico: "0339",             flags: 0},                      // "Barboach",
+	"0340"             : {ico: "0340",             flags: 0},                      // "Whiscash",
+	"0341"             : {ico: "0341",             flags: 0},                      // "Corphish",
+	"0342"             : {ico: "0342",             flags: 0},                      // "Crawdaunt",
+	"0343"             : {ico: "0343",             flags: 0},                      // "Baltoy", // uknown gender
+	"0344"             : {ico: "0344",             flags: 0},                      // "Claydol", // uknown gender
+	"0349"             : {ico: "0349",             flags: 0},                      // "Feebas",
+	"0350"             : {ico: "0350",             flags: 0},                      // "Milotic",
+	"0351"             : {ico: "0351",             flags: FLAGS_BATTLE_FORM_BASE}, // "Castform",
+	"0351-sunny"       : {ico: "0351",             flags: FLAGS_BATTLE_FORM},      // "Sunny Castform",
+	"0351-rainy"       : {ico: "0351",             flags: FLAGS_BATTLE_FORM},      // "Rainy Castform",
+	"0351-snowy"       : {ico: "0351",             flags: FLAGS_BATTLE_FORM},      // "Snowy Castform",
+	"0352"             : {ico: "0352",             flags: 0},                      // "Kecleon",
+	"0353"             : {ico: "0353",             flags: 0},                      // "Shuppet",
+	"0354"             : {ico: "0354",             flags: 0},                      // "Banette",
+	"0355"             : {ico: "0355",             flags: 0},                      // "Duskull",
+	"0356"             : {ico: "0356",             flags: 0},                      // "Dusclops",
+	"0357"             : {ico: "0357",             flags: 0},                      // "Tropius",
+	"0358"             : {ico: "0358",             flags: 0},                      // "Chimecho",
+	"0359"             : {ico: "0359",             flags: 0},                      // "Absol",
+	"0361"             : {ico: "0361",             flags: 0},                      // "Snorunt",
+	"0362"             : {ico: "0362",             flags: 0},                      // "Glalie",
+	"0363"             : {ico: "0363",             flags: 0},                      // "Spheal",
+	"0364"             : {ico: "0364",             flags: 0},                      // "Sealeo",
+	"0365"             : {ico: "0365",             flags: 0},                      // "Walrein",
+	"0366"             : {ico: "0366",             flags: 0},                      // "Clamperl",
+	"0367"             : {ico: "0367",             flags: 0},                      // "Huntail",
+	"0368"             : {ico: "0368",             flags: 0},                      // "Gorebyss",
+	"0369"             : {ico: "0369",             flags: 0},                      // "Relicanth",
+	"0370"             : {ico: "0370",             flags: 0},                      // "Luvdisc",
+	"0371"             : {ico: "0371",             flags: 0},                      // "Bagon",
+	"0372"             : {ico: "0372",             flags: 0},                      // "Shelgon",
+	"0373"             : {ico: "0373",             flags: 0},                      // "Salamence",
+	"0374"             : {ico: "0374",             flags: 0},                      // "Beldum", // uknown gender
+	"0375"             : {ico: "0375",             flags: 0},                      // "Metang", // uknown gender
+	"0376"             : {ico: "0376",             flags: 0},                      // "Metagross", // uknown gender
+	"0377"             : {ico: "0377",             flags: 0},                      // "Regirock", // uknown gender
+	"0378"             : {ico: "0378",             flags: 0},                      // "Regice", // uknown gender
+	"0379"             : {ico: "0379",             flags: 0},                      // "Registeel", // uknown gender
+	"0380"             : {ico: "0380",             flags: 0},                      // "Latias", // female only
+	"0381"             : {ico: "0381",             flags: 0},                      // "Latios", // male only
+	"0382"             : {ico: "0382",             flags: 0},                      // "Kyogre", // uknown gender
+	"0383"             : {ico: "0383",             flags: 0},                      // "Groudon", // uknown gender
+	"0384"             : {ico: "0384",             flags: 0},                      // "Rayquaza", // uknown gender
+	"0385"             : {ico: "0385",             flags: 0},                      // "Jirachi", // uknown gender
+	"0386"             : {ico: "0386",             flags: FLAGS_FORM_0386_RuSa},   // "Deoxys", // uknown gender
+	"0386-attack"      : {ico: "0386-attack",      flags: FLAGS_FORM_0386_FR},     // "Attack Deoxys", // uknown gender
+	"0386-defense"     : {ico: "0386-defense",     flags: FLAGS_FORM_0386_LG},     // "Defense Deoxys", // uknown gender
+	"0386-speed"       : {ico: "0386-speed",       flags: FLAGS_FORM_0386_Em},     // "Speed Deoxys", // uknown gender
 }
 
 //============================================================================
 // REGIONAL POKEDEX
 //============================================================================
-const _Regdex_r_300 =
-{
-	"0252"				: "0252",				// "Treecko",
-	"0253"				: "0253",				// "Grovyle",
-	"0254"				: "0254",				// "Sceptile",
-	"0255"				: "0255",				// "Torchic",
-	"0256"				: "0256",				// "Combusken",
-	"0257"				: "0257",				// "Blaziken",
-	"0258"				: "0258",				// "Mudkip",
-	"0259"				: "0259",				// "Marshtomp",
-	"0260"				: "0260",				// "Swampert",
-	"0261"				: "0261",				// "Poochyena",
-	"0262"				: "0262",				// "Mightyena",
-	"0263"				: "0263",				// "Zigzagoon",
-	"0264"				: "0264",				// "Linoone",
-	"0265"				: "0265",				// "Wurmple",
-	"0266"				: "0266",				// "Silcoon",
-	"0267"				: "0267",				// "Beautifly",
-	"0268"				: "0268",				// "Cascoon",
-	"0269"				: "0269",				// "Dustox",
-	"0270"				: "0270",				// "Lotad",
-	"0271"				: "0271",				// "Lombre",
-	"0272"				: "0272",				// "Ludicolo",
-	"0273"				: "0273",				// "Seedot",
-	"0274"				: "0274",				// "Nuzleaf",
-	"0275"				: "0275",				// "Shiftry",
-	"0276"				: "0276",				// "Taillow",
-	"0277"				: "0277",				// "Swellow",
-	"0278"				: "0278",				// "Wingull",
-	"0279"				: "0279",				// "Pelipper",
-	"0280"				: "0280",				// "Ralts",
-	"0281"				: "0281",				// "Kirlia",
-	"0282"				: "0282",				// "Gardevoir",
-	"0283"				: "0283",				// "Surskit",
-	"0284"				: "0284",				// "Masquerain",
-	"0285"				: "0285",				// "Shroomish",
-	"0286"				: "0286",				// "Breloom",
-	"0287"				: "0287",				// "Slakoth",
-	"0288"				: "0288",				// "Vigoroth",
-	"0289"				: "0289",				// "Slaking",
-	"0063"				: "0063",				// "Abra",
-	"0064"				: "0064",				// "Kadabra",
-	"0065"				: "0065",				// "Alakazam",
-	"0290"				: "0290",				// "Nincada",
-	"0291"				: "0291",				// "Ninjask",
-	"0292"				: "0292",				// "Shedinja", // uknown gender
-	"0293"				: "0293",				// "Whismur",
-	"0294"				: "0294",				// "Loudred",
-	"0295"				: "0295",				// "Exploud",
-	"0296"				: "0296",				// "Makuhita",
-	"0297"				: "0297",				// "Hariyama",
-	"0118"				: "0118",				// "Goldeen",
-	"0119"				: "0119",				// "Seaking",
-	"0129"				: "0129",				// "Magikarp",
-	"0130"				: "0130",				// "Gyarados",
-	"0298"				: "0298",				// "Azurill",
-	"0183"				: "0183",				// "Marill",
-	"0184"				: "0184",				// "Azumarill",
-	"0074"				: "0074",				// "Geodude",
-	"0075"				: "0075",				// "Graveler",
-	"0076"				: "0076",				// "Golem",
-	"0299"				: "0299",				// "Nosepass",
-	"0300"				: "0300",				// "Skitty",
-	"0301"				: "0301",				// "Delcatty",
-	"0041"				: "0041",				// "Zubat",
-	"0042"				: "0042",				// "Golbat",
-	"0169"				: "0169",				// "Crobat",
-	"0072"				: "0072",				// "Tentacool",
-	"0073"				: "0073",				// "Tentacruel",
-	"0302"				: "0302",				// "Sableye",
-	"0303"				: "0303",				// "Mawile",
-	"0304"				: "0304",				// "Aron",
-	"0305"				: "0305",				// "Lairon",
-	"0306"				: "0306",				// "Aggron",
-	"0066"				: "0066",				// "Machop",
-	"0067"				: "0067",				// "Machoke",
-	"0068"				: "0068",				// "Machamp",
-	"0307"				: "0307",				// "Meditite",
-	"0308"				: "0308",				// "Medicham",
-	"0309"				: "0309",				// "Electrike",
-	"0310"				: "0310",				// "Manectric",
-	"0311"				: "0311",				// "Plusle",
-	"0312"				: "0312",				// "Minun",
-	"0081"				: "0081",				// "Magnemite",
-	"0082"				: "0082",				// "Magneton",
-	"0100"				: "0100",				// "Voltorb", // uknown gender
-	"0101"				: "0101",				// "Electrode", // uknown gender
-	"0313"				: "0313",				// "Volbeat", // male only
-	"0314"				: "0314",				// "Illumise", // female only
-	"0043"				: "0043",				// "Oddish",
-	"0044"				: "0044",				// "Gloom",
-	"0045"				: "0045",				// "Vileplume",
-	"0182"				: "0182",				// "Bellossom",
-	"0084"				: "0084",				// "Doduo",
-	"0085"				: "0085",				// "Dodrio",
-	"0315"				: "0315",				// "Roselia",
-	"0316"				: "0316",				// "Gulpin",
-	"0317"				: "0317",				// "Swalot",
-	"0318"				: "0318",				// "Carvanha",
-	"0319"				: "0319",				// "Sharpedo",
-	"0320"				: "0320",				// "Wailmer",
-	"0321"				: "0321",				// "Wailord",
-	"0322"				: "0322",				// "Numel",
-	"0323"				: "0323",				// "Camerupt",
-	"0218"				: "0218",				// "Slugma",
-	"0219"				: "0219",				// "Magcargo",
-	"0324"				: "0324",				// "Torkoal",
-	"0088"				: "0088",				// "Grimer",
-	"0089"				: "0089",				// "Muk",
-	"0109"				: "0109",				// "Koffing",
-	"0110"				: "0110",				// "Weezing",
-	"0325"				: "0325",				// "Spoink",
-	"0326"				: "0326",				// "Grumpig",
-	"0027"				: "0027",				// "Sandshrew",
-	"0028"				: "0028",				// "Sandslash",
-	"0327"				: "0327",				// "Spinda",
-	"0227"				: "0227",				// "Skarmory",
-	"0328"				: "0328",				// "Trapinch",
-	"0329"				: "0329",				// "Vibrava",
-	"0330"				: "0330",				// "Flygon",
-	"0331"				: "0331",				// "Cacnea",
-	"0332"				: "0332",				// "Cacturne",
-	"0333"				: "0333",				// "Swablu",
-	"0334"				: "0334",				// "Altaria",
-	"0335"				: "0335",				// "Zangoose",
-	"0336"				: "0336",				// "Seviper",
-	"0337"				: "0337",				// "Lunatone", // uknown gender
-	"0338"				: "0338",				// "Solrock", // uknown gender
-	"0339"				: "0339",				// "Barboach",
-	"0340"				: "0340",				// "Whiscash",
-	"0341"				: "0341",				// "Corphish",
-	"0342"				: "0342",				// "Crawdaunt",
-	"0343"				: "0343",				// "Baltoy", // uknown gender
-	"0344"				: "0344",				// "Claydol", // uknown gender
-	"0345"				: "0345",				// "Lileep",
-	"0346"				: "0346",				// "Cradily",
-	"0347"				: "0347",				// "Anorith",
-	"0348"				: "0348",				// "Armaldo",
-	"0174"				: "0174",				// "Igglybuff",
-	"0039"				: "0039",				// "Jigglypuff",
-	"0040"				: "0040",				// "Wigglytuff",
-	"0349"				: "0349",				// "Feebas",
-	"0350"				: "0350",				// "Milotic",
-	"0351"				: "0351",				// "Castform",
-//	"0351-sunny"		: "0351-sunny",			// "Sunny Castform",
-//	"0351-rainy"		: "0351-rainy",			// "Rainy Castform",
-//	"0351-snowy"		: "0351-snowy",			// "Snowy Castform",
-	"0120"				: "0120",				// "Staryu", // uknown gender
-	"0121"				: "0121",				// "Starmie", // uknown gender
-	"0352"				: "0352",				// "Kecleon",
-	"0353"				: "0353",				// "Shuppet",
-	"0354"				: "0354",				// "Banette",
-	"0355"				: "0355",				// "Duskull",
-	"0356"				: "0356",				// "Dusclops",
-	"0357"				: "0357",				// "Tropius",
-	"0358"				: "0358",				// "Chimecho",
-	"0359"				: "0359",				// "Absol",
-	"0037"				: "0037",				// "Vulpix",
-	"0038"				: "0038",				// "Ninetales",
-	"0172"				: "0172",				// "Pichu",
-	"0025"				: "0025",				// "Pikachu",
-	"0026"				: "0026",				// "Raichu",
-	"0054"				: "0054",				// "Psyduck",
-	"0055"				: "0055",				// "Golduck",
-	"0360"				: "0360",				// "Wynaut",
-	"0202"				: "0202",				// "Wobbuffet",
-	"0177"				: "0177",				// "Natu",
-	"0178"				: "0178",				// "Xatu",
-	"0203"				: "0203",				// "Girafarig",
-	"0231"				: "0231",				// "Phanpy",
-	"0232"				: "0232",				// "Donphan",
-	"0127"				: "0127",				// "Pinsir",
-	"0214"				: "0214",				// "Heracross",
-	"0111"				: "0111",				// "Rhyhorn",
-	"0112"				: "0112",				// "Rhydon",
-	"0361"				: "0361",				// "Snorunt",
-	"0362"				: "0362",				// "Glalie",
-	"0363"				: "0363",				// "Spheal",
-	"0364"				: "0364",				// "Sealeo",
-	"0365"				: "0365",				// "Walrein",
-	"0366"				: "0366",				// "Clamperl",
-	"0367"				: "0367",				// "Huntail",
-	"0368"				: "0368",				// "Gorebyss",
-	"0369"				: "0369",				// "Relicanth",
-	"0222"				: "0222",				// "Corsola",
-	"0170"				: "0170",				// "Chinchou",
-	"0171"				: "0171",				// "Lanturn",
-	"0370"				: "0370",				// "Luvdisc",
-	"0116"				: "0116",				// "Horsea",
-	"0117"				: "0117",				// "Seadra",
-	"0230"				: "0230",				// "Kingdra",
-	"0371"				: "0371",				// "Bagon",
-	"0372"				: "0372",				// "Shelgon",
-	"0373"				: "0373",				// "Salamence",
-	"0374"				: "0374",				// "Beldum", // uknown gender
-	"0375"				: "0375",				// "Metang", // uknown gender
-	"0376"				: "0376",				// "Metagross", // uknown gender
-	"0377"				: "0377",				// "Regirock", // uknown gender
-	"0378"				: "0378",				// "Regice", // uknown gender
-	"0379"				: "0379",				// "Registeel", // uknown gender
-	"0380"				: "0380",				// "Latias", // female only
-	"0381"				: "0381",				// "Latios", // male only
-	"0382"				: "0382",				// "Kyogre", // uknown gender
-	"0383"				: "0383",				// "Groudon", // uknown gender
-	"0384"				: "0384",				// "Rayquaza", // uknown gender
-	"0385"				: "0385",				// "Jirachi", // uknown gender
-	"0386"				: "0386",				// "Deoxys", // uknown gender
-//	"0386-attack"		: "0386-attack",		// "Attack Deoxys", // uknown gender
-//	"0386-defense"		: "0386-defense",		// "Defense Deoxys", // uknown gender
-//	"0386-speed"		: "0386-speed",			// "Speed Deoxys", // uknown gender
-}
-
 const _Regdex_r_301 =
 {
-	..._Regdex_r_300,
-	"0386"				: "0386",				// "Deoxys", // uknown gender
+	"0252"        : {ico: "0252",         flags: 0},                      // "Treecko",
+	"0253"        : {ico: "0253",         flags: 0},                      // "Grovyle",
+	"0254"        : {ico: "0254",         flags: 0},                      // "Sceptile",
+	"0255"        : {ico: "0255",         flags: 0},                      // "Torchic",
+	"0256"        : {ico: "0256",         flags: 0},                      // "Combusken",
+	"0257"        : {ico: "0257",         flags: 0},                      // "Blaziken",
+	"0258"        : {ico: "0258",         flags: 0},                      // "Mudkip",
+	"0259"        : {ico: "0259",         flags: 0},                      // "Marshtomp",
+	"0260"        : {ico: "0260",         flags: 0},                      // "Swampert",
+	"0261"        : {ico: "0261",         flags: 0},                      // "Poochyena",
+	"0262"        : {ico: "0262",         flags: 0},                      // "Mightyena",
+	"0263"        : {ico: "0263",         flags: 0},                      // "Zigzagoon",
+	"0264"        : {ico: "0264",         flags: 0},                      // "Linoone",
+	"0265"        : {ico: "0265",         flags: 0},                      // "Wurmple",
+	"0266"        : {ico: "0266",         flags: 0},                      // "Silcoon",
+	"0267"        : {ico: "0267",         flags: 0},                      // "Beautifly",
+	"0268"        : {ico: "0268",         flags: 0},                      // "Cascoon",
+	"0269"        : {ico: "0269",         flags: 0},                      // "Dustox",
+	"0270"        : {ico: "0270",         flags: 0},                      // "Lotad",
+	"0271"        : {ico: "0271",         flags: 0},                      // "Lombre",
+	"0272"        : {ico: "0272",         flags: 0},                      // "Ludicolo",
+	"0273"        : {ico: "0273",         flags: 0},                      // "Seedot",
+	"0274"        : {ico: "0274",         flags: 0},                      // "Nuzleaf",
+	"0275"        : {ico: "0275",         flags: 0},                      // "Shiftry",
+	"0276"        : {ico: "0276",         flags: 0},                      // "Taillow",
+	"0277"        : {ico: "0277",         flags: 0},                      // "Swellow",
+	"0278"        : {ico: "0278",         flags: 0},                      // "Wingull",
+	"0279"        : {ico: "0279",         flags: 0},                      // "Pelipper",
+	"0280"        : {ico: "0280",         flags: 0},                      // "Ralts",
+	"0281"        : {ico: "0281",         flags: 0},                      // "Kirlia",
+	"0282"        : {ico: "0282",         flags: 0},                      // "Gardevoir",
+	"0283"        : {ico: "0283",         flags: 0},                      // "Surskit",
+	"0284"        : {ico: "0284",         flags: 0},                      // "Masquerain",
+	"0285"        : {ico: "0285",         flags: 0},                      // "Shroomish",
+	"0286"        : {ico: "0286",         flags: 0},                      // "Breloom",
+	"0287"        : {ico: "0287",         flags: 0},                      // "Slakoth",
+	"0288"        : {ico: "0288",         flags: 0},                      // "Vigoroth",
+	"0289"        : {ico: "0289",         flags: 0},                      // "Slaking",
+	"0063"        : {ico: "0063",         flags: 0},                      // "Abra",
+	"0064"        : {ico: "0064",         flags: 0},                      // "Kadabra",
+	"0065"        : {ico: "0065",         flags: 0},                      // "Alakazam",
+	"0290"        : {ico: "0290",         flags: 0},                      // "Nincada",
+	"0291"        : {ico: "0291",         flags: 0},                      // "Ninjask",
+	"0292"        : {ico: "0292",         flags: 0},                      // "Shedinja", // uknown gender
+	"0293"        : {ico: "0293",         flags: 0},                      // "Whismur",
+	"0294"        : {ico: "0294",         flags: 0},                      // "Loudred",
+	"0295"        : {ico: "0295",         flags: 0},                      // "Exploud",
+	"0296"        : {ico: "0296",         flags: 0},                      // "Makuhita",
+	"0297"        : {ico: "0297",         flags: 0},                      // "Hariyama",
+	"0118"        : {ico: "0118",         flags: 0},                      // "Goldeen",
+	"0119"        : {ico: "0119",         flags: 0},                      // "Seaking",
+	"0129"        : {ico: "0129",         flags: 0},                      // "Magikarp",
+	"0130"        : {ico: "0130",         flags: 0},                      // "Gyarados",
+	"0298"        : {ico: "0298",         flags: 0},                      // "Azurill",
+	"0183"        : {ico: "0183",         flags: 0},                      // "Marill",
+	"0184"        : {ico: "0184",         flags: 0},                      // "Azumarill",
+	"0074"        : {ico: "0074",         flags: 0},                      // "Geodude",
+	"0075"        : {ico: "0075",         flags: 0},                      // "Graveler",
+	"0076"        : {ico: "0076",         flags: 0},                      // "Golem",
+	"0299"        : {ico: "0299",         flags: 0},                      // "Nosepass",
+	"0300"        : {ico: "0300",         flags: 0},                      // "Skitty",
+	"0301"        : {ico: "0301",         flags: 0},                      // "Delcatty",
+	"0041"        : {ico: "0041",         flags: 0},                      // "Zubat",
+	"0042"        : {ico: "0042",         flags: 0},                      // "Golbat",
+	"0169"        : {ico: "0169",         flags: 0},                      // "Crobat",
+	"0072"        : {ico: "0072",         flags: 0},                      // "Tentacool",
+	"0073"        : {ico: "0073",         flags: 0},                      // "Tentacruel",
+	"0302"        : {ico: "0302",         flags: 0},                      // "Sableye",
+	"0303"        : {ico: "0303",         flags: 0},                      // "Mawile",
+	"0304"        : {ico: "0304",         flags: 0},                      // "Aron",
+	"0305"        : {ico: "0305",         flags: 0},                      // "Lairon",
+	"0306"        : {ico: "0306",         flags: 0},                      // "Aggron",
+	"0066"        : {ico: "0066",         flags: 0},                      // "Machop",
+	"0067"        : {ico: "0067",         flags: 0},                      // "Machoke",
+	"0068"        : {ico: "0068",         flags: 0},                      // "Machamp",
+	"0307"        : {ico: "0307",         flags: 0},                      // "Meditite",
+	"0308"        : {ico: "0308",         flags: 0},                      // "Medicham",
+	"0309"        : {ico: "0309",         flags: 0},                      // "Electrike",
+	"0310"        : {ico: "0310",         flags: 0},                      // "Manectric",
+	"0311"        : {ico: "0311",         flags: 0},                      // "Plusle",
+	"0312"        : {ico: "0312",         flags: 0},                      // "Minun",
+	"0081"        : {ico: "0081",         flags: 0},                      // "Magnemite",
+	"0082"        : {ico: "0082",         flags: 0},                      // "Magneton",
+	"0100"        : {ico: "0100",         flags: 0},                      // "Voltorb", // uknown gender
+	"0101"        : {ico: "0101",         flags: 0},                      // "Electrode", // uknown gender
+	"0313"        : {ico: "0313",         flags: 0},                      // "Volbeat", // male only
+	"0314"        : {ico: "0314",         flags: 0},                      // "Illumise", // female only
+	"0043"        : {ico: "0043",         flags: 0},                      // "Oddish",
+	"0044"        : {ico: "0044",         flags: 0},                      // "Gloom",
+	"0045"        : {ico: "0045",         flags: 0},                      // "Vileplume",
+	"0182"        : {ico: "0182",         flags: 0},                      // "Bellossom",
+	"0084"        : {ico: "0084",         flags: 0},                      // "Doduo",
+	"0085"        : {ico: "0085",         flags: 0},                      // "Dodrio",
+	"0315"        : {ico: "0315",         flags: 0},                      // "Roselia",
+	"0316"        : {ico: "0316",         flags: 0},                      // "Gulpin",
+	"0317"        : {ico: "0317",         flags: 0},                      // "Swalot",
+	"0318"        : {ico: "0318",         flags: 0},                      // "Carvanha",
+	"0319"        : {ico: "0319",         flags: 0},                      // "Sharpedo",
+	"0320"        : {ico: "0320",         flags: 0},                      // "Wailmer",
+	"0321"        : {ico: "0321",         flags: 0},                      // "Wailord",
+	"0322"        : {ico: "0322",         flags: 0},                      // "Numel",
+	"0323"        : {ico: "0323",         flags: 0},                      // "Camerupt",
+	"0218"        : {ico: "0218",         flags: 0},                      // "Slugma",
+	"0219"        : {ico: "0219",         flags: 0},                      // "Magcargo",
+	"0324"        : {ico: "0324",         flags: 0},                      // "Torkoal",
+	"0088"        : {ico: "0088",         flags: 0},                      // "Grimer",
+	"0089"        : {ico: "0089",         flags: 0},                      // "Muk",
+	"0109"        : {ico: "0109",         flags: 0},                      // "Koffing",
+	"0110"        : {ico: "0110",         flags: 0},                      // "Weezing",
+	"0325"        : {ico: "0325",         flags: 0},                      // "Spoink",
+	"0326"        : {ico: "0326",         flags: 0},                      // "Grumpig",
+	"0027"        : {ico: "0027",         flags: 0},                      // "Sandshrew",
+	"0028"        : {ico: "0028",         flags: 0},                      // "Sandslash",
+	"0327"        : {ico: "0327",         flags: 0},                      // "Spinda",
+	"0227"        : {ico: "0227",         flags: 0},                      // "Skarmory",
+	"0328"        : {ico: "0328",         flags: 0},                      // "Trapinch",
+	"0329"        : {ico: "0329",         flags: 0},                      // "Vibrava",
+	"0330"        : {ico: "0330",         flags: 0},                      // "Flygon",
+	"0331"        : {ico: "0331",         flags: 0},                      // "Cacnea",
+	"0332"        : {ico: "0332",         flags: 0},                      // "Cacturne",
+	"0333"        : {ico: "0333",         flags: 0},                      // "Swablu",
+	"0334"        : {ico: "0334",         flags: 0},                      // "Altaria",
+	"0335"        : {ico: "0335",         flags: 0},                      // "Zangoose",
+	"0336"        : {ico: "0336",         flags: 0},                      // "Seviper",
+	"0337"        : {ico: "0337",         flags: 0},                      // "Lunatone", // uknown gender
+	"0338"        : {ico: "0338",         flags: 0},                      // "Solrock", // uknown gender
+	"0339"        : {ico: "0339",         flags: 0},                      // "Barboach",
+	"0340"        : {ico: "0340",         flags: 0},                      // "Whiscash",
+	"0341"        : {ico: "0341",         flags: 0},                      // "Corphish",
+	"0342"        : {ico: "0342",         flags: 0},                      // "Crawdaunt",
+	"0343"        : {ico: "0343",         flags: 0},                      // "Baltoy", // uknown gender
+	"0344"        : {ico: "0344",         flags: 0},                      // "Claydol", // uknown gender
+	"0345"        : {ico: "0345",         flags: 0},                      // "Lileep",
+	"0346"        : {ico: "0346",         flags: 0},                      // "Cradily",
+	"0347"        : {ico: "0347",         flags: 0},                      // "Anorith",
+	"0348"        : {ico: "0348",         flags: 0},                      // "Armaldo",
+	"0174"        : {ico: "0174",         flags: 0},                      // "Igglybuff",
+	"0039"        : {ico: "0039",         flags: 0},                      // "Jigglypuff",
+	"0040"        : {ico: "0040",         flags: 0},                      // "Wigglytuff",
+	"0349"        : {ico: "0349",         flags: 0},                      // "Feebas",
+	"0350"        : {ico: "0350",         flags: 0},                      // "Milotic",
+	"0351"        : {ico: "0351",         flags: FLAGS_BATTLE_FORM_BASE}, // "Castform",
+	"0351-sunny"  : {ico: "0351-sunny",   flags: FLAGS_BATTLE_FORM},      // "Sunny Castform",
+	"0351-rainy"  : {ico: "0351-rainy",   flags: FLAGS_BATTLE_FORM},      // "Rainy Castform",
+	"0351-snowy"  : {ico: "0351-snowy",   flags: FLAGS_BATTLE_FORM},      // "Snowy Castform",
+	"0120"        : {ico: "0120",         flags: 0},                      // "Staryu", // uknown gender
+	"0121"        : {ico: "0121",         flags: 0},                      // "Starmie", // uknown gender
+	"0352"        : {ico: "0352",         flags: 0},                      // "Kecleon",
+	"0353"        : {ico: "0353",         flags: 0},                      // "Shuppet",
+	"0354"        : {ico: "0354",         flags: 0},                      // "Banette",
+	"0355"        : {ico: "0355",         flags: 0},                      // "Duskull",
+	"0356"        : {ico: "0356",         flags: 0},                      // "Dusclops",
+	"0357"        : {ico: "0357",         flags: 0},                      // "Tropius",
+	"0358"        : {ico: "0358",         flags: 0},                      // "Chimecho",
+	"0359"        : {ico: "0359",         flags: 0},                      // "Absol",
+	"0037"        : {ico: "0037",         flags: 0},                      // "Vulpix",
+	"0038"        : {ico: "0038",         flags: 0},                      // "Ninetales",
+	"0172"        : {ico: "0172",         flags: 0},                      // "Pichu",
+	"0025"        : {ico: "0025",         flags: 0},                      // "Pikachu",
+	"0026"        : {ico: "0026",         flags: 0},                      // "Raichu",
+	"0054"        : {ico: "0054",         flags: 0},                      // "Psyduck",
+	"0055"        : {ico: "0055",         flags: 0},                      // "Golduck",
+	"0360"        : {ico: "0360",         flags: 0},                      // "Wynaut",
+	"0202"        : {ico: "0202",         flags: 0},                      // "Wobbuffet",
+	"0177"        : {ico: "0177",         flags: 0},                      // "Natu",
+	"0178"        : {ico: "0178",         flags: 0},                      // "Xatu",
+	"0203"        : {ico: "0203",         flags: 0},                      // "Girafarig",
+	"0231"        : {ico: "0231",         flags: 0},                      // "Phanpy",
+	"0232"        : {ico: "0232",         flags: 0},                      // "Donphan",
+	"0127"        : {ico: "0127",         flags: 0},                      // "Pinsir",
+	"0214"        : {ico: "0214",         flags: 0},                      // "Heracross",
+	"0111"        : {ico: "0111",         flags: 0},                      // "Rhyhorn",
+	"0112"        : {ico: "0112",         flags: 0},                      // "Rhydon",
+	"0361"        : {ico: "0361",         flags: 0},                      // "Snorunt",
+	"0362"        : {ico: "0362",         flags: 0},                      // "Glalie",
+	"0363"        : {ico: "0363",         flags: 0},                      // "Spheal",
+	"0364"        : {ico: "0364",         flags: 0},                      // "Sealeo",
+	"0365"        : {ico: "0365",         flags: 0},                      // "Walrein",
+	"0366"        : {ico: "0366",         flags: 0},                      // "Clamperl",
+	"0367"        : {ico: "0367",         flags: 0},                      // "Huntail",
+	"0368"        : {ico: "0368",         flags: 0},                      // "Gorebyss",
+	"0369"        : {ico: "0369",         flags: 0},                      // "Relicanth",
+	"0222"        : {ico: "0222",         flags: 0},                      // "Corsola",
+	"0170"        : {ico: "0170",         flags: 0},                      // "Chinchou",
+	"0171"        : {ico: "0171",         flags: 0},                      // "Lanturn",
+	"0370"        : {ico: "0370",         flags: 0},                      // "Luvdisc",
+	"0116"        : {ico: "0116",         flags: 0},                      // "Horsea",
+	"0117"        : {ico: "0117",         flags: 0},                      // "Seadra",
+	"0230"        : {ico: "0230",         flags: 0},                      // "Kingdra",
+	"0371"        : {ico: "0371",         flags: 0},                      // "Bagon",
+	"0372"        : {ico: "0372",         flags: 0},                      // "Shelgon",
+	"0373"        : {ico: "0373",         flags: 0},                      // "Salamence",
+	"0374"        : {ico: "0374",         flags: 0},                      // "Beldum", // uknown gender
+	"0375"        : {ico: "0375",         flags: 0},                      // "Metang", // uknown gender
+	"0376"        : {ico: "0376",         flags: 0},                      // "Metagross", // uknown gender
+	"0377"        : {ico: "0377",         flags: 0},                      // "Regirock", // uknown gender
+	"0378"        : {ico: "0378",         flags: 0},                      // "Regice", // uknown gender
+	"0379"        : {ico: "0379",         flags: 0},                      // "Registeel", // uknown gender
+	"0380"        : {ico: "0380",         flags: 0},                      // "Latias", // female only
+	"0381"        : {ico: "0381",         flags: 0},                      // "Latios", // male only
+	"0382"        : {ico: "0382",         flags: 0},                      // "Kyogre", // uknown gender
+	"0383"        : {ico: "0383",         flags: 0},                      // "Groudon", // uknown gender
+	"0384"        : {ico: "0384",         flags: 0},                      // "Rayquaza", // uknown gender
+	"0385"        : {ico: "0385",         flags: 0},                      // "Jirachi", // uknown gender
+	"0386"        : {ico: "0386",         flags: FLAGS_FORM_0386_RuSa},   // "Deoxys", // uknown gender
+	"0386-attack" : {ico: "0386-attack",  flags: FLAGS_FORM_0386_FR},     // "Attack Deoxys", // uknown gender
+	"0386-defense": {ico: "0386-defense", flags: FLAGS_FORM_0386_LG},     // "Defense Deoxys", // uknown gender
+	"0386-speed"  : {ico: "0386-speed",   flags: FLAGS_FORM_0386_Em},     // "Speed Deoxys", // uknown gender
 }
 
 const _Regdex_r_302 =
 {
-	..._Regdex_r_300,
-	"0386"				: "0386-attack",		// "Attack Deoxys", // uknown gender
-}
-
-const _Regdex_r_303 =
-{
-	..._Regdex_r_300,
-	"0386"				: "0386-defense",		// "Defense Deoxys", // uknown gender
-}
-
-const _Regdex_r_304 =
-{
-	..._Regdex_r_300,
-	"0386"				: "0386-speed",			// "Speed Deoxys", // uknown gender
+	"0001"             : {ico: "0001",             flags: 0},                      // "Bulbasaur",
+	"0002"             : {ico: "0002",             flags: 0},                      // "Ivysaur",
+	"0003"             : {ico: "0003",             flags: 0},                      // "Venusaur",
+	"0004"             : {ico: "0004",             flags: 0},                      // "Charmander",
+	"0005"             : {ico: "0005",             flags: 0},                      // "Charmeleon",
+	"0006"             : {ico: "0006",             flags: 0},                      // "Charizard",
+	"0007"             : {ico: "0007",             flags: 0},                      // "Squirtle",
+	"0008"             : {ico: "0008",             flags: 0},                      // "Wartortle",
+	"0009"             : {ico: "0009",             flags: 0},                      // "Blastoise",
+	"0010"             : {ico: "0010",             flags: 0},                      // "Caterpie",
+	"0011"             : {ico: "0011",             flags: 0},                      // "Metapod",
+	"0012"             : {ico: "0012",             flags: 0},                      // "Butterfree",
+	"0013"             : {ico: "0013",             flags: 0},                      // "Weedle",
+	"0014"             : {ico: "0014",             flags: 0},                      // "Kakuna",
+	"0015"             : {ico: "0015",             flags: 0},                      // "Beedrill",
+	"0016"             : {ico: "0016",             flags: 0},                      // "Pidgey",
+	"0017"             : {ico: "0017",             flags: 0},                      // "Pidgeotto",
+	"0018"             : {ico: "0018",             flags: 0},                      // "Pidgeot",
+	"0019"             : {ico: "0019",             flags: 0},                      // "Rattata",
+	"0020"             : {ico: "0020",             flags: 0},                      // "Raticate",
+	"0021"             : {ico: "0021",             flags: 0},                      // "Spearow",
+	"0022"             : {ico: "0022",             flags: 0},                      // "Fearow",
+	"0023"             : {ico: "0023",             flags: 0},                      // "Ekans",
+	"0024"             : {ico: "0024",             flags: 0},                      // "Arbok",
+	"0025"             : {ico: "0025",             flags: 0},                      // "Pikachu",
+	"0026"             : {ico: "0026",             flags: 0},                      // "Raichu",
+	"0027"             : {ico: "0027",             flags: 0},                      // "Sandshrew",
+	"0028"             : {ico: "0028",             flags: 0},                      // "Sandslash",
+	"0029"             : {ico: "0029-f",           flags: FLAGS_MAJ_GENDER_BASE},  // "Nidoran",
+	"0029-f"           : {ico: "0029-f",           flags: FLAGS_MAJ_GENDER_DIFF},  // "Nidoran♀",
+	"0030"             : {ico: "0030",             flags: 0},                      // "Nidorina",
+	"0031"             : {ico: "0031",             flags: 0},                      // "Nidoqueen",
+	"0032"             : {ico: "0032-m",           flags: FLAGS_MAJ_GENDER_BASE},  // "Nidoran",
+	"0032-m"           : {ico: "0032-m",           flags: FLAGS_MAJ_GENDER_DIFF},  // "Nidoran♂",
+	"0033"             : {ico: "0033",             flags: 0},                      // "Nidorino",
+	"0034"             : {ico: "0034",             flags: 0},                      // "Nidoking",
+	"0035"             : {ico: "0035",             flags: 0},                      // "Clefairy",
+	"0036"             : {ico: "0036",             flags: 0},                      // "Clefable",
+	"0037"             : {ico: "0037",             flags: 0},                      // "Vulpix",
+	"0038"             : {ico: "0038",             flags: 0},                      // "Ninetales",
+	"0039"             : {ico: "0039",             flags: 0},                      // "Jigglypuff",
+	"0040"             : {ico: "0040",             flags: 0},                      // "Wigglytuff",
+	"0041"             : {ico: "0041",             flags: 0},                      // "Zubat",
+	"0042"             : {ico: "0042",             flags: 0},                      // "Golbat",
+	"0043"             : {ico: "0043",             flags: 0},                      // "Oddish",
+	"0044"             : {ico: "0044",             flags: 0},                      // "Gloom",
+	"0045"             : {ico: "0045",             flags: 0},                      // "Vileplume",
+	"0046"             : {ico: "0046",             flags: 0},                      // "Paras",
+	"0047"             : {ico: "0047",             flags: 0},                      // "Parasect",
+	"0048"             : {ico: "0048",             flags: 0},                      // "Venonat",
+	"0049"             : {ico: "0049",             flags: 0},                      // "Venomoth",
+	"0050"             : {ico: "0050",             flags: 0},                      // "Diglett",
+	"0051"             : {ico: "0051",             flags: 0},                      // "Dugtrio",
+	"0052"             : {ico: "0052",             flags: 0},                      // "Meowth",
+	"0053"             : {ico: "0053",             flags: 0},                      // "Persian",
+	"0054"             : {ico: "0054",             flags: 0},                      // "Psyduck",
+	"0055"             : {ico: "0055",             flags: 0},                      // "Golduck",
+	"0056"             : {ico: "0056",             flags: 0},                      // "Mankey",
+	"0057"             : {ico: "0057",             flags: 0},                      // "Primeape",
+	"0058"             : {ico: "0058",             flags: 0},                      // "Growlithe",
+	"0059"             : {ico: "0059",             flags: 0},                      // "Arcanine",
+	"0060"             : {ico: "0060",             flags: 0},                      // "Poliwag",
+	"0061"             : {ico: "0061",             flags: 0},                      // "Poliwhirl",
+	"0062"             : {ico: "0062",             flags: 0},                      // "Poliwrath",
+	"0063"             : {ico: "0063",             flags: 0},                      // "Abra",
+	"0064"             : {ico: "0064",             flags: 0},                      // "Kadabra",
+	"0065"             : {ico: "0065",             flags: 0},                      // "Alakazam",
+	"0066"             : {ico: "0066",             flags: 0},                      // "Machop",
+	"0067"             : {ico: "0067",             flags: 0},                      // "Machoke",
+	"0068"             : {ico: "0068",             flags: 0},                      // "Machamp",
+	"0069"             : {ico: "0069",             flags: 0},                      // "Bellsprout",
+	"0070"             : {ico: "0070",             flags: 0},                      // "Weepinbell",
+	"0071"             : {ico: "0071",             flags: 0},                      // "Victreebel",
+	"0072"             : {ico: "0072",             flags: 0},                      // "Tentacool",
+	"0073"             : {ico: "0073",             flags: 0},                      // "Tentacruel",
+	"0074"             : {ico: "0074",             flags: 0},                      // "Geodude",
+	"0075"             : {ico: "0075",             flags: 0},                      // "Graveler",
+	"0076"             : {ico: "0076",             flags: 0},                      // "Golem",
+	"0077"             : {ico: "0077",             flags: 0},                      // "Ponyta",
+	"0078"             : {ico: "0078",             flags: 0},                      // "Rapidash",
+	"0079"             : {ico: "0079",             flags: 0},                      // "Slowpoke",
+	"0080"             : {ico: "0080",             flags: 0},                      // "Slowbro",
+	"0081"             : {ico: "0081",             flags: 0},                      // "Magnemite",
+	"0082"             : {ico: "0082",             flags: 0},                      // "Magneton",
+	"0083"             : {ico: "0083",             flags: 0},                      // "Farfetch'd",
+	"0084"             : {ico: "0084",             flags: 0},                      // "Doduo",
+	"0085"             : {ico: "0085",             flags: 0},                      // "Dodrio",
+	"0086"             : {ico: "0086",             flags: 0},                      // "Seel",
+	"0087"             : {ico: "0087",             flags: 0},                      // "Dewgong",
+	"0088"             : {ico: "0088",             flags: 0},                      // "Grimer",
+	"0089"             : {ico: "0089",             flags: 0},                      // "Muk",
+	"0090"             : {ico: "0090",             flags: 0},                      // "Shellder",
+	"0091"             : {ico: "0091",             flags: 0},                      // "Cloyster",
+	"0092"             : {ico: "0092",             flags: 0},                      // "Gastly",
+	"0093"             : {ico: "0093",             flags: 0},                      // "Haunter",
+	"0094"             : {ico: "0094",             flags: 0},                      // "Gengar",
+	"0095"             : {ico: "0095",             flags: 0},                      // "Onix",
+	"0096"             : {ico: "0096",             flags: 0},                      // "Drowzee",
+	"0097"             : {ico: "0097",             flags: 0},                      // "Hypno",
+	"0098"             : {ico: "0098",             flags: 0},                      // "Krabby",
+	"0099"             : {ico: "0099",             flags: 0},                      // "Kingler",
+	"0100"             : {ico: "0100",             flags: 0},                      // "Voltorb", // uknown gender
+	"0101"             : {ico: "0101",             flags: 0},                      // "Electrode", // uknown gender
+	"0102"             : {ico: "0102",             flags: 0},                      // "Exeggcute",
+	"0103"             : {ico: "0103",             flags: 0},                      // "Exeggutor",
+	"0104"             : {ico: "0104",             flags: 0},                      // "Cubone",
+	"0105"             : {ico: "0105",             flags: 0},                      // "Marowak",
+	"0106"             : {ico: "0106",             flags: 0},                      // "Hitmonlee", // male only
+	"0107"             : {ico: "0107",             flags: 0},                      // "Hitmonchan", // male only
+	"0108"             : {ico: "0108",             flags: 0},                      // "Lickitung",
+	"0109"             : {ico: "0109",             flags: 0},                      // "Koffing",
+	"0110"             : {ico: "0110",             flags: 0},                      // "Weezing",
+	"0111"             : {ico: "0111",             flags: 0},                      // "Rhyhorn",
+	"0112"             : {ico: "0112",             flags: 0},                      // "Rhydon",
+	"0113"             : {ico: "0113",             flags: 0},                      // "Chansey", // female only
+	"0114"             : {ico: "0114",             flags: 0},                      // "Tangela",
+	"0115"             : {ico: "0115",             flags: 0},                      // "Kangaskhan", // female only
+	"0116"             : {ico: "0116",             flags: 0},                      // "Horsea",
+	"0117"             : {ico: "0117",             flags: 0},                      // "Seadra",
+	"0118"             : {ico: "0118",             flags: 0},                      // "Goldeen",
+	"0119"             : {ico: "0119",             flags: 0},                      // "Seaking",
+	"0120"             : {ico: "0120",             flags: 0},                      // "Staryu", // uknown gender
+	"0121"             : {ico: "0121",             flags: 0},                      // "Starmie", // uknown gender
+	"0122"             : {ico: "0122",             flags: 0},                      // "Mr. Mime",
+	"0123"             : {ico: "0123",             flags: 0},                      // "Scyther",
+	"0124"             : {ico: "0124",             flags: 0},                      // "Jynx", // female only
+	"0125"             : {ico: "0125",             flags: 0},                      // "Electabuzz",
+	"0126"             : {ico: "0126",             flags: 0},                      // "Magmar",
+	"0127"             : {ico: "0127",             flags: 0},                      // "Pinsir",
+	"0128"             : {ico: "0128",             flags: 0},                      // "Tauros", // male only
+	"0129"             : {ico: "0129",             flags: 0},                      // "Magikarp",
+	"0130"             : {ico: "0130",             flags: 0},                      // "Gyarados",
+	"0131"             : {ico: "0131",             flags: 0},                      // "Lapras",
+	"0132"             : {ico: "0132",             flags: 0},                      // "Ditto", // uknown gender
+	"0133"             : {ico: "0133",             flags: 0},                      // "Eevee",
+	"0134"             : {ico: "0134",             flags: 0},                      // "Vaporeon",
+	"0135"             : {ico: "0135",             flags: 0},                      // "Jolteon",
+	"0136"             : {ico: "0136",             flags: 0},                      // "Flareon",
+	"0137"             : {ico: "0137",             flags: 0},                      // "Porygon", // uknown gender
+	"0138"             : {ico: "0138",             flags: 0},                      // "Omanyte",
+	"0139"             : {ico: "0139",             flags: 0},                      // "Omastar",
+	"0140"             : {ico: "0140",             flags: 0},                      // "Kabuto",
+	"0141"             : {ico: "0141",             flags: 0},                      // "Kabutops",
+	"0142"             : {ico: "0142",             flags: 0},                      // "Aerodactyl",
+	"0143"             : {ico: "0143",             flags: 0},                      // "Snorlax",
+	"0144"             : {ico: "0144",             flags: 0},                      // "Articuno", // uknown gender
+	"0145"             : {ico: "0145",             flags: 0},                      // "Zapdos", // uknown gender
+	"0146"             : {ico: "0146",             flags: 0},                      // "Moltres", // uknown gender
+	"0147"             : {ico: "0147",             flags: 0},                      // "Dratini",
+	"0148"             : {ico: "0148",             flags: 0},                      // "Dragonair",
+	"0149"             : {ico: "0149",             flags: 0},                      // "Dragonite",
+	"0150"             : {ico: "0150",             flags: 0},                      // "Mewtwo", // uknown gender
+	"0151"             : {ico: "0151",             flags: 0},                      // "Mew", // uknown gender
 }

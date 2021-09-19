@@ -87,7 +87,10 @@ function deleteZukan(game, version, pkmn)
 	var idx = zukan[game][version].indexOf(pkmn);
 	if (idx >= 0)
 	{
-		delete zukan[game][version][idx];
+		//delete zukan[game][version][idx];
+		zukan[game][version].splice(idx, 1);
+		// deletes all null
+		zukan[game][version] = zukan[game][version].filter(x => x != null);
 		localStorage.setObject(lsName, zukan);
 	}
 }
@@ -164,4 +167,113 @@ function toggleMenu()
 function changeVer(newVer)
 {
 	updateURLParameter(window.location.href, "ver", newVer);
+}
+
+function toggleOptions()
+{
+	var x = document.getElementById("divOpt");
+	if (x.style.display === "none")
+	{
+		x.style.display = "inline-block";
+		optSet();
+	}
+	else
+	{
+		x.style.display = "none";
+	}
+}
+
+function optSet()
+{
+	document.getElementById("optMinGenderDiff").checked = ((g_Flags & FLAGS_MIN_GENDER_DIFF) > 0);
+	var val = ((g_Flags & FLAGS_BATTLE_FORM_GRP) == 0);
+	document.getElementById("optGrpBattleForm").checked = !val;
+	{
+		document.getElementById("optBattleForm").disabled = val;
+		document.getElementById("optBattleForm").checked = ((g_Flags & FLAGS_BATTLE_FORM) > 0);
+		document.getElementById("optBattleForm").parentNode.disabled = val;
+
+		// document.getElementById("optMegaForm").disabled = val;
+		// document.getElementById("optMegaForm").checked = ((g_Flags & FLAGS_BATTLE_FORM) > 0);
+		// document.getElementById("optMegaForm").parentNode.disabled = val;
+
+		// document.getElementById("optGmaxForm").disabled = val;
+		// document.getElementById("optGmaxForm").checked = ((g_Flags & FLAGS_BATTLE_FORM) > 0);
+		// document.getElementById("optGmaxForm").parentNode.disabled = val;
+	}
+	document.getElementById("optForm0201").checked = ((g_Flags & FLAGS_FORM_0201) > 0);
+	document.getElementById("optForm0386").checked = ((g_Flags & FLAGS_FORM_0386) > 0);
+	document.getElementById("optForm0412").checked = ((g_Flags & FLAGS_FORM_0412) > 0);
+	document.getElementById("optForm0422").checked = ((g_Flags & FLAGS_FORM_0422) > 0);
+	document.getElementById("optForm0479").checked = ((g_Flags & FLAGS_FORM_0479) > 0);
+	document.getElementById("optForm0487").checked = ((g_Flags & FLAGS_FORM_0487) > 0);
+	document.getElementById("optForm0492").checked = ((g_Flags & FLAGS_FORM_0492) > 0);
+	document.getElementById("optForm0493").checked = ((g_Flags & FLAGS_FORM_0493) > 0);
+}
+
+// switch from base form to another form
+function optSwitch(checked, val)
+{
+	//console.log(checked + " " + val);
+	if (checked)
+	{
+		g_Flags |= val;
+		g_Flags &= ~(val >> 1);
+	}
+	else
+	{
+		g_Flags &= ~(val);
+		g_Flags |= (val >> 1);
+	}
+	optSet();
+}
+
+function optToggle(checked, val)
+{
+	//console.log(checked + " " + val);
+	if (checked)
+		g_Flags |= val;
+	else
+		g_Flags &= ~(val);
+	optSet();
+}
+
+function optSave()
+{
+	var zukan = localStorage.getObject(lsName);
+	if (zukan == null)
+		return;
+	zukan.opt = g_Flags;
+	localStorage.setObject(lsName, zukan);
+
+	toggleOptions();
+	location.reload();
+}
+
+const InitFlag =	FLAGS_MAJ_GENDER_DIFF | 
+					FLAGS_MIN_GENDER_BASE | 
+					FLAGS_BATTLE_FORM_BASE |
+					FLAGS_FORM_0201 |
+					FLAGS_FORM_0386 |
+					FLAGS_FORM_0412 |
+					FLAGS_FORM_0422 |
+					FLAGS_FORM_0479 |
+					FLAGS_FORM_0487 |
+					FLAGS_FORM_0492 |
+					FLAGS_FORM_0493 |
+					FLAGS_BATTLE_FORM_GRP;
+
+function optClear()
+{
+	g_Flags = InitFlag;
+}
+
+function optGet()
+{
+	var zukan = localStorage.getObject(lsName);
+	if (zukan == null)
+		return InitFlag;
+	if (!zukan.hasOwnProperty("opt"))
+		return InitFlag;
+	return zukan.opt;
 }

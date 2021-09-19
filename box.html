@@ -1,11 +1,13 @@
 ﻿<html>
 <head>
 	<link rel="stylesheet" href="css/style.css"/>
+	<script lang="javascript" src="js/flags.js"></script>
 	<script lang="javascript" src="js/fxn.js"></script>
 	<script lang="javascript" src="js/pkmn-names.js"></script>
 	<script lang="javascript" src="poke_icon/g01/box-g01.js"></script>
 	<script lang="javascript" src="poke_icon/g02/box-g02.js"></script>
 	<script lang="javascript" src="poke_icon/g03/box-g03.js"></script>
+	<script lang="javascript" src="poke_icon/g04/box-g04.js"></script>
 	<script lang="javascript" src="poke_icon/g08/box-g08.js"></script>
 	<script lang="javascript" src="js/game.js"></script>
 </head>
@@ -15,7 +17,31 @@
 		<div id="btnMenu" onclick="toggleMenu()"></div>
 		<div id="divVer"></div>
 		<div id="divMenu"></div>
+		<div id="divOpt" class="opt">
+			<div class="opt"><input type="checkbox" id="optMinGenderDiff" onclick="optSwitch(this.checked, FLAGS_MIN_GENDER_DIFF)"><label for="optMinGenderDiff">Show minor gender difference</label></div>
+			<div class="opt"><input type="checkbox" id="optGrpBattleForm" onclick="optToggle(this.checked, FLAGS_BATTLE_FORM_GRP)"><label for="optGrpBattleForm">Show battle forms</label></div>
+			<div style="margin-left:20px;" class="opt">
+				<div class="opt"><input type="checkbox" id="optBattleForm" onclick="optSwitch(this.checked, FLAGS_BATTLE_FORM)"><label for="optBattleForm">Show general battle forms</label></div>
+				<div class="opt"><input type="checkbox" id="optMegaForm" onclick="optSwitch(this.checked, FLAGS_MEGA_FORM)" disabled><label for="optMegaForm">Show Mega and Primal Evolution forms</label></div>
+				<div class="opt"><input type="checkbox" id="optGmaxForm" onclick="optSwitch(this.checked, FLAGS_GMAX_FORM)" disabled><label for="optGmaxForm">Show Gigantamax forms</label></div>
+			</div>
+			<!--div class="opt"><input type="checkbox" id="optRegionalForm" onclick="optSwitch(this.checked, FLAGS_REGIONAL_FORM)" disabled><label for="optRegionalForm"></label>Show Regional forms</label></div-->
+			<!-- specific Pokemon forms -->
+			<div class="opt"><input type="checkbox" id="optForm0201" onclick="optSwitch(this.checked, FLAGS_FORM_0201)"><label for="optForm0201"></label>Show Unown forms</label></div>
+			<div class="opt"><input type="checkbox" id="optForm0386" onclick="optSwitch(this.checked, FLAGS_FORM_0386)"><label for="optForm0386"></label>Show Deoxys forms</label></div>
+			<div class="opt"><input type="checkbox" id="optForm0412" onclick="optSwitch(this.checked, FLAGS_FORM_0412)"><label for="optForm0412"></label>Show Burmy and Wormadam forms</label></div>
+			<div class="opt"><input type="checkbox" id="optForm0422" onclick="optSwitch(this.checked, FLAGS_FORM_0422)"><label for="optForm0422"></label>Show Shellos and Gastrodon forms</label></div>
+			<div class="opt"><input type="checkbox" id="optForm0479" onclick="optSwitch(this.checked, FLAGS_FORM_0479)"><label for="optForm0479"></label>Show Rotom forms</label></div>
+			<div class="opt"><input type="checkbox" id="optForm0487" onclick="optSwitch(this.checked, FLAGS_FORM_0487)"><label for="optForm0487"></label>Show Giratina forms</label></div>
+			<div class="opt"><input type="checkbox" id="optForm0492" onclick="optSwitch(this.checked, FLAGS_FORM_0492)"><label for="optForm0492"></label>Show Shaymin forms</label></div>
+			<div class="opt"><input type="checkbox" id="optForm0493" onclick="optSwitch(this.checked, FLAGS_FORM_0493)"><label for="optForm0493"></label>Show Arceus forms</label></div>
+			<div class="opt">
+				<button type="button" onclick="optReset()">Reset flags</input>
+				<button type="button" onclick="optSave()">Save and Refresh</input>
+			</div>
+		</div>
 	</div>
+	<br/><br/>
 	<script lang="javascript" src="js/main.js"></script>
 </body>
 </html>

@@ -55,65 +55,23 @@ _Rdex = _Dex.rDex;
 _Ndex = _Dex.nDex;
 _Edex = _Dex.eDex;
 iconPath = _Dex.icoPath;
-if ((game >= _GameVersions.Re.id &&
-	game <= _GameVersions.Cr.id) ||
-	(game >= _GameVersions.vcRe.id &&
-	game <= _GameVersions.vcCr.id))
-	imgWd = _Dex.imgWd * 2;
-else
-	imgWd = _Dex.imgWd;
+// if ((game >= _GameVersions.Re.id &&
+// 	game <= _GameVersions.Cr.id) ||
+// 	(game >= _GameVersions.vcRe.id &&
+// 	game <= _GameVersions.vcCr.id))
+// 	imgWd = _Dex.imgWd * 2;
+// else
+// 	imgWd = _Dex.imgWd;
+imgWd = _Dex.imgWd;
+if (imgWd <= 32)
+	imgWd *= 2;
 boxCap = _Dex.boxCap;
 divBox = _Dex.divBox;
 
+g_Flags = optGet();
+console.log("g_Flags: " + g_Flags + " _Dex.flags: " + _Dex.flags);
+flags = g_Flags | _Dex.flags;
 boxIdx = 1;
-if (game < _GameVersions.Ru.id)
-{
-	// remove Unown
-	// national
-	delete _GameVersions.Go.nDex["0201"];
-	delete _GameVersions.Si.nDex["0201"];
-	delete _GameVersions.Cr.nDex["0201"];
-	// regional
-	delete _GameVersions.Go.rDex["0201"];
-	delete _GameVersions.Si.rDex["0201"];
-	delete _GameVersions.Cr.rDex["0201"];
-	// evolution
-	delete _GameVersions.Go.eDex["0201"];
-	delete _GameVersions.Si.eDex["0201"];
-	delete _GameVersions.Cr.eDex["0201"];
-}
-else if (game > _GameVersions.vcYe.id &&
-		game <= _GameVersions.vcCr.id)
-{
-	if (game <= _GameVersions.vcYe.id) // cannot rename box
-		boxIdx = 2;
-	// remove Unown A-Z
-	const vcUnown =
-	[
-		"0201-angry",  "0201-bear",   "0201-chase",    "0201-direct",  "0201-engage",  "0201-find",
-		"0201-give",   "0201-help",   "0201-increase", "0201-join",    "0201-keep",    "0201-laugh",
-		"0201-make",   "0201-nuzzle", "0201-observe",  "0201-perform", "0201-quicken", "0201-reassure",
-		"0201-search", "0201-tell",   "0201-undo",     "0201-vanish",  "0201-want",    "0201-xxxxx",
-		"0201-yield",  "0201-zoom"
-	];
-
-	vcUnown.forEach(n201 =>
-	{
-		// national
-		delete _GameVersions.vcGo.nDex[n201];
-		delete _GameVersions.vcSi.nDex[n201];
-		delete _GameVersions.vcCr.nDex[n201];
-		// regional
-		delete _GameVersions.vcGo.rDex[n201];
-		delete _GameVersions.vcSi.rDex[n201];
-		delete _GameVersions.vcCr.rDex[n201];
-		// evolution
-		delete _GameVersions.vcGo.eDex[n201];
-		delete _GameVersions.vcSi.eDex[n201];
-		delete _GameVersions.vcCr.eDex[n201];
-	});
-}
-
 document.getElementById("btnMenu").innerHTML = `[${_Dex.name}...]`;
 
 document.write(`<button type="button" onclick="saveToLocal()">Export</button>`);
@@ -142,18 +100,7 @@ menu = document.getElementById("divVer");
 if (version == "r") menu.innerHTML += " [ Regional ] "; else menu.innerHTML += `<a class="btnVer" href='box.html?game=${_Dex.code}&ver=r'> [ R ] </a>`;
 if (version == "n") menu.innerHTML += " [ National ] "; else menu.innerHTML += `<a class="btnVer" href='box.html?game=${_Dex.code}&ver=n'> [ N ] </a>`;
 if (version == "e") menu.innerHTML += " [ Evolution ] "; else menu.innerHTML += `<a class="btnVer" href='box.html?game=${_Dex.code}&ver=e'> [ E ] </a>`;
-
-// if (game == GameVersion._Sw || game == GameVersion._Sh)
-// {
-// 	_Rdex = _Regdex_SwSh;
-// 	_Ndex = _Natdex_G08;
-// 	_Edex = _Evodex_G08;
-// 	iconPath = _IcoPath_Home;
-// 	if (version == "r")	// Evolution Dex
-// 	{
-// 		iconPath = _IcoPath_SwSh;
-// 	}
-// }
+menu.innerHTML += ` <span id="btnOpt" onclick="toggleOptions()"> [ Options ] </span>`;
 
 if (version == "e")	// Evolution Dex
 {
@@ -174,12 +121,24 @@ key = 0;
 idxStr = "0000";
 keyStr = "";
 console.log(`boxCap: ${boxCap}`);
-for (const rdex in _Ndex)
+for (const dex in _Ndex)
 {
-	if (rdex.substring(0, 4) != idxStr)
+	var dexInfo = _Ndex[dex];
+	var dexIco = dexInfo.ico;
+	var dexFlags = dexInfo.flags;
+
+	// check flags
+	if (dexFlags != 0)
+	{
+		console.log(dex + " flags: " + flags + " dexFlags: " + dexFlags);
+		if ((flags & dexFlags) == 0)
+			continue;
+	}
+
+	if (dex.substring(0, 4) != idxStr)
 	{
 		++key;
-		idxStr = rdex.substring(0, 4);
+		idxStr = dex.substring(0, 4);
 	}
 	if (game < _GameVersions.Ru.id) // Gen 1 & 2
 	{
@@ -209,32 +168,32 @@ for (const rdex in _Ndex)
 		++boxIdx;
 	}
 
-	//console.log(typeof(rdex) + " " + rdex + ": " + _Names[rdex]);
+	//console.log(typeof(dex) + " " + dex + ": " + _Names[dex]);
 	if (version == "e")
 	{
 		boxBody += `<td style='border:1px solid gray; width:50px; vertical-align:top;'>`;
-		boxBody += `<span title='${rdex.substr(0, 4)} ${_Names[rdex]}'>`;
-		boxBody += `<img id='${rdex}' src='${iconPath}${_Ndex[rdex]}.png' alt='${_Ndex[rdex]}' width='${imgWd}' `;
-		if (!inZukan(game, version, rdex))
+		boxBody += `<span title='${dex.substr(0, 4)} ${_Names[dex]}'>`;
+		boxBody += `<img id='${dex}' src='${iconPath}${dexIco}.png' alt='${dexIco}' width='${imgWd}' `;
+		if (!inZukan(game, version, dex))
 			boxBody += `class="zukan-icon gray"; `;
 		else
 			boxBody += `class="zukan-icon"; `;
 		boxBody += `onclick='imgPokemon_Clicked(this, ${game}, "${version}")'/>`;
 		boxBody += `</span><br/>`;
-		boxBody += `<span style='font-size:10px;'>#${rdex.substr(0, 4)}<br/>`;
-		boxBody += `${_Names[rdex]}</span></td>`;
+		boxBody += `<span style='font-size:10px;'>#${dex.substr(0, 4)}<br/>`;
+		boxBody += `${_Names[dex]}</span></td>`;
 	}
 	else
 	{
 		boxBody += `<td style='border:1px solid gray; width:50px; vertical-align:top;'>`;
-		boxBody += `<span title='${keyStr} ${_Names[rdex]}'>`;
-		boxBody += `<img id='${rdex}' src='${iconPath}${_Ndex[rdex]}.png' alt='${_Ndex[rdex]}' width='${imgWd}' `;
-		if (!inZukan(game, version, rdex))
+		boxBody += `<span title='${keyStr} ${_Names[dex]}'>`;
+		boxBody += `<img id='${dex}' src='${iconPath}${dexIco}.png' alt='${dexIco}' width='${imgWd}' `;
+		if (!inZukan(game, version, dex))
 			boxBody += `class="zukan-icon gray"; `;
 		else
 			boxBody += `class="zukan-icon"; `;
 		boxBody += `onclick='imgPokemon_Clicked(this, ${game}, "${version}")'/>`;
-		boxBody += `</span><br/><span style='font-size:10px;'>#${keyStr}<br/>${_Names[rdex]}</span></td>`;
+		boxBody += `</span><br/><span style='font-size:10px;'>#${keyStr}<br/>${_Names[dex]}</span></td>`;
 	}
 
 	if (boxCntr == boxCap)
@@ -270,7 +229,7 @@ while (boxCntr <= boxCap)
 	}
 	boxBody += `-none.png' width='${imgWd}px' class="zukan-icon"/>`;
 	// boxBody += `-none.png' width='${imgWd}px' `;
-	// if (savedZukanGame.indexOf(rdex) == -1)
+	// if (savedZukanGame.indexOf(dex) == -1)
 	// 	boxBody += `class="gray" `;
 	// boxBody += `onclick='imgPokemon_Clicked(this, ${game})'/>`;
 	boxBody += `<span style='font-size:10px;'>&nbsp;</span></td>`;

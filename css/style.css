@@ -50,7 +50,17 @@
     width: 250px;
 }
 
+#divOpt
+{
+    display: none;
+}
+
 div
 {
     border: 1px solid gray;
+}
+
+.opt
+{
+    border: 0px;
 }
