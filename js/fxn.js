@@ -263,7 +263,7 @@ const InitFlag =	FLAGS_MAJ_GENDER_DIFF |
 					FLAGS_FORM_0493 |
 					FLAGS_BATTLE_FORM_GRP;
 
-function optClear()
+function optReset()
 {
 	g_Flags = InitFlag;
 }
