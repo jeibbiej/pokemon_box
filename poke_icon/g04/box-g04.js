@@ -236,7 +236,7 @@ const _Regdex_n_401 =
 	"0170"            : {ico: "0170",             flags: 0},                      // "Chinchou",
 	"0171"            : {ico: "0171",             flags: 0},                      // "Lanturn",
 	"0172"            : {ico: "0172",             flags: 0},                      // "Pichu",
-	"0172-spiky-eared": {ico: "0172-spiky-eared", flags: FLAGS_FORM_0172_HGSS},   // "Spiky-eared Pichu", // female only
+	"0172-spiky-eared": {ico: "0172",             flags: FLAGS_FORM_0172_HGSS},   // "Spiky-eared Pichu", // female only
 	"0173"            : {ico: "0173",             flags: 0},                      // "Cleffa",
 	"0174"            : {ico: "0174",             flags: 0},                      // "Igglybuff",
 	"0175"            : {ico: "0175",             flags: 0},                      // "Togepi",
@@ -815,7 +815,7 @@ const _Regdex_e_401 =
 	"0026"            : {ico: "0026",             flags: FLAGS_MIN_GENDER_BASE},  // "Raichu",
 	"0026-m"          : {ico: "0026",             flags: FLAGS_MIN_GENDER_DIFF},  // "Raichu♂",
 	"0026-f"          : {ico: "0026",             flags: FLAGS_MIN_GENDER_DIFF},  // "Raichu♀",
-	"0172-spiky-eared": {ico: "0172-spiky-eared", flags: FLAGS_FORM_0172_HGSS},   // "Spiky-eared Pichu", // female only
+	"0172-spiky-eared": {ico: "0172",             flags: FLAGS_FORM_0172_HGSS},   // "Spiky-eared Pichu", // female only
 	"0027"            : {ico: "0027",             flags: 0},                      // "Sandshrew",
 	"0028"            : {ico: "0028",             flags: 0},                      // "Sandslash",
 	"0029"            : {ico: "0029-f",           flags: FLAGS_MAJ_GENDER_BASE},  // "Nidoran",
@@ -1969,7 +1969,7 @@ const _Regdex_r_403 =
 	"0026"            : {ico: "0026",             flags: FLAGS_MIN_GENDER_BASE}, // "Raichu",
 	"0026-m"          : {ico: "0026",             flags: FLAGS_MIN_GENDER_DIFF}, // "Raichu♂",
 	"0026-f"          : {ico: "0026",             flags: FLAGS_MIN_GENDER_DIFF}, // "Raichu♀",
-	"0172-spiky-eared": {ico: "0172-spiky-eared", flags: FLAGS_FORM_0172_HGSS},  // "Spiky-eared Pichu", // female only
+	"0172-spiky-eared": {ico: "0172",             flags: FLAGS_FORM_0172_HGSS},  // "Spiky-eared Pichu", // female only
 	"0010"            : {ico: "0010",             flags: 0},                     // "Caterpie",
 	"0011"            : {ico: "0011",             flags: 0},                     // "Metapod",
 	"0012"            : {ico: "0012",             flags: FLAGS_MIN_GENDER_BASE}, // "Butterfree",
