@@ -185,46 +185,38 @@ function toggleOptions()
 
 function optSet()
 {
-	document.getElementById("optMinGenderDiff").checked = ((g_Flags & FLAGS_MIN_GENDER_DIFF) > 0);
-	var val = ((g_Flags & FLAGS_BATTLE_FORM_GRP) == 0);
+	document.getElementById("optMinGenderDiff").checked = ((g_Flags.contains(FORM_MIN_GENDER_DIFF)));
+	var val = (!(g_Flags.contains(FORM_BATTLE_GRP)));
 	document.getElementById("optGrpBattleForm").checked = !val;
 	{
 		document.getElementById("optBattleForm").disabled = val;
-		document.getElementById("optBattleForm").checked = ((g_Flags & FLAGS_BATTLE_FORM) > 0);
+		document.getElementById("optBattleForm").checked = ((g_Flags.contains(FORM_BATTLE)));
 		document.getElementById("optBattleForm").parentNode.disabled = val;
 
 		// document.getElementById("optMegaForm").disabled = val;
-		// document.getElementById("optMegaForm").checked = ((g_Flags & FLAGS_BATTLE_FORM) > 0);
+		// document.getElementById("optMegaForm").checked = ((g_Flags.contains(FORM_BATTLE)));
 		// document.getElementById("optMegaForm").parentNode.disabled = val;
 
 		// document.getElementById("optGmaxForm").disabled = val;
-		// document.getElementById("optGmaxForm").checked = ((g_Flags & FLAGS_BATTLE_FORM) > 0);
+		// document.getElementById("optGmaxForm").checked = ((g_Flags.contains(FORM_BATTLE))0);
 		// document.getElementById("optGmaxForm").parentNode.disabled = val;
 	}
-	document.getElementById("optForm0201").checked = ((g_Flags & FLAGS_FORM_0201) > 0);
-	document.getElementById("optForm0386").checked = ((g_Flags & FLAGS_FORM_0386) > 0);
-	document.getElementById("optForm0412").checked = ((g_Flags & FLAGS_FORM_0412) > 0);
-	document.getElementById("optForm0422").checked = ((g_Flags & FLAGS_FORM_0422) > 0);
-	document.getElementById("optForm0479").checked = ((g_Flags & FLAGS_FORM_0479) > 0);
-	document.getElementById("optForm0487").checked = ((g_Flags & FLAGS_FORM_0487) > 0);
-	document.getElementById("optForm0492").checked = ((g_Flags & FLAGS_FORM_0492) > 0);
-	document.getElementById("optForm0493").checked = ((g_Flags & FLAGS_FORM_0493) > 0);
+	document.getElementById("optForm0201").checked = ((g_Flags.contains(FORM_0201)));
+	document.getElementById("optForm0386").checked = ((g_Flags.contains(FORM_0386)));
+	document.getElementById("optForm0412").checked = ((g_Flags.contains(FORM_0412)));
+	document.getElementById("optForm0422").checked = ((g_Flags.contains(FORM_0422)));
+	document.getElementById("optForm0479").checked = ((g_Flags.contains(FORM_0479)));
+	document.getElementById("optForm0487").checked = ((g_Flags.contains(FORM_0487)));
+	document.getElementById("optForm0492").checked = ((g_Flags.contains(FORM_0492)));
+	document.getElementById("optForm0493").checked = ((g_Flags.contains(FORM_0493)));
 }
 
 // switch from base form to another form
 function optSwitch(checked, val)
 {
 	//console.log(checked + " " + val);
-	if (checked)
-	{
-		g_Flags |= val;
-		g_Flags &= ~(val >> 1);
-	}
-	else
-	{
-		g_Flags &= ~(val);
-		g_Flags |= (val >> 1);
-	}
+	optToggle(val);
+	optToggle(val + 1);
 	optSet();
 }
 
@@ -232,9 +224,23 @@ function optToggle(checked, val)
 {
 	//console.log(checked + " " + val);
 	if (checked)
-		g_Flags |= val;
+	{
+		if (!g_Flags.includes(val))
+		{
+			g_Flags.push(val);
+		}
+	}
 	else
-		g_Flags &= ~(val);
+	{
+		var idx = g_Flags.indexOf(val);
+		if (idx >= 0)
+		{
+			//delete zukan[game][version][idx];
+			g_Flags.splice(idx, 1);
+			// deletes all null
+			g_Flags = g_Flags.filter(x => x != null);
+		}
+	}
 	optSet();
 }
 
@@ -250,18 +256,18 @@ function optSave()
 	location.reload();
 }
 
-const InitFlag =	FLAGS_MAJ_GENDER_DIFF | 
-					FLAGS_MIN_GENDER_BASE | 
-					FLAGS_BATTLE_FORM_BASE |
-					FLAGS_FORM_0201 |
-					FLAGS_FORM_0386 |
-					FLAGS_FORM_0412 |
-					FLAGS_FORM_0422 |
-					FLAGS_FORM_0479 |
-					FLAGS_FORM_0487 |
-					FLAGS_FORM_0492 |
-					FLAGS_FORM_0493 |
-					FLAGS_BATTLE_FORM_GRP;
+const InitFlag = [	FORM_MAJ_GENDER_DIFF,
+					FORM_MIN_GENDER_BASE,
+					FORM_BATTLE_BASE,
+					FORM_0201,
+					FORM_0386,
+					FORM_0412,
+					FORM_0422,
+					FORM_0479,
+					FORM_0487,
+					FORM_0492,
+					FORM_0493,
+					FORM_BATTLE_GRP];
 
 function optReset()
 {
