@@ -430,7 +430,7 @@ const _Regdex_n_301 =
 	"0383"             : {ico: "0383",             flags: []},                      // "Groudon", // uknown gender
 	"0384"             : {ico: "0384",             flags: []},                      // "Rayquaza", // uknown gender
 	"0385"             : {ico: "0385",             flags: []},                      // "Jirachi", // uknown gender
-	"0386"             : {ico: "0386",             flags: [FORM_0386_RuSa]},        // "Deoxys", // uknown gender
+	"0386"             : {ico: "0386",             flags: [FORM_0386_BASE]},        // "Deoxys", // uknown gender
 	"0386-attack"      : {ico: "0386-attack",      flags: [FORM_0386_FR]},          // "Attack Deoxys", // uknown gender
 	"0386-defense"     : {ico: "0386-defense",     flags: [FORM_0386_LG]},          // "Defense Deoxys", // uknown gender
 	"0386-speed"       : {ico: "0386-speed",       flags: [FORM_0386_Em]},          // "Speed Deoxys", // uknown gender
@@ -859,7 +859,7 @@ const _Regdex_e_301 =
 	"0383"             : {ico: "0383",             flags: []},                      // "Groudon", // uknown gender
 	"0384"             : {ico: "0384",             flags: []},                      // "Rayquaza", // uknown gender
 	"0385"             : {ico: "0385",             flags: []},                      // "Jirachi", // uknown gender
-	"0386"             : {ico: "0386",             flags: [FORM_0386_RuSa]},        // "Deoxys", // uknown gender
+	"0386"             : {ico: "0386",             flags: [FORM_0386_BASE]},        // "Deoxys", // uknown gender
 	"0386-attack"      : {ico: "0386-attack",      flags: [FORM_0386_FR]},          // "Attack Deoxys", // uknown gender
 	"0386-defense"     : {ico: "0386-defense",     flags: [FORM_0386_LG]},          // "Defense Deoxys", // uknown gender
 	"0386-speed"       : {ico: "0386-speed",       flags: [FORM_0386_Em]},          // "Speed Deoxys", // uknown gender
@@ -1074,7 +1074,7 @@ const _Regdex_r_301 =
 	"0383"        : {ico: "0383",         flags: []},                      // "Groudon", // uknown gender
 	"0384"        : {ico: "0384",         flags: []},                      // "Rayquaza", // uknown gender
 	"0385"        : {ico: "0385",         flags: []},                      // "Jirachi", // uknown gender
-	"0386"        : {ico: "0386",         flags: [FORM_0386_RuSa]},        // "Deoxys", // uknown gender
+	"0386"        : {ico: "0386",         flags: [FORM_0386_BASE]},        // "Deoxys", // uknown gender
 	"0386-attack" : {ico: "0386-attack",  flags: [FORM_0386_FR]},          // "Attack Deoxys", // uknown gender
 	"0386-defense": {ico: "0386-defense", flags: [FORM_0386_LG]},          // "Defense Deoxys", // uknown gender
 	"0386-speed"  : {ico: "0386-speed",   flags: [FORM_0386_Em]},          // "Speed Deoxys", // uknown gender

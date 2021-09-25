@@ -185,44 +185,44 @@ function toggleOptions()
 
 function optSet()
 {
-	document.getElementById("optMinGenderDiff").checked = ((g_Flags.contains(FORM_MIN_GENDER_DIFF)));
-	var val = (!(g_Flags.contains(FORM_BATTLE_GRP)));
+	document.getElementById("optMinGenderDiff").checked = g_Flags.includes(FORM_MIN_GENDER_DIFF);
+	var val = !g_Flags.includes(FORM_BATTLE_GRP);
 	document.getElementById("optGrpBattleForm").checked = !val;
 	{
 		document.getElementById("optBattleForm").disabled = val;
-		document.getElementById("optBattleForm").checked = ((g_Flags.contains(FORM_BATTLE)));
+		document.getElementById("optBattleForm").checked = g_Flags.includes(FORM_BATTLE);
 		document.getElementById("optBattleForm").parentNode.disabled = val;
 
 		// document.getElementById("optMegaForm").disabled = val;
-		// document.getElementById("optMegaForm").checked = ((g_Flags.contains(FORM_BATTLE)));
+		// document.getElementById("optMegaForm").checked = g_Flags.includes(FORM_BATTLE);
 		// document.getElementById("optMegaForm").parentNode.disabled = val;
 
 		// document.getElementById("optGmaxForm").disabled = val;
-		// document.getElementById("optGmaxForm").checked = ((g_Flags.contains(FORM_BATTLE))0);
+		// document.getElementById("optGmaxForm").checked = g_Flags.includes(FORM_BATTLE);
 		// document.getElementById("optGmaxForm").parentNode.disabled = val;
 	}
-	document.getElementById("optForm0201").checked = ((g_Flags.contains(FORM_0201)));
-	document.getElementById("optForm0386").checked = ((g_Flags.contains(FORM_0386)));
-	document.getElementById("optForm0412").checked = ((g_Flags.contains(FORM_0412)));
-	document.getElementById("optForm0422").checked = ((g_Flags.contains(FORM_0422)));
-	document.getElementById("optForm0479").checked = ((g_Flags.contains(FORM_0479)));
-	document.getElementById("optForm0487").checked = ((g_Flags.contains(FORM_0487)));
-	document.getElementById("optForm0492").checked = ((g_Flags.contains(FORM_0492)));
-	document.getElementById("optForm0493").checked = ((g_Flags.contains(FORM_0493)));
+	document.getElementById("optForm0201").checked = g_Flags.includes(FORM_0201);
+	document.getElementById("optForm0386").checked = g_Flags.includes(FORM_0386);
+	document.getElementById("optForm0412").checked = g_Flags.includes(FORM_0412);
+	document.getElementById("optForm0422").checked = g_Flags.includes(FORM_0422);
+	document.getElementById("optForm0479").checked = g_Flags.includes(FORM_0479);
+	document.getElementById("optForm0487").checked = g_Flags.includes(FORM_0487);
+	document.getElementById("optForm0492").checked = g_Flags.includes(FORM_0492);
+	document.getElementById("optForm0493").checked = g_Flags.includes(FORM_0493);
 }
 
 // switch from base form to another form
 function optSwitch(checked, val)
 {
 	//console.log(checked + " " + val);
-	optToggle(val);
-	optToggle(val + 1);
-	optSet();
+	optToggle(checked, val);
+	optToggle(!checked, val - 1);
+	console.log("g_Flags: " + g_Flags);
 }
 
 function optToggle(checked, val)
 {
-	//console.log(checked + " " + val);
+	console.log(checked + " " + val);
 	if (checked)
 	{
 		if (!g_Flags.includes(val))
@@ -235,9 +235,9 @@ function optToggle(checked, val)
 		var idx = g_Flags.indexOf(val);
 		if (idx >= 0)
 		{
-			//delete zukan[game][version][idx];
+			// remove val;
 			g_Flags.splice(idx, 1);
-			// deletes all null
+			// remove all null
 			g_Flags = g_Flags.filter(x => x != null);
 		}
 	}
@@ -281,5 +281,165 @@ function optGet()
 		return InitFlag;
 	if (!zukan.hasOwnProperty("opt"))
 		return InitFlag;
+	if (!Array.isArray(zukan.opt))
+		return InitFlag;
 	return zukan.opt;
+}
+
+// makes sure that the flags are "unique"
+function unionFlags(gFlags, dFlags)
+{
+	if (dFlags.includes(FORM_MAJ_GENDER_BASE))
+	{
+		gFlags = gFlags.filter(flag => flag != FORM_MAJ_GENDER_DIFF);
+		if (!gFlags.includes(FORM_MAJ_GENDER_BASE))
+			gFlags.push(FORM_MAJ_GENDER_BASE);
+	}
+	else if (dFlags.includes(FORM_MAJ_GENDER_DIFF))
+	{
+		gFlags = gFlags.filter(flag => flag != FORM_MAJ_GENDER_BASE);
+		if (!gFlags.includes(FORM_MAJ_GENDER_DIFF))
+			gFlags.push(FORM_MAJ_GENDER_DIFF);
+	}
+
+	if (dFlags.includes(FORM_MIN_GENDER_BASE))
+	{
+		gFlags = gFlags.filter(flag => flag != FORM_MIN_GENDER_DIFF);
+		if (!gFlags.includes(FORM_MIN_GENDER_BASE))
+			gFlags.push(FORM_MIN_GENDER_BASE);
+	}
+	else if (dFlags.includes(FORM_MIN_GENDER_DIFF))
+	{
+		gFlags = gFlags.filter(flag => flag != FORM_MIN_GENDER_BASE);
+		if (!gFlags.includes(FORM_MIN_GENDER_DIFF))
+			gFlags.push(FORM_MIN_GENDER_DIFF);
+	}
+	
+	if (dFlags.includes(FORM_0201_BASE))
+	{
+		gFlags = gFlags.filter(flag => flag != FORM_0201);
+		if (!gFlags.includes(FORM_0201_BASE))
+			gFlags.push(FORM_0201_BASE);
+	}
+	else if (dFlags.includes(FORM_0201))
+	{
+		gFlags = gFlags.filter(flag => flag != FORM_0201_BASE);
+		if (!gFlags.includes(FORM_0201))
+			gFlags.push(FORM_0201);
+	}
+
+	if (dFlags.includes(FORM_BATTLE_BASE))
+	{
+		gFlags = gFlags.filter(flag => flag != FORM_BATTLE);
+		if (!gFlags.includes(FORM_BATTLE_BASE))
+			gFlags.push(FORM_BATTLE_BASE);
+	}
+	else if (dFlags.includes(FORM_BATTLE))
+	{
+		gFlags = gFlags.filter(flag => flag != FORM_BATTLE_BASE);
+		if (!gFlags.includes(FORM_BATTLE))
+			gFlags.push(FORM_BATTLE);
+	}
+	
+	// FORM_MEGA
+	// FORM_GMAX
+	
+	if (dFlags.includes(FORM_0386_BASE))
+	{
+		gFlags = gFlags.filter(flag => flag != FORM_0386);
+		if (!gFlags.includes(FORM_0386_BASE))
+			gFlags.push(FORM_0386_BASE);
+	}
+	else if (dFlags.includes(FORM_0386))
+	{
+		gFlags = gFlags.filter(flag => flag != FORM_0386_BASE);
+		if (!gFlags.includes(FORM_0386))
+			gFlags.push(FORM_0386);
+	}
+	// FORM_0386_FR
+	// FORM_0386_LG
+	// FORM_0386_Em
+	
+	// FORM_0172_BASE
+	// FORM_0172_HGSS
+	
+	if (dFlags.includes(FORM_0412_BASE))
+	{
+		gFlags = gFlags.filter(flag => flag != FORM_0412);
+		if (!gFlags.includes(FORM_0412_BASE))
+			gFlags.push(FORM_0412_BASE);
+	}
+	else if (dFlags.includes(FORM_0412))
+	{
+		gFlags = gFlags.filter(flag => flag != FORM_0412_BASE);
+		if (!gFlags.includes(FORM_0412))
+			gFlags.push(FORM_0412);
+	}
+	
+	if (dFlags.includes(FORM_0422_BASE))
+	{
+		gFlags = gFlags.filter(flag => flag != FORM_0422);
+		if (!gFlags.includes(FORM_0422_BASE))
+			gFlags.push(FORM_0422_BASE);
+	}
+	else if (dFlags.includes(FORM_0422))
+	{
+		gFlags = gFlags.filter(flag => flag != FORM_0422_BASE);
+		if (!gFlags.includes(FORM_0422))
+			gFlags.push(FORM_0422);
+	}
+	
+	if (dFlags.includes(FORM_0479_BASE))
+	{
+		gFlags = gFlags.filter(flag => flag != FORM_0479);
+		if (!gFlags.includes(FORM_0479_BASE))
+			gFlags.push(FORM_0479_BASE);
+	}
+	else if (dFlags.includes(FORM_0479))
+	{
+		gFlags = gFlags.filter(flag => flag != FORM_0479_BASE);
+		if (!gFlags.includes(FORM_0479))
+			gFlags.push(FORM_0479);
+	}
+	
+	if (dFlags.includes(FORM_0487_BASE))
+	{
+		gFlags = gFlags.filter(flag => flag != FORM_0487);
+		if (!gFlags.includes(FORM_0487_BASE))
+			gFlags.push(FORM_0487_BASE);
+	}
+	else if (dFlags.includes(FORM_0487))
+	{
+		gFlags = gFlags.filter(flag => flag != FORM_0487_BASE);
+		if (!gFlags.includes(FORM_0487))
+			gFlags.push(FORM_0487);
+	}
+	
+	if (dFlags.includes(FORM_0492_BASE))
+	{
+		gFlags = gFlags.filter(flag => flag != FORM_0492);
+		if (!gFlags.includes(FORM_0492_BASE))
+			gFlags.push(FORM_0492_BASE);
+	}
+	else if (dFlags.includes(FORM_0492))
+	{
+		gFlags = gFlags.filter(flag => flag != FORM_0492_BASE);
+		if (!gFlags.includes(FORM_0492))
+			gFlags.push(FORM_0492);
+	}
+	
+	if (dFlags.includes(FORM_0493_BASE))
+	{
+		gFlags = gFlags.filter(flag => flag != FORM_0493);
+		if (!gFlags.includes(FORM_0493_BASE))
+			gFlags.push(FORM_0493_BASE);
+	}
+	else if (dFlags.includes(FORM_0493))
+	{
+		gFlags = gFlags.filter(flag => flag != FORM_0493_BASE);
+		if (!gFlags.includes(FORM_0493))
+			gFlags.push(FORM_0493);
+	}
+
+	return gFlags;
 }

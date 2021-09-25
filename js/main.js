@@ -69,8 +69,8 @@ boxCap = _Dex.boxCap;
 divBox = _Dex.divBox;
 
 g_Flags = optGet();
-console.log("g_Flags: " + g_Flags + " _Dex.flags: " + _Dex.flags);
-flags = g_Flags | _Dex.flags;
+flags = unionFlags(g_Flags, _Dex.flags);
+console.log("g_Flags: " + g_Flags + " _Dex.flags: " + _Dex.flags + " flags: " + flags);
 boxIdx = 1;
 document.getElementById("btnMenu").innerHTML = `[${_Dex.name}...]`;
 
@@ -130,8 +130,9 @@ for (const dex in _Ndex)
 	// check flags
 	if (dexFlags != 0)
 	{
-		console.log(dex + " flags: " + flags + " dexFlags: " + dexFlags);
-		if ((flags & dexFlags) == 0)
+		var chkFlags = flags.filter(flag => dexFlags.includes(flag));
+		//console.log(dex + " flags: " + flags + " dexFlags: " + dexFlags + " chkFlags: " + chkFlags);
+		if (chkFlags.length == 0)
 			continue;
 	}
 
