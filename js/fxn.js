@@ -361,7 +361,11 @@ function unionFlags(gFlags, dFlags)
 	// FORM_0386_Em
 	
 	// FORM_0172_BASE
-	// FORM_0172_HGSS
+	if (dFlags.includes(FORM_0172_HGSS))
+	{
+		if (!gFlags.includes(FORM_0172_HGSS))
+			gFlags.push(FORM_0172_HGSS);
+	}
 	
 	if (dFlags.includes(FORM_0412_BASE))
 	{
