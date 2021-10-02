@@ -31,15 +31,15 @@ function getQueryVariable(variable)
 	return "";
 };
 
-function imgPokemon_Clicked(el, game, version)
+function imgPokemon_Clicked(el, game, dexType)
 {
 	// check if image is "enabled" or not
 	if (el.classList.contains('gray'))
-		insertZukan(game, version, el.id);
+		insertZukan(game, dexType, el.id);
 	else
-		deleteZukan(game, version, el.id);
+		deleteZukan(game, dexType, el.id);
 
-	if (inZukan(game, version, el.id))
+	if (inZukan(game, dexType, el.id))
 		el.classList.remove('gray');
 	else
 		el.classList.add('gray');
@@ -53,20 +53,20 @@ const lsName = "zukanData";
 /// <param name=""></param>
 /// <param name=""></param>
 /// <returns></returns>
-function insertZukan(game, version, pkmn)
+function insertZukan(game, dexType, pkmn)
 {
 	var zukan = localStorage.getObject(lsName);
 	if (zukan == null)
 		zukan = {};
 	if (!zukan.hasOwnProperty(game))
 		zukan[game] = {};
-	if (!zukan[game].hasOwnProperty(version))
-		zukan[game][version] = {};
-	if (!zukan[game][version].hasOwnProperty("dex"))
-		zukan[game][version].dex = [];
-	if (!zukan[game][version].dex.includes(pkmn))
+	if (!zukan[game].hasOwnProperty(dexType))
+		zukan[game][dexType] = {};
+	if (!zukan[game][dexType].hasOwnProperty("dex"))
+		zukan[game][dexType].dex = [];
+	if (!zukan[game][dexType].dex.includes(pkmn))
 	{
-		zukan[game][version].dex.push(pkmn);
+		zukan[game][dexType].dex.push(pkmn);
 		localStorage.setObject(lsName, zukan);
 	}
 }
@@ -77,29 +77,29 @@ function insertZukan(game, version, pkmn)
 /// <param name=""></param>
 /// <param name=""></param>
 /// <returns></returns>
-function deleteZukan(game, version, pkmn)
+function deleteZukan(game, dexType, pkmn)
 {
 	var zukan = localStorage.getObject(lsName);
 	if (zukan == null)
 		return;
 	if (!zukan.hasOwnProperty(game))
 		return;
-	if (!zukan[game].hasOwnProperty(version))
+	if (!zukan[game].hasOwnProperty(dexType))
 		return;
-	if (!zukan[game][version].hasOwnProperty("dex"))
+	if (!zukan[game][dexType].hasOwnProperty("dex"))
 		return;
-	var idx = zukan[game][version].dex.indexOf(pkmn);
+	var idx = zukan[game][dexType].dex.indexOf(pkmn);
 	if (idx >= 0)
 	{
-		//delete zukan[game][version][idx];
-		zukan[game][version].dex.splice(idx, 1);
+		//delete zukan[game][dexType][idx];
+		zukan[game][dexType].dex.splice(idx, 1);
 		// deletes all null
-		//zukan[game][version].dex = zukan[game][version].dex.filter(x => x != null);
+		//zukan[game][dexType].dex = zukan[game][dexType].dex.filter(x => x != null);
 		localStorage.setObject(lsName, zukan);
 	}
 }
 
-function getZukan(game, version)
+function getZukan(game, dexType)
 {
 	var zukan = localStorage.getObject(lsName);
 
@@ -109,25 +109,25 @@ function getZukan(game, version)
 		zukan = {};
 	if (!zukan.hasOwnProperty(game))
 		zukan[game] = {};
-	if (!zukan[game].hasOwnProperty(version))
-		zukan[game][version] = {};
-	if (!zukan[game][version].hasOwnProperty("dex"))
-		zukan[game][version].dex = [];
-	return zukan[game][version].dex;
+	if (!zukan[game].hasOwnProperty(dexType))
+		zukan[game][dexType] = {};
+	if (!zukan[game][dexType].hasOwnProperty("dex"))
+		zukan[game][dexType].dex = [];
+	return zukan[game][dexType].dex;
 }
 
-function inZukan(game, version, pkmn)
+function inZukan(game, dexType, pkmn)
 {
 	var zukan = localStorage.getObject(lsName);
 	if (zukan == null)
 		return false;
 	if (!zukan.hasOwnProperty(game))
 		return false;
-		if (!zukan[game].hasOwnProperty(version))
+		if (!zukan[game].hasOwnProperty(dexType))
 		return false;
-	if (!zukan[game][version].hasOwnProperty("dex"))
+	if (!zukan[game][dexType].hasOwnProperty("dex"))
 		return false;
-	return zukan[game][version].dex.includes(pkmn);
+	return zukan[game][dexType].dex.includes(pkmn);
 }
 
 Storage.prototype.setObject = function (key, obj)
@@ -263,12 +263,16 @@ function optToggle(checked, val)
 	optSet();
 }
 
-function optSave()
+function optSave(game, dexType)
 {
 	var zukan = localStorage.getObject(lsName);
 	if (zukan == null)
 		return;
-	zukan.opt = g_Flags;
+	if (!zukan.hasOwnProperty(game))
+		zukan[game] = {};
+	if (!zukan[game].hasOwnProperty(dexType))
+		zukan[game][dexType] = {};
+	zukan[game][dexType].opt = g_Flags;
 	localStorage.setObject(lsName, zukan);
 
 	toggleOptions();
@@ -302,18 +306,18 @@ function optReset()
 	g_Flags = InitFlag;
 }
 
-function optGet(game, version)
+function optGet(game, dexType)
 {
 	var zukan = localStorage.getObject(lsName);
 	if (zukan == null)
 		return InitFlag;
 	if (!zukan.hasOwnProperty(game))
 		return InitFlag;
-	if (!zukan[game].hasOwnProperty(version))
+	if (!zukan[game].hasOwnProperty(dexType))
 		return InitFlag;
-	if (!zukan[game][version].hasOwnProperty("opt"))
+	if (!zukan[game][dexType].hasOwnProperty("opt"))
 		return InitFlag;
-	return zukan[game][version].opt;
+	return zukan[game][dexType].opt;
 }
 
 // makes sure that the flags are "unique"

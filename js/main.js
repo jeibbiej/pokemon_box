@@ -47,7 +47,7 @@ if (_Dex == undefined)
 	die();
 }
 
-version = getQueryVariable("ver");
+var dexType = getQueryVariable("ver");
 
 console.log(_Dex);
 
@@ -70,7 +70,7 @@ if (imgWd <= 32)
 boxCap = _Dex.boxCap;
 divBox = _Dex.divBox;
 
-g_Flags = optGet(game, version);
+g_Flags = optGet(game, dexType);
 flags = unionFlags(g_Flags, _Dex.flags);
 console.log("g_Flags: " + g_Flags + " _Dex.flags: " + _Dex.flags + " flags: " + flags);
 boxIdx = 1;
@@ -88,27 +88,27 @@ Object.entries(_GameVersions).forEach(gv =>
 
 	if (gv[1].ico === "")
 		menu.innerHTML += `<div class='menu-icon'>
-			<a href='box.html?game=${gv[1].code}&ver=${version}'>
+			<a href='box.html?game=${gv[1].code}&ver=${dexType}'>
 			<img src='https://assets.pokemon.com/static2/_ui/img/chrome/loaders/pokeball_gray.png' class='menu-itm'
 			title='${gv[1].name}'></a></div>`;
 	else
 		menu.innerHTML += `<div class='menu-icon'>
-			<a href='box.html?game=${gv[1].code}&ver=${version}'>
+			<a href='box.html?game=${gv[1].code}&ver=${dexType}'>
 			<img src='game_icon/${gv[1].ico}.png' class='menu-itm'
 			title='${gv[1].name}'></a></div>`;
 });
 
 menu = document.getElementById("divVer");
-if (version == "r") menu.innerHTML += " [ Regional ] "; else menu.innerHTML += `<a class="btnVer" href='box.html?game=${_Dex.code}&ver=r'> [ R ] </a>`;
-if (version == "n") menu.innerHTML += " [ National ] "; else menu.innerHTML += `<a class="btnVer" href='box.html?game=${_Dex.code}&ver=n'> [ N ] </a>`;
-if (version == "e") menu.innerHTML += " [ Evolution ] "; else menu.innerHTML += `<a class="btnVer" href='box.html?game=${_Dex.code}&ver=e'> [ E ] </a>`;
+if (dexType == "r") menu.innerHTML += " [ Regional ] "; else menu.innerHTML += `<a class="btnVer" href='box.html?game=${_Dex.code}&ver=r'> [ R ] </a>`;
+if (dexType == "n") menu.innerHTML += " [ National ] "; else menu.innerHTML += `<a class="btnVer" href='box.html?game=${_Dex.code}&ver=n'> [ N ] </a>`;
+if (dexType == "e") menu.innerHTML += " [ Evolution ] "; else menu.innerHTML += `<a class="btnVer" href='box.html?game=${_Dex.code}&ver=e'> [ E ] </a>`;
 menu.innerHTML += ` <span id="btnOpt" onclick="toggleOptions()"> [ Options ] </span>`;
 
-if (version == "e")	// Evolution Dex
+if (dexType == "e")	// Evolution Dex
 {
 	_Ndex = _Edex;
 }
-else if (version == "r") // Regional Dex
+else if (dexType == "r") // Regional Dex
 {
 	_Ndex = _Rdex;
 }
@@ -155,11 +155,11 @@ for (const dex in _Ndex)
 	{
 		boxHead = `<table style='border:1px solid gray; font-family:consolas; text-align:center;' cellspacing=0>`;
 		boxHead += `<tr><th colspan=${divBox} style='border:1px solid gray;'>${gameName} ${String(boxIdx).padStart(2, "0")}`;
-		if (version == "e")
+		if (dexType == "e")
 		{
 			boxHead += " E";
 		}
-		else if (version == "r")
+		else if (dexType == "r")
 		{
 			boxHead += " R";
 		}
@@ -172,16 +172,16 @@ for (const dex in _Ndex)
 	}
 
 	//console.log(typeof(dex) + " " + dex + ": " + _Names[dex]);
-	if (version == "e")
+	if (dexType == "e")
 	{
 		boxBody += `<td style='border:1px solid gray; width:50px; vertical-align:top;'>`;
 		boxBody += `<span title='${dex.substr(0, 4)} ${_Names[dex]}'>`;
 		boxBody += `<img id='${dex}' src='${iconPath}${dexIco}.png' alt='${dexIco}' width='${imgWd}' `;
-		if (!inZukan(game, version, dex))
+		if (!inZukan(game, dexType, dex))
 			boxBody += `class="zukan-icon gray"; `;
 		else
 			boxBody += `class="zukan-icon"; `;
-		boxBody += `onclick='imgPokemon_Clicked(this, ${game}, "${version}")'/>`;
+		boxBody += `onclick='imgPokemon_Clicked(this, ${game}, "${dexType}")'/>`;
 		boxBody += `</span><br/>`;
 		boxBody += `<span style='font-size:10px;'>#${dex.substr(0, 4)}<br/>`;
 		boxBody += `${_Names[dex]}</span></td>`;
@@ -191,11 +191,11 @@ for (const dex in _Ndex)
 		boxBody += `<td style='border:1px solid gray; width:50px; vertical-align:top;'>`;
 		boxBody += `<span title='${keyStr} ${_Names[dex]}'>`;
 		boxBody += `<img id='${dex}' src='${iconPath}${dexIco}.png' alt='${dexIco}' width='${imgWd}' `;
-		if (!inZukan(game, version, dex))
+		if (!inZukan(game, dexType, dex))
 			boxBody += `class="zukan-icon gray"; `;
 		else
 			boxBody += `class="zukan-icon"; `;
-		boxBody += `onclick='imgPokemon_Clicked(this, ${game}, "${version}")'/>`;
+		boxBody += `onclick='imgPokemon_Clicked(this, ${game}, "${dexType}")'/>`;
 		boxBody += `</span><br/><span style='font-size:10px;'>#${keyStr}<br/>${_Names[dex]}</span></td>`;
 	}
 
