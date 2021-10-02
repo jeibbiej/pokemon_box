@@ -220,6 +220,14 @@ function optSet()
 	document.getElementById("optForm0487").checked = g_Flags.includes(FORM_0487);
 	document.getElementById("optForm0492").checked = g_Flags.includes(FORM_0492);
 	document.getElementById("optForm0493").checked = g_Flags.includes(FORM_0493);
+	document.getElementById("optForm0550").checked = g_Flags.includes(FORM_0493);
+	document.getElementById("optForm0641").checked = g_Flags.includes(FORM_0493);
+	document.getElementById("optForm0642").checked = g_Flags.includes(FORM_0493);
+	document.getElementById("optForm0645").checked = g_Flags.includes(FORM_0493);
+	document.getElementById("optForm0646").checked = g_Flags.includes(FORM_0493);
+	document.getElementById("optForm0647").checked = g_Flags.includes(FORM_0493);
+	document.getElementById("optForm0648").checked = g_Flags.includes(FORM_0493);
+	document.getElementById("optForm0649").checked = g_Flags.includes(FORM_0493);
 }
 
 // switch from base form to another form
@@ -572,60 +580,4 @@ function unionFlags(gFlags, dFlags)
 	}
 
 	return gFlags;
-}
-
-///////////////////////////////////////////////////////
-// localStorage "zukan" version converter
-///////////////////////////////////////////////////////
-
-function getZukanVersion()
-{
-	var zukan = localStorage.getObject(lsName);
-	if (zukan == null)
-		return "";
-	if (!zukan.hasOwnProperty("ver"))
-		zukan["ver"] = "0.0.0";
-	return zukan["ver"];
-}
-
-function convertZukanTo_0_0_1()
-{
-	var zukan = localStorage.getObject(lsName);
-	if (zukan == null)
-		return;
-	zukan["ver"] = "0.0.1";
-
-	var newZukan = {};
-	var opt = InitFlag;
-	if (zukan.hasOwnProperty("opt"))
-		opt = zukan.opt;
-
-
-	for (const game in zukan)
-	{
-		console.log("game: " + game);
-		var zukanGame = zukan[game];
-		newZukan[game] = {};
-		for (const ver in zukanGame)
-		{
-			console.log("ver: " + ver);
-			var zukanGameVer = zukanGame[ver];
-			newZukan[game][ver] = {};
-			newZukan[game][ver].dex = zukanGameVer;
-			newZukan[game][ver].opt = opt;
-		}
-	}
-
-	localStorage.setObject(lsName, newZukan);
-
-	return zukan["ver"];
-}
-
-function updateZukan()
-{
-	var zukanVersion = getZukanVersion();
-	if (zukanVersion === "0.0.0")
-		zukanVersion = convertZukanTo_0_0_1();
-	// if (zukanVersion === "0.0.0")
-	// 	zukanVersion = convertZukanTo_();
 }

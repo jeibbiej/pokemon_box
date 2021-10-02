@@ -1,4 +1,4 @@
-const g_ZukanVersion = "0.0.1"
+const g_ZukanVersion = "0.0.1";
 
 if (window.visualViewport)
 {
@@ -48,7 +48,6 @@ if (_Dex == undefined)
 }
 
 version = getQueryVariable("ver");
-updateZukan();
 
 console.log(_Dex);
 
