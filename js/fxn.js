@@ -350,15 +350,15 @@ function unionFlags(gFlags, dFlags)
 		if (!gFlags.includes(FORM_0386_BASE))
 			gFlags.push(FORM_0386_BASE);
 	}
+	// FORM_0386_FR
+	// FORM_0386_LG
+	// FORM_0386_Em
 	else if (dFlags.includes(FORM_0386))
 	{
 		gFlags = gFlags.filter(flag => flag != FORM_0386_BASE);
 		if (!gFlags.includes(FORM_0386))
 			gFlags.push(FORM_0386);
 	}
-	// FORM_0386_FR
-	// FORM_0386_LG
-	// FORM_0386_Em
 	
 	// FORM_0172_BASE
 	if (dFlags.includes(FORM_0172_HGSS))
@@ -443,6 +443,110 @@ function unionFlags(gFlags, dFlags)
 		gFlags = gFlags.filter(flag => flag != FORM_0493_BASE);
 		if (!gFlags.includes(FORM_0493))
 			gFlags.push(FORM_0493);
+	}
+
+	if (dFlags.includes(FORM_0550_BASE))
+	{
+		gFlags = gFlags.filter(flag => flag != FORM_0550);
+		if (!gFlags.includes(FORM_0550_BASE))
+			gFlags.push(FORM_0550_BASE);
+	}
+	else if (dFlags.includes(FORM_0550))
+	{
+		gFlags = gFlags.filter(flag => flag != FORM_0550_BASE);
+		if (!gFlags.includes(FORM_0550))
+			gFlags.push(FORM_0550);
+	}
+
+	if (dFlags.includes(FORM_0641_BASE))
+	{
+		gFlags = gFlags.filter(flag => flag != FORM_0641);
+		if (!gFlags.includes(FORM_0641_BASE))
+			gFlags.push(FORM_0641_BASE);
+	}
+	else if (dFlags.includes(FORM_0641))
+	{
+		gFlags = gFlags.filter(flag => flag != FORM_0641_BASE);
+		if (!gFlags.includes(FORM_0641))
+			gFlags.push(FORM_0641);
+	}
+
+	if (dFlags.includes(FORM_0642_BASE))
+	{
+		gFlags = gFlags.filter(flag => flag != FORM_0642);
+		if (!gFlags.includes(FORM_0642_BASE))
+			gFlags.push(FORM_0642_BASE);
+	}
+	else if (dFlags.includes(FORM_0642))
+	{
+		gFlags = gFlags.filter(flag => flag != FORM_0642_BASE);
+		if (!gFlags.includes(FORM_0642))
+			gFlags.push(FORM_0642);
+	}
+
+	if (dFlags.includes(FORM_0645_BASE))
+	{
+		gFlags = gFlags.filter(flag => flag != FORM_0645);
+		if (!gFlags.includes(FORM_0645_BASE))
+			gFlags.push(FORM_0645_BASE);
+	}
+	else if (dFlags.includes(FORM_0645))
+	{
+		gFlags = gFlags.filter(flag => flag != FORM_0645_BASE);
+		if (!gFlags.includes(FORM_0645))
+			gFlags.push(FORM_0645);
+	}
+
+	if (dFlags.includes(FORM_0646_BASE))
+	{
+		gFlags = gFlags.filter(flag => flag != FORM_0646);
+		if (!gFlags.includes(FORM_0646_BASE))
+			gFlags.push(FORM_0646_BASE);
+	}
+	else if (dFlags.includes(FORM_0646))
+	{
+		gFlags = gFlags.filter(flag => flag != FORM_0646_BASE);
+		if (!gFlags.includes(FORM_0646))
+			gFlags.push(FORM_0646);
+	}
+
+	if (dFlags.includes(FORM_0647_BASE))
+	{
+		gFlags = gFlags.filter(flag => flag != FORM_0647);
+		if (!gFlags.includes(FORM_0647_BASE))
+			gFlags.push(FORM_0647_BASE);
+	}
+	else if (dFlags.includes(FORM_0647))
+	{
+		gFlags = gFlags.filter(flag => flag != FORM_0647_BASE);
+		if (!gFlags.includes(FORM_0647))
+			gFlags.push(FORM_0647);
+	}
+
+	if (dFlags.includes(FORM_0648_BASE))
+	{
+		gFlags = gFlags.filter(flag => flag != FORM_0648);
+		if (!gFlags.includes(FORM_0648_BASE))
+			gFlags.push(FORM_0648_BASE);
+	}
+	else if (dFlags.includes(FORM_0648))
+	{
+		gFlags = gFlags.filter(flag => flag != FORM_0648_BASE);
+		if (!gFlags.includes(FORM_0648))
+			gFlags.push(FORM_0648);
+	}
+
+	if (dFlags.includes(FORM_0649_BASE))
+	{
+		gFlags = gFlags.filter(flag => flag != FORM_0649);
+		if (!gFlags.includes(FORM_0649_BASE))
+			gFlags.push(FORM_0649_BASE);
+	}
+	else if (dFlags.includes(FORM_0649))
+	{
+		gFlags = gFlags.filter(flag => flag != FORM_0649_BASE);
+		if (!gFlags.includes(FORM_0649))
+			gFlags.push(FORM_0649);
 	}
 
 	return gFlags;

@@ -1,6 +1,6 @@
-const IcoPathRuSa 	= "poke_icon/g03/1/";
-const IcoPathFRLG	= "poke_icon/g03/1/";
-const IcoPathEm		= "poke_icon/g03/1/";
+const IcoPathRuSa 	= "poke_icon/g05/1/";
+const IcoPathFRLG	= "poke_icon/g05/1/";
+const IcoPathEm		= "poke_icon/g05/1/";
 
 const ImgWd_G03		= 32;
 const BoxCap_G03	= 30;
@@ -40,12 +40,12 @@ const _Regdex_n_301 =
 	"0026"             : {ico: "0026",             flags: []},                      // "Raichu",
 	"0027"             : {ico: "0027",             flags: []},                      // "Sandshrew",
 	"0028"             : {ico: "0028",             flags: []},                      // "Sandslash",
-	"0029"             : {ico: "0029-f",           flags: [FORM_MAJ_GENDER_BASE]},  // "Nidoran",
-	"0029-f"           : {ico: "0029-f",           flags: [FORM_MAJ_GENDER_DIFF]},  // "Nidoran♀",
+	"0029"             : {ico: "0029",             flags: [FORM_MAJ_GENDER_BASE]},  // "Nidoran",
+	"0029-f"           : {ico: "0029",             flags: [FORM_MAJ_GENDER_DIFF]},  // "Nidoran♀",
 	"0030"             : {ico: "0030",             flags: []},                      // "Nidorina",
 	"0031"             : {ico: "0031",             flags: []},                      // "Nidoqueen",
-	"0032"             : {ico: "0032-m",           flags: [FORM_MAJ_GENDER_BASE]},  // "Nidoran",
-	"0032-m"           : {ico: "0032-m",           flags: [FORM_MAJ_GENDER_DIFF]},  // "Nidoran♂",
+	"0032"             : {ico: "0032",             flags: [FORM_MAJ_GENDER_BASE]},  // "Nidoran",
+	"0032-m"           : {ico: "0032",             flags: [FORM_MAJ_GENDER_DIFF]},  // "Nidoran♂",
 	"0033"             : {ico: "0033",             flags: []},                      // "Nidorino",
 	"0034"             : {ico: "0034",             flags: []},                      // "Nidoking",
 	"0035"             : {ico: "0035",             flags: []},                      // "Clefairy",
@@ -214,8 +214,8 @@ const _Regdex_n_301 =
 	"0198"             : {ico: "0198",             flags: []},                      // "Murkrow",
 	"0199"             : {ico: "0199",             flags: []},                      // "Slowking",
 	"0200"             : {ico: "0200",             flags: []},                      // "Misdreavus",
-	"0201"             : {ico: "0201",             flags: [FORM_0201_BASE]},        // "Unown", // uknown gender
-	"0201-angry"       : {ico: "0201-angry",       flags: [FORM_0201]},             // "Unown Angry", // uknown gender
+	"0201"             : {ico: "0201-anger",       flags: [FORM_0201_BASE]},        // "Unown", // uknown gender
+	"0201-angry"       : {ico: "0201-anger",       flags: [FORM_0201]},             // "Unown Angry", // uknown gender
 	"0201-bear"        : {ico: "0201-bear",        flags: [FORM_0201]},             // "Unown Bear", // uknown gender
 	"0201-chase"       : {ico: "0201-chase",       flags: [FORM_0201]},             // "Unown Chase", // uknown gender
 	"0201-direct"      : {ico: "0201-direct",      flags: [FORM_0201]},             // "Unown Direct", // uknown gender
@@ -470,12 +470,12 @@ const _Regdex_e_301 =
 	"0026"             : {ico: "0026",             flags: []},                      // "Raichu",
 	"0027"             : {ico: "0027",             flags: []},                      // "Sandshrew",
 	"0028"             : {ico: "0028",             flags: []},                      // "Sandslash",
-	"0029"             : {ico: "0029-f",           flags: [FORM_MAJ_GENDER_BASE]},  // "Nidoran",
-	"0029-f"           : {ico: "0029-f",           flags: [FORM_MAJ_GENDER_DIFF]},  // "Nidoran♀",
+	"0029"             : {ico: "0029",             flags: [FORM_MAJ_GENDER_BASE]},  // "Nidoran",
+	"0029-f"           : {ico: "0029",             flags: [FORM_MAJ_GENDER_DIFF]},  // "Nidoran♀",
 	"0030"             : {ico: "0030",             flags: []},                      // "Nidorina",
 	"0031"             : {ico: "0031",             flags: []},                      // "Nidoqueen",
-	"0032"             : {ico: "0032-m",           flags: [FORM_MAJ_GENDER_BASE]},  // "Nidoran♂",
-	"0032-m"           : {ico: "0032-m",           flags: [FORM_MAJ_GENDER_DIFF]},  // "Nidoran♂",
+	"0032"             : {ico: "0032",             flags: [FORM_MAJ_GENDER_BASE]},  // "Nidoran♂",
+	"0032-m"           : {ico: "0032",             flags: [FORM_MAJ_GENDER_DIFF]},  // "Nidoran♂",
 	"0033"             : {ico: "0033",             flags: []},                      // "Nidorino",
 	"0034"             : {ico: "0034",             flags: []},                      // "Nidoking",
 	"0173"             : {ico: "0173",             flags: []},                      // "Cleffa",
@@ -1110,12 +1110,12 @@ const _Regdex_r_302 =
 	"0026"             : {ico: "0026",             flags: []},                      // "Raichu",
 	"0027"             : {ico: "0027",             flags: []},                      // "Sandshrew",
 	"0028"             : {ico: "0028",             flags: []},                      // "Sandslash",
-	"0029"             : {ico: "0029-f",           flags: [FORM_MAJ_GENDER_BASE]},  // "Nidoran",
-	"0029-f"           : {ico: "0029-f",           flags: [FORM_MAJ_GENDER_DIFF]},  // "Nidoran♀",
+	"0029"             : {ico: "0029",             flags: [FORM_MAJ_GENDER_BASE]},  // "Nidoran",
+	"0029-f"           : {ico: "0029",             flags: [FORM_MAJ_GENDER_DIFF]},  // "Nidoran♀",
 	"0030"             : {ico: "0030",             flags: []},                      // "Nidorina",
 	"0031"             : {ico: "0031",             flags: []},                      // "Nidoqueen",
-	"0032"             : {ico: "0032-m",           flags: [FORM_MAJ_GENDER_BASE]},  // "Nidoran",
-	"0032-m"           : {ico: "0032-m",           flags: [FORM_MAJ_GENDER_DIFF]},  // "Nidoran♂",
+	"0032"             : {ico: "0032",             flags: [FORM_MAJ_GENDER_BASE]},  // "Nidoran",
+	"0032-m"           : {ico: "0032",             flags: [FORM_MAJ_GENDER_DIFF]},  // "Nidoran♂",
 	"0033"             : {ico: "0033",             flags: []},                      // "Nidorino",
 	"0034"             : {ico: "0034",             flags: []},                      // "Nidoking",
 	"0035"             : {ico: "0035",             flags: []},                      // "Clefairy",
