@@ -1,3 +1,5 @@
+const g_ZukanVersion = "0.0.1"
+
 if (window.visualViewport)
 {
 	var windowtop = document.getElementById("mainMenu");
@@ -46,6 +48,7 @@ if (_Dex == undefined)
 }
 
 version = getQueryVariable("ver");
+updateZukan();
 
 console.log(_Dex);
 
@@ -68,7 +71,7 @@ if (imgWd <= 32)
 boxCap = _Dex.boxCap;
 divBox = _Dex.divBox;
 
-g_Flags = optGet();
+g_Flags = optGet(game, version);
 flags = unionFlags(g_Flags, _Dex.flags);
 console.log("g_Flags: " + g_Flags + " _Dex.flags: " + _Dex.flags + " flags: " + flags);
 boxIdx = 1;

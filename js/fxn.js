@@ -61,10 +61,12 @@ function insertZukan(game, version, pkmn)
 	if (!zukan.hasOwnProperty(game))
 		zukan[game] = {};
 	if (!zukan[game].hasOwnProperty(version))
-		zukan[game][version] = [];
-	if (!zukan[game][version].includes(pkmn))
+		zukan[game][version] = {};
+	if (!zukan[game][version].hasOwnProperty("dex"))
+		zukan[game][version].dex = [];
+	if (!zukan[game][version].dex.includes(pkmn))
 	{
-		zukan[game][version].push(pkmn);
+		zukan[game][version].dex.push(pkmn);
 		localStorage.setObject(lsName, zukan);
 	}
 }
@@ -84,13 +86,15 @@ function deleteZukan(game, version, pkmn)
 		return;
 	if (!zukan[game].hasOwnProperty(version))
 		return;
-	var idx = zukan[game][version].indexOf(pkmn);
+	if (!zukan[game][version].hasOwnProperty("dex"))
+		return;
+	var idx = zukan[game][version].dex.indexOf(pkmn);
 	if (idx >= 0)
 	{
 		//delete zukan[game][version][idx];
-		zukan[game][version].splice(idx, 1);
+		zukan[game][version].dex.splice(idx, 1);
 		// deletes all null
-		zukan[game][version] = zukan[game][version].filter(x => x != null);
+		//zukan[game][version].dex = zukan[game][version].dex.filter(x => x != null);
 		localStorage.setObject(lsName, zukan);
 	}
 }
@@ -98,13 +102,18 @@ function deleteZukan(game, version, pkmn)
 function getZukan(game, version)
 {
 	var zukan = localStorage.getObject(lsName);
+
+	// update the saved data in localStorage
+
 	if (zukan == null)
 		zukan = {};
 	if (!zukan.hasOwnProperty(game))
 		zukan[game] = {};
-	if (!zukan.hasOwnProperty(version))
-		zukan[game][version] = [];
-	return zukan[game][version];
+	if (!zukan[game].hasOwnProperty(version))
+		zukan[game][version] = {};
+	if (!zukan[game][version].hasOwnProperty("dex"))
+		zukan[game][version].dex = [];
+	return zukan[game][version].dex;
 }
 
 function inZukan(game, version, pkmn)
@@ -114,14 +123,16 @@ function inZukan(game, version, pkmn)
 		return false;
 	if (!zukan.hasOwnProperty(game))
 		return false;
-	if (!zukan[game].hasOwnProperty(version))
+		if (!zukan[game].hasOwnProperty(version))
 		return false;
-	return zukan[game][version].includes(pkmn);
+	if (!zukan[game][version].hasOwnProperty("dex"))
+		return false;
+	return zukan[game][version].dex.includes(pkmn);
 }
 
-Storage.prototype.setObject = function (key, value)
+Storage.prototype.setObject = function (key, obj)
 {
-	this.setItem(key, JSON.stringify(value));
+	this.setItem(key, JSON.stringify(obj));
 }
 
 Storage.prototype.getObject = function (key)
@@ -238,7 +249,7 @@ function optToggle(checked, val)
 			// remove val;
 			g_Flags.splice(idx, 1);
 			// remove all null
-			g_Flags = g_Flags.filter(x => x != null);
+			//g_Flags = g_Flags.filter(x => x != null);
 		}
 	}
 	optSet();
@@ -259,31 +270,42 @@ function optSave()
 const InitFlag = [	FORM_MAJ_GENDER_DIFF,
 					FORM_MIN_GENDER_BASE,
 					FORM_BATTLE_BASE,
-					FORM_0201,
-					FORM_0386,
-					FORM_0412,
-					FORM_0422,
-					FORM_0479,
-					FORM_0487,
-					FORM_0492,
-					FORM_0493,
-					FORM_BATTLE_GRP];
+					FORM_0201, // Unown
+					FORM_0386, // Deoxys
+					FORM_0412, // Burmy and Wormadam
+					FORM_0422, // Shellos and Gastrodon
+					FORM_0479, // Rotom
+					FORM_0487, // Giratina
+					FORM_0492, // Shaymin
+					FORM_0493, // Arceus
+					FORM_0550, // Basculin
+					FORM_0585, // Deerling and Sawsbuck
+					FORM_0641, // Tornadus
+					FORM_0642, // Thundurus
+					FORM_0645, // Landorus
+					FORM_0646, // Kyurem
+					FORM_0647, // Keldeo
+					FORM_0648, // Meloetta
+					FORM_0649, // Genesect
+					/*FORM_BATTLE_GRP*/];
 
 function optReset()
 {
 	g_Flags = InitFlag;
 }
 
-function optGet()
+function optGet(game, version)
 {
 	var zukan = localStorage.getObject(lsName);
 	if (zukan == null)
 		return InitFlag;
-	if (!zukan.hasOwnProperty("opt"))
+	if (!zukan.hasOwnProperty(game))
 		return InitFlag;
-	if (!Array.isArray(zukan.opt))
+	if (!zukan[game].hasOwnProperty(version))
 		return InitFlag;
-	return zukan.opt;
+	if (!zukan[game][version].hasOwnProperty("opt"))
+		return InitFlag;
+	return zukan[game][version].opt;
 }
 
 // makes sure that the flags are "unique"
@@ -550,4 +572,60 @@ function unionFlags(gFlags, dFlags)
 	}
 
 	return gFlags;
+}
+
+///////////////////////////////////////////////////////
+// localStorage "zukan" version converter
+///////////////////////////////////////////////////////
+
+function getZukanVersion()
+{
+	var zukan = localStorage.getObject(lsName);
+	if (zukan == null)
+		return "";
+	if (!zukan.hasOwnProperty("ver"))
+		zukan["ver"] = "0.0.0";
+	return zukan["ver"];
+}
+
+function convertZukanTo_0_0_1()
+{
+	var zukan = localStorage.getObject(lsName);
+	if (zukan == null)
+		return;
+	zukan["ver"] = "0.0.1";
+
+	var newZukan = {};
+	var opt = InitFlag;
+	if (zukan.hasOwnProperty("opt"))
+		opt = zukan.opt;
+
+
+	for (const game in zukan)
+	{
+		console.log("game: " + game);
+		var zukanGame = zukan[game];
+		newZukan[game] = {};
+		for (const ver in zukanGame)
+		{
+			console.log("ver: " + ver);
+			var zukanGameVer = zukanGame[ver];
+			newZukan[game][ver] = {};
+			newZukan[game][ver].dex = zukanGameVer;
+			newZukan[game][ver].opt = opt;
+		}
+	}
+
+	localStorage.setObject(lsName, newZukan);
+
+	return zukan["ver"];
+}
+
+function updateZukan()
+{
+	var zukanVersion = getZukanVersion();
+	if (zukanVersion === "0.0.0")
+		zukanVersion = convertZukanTo_0_0_1();
+	// if (zukanVersion === "0.0.0")
+	// 	zukanVersion = convertZukanTo_();
 }

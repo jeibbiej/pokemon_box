@@ -1,10 +1,10 @@
 const IcoPathBkWh = "poke_icon/g05/1/";
 const IcoPathB2W2 = "poke_icon/g05/1/";
 
-const ImgWd_G04  = 32;
-const BoxCap_G04 = 30;
-const MaxBox_G04 = 18;
-const DivBox_G04 =  6;
+const ImgWd_G05  = 32;
+const BoxCap_G05 = 30;
+const MaxBox_G05 = 18;
+const DivBox_G05 =  6;
 
 //============================================================================
 // NATIONAL POKEDEX
@@ -966,11 +966,11 @@ const _Regdex_n_501 =
 //============================================================================
 const _Regdex_e_501 =
 {
-	"0001"            : {ico: "0125",             flags: []},                      // "Bulbasaur",
-	"0002"            : {ico: "0125",             flags: []},                      // "Ivysaur",
-	"0003"            : {ico: "0125",             flags: [FORM_MIN_GENDER_BASE]},  // "Venusaur",
-	"0003-m"          : {ico: "0125",             flags: [FORM_MIN_GENDER_DIFF]},  // "Venusaur♂",
-	"0003-f"          : {ico: "0125",             flags: [FORM_MIN_GENDER_DIFF]},  // "Venusaur♀",
+	"0001"            : {ico: "0001",             flags: []},                      // "Bulbasaur",
+	"0002"            : {ico: "0002",             flags: []},                      // "Ivysaur",
+	"0003"            : {ico: "0003",             flags: [FORM_MIN_GENDER_BASE]},  // "Venusaur",
+	"0003-m"          : {ico: "0003",             flags: [FORM_MIN_GENDER_DIFF]},  // "Venusaur♂",
+	"0003-f"          : {ico: "0003",             flags: [FORM_MIN_GENDER_DIFF]},  // "Venusaur♀",
 	"0004"            : {ico: "0004",             flags: []},                      // "Charmander",
 	"0005"            : {ico: "0005",             flags: []},                      // "Charmeleon",
 	"0006"            : {ico: "0006",             flags: []},                      // "Charizard",
