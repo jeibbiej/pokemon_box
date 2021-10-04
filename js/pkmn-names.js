@@ -1179,6 +1179,7 @@ const _Names =
     "0025-unova-cap"                    : "Unova Cap Pikachu", // male only
     "0025-kalos-cap"                    : "Kalos Cap Pikachu", // male only
     "0025-alola-cap"                    : "Alola Cap Pikachu", // male only
+    "0025-partner-cap"                  : "Partner Cap Pikachu", // male only
     "0025-m-letsgo"                     : "Parter Pikachu♂",
     "0025-f-letsgo"                     : "Parter Pikachu♀",
     "0026-alola"                        : "Alolan Raichu",
@@ -1341,7 +1342,6 @@ const _Names =
     "0006-gmax"                         : "Gigantamax Charizard",
     "0009-gmax"                         : "Gigantamax Blastoise",
     "0012-gmax"                         : "Gigantamax Butterfree",
-    "0025-partner-cap"                  : "Partner Cap Pikachu", // male only
     "0025-world-cap"                    : "World Cap Pikachu", // male only
     "0025-gmax"                         : "Gigantamax Pikachu",
     "0052-galar"                        : "Galarian Meowth",

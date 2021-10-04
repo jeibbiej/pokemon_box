@@ -220,14 +220,14 @@ function optSet()
 	document.getElementById("optForm0487").checked = g_Flags.includes(FORM_0487);
 	document.getElementById("optForm0492").checked = g_Flags.includes(FORM_0492);
 	document.getElementById("optForm0493").checked = g_Flags.includes(FORM_0493);
-	document.getElementById("optForm0550").checked = g_Flags.includes(FORM_0493);
-	document.getElementById("optForm0641").checked = g_Flags.includes(FORM_0493);
-	document.getElementById("optForm0642").checked = g_Flags.includes(FORM_0493);
-	document.getElementById("optForm0645").checked = g_Flags.includes(FORM_0493);
-	document.getElementById("optForm0646").checked = g_Flags.includes(FORM_0493);
-	document.getElementById("optForm0647").checked = g_Flags.includes(FORM_0493);
-	document.getElementById("optForm0648").checked = g_Flags.includes(FORM_0493);
-	document.getElementById("optForm0649").checked = g_Flags.includes(FORM_0493);
+	document.getElementById("optForm0550").checked = g_Flags.includes(FORM_0550);
+	document.getElementById("optForm0641").checked = g_Flags.includes(FORM_0641);
+	document.getElementById("optForm0642").checked = g_Flags.includes(FORM_0642);
+	document.getElementById("optForm0645").checked = g_Flags.includes(FORM_0645);
+	document.getElementById("optForm0646").checked = g_Flags.includes(FORM_0646);
+	document.getElementById("optForm0647").checked = g_Flags.includes(FORM_0647);
+	document.getElementById("optForm0648").checked = g_Flags.includes(FORM_0648);
+	document.getElementById("optForm0649").checked = g_Flags.includes(FORM_0649);
 }
 
 // switch from base form to another form
