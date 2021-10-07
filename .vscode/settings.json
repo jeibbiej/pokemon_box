@@ -4,5 +4,6 @@
 	"typescript.format.placeOpenBraceOnNewLineForControlBlocks": true,
 	"typescript.format.placeOpenBraceOnNewLineForFunctions": true,
 	"editor.insertSpaces": false,
-	"editor.tabCompletion": "on"
+	"editor.tabCompletion": "on",
+	"workbench.settings.openDefaultKeybindings": true
 }
