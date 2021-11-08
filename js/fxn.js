@@ -204,9 +204,9 @@ function optSet()
 		document.getElementById("optBattleForm").checked = g_Flags.includes(FORM_BATTLE);
 		document.getElementById("optBattleForm").parentNode.disabled = val;
 
-		// document.getElementById("optMegaForm").disabled = val;
-		// document.getElementById("optMegaForm").checked = g_Flags.includes(FORM_BATTLE);
-		// document.getElementById("optMegaForm").parentNode.disabled = val;
+		document.getElementById("optMegaForm").disabled = val;
+		document.getElementById("optMegaForm").checked = g_Flags.includes(FORM_MEGA);
+		document.getElementById("optMegaForm").parentNode.disabled = val;
 
 		// document.getElementById("optGmaxForm").disabled = val;
 		// document.getElementById("optGmaxForm").checked = g_Flags.includes(FORM_BATTLE);
@@ -581,6 +581,91 @@ function unionFlags(gFlags, dFlags)
 		gFlags = gFlags.filter(flag => flag != FORM_0649_BASE);
 		if (!gFlags.includes(FORM_0649))
 			gFlags.push(FORM_0649);
+	}
+
+	if (dFlags.includes(FORM_0666_BASE))
+	{
+		gFlags = gFlags.filter(flag => flag != FORM_0666_REGULAR);
+		if (!gFlags.includes(FORM_0666_BASE))
+			gFlags.push(FORM_0666_BASE);
+	}
+	else if (dFlags.includes(FORM_0666_REGULAR))
+	{
+		gFlags = gFlags.filter(flag => flag != FORM_0666_BASE);
+		if (!gFlags.includes(FORM_0666_REGULAR))
+			gFlags.push(FORM_0666_REGULAR);
+	}
+//	const FORM_0666_EVENT      = FORM_0666_BASE + 2;       // event pattern Vivillon
+	
+//	const FORM_0025_BASE       =        2500;              // Pikachu
+//	const FORM_0025_ORAS       = FORM_0025_BASE + 1;       // Cosplay Pikachu
+//	const FORM_0025_CAP        = FORM_0025_BASE + 2;       // capped Pikachu
+//	const FORM_0025_CAP2       = FORM_0025_BASE + 3;       // capped Pikachu
+	
+	if (dFlags.includes(FORM_0669_BASE))
+	{
+		gFlags = gFlags.filter(flag => flag != FORM_0669);
+		if (!gFlags.includes(FORM_0669_BASE))
+			gFlags.push(FORM_0669_BASE);
+	}
+	else if (dFlags.includes(FORM_0669))
+	{
+		gFlags = gFlags.filter(flag => flag != FORM_0669_BASE);
+		if (!gFlags.includes(FORM_0669))
+			gFlags.push(FORM_0669);
+	}
+//	const FORM_0669_ETERNAL    = FORM_0669_BASE + 2;       // Floette Eternal
+	
+	if (dFlags.includes(FORM_0676_BASE))
+	{
+		gFlags = gFlags.filter(flag => flag != FORM_0676);
+		if (!gFlags.includes(FORM_0676_BASE))
+			gFlags.push(FORM_0676_BASE);
+	}
+	else if (dFlags.includes(FORM_0676))
+	{
+		gFlags = gFlags.filter(flag => flag != FORM_0676_BASE);
+		if (!gFlags.includes(FORM_0676))
+			gFlags.push(FORM_0676);
+	}
+	
+	if (dFlags.includes(FORM_0710_BASE))
+	{
+		gFlags = gFlags.filter(flag => flag != FORM_0710);
+		if (!gFlags.includes(FORM_0710_BASE))
+			gFlags.push(FORM_0710_BASE);
+	}
+	else if (dFlags.includes(FORM_0710))
+	{
+		gFlags = gFlags.filter(flag => flag != FORM_0710_BASE);
+		if (!gFlags.includes(FORM_0710))
+			gFlags.push(FORM_0710);
+	}
+	
+	if (dFlags.includes(FORM_0718_BASE))
+	{
+		gFlags = gFlags.filter(flag => flag != FORM_0718);
+		if (!gFlags.includes(FORM_0718_BASE))
+			gFlags.push(FORM_0718_BASE);
+	}
+	else if (dFlags.includes(FORM_0718))
+	{
+		gFlags = gFlags.filter(flag => flag != FORM_0718_BASE);
+		if (!gFlags.includes(FORM_0718))
+			gFlags.push(FORM_0718);
+	}
+	
+	if (dFlags.includes(FORM_0720_BASE))
+	{
+		gFlags = gFlags.filter(flag => flag != FORM_0720);
+		if (!gFlags.includes(FORM_0720_BASE))
+			gFlags.push(FORM_0720_BASE);
+	}
+	else if (dFlags.includes(FORM_0720))
+	{
+		gFlags = gFlags.filter(flag => flag != FORM_0720_BASE);
+		if (!gFlags.includes(FORM_0720))
+			gFlags.push(FORM_0720);
 	}
 
 	return gFlags;

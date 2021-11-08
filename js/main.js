@@ -104,6 +104,13 @@ if (dexType == "n") menu.innerHTML += " [ National ] "; else menu.innerHTML += `
 if (dexType == "e") menu.innerHTML += " [ Evolution ] "; else menu.innerHTML += `<a class="btnVer" href='box.html?game=${_Dex.code}&ver=e'> [ E ] </a>`;
 menu.innerHTML += ` <span id="btnOpt" onclick="toggleOptions()"> [ Options ] </span>`;
 
+let optMegaForm = document.getElementById("optMegaForm")
+if (game == _GameVersions.X_.id | game == _GameVersions.Y_.id)
+	optMegaForm.onclick = function() {optToggle(this.checked, FORM_MEGA_X_Y_)};
+else if (game == _GameVersions.oR.id | game == _GameVersions.aS.id)
+	optMegaForm.onclick = function() {optToggle(this.checked, FORM_MEGA_ORAS)};
+
+
 if (dexType == "e")	// Evolution Dex
 {
 	_Ndex = _Edex;

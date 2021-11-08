@@ -24,8 +24,8 @@
 			<div class="opt"><input type="checkbox" id="optGrpBattleForm" onclick="optToggle(this.checked, FORM_BATTLE_GRP)"><label for="optGrpBattleForm">Show battle forms</label></div>
 			<div style="margin-left:20px;" class="opt">
 				<div class="opt"><input type="checkbox" id="optBattleForm" onclick="optSwitch(this.checked, FORM_BATTLE)"><label for="optBattleForm">Show general battle forms</label></div>
-				<div class="opt"><input type="checkbox" id="optMegaForm" onclick="optSwitch(this.checked, FORM_MEGA)" disabled><label for="optMegaForm">Show Mega and Primal Evolution forms</label></div>
-				<div class="opt"><input type="checkbox" id="optGmaxForm" onclick="optSwitch(this.checked, FORM_GMAX)" disabled><label for="optGmaxForm">Show Gigantamax forms</label></div>
+				<div class="opt"><input type="checkbox" id="optMegaForm" onclick="optToggle(this.checked, FORM_MEGA)"><label for="optMegaForm">Show Mega and Primal Evolution forms</label></div>
+				<div class="opt"><input type="checkbox" id="optGmaxForm" onclick="optToggle(this.checked, FORM_GMAX)" disabled><label for="optGmaxForm">Show Gigantamax forms</label></div>
 			</div>
 			<!--div class="opt"><input type="checkbox" id="optRegionalForm" onclick="optSwitch(this.checked, FLAGS_REGIONAL_FORM)" disabled><label for="optRegionalForm"></label>Show Regional forms</label></div-->
 			<!-- specific Pokemon forms -->
@@ -45,6 +45,18 @@
 			<div class="opt"><input type="checkbox" id="optForm0647" onclick="optSwitch(this.checked, FORM_0647)"><label for="optForm0647"></label>Show Keldeo forms</label></div>
 			<div class="opt"><input type="checkbox" id="optForm0648" onclick="optSwitch(this.checked, FORM_0648)"><label for="optForm0648"></label>Show Meloetta forms</label></div>
 			<div class="opt"><input type="checkbox" id="optForm0649" onclick="optSwitch(this.checked, FORM_0649)"><label for="optForm0649"></label>Show Genesect forms</label></div>
+			<div class="opt"><input type="checkbox" id="optForm0666" onclick="optSwitch(this.checked, FORM_0666_REGULAR)"><label for="optForm0666"></label>Show Vivillon forms</label></div>
+			<div style="margin-left:20px;" class="opt">
+				<div class="opt"><input type="checkbox" id="optForm0666Ev" onclick="optToggle(this.checked, FORM_0666_EVENT)"><label for="optForm0666Ev"></label>Show Vivillon event forms</label></div>
+			</div>
+			<div class="opt"><input type="checkbox" id="optForm0669" onclick="optSwitch(this.checked, FORM_0669)"><label for="optForm0669"></label>Show Flabébé-line forms</label></div>
+			<div style="margin-left:20px;" class="opt">
+				<div class="opt"><input type="checkbox" id="optForm0666Et" onclick="optToggle(this.checked, FORM_0666_ETERNAL)"><label for="optForm0666Ev"></label>Show Eternal Flower Floette</label></div>
+			</div>
+			<div class="opt"><input type="checkbox" id="optForm0676" onclick="optSwitch(this.checked, FORM_0676)"><label for="optForm0676"></label>Show Furfrou forms</label></div>
+			<div class="opt"><input type="checkbox" id="optForm0710" onclick="optSwitch(this.checked, FORM_0710)"><label for="optForm0710"></label>Show Pumpkaboo-line forms</label></div>
+			<div class="opt"><input type="checkbox" id="optForm0718" onclick="optSwitch(this.checked, FORM_0718)"><label for="optForm0718"></label>Show Zygarde forms</label></div>
+			<div class="opt"><input type="checkbox" id="optForm0720" onclick="optSwitch(this.checked, FORM_0720)"><label for="optForm0720"></label>Show Hoopa forms</label></div>
 			<div class="opt">
 				<button type="button" onclick="optReset()">Reset flags</input>
 				<button type="button" onclick="optSave(game, dexType)">Save and Refresh</input>
