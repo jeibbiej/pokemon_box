@@ -53,6 +53,7 @@
 #divOpt
 {
     display: none;
+    overflow: scroll;
 }
 
 div
