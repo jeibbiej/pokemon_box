@@ -1,10 +1,10 @@
-const IcoPathBkWh = "poke_icon/g05/1/";
-const IcoPathB2W2 = "poke_icon/g05/1/";
+const IcoPathX_Y_ = "poke_icon/g06/1/";
+const IcoPathoRaS = "poke_icon/g06/1/";
 
-const ImgWd_G05  = 32;
-const BoxCap_G05 = 30;
-const MaxBox_G05 = 18;
-const DivBox_G05 =  6;
+const ImgWd_G06  = 32;
+const BoxCap_G06 = 30;
+const MaxBox_G06 = 18;
+const DivBox_G06 =  6;
 
 //============================================================================
 // NATIONAL POKEDEX
@@ -16,12 +16,16 @@ const _Regdex_n_601 =
 	"0003"            : {ico: "0003",             flags: [FORM_MIN_GENDER_BASE]},  // "Venusaur",
 	"0003-m"          : {ico: "0003",             flags: [FORM_MIN_GENDER_DIFF]},  // "Venusaur♂",
 	"0003-f"          : {ico: "0003",             flags: [FORM_MIN_GENDER_DIFF]},  // "Venusaur♀",
+    "0003-mega"       : {ico: "0003-mega",        flags: [FORM_MEGA]},             // "Mega Venusaur",
 	"0004"            : {ico: "0004",             flags: []},                      // "Charmander",
 	"0005"            : {ico: "0005",             flags: []},                      // "Charmeleon",
 	"0006"            : {ico: "0006",             flags: []},                      // "Charizard",
+    "0006-mega-x"     : {ico: "0006-mega-x",      flags: [FORM_MEGA]},             // "Mega Charizard X",
+    "0006-mega-y"     : {ico: "0006-mega-y",      flags: [FORM_MEGA]},             // "Mega Charizard Y",
 	"0007"            : {ico: "0007",             flags: []},                      // "Squirtle",
 	"0008"            : {ico: "0008",             flags: []},                      // "Wartortle",
 	"0009"            : {ico: "0009",             flags: []},                      // "Blastoise",
+    "0009-mega"       : {ico: "0009-mega",        flags: [FORM_MEGA]},             // "Mega Blastoise",
 	"0010"            : {ico: "0010",             flags: []},                      // "Caterpie",
 	"0011"            : {ico: "0011",             flags: []},                      // "Metapod",
 	"0012"            : {ico: "0012",             flags: [FORM_MIN_GENDER_BASE]},  // "Butterfree",
@@ -30,9 +34,11 @@ const _Regdex_n_601 =
 	"0013"            : {ico: "0013",             flags: []},                      // "Weedle",
 	"0014"            : {ico: "0013",             flags: []},                      // "Kakuna",
 	"0015"            : {ico: "0015",             flags: []},                      // "Beedrill",
+    "0015-mega"       : {ico: "0015-mega",        flags: [FORM_MEGA]},             // "Mega Beedrill",
 	"0016"            : {ico: "0016",             flags: []},                      // "Pidgey",
 	"0017"            : {ico: "0017",             flags: []},                      // "Pidgeotto",
 	"0018"            : {ico: "0018",             flags: []},                      // "Pidgeot",
+    "0018-mega"       : {ico: "0018-mega",        flags: [FORM_MEGA]},             // "Mega Pidgeot",
 	"0019"            : {ico: "0019",             flags: [FORM_MIN_GENDER_BASE]},  // "Rattata",
 	"0019-m"          : {ico: "0019",             flags: [FORM_MIN_GENDER_DIFF]},  // "Rattata♂",
 	"0019-f"          : {ico: "0019",             flags: [FORM_MIN_GENDER_DIFF]},  // "Rattata♀",
@@ -46,17 +52,23 @@ const _Regdex_n_601 =
 	"0025"            : {ico: "0025",             flags: [FORM_MIN_GENDER_BASE]},  // "Pikachu",
 	"0025-m"          : {ico: "0025",             flags: [FORM_MIN_GENDER_DIFF]},  // "Pikachu♂",
 	"0025-f"          : {ico: "0025",             flags: [FORM_MIN_GENDER_DIFF]},  // "Pikachu♀",
+    "0025-cosplay"    : {ico: "0025-cosplay",     flags: []},                      // "Cosplay Pikachu", // female only
+    "0025-rock-star"  : {ico: "0025-rock-star",   flags: []},                      // "Pikachu Rock Star", // female only
+    "0025-belle"      : {ico: "0025-belle",       flags: []},                      // "Pikachu Belle", // female only
+    "0025-popstar"    : {ico: "0025-popstar",     flags: []},                      // "Pikachu Pop Star", // female only
+    "0025-phd"        : {ico: "0025-phd",         flags: []},                      // "Pikachu, Ph. D", // female only
+    "0025-libre"      : {ico: "0025-libre",       flags: []},                      // "Pikachu Libre", // female only
 	"0026"            : {ico: "0026",             flags: [FORM_MIN_GENDER_BASE]},  // "Raichu",
 	"0026-m"          : {ico: "0026",             flags: [FORM_MIN_GENDER_DIFF]},  // "Raichu♂",
 	"0026-f"          : {ico: "0026",             flags: [FORM_MIN_GENDER_DIFF]},  // "Raichu♀",
 	"0027"            : {ico: "0027",             flags: []},                      // "Sandshrew",
 	"0028"            : {ico: "0028",             flags: []},                      // "Sandslash",
-	"0029"            : {ico: "0029",           flags: [FORM_MAJ_GENDER_BASE]},  // "Nidoran",
-	"0029-f"          : {ico: "0029",           flags: [FORM_MAJ_GENDER_DIFF]},  // "Nidoran♀",
+	"0029"            : {ico: "0029",             flags: [FORM_MAJ_GENDER_BASE]},  // "Nidoran",
+	"0029-f"          : {ico: "0029",             flags: [FORM_MAJ_GENDER_DIFF]},  // "Nidoran♀",
 	"0030"            : {ico: "0030",             flags: []},                      // "Nidorina",
 	"0031"            : {ico: "0031",             flags: []},                      // "Nidoqueen",
-	"0032"            : {ico: "0032",           flags: [FORM_MAJ_GENDER_BASE]},  // "Nidoran",
-	"0032-m"          : {ico: "0032",           flags: [FORM_MAJ_GENDER_DIFF]},  // "Nidoran♂",
+	"0032"            : {ico: "0032",             flags: [FORM_MAJ_GENDER_BASE]},  // "Nidoran",
+	"0032-m"          : {ico: "0032",             flags: [FORM_MAJ_GENDER_DIFF]},  // "Nidoran♂",
 	"0033"            : {ico: "0033",             flags: []},                      // "Nidorino",
 	"0034"            : {ico: "0034",             flags: []},                      // "Nidoking",
 	"0035"            : {ico: "0035",             flags: []},                      // "Clefairy",
@@ -102,6 +114,7 @@ const _Regdex_n_601 =
 	"0065"            : {ico: "0065",             flags: [FORM_MIN_GENDER_BASE]},  // "Alakazam",
 	"0065-m"          : {ico: "0065",             flags: [FORM_MIN_GENDER_DIFF]},  // "Alakazam♂",
 	"0065-f"          : {ico: "0065",             flags: [FORM_MIN_GENDER_DIFF]},  // "Alakazam♀",
+    "0065-mega"       : {ico: "0065-mega",        flags: [FORM_MEGA]},             // "Mega Alakazam",
 	"0066"            : {ico: "0066",             flags: []},                      // "Machop",
 	"0067"            : {ico: "0067",             flags: []},                      // "Machoke",
 	"0068"            : {ico: "0068",             flags: []},                      // "Machamp",
@@ -117,6 +130,7 @@ const _Regdex_n_601 =
 	"0078"            : {ico: "0078",             flags: []},                      // "Rapidash",
 	"0079"            : {ico: "0079",             flags: []},                      // "Slowpoke",
 	"0080"            : {ico: "0080",             flags: []},                      // "Slowbro",
+    "0080-mega"       : {ico: "0080-mega",        flags: [FORM_MEGA]},             // "Mega Slowbro",
 	"0081"            : {ico: "0081",             flags: []},                      // "Magnemite",
 	"0082"            : {ico: "0082",             flags: []},                      // "Magneton",
 	"0083"            : {ico: "0083",             flags: []},                      // "Farfetch'd",
@@ -135,6 +149,7 @@ const _Regdex_n_601 =
 	"0092"            : {ico: "0092",             flags: []},                      // "Gastly",
 	"0093"            : {ico: "0093",             flags: []},                      // "Haunter",
 	"0094"            : {ico: "0094",             flags: []},                      // "Gengar",
+    "0094-mega"       : {ico: "0094-mega",        flags: [FORM_MEGA]},             // "Mega Gengar",
 	"0095"            : {ico: "0095",             flags: []},                      // "Onix",
 	"0096"            : {ico: "0096",             flags: []},                      // "Drowzee",
 	"0097"            : {ico: "0097",             flags: [FORM_MIN_GENDER_BASE]},  // "Hypno",
@@ -162,6 +177,7 @@ const _Regdex_n_601 =
 	"0113"            : {ico: "0113",             flags: []},                      // "Chansey", // female only
 	"0114"            : {ico: "0114",             flags: []},                      // "Tangela",
 	"0115"            : {ico: "0115",             flags: []},                      // "Kangaskhan", // female only
+    "0115-mega"       : {ico: "0115-mega",        flags: [FORM_MEGA]},             // "Mega Kangaskhan", // female only
 	"0116"            : {ico: "0116",             flags: []},                      // "Horsea",
 	"0117"            : {ico: "0117",             flags: []},                      // "Seadra",
 	"0118"            : {ico: "0118",             flags: [FORM_MIN_GENDER_BASE]},  // "Goldeen",
@@ -180,6 +196,7 @@ const _Regdex_n_601 =
 	"0125"            : {ico: "0125",             flags: []},                      // "Electabuzz",
 	"0126"            : {ico: "0126",             flags: []},                      // "Magmar",
 	"0127"            : {ico: "0127",             flags: []},                      // "Pinsir",
+    "0127-mega"       : {ico: "0127-mega",        flags: [FORM_MEGA]},             // "Mega Pinsir",
 	"0128"            : {ico: "0128",             flags: []},                      // "Tauros", // male only
 	"0129"            : {ico: "0129",             flags: [FORM_MIN_GENDER_BASE]},  // "Magikarp",
 	"0129-m"          : {ico: "0129",             flags: [FORM_MIN_GENDER_DIFF]},  // "Magikarp♂",
@@ -187,6 +204,7 @@ const _Regdex_n_601 =
 	"0130"            : {ico: "0130",             flags: [FORM_MIN_GENDER_BASE]},  // "Gyarados",
 	"0130-m"          : {ico: "0130",             flags: [FORM_MIN_GENDER_DIFF]},  // "Gyarados♂",
 	"0130-f"          : {ico: "0130",             flags: [FORM_MIN_GENDER_DIFF]},  // "Gyarados♀",
+    "0130-mega"       : {ico: "0130-mega",        flags: [FORM_MEGA]},             // "Mega Gyarados",
 	"0131"            : {ico: "0131",             flags: []},                      // "Lapras",
 	"0132"            : {ico: "0132",             flags: []},                      // "Ditto", // uknown gender
 	"0133"            : {ico: "0133",             flags: []},                      // "Eevee",
@@ -199,6 +217,7 @@ const _Regdex_n_601 =
 	"0140"            : {ico: "0140",             flags: []},                      // "Kabuto",
 	"0141"            : {ico: "0141",             flags: []},                      // "Kabutops",
 	"0142"            : {ico: "0142",             flags: []},                      // "Aerodactyl",
+    "0142-mega"       : {ico: "0142-mega",        flags: [FORM_MEGA]},             // "Mega Aerodactyl",
 	"0143"            : {ico: "0143",             flags: []},                      // "Snorlax",
 	"0144"            : {ico: "0144",             flags: []},                      // "Articuno", // uknown gender
 	"0145"            : {ico: "0145",             flags: []},                      // "Zapdos", // uknown gender
@@ -207,6 +226,8 @@ const _Regdex_n_601 =
 	"0148"            : {ico: "0148",             flags: []},                      // "Dragonair",
 	"0149"            : {ico: "0149",             flags: []},                      // "Dragonite",
 	"0150"            : {ico: "0150",             flags: []},                      // "Mewtwo", // uknown gender
+    "0150-mega-x"     : {ico: "0150-mega-x",      flags: [FORM_MEGA]},             // "Mega Mewtwo X", // uknown gender
+    "0150-mega-y"     : {ico: "0150-mega-y",      flags: [FORM_MEGA]},             // "Mega Mewtwo Y", // uknown gender
 	"0151"            : {ico: "0151",             flags: []},                      // "Mew", // uknown gender
 	"0152"            : {ico: "0152",             flags: []},                      // "Chikorita",
 	"0153"            : {ico: "0153",             flags: []},                      // "Bayleef",
@@ -247,6 +268,7 @@ const _Regdex_n_601 =
 	"0179"            : {ico: "0179",             flags: []},                      // "Mareep",
 	"0180"            : {ico: "0180",             flags: []},                      // "Flaaffy",
 	"0181"            : {ico: "0181",             flags: []},                      // "Ampharos",
+    "0181-mega"       : {ico: "0181-mega",        flags: [FORM_MEGA]},             // "Mega Ampharos",
 	"0182"            : {ico: "0182",             flags: []},                      // "Bellossom",
 	"0183"            : {ico: "0183",             flags: []},                      // "Marill",
 	"0184"            : {ico: "0184",             flags: []},                      // "Azumarill",
@@ -323,16 +345,19 @@ const _Regdex_n_601 =
 	"0208"            : {ico: "0208",             flags: [FORM_MIN_GENDER_BASE]},  // "Steelix",
 	"0208-m"          : {ico: "0208",             flags: [FORM_MIN_GENDER_DIFF]},  // "Steelix♂",
 	"0208-f"          : {ico: "0208",             flags: [FORM_MIN_GENDER_DIFF]},  // "Steelix♀",
+    "0208-mega"       : {ico: "0208-mega",        flags: [FORM_MEGA]},             // "Mega Steelix",
 	"0209"            : {ico: "0209",             flags: []},                      // "Snubbull",
 	"0210"            : {ico: "0210",             flags: []},                      // "Granbull",
 	"0211"            : {ico: "0211",             flags: []},                      // "Qwilfish",
 	"0212"            : {ico: "0212",             flags: [FORM_MIN_GENDER_BASE]},  // "Scizor",
 	"0212-m"          : {ico: "0212",             flags: [FORM_MIN_GENDER_DIFF]},  // "Scizor♂",
 	"0212-f"          : {ico: "0212",             flags: [FORM_MIN_GENDER_DIFF]},  // "Scizor♀",
+    "0212-mega"       : {ico: "0212-mega",        flags: [FORM_MEGA]},             // "Mega Scizor",
 	"0213"            : {ico: "0213",             flags: []},                      // "Shuckle",
 	"0214"            : {ico: "0214",             flags: [FORM_MIN_GENDER_BASE]},  // "Heracross",
 	"0214-m"          : {ico: "0214",             flags: [FORM_MIN_GENDER_DIFF]},  // "Heracross♂",
 	"0214-f"          : {ico: "0214",             flags: [FORM_MIN_GENDER_DIFF]},  // "Heracross♀",
+    "0214-mega"       : {ico: "0214-mega",        flags: [FORM_MEGA]},             // "Mega Heracross",
 	"0215"            : {ico: "0215",             flags: [FORM_MIN_GENDER_BASE]},  // "Sneasel",
 	"0215-m"          : {ico: "0215",             flags: [FORM_MIN_GENDER_DIFF]},  // "Sneasel♂",
 	"0215-f"          : {ico: "0215",             flags: [FORM_MIN_GENDER_DIFF]},  // "Sneasel♀",
@@ -358,6 +383,7 @@ const _Regdex_n_601 =
 	"0229"            : {ico: "0229",             flags: [FORM_MIN_GENDER_BASE]},  // "Houndoom",
 	"0229-m"          : {ico: "0229",             flags: [FORM_MIN_GENDER_DIFF]},  // "Houndoom♂",
 	"0229-f"          : {ico: "0229",             flags: [FORM_MIN_GENDER_DIFF]},  // "Houndoom♀",
+    "0229-mega"       : {ico: "0229-mega",        flags: [FORM_MEGA]},             // "Mega Houndoom",
 	"0230"            : {ico: "0230",             flags: []},                      // "Kingdra",
 	"0231"            : {ico: "0231",             flags: []},                      // "Phanpy",
 	"0232"            : {ico: "0232",             flags: [FORM_MIN_GENDER_BASE]},  // "Donphan",
@@ -379,12 +405,14 @@ const _Regdex_n_601 =
 	"0246"            : {ico: "0246",             flags: []},                      // "Larvitar",
 	"0247"            : {ico: "0247",             flags: []},                      // "Pupitar",
 	"0248"            : {ico: "0248",             flags: []},                      // "Tyranitar",
+    "0248-mega"       : {ico: "0248-mega",        flags: [FORM_MEGA]},             // "Mega Tyranitar",
 	"0249"            : {ico: "0249",             flags: []},                      // "Lugia", // uknown gender
 	"0250"            : {ico: "0250",             flags: []},                      // "Ho-Oh", // uknown gender
 	"0251"            : {ico: "0251",             flags: []},                      // "Celebi", // uknown gender
 	"0252"            : {ico: "0252",             flags: []},                      // "Treecko",
 	"0253"            : {ico: "0253",             flags: []},                      // "Grovyle",
 	"0254"            : {ico: "0254",             flags: []},                      // "Sceptile",
+    "0254-mega"       : {ico: "0254-mega",        flags: [FORM_MEGA]},             // "Mega Sceptile",
 	"0255"            : {ico: "0255",             flags: [FORM_MIN_GENDER_BASE]},  // "Torchic",
 	"0255-m"          : {ico: "0255",             flags: [FORM_MIN_GENDER_DIFF]},  // "Torchic♂",
 	"0255-f"          : {ico: "0255",             flags: [FORM_MIN_GENDER_DIFF]},  // "Torchic♀",
@@ -394,9 +422,11 @@ const _Regdex_n_601 =
 	"0257"            : {ico: "0257",             flags: [FORM_MIN_GENDER_BASE]},  // "Blaziken",
 	"0257-m"          : {ico: "0257",             flags: [FORM_MIN_GENDER_DIFF]},  // "Blaziken♂",
 	"0257-f"          : {ico: "0257",             flags: [FORM_MIN_GENDER_DIFF]},  // "Blaziken♀",
+    "0257-mega"       : {ico: "0257-mega",        flags: [FORM_MEGA]},             // "Mega Blaziken",
 	"0258"            : {ico: "0258",             flags: []},                      // "Mudkip",
 	"0259"            : {ico: "0259",             flags: []},                      // "Marshtomp",
 	"0260"            : {ico: "0260",             flags: []},                      // "Swampert",
+    "0260-mega"       : {ico: "0260-mega",        flags: [FORM_MEGA]},             // "Mega Swampert",
 	"0261"            : {ico: "0261",             flags: []},                      // "Poochyena",
 	"0262"            : {ico: "0262",             flags: []},                      // "Mightyena",
 	"0263"            : {ico: "0263",             flags: []},                      // "Zigzagoon",
@@ -429,6 +459,7 @@ const _Regdex_n_601 =
 	"0280"            : {ico: "0280",             flags: []},                      // "Ralts",
 	"0281"            : {ico: "0281",             flags: []},                      // "Kirlia",
 	"0282"            : {ico: "0282",             flags: []},                      // "Gardevoir",
+    "0282-mega"       : {ico: "0282-mega",        flags: [FORM_MEGA]},             // "Mega Gardevoir",
 	"0283"            : {ico: "0283",             flags: []},                      // "Surskit",
 	"0284"            : {ico: "0284",             flags: []},                      // "Masquerain",
 	"0285"            : {ico: "0285",             flags: []},                      // "Shroomish",
@@ -449,18 +480,23 @@ const _Regdex_n_601 =
 	"0300"            : {ico: "0300",             flags: []},                      // "Skitty",
 	"0301"            : {ico: "0301",             flags: []},                      // "Delcatty",
 	"0302"            : {ico: "0302",             flags: []},                      // "Sableye",
+    "0302-mega"       : {ico: "0302-mega",        flags: [FORM_MEGA]},             // "Mega Sableye",
 	"0303"            : {ico: "0303",             flags: []},                      // "Mawile",
+    "0303-mega"       : {ico: "0303-mega",        flags: [FORM_MEGA]},             // "Mega Mawile",
 	"0304"            : {ico: "0304",             flags: []},                      // "Aron",
 	"0305"            : {ico: "0305",             flags: []},                      // "Lairon",
 	"0306"            : {ico: "0306",             flags: []},                      // "Aggron",
+    "0306-mega"       : {ico: "0306-mega",        flags: [FORM_MEGA]},             // "Mega Aggron",
 	"0307"            : {ico: "0307",             flags: [FORM_MIN_GENDER_BASE]},  // "Meditite",
 	"0307-m"          : {ico: "0307",             flags: [FORM_MIN_GENDER_DIFF]},  // "Meditite♂",
 	"0307-f"          : {ico: "0307",             flags: [FORM_MIN_GENDER_DIFF]},  // "Meditite♀",
 	"0308"            : {ico: "0308",             flags: [FORM_MIN_GENDER_BASE]},  // "Medicham",
 	"0308-m"          : {ico: "0308",             flags: [FORM_MIN_GENDER_DIFF]},  // "Medicham♂",
 	"0308-f"          : {ico: "0308",             flags: [FORM_MIN_GENDER_DIFF]},  // "Medicham♀",
+    "0308-mega"       : {ico: "0308-mega",        flags: [FORM_MEGA]},             // "Mega Medicham",
 	"0309"            : {ico: "0309",             flags: []},                      // "Electrike",
 	"0310"            : {ico: "0310",             flags: []},                      // "Manectric",
+    "0310-mega"       : {ico: "0310-mega",        flags: [FORM_MEGA]},             // "Mega Manectric",
 	"0311"            : {ico: "0311",             flags: []},                      // "Plusle",
 	"0312"            : {ico: "0312",             flags: []},                      // "Minun",
 	"0313"            : {ico: "0313",             flags: []},                      // "Volbeat", // male only
@@ -476,6 +512,7 @@ const _Regdex_n_601 =
 	"0317-f"          : {ico: "0317",             flags: [FORM_MIN_GENDER_DIFF]},  // "Swalot♀",
 	"0318"            : {ico: "0318",             flags: []},                      // "Carvanha",
 	"0319"            : {ico: "0319",             flags: []},                      // "Sharpedo",
+    "0319-mega"       : {ico: "0319-mega",        flags: [FORM_MEGA]},             // "Mega Sharpedo",
 	"0320"            : {ico: "0320",             flags: []},                      // "Wailmer",
 	"0321"            : {ico: "0321",             flags: []},                      // "Wailord",
 	"0322"            : {ico: "0322",             flags: [FORM_MIN_GENDER_BASE]},  // "Numel",
@@ -484,6 +521,7 @@ const _Regdex_n_601 =
 	"0323"            : {ico: "0323",             flags: [FORM_MIN_GENDER_BASE]},  // "Camerupt",
 	"0323-m"          : {ico: "0323",             flags: [FORM_MIN_GENDER_DIFF]},  // "Camerupt♂",
 	"0323-f"          : {ico: "0323",             flags: [FORM_MIN_GENDER_DIFF]},  // "Camerupt♀",
+    "0323-mega"       : {ico: "0323-mega",        flags: [FORM_MEGA]},             // "Mega Camerupt",
 	"0324"            : {ico: "0324",             flags: []},                      // "Torkoal",
 	"0325"            : {ico: "0325",             flags: []},                      // "Spoink",
 	"0326"            : {ico: "0326",             flags: []},                      // "Grumpig",
@@ -497,6 +535,7 @@ const _Regdex_n_601 =
 	"0332-f"          : {ico: "0332",             flags: [FORM_MIN_GENDER_DIFF]},  // "Cacturne♀",
 	"0333"            : {ico: "0333",             flags: []},                      // "Swablu",
 	"0334"            : {ico: "0334",             flags: []},                      // "Altaria",
+    "0334-mega"       : {ico: "0334-mega",        flags: [FORM_MEGA]},             // "Mega Altaria",
 	"0335"            : {ico: "0335",             flags: []},                      // "Zangoose",
 	"0336"            : {ico: "0336",             flags: []},                      // "Seviper",
 	"0337"            : {ico: "0337",             flags: []},                      // "Lunatone", // uknown gender
@@ -522,14 +561,17 @@ const _Regdex_n_601 =
 	"0352"            : {ico: "0352",             flags: []},                      // "Kecleon",
 	"0353"            : {ico: "0353",             flags: []},                      // "Shuppet",
 	"0354"            : {ico: "0354",             flags: []},                      // "Banette",
+    "0354-mega"       : {ico: "0354-mega",        flags: [FORM_MEGA]},             // "Mega Banette",
 	"0355"            : {ico: "0355",             flags: []},                      // "Duskull",
 	"0356"            : {ico: "0356",             flags: []},                      // "Dusclops",
 	"0357"            : {ico: "0357",             flags: []},                      // "Tropius",
 	"0358"            : {ico: "0358",             flags: []},                      // "Chimecho",
 	"0359"            : {ico: "0359",             flags: []},                      // "Absol",
+    "0359-mega"       : {ico: "0359-mega",        flags: [FORM_MEGA]},             // "Mega Absol",
 	"0360"            : {ico: "0360",             flags: []},                      // "Wynaut",
 	"0361"            : {ico: "0361",             flags: []},                      // "Snorunt",
 	"0362"            : {ico: "0362",             flags: []},                      // "Glalie",
+    "0362-mega"       : {ico: "0362-mega",        flags: [FORM_MEGA]},             // "Mega Glalie",
 	"0363"            : {ico: "0363",             flags: []},                      // "Spheal",
 	"0364"            : {ico: "0364",             flags: []},                      // "Sealeo",
 	"0365"            : {ico: "0365",             flags: []},                      // "Walrein",
@@ -543,17 +585,24 @@ const _Regdex_n_601 =
 	"0371"            : {ico: "0371",             flags: []},                      // "Bagon",
 	"0372"            : {ico: "0372",             flags: []},                      // "Shelgon",
 	"0373"            : {ico: "0373",             flags: []},                      // "Salamence",
+    "0373-mega"       : {ico: "0373-mega",        flags: [FORM_MEGA]},             // "Mega Salamence",
 	"0374"            : {ico: "0374",             flags: []},                      // "Beldum", // uknown gender
 	"0375"            : {ico: "0375",             flags: []},                      // "Metang", // uknown gender
 	"0376"            : {ico: "0376",             flags: []},                      // "Metagross", // uknown gender
+    "0376-mega"       : {ico: "0376-mega",        flags: [FORM_MEGA]},             // "Mega Metagross", // uknown gender
 	"0377"            : {ico: "0377",             flags: []},                      // "Regirock", // uknown gender
 	"0378"            : {ico: "0378",             flags: []},                      // "Regice", // uknown gender
 	"0379"            : {ico: "0379",             flags: []},                      // "Registeel", // uknown gender
 	"0380"            : {ico: "0380",             flags: []},                      // "Latias", // female only
+    "0380-mega"       : {ico: "0380-mega",        flags: [FORM_MEGA]},             // "Mega Latias", // female only
 	"0381"            : {ico: "0381",             flags: []},                      // "Latios", // male only
+    "0381-mega"       : {ico: "0381-mega",        flags: [FORM_MEGA]},             // "Mega Latios", // male only
 	"0382"            : {ico: "0382",             flags: []},                      // "Kyogre", // uknown gender
+    "0382-primal"     : {ico: "0382-primal",      flags: [FORM_MEGA]},             // "Primal Kyogre", // uknown gender
 	"0383"            : {ico: "0383",             flags: []},                      // "Groudon", // uknown gender
+    "0383-primal"     : {ico: "0383-primal",      flags: [FORM_MEGA]},             // "Primal Groudon", // uknown gender
 	"0384"            : {ico: "0384",             flags: []},                      // "Rayquaza", // uknown gender
+    "0384-mega"       : {ico: "0384-mega",        flags: [FORM_MEGA]},             // "Mega Rayquaza", // uknown gender
 	"0385"            : {ico: "0385",             flags: []},                      // "Jirachi", // uknown gender
 	"0386"            : {ico: "0386",             flags: [FORM_0386_BASE,
 	                                                      FORM_0386]},             // "Deoxys", // uknown gender
@@ -646,6 +695,7 @@ const _Regdex_n_601 =
 	"0426"            : {ico: "0426",             flags: []},                      // "Drifblim",
 	"0427"            : {ico: "0427",             flags: []},                      // "Buneary",
 	"0428"            : {ico: "0428",             flags: []},                      // "Lopunny",
+    "0428-mega"       : {ico: "0428-mega",        flags: [FORM_MEGA]},             // "Mega Lopunny",
 	"0429"            : {ico: "0429",             flags: []},                      // "Mismagius",
 	"0430"            : {ico: "0430",             flags: []},                      // "Honchkrow",
 	"0431"            : {ico: "0431",             flags: []},                      // "Glameow",
@@ -669,9 +719,11 @@ const _Regdex_n_601 =
 	"0445"            : {ico: "0445",             flags: [FORM_MIN_GENDER_BASE]},  // "Garchomp",
 	"0445-m"          : {ico: "0445",             flags: [FORM_MIN_GENDER_DIFF]},  // "Garchomp♂",
 	"0445-f"          : {ico: "0445",             flags: [FORM_MIN_GENDER_DIFF]},  // "Garchomp♀",
+    "0445-mega"       : {ico: "0445-mega",        flags: [FORM_MEGA]},             // "Mega Garchomp",
 	"0446"            : {ico: "0446",             flags: []},                      // "Munchlax",
 	"0447"            : {ico: "0447",             flags: []},                      // "Riolu",
 	"0448"            : {ico: "0448",             flags: []},                      // "Lucario",
+    "0448-mega"       : {ico: "0448-mega",        flags: [FORM_MEGA]},             // "Mega Lucario",
 	"0449"            : {ico: "0449",             flags: [FORM_MIN_GENDER_BASE]},  // "Hippopotas",
 	"0449-m"          : {ico: "0449",             flags: [FORM_MIN_GENDER_DIFF]},  // "Hippopotas♂",
 	"0449-f"          : {ico: "0449",             flags: [FORM_MIN_GENDER_DIFF]},  // "Hippopotas♀",
@@ -700,6 +752,7 @@ const _Regdex_n_601 =
 	"0460"            : {ico: "0460",             flags: [FORM_MIN_GENDER_BASE]},  // "Abomasnow",
 	"0460-m"          : {ico: "0460",             flags: [FORM_MIN_GENDER_DIFF]},  // "Abomasnow♂",
 	"0460-f"          : {ico: "0460",             flags: [FORM_MIN_GENDER_DIFF]},  // "Abomasnow♀",
+    "0460-mega"       : {ico: "0460-mega",        flags: [FORM_MEGA]},             // "Mega Abomasnow",
 	"0461"            : {ico: "0461",             flags: [FORM_MIN_GENDER_BASE]},  // "Weavile",
 	"0461-m"          : {ico: "0461",             flags: [FORM_MIN_GENDER_DIFF]},  // "Weavile♂",
 	"0461-f"          : {ico: "0461",             flags: [FORM_MIN_GENDER_DIFF]},  // "Weavile♀",
@@ -723,6 +776,7 @@ const _Regdex_n_601 =
 	"0473-f"          : {ico: "0473",             flags: [FORM_MIN_GENDER_DIFF]},  // "Mamoswine♀",
 	"0474"            : {ico: "0474",             flags: []},                      // "Porygon-Z", // uknown gender
 	"0475"            : {ico: "0475",             flags: []},                      // "Gallade", // male only
+    "0475-mega"       : {ico: "0475-mega",        flags: [FORM_MEGA]},             // "Mega Gallade", // male only
 	"0476"            : {ico: "0476",             flags: []},                      // "Probopass",
 	"0477"            : {ico: "0477",             flags: []},                      // "Dusknoir",
 	"0478"            : {ico: "0478",             flags: []},                      // "Froslass", // female only
@@ -808,6 +862,7 @@ const _Regdex_n_601 =
     "0529"            : {ico: "0529",             flags: []},                      // "Drilbur",
     "0530"            : {ico: "0530",             flags: []},                      // "Excadrill",
     "0531"            : {ico: "0531",             flags: []},                      // "Audino",
+    "0531-mega"       : {ico: "0531-mega",        flags: [FORM_MEGA]},             // "Mega Audino",
     "0532"            : {ico: "0532",             flags: []},                      // "Timburr",
     "0533"            : {ico: "0533",             flags: []},                      // "Gurdurr",
     "0534"            : {ico: "0534",             flags: []},                      // "Conkeldurr",
@@ -959,206 +1014,148 @@ const _Regdex_n_601 =
     "0649-shock"      : {ico: "0649",             flags: [FORM_0649]},             // "Shock Drive Genesect", // uknown gender
     "0649-burn"       : {ico: "0649",             flags: [FORM_0649]},             // "Burn Drive Genesect", // uknown gender
     "0649-chill"      : {ico: "0649",             flags: [FORM_0649]},             // "Chill Drive Genesect", // uknown gender
-
-
-    "0003-mega"       : {ico: "0003-mega",        flags: []}, // "Mega Venusaur",
-    "0006-mega-x"     : {ico: "0006-mega-x",      flags: []}, // "Mega Charizard X",
-    "0006-mega-y"     : {ico: "0006-mega-y",      flags: []}, // "Mega Charizard Y",
-    "0009-mega"       : {ico: "0009-mega",        flags: []}, // "Mega Blastoise",
-    "0015-mega"       : {ico: "0015-mega",        flags: []}, // "Mega Beedrill",
-    "0018-mega"       : {ico: "0018-mega",        flags: []}, // "Mega Pidgeot",
-    "0025-cosplay"    : {ico: "0025-cosplay",     flags: []}, // "Cosplay Pikachu", // female only
-    "0025-rock-star"  : {ico: "0025-rock-star",   flags: []}, // "Pikachu Rock Star", // female only
-    "0025-belle"      : {ico: "0025-belle",       flags: []}, // "Pikachu Belle", // female only
-    "0025-popstar"    : {ico: "0025-popstar",     flags: []}, // "Pikachu Pop Star", // female only
-    "0025-phd"        : {ico: "0025-phd",         flags: []}, // "Pikachu, Ph. D", // female only
-    "0025-libre"      : {ico: "0025-libre",       flags: []}, // "Pikachu Libre", // female only
-    "0065-mega"       : {ico: "0065-mega",        flags: []}, // "Mega Alakazam",
-    "0080-mega"       : {ico: "0080-mega",        flags: []}, // "Mega Slowbro",
-    "0094-mega"       : {ico: "0094-mega",        flags: []}, // "Mega Gengar",
-    "0115-mega"       : {ico: "0115-mega",        flags: []}, // "Mega Kangaskhan", // female only
-    "0127-mega"       : {ico: "0127-mega",        flags: []}, // "Mega Pinsir",
-    "0130-mega"       : {ico: "0130-mega",        flags: []}, // "Mega Gyarados",
-    "0142-mega"       : {ico: "0142-mega",        flags: []}, // "Mega Aerodactyl",
-    "0150-mega-x"     : {ico: "0150-mega-x",      flags: []}, // "Mega Mewtwo X", // uknown gender
-    "0150-mega-y"     : {ico: "0150-mega-y",      flags: []}, // "Mega Mewtwo Y", // uknown gender
-    "0181-mega"       : {ico: "0181-mega",        flags: []}, // "Mega Ampharos",
-    "0208-mega"       : {ico: "0208-mega",        flags: []}, // "Mega Steelix",
-    "0212-mega"       : {ico: "0212-mega",        flags: []}, // "Mega Scizor",
-    "0214-mega"       : {ico: "0214-mega",        flags: []}, // "Mega Heracross",
-    "0229-mega"       : {ico: "0229-mega",        flags: []}, // "Mega Houndoom",
-    "0248-mega"       : {ico: "0248-mega",        flags: []}, // "Mega Tyranitar",
-    "0254-mega"       : {ico: "0254-mega",        flags: []}, // "Mega Sceptile",
-    "0257-mega"       : {ico: "0257-mega",        flags: []}, // "Mega Blaziken",
-    "0260-mega"       : {ico: "0260-mega",        flags: []}, // "Mega Swampert",
-    "0282-mega"       : {ico: "0282-mega",        flags: []}, // "Mega Gardevoir",
-    "0302-mega"       : {ico: "0302-mega",        flags: []}, // "Mega Sableye",
-    "0303-mega"       : {ico: "0303-mega",        flags: []}, // "Mega Mawile",
-    "0306-mega"       : {ico: "0306-mega",        flags: []}, // "Mega Aggron",
-    "0308-mega"       : {ico: "0308-mega",        flags: []}, // "Mega Medicham",
-    "0310-mega"       : {ico: "0310-mega",        flags: []}, // "Mega Manectric",
-    "0319-mega"       : {ico: "0319-mega",        flags: []}, // "Mega Sharpedo",
-    "0323-mega"       : {ico: "0323-mega",        flags: []}, // "Mega Camerupt",
-    "0334-mega"       : {ico: "0334-mega",        flags: []}, // "Mega Altaria",
-    "0354-mega"       : {ico: "0354-mega",        flags: []}, // "Mega Banette",
-    "0359-mega"       : {ico: "0359-mega",        flags: []}, // "Mega Absol",
-    "0362-mega"       : {ico: "0362-mega",        flags: []}, // "Mega Glalie",
-    "0373-mega"       : {ico: "0373-mega",        flags: []}, // "Mega Salamence",
-    "0376-mega"       : {ico: "0376-mega",        flags: []}, // "Mega Metagross", // uknown gender
-    "0380-mega"       : {ico: "0380-mega",        flags: []}, // "Mega Latias", // female only
-    "0381-mega"       : {ico: "0381-mega",        flags: []}, // "Mega Latios", // male only
-    "0382-primal"     : {ico: "0382-primal",      flags: []}, // "Primal Kyogre", // uknown gender
-    "0383-primal"     : {ico: "0383-primal",      flags: []}, // "Primal Groudon", // uknown gender
-    "0384-mega"       : {ico: "0384-mega",        flags: []}, // "Mega Rayquaza", // uknown gender
-    "0428-mega"       : {ico: "0428-mega",        flags: []}, // "Mega Lopunny",
-    "0445-mega"       : {ico: "0445-mega",        flags: []}, // "Mega Garchomp",
-    "0448-mega"       : {ico: "0448-mega",        flags: []}, // "Mega Lucario",
-    "0460-mega"       : {ico: "0460-mega",        flags: []}, // "Mega Abomasnow",
-    "0475-mega"       : {ico: "0475-mega",        flags: []}, // "Mega Gallade", // male only
-    "0531-mega"       : {ico: "0531-mega",        flags: []}, // "Mega Audino",
-	//----------------- {ico: //----------------, flags: []}, //
-	"0650"            : {ico: "0650",             flags: []}, // "Chespin",
-    "0651"            : {ico: "0651",             flags: []}, // "Quilladin",
-    "0652"            : {ico: "0652",             flags: []}, // "Chesnaught",
-    "0653"            : {ico: "0653",             flags: []}, // "Fennekin",
-    "0654"            : {ico: "0654",             flags: []}, // "Braixen",
-    "0655"            : {ico: "0655",             flags: []}, // "Delphox",
-    "0656"            : {ico: "0656",             flags: []}, // "Froakie",
-    "0657"            : {ico: "0657",             flags: []}, // "Frogadier",
-    "0658"            : {ico: "0658",             flags: []}, // "Greninja",
-    "0658-ash"        : {ico: "0658-ash",         flags: []}, // "Ash-Greninja", // male only
-    "0659"            : {ico: "0659",             flags: []}, // "Bunnelby",
-    "0660"            : {ico: "0660",             flags: []}, // "Diggersby",
-    "0661"            : {ico: "0661",             flags: []}, // "Fletchling",
-    "0662"            : {ico: "0662",             flags: []}, // "Fletchinder",
-    "0663"            : {ico: "0663",             flags: []}, // "Talonflame",
-    "0664"            : {ico: "0664",             flags: []}, // "Scatterbug",
-    "0665"            : {ico: "0665",             flags: []}, // "Spewpa",
-    "0666"            : {ico: "0666",             flags: []}, // "Vivillon",
-    "0666-icy-snow"   : {ico: "0666-icy-snow",    flags: []}, // "Icy Snow Pattern Vivillon",
-    "0666-polar"      : {ico: "0666-polar",       flags: []}, // "Polar Pattern Vivillon",
-    "0666-tundra"     : {ico: "0666-tundra",      flags: []}, // "Tundra Pattern Vivillon",
-    "0666-continental": {ico: "0666-continental", flags: []}, // "Continental Pattern Vivillon",
-    "0666-garden"     : {ico: "0666-garden",      flags: []}, // "Garden Pattern Vivillon",
-    "0666-elegant"    : {ico: "0666-elegant",     flags: []}, // "Elegant Pattern Vivillon",
-    "0666-meadow"     : {ico: "0666-meadow",      flags: []}, // "Meadow Pattern Vivillon",
-    "0666-modern"     : {ico: "0666-modern",      flags: []}, // "Modern Pattern Vivillon",
-    "0666-marine"     : {ico: "0666-marine",      flags: []}, // "Marine Pattern Vivillon",
-    "0666-archipelago": {ico: "0666-archipelago", flags: []}, // "Archipelago Pattern Vivillon",
-    "0666-high-plains": {ico: "0666-high-plains", flags: []}, // "High Plains Pattern Vivillon",
-    "0666-sandstorm"  : {ico: "0666-sandstorm",   flags: []}, // "Sandstorm Pattern Vivillon",
-    "0666-river"      : {ico: "0666-river",       flags: []}, // "River Pattern Vivillon",
-    "0666-monsoon"    : {ico: "0666-monsoon",     flags: []}, // "Monsoon Pattern Vivillon",
-    "0666-savanna"    : {ico: "0666-savanna",     flags: []}, // "Savanna Pattern Vivillon",
-    "0666-sun"        : {ico: "0666-sun",         flags: []}, // "Sun Pattern Vivillon",
-    "0666-ocean"      : {ico: "0666-ocean",       flags: []}, // "Ocean Pattern Vivillon",
-    "0666-jungle"     : {ico: "0666-jungle",      flags: []}, // "Jungle Pattern Vivillon",
-    "0666-fancy"      : {ico: "0666-fancy",       flags: []}, // "Fancy Pattern Vivillon",
-    "0666-poke-ball"  : {ico: "0666-poke-ball",   flags: []}, // "Poké Ball Pattern Vivillon",
-    "0667"            : {ico: "0667",             flags: []}, // "Litleo",
-    "0668"            : {ico: "0668",             flags: []}, // "Pyroar",
-    "0668-m"          : {ico: "0668-m",           flags: []}, // "Pyroar♂",
-    "0668-f"          : {ico: "0668-f",           flags: []}, // "Pyroar♀",
-    "0669"            : {ico: "0669",             flags: []}, // "Flabébé", // female only
-    "0669-red"        : {ico: "0669-red",         flags: []}, // "Red Flower Flabébé", // female only
-    "0669-yellow"     : {ico: "0669-yellow",      flags: []}, // "Yellow Flower Flabébé", // female only
-    "0669-orange"     : {ico: "0669-orange",      flags: []}, // "Orange Flower Flabébé", // female only
-    "0669-blue"       : {ico: "0669-blue",        flags: []}, // "Blue Flower Flabébé", // female only
-    "0669-white"      : {ico: "0669-white",       flags: []}, // "White Flower Flabébé", // female only
-    "0670"            : {ico: "0670",             flags: []}, // "Floette", // female only
-    "0670-red"        : {ico: "0670-red",         flags: []}, // "Red Flower Floette", // female only
-    "0670-yellow"     : {ico: "0670-yellow",      flags: []}, // "Yellow Flower Floette", // female only
-    "0670-orange"     : {ico: "0670-orange",      flags: []}, // "Orange Flower Floette", // female only
-    "0670-blue"       : {ico: "0670-blue",        flags: []}, // "Blue Flower Floette", // female only
-    "0670-white"      : {ico: "0670-white",       flags: []}, // "White Flower Floette", // female only
-    "0670-eternal"    : {ico: "0670-eternal",     flags: []}, // "Eternal Flower Floette", // female only
-    "0671"            : {ico: "0671",             flags: []}, // "Florges", // female only
-    "0671-red"        : {ico: "0671-red",         flags: []}, // "Red Flower Florges", // female only
-    "0671-yellow"     : {ico: "0671-yellow",      flags: []}, // "Yellow Flower Florges", // female only
-    "0671-orange"     : {ico: "0671-orange",      flags: []}, // "Orange Flower Florges", // female only
-    "0671-blue"       : {ico: "0671-blue",        flags: []}, // "Blue Flower Florges", // female only
-    "0671-white"      : {ico: "0671-white",       flags: []}, // "White Flower Florges", // female only
-    "0672"            : {ico: "0672",             flags: []}, // "Skiddo",
-    "0673"            : {ico: "0673",             flags: []}, // "Gogoat",
-    "0674"            : {ico: "0674",             flags: []}, // "Pancham",
-    "0675"            : {ico: "0675",             flags: []}, // "Pangoro",
-    "0676"            : {ico: "0676",             flags: []}, // "Furfrou",
-    "0676-heart"      : {ico: "0676-heart",       flags: []}, // "Heart Trim Furfrou",
-    "0676-star"       : {ico: "0676-star",        flags: []}, // "Star Trim Furfrou",
-    "0676-diamond"    : {ico: "0676-diamond",     flags: []}, // "Diamond Trim Furfrou",
-    "0676-debutante"  : {ico: "0676-debutante",   flags: []}, // "Debutante Trim Furfrou",
-    "0676-matron"     : {ico: "0676-matron",      flags: []}, // "Matron Trim Furfrou",
-    "0676-dandy"      : {ico: "0676-dandy",       flags: []}, // "Dandy Trim Furfrou",
-    "0676-le-reine"   : {ico: "0676-le-reine",    flags: []}, // "Le Reine Trim Furfrou",
-    "0676-kabuki"     : {ico: "0676-kabuki",      flags: []}, // "Kabuki Trim Furfrou",
-    "0676-pharaoh"    : {ico: "0676-pharaoh",     flags: []}, // "Pharaoh Trim Furfrou",
-    "0677"            : {ico: "0677",             flags: []}, // "Espurr",
-    "0678"            : {ico: "0678",             flags: []}, // "Meowstic",
-    "0678-m"          : {ico: "0678-m",           flags: []}, // "Meowstic♂",
-    "0678-f"          : {ico: "0678-f",           flags: []}, // "Meowstic♀",
-    "0679"            : {ico: "0679",             flags: []}, // "Honedge",
-    "0680"            : {ico: "0680",             flags: []}, // "Doublade",
-    "0681"            : {ico: "0681",             flags: []}, // "Aegislash",
-    "0681-shield"     : {ico: "0681-shield",      flags: []}, // "Shield Aegislash",
-    "0681-blade"      : {ico: "0681-blade",       flags: []}, // "Blade Aegislash",
-    "0682"            : {ico: "0682",             flags: []}, // "Spritzee",
-    "0683"            : {ico: "0683",             flags: []}, // "Aromatisse",
-    "0684"            : {ico: "0684",             flags: []}, // "Swirlix",
-    "0685"            : {ico: "0685",             flags: []}, // "Slurpuff",
-    "0686"            : {ico: "0686",             flags: []}, // "Inkay",
-    "0687"            : {ico: "0687",             flags: []}, // "Malamar",
-    "0688"            : {ico: "0688",             flags: []}, // "Binacle",
-    "0689"            : {ico: "0689",             flags: []}, // "Barbaracle",
-    "0690"            : {ico: "0690",             flags: []}, // "Skrelp",
-    "0691"            : {ico: "0691",             flags: []}, // "Dragalge",
-    "0692"            : {ico: "0692",             flags: []}, // "Clauncher",
-    "0693"            : {ico: "0693",             flags: []}, // "Clawitzer",
-    "0694"            : {ico: "0694",             flags: []}, // "Helioptile",
-    "0695"            : {ico: "0695",             flags: []}, // "Heliolisk",
-    "0696"            : {ico: "0696",             flags: []}, // "Tyrunt",
-    "0697"            : {ico: "0697",             flags: []}, // "Tyrantrum",
-    "0698"            : {ico: "0698",             flags: []}, // "Amaura",
-    "0699"            : {ico: "0699",             flags: []}, // "Aurorus",
-    "0700"            : {ico: "0700",             flags: []}, // "Sylveon",
-    "0701"            : {ico: "0701",             flags: []}, // "Hawlucha",
-    "0702"            : {ico: "0702",             flags: []}, // "Dedenne",
-    "0703"            : {ico: "0703",             flags: []}, // "Carbink", // uknown gender
-    "0704"            : {ico: "0704",             flags: []}, // "Goomy",
-    "0705"            : {ico: "0705",             flags: []}, // "Sliggoo",
-    "0706"            : {ico: "0706",             flags: []}, // "Goodra",
-    "0707"            : {ico: "0707",             flags: []}, // "Klefki",
-    "0708"            : {ico: "0708",             flags: []}, // "Phantump",
-    "0709"            : {ico: "0709",             flags: []}, // "Trevenant",
-    "0710"            : {ico: "0710",             flags: []}, // "Pumpkaboo",
-    "0710-average"    : {ico: "0710-average",     flags: []}, // "Average Size Pumpkaboo",
-    "0710-small"      : {ico: "0710-small",       flags: []}, // "Small Size Pumpkaboo",
-    "0710-large"      : {ico: "0710-large",       flags: []}, // "Large Size Pumpkaboo",
-    "0710-super"      : {ico: "0710-super",       flags: []}, // "Super Size Pumpkaboo",
-    "0711"            : {ico: "0711",             flags: []}, // "Gourgeist",
-    "0711-average"    : {ico: "0711-average",     flags: []}, // "Average Size Gourgeist",
-    "0711-small"      : {ico: "0711-small",       flags: []}, // "Small Size Gourgeist",
-    "0711-large"      : {ico: "0711-large",       flags: []}, // "Large Size Gourgeist",
-    "0711-super"      : {ico: "0711-super",       flags: []}, // "Super Size Gourgeist",
-    "0712"            : {ico: "0712",             flags: []}, // "Bergmite",
-    "0713"            : {ico: "0713",             flags: []}, // "Avalugg",
-    "0714"            : {ico: "0714",             flags: []}, // "Noibat",
-    "0715"            : {ico: "0715",             flags: []}, // "Noivern",
-    "0716"            : {ico: "0716",             flags: []}, // "Xerneas", // uknown gender
-    "0716-neutral"    : {ico: "0716-neutral",     flags: []}, // "Neutral Xerneas", // uknown gender
-    "0716-active"     : {ico: "0716-active",      flags: []}, // "Active Xerneas", // uknown gender
-    "0717"            : {ico: "0717",             flags: []}, // "Yveltal", // uknown gender
-    "0718"            : {ico: "0718",             flags: []}, // "Zygarde", // uknown gender
-    "0718-50"         : {ico: "0718-50",          flags: []}, // "50% Zygarde", // uknown gender
-    "0718-10"         : {ico: "0718-10",          flags: []}, // "10% Zygarde", // uknown gender
-    "0718-complete"   : {ico: "0718-complete",    flags: []}, // "Complete Zygarde", // uknown gender
-    "0718-core"       : {ico: "0718-core",        flags: []}, // "Zygarde Core", // uknown gender// uncatchable
-    "0718-cell"       : {ico: "0718-cell",        flags: []}, // "Zygarde Cell", // uknown gender// uncatchable
-    "0719"            : {ico: "0719",             flags: []}, // "Diancie", // uknown gender
-    "0719-mega"       : {ico: "0719-mega",        flags: []}, // "Mega Diancie", // uknown gender
-    "0720"            : {ico: "0720",             flags: []}, // "Hoopa", // uknown gender
-    "0720-confined"   : {ico: "0720-confined",    flags: []}, // "Hoopa Confined", // uknown gender
-    "0720-unbound"    : {ico: "0720-unbound",     flags: []}, // "Hoopa Unbound", // uknown gender
-    "0721"            : {ico: "0721",             flags: []}, // "Volcanion", // uknown gender
+	"0650"            : {ico: "0650",             flags: []},                      // "Chespin",
+    "0651"            : {ico: "0651",             flags: []},                      // "Quilladin",
+    "0652"            : {ico: "0652",             flags: []},                      // "Chesnaught",
+    "0653"            : {ico: "0653",             flags: []},                      // "Fennekin",
+    "0654"            : {ico: "0654",             flags: []},                      // "Braixen",
+    "0655"            : {ico: "0655",             flags: []},                      // "Delphox",
+    "0656"            : {ico: "0656",             flags: []},                      // "Froakie",
+    "0657"            : {ico: "0657",             flags: []},                      // "Frogadier",
+    "0658"            : {ico: "0658",             flags: []},                      // "Greninja",
+    "0658-ash"        : {ico: "0658-ash",         flags: [FORM_0658_ASH]},         // "Ash-Greninja", // male only
+    "0659"            : {ico: "0659",             flags: []},                      // "Bunnelby",
+    "0660"            : {ico: "0660",             flags: []},                      // "Diggersby",
+    "0661"            : {ico: "0661",             flags: []},                      // "Fletchling",
+    "0662"            : {ico: "0662",             flags: []},                      // "Fletchinder",
+    "0663"            : {ico: "0663",             flags: []},                      // "Talonflame",
+    "0664"            : {ico: "0664",             flags: []},                      // "Scatterbug",
+    "0665"            : {ico: "0665",             flags: []},                      // "Spewpa",
+    "0666"            : {ico: "0666-elegant",     flags: [FORM_0666_BASE]},        // "Vivillon",
+    "0666-icy-snow"   : {ico: "0666-icy-snow",    flags: [FORM_0666_REG]},         // "Icy Snow Pattern Vivillon",
+    "0666-polar"      : {ico: "0666-polar",       flags: [FORM_0666_REG]},         // "Polar Pattern Vivillon",
+    "0666-tundra"     : {ico: "0666-tundra",      flags: [FORM_0666_REG]},         // "Tundra Pattern Vivillon",
+    "0666-continental": {ico: "0666-continental", flags: [FORM_0666_REG]},         // "Continental Pattern Vivillon",
+    "0666-garden"     : {ico: "0666-garden",      flags: [FORM_0666_REG]},         // "Garden Pattern Vivillon",
+    "0666-elegant"    : {ico: "0666-elegant",     flags: [FORM_0666_REG]},         // "Elegant Pattern Vivillon",
+    "0666-meadow"     : {ico: "0666-meadow",      flags: [FORM_0666_REG]},         // "Meadow Pattern Vivillon",
+    "0666-modern"     : {ico: "0666-modern",      flags: [FORM_0666_REG]},         // "Modern Pattern Vivillon",
+    "0666-marine"     : {ico: "0666-marine",      flags: [FORM_0666_REG]},         // "Marine Pattern Vivillon",
+    "0666-archipelago": {ico: "0666-archipelago", flags: [FORM_0666_REG]},         // "Archipelago Pattern Vivillon",
+    "0666-high-plains": {ico: "0666-high-plains", flags: [FORM_0666_REG]},         // "High Plains Pattern Vivillon",
+    "0666-sandstorm"  : {ico: "0666-sandstorm",   flags: [FORM_0666_REG]},         // "Sandstorm Pattern Vivillon",
+    "0666-river"      : {ico: "0666-river",       flags: [FORM_0666_REG]},         // "River Pattern Vivillon",
+    "0666-monsoon"    : {ico: "0666-monsoon",     flags: [FORM_0666_REG]},         // "Monsoon Pattern Vivillon",
+    "0666-savanna"    : {ico: "0666-savanna",     flags: [FORM_0666_REG]},         // "Savanna Pattern Vivillon",
+    "0666-sun"        : {ico: "0666-sun",         flags: [FORM_0666_REG]},         // "Sun Pattern Vivillon",
+    "0666-ocean"      : {ico: "0666-ocean",       flags: [FORM_0666_REG]},         // "Ocean Pattern Vivillon",
+    "0666-jungle"     : {ico: "0666-jungle",      flags: [FORM_0666_REG]},         // "Jungle Pattern Vivillon",
+    "0666-fancy"      : {ico: "0666-fancy",       flags: [FORM_0666_EV]},          // "Fancy Pattern Vivillon",
+    "0666-poke-ball"  : {ico: "0666-poke-ball",   flags: [FORM_0666_EV]},          // "Poké Ball Pattern Vivillon",
+    "0667"            : {ico: "0667",             flags: []},                      // "Litleo",
+    "0668"            : {ico: "0668-m",           flags: [FORM_MAJ_GENDER_BASE]},  // "Pyroar",
+    "0668-m"          : {ico: "0668-m",           flags: [FORM_MAJ_GENDER_DIFF]},  // "Pyroar♂",
+    "0668-f"          : {ico: "0668-f",           flags: [FORM_MAJ_GENDER_DIFF]},  // "Pyroar♀",
+    "0669"            : {ico: "0669-red",         flags: [FORM_0669_BASE]},        // "Flabébé", // female only
+    "0669-red"        : {ico: "0669-red",         flags: [FORM_0669]},             // "Red Flower Flabébé", // female only
+    "0669-yellow"     : {ico: "0669-yellow",      flags: [FORM_0669]},             // "Yellow Flower Flabébé", // female only
+    "0669-orange"     : {ico: "0669-orange",      flags: [FORM_0669]},             // "Orange Flower Flabébé", // female only
+    "0669-blue"       : {ico: "0669-blue",        flags: [FORM_0669]},             // "Blue Flower Flabébé", // female only
+    "0669-white"      : {ico: "0669-white",       flags: [FORM_0669]},             // "White Flower Flabébé", // female only
+    "0670"            : {ico: "0670-red",         flags: [FORM_0669_BASE]},        // "Floette", // female only
+    "0670-red"        : {ico: "0670-red",         flags: [FORM_0669]},             // "Red Flower Floette", // female only
+    "0670-yellow"     : {ico: "0670-yellow",      flags: [FORM_0669]},             // "Yellow Flower Floette", // female only
+    "0670-orange"     : {ico: "0670-orange",      flags: [FORM_0669]},             // "Orange Flower Floette", // female only
+    "0670-blue"       : {ico: "0670-blue",        flags: [FORM_0669]},             // "Blue Flower Floette", // female only
+    "0670-white"      : {ico: "0670-white",       flags: [FORM_0669]},             // "White Flower Floette", // female only
+    "0670-eternal"    : {ico: "0670-eternal",     flags: [FORM_0669_ETERNAL]},     // "Eternal Flower Floette", // female only
+    "0671"            : {ico: "0671-red",         flags: [FORM_0669_BASE]},        // "Florges", // female only
+    "0671-red"        : {ico: "0671-red",         flags: [FORM_0669]},             // "Red Flower Florges", // female only
+    "0671-yellow"     : {ico: "0671-yellow",      flags: [FORM_0669]},             // "Yellow Flower Florges", // female only
+    "0671-orange"     : {ico: "0671-orange",      flags: [FORM_0669]},             // "Orange Flower Florges", // female only
+    "0671-blue"       : {ico: "0671-blue",        flags: [FORM_0669]},             // "Blue Flower Florges", // female only
+    "0671-white"      : {ico: "0671-white",       flags: [FORM_0669]},             // "White Flower Florges", // female only
+    "0672"            : {ico: "0672",             flags: []},                      // "Skiddo",
+    "0673"            : {ico: "0673",             flags: []},                      // "Gogoat",
+    "0674"            : {ico: "0674",             flags: []},                      // "Pancham",
+    "0675"            : {ico: "0675",             flags: []},                      // "Pangoro",
+    "0676"            : {ico: "0676",             flags: []},                      // "Furfrou",
+    "0676-heart"      : {ico: "0676-heart",       flags: [FORM_0676]},             // "Heart Trim Furfrou",
+    "0676-star"       : {ico: "0676-star",        flags: [FORM_0676]},             // "Star Trim Furfrou",
+    "0676-diamond"    : {ico: "0676-diamond",     flags: [FORM_0676]},             // "Diamond Trim Furfrou",
+    "0676-debutante"  : {ico: "0676-debutante",   flags: [FORM_0676]},             // "Debutante Trim Furfrou",
+    "0676-matron"     : {ico: "0676-matron",      flags: [FORM_0676]},             // "Matron Trim Furfrou",
+    "0676-dandy"      : {ico: "0676-dandy",       flags: [FORM_0676]},             // "Dandy Trim Furfrou",
+    "0676-le-reine"   : {ico: "0676-le-reine",    flags: [FORM_0676]},             // "Le Reine Trim Furfrou",
+    "0676-kabuki"     : {ico: "0676-kabuki",      flags: [FORM_0676]},             // "Kabuki Trim Furfrou",
+    "0676-pharaoh"    : {ico: "0676-pharaoh",     flags: [FORM_0676]},             // "Pharaoh Trim Furfrou",
+    "0677"            : {ico: "0677",             flags: []},                      // "Espurr",
+    "0678"            : {ico: "0678",             flags: []},                      // "Meowstic",
+    "0678-m"          : {ico: "0678-m",           flags: []},                      // "Meowstic♂",
+    "0678-f"          : {ico: "0678-f",           flags: []},                      // "Meowstic♀",
+    "0679"            : {ico: "0679",             flags: []},                      // "Honedge",
+    "0680"            : {ico: "0680",             flags: []},                      // "Doublade",
+    "0681"            : {ico: "0681-shield",      flags: [FORM_BATTLE_BASE]},      // "Aegislash",
+    "0681-shield"     : {ico: "0681-shield",      flags: [FORM_BATTLE]},           // "Shield Aegislash",
+    "0681-blade"      : {ico: "0681-blade",       flags: [FORM_BATTLE]},           // "Blade Aegislash",
+    "0682"            : {ico: "0682",             flags: []},                      // "Spritzee",
+    "0683"            : {ico: "0683",             flags: []},                      // "Aromatisse",
+    "0684"            : {ico: "0684",             flags: []},                      // "Swirlix",
+    "0685"            : {ico: "0685",             flags: []},                      // "Slurpuff",
+    "0686"            : {ico: "0686",             flags: []},                      // "Inkay",
+    "0687"            : {ico: "0687",             flags: []},                      // "Malamar",
+    "0688"            : {ico: "0688",             flags: []},                      // "Binacle",
+    "0689"            : {ico: "0689",             flags: []},                      // "Barbaracle",
+    "0690"            : {ico: "0690",             flags: []},                      // "Skrelp",
+    "0691"            : {ico: "0691",             flags: []},                      // "Dragalge",
+    "0692"            : {ico: "0692",             flags: []},                      // "Clauncher",
+    "0693"            : {ico: "0693",             flags: []},                      // "Clawitzer",
+    "0694"            : {ico: "0694",             flags: []},                      // "Helioptile",
+    "0695"            : {ico: "0695",             flags: []},                      // "Heliolisk",
+    "0696"            : {ico: "0696",             flags: []},                      // "Tyrunt",
+    "0697"            : {ico: "0697",             flags: []},                      // "Tyrantrum",
+    "0698"            : {ico: "0698",             flags: []},                      // "Amaura",
+    "0699"            : {ico: "0699",             flags: []},                      // "Aurorus",
+    "0700"            : {ico: "0700",             flags: []},                      // "Sylveon",
+    "0701"            : {ico: "0701",             flags: []},                      // "Hawlucha",
+    "0702"            : {ico: "0702",             flags: []},                      // "Dedenne",
+    "0703"            : {ico: "0703",             flags: []},                      // "Carbink", // uknown gender
+    "0704"            : {ico: "0704",             flags: []},                      // "Goomy",
+    "0705"            : {ico: "0705",             flags: []},                      // "Sliggoo",
+    "0706"            : {ico: "0706",             flags: []},                      // "Goodra",
+    "0707"            : {ico: "0707",             flags: []},                      // "Klefki",
+    "0708"            : {ico: "0708",             flags: []},                      // "Phantump",
+    "0709"            : {ico: "0709",             flags: []},                      // "Trevenant",
+    "0710"            : {ico: "0710-average",     flags: [FORM_0710_BASE]},        // "Pumpkaboo",
+    "0710-average"    : {ico: "0710-average",     flags: [FORM_0710]},             // "Average Size Pumpkaboo",
+    "0710-small"      : {ico: "0710-small",       flags: [FORM_0710]},             // "Small Size Pumpkaboo",
+    "0710-large"      : {ico: "0710-large",       flags: [FORM_0710]},             // "Large Size Pumpkaboo",
+    "0710-super"      : {ico: "0710-super",       flags: [FORM_0710]},             // "Super Size Pumpkaboo",
+    "0711"            : {ico: "0711-average",     flags: [FORM_0710_BASE]},        // "Gourgeist",
+    "0711-average"    : {ico: "0711-average",     flags: [FORM_0710]},             // "Average Size Gourgeist",
+    "0711-small"      : {ico: "0711-small",       flags: [FORM_0710]},             // "Small Size Gourgeist",
+    "0711-large"      : {ico: "0711-large",       flags: [FORM_0710]},             // "Large Size Gourgeist",
+    "0711-super"      : {ico: "0711-super",       flags: [FORM_0710]},             // "Super Size Gourgeist",
+    "0712"            : {ico: "0712",             flags: []},                      // "Bergmite",
+    "0713"            : {ico: "0713",             flags: []},                      // "Avalugg",
+    "0714"            : {ico: "0714",             flags: []},                      // "Noibat",
+    "0715"            : {ico: "0715",             flags: []},                      // "Noivern",
+    "0716"            : {ico: "0716-neutral",     flags: [FORM_BATTLE_BASE]},      // "Xerneas", // uknown gender
+    "0716-neutral"    : {ico: "0716-neutral",     flags: [FORM_BATTLE]},           // "Neutral Xerneas", // uknown gender
+    "0716-active"     : {ico: "0716-active",      flags: [FORM_BATTLE]},           // "Active Xerneas", // uknown gender
+    "0717"            : {ico: "0717",             flags: []},                      // "Yveltal", // uknown gender
+    "0718"            : {ico: "0718-50",          flags: [FORM_0718_BASE]},        // "Zygarde", // uknown gender
+    "0718-50"         : {ico: "0718-50",          flags: [FORM_0718]},             // "50% Zygarde", // uknown gender
+    "0718-10"         : {ico: "0718-10",          flags: [FORM_0718]},             // "10% Zygarde", // uknown gender
+    "0718-complete"   : {ico: "0718-complete",    flags: [FORM_BATTLE]},           // "Complete Zygarde", // uknown gender
+//  "0718-core"       : {ico: "0718-core",        flags: [FORM_0718]},             // "Zygarde Core", // uknown gender// uncatchable
+//  "0718-cell"       : {ico: "0718-cell",        flags: [FORM_0718]},             // "Zygarde Cell", // uknown gender// uncatchable
+    "0719"            : {ico: "0719",             flags: []},                      // "Diancie", // uknown gender
+    "0719-mega"       : {ico: "0719-mega",        flags: [FORM_MEGA]},             // "Mega Diancie", // uknown gender
+    "0720"            : {ico: "0720-confined",    flags: [FORM_0720_BASE]},        // "Hoopa", // uknown gender
+    "0720-confined"   : {ico: "0720-confined",    flags: [FORM_0720]},             // "Hoopa Confined", // uknown gender
+    "0720-unbound"    : {ico: "0720-unbound",     flags: [FORM_0720]},             // "Hoopa Unbound", // uknown gender
+    "0721"            : {ico: "0721",             flags: []},                      // "Volcanion", // uknown gender
 };
 
 //============================================================================

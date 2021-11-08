@@ -12,10 +12,10 @@ const FORM_0201_BASE       =       20100;              // Unown
 const FORM_0201            = FORM_0201_BASE + 1;       // Unown
 
 const FORM_BATTLE_GRP      =         100;
-const FORM_BATTLE_BASE     = FORM_BATTLE_GRP + 1;      // forms obtained during battle only
+const FORM_BATTLE_BASE     = FORM_BATTLE_GRP + 1;      // 
 const FORM_BATTLE          = FORM_BATTLE_GRP + 2;      // forms obtained during battle only
-const FORM_MEGA            = FORM_BATTLE_GRP + 3;      // Mega Evolution
-const FORM_GMAX            = FORM_BATTLE_GRP + 4;      // Gigantamax
+const FORM_MEGA            = FORM_BATTLE_GRP + 3;      // Mega/Primal Evolution
+const FORM_GMAX            = FORM_BATTLE_GRP + 4;      // Gigantamax/Eternamax
 
 const FORM_0386_BASE       =       38600;              // Deoxys (Normal)
 const FORM_0386            = FORM_0386_BASE + 1;       // Deoxys all forms
@@ -70,5 +70,33 @@ const FORM_0648            = FORM_0648_BASE + 1;       // Meloetta
 
 const FORM_0649_BASE       =       64900;              // Genesect
 const FORM_0649            = FORM_0649_BASE + 1;       // Genesect
+
+const FORM_0658_BASE       =       65800;              // Greninja
+const FORM_0658_ASH        = FORM_0658_BASE + 1;       // Ash-Greninja
+
+const FORM_0666_BASE       =       66600;              // Vivillon
+const FORM_0666_REG        = FORM_0666_BASE + 1;       // regular pattern Vivillon
+const FORM_0666_EV         = FORM_0666_BASE + 2;       // event pattern Vivillon
+
+const FORM_0025_BASE       =        2500;              // Pikachu
+const FORM_0025_COSPLAY    = FORM_0025_BASE + 1;       // Cosplay Pikachu
+const FORM_0025_CAP        = FORM_0025_BASE + 2;       // capped Pikachu
+const FORM_0025_CAP2       = FORM_0025_BASE + 3;       // capped Pikachu
+
+const FORM_0669_BASE       =       66900;              // Flabébé line
+const FORM_0669            = FORM_0669_BASE + 1;       // color variation
+const FORM_0669_ETERNAL    = FORM_0669_BASE + 2;       // Floette Eternal
+
+const FORM_0676_BASE       =       67600;              // Furfrou
+const FORM_0676            = FORM_0676_BASE + 1;
+
+const FORM_0710_BASE       =       71000;              // Pumpkaboo line
+const FORM_0710            = FORM_0710_BASE + 1;
+
+const FORM_0718_BASE       =       71800;              // Zygarde
+const FORM_0718            = FORM_0718_BASE + 1;
+
+const FORM_0720_BASE       =       72000;              // Hoopa
+const FORM_0720            = FORM_0720_BASE + 1;
 
 var g_Flags = [];
