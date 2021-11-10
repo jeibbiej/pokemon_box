@@ -14,20 +14,80 @@ var _Regdex_XX =
 }
 */
 
-// game series
-const MainSeries		=    0;
-const LegendsSeries		=  100;
-const RangerSeries		=  200;
-const StorageSystem		=  300;
-const PinballSeries		=  400;
-const PuzzleSeries		=  500;
-const OtherSeries		=  600;
-const VirtualConsole	= 1000; // combine with above
-/*
-PinballSeries
-TrozeiSeries
-OtherSeries
-*/
+// generations
+const Generation01 = 10000;
+const Generation02 = 20000;
+const Generation03 = 30000;
+const Generation04 = 40000;
+const Generation05 = 50000;
+const Generation06 = 60000;
+const Generation07 = 70000;
+const Generation08 = 80000;
+
+/*1996-02-27*/const _Re = Generation01 + 1; // Red
+/*1996-02-27*/const _Bl = Generation01 + 2; // Blue, Green in JAP
+/*1998-09-12*/const _Ye = Generation01 + 3; // Yellow
+/*1999-04-14*/const PRB = Generation01 + 4; // Pinball
+
+/*1999-11-21*/const _Go = Generation02 + 1; // Gold
+/*1999-11-21*/const _Si = Generation02 + 2; // Silver
+/*2000-12-14*/const _Cr = Generation02 + 3; // Crystal
+
+/*2002-11-21*/const _Ru = Generation03 + 1; // Ruby
+/*2002-11-21*/const _Sa = Generation03 + 2; // Sapphire
+/*2003-05-30*/const BRS = Generation03 + 3; // Box: Ruby & Sapphire
+/*2003-08-01*/const PRS = Generation03 + 4; // Pinball: Ruby & Sapphire
+/*2004-01-29*/const _FR = Generation03 + 5; // FireRed
+/*2004-09-16*/const _Em = Generation03 + 6; // Emerald
+/*2006-03-23*/const RRa = Generation03 + 7; // Ranger
+
+/*2006-09-28*/const _Di = Generation04 + 1; // Diamond
+/*2006-09-28*/const _Pe = Generation04 + 2; // Pearl
+/*2008-03-20*/const RSA = Generation04 + 4; // Ranger: Shadows of Almia
+/*2008-03-25*/const _Ra = Generation04 + 5; // My Pokemon Ranch
+/*2008-09-13*/const _Pl = Generation04 + 6; // Platinum
+/*2009-09-12*/const _HG = Generation04 + 7; // HeartGold
+/*2009-09-12*/const _SS = Generation04 + 8; // SoulSilver
+/*2010-03-06*/const RGS = Generation04 + 9; // Ranger: Guardian Signs
+
+/*2010-09-18*/const _Bk = Generation05 + 1; // Black
+/*2010-09-18*/const _Wh = Generation05 + 2; // White
+/*2012-06-23*/const _B2 = Generation05 + 3; // Black2
+/*2012-06-23*/const _W2 = Generation05 + 4; // White2
+
+/*2013-10-12*/const _X_ = Generation06 + 1; // X
+/*2013-10-12*/const _Y_ = Generation06 + 2; // Y
+/*2013-10-25*/const _Ba = Generation06 + 3; // Bank + Transporter
+/*2014-11-21*/const _oR = Generation06 + 4; // omega Ruby
+/*2014-11-21*/const _aS = Generation06 + 5; // alpha Sapphire
+/*2016-06-06*/const _GO = Generation06 + 6; // GO
+
+/*2016-11-18*/const _Su = Generation07 + 1; // Sun
+/*2016-11-18*/const _Mo = Generation07 + 2; // Moon
+/*2017-11-17*/const _US = Generation07 + 3; // Ultra Sun
+/*2017-11-17*/const _UM = Generation07 + 4; // Ultra Moon
+/*2018-05-30*/const _Qu = Generation07 + 5; // Quest
+/*2018-11-16*/const _LP = Generation07 + 6; // Let's Go, Pikachu!
+/*2018-11-16*/const _LE = Generation07 + 7; // Let's Gp, Eevee!
+
+/*2018-11-15*/const _Sw = Generation08 + 1; // Sword
+/*2018-11-15*/const _Sh = Generation08 + 2; // Shield
+/*2020-02-12*/const _Ho = Generation08 + 3; // Home
+/*2021-11-19*/const _BD = Generation08 + 4; // Brilliant Diamond
+/*2021-11-19*/const _SP = Generation08 + 5; // Shining Pearl
+/*2022-01-28*/const _LA = Generation08 + 6; // Legends: Arceus
+
+// languages
+const _JPN = 0; // Japanese Kana
+const _ROM = 1; // Japanese Romanji
+const _ENG = 2; // English
+const _SPA = 3; // Spanish
+const _FRE = 4; // French
+const _GER = 5; // German
+const _ITA = 6; // Italian
+const _KOR = 7; // Korean
+const _CHS = 8; // Chinese (Simplified)
+const _CHT = 9; // Chinese (Traditional)
 
                     /* 0    1    2    3    4    5    6    7    8*/
 const GenerationMax = [0, 151, 251, 386, 493, 649, 721, 809, 893];
