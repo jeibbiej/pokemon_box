@@ -1,0 +1,130 @@
+body
+{
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 10pt;
+}
+
+.zukan-icon
+{
+    image-rendering: pixelated;
+	width: 100%;
+}
+
+.gray
+{
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    background-color: #808080;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.pss-box-title
+{
+	text-align: center;
+}
+
+.pss-box
+{
+	border: 1px solid black;
+	border-radius: 5px;
+	float: left;
+	padding: 5px;
+	margin: 5px;
+}
+
+.pss-box-ex
+{
+	background-color: darksalmon;
+	border: 1px solid black;
+	border-radius: 5px;
+	float: left;
+	padding: 5px;
+	margin: 5px;
+}
+
+.pss-row:after
+{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.pss-cell-5
+{
+	border: 1px solid black;
+	float: left;
+	width: calc(100% / 5);
+	padding: 2px;
+}
+
+.pss-cell-6
+{
+	border: 1px solid black;
+	float: left;
+	width: calc(100% / 6);
+	padding: 2px;
+}
+
+.pss-name
+{
+	text-align: center;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	/*white-space: nowrap;*/
+	height: 50px;
+}
+
+/* ONE COLUMN */
+@media screen and (max-width: 300px /*300 - (5 margin * 2 sides) */)
+{
+	.pss-box, .pss-box-ex
+	{
+		width: calc(300px);
+	}
+}
+
+@media screen and (min-width: 300px)
+{
+	.pss-box, .pss-box-ex
+	{
+		width: calc(100%);
+	}
+}
+
+/* TWO COLUMNS */
+@media screen and (min-width: 600px /*600-20*/)
+{
+	.pss-box, .pss-box-ex
+	{
+		width: calc(50% - 10px);
+	}
+}
+
+/* THREE COLUMNS */
+@media screen and (min-width: 900px /*900-30*/)
+{
+	.pss-box, .pss-box-ex
+	{
+		width: calc(100% / 3 - 10px);
+	}
+}
+
+#gameList
+{
+    display: inline-block;
+}
+
+.pss-game
+{
+	float: left;
+}
+
+.pss-game-full
+{
+	float: left;
+	background-color: black;
+	color: white;
+}

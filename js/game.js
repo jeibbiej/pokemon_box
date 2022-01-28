@@ -14,20 +14,18 @@ var _Regdex_XX =
 }
 */
 
-// generations
-const Generation01 = 10000;
-const Generation02 = 20000;
-const Generation03 = 30000;
-const Generation04 = 40000;
-const Generation05 = 50000;
-const Generation06 = 60000;
-const Generation07 = 70000;
-const Generation08 = 80000;
+//==============================================================================
+// GAME IDs
+//==============================================================================
 
-/*1996-02-27*/const _Re = Generation01 + 1; // Red
-/*1996-02-27*/const _Bl = Generation01 + 2; // Blue, Green in JAP
-/*1998-09-12*/const _Ye = Generation01 + 3; // Yellow
-/*1999-04-14*/const PRB = Generation01 + 4; // Pinball
+// generations
+const Generation02 = 200;
+const Generation03 = 300;
+const Generation04 = 400;
+const Generation05 = 500;
+const Generation06 = 600;
+const Generation07 = 700;
+const Generation08 = 800;
 
 /*1999-11-21*/const _Go = Generation02 + 1; // Gold
 /*1999-11-21*/const _Si = Generation02 + 2; // Silver
@@ -77,7 +75,10 @@ const Generation08 = 80000;
 /*2021-11-19*/const _SP = Generation08 + 5; // Shining Pearl
 /*2022-01-28*/const _LA = Generation08 + 6; // Legends: Arceus
 
-// languages
+//==============================================================================
+// LANGUAGE ID
+//==============================================================================
+
 const _JPN = 0; // Japanese Kana
 const _ROM = 1; // Japanese Romanji
 const _ENG = 2; // English
@@ -96,40 +97,40 @@ const _GameVersions =
 {
     Unk: {id: -1, icoPath: "", rDex: {}, nDex: {}, eDex: {}, code:"Unk", name: "<i>Unknown</i>"},
 
-    Re	: {id: MainSeries +  1,	code: "Re",   name: "Pokémon Red",                ico: "custom/red",             icoPath: IcoPathReBl, nDex: _Regdex_n_101, eDex: {},            rDex: {},            imgWd: ImgWd_G01, maxBox: MaxBox_G01, boxCap: BoxCap_G01, divBox: DivBox_G01, flags: [FORM_MAJ_GENDER_DIFF]},
-	Bl	: {id: MainSeries +  2,	code: "Bl",   name: "Pokémon Blue",               ico: "custom/blue",            icoPath: IcoPathReBl, nDex: _Regdex_n_101, eDex: {},            rDex: {},            imgWd: ImgWd_G01, maxBox: MaxBox_G01, boxCap: BoxCap_G01, divBox: DivBox_G01, flags: [FORM_MAJ_GENDER_DIFF]},
-	Ye	: {id: MainSeries +  3,	code: "Ye",   name: "Pokémon Yellow",             ico: "custom/yellow",          icoPath: IcoPathYe,   nDex: _Regdex_n_102, eDex: {},            rDex: {},            imgWd: ImgWd_G01, maxBox: MaxBox_G01, boxCap: BoxCap_G01, divBox: DivBox_G01, flags: [FORM_MAJ_GENDER_DIFF]},
-	Go	: {id: MainSeries +  4,	code: "Go",   name: "Pokémon Gold",               ico: "custom/gold",            icoPath: IcoPathGoSi, nDex: _Regdex_n_201, eDex: _Regdex_e_201, rDex: _Regdex_r_201, imgWd: ImgWd_G02, maxBox: MaxBox_G02, boxCap: BoxCap_G02, divBox: DivBox_G02, flags: [FORM_MAJ_GENDER_DIFF]},
-	Si	: {id: MainSeries +  5,	code: "Si",   name: "Pokémon Silver",             ico: "custom/silver",          icoPath: IcoPathGoSi, nDex: _Regdex_n_201, eDex: _Regdex_e_201, rDex: _Regdex_r_201, imgWd: ImgWd_G02, maxBox: MaxBox_G02, boxCap: BoxCap_G02, divBox: DivBox_G02, flags: [FORM_MAJ_GENDER_DIFF]},
-	Cr	: {id: MainSeries +  6,	code: "Cr",   name: "Pokémon Crystal",            ico: "custom/crystal",         icoPath: IcoPathCr,   nDex: _Regdex_n_201, eDex: _Regdex_e_201, rDex: _Regdex_r_201, imgWd: ImgWd_G02, maxBox: MaxBox_G02, boxCap: BoxCap_G02, divBox: DivBox_G02, flags: [FORM_MAJ_GENDER_DIFF]},
-	Ru	: {id: MainSeries +  7,	code: "Ru",   name: "Pokémon Ruby",               ico: "custom/ruby",            icoPath: IcoPathRuSa, nDex: _Regdex_n_301, eDex: _Regdex_e_301, rDex: _Regdex_r_301, imgWd: ImgWd_G03, maxBox: MaxBox_G03, boxCap: BoxCap_G03, divBox: DivBox_G03, flags: [FORM_MAJ_GENDER_DIFF, FORM_0386_BASE]},
-	Sa	: {id: MainSeries +  8,	code: "Sa",   name: "Pokémon Sapphire",           ico: "custom/sapphire",        icoPath: IcoPathRuSa, nDex: _Regdex_n_301, eDex: _Regdex_e_301, rDex: _Regdex_r_301, imgWd: ImgWd_G03, maxBox: MaxBox_G03, boxCap: BoxCap_G03, divBox: DivBox_G03, flags: [FORM_MAJ_GENDER_DIFF, FORM_0386_BASE]},
-	FR	: {id: MainSeries +  9,	code: "FR",   name: "Pokémon FireRed",            ico: "custom/firered_",        icoPath: IcoPathFRLG, nDex: _Regdex_n_301, eDex: _Regdex_e_301, rDex: _Regdex_r_302, imgWd: ImgWd_G03, maxBox: MaxBox_G03, boxCap: BoxCap_G03, divBox: DivBox_G03, flags: [FORM_MAJ_GENDER_DIFF, FORM_0386_FR]},
-	LG	: {id: MainSeries + 10,	code: "LG",   name: "Pokémon LeafGreen",          ico: "custom/leafgreen_",      icoPath: IcoPathFRLG, nDex: _Regdex_n_301, eDex: _Regdex_e_301, rDex: _Regdex_r_302, imgWd: ImgWd_G03, maxBox: MaxBox_G03, boxCap: BoxCap_G03, divBox: DivBox_G03, flags: [FORM_MAJ_GENDER_DIFF, FORM_0386_LG]},
-	Em	: {id: MainSeries + 11,	code: "Em",   name: "Pokémon Emerald",            ico: "custom/emerald",         icoPath: IcoPathEm,   nDex: _Regdex_n_301, eDex: _Regdex_e_301, rDex: _Regdex_r_301, imgWd: ImgWd_G03, maxBox: MaxBox_G03, boxCap: BoxCap_G03, divBox: DivBox_G03, flags: [FORM_MAJ_GENDER_DIFF, FORM_0386_Em]},
-	Di	: {id: MainSeries + 12,	code: "Di",   name: "Pokémon Diamond",            ico: "custom/diamond",         icoPath: IcoPathDiPe, nDex: _Regdex_n_401, eDex: _Regdex_e_401, rDex: _Regdex_r_401, imgWd: ImgWd_G04, maxBox: MaxBox_G04, boxCap: BoxCap_G04, divBox: DivBox_G04, flags: [FORM_MAJ_GENDER_DIFF, FORM_0479_BASE, FORM_0487_BASE, FORM_0492_BASE]},
-	Pe	: {id: MainSeries + 13,	code: "Pe",   name: "Pokémon Pearl",              ico: "custom/pearl",           icoPath: IcoPathDiPe, nDex: _Regdex_n_401, eDex: _Regdex_e_401, rDex: _Regdex_r_401, imgWd: ImgWd_G04, maxBox: MaxBox_G04, boxCap: BoxCap_G04, divBox: DivBox_G04, flags: [FORM_MAJ_GENDER_DIFF, FORM_0479_BASE, FORM_0487_BASE, FORM_0492_BASE]},
-	Pl	: {id: MainSeries + 14,	code: "Pl",   name: "Pokémon Platinum",           ico: "custom/platinum",        icoPath: IcoPathPl,   nDex: _Regdex_n_401, eDex: _Regdex_e_401, rDex: _Regdex_r_402, imgWd: ImgWd_G04, maxBox: MaxBox_G04, boxCap: BoxCap_G04, divBox: DivBox_G04, flags: [FORM_MAJ_GENDER_DIFF]},
-	HG	: {id: MainSeries + 15,	code: "HG",   name: "Pokémon HeartGold",          ico: "custom/heartgold",       icoPath: IcoPathHGSS, nDex: _Regdex_n_401, eDex: _Regdex_e_401, rDex: _Regdex_r_403, imgWd: ImgWd_G04, maxBox: MaxBox_G04, boxCap: BoxCap_G04, divBox: DivBox_G04, flags: [FORM_MAJ_GENDER_DIFF, FORM_0172_HGSS]},
-	SS	: {id: MainSeries + 16,	code: "SS",   name: "Pokémon SoulSilver",         ico: "custom/soulsilver",      icoPath: IcoPathHGSS, nDex: _Regdex_n_401, eDex: _Regdex_e_401, rDex: _Regdex_r_403, imgWd: ImgWd_G04, maxBox: MaxBox_G04, boxCap: BoxCap_G04, divBox: DivBox_G04, flags: [FORM_MAJ_GENDER_DIFF, FORM_0172_HGSS]},
-	Bk	: {id: MainSeries + 17,	code: "Bk",   name: "Pokémon Black",              ico: "black",                  icoPath: IcoPathBkWh, nDex: _Regdex_n_501, eDex: _Regdex_e_501, rDex: _Regdex_r_501, imgWd: ImgWd_G05, maxBox: MaxBox_G05, boxCap: BoxCap_G05, divBox: DivBox_G05, flags: [FORM_MAJ_GENDER_DIFF, FORM_0641_BASE, FORM_0642_BASE, FORM_0645_BASE, FORM_0646_BASE, FORM_0647_BASE, FORM_0648_BASE, FORM_0649_BASE]},
-	Wh	: {id: MainSeries + 18,	code: "Wh",   name: "Pokémon White",              ico: "white",                  icoPath: IcoPathBkWh, nDex: _Regdex_n_501, eDex: _Regdex_e_501, rDex: _Regdex_r_501, imgWd: ImgWd_G05, maxBox: MaxBox_G05, boxCap: BoxCap_G05, divBox: DivBox_G05, flags: [FORM_MAJ_GENDER_DIFF, FORM_0641_BASE, FORM_0642_BASE, FORM_0645_BASE, FORM_0646_BASE, FORM_0647_BASE, FORM_0648_BASE, FORM_0649_BASE]},
-	B2	: {id: MainSeries + 19,	code: "B2",   name: "Pokémon Black 2",            ico: "black2",                 icoPath: IcoPathB2W2, nDex: _Regdex_n_501, eDex: _Regdex_e_501, rDex: _Regdex_r_502, imgWd: ImgWd_G05, maxBox: MaxBox_G05, boxCap: BoxCap_G05, divBox: DivBox_G05, flags: [FORM_MAJ_GENDER_DIFF]},
-	W2	: {id: MainSeries + 20,	code: "W2",   name: "Pokémon White 2",            ico: "white2",                 icoPath: IcoPathB2W2, nDex: _Regdex_n_501, eDex: _Regdex_e_501, rDex: _Regdex_r_502, imgWd: ImgWd_G05, maxBox: MaxBox_G05, boxCap: BoxCap_G05, divBox: DivBox_G05, flags: [FORM_MAJ_GENDER_DIFF]},
-	X_	: {id: MainSeries + 21,	code: "X_",   name: "Pokémon X",                  ico: "x",                      icoPath: IcoPathX_Y_, nDex: _Regdex_n_601, eDex: _Regdex_n_601, rDex: _Regdex_n_601, imgWd: ImgWd_G06, maxBox: MaxBox_G06, boxCap: BoxCap_G06, divBox: DivBox_G06, flags: [FORM_MAJ_GENDER_DIFF]},
-	Y_	: {id: MainSeries + 22,	code: "Y_",   name: "Pokémon Y",                  ico: "y",                      icoPath: IcoPathX_Y_, nDex: _Regdex_n_601, eDex: _Regdex_n_601, rDex: _Regdex_n_601, imgWd: ImgWd_G06, maxBox: MaxBox_G06, boxCap: BoxCap_G06, divBox: DivBox_G06, flags: [FORM_MAJ_GENDER_DIFF]},
-	oR	: {id: MainSeries + 23,	code: "oR",   name: "Pokémon Omega Ruby",         ico: "omega-ruby",             icoPath: IcoPathoRaS, nDex: _Regdex_n_601, eDex: _Regdex_n_601, rDex: _Regdex_n_601, imgWd: ImgWd_G06, maxBox: MaxBox_G06, boxCap: BoxCap_G06, divBox: DivBox_G06, flags: [FORM_MAJ_GENDER_DIFF]},
-	aS	: {id: MainSeries + 24,	code: "aS",   name: "Pokémon Alpha Sapphire",     ico: "alpha-sapphire",         icoPath: IcoPathoRaS, nDex: _Regdex_n_601, eDex: _Regdex_n_601, rDex: _Regdex_n_601, imgWd: ImgWd_G06, maxBox: MaxBox_G06, boxCap: BoxCap_G06, divBox: DivBox_G06, flags: [FORM_MAJ_GENDER_DIFF]},
-	Su	: {id: MainSeries + 28,	code: "Su",   name: "Pokémon Sun",                ico: "sun",                    icoPath: "",          nDex: {},            eDex: {},            rDex: {},            imgWd: 0,         maxBox: 0,          boxCap: 0,          divBox: 0,          flags: [FORM_MAJ_GENDER_DIFF]},
-	Mo	: {id: MainSeries + 29,	code: "Mo",   name: "Pokémon Moon",               ico: "moon",                   icoPath: "",          nDex: {},            eDex: {},            rDex: {},            imgWd: 0,         maxBox: 0,          boxCap: 0,          divBox: 0,          flags: [FORM_MAJ_GENDER_DIFF]},
-	US	: {id: MainSeries + 32,	code: "US",   name: "Pokémon Ultra Sun",          ico: "ultra-sun",              icoPath: "",          nDex: {},            eDex: {},            rDex: {},            imgWd: 0,         maxBox: 0,          boxCap: 0,          divBox: 0,          flags: [FORM_MAJ_GENDER_DIFF]},
-	UM	: {id: MainSeries + 33,	code: "UM",   name: "Pokémon Ultra Moon",         ico: "ultra-moon",             icoPath: "",          nDex: {},            eDex: {},            rDex: {},            imgWd: 0,         maxBox: 0,          boxCap: 0,          divBox: 0,          flags: [FORM_MAJ_GENDER_DIFF]},
-	LP	: {id: MainSeries + 35,	code: "LP",   name: "Pokémon Let's GO, Pikachu!", ico: "custom/lets-go-pikachu", icoPath: "",          nDex: {},            eDex: {},            rDex: {},            imgWd: 0,         maxBox: 0,          boxCap: 0,          divBox: 0,          flags: [FORM_MAJ_GENDER_DIFF]},
-	LE	: {id: MainSeries + 36,	code: "LE",   name: "Pokémon Let's GO, Eevee!",   ico: "custom/lets-go-eevee",   icoPath: "",          nDex: {},            eDex: {},            rDex: {},            imgWd: 0,         maxBox: 0,          boxCap: 0,          divBox: 0,          flags: [FORM_MAJ_GENDER_DIFF]},
-	Sw	: {id: MainSeries + 37,	code: "Sw",   name: "Pokémon Sword",              ico: "sword",                  icoPath: IcoPathSwSh, nDex: _Regdex_nSwSh, eDex: _Regdex_eSwSh, rDex: _Regdex_rSwSh, imgWd: ImgWd_G08, maxBox: MaxBox_G08, boxCap: BoxCap_G08, divBox: DivBox_G08, flags: [FORM_MAJ_GENDER_DIFF]},
-	Sh	: {id: MainSeries + 38,	code: "Sh",   name: "Pokémon Shield",             ico: "shield",                 icoPath: IcoPathSwSh, nDex: _Regdex_nSwSh, eDex: _Regdex_eSwSh, rDex: _Regdex_rSwSh, imgWd: ImgWd_G08, maxBox: MaxBox_G08, boxCap: BoxCap_G08, divBox: DivBox_G08, flags: [FORM_MAJ_GENDER_DIFF]},
-	BD	: {id: MainSeries + 39,	code: "BD",   name: "Pokémon Brilliant Diamond",  ico: "",                       icoPath: "",          nDex: {},            eDex: {},            rDex: {},            imgWd: 0,         maxBox: 0,          boxCap: 0,          divBox: 0,          flags: [FORM_MAJ_GENDER_DIFF]},
-	SP	: {id: MainSeries + 40,	code: "SP",   name: "Pokémon Shining Pearl",      ico: "",                       icoPath: "",          nDex: {},            eDex: {},            rDex: {},            imgWd: 0,         maxBox: 0,          boxCap: 0,          divBox: 0,          flags: [FORM_MAJ_GENDER_DIFF]},
+    _Re	: {code: "Re",   name: "Pokémon Red",                ico: "custom/red",             icoPath: IcoPathReBl, nDex: _Regdex_n_101, eDex: {},            rDex: {},            imgWd: ImgWd_G01, maxBox: MaxBox_G01, boxCap: BoxCap_G01, divBox: DivBox_G01, flags: [FORM_MAJ_GENDER_DIFF]},
+	_Bl	: {code: "Bl",   name: "Pokémon Blue",               ico: "custom/blue",            icoPath: IcoPathReBl, nDex: _Regdex_n_101, eDex: {},            rDex: {},            imgWd: ImgWd_G01, maxBox: MaxBox_G01, boxCap: BoxCap_G01, divBox: DivBox_G01, flags: [FORM_MAJ_GENDER_DIFF]},
+	_Ye	: {code: "Ye",   name: "Pokémon Yellow",             ico: "custom/yellow",          icoPath: IcoPathYe,   nDex: _Regdex_n_102, eDex: {},            rDex: {},            imgWd: ImgWd_G01, maxBox: MaxBox_G01, boxCap: BoxCap_G01, divBox: DivBox_G01, flags: [FORM_MAJ_GENDER_DIFF]},
+	_Go	: {code: "Go",   name: "Pokémon Gold",               ico: "custom/gold",            icoPath: IcoPathGoSi, nDex: _Regdex_n_201, eDex: _Regdex_e_201, rDex: _Regdex_r_201, imgWd: ImgWd_G02, maxBox: MaxBox_G02, boxCap: BoxCap_G02, divBox: DivBox_G02, flags: [FORM_MAJ_GENDER_DIFF]},
+	_Si	: {code: "Si",   name: "Pokémon Silver",             ico: "custom/silver",          icoPath: IcoPathGoSi, nDex: _Regdex_n_201, eDex: _Regdex_e_201, rDex: _Regdex_r_201, imgWd: ImgWd_G02, maxBox: MaxBox_G02, boxCap: BoxCap_G02, divBox: DivBox_G02, flags: [FORM_MAJ_GENDER_DIFF]},
+	_Cr	: {code: "Cr",   name: "Pokémon Crystal",            ico: "custom/crystal",         icoPath: IcoPathCr,   nDex: _Regdex_n_201, eDex: _Regdex_e_201, rDex: _Regdex_r_201, imgWd: ImgWd_G02, maxBox: MaxBox_G02, boxCap: BoxCap_G02, divBox: DivBox_G02, flags: [FORM_MAJ_GENDER_DIFF]},
+	_Ru	: {code: "Ru",   name: "Pokémon Ruby",               ico: "custom/ruby",            icoPath: IcoPathRuSa, nDex: _Regdex_n_301, eDex: _Regdex_e_301, rDex: _Regdex_r_301, imgWd: ImgWd_G03, maxBox: MaxBox_G03, boxCap: BoxCap_G03, divBox: DivBox_G03, flags: [FORM_MAJ_GENDER_DIFF, FORM_0386_BASE]},
+	_Sa	: {code: "Sa",   name: "Pokémon Sapphire",           ico: "custom/sapphire",        icoPath: IcoPathRuSa, nDex: _Regdex_n_301, eDex: _Regdex_e_301, rDex: _Regdex_r_301, imgWd: ImgWd_G03, maxBox: MaxBox_G03, boxCap: BoxCap_G03, divBox: DivBox_G03, flags: [FORM_MAJ_GENDER_DIFF, FORM_0386_BASE]},
+	_FR	: {code: "FR",   name: "Pokémon FireRed",            ico: "custom/firered_",        icoPath: IcoPathFRLG, nDex: _Regdex_n_301, eDex: _Regdex_e_301, rDex: _Regdex_r_302, imgWd: ImgWd_G03, maxBox: MaxBox_G03, boxCap: BoxCap_G03, divBox: DivBox_G03, flags: [FORM_MAJ_GENDER_DIFF, FORM_0386_FR]},
+	_LG	: {code: "LG",   name: "Pokémon LeafGreen",          ico: "custom/leafgreen_",      icoPath: IcoPathFRLG, nDex: _Regdex_n_301, eDex: _Regdex_e_301, rDex: _Regdex_r_302, imgWd: ImgWd_G03, maxBox: MaxBox_G03, boxCap: BoxCap_G03, divBox: DivBox_G03, flags: [FORM_MAJ_GENDER_DIFF, FORM_0386_LG]},
+	_Em	: {code: "Em",   name: "Pokémon Emerald",            ico: "custom/emerald",         icoPath: IcoPathEm,   nDex: _Regdex_n_301, eDex: _Regdex_e_301, rDex: _Regdex_r_301, imgWd: ImgWd_G03, maxBox: MaxBox_G03, boxCap: BoxCap_G03, divBox: DivBox_G03, flags: [FORM_MAJ_GENDER_DIFF, FORM_0386_Em]},
+	_Di	: {code: "Di",   name: "Pokémon Diamond",            ico: "custom/diamond",         icoPath: IcoPathDiPe, nDex: _Regdex_n_401, eDex: _Regdex_e_401, rDex: _Regdex_r_401, imgWd: ImgWd_G04, maxBox: MaxBox_G04, boxCap: BoxCap_G04, divBox: DivBox_G04, flags: [FORM_MAJ_GENDER_DIFF, FORM_0479_BASE, FORM_0487_BASE, FORM_0492_BASE]},
+	_Pe	: {code: "Pe",   name: "Pokémon Pearl",              ico: "custom/pearl",           icoPath: IcoPathDiPe, nDex: _Regdex_n_401, eDex: _Regdex_e_401, rDex: _Regdex_r_401, imgWd: ImgWd_G04, maxBox: MaxBox_G04, boxCap: BoxCap_G04, divBox: DivBox_G04, flags: [FORM_MAJ_GENDER_DIFF, FORM_0479_BASE, FORM_0487_BASE, FORM_0492_BASE]},
+	_Pl	: {code: "Pl",   name: "Pokémon Platinum",           ico: "custom/platinum",        icoPath: IcoPathPl,   nDex: _Regdex_n_401, eDex: _Regdex_e_401, rDex: _Regdex_r_402, imgWd: ImgWd_G04, maxBox: MaxBox_G04, boxCap: BoxCap_G04, divBox: DivBox_G04, flags: [FORM_MAJ_GENDER_DIFF]},
+	_HG	: {code: "HG",   name: "Pokémon HeartGold",          ico: "custom/heartgold",       icoPath: IcoPathHGSS, nDex: _Regdex_n_401, eDex: _Regdex_e_401, rDex: _Regdex_r_403, imgWd: ImgWd_G04, maxBox: MaxBox_G04, boxCap: BoxCap_G04, divBox: DivBox_G04, flags: [FORM_MAJ_GENDER_DIFF, FORM_0172_HGSS]},
+	_SS	: {code: "SS",   name: "Pokémon SoulSilver",         ico: "custom/soulsilver",      icoPath: IcoPathHGSS, nDex: _Regdex_n_401, eDex: _Regdex_e_401, rDex: _Regdex_r_403, imgWd: ImgWd_G04, maxBox: MaxBox_G04, boxCap: BoxCap_G04, divBox: DivBox_G04, flags: [FORM_MAJ_GENDER_DIFF, FORM_0172_HGSS]},
+	_Bk	: {code: "Bk",   name: "Pokémon Black",              ico: "black",                  icoPath: IcoPathBkWh, nDex: _Regdex_n_501, eDex: _Regdex_e_501, rDex: _Regdex_r_501, imgWd: ImgWd_G05, maxBox: MaxBox_G05, boxCap: BoxCap_G05, divBox: DivBox_G05, flags: [FORM_MAJ_GENDER_DIFF, FORM_0641_BASE, FORM_0642_BASE, FORM_0645_BASE, FORM_0646_BASE, FORM_0647_BASE, FORM_0648_BASE, FORM_0649_BASE]},
+	_Wh	: {code: "Wh",   name: "Pokémon White",              ico: "white",                  icoPath: IcoPathBkWh, nDex: _Regdex_n_501, eDex: _Regdex_e_501, rDex: _Regdex_r_501, imgWd: ImgWd_G05, maxBox: MaxBox_G05, boxCap: BoxCap_G05, divBox: DivBox_G05, flags: [FORM_MAJ_GENDER_DIFF, FORM_0641_BASE, FORM_0642_BASE, FORM_0645_BASE, FORM_0646_BASE, FORM_0647_BASE, FORM_0648_BASE, FORM_0649_BASE]},
+	_B2	: {code: "B2",   name: "Pokémon Black 2",            ico: "black2",                 icoPath: IcoPathB2W2, nDex: _Regdex_n_501, eDex: _Regdex_e_501, rDex: _Regdex_r_502, imgWd: ImgWd_G05, maxBox: MaxBox_G05, boxCap: BoxCap_G05, divBox: DivBox_G05, flags: [FORM_MAJ_GENDER_DIFF]},
+	_W2	: {code: "W2",   name: "Pokémon White 2",            ico: "white2",                 icoPath: IcoPathB2W2, nDex: _Regdex_n_501, eDex: _Regdex_e_501, rDex: _Regdex_r_502, imgWd: ImgWd_G05, maxBox: MaxBox_G05, boxCap: BoxCap_G05, divBox: DivBox_G05, flags: [FORM_MAJ_GENDER_DIFF]},
+	_X_	: {code: "X",    name: "Pokémon X",                  ico: "x",                      icoPath: IcoPathX_Y_, nDex: _Regdex_n_601, eDex: _Regdex_n_601, rDex: _Regdex_n_601, imgWd: ImgWd_G06, maxBox: MaxBox_G06, boxCap: BoxCap_G06, divBox: DivBox_G06, flags: [FORM_MAJ_GENDER_DIFF]},
+	_Y_	: {code: "Y",    name: "Pokémon Y",                  ico: "y",                      icoPath: IcoPathX_Y_, nDex: _Regdex_n_601, eDex: _Regdex_n_601, rDex: _Regdex_n_601, imgWd: ImgWd_G06, maxBox: MaxBox_G06, boxCap: BoxCap_G06, divBox: DivBox_G06, flags: [FORM_MAJ_GENDER_DIFF]},
+	_oR	: {code: "oR",   name: "Pokémon Omega Ruby",         ico: "omega-ruby",             icoPath: IcoPathoRaS, nDex: _Regdex_n_601, eDex: _Regdex_n_601, rDex: _Regdex_n_601, imgWd: ImgWd_G06, maxBox: MaxBox_G06, boxCap: BoxCap_G06, divBox: DivBox_G06, flags: [FORM_MAJ_GENDER_DIFF]},
+	_aS	: {code: "aS",   name: "Pokémon Alpha Sapphire",     ico: "alpha-sapphire",         icoPath: IcoPathoRaS, nDex: _Regdex_n_601, eDex: _Regdex_n_601, rDex: _Regdex_n_601, imgWd: ImgWd_G06, maxBox: MaxBox_G06, boxCap: BoxCap_G06, divBox: DivBox_G06, flags: [FORM_MAJ_GENDER_DIFF]},
+	_Su	: {code: "Su",   name: "Pokémon Sun",                ico: "sun",                    icoPath: "",          nDex: {},            eDex: {},            rDex: {},            imgWd: 0,         maxBox: 0,          boxCap: 0,          divBox: 0,          flags: [FORM_MAJ_GENDER_DIFF]},
+	_Mo	: {code: "Mo",   name: "Pokémon Moon",               ico: "moon",                   icoPath: "",          nDex: {},            eDex: {},            rDex: {},            imgWd: 0,         maxBox: 0,          boxCap: 0,          divBox: 0,          flags: [FORM_MAJ_GENDER_DIFF]},
+	_US	: {code: "US",   name: "Pokémon Ultra Sun",          ico: "ultra-sun",              icoPath: "",          nDex: {},            eDex: {},            rDex: {},            imgWd: 0,         maxBox: 0,          boxCap: 0,          divBox: 0,          flags: [FORM_MAJ_GENDER_DIFF]},
+	_UM	: {code: "UM",   name: "Pokémon Ultra Moon",         ico: "ultra-moon",             icoPath: "",          nDex: {},            eDex: {},            rDex: {},            imgWd: 0,         maxBox: 0,          boxCap: 0,          divBox: 0,          flags: [FORM_MAJ_GENDER_DIFF]},
+	_LP	: {code: "LP",   name: "Pokémon Let's GO, Pikachu!", ico: "custom/lets-go-pikachu", icoPath: "",          nDex: {},            eDex: {},            rDex: {},            imgWd: 0,         maxBox: 0,          boxCap: 0,          divBox: 0,          flags: [FORM_MAJ_GENDER_DIFF]},
+	_LE	: {code: "LE",   name: "Pokémon Let's GO, Eevee!",   ico: "custom/lets-go-eevee",   icoPath: "",          nDex: {},            eDex: {},            rDex: {},            imgWd: 0,         maxBox: 0,          boxCap: 0,          divBox: 0,          flags: [FORM_MAJ_GENDER_DIFF]},
+	_Sw	: {code: "Sw",   name: "Pokémon Sword",              ico: "sword",                  icoPath: IcoPathSwSh, nDex: _Regdex_nSwSh, eDex: _Regdex_eSwSh, rDex: _Regdex_rSwSh, imgWd: ImgWd_G08, maxBox: MaxBox_G08, boxCap: BoxCap_G08, divBox: DivBox_G08, flags: [FORM_MAJ_GENDER_DIFF]},
+	_Sh	: {code: "Sh",   name: "Pokémon Shield",             ico: "shield",                 icoPath: IcoPathSwSh, nDex: _Regdex_nSwSh, eDex: _Regdex_eSwSh, rDex: _Regdex_rSwSh, imgWd: ImgWd_G08, maxBox: MaxBox_G08, boxCap: BoxCap_G08, divBox: DivBox_G08, flags: [FORM_MAJ_GENDER_DIFF]},
+	_BD	: {code: "BD",   name: "Pokémon Brilliant Diamond",  ico: "",                       icoPath: "",          nDex: {},            eDex: {},            rDex: {},            imgWd: 0,         maxBox: 0,          boxCap: 0,          divBox: 0,          flags: [FORM_MAJ_GENDER_DIFF]},
+	_SP	: {code: "SP",   name: "Pokémon Shining Pearl",      ico: "",                       icoPath: "",          nDex: {},            eDex: {},            rDex: {},            imgWd: 0,         maxBox: 0,          boxCap: 0,          divBox: 0,          flags: [FORM_MAJ_GENDER_DIFF]},
 
 	LS_493	: {id: LegendsSeries + 1, ico: "", icoPath: "", rDex: {}, nDex: {}, eDex: {}, imgWd: 0, boxCap: 0, divBox: 0, code: "LS_493", name: "Pokémon Legends: Arceus"},
 

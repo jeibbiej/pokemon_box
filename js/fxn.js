@@ -670,35 +670,3 @@ function unionFlags(gFlags, dFlags)
 
 	return gFlags;
 }
-
-//==============================================================================
-// NEW FUNCTIONS
-//==============================================================================
-Object.defineProperty(Array.prototype, "AddEvolution",
-{
-	/**
-	 * 
-	 * @param {string} pkmn1 first Pokemon ID in evolution line
-	 * @param {string} pkmn1 second Pokemon ID in evolution line
-	 * @returns {Array} the newly spliced ID
-	 * @notes Only one of the parameters must be existing in the current array.
-	 * If the first parameter is existing, the second parameter will be added 
-	 * next to it. If the second parameter is existing, the first parameter will
-	 * be added before it.
-	 */
-	value: function(pkmn1, pkmn2)
-	{
-		// check validity of items
-		let pkmn1Idx = this.indexOf(pkmn1);
-		let pkmn2Idx = this.indexOf(pkmn2);
-
-		if (pkmn1Idx == -1 && pkmn2Idx == -1)
-			return this; // both are not existing
-		else if (pkmn1Idx != -1 && pkmn2Idx != -1)
-			return this;
-		else if (pkmn2Idx != -1)
-			return this.splice(pkmn2Idx, 0, pkmn1);
-		else if (pkmn1Idx != -1)
-			return this.splice(pkmn1Idx + 1, 0, pkmn2);
-	}
-});
