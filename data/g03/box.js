@@ -52,6 +52,7 @@ g_NatBox[GAME.Ru].push(
 	[MON.LATIOS    , ""      ],	[MON.KYOGRE    , ""      ],	[MON.GROUDON   , ""      ],
 	[MON.RAYQUAZA  , ""      ],	[MON.JIRACHI   , ""      ],	[MON.DEOXYS    , ""      ],
 );
+// NOTE: Gen3 offers only one forme of Deoxys per game
 
 g_NatBox[GAME.Sa] = CopyObject(g_NatBox[GAME.Ru]);
 g_NatBox[GAME.FR] = CopyObject(g_NatBox[GAME.Ru]);
@@ -148,10 +149,10 @@ g_EvoBox[GAME.Ru].push(			[MON.SNORUNT   , ""      ],	[MON.GLALIE    , ""      ]
 								[MON.JIRACHI   , ""      ],
 								[MON.DEOXYS    , ""      ]);
 
-g_EvoBox[GAME.Sa] = CopyObject(g_NatBox[GAME.Ru]);
-g_EvoBox[GAME.FR] = CopyObject(g_NatBox[GAME.Ru]);
-g_EvoBox[GAME.LG] = CopyObject(g_NatBox[GAME.Ru]);
-g_EvoBox[GAME.Em] = CopyObject(g_NatBox[GAME.Ru]);
+g_EvoBox[GAME.Sa] = CopyObject(g_EvoBox[GAME.Ru]);
+g_EvoBox[GAME.FR] = CopyObject(g_EvoBox[GAME.Ru]);
+g_EvoBox[GAME.LG] = CopyObject(g_EvoBox[GAME.Ru]);
+g_EvoBox[GAME.Em] = CopyObject(g_EvoBox[GAME.Ru]);
 
 ////////////////////////////////////////////////////////////////////////////////
 // Pokemon Storage System box sorting order: Regional Dex
@@ -416,7 +417,7 @@ g_RegBox[GAME.Ru] = [
 	[MON.CELEBI    , ""         ]
 ];
 
-g_EvoBox[GAME.Sa] = CopyObject(g_EvoBox[GAME.Ru]);
-g_EvoBox[GAME.FR] = CopyObject(g_NatBox[GAME.Ru]);
-g_EvoBox[GAME.LG] = CopyObject(g_NatBox[GAME.Ru]);
-g_EvoBox[GAME.Em] = CopyObject(g_EvoBox[GAME.Ru]);
+g_RegBox[GAME.Sa] = CopyObject(g_RegBox[GAME.Ru]);
+g_RegBox[GAME.FR] = CopyObject(g_NatBox[GAME.Ru]);
+g_RegBox[GAME.LG] = CopyObject(g_NatBox[GAME.Ru]);
+g_RegBox[GAME.Em] = CopyObject(g_RegBox[GAME.Ru]);

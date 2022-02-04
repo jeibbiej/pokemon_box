@@ -187,6 +187,7 @@ DEX_LIST = {...CopyObject(DEX_LIST),
 	[MON.DEOXYS    ]: {	""          : {ico: "0386", name: "Deoxys",         flags: []}},
 }};
 
+// update icons
 DEX_LIST[GAME.Ru][MON.BULBASAUR ][""         ]["ico"] = "0001";
 DEX_LIST[GAME.Ru][MON.IVYSAUR   ][""         ]["ico"] = "0002";
 DEX_LIST[GAME.Ru][MON.VENUSAUR  ][""         ]["ico"] = "0003";
@@ -465,8 +466,8 @@ DEX_LIST[GAME.Ru][MON.LUGIA     ][""         ]["ico"] = "0249";
 DEX_LIST[GAME.Ru][MON.HO_OH     ][""         ]["ico"] = "0250";
 DEX_LIST[GAME.Ru][MON.CELEBI    ][""         ]["ico"] = "0251";
 // new formes
-DEX_LIST[GAME.Ru][MON.UNOWN     ]["-emark"   ] = {ico: "0201-emark",   name: "Unown !!!!!", flags: []};
-DEX_LIST[GAME.Ru][MON.UNOWN     ]["-qmark"   ] = {ico: "0201-qmark",   name: "Unown ?????", flags: []};
+DEX_LIST[GAME.Ru][MON.UNOWN     ]["-emark"   ] = {ico: "0201-emark",   name: "Unown !!!!!", flags: [FLAGS.FORM_UNOWN]};
+DEX_LIST[GAME.Ru][MON.UNOWN     ]["-qmark"   ] = {ico: "0201-qmark",   name: "Unown ?????", flags: [FLAGS.FORM_UNOWN]};
 
 DEX_LIST[GAME.Sa] = CopyObject(DEX_LIST[GAME.Ru]);
 DEX_LIST[GAME.FR] = CopyObject(DEX_LIST[GAME.Ru]);

@@ -231,7 +231,7 @@ const _Regdex_nSwSh	=
 //	"0119": {ico: "0119", flags: []}, // "Seaking"
 	"0119-m": {ico: "0119-m", flags: []}, // "Seaking♂"
 	"0119-f": {ico: "0119-f", flags: []}, // "Seaking♀"
-		"0120": {ico: "0120", flags: []}, // "Staryu" // uknown gender
+	"0120": {ico: "0120", flags: []}, // "Staryu" // uknown gender
 	"0121": {ico: "0121", flags: []}, // "Starmie" // uknown gender
 	"0122": {ico: "0122", flags: []}, // "Mr. Mime"
 	"0122-galar": {ico: "0122-galar", flags: []}, // "Galarian Mr. Mime"
@@ -4750,7 +4750,7 @@ const _Regdex_nHome	=
 //	"0119": {ico: "0119", flags: []}, // "Seaking"
 	"0119-m": {ico: "0119-m", flags: []}, // "Seaking♂"
 	"0119-f": {ico: "0119-f", flags: []}, // "Seaking♀"
-		"0120": {ico: "0120", flags: []}, // "Staryu" // uknown gender
+	"0120": {ico: "0120", flags: []}, // "Staryu" // uknown gender
 	"0121": {ico: "0121", flags: []}, // "Starmie" // uknown gender
 	"0122": {ico: "0122", flags: []}, // "Mr. Mime"
 	"0122-galar": {ico: "0122-galar", flags: []}, // "Galarian Mr. Mime"
