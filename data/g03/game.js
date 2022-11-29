@@ -18,7 +18,7 @@ const BOX_COL_G03 = 6;
 const BOX_ROW_G03 = 5;
 const BOX_CNT_G03 = 14;
 
-FLAGS = 
+FLAGS =
 {
 	...{FLAGS},
 	FORM_BATTLE   : Gen03 + 1,
@@ -26,15 +26,17 @@ FLAGS =
 	FORM_DEOXYS   : Gen03 + 3
 };
 
-OPTIONS = 
-[
+OPTIONS =
+{
 	...CopyObject(OPTIONS),
+	[FLAGS.FORM_BATTLE]:
 	{
-		id: FLAGS.FORM_BATTLE,
 		desc: "Show Pok&acute;mon battle forms",
-		off: []
-	}
-];
+		off:
+		{
+		}
+	},
+};
 
 GAME_INFO =
 {
