@@ -388,7 +388,7 @@ DEX_LIST[GAME.Ru][MON.UMBREON   ][""         ]["ico"] = "0197";
 DEX_LIST[GAME.Ru][MON.MURKROW   ][""         ]["ico"] = "0198";
 DEX_LIST[GAME.Ru][MON.SLOWKING  ][""         ]["ico"] = "0199";
 DEX_LIST[GAME.Ru][MON.MISDREAVUS][""         ]["ico"] = "0200";
-DEX_LIST[GAME.Ru][MON.UNOWN     ][""         ]["ico"] = "0201";
+DEX_LIST[GAME.Ru][MON.UNOWN     ][""         ]["ico"] = "0201-angry";
 DEX_LIST[GAME.Ru][MON.UNOWN     ]["-angry"   ]["ico"] = "0201-angry";
 DEX_LIST[GAME.Ru][MON.UNOWN     ]["-bear"    ]["ico"] = "0201-bear";
 DEX_LIST[GAME.Ru][MON.UNOWN     ]["-chase"   ]["ico"] = "0201-chase";
@@ -466,9 +466,6 @@ DEX_LIST[GAME.Ru][MON.LUGIA     ][""         ]["ico"] = "0249";
 DEX_LIST[GAME.Ru][MON.HO_OH     ][""         ]["ico"] = "0250";
 DEX_LIST[GAME.Ru][MON.CELEBI    ][""         ]["ico"] = "0251";
 // new formes
-DEX_LIST[GAME.Ru][MON.UNOWN     ]["-emark"   ] = {ico: "0201-emark",   name: "Unown !!!!!", flags: [FLAGS.FORM_UNOWN]};
-DEX_LIST[GAME.Ru][MON.UNOWN     ]["-qmark"   ] = {ico: "0201-qmark",   name: "Unown ?????", flags: [FLAGS.FORM_UNOWN]};
-
 DEX_LIST[GAME.Sa] = CopyObject(DEX_LIST[GAME.Ru]);
 DEX_LIST[GAME.FR] = CopyObject(DEX_LIST[GAME.Ru]);
 DEX_LIST[GAME.FR][MON.DEOXYS    ][""         ]["ico"] = "0386-attack";

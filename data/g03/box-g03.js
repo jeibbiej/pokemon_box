@@ -240,8 +240,6 @@ const _Regdex_n_301 =
 	"0201-want"        : {ico: "0201-want",        flags: [FORM_0201]},             // "Unown Want", // uknown gender
 	"0201-xxxxx"       : {ico: "0201-xxxxx",       flags: [FORM_0201]},             // "Unown XXXXX", // uknown gender
 	"0201-yield"       : {ico: "0201-yield",       flags: [FORM_0201]},             // "Unown Yield", // uknown gender
-	"0201-zoom"        : {ico: "0201-zoom",        flags: [FORM_0201]},             // "Unown Zoom", // uknown gender
-	"0201-exclamation" : {ico: "0201-exclamation", flags: [FORM_0201]},             // "Unown !!!!!", // uknown gender
 	"0201-question"    : {ico: "0201-question",    flags: [FORM_0201]},             // "Unown ?????", // uknown gender
 	"0202"             : {ico: "0202",             flags: []},                      // "Wobbuffet",
 	"0203"             : {ico: "0203",             flags: []},                      // "Girafarig",
