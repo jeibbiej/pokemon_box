@@ -214,6 +214,7 @@ const _Names =
     "0199"                              : "Slowking",
     "0200"                              : "Misdreavus",
     "0201"                              : "Unown", // uknown gender
+    "0201-anger"                        : "Unown Anger", // uknown gender
     "0201-angry"                        : "Unown Angry", // uknown gender
     "0201-bear"                         : "Unown Bear", // uknown gender
     "0201-chase"                        : "Unown Chase", // uknown gender
@@ -240,6 +241,8 @@ const _Names =
     "0201-xxxxx"                        : "Unown XXXXX", // uknown gender
     "0201-yield"                        : "Unown Yield", // uknown gender
     "0201-zoom"                         : "Unown Zoom", // uknown gender
+    "0201-emark"                        : "Unown ?????", // uknown gender
+    "0201-qmark"                        : "Unown !!!!!", // uknown gender
     "0202"                              : "Wobbuffet",
     "0203"                              : "Girafarig",
     "0204"                              : "Pineco",

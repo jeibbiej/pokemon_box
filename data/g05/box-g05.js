@@ -51,12 +51,12 @@ const _Regdex_n_501 =
 	"0026-f"          : {ico: "0026",             flags: [FORM_MIN_GENDER_DIFF]},  // "Raichu♀",
 	"0027"            : {ico: "0027",             flags: []},                      // "Sandshrew",
 	"0028"            : {ico: "0028",             flags: []},                      // "Sandslash",
-	"0029"            : {ico: "0029",           flags: [FORM_MAJ_GENDER_BASE]},  // "Nidoran",
-	"0029-f"          : {ico: "0029",           flags: [FORM_MAJ_GENDER_DIFF]},  // "Nidoran♀",
+	"0029"            : {ico: "0029",             flags: [FORM_MAJ_GENDER_BASE]},  // "Nidoran",
+	"0029-f"          : {ico: "0029",             flags: [FORM_MAJ_GENDER_DIFF]},  // "Nidoran♀",
 	"0030"            : {ico: "0030",             flags: []},                      // "Nidorina",
 	"0031"            : {ico: "0031",             flags: []},                      // "Nidoqueen",
-	"0032"            : {ico: "0032",           flags: [FORM_MAJ_GENDER_BASE]},  // "Nidoran",
-	"0032-m"          : {ico: "0032",           flags: [FORM_MAJ_GENDER_DIFF]},  // "Nidoran♂",
+	"0032"            : {ico: "0032",             flags: [FORM_MAJ_GENDER_BASE]},  // "Nidoran",
+	"0032-m"          : {ico: "0032",             flags: [FORM_MAJ_GENDER_DIFF]},  // "Nidoran♂",
 	"0033"            : {ico: "0033",             flags: []},                      // "Nidorino",
 	"0034"            : {ico: "0034",             flags: []},                      // "Nidoking",
 	"0035"            : {ico: "0035",             flags: []},                      // "Clefairy",
@@ -306,8 +306,8 @@ const _Regdex_n_501 =
 	"0201-xxxxx"      : {ico: "0201-xxxxx",       flags: [FORM_0201]},             // "Unown XXXXX", // uknown gender
 	"0201-yield"      : {ico: "0201-yield",       flags: [FORM_0201]},             // "Unown Yield", // uknown gender
 	"0201-zoom"       : {ico: "0201-zoom",        flags: [FORM_0201]},             // "Unown Zoom", // uknown gender
-	"0201-exclamation": {ico: "0201-exclamation", flags: [FORM_0201]},             // "Unown !!!!!", // uknown gender
-	"0201-question"   : {ico: "0201-question",    flags: [FORM_0201]},             // "Unown ?????", // uknown gender
+	"0201-emark"      : {ico: "0201-emark",       flags: [FORM_0201]},             // "Unown !!!!!", // uknown gender
+	"0201-qmark"      : {ico: "0201-qmark",       flags: [FORM_0201]},             // "Unown ?????", // uknown gender
 	"0202"            : {ico: "0202",             flags: [FORM_MIN_GENDER_BASE]},  // "Wobbuffet",
 	"0202-m"          : {ico: "0202",             flags: [FORM_MIN_GENDER_DIFF]},  // "Wobbuffet♂",
 	"0202-f"          : {ico: "0202",             flags: [FORM_MIN_GENDER_DIFF]},  // "Wobbuffet♀",

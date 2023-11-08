@@ -31,13 +31,13 @@ MON =
 	ARMALDO   : 348,	FEEBAS    : 349,	MILOTIC   : 350,	CASTFORM  : 351,
 	KECLEON   : 352,	SHUPPET   : 353,	BANETTE   : 354,	DUSKULL   : 355,
 	DUSCLOPS  : 356,	TROPIUS   : 357,	CHIMECHO  : 358,	ABSOL     : 359,
-	SNORUNT   : 361,	GLALIE    : 362,	SPHEAL    : 363,	SEALEO    : 364,
-	WALREIN   : 365,	CLAMPERL  : 366,	HUNTAIL   : 367,	GOREBYSS  : 368,
-	RELICANTH : 369,	LUVDISC   : 370,	BAGON     : 371,	SHELGON   : 372,
-	SALAMENCE : 373,	BELDUM    : 374,	METANG    : 375,	METAGROSS : 376,
-	REGIROCK  : 377,	REGICE    : 378,	REGISTEEL : 379,	LATIAS    : 380,
-	LATIOS    : 381,	KYOGRE    : 382,	GROUDON   : 383,	RAYQUAZA  : 384,
-	JIRACHI   : 385,	DEOXYS    : 386
+	WYNAUT    : 360,	SNORUNT   : 361,	GLALIE    : 362,	SPHEAL    : 363,
+	SEALEO    : 364,	WALREIN   : 365,	CLAMPERL  : 366,	HUNTAIL   : 367,
+	GOREBYSS  : 368,	RELICANTH : 369,	LUVDISC   : 370,	BAGON     : 371,
+	SHELGON   : 372,	SALAMENCE : 373,	BELDUM    : 374,	METANG    : 375,
+	METAGROSS : 376,	REGIROCK  : 377,	REGICE    : 378,	REGISTEEL : 379,
+	LATIAS    : 380,	LATIOS    : 381,	KYOGRE    : 382,	GROUDON   : 383,
+	RAYQUAZA  : 384,	JIRACHI   : 385,	DEOXYS    : 386
 };
 
 //============================================================================
@@ -186,6 +186,10 @@ DEX_LIST = {...CopyObject(DEX_LIST),
 	[MON.JIRACHI   ]: {	""          : {ico: "0385", name: "Jirachi",        flags: []}},
 	[MON.DEOXYS    ]: {	""          : {ico: "0386", name: "Deoxys",         flags: []}},
 }};
+
+// new forms
+DEX_LIST[GAME.Ru][MON.UNOWN     ]["-emark"   ] = {ico: "0201-exclamation", name: "Unown !!!!!", flags: [FLAGS.FORM_UNOWN]};
+DEX_LIST[GAME.Ru][MON.UNOWN     ]["-qmark"   ] = {ico: "0201-question",    name: "Unown ?????", flags: [FLAGS.FORM_UNOWN]};
 
 // update icons
 DEX_LIST[GAME.Ru][MON.BULBASAUR ][""         ]["ico"] = "0001";
@@ -388,7 +392,7 @@ DEX_LIST[GAME.Ru][MON.UMBREON   ][""         ]["ico"] = "0197";
 DEX_LIST[GAME.Ru][MON.MURKROW   ][""         ]["ico"] = "0198";
 DEX_LIST[GAME.Ru][MON.SLOWKING  ][""         ]["ico"] = "0199";
 DEX_LIST[GAME.Ru][MON.MISDREAVUS][""         ]["ico"] = "0200";
-DEX_LIST[GAME.Ru][MON.UNOWN     ][""         ]["ico"] = "0201-angry";
+DEX_LIST[GAME.Ru][MON.UNOWN     ][""         ]["ico"] = "0201-find"; // defualt icon is F
 DEX_LIST[GAME.Ru][MON.UNOWN     ]["-angry"   ]["ico"] = "0201-angry";
 DEX_LIST[GAME.Ru][MON.UNOWN     ]["-bear"    ]["ico"] = "0201-bear";
 DEX_LIST[GAME.Ru][MON.UNOWN     ]["-chase"   ]["ico"] = "0201-chase";
@@ -468,8 +472,8 @@ DEX_LIST[GAME.Ru][MON.CELEBI    ][""         ]["ico"] = "0251";
 // new formes
 DEX_LIST[GAME.Sa] = CopyObject(DEX_LIST[GAME.Ru]);
 DEX_LIST[GAME.FR] = CopyObject(DEX_LIST[GAME.Ru]);
-DEX_LIST[GAME.FR][MON.DEOXYS    ][""         ]["ico"] = "0386-attack";
+DEX_LIST[GAME.FR][MON.DEOXYS    ][""         ] = {ico: "0386-attack",  name: "Attack Deoxys",  flags: []};
 DEX_LIST[GAME.LG] = CopyObject(DEX_LIST[GAME.Ru]);
-DEX_LIST[GAME.LG][MON.DEOXYS    ][""         ]["ico"] = "0386-defense";
+DEX_LIST[GAME.LG][MON.DEOXYS    ][""         ] = {ico: "0386-defense", name: "Defense Deoxys", flags: []};
 DEX_LIST[GAME.Em] = CopyObject(DEX_LIST[GAME.Ru]);
-DEX_LIST[GAME.Em][MON.DEOXYS    ][""         ]["ico"] = "0386-speed";
+DEX_LIST[GAME.Em][MON.DEOXYS    ][""         ] = {ico: "0386-speed",   name: "Speed Deoxys",   flags: []};

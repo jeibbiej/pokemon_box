@@ -25,10 +25,17 @@ function CreatePSS()
 	_divElem.innerHTML = "";
 
 	let boxList = g_NatBox[_game];
+	boxName = "g_NatBox";
 	if (_type == DEX_TYPE.EVO)
+	{
 		boxList = g_EvoBox[_game];
+		boxName = "g_EvoBox";
+	}
 	else if (_type == DEX_TYPE.REG)
+	{
 		boxList = g_RegBox[_game];
+		boxName = "g_RegBox";
+	}
 	console.log("boxList: ", boxList);
 	let game = GAME_INFO[_game];
 	console.log("_game: ", _game);
@@ -87,7 +94,11 @@ function CreatePSS()
 
 			let ico = document.createElement("img");
 			ico.id = pkmnCode;
+
+			console.log(`DEX_LIST[${_game}][${index}]: ${DEX_LIST[_game][index]}`);
+			console.log(`forme: ${forme}`);
 			ico.src = `${game.icoPath}/${dexItem[forme]["ico"]}.png`;
+			//console.log("ico.src: ", ico.src);
 			ico.classList.add("zukan-icon");
 			//ico.title = dexItem[forme]["ico"];
 			if (!inZukan(_game, _type, pkmnCode))
