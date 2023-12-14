@@ -27,7 +27,7 @@ URL: [Pokémon Storage System vAlpha](https://jeibbiej.github.io/pokemon_box/box
 * New evolution should be inserted after their respective lower evolution: `Zubat -> Golbat -> [Crobat]`.
 * New split evolution should be inserted after the last existing evolution: `Poliwag -> Poliwhirl -> Poliwrath -> [Politoed]`.
 * Forms should follow the official indexing.
-* Fossil Pokémon should be considered as split evolution from Mysterious Fossil (TCG): `Mysterious Fossil -> Omanyte -> Omastar -> Kabuto -> Kabutops -> Aerodactyl`. In short, all Fossil Pokémon should be placed after Aerodactyl.
+* Fossil Pokémon should be considered as split evolution from Mysterious Fossil (TCG): `Mysterious Fossil -> Helix Fossil -> Omanyte -> Omastar -> Dome Fossil -> Kabuto -> Kabutops -> Old Amber -> Aerodactyl`. In short, all Fossil Pokémon should be placed after Aerodactyl.
 * Any Pokémon that are considered as a group should be placed next to each other, sorted by priority then National ID: `Regirock -> Regice -> Registeel -> Regieleki -> Regidrago -> Regigigas`.
 * Regional forms that are not split evolution should be placed after their counterpart: `Diglett -> Dugtrio -> Alolan Diglett -> Alolan Dugtrio`.
 * Convergent forms should be placed next to their counterpart: `Diglett -> Dugtrio -> Alolan Diglett -> Alolan Dugtrio -> Wiglett -> Wugtrio`.
