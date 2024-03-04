@@ -4,34 +4,28 @@
 MON =
 {
 	...CopyObject(MON),
-	/**************/ TREECKO   : 252, GROVYLE   : 253, SCEPTILE  : 254, TORCHIC   : 255,
-	COMBUSKEN : 256, BLAZIKEN  : 257, MUDKIP    : 258, MARSHTOMP : 259, SWAMPERT  : 260,
-	POOCHYENA : 261, MIGHTYENA : 262, ZIGZAGOON : 263, LINOONE   : 264, WURMPLE   : 265,
-	SILCOON   : 266, BEAUTIFLY : 267, CASCOON   : 268, DUSTOX    : 269, LOTAD     : 270,
-	LOMBRE    : 271, LUDICOLO  : 272, SEEDOT    : 273, NUZLEAF   : 274, SHIFTRY   : 275,
-	TAILLOW   : 276, SWELLOW   : 277, WINGULL   : 278, PELIPPER  : 279, RALTS     : 280,
-	KIRLIA    : 281, GARDEVOIR : 282, SURSKIT   : 283, MASQUERAIN: 284, SHROOMISH : 285,
-	BRELOOM   : 286, SLAKOTH   : 287, VIGOROTH  : 288, SLAKING   : 289, NINCADA   : 290,
-	NINJASK   : 291, SHEDINJA  : 292, WHISMUR   : 293, LOUDRED   : 294, EXPLOUD   : 295,
-	MAKUHITA  : 296, HARIYAMA  : 297, AZURILL   : 298, NOSEPASS  : 299, SKITTY    : 300,
-	DELCATTY  : 301, SABLEYE   : 302, MAWILE    : 303, ARON      : 304, LAIRON    : 305,
-	AGGRON    : 306, MEDITITE  : 307, MEDICHAM  : 308, ELECTRIKE : 309, MANECTRIC : 310,
-	PLUSLE    : 311, MINUN     : 312, VOLBEAT   : 313, ILLUMISE  : 314, ROSELIA   : 315,
-	GULPIN    : 316, SWALOT    : 317, CARVANHA  : 318, SHARPEDO  : 319, WAILMER   : 320,
-	WAILORD   : 321, NUMEL     : 322, CAMERUPT  : 323, TORKOAL   : 324, SPOINK    : 325,
-	GRUMPIG   : 326, SPINDA    : 327, TRAPINCH  : 328, VIBRAVA   : 329, FLYGON    : 330,
-	CACNEA    : 331, CACTURNE  : 332, SWABLU    : 333, ALTARIA   : 334, ZANGOOSE  : 335,
-	SEVIPER   : 336, LUNATONE  : 337, SOLROCK   : 338, BARBOACH  : 339, WHISCASH  : 340,
-	CORPHISH  : 341, CRAWDAUNT : 342, BALTOY    : 343, CLAYDOL   : 344, LILEEP    : 345,
-	CRADILY   : 346, ANORITH   : 347, ARMALDO   : 348, FEEBAS    : 349, MILOTIC   : 350,
-	CASTFORM  : 351, KECLEON   : 352, SHUPPET   : 353, BANETTE   : 354, DUSKULL   : 355,
-	DUSCLOPS  : 356, TROPIUS   : 357, CHIMECHO  : 358, ABSOL     : 359, WYNAUT    : 360,
-	SNORUNT   : 361, GLALIE    : 362, SPHEAL    : 363, SEALEO    : 364, WALREIN   : 365,
-	CLAMPERL  : 366, HUNTAIL   : 367, GOREBYSS  : 368, RELICANTH : 369, LUVDISC   : 370,
-	BAGON     : 371, SHELGON   : 372, SALAMENCE : 373, BELDUM    : 374, METANG    : 375,
-	METAGROSS : 376, REGIROCK  : 377, REGICE    : 378, REGISTEEL : 379, LATIAS    : 380,
-	LATIOS    : 381, KYOGRE    : 382, GROUDON   : 383, RAYQUAZA  : 384, JIRACHI   : 385,
-	DEOXYS    : 386
+	/**************/ TURTWIG   : 387, GROTLE    : 388, TORTERRA  : 389, CHIMCHAR : 390,
+	MONFERNO  : 391, INFERNAPE : 392, PIPLUP    : 393, PRINPLUP  : 394, EMPOLEON : 395,
+	STARLY    : 396, STARAVIA  : 397, STARAPTOR : 398, BIDOOF    : 399, BIBAREL  : 400,
+	KRIKETOT  : 401, KRICKETUNE: 402, SHINX     : 403, LUXIO     : 404, LUXRAY   : 405,
+	BUDEW     : 406, ROSERADE  : 407, CRANIDOS  : 408, RAMPARDOS : 409, SHIELDON : 410,
+	BASTIODON : 411, BURMY     : 412, WORMADAM  : 413, MOTHIM    : 414, COMBEE   : 415,
+	VVESPIQUEN: 416, PACHIRISU : 417, BUIZEL    : 418, FLOATZEL  : 419, CHERUBI  : 420,
+	CHERRIM   : 421, SHELLOS   : 422, GASTRODON : 423, AMBIPOM   : 424, DRIFLOON : 425,
+	DRIFBLIM  : 426, BUNEARY   : 427, LOPUNNY   : 428, MISMAGUIS : 429, HONCHKROW: 430,
+	GLAMEOW   : 431, PURUGLY   : 432, CHINGLING : 433, STUNKY    : 434, SKUNTANK : 435,
+	BRONZOR   : 436, BRONZONG  : 437, BONSLY    : 438, MIME_JR   : 439, HAPPINY  : 440,
+	CHATOT    : 441, SPIRITOMB : 442, GIBLE     : 443, GABITE    : 444, GARCHOMP : 445,
+	MUNCHLAX  : 446, RIOLU     : 447, LUCARIO   : 448, HIPPOPOTAS: 449, HIPPOWDON: 450,
+	SKORUPI   : 451, DRAPION   : 452, CROAGUNK  : 453, TOXICROAK : 454, CARNIVINE: 455,
+	FINNEON   : 456, LUMINEON  : 457, MANTYKE   : 458, SNOVER    : 459, ABOMASNOW: 460,
+	WEAVILE   : 461, MAGNEZONE : 462, LICKILICKY: 463, RHYPERIOR : 464, TANGROWTH: 465,
+	ELECTIVIRE: 466, MAGMORTAR : 467, TOGEKISS  : 468, YANMEGA   : 469, LEAFEON  : 470,
+	GLACEON   : 471, GLISCOR   : 472, MAMOSWINE : 473, PORYGON_Z : 474, GALLADE  : 475,
+	PROBOPASS : 476, DUSKNOIR  : 477, FROSLASS  : 478, ROTOM     : 479, UXIE     : 480,
+	MESPRIT   : 481, AZELF     : 482, DIALGA    : 483, PALKIA    : 484, HEATRAN  : 485,
+	REGIGIGAS : 486, GIRATINA  : 487, CRESSELIA : 488, PHIONE    : 489, MANAPHY  : 490,
+	DARKRAI   : 491, SHAYMIN   : 492, ARCEUS    : 493,
 };
 
 //============================================================================
@@ -41,144 +35,237 @@ DEX_LIST = {...CopyObject(DEX_LIST),
 [GAME.Ru]:
 {
 	...CopyObject(DEX_LIST[GAME.Cr]),
-	[MON.TREECKO   ]: {	""          : {ico: "0252", name: "Treecko",        flags: []}},
-	[MON.GROVYLE   ]: {	""          : {ico: "0253", name: "Grovyle",        flags: []}},
-	[MON.SCEPTILE  ]: {	""          : {ico: "0254", name: "Sceptile",       flags: []}},
-	[MON.TORCHIC   ]: {	""          : {ico: "0255", name: "Torchic",        flags: []}},
-	[MON.COMBUSKEN ]: {	""          : {ico: "0256", name: "Combusken",      flags: []}},
-	[MON.BLAZIKEN  ]: {	""          : {ico: "0257", name: "Blaziken",       flags: []}},
-	[MON.MUDKIP    ]: {	""          : {ico: "0258", name: "Mudkip",         flags: []}},
-	[MON.MARSHTOMP ]: {	""          : {ico: "0259", name: "Marshtomp",      flags: []}},
-	[MON.SWAMPERT  ]: {	""          : {ico: "0260", name: "Swampert",       flags: []}},
-	[MON.POOCHYENA ]: {	""          : {ico: "0261", name: "Poochyena",      flags: []}},
-	[MON.MIGHTYENA ]: {	""          : {ico: "0262", name: "Mightyena",      flags: []}},
-	[MON.ZIGZAGOON ]: {	""          : {ico: "0263", name: "Zigzagoon",      flags: []}},
-	[MON.LINOONE   ]: {	""          : {ico: "0264", name: "Linoone",        flags: []}},
-	[MON.WURMPLE   ]: {	""          : {ico: "0265", name: "Wurmple",        flags: []}},
-	[MON.SILCOON   ]: {	""          : {ico: "0266", name: "Silcoon",        flags: []}},
-	[MON.BEAUTIFLY ]: {	""          : {ico: "0267", name: "Beautifly",      flags: []}},
-	[MON.CASCOON   ]: {	""          : {ico: "0268", name: "Cascoon",        flags: []}},
-	[MON.DUSTOX    ]: {	""          : {ico: "0269", name: "Dustox",         flags: []}},
-	[MON.LOTAD     ]: {	""          : {ico: "0270", name: "Lotad",          flags: []}},
-	[MON.LOMBRE    ]: {	""          : {ico: "0271", name: "Lombre",         flags: []}},
-	[MON.LUDICOLO  ]: {	""          : {ico: "0272", name: "Ludicolo",       flags: []}},
-	[MON.SEEDOT    ]: {	""          : {ico: "0273", name: "Seedot",         flags: []}},
-	[MON.NUZLEAF   ]: {	""          : {ico: "0274", name: "Nuzleaf",        flags: []}},
-	[MON.SHIFTRY   ]: {	""          : {ico: "0275", name: "Shiftry",        flags: []}},
-	[MON.TAILLOW   ]: {	""          : {ico: "0276", name: "Taillow",        flags: []}},
-	[MON.SWELLOW   ]: {	""          : {ico: "0277", name: "Swellow",        flags: []}},
-	[MON.WINGULL   ]: {	""          : {ico: "0278", name: "Wingull",        flags: []}},
-	[MON.PELIPPER  ]: {	""          : {ico: "0279", name: "Pelipper",       flags: []}},
-	[MON.RALTS     ]: {	""          : {ico: "0280", name: "Ralts",          flags: []}},
-	[MON.KIRLIA    ]: {	""          : {ico: "0281", name: "Kirlia",         flags: []}},
-	[MON.GARDEVOIR ]: {	""          : {ico: "0282", name: "Gardevoir",      flags: []}},
-	[MON.SURSKIT   ]: {	""          : {ico: "0283", name: "Surskit",        flags: []}},
-	[MON.MASQUERAIN]: {	""          : {ico: "0284", name: "Masquerain",     flags: []}},
-	[MON.SHROOMISH ]: {	""          : {ico: "0285", name: "Shroomish",      flags: []}},
-	[MON.BRELOOM   ]: {	""          : {ico: "0286", name: "Breloom",        flags: []}},
-	[MON.SLAKOTH   ]: {	""          : {ico: "0287", name: "Slakoth",        flags: []}},
-	[MON.VIGOROTH  ]: {	""          : {ico: "0288", name: "Vigoroth",       flags: []}},
-	[MON.SLAKING   ]: {	""          : {ico: "0289", name: "Slaking",        flags: []}},
-	[MON.NINCADA   ]: {	""          : {ico: "0290", name: "Nincada",        flags: []}},
-	[MON.NINJASK   ]: {	""          : {ico: "0291", name: "Ninjask",        flags: []}},
-	[MON.SHEDINJA  ]: {	""          : {ico: "0292", name: "Shedinja",       flags: []}},
-	[MON.WHISMUR   ]: {	""          : {ico: "0293", name: "Whismur",        flags: []}},
-	[MON.LOUDRED   ]: {	""          : {ico: "0294", name: "Loudred",        flags: []}},
-	[MON.EXPLOUD   ]: {	""          : {ico: "0295", name: "Exploud",        flags: []}},
-	[MON.MAKUHITA  ]: {	""          : {ico: "0296", name: "Makuhita",       flags: []}},
-	[MON.HARIYAMA  ]: {	""          : {ico: "0297", name: "Hariyama",       flags: []}},
-	[MON.AZURILL   ]: {	""          : {ico: "0298", name: "Azurill",        flags: []}},
-	[MON.NOSEPASS  ]: {	""          : {ico: "0299", name: "Nosepass",       flags: []}},
-	[MON.SKITTY    ]: {	""          : {ico: "0300", name: "Skitty",         flags: []}},
-	[MON.DELCATTY  ]: {	""          : {ico: "0301", name: "Delcatty",       flags: []}},
-	[MON.SABLEYE   ]: {	""          : {ico: "0302", name: "Sableye",        flags: []}},
-	[MON.MAWILE    ]: {	""          : {ico: "0303", name: "Mawile",         flags: []}},
-	[MON.ARON      ]: {	""          : {ico: "0304", name: "Aron",           flags: []}},
-	[MON.LAIRON    ]: {	""          : {ico: "0305", name: "Lairon",         flags: []}},
-	[MON.AGGRON    ]: {	""          : {ico: "0306", name: "Aggron",         flags: []}},
-	[MON.MEDITITE  ]: {	""          : {ico: "0307", name: "Meditite",       flags: []}},
-	[MON.MEDICHAM  ]: {	""          : {ico: "0308", name: "Medicham",       flags: []}},
-	[MON.ELECTRIKE ]: {	""          : {ico: "0309", name: "Electrike",      flags: []}},
-	[MON.MANECTRIC ]: {	""          : {ico: "0310", name: "Manectric",      flags: []}},
-	[MON.PLUSLE    ]: {	""          : {ico: "0311", name: "Plusle",         flags: []}},
-	[MON.MINUN     ]: {	""          : {ico: "0312", name: "Minun",          flags: []}},
-	[MON.VOLBEAT   ]: {	""          : {ico: "0313", name: "Volbeat",        flags: []}},
-	[MON.ILLUMISE  ]: {	""          : {ico: "0314", name: "Illumise",       flags: []}},
-	[MON.ROSELIA   ]: {	""          : {ico: "0315", name: "Roselia",        flags: []}},
-	[MON.GULPIN    ]: {	""          : {ico: "0316", name: "Gulpin",         flags: []}},
-	[MON.SWALOT    ]: {	""          : {ico: "0317", name: "Swalot",         flags: []}},
-	[MON.CARVANHA  ]: {	""          : {ico: "0318", name: "Carvanha",       flags: []}},
-	[MON.SHARPEDO  ]: {	""          : {ico: "0319", name: "Sharpedo",       flags: []}},
-	[MON.WAILMER   ]: {	""          : {ico: "0320", name: "Wailmer",        flags: []}},
-	[MON.WAILORD   ]: {	""          : {ico: "0321", name: "Wailord",        flags: []}},
-	[MON.NUMEL     ]: {	""          : {ico: "0322", name: "Numel",          flags: []}},
-	[MON.CAMERUPT  ]: {	""          : {ico: "0323", name: "Camerupt",       flags: []}},
-	[MON.TORKOAL   ]: {	""          : {ico: "0324", name: "Torkoal",        flags: []}},
-	[MON.SPOINK    ]: {	""          : {ico: "0325", name: "Spoink ",        flags: []}},
-	[MON.GRUMPIG   ]: {	""          : {ico: "0326", name: "Grumpig",        flags: []}},
-	[MON.SPINDA    ]: {	""          : {ico: "0327", name: "Spinda",         flags: []}},
-	[MON.TRAPINCH  ]: {	""          : {ico: "0328", name: "Trapinch",       flags: []}},
-	[MON.VIBRAVA   ]: {	""          : {ico: "0329", name: "Vibrava",        flags: []}},
-	[MON.FLYGON    ]: {	""          : {ico: "0330", name: "Flygon",         flags: []}},
-	[MON.CACNEA    ]: {	""          : {ico: "0331", name: "Cacnea",         flags: []}},
-	[MON.CACTURNE  ]: {	""          : {ico: "0332", name: "Cacturne",       flags: []}},
-	[MON.SWABLU    ]: {	""          : {ico: "0333", name: "Swablu",         flags: []}},
-	[MON.ALTARIA   ]: {	""          : {ico: "0334", name: "Altaria",        flags: []}},
-	[MON.ZANGOOSE  ]: {	""          : {ico: "0335", name: "Zangoose",       flags: []}},
-	[MON.SEVIPER   ]: {	""          : {ico: "0336", name: "Seviper",        flags: []}},
-	[MON.LUNATONE  ]: {	""          : {ico: "0337", name: "Lunatone",       flags: []}},
-	[MON.SOLROCK   ]: {	""          : {ico: "0338", name: "Solrock",        flags: []}},
-	[MON.BARBOACH  ]: {	""          : {ico: "0339", name: "Barboach",       flags: []}},
-	[MON.WHISCASH  ]: {	""          : {ico: "0340", name: "Whiscash",       flags: []}},
-	[MON.CORPHISH  ]: {	""          : {ico: "0341", name: "Corphish",       flags: []}},
-	[MON.CRAWDAUNT ]: {	""          : {ico: "0342", name: "Crawdaunt",      flags: []}},
-	[MON.BALTOY    ]: {	""          : {ico: "0343", name: "Baltoy",         flags: []}},
-	[MON.CLAYDOL   ]: {	""          : {ico: "0344", name: "Claydol",        flags: []}},
-	[MON.LILEEP    ]: {	""          : {ico: "0345", name: "Lileep",         flags: []}},
-	[MON.CRADILY   ]: {	""          : {ico: "0346", name: "Cradily",        flags: []}},
-	[MON.ANORITH   ]: {	""          : {ico: "0347", name: "Anorith",        flags: []}},
-	[MON.ARMALDO   ]: {	""          : {ico: "0348", name: "Armaldo",        flags: []}},
-	[MON.FEEBAS    ]: {	""          : {ico: "0349", name: "Feebas",         flags: []}},
-	[MON.MILOTIC   ]: {	""          : {ico: "0350", name: "Milotic",        flags: []}},
-	[MON.CASTFORM  ]: {	""          : {ico: "0351", name: "Castform",       flags: []},
-						"-sunny"    : {ico: "0351", name: "Sunny Castform", flags: [FLAGS.FORM_BATTLE]},
-						"-rainy"    : {ico: "0351", name: "Rainy Castform", flags: [FLAGS.FORM_BATTLE]},
-						"-snowy"    : {ico: "0351", name: "Snowy Castform", flags: [FLAGS.FORM_BATTLE]}},
-	[MON.KECLEON   ]: {	""          : {ico: "0352", name: "Kecleon",        flags: []}},
-	[MON.SHUPPET   ]: {	""          : {ico: "0353", name: "Shuppet",        flags: []}},
-	[MON.BANETTE   ]: {	""          : {ico: "0354", name: "Banette",        flags: []}},
-	[MON.DUSKULL   ]: {	""          : {ico: "0355", name: "Duskull",        flags: []}},
-	[MON.DUSCLOPS  ]: {	""          : {ico: "0356", name: "Dusclops",       flags: []}},
-	[MON.TROPIUS   ]: {	""          : {ico: "0357", name: "Tropius",        flags: []}},
-	[MON.CHIMECHO  ]: {	""          : {ico: "0358", name: "Chimecho",       flags: []}},
-	[MON.ABSOL     ]: {	""          : {ico: "0359", name: "Absol",          flags: []}},
-	[MON.WYNAUT    ]: {	""          : {ico: "0360", name: "Wynaut",         flags: []}},
-	[MON.SNORUNT   ]: {	""          : {ico: "0361", name: "Snorunt",        flags: []}},
-	[MON.GLALIE    ]: {	""          : {ico: "0362", name: "Glalie",         flags: []}},
-	[MON.SPHEAL    ]: {	""          : {ico: "0363", name: "Spheal",         flags: []}},
-	[MON.SEALEO    ]: {	""          : {ico: "0364", name: "Sealeo",         flags: []}},
-	[MON.WALREIN   ]: {	""          : {ico: "0365", name: "Walrein",        flags: []}},
-	[MON.CLAMPERL  ]: {	""          : {ico: "0366", name: "Clamperl",       flags: []}},
-	[MON.HUNTAIL   ]: {	""          : {ico: "0367", name: "Huntail",        flags: []}},
-	[MON.GOREBYSS  ]: {	""          : {ico: "0368", name: "Gorebyss",       flags: []}},
-	[MON.RELICANTH ]: {	""          : {ico: "0369", name: "Relicanth",      flags: []}},
-	[MON.LUVDISC   ]: {	""          : {ico: "0370", name: "Luvdisc",        flags: []}},
-	[MON.BAGON     ]: {	""          : {ico: "0371", name: "Bagon",          flags: []}},
-	[MON.SHELGON   ]: {	""          : {ico: "0372", name: "Shelgon",        flags: []}},
-	[MON.SALAMENCE ]: {	""          : {ico: "0373", name: "Salamence",      flags: []}},
-	[MON.BELDUM    ]: {	""          : {ico: "0374", name: "Beldum",         flags: []}},
-	[MON.METANG    ]: {	""          : {ico: "0375", name: "Metang",         flags: []}},
-	[MON.METAGROSS ]: {	""          : {ico: "0376", name: "Metagross",      flags: []}},
-	[MON.REGIROCK  ]: {	""          : {ico: "0377", name: "Regirock",       flags: []}},
-	[MON.REGICE    ]: {	""          : {ico: "0378", name: "Regice",         flags: []}},
-	[MON.REGISTEEL ]: {	""          : {ico: "0379", name: "Registeel",      flags: []}},
-	[MON.LATIAS    ]: {	""          : {ico: "0380", name: "Latias",         flags: []}},
-	[MON.LATIOS    ]: {	""          : {ico: "0381", name: "Latios",         flags: []}},
-	[MON.KYOGRE    ]: {	""          : {ico: "0382", name: "Kyogre",         flags: []}},
-	[MON.GROUDON   ]: {	""          : {ico: "0383", name: "Groudon",        flags: []}},
-	[MON.RAYQUAZA  ]: {	""          : {ico: "0384", name: "Rayquaza",       flags: []}},
-	[MON.JIRACHI   ]: {	""          : {ico: "0385", name: "Jirachi",        flags: []}},
-	[MON.DEOXYS    ]: {	""          : {ico: "0386", name: "Deoxys",         flags: []}},
+	[MON.TURTWIG   ]: { "": { ico: "0387", name: "Turtwig",    flags: [] } },
+	[MON.GROTLE    ]: { "": { ico: "0388", name: "Grotle",     flags: [] } },
+	[MON.TORTERRA  ]: { "": { ico: "0389", name: "Torterra",   flags: [] } },
+	[MON.CHIMCHAR  ]: { "": { ico: "0390", name: "Chimchar",   flags: [] } },
+	[MON.MONFERNO  ]: { "": { ico: "0391", name: "Monferno",   flags: [] } },
+	[MON.INFERNAPE ]: { "": { ico: "0392", name: "Infernape",  flags: [] } },
+	[MON.PIPLUP    ]: { "": { ico: "0393", name: "Piplup",     flags: [] } },
+	[MON.PRINPLUP  ]: { "": { ico: "0394", name: "Prinplup",   flags: [] } },
+	[MON.EMPOLEON  ]: { "": { ico: "0395", name: "Empoleon",   flags: [] } },
+	[MON.STARLY    ]: { "": { ico: "0396", name: "Starly",     flags: [] } },
+	[MON.STARAVIA  ]: { "": { ico: "0397", name: "Staravia",   flags: [] } },
+	[MON.STARAPTOR ]: { "": { ico: "0398", name: "Staraptor",  flags: [] } },
+	[MON.BIDOOF    ]: { "": { ico: "0399", name: "Bidoof",     flags: [] } },
+	[MON.BIBAREL   ]: { "": { ico: "0400", name: "Bibarel",    flags: [] } },
+	[MON.KRICKETOT ]: { "": { ico: "0401", name: "Kricketot",  flags: [] } },
+	[MON.KRICKETUNE]: { "": { ico: "0402", name: "Kricketune", flags: [] } },
+	[MON.SHINX     ]: { "": { ico: "0403", name: "Shinx",      flags: [] } },
+	#0403	Shinx	Shinx
+	Electric
+	#0404	Luxio	Luxio
+	Electric
+	#0405	Luxray	Luxray
+	Electric
+	#0406	Budew	Budew
+	Grass	Poison
+	#0407	Roserade	Roserade
+	Grass	Poison
+	#0408	Cranidos	Cranidos
+	Rock
+	#0409	Rampardos	Rampardos
+	Rock
+	#0410	Shieldon	Shieldon
+	Rock	Steel
+	#0411	Bastiodon	Bastiodon
+	Rock	Steel
+	#0412	Burmy	Burmy
+	Plant Cloak	Bug
+	Burmy	Burmy
+	Sandy Cloak	Bug
+	Burmy	Burmy
+	Trash Cloak	Bug
+	#0413	Wormadam	Wormadam
+	Plant Cloak	Bug	Grass
+	Wormadam	Wormadam
+	Sandy Cloak	Bug	Ground
+	Wormadam	Wormadam
+	Trash Cloak	Bug	Steel
+	#0414	Mothim	Mothim
+	Bug	Flying
+	#0415	Combee	Combee
+	Bug	Flying
+	#0416	Vespiquen	Vespiquen
+	Bug	Flying
+	#0417	Pachirisu	Pachirisu
+	Electric
+	#0418	Buizel	Buizel
+	Water
+	#0419	Floatzel	Floatzel
+	Water
+	#0420	Cherubi	Cherubi
+	Grass
+	#0421	Cherrim	Cherrim
+	Overcast Form	Grass
+	Cherrim	Cherrim
+	Sunshine Form	Grass
+	#0422	Shellos	Shellos
+	West Sea	Water
+	Shellos	Shellos
+	East Sea	Water
+	#0423	Gastrodon	Gastrodon
+	West Sea	Water	Ground
+	Gastrodon	Gastrodon
+	East Sea	Water	Ground
+	#0424	Ambipom	Ambipom
+	Normal
+	#0425	Drifloon	Drifloon
+	Ghost	Flying
+	#0426	Drifblim	Drifblim
+	Ghost	Flying
+	#0427	Buneary	Buneary
+	Normal
+	#0428	Lopunny	Lopunny
+	Normal
+	#0429	Mismagius	Mismagius
+	Ghost
+	#0430	Honchkrow	Honchkrow
+	Dark	Flying
+	#0431	Glameow	Glameow
+	Normal
+	#0432	Purugly	Purugly
+	Normal
+	#0433	Chingling	Chingling
+	Psychic
+	#0434	Stunky	Stunky
+	Poison	Dark
+	#0435	Skuntank	Skuntank
+	Poison	Dark
+	#0436	Bronzor	Bronzor
+	Steel	Psychic
+	#0437	Bronzong	Bronzong
+	Steel	Psychic
+	#0438	Bonsly	Bonsly
+	Rock
+	#0439	Mime Jr.	Mime Jr.
+	Psychic	Fairy
+	#0440	Happiny	Happiny
+	Normal
+	#0441	Chatot	Chatot
+	Normal	Flying
+	#0442	Spiritomb	Spiritomb
+	Ghost	Dark
+	#0443	Gible	Gible
+	Dragon	Ground
+	#0444	Gabite	Gabite
+	Dragon	Ground
+	#0445	Garchomp	Garchomp
+	Dragon	Ground
+	#0446	Munchlax	Munchlax
+	Normal
+	#0447	Riolu	Riolu
+	Fighting
+	#0448	Lucario	Lucario
+	Fighting	Steel
+	#0449	Hippopotas	Hippopotas
+	Ground
+	#0450	Hippowdon	Hippowdon
+	Ground
+	#0451	Skorupi	Skorupi
+	Poison	Bug
+	#0452	Drapion	Drapion
+	Poison	Dark
+	#0453	Croagunk	Croagunk
+	Poison	Fighting
+	#0454	Toxicroak	Toxicroak
+	Poison	Fighting
+	#0455	Carnivine	Carnivine
+	Grass
+	#0456	Finneon	Finneon
+	Water
+	#0457	Lumineon	Lumineon
+	Water
+	#0458	Mantyke	Mantyke
+	Water	Flying
+	#0459	Snover	Snover
+	Grass	Ice
+	#0460	Abomasnow	Abomasnow
+	Grass	Ice
+	#0461	Weavile	Weavile
+	Dark	Ice
+	#0462	Magnezone	Magnezone
+	Electric	Steel
+	#0463	Lickilicky	Lickilicky
+	Normal
+	#0464	Rhyperior	Rhyperior
+	Ground	Rock
+	#0465	Tangrowth	Tangrowth
+	Grass
+	#0466	Electivire	Electivire
+	Electric
+	#0467	Magmortar	Magmortar
+	Fire
+	#0468	Togekiss	Togekiss
+	Fairy	Flying
+	#0469	Yanmega	Yanmega
+	Bug	Flying
+	#0470	Leafeon	Leafeon
+	Grass
+	#0471	Glaceon	Glaceon
+	Ice
+	#0472	Gliscor	Gliscor
+	Ground	Flying
+	#0473	Mamoswine	Mamoswine
+	Ice	Ground
+	#0474	Porygon-Z	Porygon-Z
+	Normal
+	#0475	Gallade	Gallade
+	Psychic	Fighting
+	#0476	Probopass	Probopass
+	Rock	Steel
+	#0477	Dusknoir	Dusknoir
+	Ghost
+	#0478	Froslass	Froslass
+	Ice	Ghost
+	#0479	Rotom	Rotom
+	Rotom	Electric	Ghost
+	Rotom	Rotom
+	Heat Rotom	Electric	Fire
+	Rotom	Rotom
+	Wash Rotom	Electric	Water
+	Rotom	Rotom
+	Frost Rotom	Electric	Ice
+	Rotom	Rotom
+	Fan Rotom	Electric	Flying
+	Rotom	Rotom
+	Mow Rotom	Electric	Grass
+	#0480	Uxie	Uxie
+	Psychic
+	#0481	Mesprit	Mesprit
+	Psychic
+	#0482	Azelf	Azelf
+	Psychic
+	#0483	Dialga	Dialga
+	Steel	Dragon
+	Dialga	Dialga
+	Origin Forme	Steel	Dragon
+	#0484	Palkia	Palkia
+	Water	Dragon
+	Palkia	Palkia
+	Origin Forme	Water	Dragon
+	#0485	Heatran	Heatran
+	Fire	Steel
+	#0486	Regigigas	Regigigas
+	Normal
+	#0487	Giratina	Giratina
+	Altered Forme	Ghost	Dragon
+	Giratina	Giratina
+	Origin Forme	Ghost	Dragon
+	#0488	Cresselia	Cresselia
+	Psychic
+	#0489	Phione	Phione
+	Water
+	#0490	Manaphy	Manaphy
+	Water
+	#0491	Darkrai	Darkrai
+	Dark
+	#0492	Shaymin	Shaymin
+	Land Forme	Grass
+	Shaymin	Shaymin
+	Sky Forme	Grass	Flying
+	#0493	Arceus	Arceus
+	Arceus	Normal
 }};
 
 // new forms

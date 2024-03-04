@@ -3,10 +3,11 @@
  ************************************************************************/
 
 // will show or hide the following
-const FORM_MAJ_GENDER_BASE = 1;                        // major gender difference
-const FORM_MAJ_GENDER_DIFF = FORM_MAJ_GENDER_BASE + 1; // major gender difference
-const FORM_MIN_GENDER_BASE = FORM_MAJ_GENDER_BASE + 2; // minor gender difference
-const FORM_MIN_GENDER_DIFF = FORM_MAJ_GENDER_BASE + 3; // minor gender difference
+const FORM_GENDER_DIFF_BASE = 1;							// minor gender difference, use this if hide minor gender diff is active
+const FORM_GENDER_DIFF_PLUS = FORM_GENDER_DIFF_BASE + 1;	// minor gender difference, hide this if hide minor gender diff is active
+const FORM_GENDER_DIFF_M    = FORM_GENDER_DIFF_BASE + 2;	// major gender difference, male
+const FORM_GENDER_DIFF_F    = FORM_GENDER_DIFF_BASE + 3;	// major gender difference, female
+
 
 const FORM_0201_BASE       =       20100;              // Unown
 const FORM_0201            = FORM_0201_BASE + 1;       // Unown
